@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-1-listicle",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}
