@@ -714,12 +714,25 @@
     margin: 28px 0;
     border-radius: 8px;
     overflow: hidden;
+    max-height: 400px;
   }
 
   .page2-article-image img {
     width: 100%;
     height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center top;
     display: block;
+  }
+
+  .page2-article-image.full-height {
+    max-height: none;
+  }
+
+  .page2-article-image.full-height img {
+    max-height: none;
+    object-fit: contain;
   }
 
   .page2-article-image figcaption {
@@ -899,7 +912,7 @@
 
           <p>I figured: some guys go bald, some guys get guts. <strong>I got the gut.</strong></p>
 
-          <figure class="page2-article-image">
+          <figure class="page2-article-image full-height">
             <img src="{{ 'gary-mirror-before.jpg' | asset_url }}" alt="Gary looking at himself in the bathroom mirror">
             <figcaption>The morning ritual of avoiding my reflection.</figcaption>
           </figure>
