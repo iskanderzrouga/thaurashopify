@@ -1,0 +1,10 @@
+{
+  "layout": "theme.page-1",
+  "sections": {
+    "main": {
+      "type": "page-2-listicle",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

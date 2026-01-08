@@ -1,0 +1,1267 @@
+<style>
+  .page3-root {
+    --bg: #FDFCFB;
+    --bg-card: #FFFFFF;
+    --text: #111111;
+    --text-secondary: #1F1F1F;
+    --text-muted: #555555;
+    --accent: #9A4A00;
+    --accent-light: #FEF3C7;
+    --danger: #B91C1C;
+    --danger-light: #FEE2E2;
+    --success: #16A34A;
+    --success-light: #DCFCE7;
+    --border: #E0E0E0;
+    --font-display: 'Inter', -apple-system, sans-serif;
+    --font-body: 'Source Serif 4', Georgia, serif;
+  }
+
+  .page3-root * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .page3-root {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.85;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .page3-container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .page3-site-header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .page3-site-header .page3-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page3-site-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    background: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+
+  .page3-site-logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--text);
+  }
+
+  .page3-article-header {
+    padding: 40px 0 30px;
+  }
+
+  .page3-article-category {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .page3-root h1 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  .page3-article-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .page3-byline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+
+  .page3-byline-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .page3-byline-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page3-byline-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .page3-byline-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .page3-article-content p {
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.9;
+    max-width: 60ch;
+    margin-bottom: 1.5em;
+    color: var(--text-secondary);
+  }
+
+  .page3-article-content p strong {
+    color: var(--text);
+    font-weight: 700;
+    background: linear-gradient(to bottom, transparent 60%, rgba(180, 83, 9, 0.12) 60%);
+    padding: 0 2px;
+  }
+
+  .page3-root h2 {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 4vw, 32px);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text);
+    margin: 48px 0 20px;
+    padding-top: 16px;
+    letter-spacing: -0.3px;
+  }
+
+  .page3-root h2::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .page3-root h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 28px 0 12px;
+  }
+
+  .page3-blockquote {
+    border-left: 5px solid var(--accent);
+    padding: 28px 32px;
+    margin: 36px 0;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--accent-light);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .page3-blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 8px;
+  }
+
+  .page3-takeaway {
+    background: linear-gradient(135deg, var(--accent-light) 0%, #FFFBEB 100%);
+    border-left: 5px solid var(--accent);
+    padding: 24px 28px;
+    margin: 28px 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 8px rgba(180, 83, 9, 0.1);
+  }
+
+  .page3-takeaway-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .page3-takeaway-label::before {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  .page3-takeaway p {
+    margin: 0;
+    font-weight: 500;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .page3-cycle-box {
+    background: linear-gradient(135deg, #fff 0%, #FFFBEB 100%);
+    border: 2px solid var(--danger);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+    box-shadow: 0 4px 16px rgba(220, 38, 38, 0.08);
+  }
+
+  .page3-cycle-title {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--danger);
+    margin-bottom: 24px;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(214, 69, 69, 0.2);
+  }
+
+  .page3-cycle-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .page3-cycle-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 8px 0;
+  }
+
+  .page3-cycle-num {
+    width: 28px;
+    height: 28px;
+    background: var(--danger);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(214, 69, 69, 0.2);
+  }
+
+  .page3-cycle-text {
+    padding-top: 4px;
+  }
+
+  .page3-cycle-text strong {
+    display: block;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+
+  .page3-cycle-text span {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .page3-cycle-arrow {
+    text-align: center;
+    color: var(--danger);
+    font-size: 18px;
+    padding: 2px 0;
+    margin-left: 5px;
+    opacity: 0.7;
+  }
+
+  .page3-cycle-loop {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--danger);
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 6px;
+  }
+
+  .page3-article-image {
+    margin: 28px 0;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .page3-article-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: saturate(95%) contrast(95%);
+  }
+
+  .page3-article-image figcaption {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .page3-bullet-list {
+    margin: 28px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .page3-bullet-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  .page3-bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: var(--danger);
+    border-radius: 50%;
+  }
+
+  .page3-bullet-list li strong {
+    display: block;
+    color: var(--text);
+    margin-bottom: 6px;
+    font-size: 17px;
+  }
+
+  .page3-timeline {
+    margin: 28px 0;
+    padding-left: 24px;
+    border-left: 3px solid var(--accent);
+  }
+
+  .page3-timeline-item {
+    position: relative;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+
+  .page3-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 3px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+
+  .page3-timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .page3-timeline-days {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .page3-timeline-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .page3-timeline-item p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .page3-timeline-item p strong {
+    color: var(--text);
+  }
+
+  .page3-timeline-image {
+    margin: 16px 0 0;
+    max-height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .page3-timeline-image img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: saturate(95%) contrast(95%);
+  }
+
+  .page3-timeline-image figcaption {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .page3-comments-section {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    margin: 32px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .page3-comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page3-comments-header h3 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .page3-comments-header h3::before {
+    display: none;
+  }
+
+  .page3-comments-count {
+    font-size: 13px;
+    color: var(--text-muted);
+    background: #f5f5f5;
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+
+  .page3-comment {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page3-comment:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .page3-comment-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid #f0f0f0;
+  }
+
+  .page3-comment-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page3-comment-body {
+    flex: 1;
+  }
+
+  .page3-comment-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .page3-comment-text {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+
+  .page3-comment-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .page3-comment-meta::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23888'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'/%3E%3C/svg%3E") no-repeat center;
+    background-size: contain;
+    opacity: 0.6;
+  }
+
+  .page3-cta-box {
+    background: linear-gradient(135deg, #faf8f2 0%, #fff 50%, #f8f6f0 100%);
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    padding: 36px 32px;
+    text-align: center;
+    margin: 44px 0;
+    box-shadow: 0 4px 20px rgba(201, 162, 39, 0.12);
+  }
+
+  .page3-cta-box h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+  }
+
+  .page3-cta-box h3::before {
+    display: none;
+  }
+
+  .page3-cta-box p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-size: 16px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page3-cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, #b8921e 100%);
+    color: #fff;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(201, 162, 39, 0.25);
+  }
+
+  .page3-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(201, 162, 39, 0.35);
+  }
+
+  .page3-cta-note {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 14px;
+  }
+
+  .page3-section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), var(--accent), var(--border), transparent);
+    margin: 48px 0;
+    position: relative;
+  }
+
+  .page3-section-divider::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+
+  .page3-hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+
+  .page3-footer {
+    padding: 32px 0;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    margin-top: 36px;
+  }
+
+  .page3-footer p {
+    margin-bottom: 8px;
+  }
+
+  .page3-comments-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  @media (max-width: 600px) {
+    .page3-root {
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+    .page3-container {
+      padding: 0 20px;
+    }
+
+    .page3-root h1 {
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .page3-root h2 {
+      font-size: 24px;
+      margin: 36px 0 16px;
+    }
+
+    .page3-root h2::before {
+      width: 32px;
+      height: 2px;
+      margin-bottom: 10px;
+    }
+
+    .page3-root h3 {
+      font-size: 21px;
+    }
+
+    .page3-article-header {
+      padding: 28px 0 20px;
+    }
+
+    .page3-article-subtitle {
+      font-size: 16px;
+    }
+
+    .page3-timeline {
+      padding-left: 16px;
+      margin: 24px 0;
+    }
+
+    .page3-timeline-item {
+      padding-left: 18px;
+      padding-bottom: 28px;
+    }
+
+    .page3-timeline-item::before {
+      left: -23px;
+      width: 10px;
+      height: 10px;
+      border-width: 2px;
+    }
+
+    .page3-timeline-days {
+      font-size: 11px;
+    }
+
+    .page3-timeline-item h4 {
+      font-size: 15px;
+    }
+
+    .page3-timeline-item p {
+      font-size: 14px;
+    }
+
+    .page3-timeline-image {
+      margin: 12px 0 0;
+      border-radius: 6px;
+    }
+
+    .page3-cycle-box {
+      padding: 20px;
+    }
+
+    .page3-cycle-title {
+      font-size: 14px;
+    }
+
+    .page3-cycle-num {
+      width: 22px;
+      height: 22px;
+      font-size: 11px;
+    }
+
+    .page3-cycle-text strong {
+      font-size: 14px;
+    }
+
+    .page3-cycle-text span {
+      font-size: 12px;
+    }
+
+    .page3-cycle-arrow {
+      font-size: 14px;
+      margin-left: 4px;
+    }
+
+    .page3-cycle-loop {
+      font-size: 12px;
+    }
+
+    .page3-bullet-list li {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .page3-bullet-list li::before {
+      width: 6px;
+      height: 6px;
+      top: 8px;
+    }
+
+    .page3-bullet-list li strong {
+      font-size: 15px;
+    }
+
+    .page3-comments-section {
+      padding: 20px;
+    }
+
+    .page3-comments-header h3 {
+      font-size: 14px;
+    }
+
+    .page3-comment {
+      gap: 10px;
+      padding: 12px 0;
+    }
+
+    .page3-comment-avatar {
+      width: 36px;
+      height: 36px;
+    }
+
+    .page3-comment-name {
+      font-size: 13px;
+    }
+
+    .page3-comment-text {
+      font-size: 13px;
+    }
+
+    .page3-takeaway {
+      padding: 20px;
+    }
+
+    .page3-takeaway p {
+      font-size: 14px;
+    }
+
+    .page3-cta-box {
+      padding: 22px 18px;
+    }
+
+    .page3-cta-box h3 {
+      font-size: 18px;
+    }
+
+    .page3-cta-box p {
+      font-size: 14px;
+    }
+
+    .page3-cta-button {
+      padding: 12px 24px;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .page3-blockquote {
+      padding: 20px 22px;
+      font-size: 18px;
+    }
+
+    .page3-article-image {
+      margin: 24px 0;
+      border-radius: 8px;
+    }
+
+    .page3-article-image figcaption {
+      font-size: 12px;
+      padding: 10px 0;
+    }
+
+    .page3-byline-avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    .page3-byline-name {
+      font-size: 13px;
+    }
+
+    .page3-byline-meta {
+      font-size: 12px;
+    }
+
+    .page3-section-divider {
+      margin: 32px 0;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .page3-root h1 {
+      font-size: 22px;
+    }
+
+    .page3-cycle-step {
+      gap: 10px;
+    }
+
+    .page3-cycle-text span {
+      font-size: 11px;
+    }
+  }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;450;500;600;700&family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+
+<div class="page3-root">
+  <header class="page3-site-header">
+    <div class="page3-container">
+      <span class="page3-site-label">Personal Story</span>
+      <span class="page3-site-logo">THAURA</span>
+    </div>
+  </header>
+
+  <main class="page3-container">
+    <article>
+      <header class="page3-article-header">
+        <div class="page3-article-category">Men's Health</div>
+        <h1>I'm 55 and Never Thought a Supplement Would Help Me Lose the Gut. I Was Wrong.</h1>
+        <p class="page3-article-subtitle">After 30 years of accepting my beer belly as "just how I am," a conversation with a doctor at a dinner party changed everything.</p>
+      </header>
+
+      <div class="page3-byline">
+        <div class="page3-byline-avatar">
+          <img src="{{ 'testimonial-michael.png' | asset_url }}" alt="Gary M.">
+        </div>
+        <div>
+          <div class="page3-byline-name">Gary M., Cincinnati</div>
+          <div class="page3-byline-meta">Shared his story - 12 min read</div>
+        </div>
+      </div>
+
+      <div class="page3-article-content">
+
+        <p>Let me start by saying I never write things like this. I'm three years away from retirement, I've got two grown kids, and I've had the same gut since my mid-30s. Writing about my belly on the internet wasn't exactly on my bucket list.</p>
+
+        <p>But something happened six months ago that I can't stop thinking about. And I figured if I'm still thinking about it, maybe some other guy like me needs to hear it.</p>
+
+        <h2>The Gut Was Just... Me</h2>
+
+        <p>I've had a belly for as long as I can remember. It started creeping up in my mid-30s - right around when the kids were young, work got crazy, and "hitting the gym" became something I'd do "when things slow down."</p>
+
+        <p>Things never slowed down.</p>
+
+        <p>By 40, I had what my wife politely called a "dad bod." By 45, the doctor started mentioning it at every checkup. By 50, I'd given up caring.</p>
+
+        <p>It was just... me. Some guys are bald. Some guys are short. I was the guy with the gut.</p>
+
+        <p>I told myself it didn't bother me. But here's the truth: <strong>I hadn't taken my shirt off at a pool or beach in almost a decade.</strong> I avoided photos. When my wife suggested vacations somewhere tropical, I'd steer us toward "cooler destinations."</p>
+
+        <figure class="page3-article-image">
+          <img src="{{ 'man-avoiding-photos.jpg' | asset_url }}" alt="Man trying to hide in the back of a family photo">
+          <figcaption>Always in the back row. Always trying to hide.</figcaption>
+        </figure>
+
+        <figure class="page3-article-image">
+          <img src="{{ 'man-at-pool-uncomfortable.jpg' | asset_url }}" alt="Man sitting at pool keeping his shirt on">
+          <figcaption>This was me. Every vacation. Shirt stays on.</figcaption>
+        </figure>
+
+        <p><strong>I wasn't fooling anyone.</strong> Especially not her.</p>
+
+        <h2>The Things I Tried (And Why They Didn't Work)</h2>
+
+        <p>It's not like I never tried to lose it. Over the years, I'd gone through the usual phases:</p>
+
+        <ul class="page3-bullet-list">
+          <li>
+            <strong>The gym phase.</strong>
+            Joined three different gyms over 15 years. Went consistently for maybe 2-3 months each time. Then work would get busy, or I'd tweak something, or I'd just... stop going. <strong>The belly never budged.</strong>
+          </li>
+          <li>
+            <strong>The diet phase.</strong>
+            Tried low-carb twice. Actually lost some weight the second time - about 12 pounds. But I was miserable. Couldn't have a beer with the guys, couldn't enjoy my wife's cooking, couldn't live like a normal human. <strong>Gained it all back within four months.</strong>
+          </li>
+          <li>
+            <strong>The supplement phase.</strong>
+            This one I'm almost embarrassed to admit. Bought a "testosterone booster" off Amazon after reading some reviews. Took it for six weeks. Felt nothing. Did nothing. Wasted $60. Told myself supplements were all BS and moved on.
+          </li>
+        </ul>
+
+        <p><strong>By 55, I'd made peace with it.</strong> Or at least I thought I had.</p>
+
+        <div class="page3-section-divider"></div>
+
+        <h2>The Dinner Party</h2>
+
+        <p>Last summer, my wife's friend Karen got remarried. Nice guy named Alan. We ended up at their place for dinner, and that's when I met Alan's brother - a guy named David who turned out to be <strong>some kind of doctor specializing in hormones and metabolism.</strong></p>
+
+        <figure class="page3-article-image">
+          <img src="{{ 'dinner-party-conversation.jpg' | asset_url }}" alt="Two men having a conversation at a dinner party">
+          <figcaption>The conversation that changed everything.</figcaption>
+        </figure>
+
+        <p>I don't know how the conversation started. Probably me complaining about something. But at some point, I said what I'd said a hundred times before:</p>
+
+        <blockquote class="page3-blockquote">
+          "I've just accepted that this is what happens when you get older. The gut doesn't go anywhere."
+        </blockquote>
+
+        <p>David looked at me like I'd said something interesting.</p>
+
+        <p>"You really believe that?" he asked.</p>
+
+        <p>"I mean... yeah," I said. "I've tried everything. Nothing works. My metabolism's shot."</p>
+
+        <p>He shook his head. "It's not your metabolism. Not exactly. Can I show you something?"</p>
+
+        <p>And then, sitting at his brother's dining room table, <strong>this doctor drew a diagram on a napkin that completely changed how I understood my own body.</strong></p>
+
+        <div class="page3-section-divider"></div>
+
+        <h2>The Napkin That Changed Everything</h2>
+
+        <p>Here's roughly what he drew:</p>
+
+        <div class="page3-cycle-box">
+          <div class="page3-cycle-title">What David Drew on the Napkin</div>
+          <div class="page3-cycle-steps">
+            <div class="page3-cycle-step">
+              <div class="page3-cycle-num">1</div>
+              <div class="page3-cycle-text">
+                <strong>Testosterone drops as you age</strong>
+                <span>"Every man loses 1-2% per year after 30. This is normal."</span>
+              </div>
+            </div>
+            <div class="page3-cycle-arrow">&#8595;</div>
+            <div class="page3-cycle-step">
+              <div class="page3-cycle-num">2</div>
+              <div class="page3-cycle-text">
+                <strong>Fat burning slows down</strong>
+                <span>"Lower T means your body gets worse at burning fat. Especially belly fat."</span>
+              </div>
+            </div>
+            <div class="page3-cycle-arrow">&#8595;</div>
+            <div class="page3-cycle-step">
+              <div class="page3-cycle-num">3</div>
+              <div class="page3-cycle-text">
+                <strong>Belly fat builds up</strong>
+                <span>"And here's where it gets bad..."</span>
+              </div>
+            </div>
+            <div class="page3-cycle-arrow">&#8595;</div>
+            <div class="page3-cycle-step">
+              <div class="page3-cycle-num">4</div>
+              <div class="page3-cycle-text">
+                <strong>Belly fat converts testosterone into estrogen</strong>
+                <span>"Your gut contains an enzyme called aromatase. It literally transforms the testosterone you have left into estrogen."</span>
+              </div>
+            </div>
+            <div class="page3-cycle-arrow">&#8595;</div>
+            <div class="page3-cycle-step">
+              <div class="page3-cycle-num">5</div>
+              <div class="page3-cycle-text">
+                <strong>Estrogen tells your body to store more fat</strong>
+                <span>"And where does it store it? Right back on the belly."</span>
+              </div>
+            </div>
+          </div>
+          <div class="page3-cycle-loop">&#8635; The cycle repeats - getting worse every year</div>
+        </div>
+
+        <p>I stared at that napkin for a long time.</p>
+
+        <p><strong>"So you're saying my belly is literally making itself bigger?"</strong> I asked.</p>
+
+        <p>"Essentially, yes," David said. <strong>"Your belly fat is turning your testosterone against you.</strong> The more belly fat you have, the more testosterone gets converted to estrogen, and the more estrogen you have, the more fat you store. It's a feedback loop."</p>
+
+        <div class="page3-takeaway">
+          <div class="page3-takeaway-label">The Part That Hit Me Hardest</div>
+          <p>"More testosterone won't fix this. If you add more testosterone - through TRT or boosters - you're just giving the aromatase more raw material to convert into estrogen."</p>
+        </div>
+
+        <p>This explained so much. The supplement I'd taken years ago? It was a testosterone booster. Even if it had worked (and who knows if it did), my body would have just converted the extra testosterone into more estrogen and stored more fat.</p>
+
+        <p><strong>I was fighting against my own biology. And I never even knew it.</strong></p>
+
+        <h2>"So What Actually Works?"</h2>
+
+        <p>I asked David the obvious question. If boosting testosterone doesn't work because it just gets converted, what actually does?</p>
+
+        <p>"You have to break the cycle at multiple points," he said. "Think of it like a chain. If you only cut one link, the chain keeps working. You need to cut several."</p>
+
+        <p>He explained the three things you need to address at the same time:</p>
+
+        <h3>First: Stop the Conversion</h3>
+
+        <p>"You need something that blocks aromatase - the enzyme that converts testosterone to estrogen. There are natural compounds that do this. DIM, which comes from cruciferous vegetables, is one of the best studied. Zinc is another one. Most men over 40 are zinc deficient and don't know it."</p>
+
+        <p>This made sense. Stop the converter from converting.</p>
+
+        <h3>Second: Attack the Fat Directly</h3>
+
+        <p>"You need something that specifically targets visceral fat - that's the belly fat that surrounds your organs. This is different from the fat on your arms or legs. There are compounds that activate something called brown fat, which is your body's natural fat-burning tissue. Grains of Paradise is one example. Certain berberine derivatives are another."</p>
+
+        <p>I'd never heard of any of this. It felt like I was learning about my own body for the first time.</p>
+
+        <h3>Third: Support Natural Testosterone Production</h3>
+
+        <p>"Once you've stopped the conversion and started attacking the fat, you can support your body's natural testosterone production. But only then - because otherwise you're just feeding the cycle. Adaptogens like Ashwagandha have solid research behind them. They also help with cortisol, which is the stress hormone that contributes to belly fat."</p>
+
+        <p>Three things. All at once. That was the key.</p>
+
+        <h2>The Art of Supplements</h2>
+
+        <p>Before I left that dinner party, I asked David about supplements specifically. I told him about my $60 Amazon bottle that did nothing.</p>
+
+        <p>He laughed.</p>
+
+        <blockquote class="page3-blockquote">
+          "Most supplements are garbage. They're underdosed, they use cheap forms of ingredients that your body can't absorb, and they're formulated by marketing people, not scientists."
+          <cite>- David, MD</cite>
+        </blockquote>
+
+        <p>Then he said something that stuck with me:</p>
+
+        <p>"But supplements can work - when they're made by people who actually understand biochemistry. Who understand which forms of ingredients are bioavailable, what dosages are clinically effective, and how different compounds work together. That's not most supplement companies. That's maybe 5% of them."</p>
+
+        <p>He told me about the difference between zinc oxide (cheap, barely absorbed) and zinc glycinate (more expensive, actually works). Between regular berberine (hard on your stomach, inconsistent absorption) and GlucoVantage DHB (5x better absorption, easier on your system). Between random ashwagandha powder and KSM-66, which is the specific extract used in clinical trials.</p>
+
+        <p>Details matter. Formulation matters. Most companies cut corners because most consumers don't know the difference.</p>
+
+        <h2>What He Recommended</h2>
+
+        <p>I asked David what he'd recommend if I wanted to try this approach. He mentioned a few brands that he thought did things right.</p>
+
+        <p>One of them was Thaura Dryft.</p>
+
+        <p>He said he'd looked at their formula and it was solid. Clinical dosages, proper ingredient forms, the three-pathway approach we'd talked about. He mentioned their research team specifically - said they were one of the few companies that actually seemed to understand what they were doing.</p>
+
+        <p>I went home and did my own research. Looked up the ingredients he'd mentioned. Read the studies. Compared the dosages in Dryft to what the research said was effective.</p>
+
+        <p>Everything checked out.</p>
+
+        <div class="page3-section-divider"></div>
+
+        <h2>What Happened Over the Next Three Months</h2>
+
+        <p>I'm not going to lie and tell you I woke up with a six-pack. <strong>That's not how this works.</strong></p>
+
+        <p>But here's what did happen:</p>
+
+        <div class="page3-timeline">
+          <div class="page3-timeline-item">
+            <div class="page3-timeline-days">First Two Weeks</div>
+            <h4>The energy came first</h4>
+            <p>I noticed I wasn't crashing at 2pm anymore. Used to need coffee to get through the afternoon. <strong>That stopped.</strong> Sleep got better too - deeper, more consistent. Woke up actually feeling rested.</p>
+            <figure class="page3-timeline-image">
+              <img src="{{ 'morning-coffee-energy.jpg' | asset_url }}" alt="Man in kitchen holding coffee mug, looking refreshed">
+              <figcaption>Morning energy I hadn't felt in years.</figcaption>
+            </figure>
+          </div>
+          <div class="page3-timeline-item">
+            <div class="page3-timeline-days">Weeks 2-4</div>
+            <h4>Clothes started fitting different</h4>
+            <p>This was subtle at first. My belt wasn't as tight. My shirts didn't pull as much across the belly. The bloated feeling I'd had for years started to go away. I actually weighed myself for the first time in months - <strong>down 7 pounds.</strong></p>
+            <figure class="page3-timeline-image">
+              <img src="{{ 'belt-notch-progress.jpg' | asset_url }}" alt="Hands adjusting belt to a tighter notch">
+              <figcaption>Had to punch a new hole in the belt.</figcaption>
+            </figure>
+          </div>
+          <div class="page3-timeline-item">
+            <div class="page3-timeline-days">Weeks 4-8</div>
+            <h4>Other people started noticing</h4>
+            <p>My wife asked if I was losing weight. A coworker said I looked "different - in a good way." By week 8, I'd lost another 8 pounds. <strong>Pants I hadn't worn in two years fit again.</strong></p>
+            <figure class="page3-timeline-image">
+              <img src="{{ 'old-pants-closet.jpg' | asset_url }}" alt="Man pulling old pants from closet">
+              <figcaption>Went digging in the back of the closet. They fit.</figcaption>
+            </figure>
+          </div>
+          <div class="page3-timeline-item">
+            <div class="page3-timeline-days">Weeks 8-12</div>
+            <h4>The gut actually went down</h4>
+            <p>This was the part I honestly didn't believe would happen. But it did. Not gone - let's be realistic - but noticeably smaller. <strong>I lost almost 4 inches off my waist.</strong> My face looked leaner. When I looked in the mirror, I saw someone who looked... healthier.</p>
+            <figure class="page3-timeline-image">
+              <img src="{{ 'scale-feet.jpg' | asset_url }}" alt="Feet standing on bathroom scale">
+              <figcaption>Finally, numbers that were going in the right direction.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p>Here's what surprised me most: <strong>I didn't change anything else dramatically.</strong> I didn't start going to the gym five days a week. I didn't go on some extreme diet. I cut back on beer a bit - maybe one or two fewer per week - but nothing crazy.</p>
+
+        <p><strong>The difference was that for the first time, my body wasn't working against me.</strong></p>
+
+        <div class="page3-section-divider"></div>
+
+        <h2>What I've Learned</h2>
+
+        <p>I'm 55 years old. I spent most of my adult life thinking my gut was just something I had to accept. That it was genetics, or age, or "just how it goes."</p>
+
+        <p><strong>That was wrong.</strong></p>
+
+        <p>What I didn't understand - what nobody ever explained to me until that dinner party - was that <strong>my belly fat was actively making itself bigger.</strong> It was converting my testosterone, shifting my hormones toward fat storage, and creating a cycle that willpower alone couldn't break.</p>
+
+        <p><strong>You can't out-discipline biology. But you can work with it.</strong></p>
+
+        <div class="page3-takeaway">
+          <div class="page3-takeaway-label">The Real Lesson</div>
+          <p>The solution isn't working harder. It's understanding why your body is doing what it's doing - and addressing the actual problem instead of fighting the symptoms.</p>
+        </div>
+
+        <h2>A Note About Supplements</h2>
+
+        <p>I know I said I never believed in supplements. And honestly, most of them probably are BS. David told me as much.</p>
+
+        <p>But what I learned is that there's a difference between random pills thrown together by a marketing company and something formulated by people who actually understand biochemistry. The difference is in the details - which forms of ingredients, what dosages, how they work together.</p>
+
+        <p>For 30 years, I assumed all supplements were the same. They're not.</p>
+
+        <hr class="page3-hr">
+
+        <h2>From Others Who Read This</h2>
+
+        <p>Since sharing my story, I've heard from a lot of men going through similar things:</p>
+
+        <div class="page3-comments-section">
+          <div class="page3-comments-header">
+            <h3>Reader Responses</h3>
+            <span class="page3-comments-count">312 comments</span>
+          </div>
+
+          <div class="page3-comment">
+            <div class="page3-comment-avatar">
+              <img src="{{ 'testimonial-david.png' | asset_url }}" alt="Tom S.">
+            </div>
+            <div class="page3-comment-body">
+              <div class="page3-comment-name">Tom S., 52, Dallas</div>
+              <p class="page3-comment-text">"This is exactly what I needed to read. I've been the guy with the gut since my 40s. Tried the gym thing, tried the diet thing. Never understood why it was so much harder for me than for other guys. The aromatase explanation makes so much sense. Just ordered Dryft - we'll see."</p>
+              <div class="page3-comment-meta">3 days ago - 127 likes</div>
+            </div>
+          </div>
+
+          <div class="page3-comment">
+            <div class="page3-comment-avatar">
+              <img src="{{ 'testimonial-james.png' | asset_url }}" alt="Richard M.">
+            </div>
+            <div class="page3-comment-body">
+              <div class="page3-comment-name">Richard M., 58, Phoenix</div>
+              <p class="page3-comment-text">"I'm 58 and was genuinely convinced nothing would work at my age. Two months in now. Lost 19 pounds and 3.5 inches off my waist. Wife can't believe it. Neither can I honestly."</p>
+              <div class="page3-comment-meta">1 week ago - 94 likes</div>
+            </div>
+          </div>
+
+          <div class="page3-comment">
+            <div class="page3-comment-avatar">
+              <img src="{{ 'testimonial-robert.png' | asset_url }}" alt="James K.">
+            </div>
+            <div class="page3-comment-body">
+              <div class="page3-comment-name">James K., 49, Atlanta</div>
+              <p class="page3-comment-text">"The energy thing was what got me. Used to be exhausted by 3pm every single day. That's gone. And yeah, the belly is going down too, but the energy alone was worth it."</p>
+              <div class="page3-comment-meta">2 weeks ago - 78 likes</div>
+            </div>
+          </div>
+
+          <p class="page3-comments-note">*Individual results vary. These stories are from real readers who shared their experiences.</p>
+        </div>
+
+        <h2>If You're Considering This</h2>
+
+        <p>I'm not going to tell you what to do. I'm just a guy who had a gut for 30 years and finally found something that worked.</p>
+
+        <p>If your situation is like mine was - you've tried the gym, you've tried diets, you've maybe tried a supplement or two, and nothing has really worked - it might be worth understanding <em>why</em> nothing worked. It probably wasn't your fault. It was probably biology.</p>
+
+        <p>The cycle is real. It's documented. And it can be broken.</p>
+
+        <p>I'm three months in now, <strong>about 22 pounds lighter</strong>, wearing pants I haven't fit into since my 40s. My wife and I booked a trip to Mexico for next spring - <strong>first beach vacation in years.</strong></p>
+
+        <figure class="page3-article-image">
+          <img src="{{ 'couple-planning-vacation.jpg' | asset_url }}" alt="Middle-aged couple planning vacation together on laptop">
+          <figcaption>Finally planning that beach trip.</figcaption>
+        </figure>
+
+        <p><strong>For the first time in a long time, I'm actually looking forward to it.</strong></p>
+
+        <div class="page3-cta-box">
+          <h3>Learn About the Protocol Gary Used</h3>
+          <p>Thaura Dryft is formulated to address all three pathways: blocking estrogen conversion, targeting visceral fat, and supporting natural testosterone production.</p>
+          <a href="https://www.thaura.co/pages/bellyfat" class="page3-cta-button">Learn More About Dryft</a>
+          <p class="page3-cta-note">90-day money-back guarantee - Free shipping</p>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="page3-footer">
+    <div class="page3-container">
+      <p>This story is published for educational purposes. Individual results vary. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before starting any supplement regimen.</p>
+      <p>&copy; 2026 Men's Health Journal &middot; All rights reserved</p>
+    </div>
+  </footer>
+</div>
+
+{% schema %}
+{
+  "name": "Page 3 Personal Story",
+  "settings": []
+}
+{% endschema %}

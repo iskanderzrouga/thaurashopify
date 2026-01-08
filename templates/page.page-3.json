@@ -1,0 +1,10 @@
+{
+  "layout": "theme.page-1",
+  "sections": {
+    "main": {
+      "type": "page-3-personal-story",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

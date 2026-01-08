@@ -1,0 +1,1273 @@
+<style>
+  .page2-root {
+    --bg: #FDFCFB;
+    --bg-card: #FFFFFF;
+    --text: #111111;
+    --text-secondary: #1F1F1F;
+    --text-muted: #555555;
+    --accent: #9A4A00;
+    --accent-light: #FEF3C7;
+    --sage: #166534;
+    --sage-light: #DCFCE7;
+    --border: #E0E0E0;
+    --danger: #B91C1C;
+    --danger-light: #FEE2E2;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --font-serif: 'Source Serif 4', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, sans-serif;
+    --font-hand: 'Caveat', cursive;
+  }
+
+  .page2-root * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .page2-root {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.85;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .page2-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--accent);
+    width: 0%;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+  }
+
+  .page2-site-header {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+
+  .page2-header-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page2-blog-name {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .page2-blog-name span {
+    color: var(--accent);
+  }
+
+  .page2-header-date {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .page2-container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .page2-article-header {
+    padding: 48px 0 32px;
+    text-align: center;
+  }
+
+  .page2-article-label {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  .page2-root h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(34px, 6vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  .page2-article-subtitle {
+    font-family: var(--font-serif);
+    font-size: 19px;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .page2-byline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 0 32px;
+  }
+
+  .page2-byline-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--border);
+  }
+
+  .page2-byline-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page2-byline-info {
+    text-align: left;
+  }
+
+  .page2-byline-name {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  .page2-byline-meta {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .page2-hero-image {
+    margin: 0 -24px 40px;
+    position: relative;
+  }
+
+  @media (min-width: 800px) {
+    .page2-hero-image {
+      margin: 0 -60px 40px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+
+  .page2-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .page2-hero-caption {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 10px 24px;
+    font-style: italic;
+  }
+
+  .page2-advertorial-notice {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  .page2-article-content {
+    padding-bottom: 40px;
+  }
+
+  .page2-article-content p {
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.9;
+    margin-bottom: 1.5em;
+    color: var(--text-secondary);
+    max-width: 60ch;
+  }
+
+  .page2-article-content p strong {
+    color: var(--text);
+    font-weight: 700;
+    background: linear-gradient(to bottom, transparent 60%, rgba(184, 92, 74, 0.12) 60%);
+    padding: 0 2px;
+  }
+
+  .page2-article-content p em {
+    font-style: italic;
+  }
+
+  .page2-content-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+
+  .page2-content-card h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .page2-content-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .page2-lead {
+    font-size: 23px;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+
+  .page2-root h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(28px, 4vw, 34px);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text);
+    margin: 48px 0 20px;
+    padding-top: 16px;
+    letter-spacing: -0.3px;
+  }
+
+  .page2-root h2:first-of-type {
+    margin-top: 32px;
+  }
+
+  .page2-section-break {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 48px auto;
+    max-width: 100px;
+  }
+
+  .page2-pull-quote {
+    margin: 36px 0;
+    padding: 28px 32px;
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .page2-pull-quote p {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .page2-pull-quote cite {
+    display: block;
+    margin-top: 12px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .page2-cycle-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    margin: 36px 0;
+    box-shadow: 0 2px 12px var(--shadow);
+  }
+
+  .page2-cycle-title {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .page2-cycle-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .page2-cycle-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+
+  .page2-cycle-step:last-child {
+    border-bottom: none;
+  }
+
+  .page2-cycle-num {
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .page2-cycle-content h4 {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .page2-cycle-content p {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .page2-cycle-bottom {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 2px solid var(--accent);
+    text-align: center;
+  }
+
+  .page2-cycle-bottom p {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  .page2-insight-box {
+    background: var(--sage-light);
+    border: 1px solid var(--sage);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 32px 0;
+  }
+
+  .page2-insight-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .page2-insight-box strong {
+    color: var(--sage);
+  }
+
+  .page2-signature {
+    margin: 48px 0 32px;
+    text-align: left;
+  }
+
+  .page2-signature-line {
+    font-family: var(--font-hand);
+    font-size: 32px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .page2-signature-bio {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-style: italic;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .page2-comments-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    margin: 48px 0;
+    box-shadow: 0 2px 12px var(--shadow);
+  }
+
+  .page2-comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+  }
+
+  .page2-comments-header h3 {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .page2-comments-count {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .page2-comment-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page2-comment-form-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .page2-comment-form-avatar svg {
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
+  }
+
+  .page2-comment-form-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .page2-comment-form-input input {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .page2-comment-form-input input:focus {
+    border-color: var(--accent);
+  }
+
+  .page2-comment-form-input input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .page2-comment-form-submit {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s;
+  }
+
+  .page2-comment-form-submit:hover {
+    background: #a54d3d;
+  }
+
+  .page2-comment-success {
+    display: none;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--sage);
+    padding: 12px 16px;
+    background: var(--sage-light);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .page2-comment-success.show {
+    display: block;
+  }
+
+  .page2-comment {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page2-comment:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .page2-comment-body {
+    flex: 1;
+  }
+
+  .page2-comment-name {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .page2-comment-text {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin: 6px 0 10px;
+    line-height: 1.6;
+  }
+
+  .page2-comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .page2-comment-meta {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .page2-like-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .page2-like-btn:hover {
+    background: var(--accent-light);
+    color: var(--accent);
+  }
+
+  .page2-like-btn.liked {
+    color: var(--accent);
+  }
+
+  .page2-like-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .page2-cta-box {
+    background: var(--bg-card);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    margin: 48px 0;
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+
+  .page2-cta-box h3 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .page2-cta-box p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page2-cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, #a54d3d 100%);
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(184, 92, 74, 0.25);
+  }
+
+  .page2-cta-button:hover {
+    background: linear-gradient(135deg, #c96b5a 0%, var(--accent) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(184, 92, 74, 0.35);
+  }
+
+  .page2-cta-note {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 12px;
+  }
+
+  .page2-footer {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    margin-top: 48px;
+  }
+
+  .page2-footer p {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 8px;
+  }
+
+  .page2-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+  @keyframes page2-fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .page2-article-header {
+    animation: page2-fadeInUp 0.6s ease-out;
+  }
+
+  .page2-byline {
+    animation: page2-fadeInUp 0.6s ease-out 0.1s both;
+  }
+
+  .page2-hero-image {
+    animation: page2-fadeInUp 0.6s ease-out 0.2s both;
+  }
+
+  .page2-article-image {
+    margin: 28px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 400px;
+  }
+
+  .page2-article-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .page2-article-image figcaption {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .page2-root {
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+    .page2-container {
+      padding: 0 18px;
+    }
+
+    .page2-root h1 {
+      font-size: 30px;
+      line-height: 1.25;
+    }
+
+    .page2-root h2 {
+      font-size: 26px;
+      margin: 36px 0 16px;
+    }
+
+    .page2-article-subtitle {
+      font-size: 17px;
+    }
+
+    .page2-lead {
+      font-size: 19px;
+    }
+
+    .page2-content-card {
+      padding: 24px 20px;
+      margin: 24px 0;
+    }
+
+    .page2-pull-quote {
+      padding: 20px 22px;
+      margin: 28px 0;
+    }
+
+    .page2-pull-quote p {
+      font-size: 19px;
+    }
+
+    .page2-article-content p {
+      font-size: 19px;
+    }
+
+    .page2-cycle-box,
+    .page2-comments-section,
+    .page2-cta-box {
+      padding: 20px;
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+
+    .page2-cycle-step {
+      padding: 12px 0;
+    }
+
+    .page2-article-image {
+      margin: 20px 0;
+    }
+
+    .page2-article-image figcaption {
+      font-size: 12px;
+      padding: 8px 0;
+    }
+
+    .page2-comment-form {
+      flex-direction: column;
+    }
+
+    .page2-comment-form-avatar {
+      display: none;
+    }
+
+    .page2-signature-line {
+      font-size: 28px;
+    }
+
+    .page2-cta-box h3 {
+      font-size: 20px;
+    }
+
+    .page2-cta-button {
+      display: block;
+      width: 100%;
+      padding: 16px 24px;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .page2-cycle-num {
+      width: 28px;
+      height: 28px;
+      font-size: 13px;
+    }
+
+    .page2-insight-box {
+      padding: 18px 20px;
+    }
+
+    .page2-insight-box p {
+      font-size: 15px;
+    }
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;450;500;600;700&family=Inter:wght@400;450;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+<div class="page2-root">
+  <div class="page2-progress-bar" id="page2ProgressBar"></div>
+
+  <div class="page2-advertorial-notice">Advertorial</div>
+
+  <header class="page2-site-header">
+    <div class="page2-header-inner">
+      <div class="page2-blog-name">Gary's <span>Notes</span></div>
+      <div class="page2-header-date">January 2025</div>
+    </div>
+  </header>
+
+  <main class="page2-container">
+    <article>
+      <header class="page2-article-header">
+        <span class="page2-article-label">Personal Story</span>
+        <h1>I'm 54 and I've Had This Gut Since My 30s. Here's What Finally Changed.</h1>
+        <p class="page2-article-subtitle">A conversation at a barbecue taught me something about my body that I wish I'd known 20 years ago.</p>
+      </header>
+
+      <div class="page2-byline">
+        <div class="page2-byline-avatar">
+          <img src="{{ 'gary-author.jpg' | asset_url }}" alt="Gary Thompson">
+        </div>
+        <div class="page2-byline-info">
+          <div class="page2-byline-name">Gary Thompson</div>
+          <div class="page2-byline-meta">54, Ohio - 12 min read</div>
+        </div>
+      </div>
+
+      <figure class="page2-hero-image">
+        <img src="{{ 'gary-hero.jpg' | asset_url }}" alt="Gary enjoying time outdoors">
+        <figcaption class="page2-hero-caption">Me at a neighborhood cookout last month. First time I didn't dread being in photos.</figcaption>
+      </figure>
+
+      <div class="page2-article-content">
+
+        <div class="page2-content-card">
+          <p class="page2-lead">I'm 54 years old. I've had this gut since my mid-thirties.</p>
+
+          <p>That's over <strong>two decades of sucking it in for photos</strong>. Two decades of <strong>buying pants a size bigger</strong> "just to be comfortable." Two decades of my wife saying I look fine when we both know <strong>the shirts aren't fitting like they used to</strong>.</p>
+
+          <p>I'm not obese. I'm not unhealthy - at least not on paper. Blood pressure's fine. Cholesterol's manageable. <strong>I just carry this belly that never seems to go anywhere</strong>, no matter what I do.</p>
+
+          <p>And honestly? <strong>I'd made peace with it.</strong></p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>The Acceptance Phase</h2>
+
+          <p>Look, I'm a practical guy. I've got a desk job. I've got two kids - one in college, one finishing high school. I've got a mortgage and <strong>a retirement date circled on the calendar</strong> about four years from now.</p>
+
+          <p>I don't have time for two-hour gym sessions. <strong>I don't have the energy for diets that make me miserable.</strong> And I definitely don't have the patience for supplements that promise miracles and deliver nothing.</p>
+
+          <p>So I just accepted it. <strong>The gut stays. That's life after 40.</strong> That's what happens when you spend 25 years sitting at a desk, having beers on weekends, and <strong>prioritizing your kids' soccer games over your own health</strong>.</p>
+
+          <p>I figured: some guys go bald, some guys get guts. <strong>I got the gut.</strong></p>
+
+          <figure class="page2-article-image">
+            <img src="{{ 'gary-mirror-before.jpg' | asset_url }}" alt="Gary looking at himself in the bathroom mirror">
+            <figcaption>The morning ritual of avoiding my reflection.</figcaption>
+          </figure>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>The Barbecue That Changed Everything</h2>
+
+          <figure class="page2-article-image">
+            <img src="{{ 'gary-backyard-bbq.jpg' | asset_url }}" alt="Men talking casually at a backyard barbecue">
+            <figcaption>That afternoon at Alan's place. Seemed like any other cookout.</figcaption>
+          </figure>
+
+          <p>Last summer, my wife became friends with a woman from her book club. Nice lady. <strong>Her husband's a doctor</strong> - internal medicine, I think. Anyway, they invited us over for a barbecue.</p>
+
+          <p>I'm standing there with a beer, making small talk with the husband (his name's Alan), and somehow we get on the topic of health. Probably because <strong>I made some joke about needing to lose 30 pounds before retirement</strong>.</p>
+
+          <p>Alan kind of paused and asked me a question I didn't expect:</p>
+
+          <div class="page2-pull-quote">
+            <p>"Have you ever had your testosterone levels checked?"</p>
+          </div>
+
+          <p>I laughed it off. <strong>"Nah, I don't need Viagra or anything like that."</strong></p>
+
+          <p>He smiled. <strong>"That's not what I mean. I'm talking about your belly."</strong></p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>What Alan Told Me</h2>
+
+          <p>Alan explained something that, honestly, <strong>I'd never heard before</strong>. And I've read plenty of health articles over the years.</p>
+
+          <p>He said: <strong>"Your belly fat isn't just sitting there. It's actively working against you."</strong></p>
+
+          <p>Here's what he broke down for me:</p>
+
+          <figure class="page2-article-image">
+            <img src="{{ 'napkin-diagram.jpg' | asset_url }}" alt="Hand-drawn diagram on a napkin showing a cycle">
+            <figcaption>Alan sketched this out on a napkin. I took a photo so I wouldn't forget.</figcaption>
+          </figure>
+
+          <div class="page2-cycle-box">
+            <div class="page2-cycle-title">The Testosterone-Estrogen Loop</div>
+            <div class="page2-cycle-steps">
+              <div class="page2-cycle-step">
+                <div class="page2-cycle-num">1</div>
+                <div class="page2-cycle-content">
+                  <h4>Testosterone Drops</h4>
+                  <p>It happens to every guy after 30. Your body starts storing more fat, especially around the middle.</p>
+                </div>
+              </div>
+              <div class="page2-cycle-step">
+                <div class="page2-cycle-num">2</div>
+                <div class="page2-cycle-content">
+                  <h4>Belly Fat Produces Aromatase</h4>
+                  <p>I'd never heard of it. Sounds like a candle scent. But it's an enzyme your belly fat makes.</p>
+                </div>
+              </div>
+              <div class="page2-cycle-step">
+                <div class="page2-cycle-num">3</div>
+                <div class="page2-cycle-content">
+                  <h4>Aromatase Converts T to Estrogen</h4>
+                  <p>Yes, estrogen. The stuff women have more of. <strong>Your own belly is turning your testosterone against you.</strong></p>
+                </div>
+              </div>
+              <div class="page2-cycle-step">
+                <div class="page2-cycle-num">4</div>
+                <div class="page2-cycle-content">
+                  <h4>More Estrogen = More Fat Storage</h4>
+                  <p>And the cycle repeats. Getting worse every year.</p>
+                </div>
+              </div>
+            </div>
+            <div class="page2-cycle-bottom">
+              <p>This is why boosting testosterone doesn't work for most guys.</p>
+            </div>
+          </div>
+
+          <p>Then he said the thing that stuck with me:</p>
+
+          <div class="page2-pull-quote">
+            <p>"You can make more testosterone, but if your body's just converting it into estrogen, <strong>you're spinning your wheels</strong>. The new testosterone becomes fuel for more belly fat."</p>
+            <cite>- Alan, MD</cite>
+          </div>
+
+          <p>I stood there with my beer, probably looking dumb.</p>
+
+          <p>"So what actually works?" I asked.</p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>The Art of Supplements (According to Alan)</h2>
+
+          <p>Now, I want to be clear: <strong>I was skeptical.</strong> I've seen the ads. "Burn fat while you sleep!" "Lose 30 pounds in 30 days!" All garbage.</p>
+
+          <p>But Alan's a doctor. A real one. <strong>Not someone trying to sell me something.</strong> So I listened.</p>
+
+          <p>He said most supplements don't work because <strong>they're designed by marketing people, not scientists</strong>. They throw together a bunch of popular ingredients at tiny doses and slap a label on it.</p>
+
+          <p>But - and this is the part that got me - <strong>when you actually understand the root cause of a problem, and you combine the right ingredients at the right doses, supplements can work.</strong></p>
+
+          <p>It's not magic. It's biochemistry.</p>
+
+          <div class="page2-insight-box">
+            <p>"The human body has specific pathways. If you know which pathways are broken, and you know which compounds affect those pathways, you can make real changes. <strong>That's the difference between a gimmick and a real formulation.</strong>"</p>
+          </div>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>What He Recommended</h2>
+
+          <p>Alan didn't push anything on me. He just mentioned that there's a company called <strong>Thaura</strong> that he respects. Said they have a research team that actually knows what they're doing.</p>
+
+          <p>Their product for this specific issue - the testosterone-to-estrogen loop - is called <strong>Dryft</strong>.</p>
+
+          <p>He explained that <strong>it works on three things at once</strong>:</p>
+
+          <p><strong>1. Blocking the aromatase enzyme</strong> - so less testosterone gets converted to estrogen.</p>
+
+          <p><strong>2. Targeting visceral fat specifically</strong> - that's the deep belly fat that's causing the problem.</p>
+
+          <p><strong>3. Supporting natural testosterone</strong> - without just flooding your system with more T that gets converted anyway.</p>
+
+          <p>"It's not a testosterone booster," he said. <strong>"It's a testosterone protector. Big difference."</strong></p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>My Skeptical Start</h2>
+
+          <p>I didn't order anything that night. I went home, did my own research, and sat on it for about two weeks.</p>
+
+          <p>But the idea wouldn't leave my head: <strong>What if the reason nothing has worked is because I was fighting the wrong battle?</strong></p>
+
+          <p><strong>I wasn't lazy. I wasn't weak.</strong> I was working against my own biology - and <strong>I didn't even know it</strong>.</p>
+
+          <p>So I ordered a bottle. <strong>One bottle. Just to see.</strong></p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>What Actually Happened</h2>
+
+          <p><strong>Week 1-2:</strong> Honestly? Not much I could see. I felt a little more steady through the day - <strong>fewer of those afternoon crashes</strong> where I'd be useless after 3pm. Slept better too, which I wasn't expecting. But if you looked at me, nothing different yet.</p>
+
+          <p><strong>Week 3-4:</strong> My wife mentioned my face looked thinner. I figured she was just being nice. Then I noticed <strong>my pants were a little looser</strong>. Not dramatic, but I could buckle my belt one notch tighter without it digging in.</p>
+
+          <p><strong>Week 5-8:</strong> Okay, this is when I actually started believing something was happening. Stepped on the scale - <strong>down 11 pounds</strong>. But more importantly, I could <em>see</em> it. The gut was smaller. Not gone - I'm not gonna claim miracles - but noticeably smaller. I pulled out a dress shirt I hadn't worn in three years. <strong>It fit.</strong></p>
+
+          <figure class="page2-article-image">
+            <img src="{{ 'gary-pants-fitting.jpg' | asset_url }}" alt="Gary trying on pants that finally fit">
+            <figcaption>The moment I realized something was actually different.</figcaption>
+          </figure>
+
+          <p><strong>By week 12:</strong> <strong>Down 19 pounds. Three inches off my waist.</strong> And the thing I didn't expect at all - energy. Real energy. Not jittery coffee energy. Just... feeling normal. Like I remember feeling in my early 40s before everything started dragging.</p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>What I Wish I'd Known</h2>
+
+          <p>I'm not saying this is going to work for everyone. Bodies are different. I don't know your situation.</p>
+
+          <p>But here's what I wish someone had told me 20 years ago:</p>
+
+          <div class="page2-pull-quote">
+            <p><strong>That gut isn't just sitting there.</strong> It's stealing your testosterone. Draining your energy. Making everything feel harder than it should. And the worst part? <strong>It's using your own hormones to make itself grow.</strong></p>
+          </div>
+
+          <p><strong>You're not lazy. You're not undisciplined.</strong> Your body is working against you - and you probably didn't even know it.</p>
+
+          <p>For me, understanding the testosterone-estrogen loop was <strong>the missing piece</strong>. Once I stopped fighting it with the wrong weapons and started actually addressing the cycle, things changed.</p>
+        </div>
+
+        <div class="page2-content-card">
+          <h2>Four Years From Retirement</h2>
+
+          <p>I've got four years until I'm done working. Four years until I can <strong>travel with my wife, play with future grandkids</strong>, actually enjoy the life I've been building.</p>
+
+          <p><strong>I don't want to spend those years hauling around a gut that makes me tired.</strong> I don't want to avoid photos or buy bigger pants every year.</p>
+
+          <p><strong>I'm not trying to look 25 again. I just want to feel good.</strong></p>
+
+          <p>And for the first time in a long time, <strong>I actually do</strong>.</p>
+
+          <figure class="page2-article-image">
+            <img src="{{ 'gary-wife-walking.jpg' | asset_url }}" alt="Gary and his wife walking together">
+            <figcaption>Sunday walks with Karen. These are the moments I want more of.</figcaption>
+          </figure>
+        </div>
+
+        <hr class="page2-section-break">
+
+        <p>If any of this sounds familiar - the gut that won't budge, the feeling that you've tried everything - <strong>maybe look into what's actually happening inside your body.</strong></p>
+
+        <p>The answer might not be more discipline. It might be different science.</p>
+
+        <div class="page2-signature">
+          <div class="page2-signature-line">- Gary</div>
+          <p class="page2-signature-bio">Gary Thompson is a 54-year-old project manager from Ohio. This is his personal experience and not intended as medical advice. Individual results vary.</p>
+        </div>
+
+      </div>
+    </article>
+
+    <section class="page2-comments-section">
+      <div class="page2-comments-header">
+        <h3>Comments</h3>
+        <span class="page2-comments-count">47 comments</span>
+      </div>
+
+      <div class="page2-comment-form">
+        <div class="page2-comment-form-avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </div>
+        <div class="page2-comment-form-input">
+          <input type="text" id="page2CommentInput" placeholder="Leave a comment...">
+          <button class="page2-comment-form-submit" onclick="page2SubmitComment()">Post</button>
+        </div>
+      </div>
+
+      <div class="page2-comment-success" id="page2CommentSuccess">Thanks for your comment! It's been submitted.</div>
+
+      <div class="page2-comment">
+        <div class="page2-comment-body">
+          <div class="page2-comment-name">Steve M.</div>
+          <p class="page2-comment-text">This is literally me. Thanks for sharing Gary.</p>
+          <div class="page2-comment-actions">
+            <span class="page2-comment-meta">2 days ago</span>
+            <button class="page2-like-btn" onclick="page2ToggleLike(this, 23)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span class="page2-like-count">23</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page2-comment">
+        <div class="page2-comment-body">
+          <div class="page2-comment-name">Mike</div>
+          <p class="page2-comment-text">Never heard of aromatase before. Looked it up and it checks out.</p>
+          <div class="page2-comment-actions">
+            <span class="page2-comment-meta">4 days ago</span>
+            <button class="page2-like-btn" onclick="page2ToggleLike(this, 18)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span class="page2-like-count">18</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page2-comment">
+        <div class="page2-comment-body">
+          <div class="page2-comment-name">BrianK</div>
+          <p class="page2-comment-text">Good read. Appreciate you not making it feel like an infomercial.</p>
+          <div class="page2-comment-actions">
+            <span class="page2-comment-meta">1 week ago</span>
+            <button class="page2-like-btn" onclick="page2ToggleLike(this, 11)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span class="page2-like-count">11</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="page2-comment">
+        <div class="page2-comment-body">
+          <div class="page2-comment-name">Tom</div>
+          <p class="page2-comment-text">Same situation here. Going to look into this.</p>
+          <div class="page2-comment-actions">
+            <span class="page2-comment-meta">1 week ago</span>
+            <button class="page2-like-btn" onclick="page2ToggleLike(this, 7)">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+              <span class="page2-like-count">7</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page2-content-card">
+      <figure class="page2-article-image">
+        <img src="{{ 'supplement-bottle-counter.jpg' | asset_url }}" alt="Supplement bottle on kitchen counter">
+        <figcaption>Morning routine now. Coffee, supplements, out the door.</figcaption>
+      </figure>
+    </div>
+
+    <div class="page2-cta-box">
+      <h3>The Product I Mentioned</h3>
+      <p>If you're curious about Dryft (the supplement Alan recommended), you can learn more on their site. I'm not getting paid to say this - just sharing what worked for me.</p>
+      <a href="https://www.thaura.co/pages/bellyfat" class="page2-cta-button">Learn About Dryft</a>
+      <p class="page2-cta-note">Do your own research - Talk to your doctor</p>
+    </div>
+
+  </main>
+
+  <footer class="page2-footer">
+    <div class="page2-container">
+      <p>This article reflects personal experience and is for informational purposes only. It is not intended as medical advice. Consult your healthcare provider before starting any supplement regimen. Individual results may vary.</p>
+      <p>&copy; 2026 Men's Health Journal &middot; All rights reserved</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    const progress = (scrolled / docHeight) * 100;
+    const progressBar = document.getElementById('page2ProgressBar');
+    if (progressBar) {
+      progressBar.style.width = progress + '%';
+    }
+  });
+
+  // Comment submission
+  function page2SubmitComment() {
+    const input = document.getElementById('page2CommentInput');
+    const success = document.getElementById('page2CommentSuccess');
+
+    if (input && input.value.trim()) {
+      input.value = '';
+      if (success) {
+        success.classList.add('show');
+        setTimeout(() => {
+          success.classList.remove('show');
+        }, 3000);
+      }
+    }
+  }
+
+  // Enter key to submit
+  const page2Input = document.getElementById('page2CommentInput');
+  if (page2Input) {
+    page2Input.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        page2SubmitComment();
+      }
+    });
+  }
+
+  // Like toggle
+  function page2ToggleLike(btn, baseCount) {
+    btn.classList.toggle('liked');
+    const countEl = btn.querySelector('.page2-like-count');
+    const isLiked = btn.classList.contains('liked');
+    if (countEl) {
+      countEl.textContent = isLiked ? baseCount + 1 : baseCount;
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Page 2 Listicle",
+  "settings": []
+}
+{% endschema %}
