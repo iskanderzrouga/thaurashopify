@@ -56,7 +56,7 @@
                     {% endif %}
                     {% if block.settings.description != blank %}
                       <div
-                        class="text-[12px] md:text-[16px] font-medium !leading-tight text-[#000000] [&>p>strong]:font-normal [&>p>strong]:underline [&>p>strong.highlight]:text-[#084C25] [&>p>strong.highlight]:no-underline"
+                        class="text-[12px] md:text-[16px] font-medium !leading-tight text-[#000000]"
                         style="color: {{ block.settings.description_color }};"
                       >
                         {{ block.settings.description | highlight: '‘Excellent’' }}
@@ -68,14 +68,23 @@
           </div>
         {% endif %}
 
+        {% if section.settings.label != blank %}
+          <div
+            class="text-[16px] md:text-[20px] font-normal !leading-tight text-[#000] {% if section.settings.label_m_center %} max-md:text-center {% endif %} {% if section.settings.label_d_center %} md:text-center {% endif %}"
+            style="color: {{ section.settings.label_color }};"
+          >
+            {{ section.settings.label }}
+          </div>
+        {% endif %}
+
         <div class="flex flex-col items-center justify-center gap-5">
           {% if section.settings.heading != blank %}
-            <h2
+            <h1
               class="text-[30px] md:text-[36px] font-bold !leading-tight text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
               style="color: {{ section.settings.heading_color }};"
             >
               {{ section.settings.heading }}
-            </h2>
+            </h1>
           {% endif %}
 
           {% if section.settings.description != blank %}
@@ -175,6 +184,29 @@
       "type": "text",
       "id": "section_id",
       "label": "Section ID"
+    },
+    {
+      "type": "richtext",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "checkbox",
+      "id": "label_m_center",
+      "label": "Label Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "label_d_center",
+      "label": "Label Desktop Center",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label Color",
+      "default": "#000"
     },
     {
       "type": "html",
