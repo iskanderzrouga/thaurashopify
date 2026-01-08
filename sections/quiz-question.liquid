@@ -1,0 +1,232 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="{{ section.settings.section_id }}"
+  class="section-{{ section.id }}-padding relative min-h-[100vh] w-full flex items-center justify-center px-5"
+  style="background-color: {{ section.settings.bgcolor }};"
+>
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col items-center justify-center gap-4 md:gap-8 ">
+      <div class="flex items-center gap-[30px] md:gap-[45px] w-fit mx-auto relative">
+        <div
+          class="absolute h-[6px] md:h-[10px] border border-[#084C25] !block w-[90%] left-[5%] top-[12px] md:top-[17px]"
+          style="display: block!important;"
+        ></div>
+        {% for i in (1..section.settings.total_step) %}
+          <div class="relative {% if i <= section.settings.current_step %} active {% endif %} w-full min-w-[30px] md:min-w-[44px] flex items-center justify-center font-bold text-[21px] md:text-[32px] text-center border border-[#084C25] text-[#084C25] rounded-[100px] bg-white [&.active]:bg-[#EBA12F] !leading-[1] aspect-[1/1] object-contain">
+            {{ i }}
+          </div>
+        {% endfor %}
+      </div>
+      {% if section.settings.quiz_description != blank %}
+        <div
+          class="text-[26px] md:text-[32px] font-medium text-center !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if section.settings.description_d_center %} md:text-center {% endif %}"
+          style="color: {{ section.settings.q_description_color }};"
+        >
+          {{ section.settings.quiz_description }}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div
+          class="flex flex-col gap-2 w-full max-w-[430px] mx-auto"
+          style="max-width: {{ section.settings.quiz_max_width }}px;"
+        >
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'question' %}
+                {% if block.settings.description != blank %}
+                  <a
+                    href="{{ block.settings.url }}"
+                    class="quiz-question cursor-pointer text-[18px] md:text-[20px] p-[14px] md:p-5 font-normal !leading-tight text-[#000000] border border-[#CFCFCF] rounded-[8px] w-full flex items-center justify-center text-center hover:!text-white hover:bg-[#084C25] duration-150 [&.active]:!text-white [&.active]:bg-[#084C25]"
+                    style="color: {{ block.settings.description_color }};"
+                  >
+                    {{ block.settings.description }}
+                  </a>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% comment %} <script>
+  document.querySelectorAll('.section-{{ section.id }}-padding .quiz-question').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.section-{{ section.id }}-padding .quiz-question').forEach(q => q.classList.remove('active'));
+      item.classList.add('active');
+
+      const activeCount = document.querySelectorAll('.quiz-question.active').length;
+      if (activeCount === parseInt("{{ section.settings.total_step }}")) {
+        window.location.href = "{{ section.settings.quiz_url }}";
+      }
+    });
+  });
+</script> {% endcomment %}
+
+{% schema %}
+{
+  "name": "Quiz Question",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "url",
+      "id": "quiz_url",
+      "label": "Quiz URL"
+    },
+    {
+      "type": "header",
+      "content": "Quiz Settings"
+    },
+    {
+      "type": "range",
+      "id": "total_step",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Total Step",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "current_step",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Current Step",
+      "default": 1
+    },
+    {
+      "type": "richtext",
+      "id": "quiz_description",
+      "label": "Quiz Description"
+    },
+    {
+      "type": "color",
+      "id": "q_description_color",
+      "label": "Quiz Description Color",
+      "default": "#000"
+    },
+    {
+      "type": "range",
+      "id": "quiz_max_width",
+      "min": 0,
+      "max": 2000,
+      "step": 20,
+      "unit": "px",
+      "label": "Quiz Max Width",
+      "default": 420
+    },
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quiz Question"
+    }
+  ]
+}
+{% endschema %}

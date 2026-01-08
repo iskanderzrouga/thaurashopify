@@ -1,0 +1,660 @@
+{
+  "sections": {
+    "adv_main_secondary_header_DxVUpL": {
+      "type": "adv-main-secondary-header",
+      "name": "Adv Secondary Header",
+      "settings": {
+        "section_id": "",
+        "text": "Advertorial",
+        "logo": "shopify:\/\/shop_images\/StrongMenDaily.svg",
+        "bgcolor": "#1544aa",
+        "bgcolor2": "#ebebeb",
+        "max_width": 1040,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_ybDHaH": {
+      "type": "adv-main-secondary",
+      "blocks": {
+        "publish_date_yFFpm3": {
+          "type": "publish_date",
+          "settings": {
+            "color": "#1544aa",
+            "description": "<p>Mon. March 16, 2025<\/p>",
+            "image": "shopify:\/\/shop_images\/calendar-event.png"
+          }
+        },
+        "avatar_QxfVcr": {
+          "type": "avatar",
+          "settings": {
+            "heading": "",
+            "description": "<p>Special Advertorial by <strong>Alex Bronwasser<\/strong><br\/><em>Senior Editor<\/em><\/p>",
+            "color": "#121212",
+            "image": "shopify:\/\/shop_images\/image_1550_393cd2d8-6afd-4090-a6d5-3631be58b49d.png"
+          }
+        },
+        "image_dWGaFp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223803_8.png",
+            "max_width": 700
+          }
+        },
+        "description_GeYckr": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>6:00 AM. The alarm goes off. You \"slept\" a full night. But you feel worse than when you went to bed.<\/strong><br\/> <br\/>You hit snooze. Not once. Three times.\u2028 <br\/>When you finally drag yourself out of bed, your head feels stuffed with cotton. Your body is heavy. Your brain is foggy.<br\/> <br\/>You stumble to the coffee maker. Chug the first cup. And by 10 AM, you're still not fully awake.<br\/> <br\/><strong>You \"slept\" eight hours. So why do you feel like you got hit by a truck?<\/strong><br\/> <br\/>Here's what nobody told you about melatonin and sleep aids:<br\/> <br\/><strong>They don't help you sleep better. They sedate you.<\/strong><br\/> <br\/>And there's a massive difference.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_mHncRT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sleeping vs. Being Sedated: Why Your Sleep Aid Is Stealing Your Mornings",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_and_text_MiNkrF": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p>Let me explain what's actually happening when you take melatonin or sleep aids.<br\/> <br\/>These products work by <strong>forcing your brain into a drowsy state.<\/strong><br\/> <br\/>Melatonin floods your system with the sleep hormone, overriding your natural production. Sleep aids (like diphenhydramine in Benadryl or ZzzQuil) are antihistamines that cause sedation as a side effect.<br\/> <br\/><strong>You're not falling asleep naturally. You're being drugged into unconsciousness.<\/strong><br\/> <br\/>And here's the problem:<br\/> <br\/>When you're sedated, you don't cycle through proper sleep stages. Your brain doesn't get the deep, restorative sleep it needs. You're unconscious, but you're not actually resting.<br\/> <br\/>Plus—and this is the kicker—<strong>these compounds stay in your system for hours after you wake up.<\/strong><br\/> <br\/>You feel worse than before the coffee. So you drink another.<\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250913_17e3e261-db53-4caa-87fb-0c939e09d6da.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "image_and_text_XbJJYn": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p>Melatonin has a half-life of 20-50 minutes, but its metabolites linger. Sleep aids have a half-life of 4-8 hours, meaning the drug is literally still in your bloodstream when your alarm goes off.<br\/> <br\/><strong>That grogginess? That's the drug still in your body.<\/strong><br\/> <br\/>You traded your sleep problem for a morning problem.<br\/> <br\/>You can't focus in meetings. You're moving in slow motion. You need multiple coffees just to feel semi-human.<br\/> <br\/><strong>You're starting every single day behind.<\/strong><\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250912_6.png",
+            "image_right": true,
+            "max_width": 400
+          }
+        },
+        "heading_aC9tfX": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Dependency Trap Nobody Warns You About",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_jmqg7J": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223803_9.png",
+            "max_width": 700
+          }
+        },
+        "description_k47q9x": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Here's what happens when you take melatonin or sleep aids regularly:<br\/> <br\/><strong>Your body adapts.<\/strong><br\/> <br\/>Here's the difference:<br\/> <br\/>With melatonin, your natural production starts to decrease. Your body thinks, \"Why produce melatonin when we're getting it externally?\" So it makes less. Now you can't fall asleep without it.<br\/> <br\/>With antihistamine sleep aids, you develop tolerance. The same dose stops working. You need more.<br\/> <br\/><strong>You're not solving your sleep problem. You're creating a dependency.<\/strong><br\/> <br\/>You started taking it occasionally. \"Just when I really need it.\"<br\/> <br\/>But now it's every night. And if you try to stop? Rebound insomnia. You lie there awake, anxiety spiking, because your body can't fall asleep on its own anymore.<br\/> <br\/><strong>You're stuck.<\/strong><br\/> <br\/>And deep down, you know this can't be the solution for the rest of your life. But you also can't sleep without it.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_xhrXwN": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "What If You Could Sleep Deeply Without Sedation—And Wake Up Actually Rested?",
+            "description": "<p>Here's what you need to understand:<br\/> <br\/><strong>I know you're skeptical. Every \"energy\" product is just caffeine disguised.<\/strong><br\/> <br\/>Let me explain:<br\/> \u2028Your stress hormone—cortisol—should naturally drop in the evening. That's the signal for your body to transition into sleep mode.<br\/> \u2028 \"Natural energy\" pills? Usually green tea extract (which is just... caffeine).<\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250912_7.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "description_aXhTDF": {
+          "type": "description",
+          "settings": {
+            "description": "<p>But when you're chronically stressed (work, responsibilities, life), your cortisol stays elevated. You lie there at night with your mind racing, body tense, unable to shut down.<br\/> <br\/><strong>You're trying to sleep while your body is still in stress mode.<br\/> <\/strong><br\/>No amount of melatonin fixes that. Melatonin just masks the problem by sedating you. Your cortisol is still elevated. Your stress response is still active.<br\/> <br\/>You're unconscious, but you're not getting restorative sleep.<br\/> <br\/><strong>This is why you wake up exhausted even after \"sleeping\" eight hours.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_NipFr4": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Adaptogens Restore Natural Sleep (Without Sedation or Dependency)",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "description_TYkM8d": {
+          "type": "description",
+          "settings": {
+            "description": "<p>This is where adaptogens change everything.<br\/> <br\/><strong>Adaptogens don't sedate you. They regulate your stress response so your body can naturally transition into deep sleep.<\/strong><br\/> <br\/>The most clinically studied adaptogen for sleep and stress is KSM-66 Ashwagandha.<br\/> <br\/>In multiple human clinical trials, 600mg of KSM-66 daily has been shown to:<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "icon_text_qBFdwT": {
+          "type": "icon_text",
+          "settings": {
+            "five_col": true,
+            "color": "#0b0b0b",
+            "highlight": "27.9-32%",
+            "bgcolor": "#eff8fe",
+            "description1": "<p><strong>Reduce cortisol by 27.9-32%<\/strong> (clinically significant reduction)<\/p>",
+            "sub_description1": "<p>*Results are based on individuals ingredients<\/p>",
+            "icon1": "shopify:\/\/shop_images\/Group_2085661494_5.png",
+            "description2": "<p><strong>Significantly improve sleep quality<\/strong> scores compared to placebo<\/p>",
+            "sub_description2": "",
+            "icon2": "shopify:\/\/shop_images\/Group_2085661495_2.png",
+            "description3": "<p><strong>Improve sleep onset latency<\/strong> (time to fall asleep)<\/p>",
+            "sub_description3": "",
+            "icon3": "shopify:\/\/shop_images\/Group_2085661494_6.png",
+            "description4": "<p><strong>Increase morning alertness<\/strong> (you wake up actually rested)<\/p>",
+            "sub_description4": "",
+            "icon4": "shopify:\/\/shop_images\/Frame_1707481875_4.png",
+            "description5": "<p><strong>No dependency or withdrawal effects <\/strong>when discontinued<\/p>",
+            "sub_description5": "",
+            "icon5": "shopify:\/\/shop_images\/Group_2085661494_7.png"
+          }
+        },
+        "description_XBdzdB": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>Here's the critical difference:<\/strong><br\/><br\/><strong>Melatonin\/Sleep Aids: <\/strong>Sedate you → Poor sleep architecture → Drug lingering in morning → Grogginess<br\/> <br\/><strong>KSM-66 Ashwagandha: <\/strong>Lowers cortisol → Natural sleep transition → Proper sleep cycles → Wake refreshed<br\/> <br\/>In one clinical study specifically looking at sleep, participants taking 600mg KSM-66 daily for 8 weeks showed:<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "icon_text_FLB9Y9": {
+          "type": "icon_text",
+          "settings": {
+            "five_col": false,
+            "color": "#0b0b0b",
+            "highlight": "",
+            "bgcolor": "#eff8fe",
+            "description1": "<p>Significant improvements in sleep quality<\/p>",
+            "sub_description1": "",
+            "icon1": "shopify:\/\/shop_images\/Group_2085661495_3.png",
+            "description2": "<p>Better sleep efficiency<\/p>",
+            "sub_description2": "",
+            "icon2": "shopify:\/\/shop_images\/Group_2085661495_4.png",
+            "description3": "<p>Reduced time to fall asleep<\/p>",
+            "sub_description3": "",
+            "icon3": "shopify:\/\/shop_images\/Frame_1707481875_5.png",
+            "description4": "<p><strong>Improved morning alertness<\/strong> (the opposite of grogginess)<\/p>",
+            "sub_description4": "",
+            "icon4": "shopify:\/\/shop_images\/Frame_1707481875_6.png",
+            "description5": "",
+            "sub_description5": ""
+          }
+        },
+        "description_E3L9D4": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>And when the study ended? No rebound insomnia. No withdrawal. Sleep improvements persisted.<\/strong><br\/> <br\/>Because adaptogens don't create dependency. They restore your body's natural ability to sleep.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_9TLxyV": {
+          "type": "heading",
+          "settings": {
+            "heading": "What It Actually Feels Like to Sleep Without Being Sedated",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_and_text_cLcty7": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p>Here's what people report after 3-4 weeks on Thaura:<br\/> <br\/><strong>Nighttime<\/strong>: Your mind stops racing around 9 or 10 PM. Not because you're drugged, but because your stress response naturally winds down. You feel tired in a natural way. You fall asleep within 15-20 minutes without lying there anxious.<br\/> <br\/><strong>During sleep<\/strong>: You sleep deeply. No tossing and turning. No waking up at 3 AM staring at the ceiling. Just solid, restorative sleep.<br\/> <br\/><strong>Morning<\/strong>: The alarm goes off. And here's the wild part—you can actually wake up.<br\/> <br\/>Not the zombie stumble to coffee. Not three snooze buttons. You open your eyes and you're... awake. Clear. Functional.<br\/> <br\/>Your head isn't foggy. You don't feel like you're still half-asleep. You feel rested.<br\/> <br\/><strong>That's what natural, restorative sleep feels like.<\/strong><\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/Group_2085661544.png",
+            "image_right": true,
+            "max_width": 400
+          }
+        },
+        "description_Pp8heD": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Not sedation. Not being knocked out. Actual rest that your body and brain needed.<br\/><br\/>You get to work sharp from the start. No waiting until 11 AM to feel human.<br\/><br\/><strong>You're starting your day ahead instead of behind.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_DDF9Vy": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"But I've Tried Everything. Nothing Works.\"",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_bHzfGJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223917.png",
+            "max_width": 700
+          }
+        },
+        "description_m4af63": {
+          "type": "description",
+          "settings": {
+            "description": "<p>You've tried melatonin. It worked at first, but now you can't sleep without it and you wake up groggy.<br\/><br\/>You've tried sleep aids. Same thing—grogginess, dependency, and you still don't feel rested.<br\/><br\/>You've tried sleep hygiene. \"No screens before bed.\" \"Keep the room cool.\" And sure, those help. But they don't fix the core problem.<br\/><br\/><strong>Your cortisol is still elevated. Your stress response is still active.<\/strong><br\/><br\/>You can have perfect sleep hygiene, but if your body is in fight-or-flight mode, you won't sleep well.<br\/><br\/><strong>This is why nothing has worked. You've been treating symptoms, not the root cause.<\/strong><br\/><br\/>Adaptogens address the actual problem: the stress response keeping you wired when you should be winding down.<br\/><br\/>When your cortisol drops to healthy levels at night, your body can naturally fall into deep, restorative sleep.<br\/><br\/><strong>You're not being sedated. You're being restored.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_ALJgmB": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Formula: Clinical Doses That Restore Natural Sleep",
+            "heading_color": "#0b0b0b",
+            "italic": true,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "ingredients_9nHaYG": {
+          "type": "ingredients",
+          "settings": {
+            "heading": "Each 2-capsule serving contains:",
+            "description": "<p>Plus: Zinc, Boron, DIM, and metabolic support for complete hormonal and sleep optimization<\/p>",
+            "color": "#0b0b0b",
+            "bgcolor": "#1544aa",
+            "btn_text1": "KSM-66® Ashwagandha",
+            "heading1": "600mg KSM-66® Ashwagandha",
+            "description1": "<p>The exact clinical dose shown to reduce cortisol 27.9-32% and improve sleep quality without sedation<\/p>",
+            "icon1": "shopify:\/\/shop_images\/image_30_b9198d61-0cca-4715-962f-92b5d020bd6b.png",
+            "btn_text2": "160mg L-Theanine",
+            "heading2": "160mg L-Theanine",
+            "description2": "<p>Promotes relaxation without drowsiness. Works synergistically with ashwagandha<\/p>",
+            "icon2": "shopify:\/\/shop_images\/image_32_5eb29607-8775-422c-9736-a621a5833710.png",
+            "btn_text3": "GlucoVantage® (Dihydroberberine)",
+            "heading3": "GlucoVantage® (Dihydroberberine)",
+            "description3": "<p>Prevents nighttime blood sugar swings that disrupt sleep<\/p>",
+            "icon3": "shopify:\/\/shop_images\/image_29_d1f12cc3-1994-497e-b1b4-31cd9c0ca4d6.png"
+          }
+        },
+        "description_GXHUgh": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>Everything is:<\/strong><br\/><br\/><\/p><ul><li>Third-party tested for purity<\/li><li>No proprietary blends<\/li><li>No melatonin, no sedating antihistamines<\/li><li>No artificial additives<\/li><li>Made in USA, GMP-certified<br\/><\/li><\/ul><p><strong><br\/>No sedation. No grogginess. No dependency.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_aaR6Xh": {
+          "type": "heading",
+          "settings": {
+            "heading": "90 Days to Sleep Better and Wake Sharper",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        }
+      },
+      "block_order": [
+        "publish_date_yFFpm3",
+        "avatar_QxfVcr",
+        "image_dWGaFp",
+        "description_GeYckr",
+        "heading_mHncRT",
+        "image_and_text_MiNkrF",
+        "image_and_text_XbJJYn",
+        "heading_aC9tfX",
+        "image_jmqg7J",
+        "description_k47q9x",
+        "image_and_text_xhrXwN",
+        "description_aXhTDF",
+        "heading_NipFr4",
+        "description_TYkM8d",
+        "icon_text_qBFdwT",
+        "description_XBdzdB",
+        "icon_text_FLB9Y9",
+        "description_E3L9D4",
+        "heading_9TLxyV",
+        "image_and_text_cLcty7",
+        "description_Pp8heD",
+        "heading_DDF9Vy",
+        "image_bHzfGJ",
+        "description_m4af63",
+        "heading_ALJgmB",
+        "ingredients_9nHaYG",
+        "description_GXHUgh",
+        "heading_aaR6Xh"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 768px) {#icon_text_qBFdwT .icon-text-5 {grid-column: 2 \/ 4; }}"
+      ],
+      "name": "Adv Main Secondary",
+      "settings": {
+        "heading": "You Took Melatonin Last Night. You \"Slept\" Eight Hours. So Why Do You Feel Like Absolute Garbage?",
+        "heading_color": "#0b0b0b",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 50,
+        "padding_bottom": 12,
+        "padding_top_m": 20,
+        "padding_bottom_m": 12
+      }
+    },
+    "nl_guarantee_YQwgGV": {
+      "type": "nl-guarantee",
+      "name": "NL Guarantee",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Group_49198.png",
+        "heading": "Your Purchase Is Protected by Our 90-Day \"See Results or Pay Nothing\" Guarantee",
+        "description": "<p>You've tried other products with disappointing results. That’s why we’re taking all the risk.<br\/><br\/>Try Dryft for a full 90 days. If you don't feel more energetic, see visible changes, or notice clothes fitting better – simply send us an email, and we will refund 100% of your purchase. You don't even have to return the bottles.<br\/><br\/>Why 90 days? Because real metabolic change takes time and we want you to experience the full benefits before deciding. Either way, you're covered.<br\/><\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_image_text_4VwQk3": {
+      "type": "adv-main-secondary-image-text",
+      "blocks": {
+        "row_QYCc9t": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 1",
+            "description": "<p>You might notice you're slightly less wired at night. Falling asleep may be easier. Morning grogginess might start to lift.<\/p>"
+          }
+        },
+        "row_yjzYxF": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 2-3",
+            "description": "<p>This is where most people notice the shift. You're falling asleep more easily. Sleeping more deeply. And most importantly—<strong>waking up actually refreshed.<\/strong> No fog. No dragging yourself out of bed.<\/p>"
+          }
+        },
+        "row_T97LcW": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 4+",
+            "description": "<p>Quality sleep becomes your new normal. You naturally wind down at night, sleep well, and wake up ready to go. No grogginess. No dependency.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_QYCc9t",
+        "row_yjzYxF",
+        "row_T97LcW"
+      ],
+      "name": "ADV 2 Image Text",
+      "settings": {
+        "section_id": "",
+        "heading": "Here's what to expect:",
+        "color": "#00754a",
+        "image": "shopify:\/\/shop_images\/Frame_1707481809.png",
+        "image_right": true,
+        "image_max_width": 400,
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_JCUFhz": {
+      "type": "adv-main-secondary",
+      "blocks": {
+        "description_ACzK6z": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>If you don't notice significant improvement in your sleep quality and morning alertness by day 90, we'll refund every penny.<\/strong><br\/><br\/>No hassle. Just email us.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_NknQCn": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "Stop Choosing Between Sleep and Mornings",
+            "description": "<p>How much longer are you going to start every day in a fog?<br\/><br\/>How many more mornings will you need three coffees just to feel human?<br\/><br\/><strong>You deserve to sleep well AND wake up sharp.<\/strong><br\/><br\/>Not sedated unconsciousness followed by groggy mornings. Real, restorative sleep that leaves you energized.<\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/Gemini_Generated_Image_fsuks8fsuks8fsuk_1_446518ce-74a6-4777-ace2-352b44ddd023.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "description_ACzK6z",
+        "image_and_text_NknQCn"
+      ],
+      "name": "Adv Main Secondary",
+      "settings": {
+        "heading": "",
+        "heading_color": "#0b0b0b",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_product_JJWzFx": {
+      "type": "adv-main-secondary-product",
+      "blocks": {
+        "row_bVXG6C": {
+          "type": "row",
+          "settings": {
+            "description": "<p>600mg clinical-dose KSM-66<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_ef41f8e7-9629-44ba-8fe3-f0b0d2e710e6.png"
+          }
+        },
+        "row_n3HJa6": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Proven to improve sleep quality without sedation<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_9.png"
+          }
+        },
+        "row_6EtNYU": {
+          "type": "row",
+          "settings": {
+            "description": "<p>No melatonin, no sedating antihistamines<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_10.png"
+          }
+        },
+        "row_wQ3Q69": {
+          "type": "row",
+          "settings": {
+            "description": "<p>No grogginess, no dependency<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521_3.png"
+          }
+        },
+        "row_rVgJCx": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Third-party tested<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521_5.png"
+          }
+        },
+        "row_4HQVLM": {
+          "type": "row",
+          "settings": {
+            "description": "<p>90-day money-back guarantee<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_11.png"
+          }
+        },
+        "row_px6qyP": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Free shipping<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521_6.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_bVXG6C",
+        "row_n3HJa6",
+        "row_6EtNYU",
+        "row_wQ3Q69",
+        "row_rVgJCx",
+        "row_4HQVLM",
+        "row_px6qyP"
+      ],
+      "name": "ADV 2 Product",
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08_6.png",
+        "heading": "<p>Exclusive Discount Up to <br\/><strong>50% OFF!<\/strong><\/p>",
+        "description": "<p>This limited time deal is in high demand and stock keeps selling out.<\/p>",
+        "button_label": "GET THAURA NOW",
+        "button_url": "shopify:\/\/pages\/strss-sleep-alt-pdp",
+        "bottom_text": "<p>This special offer is valid until <strong>Tuesday, October 7, 2025<\/strong><\/p>",
+        "deco_image": "shopify:\/\/shop_images\/Frame_2147223934_d672502d-5f61-4531-a351-1436b773c381.png",
+        "bgcolor": "#f1f1f1",
+        "border_color": "#1544aa",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "adv_main_secondary_note_Bkk4Md": {
+      "type": "adv-main-secondary-note",
+      "name": "ADV 2 Note",
+      "settings": {
+        "section_id": "",
+        "description": "<p><strong>P.S. <\/strong>— You've been waking up tired for how long? Months? Years?<br\/><br\/>At some point you have to ask: Is melatonin actually solving your sleep problem? Or are you just trading one problem for another?<br\/><br\/>Give your body 90 days to restore natural, restorative sleep.<br\/><br\/>If it doesn't work, you get your money back. But if it does? You get your mornings back. <\/p>",
+        "button_label": "TRY THAURA RISK-FREE",
+        "button_url": "shopify:\/\/pages\/strss-sleep-alt-pdp",
+        "bgcolor": "#eff8fe",
+        "border_color": "#ff3000",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "adv_main_secondary_faqs_RG3QTP": {
+      "type": "adv-main-secondary-faqs",
+      "blocks": {
+        "row_6kW6xC": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How is this different from melatonin or sleep aids?",
+            "description": "<p>Melatonin and sleep aids sedate you—they force unconsciousness but disrupt natural sleep and cause grogginess. Thaura uses adaptogens that lower cortisol so your body can naturally transition into deep sleep. No sedation. No grogginess. No dependency.<\/p>"
+          }
+        },
+        "row_DriJTc": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Will I become dependent on this?",
+            "description": "<p>No. Clinical studies show that when KSM-66 supplementation is stopped, sleep improvements persist without rebound insomnia. Adaptogens restore natural function; they don't replace it.<\/p>"
+          }
+        },
+        "row_MTgmrU": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "When will I notice results?",
+            "description": "<p>Most people notice easier sleep onset and reduced grogginess within 1-2 weeks. Full sleep quality improvements build over 3-4 weeks.<\/p>"
+          }
+        },
+        "row_nKdnr9": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Will this make me drowsy during the day?",
+            "description": "<p>No. Adaptogens don't sedate you. Most people report feeling more alert during the day because they're actually getting restorative sleep at night.<\/p>"
+          }
+        },
+        "row_PLRMQj": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Can I take this with melatonin?",
+            "description": "<p>You can, but most people find they don't need melatonin anymore within 2-3 weeks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_6kW6xC",
+        "row_DriJTc",
+        "row_MTgmrU",
+        "row_nKdnr9",
+        "row_PLRMQj"
+      ],
+      "name": "ADV 2 Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Quick Answers",
+        "description": "",
+        "dropdown_heading_bgcolor": "",
+        "dropdown_content_bgcolor": "",
+        "button_label": "RESTORE NATURAL SLEEP TODAY",
+        "button_url": "shopify:\/\/pages\/strss-sleep-alt-pdp",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#171717",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "adv_main_secondary_footer_fH7cQW": {
+      "type": "adv-main-secondary-footer",
+      "name": "Adv Secondary Footer",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_color": "#444444",
+        "description": "<p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.<\/p>",
+        "description_color": "#444444",
+        "button_label": "",
+        "button_url": "",
+        "border_color": "#d9d9d9",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "padding_top_m": 28,
+        "padding_bottom_m": 28
+      }
+    }
+  },
+  "order": [
+    "adv_main_secondary_header_DxVUpL",
+    "adv_main_secondary_ybDHaH",
+    "nl_guarantee_YQwgGV",
+    "adv_main_secondary_image_text_4VwQk3",
+    "adv_main_secondary_JCUFhz",
+    "adv_main_secondary_product_JJWzFx",
+    "adv_main_secondary_note_Bkk4Md",
+    "adv_main_secondary_faqs_RG3QTP",
+    "adv_main_secondary_footer_fH7cQW"
+  ]
+}

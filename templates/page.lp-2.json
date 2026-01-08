@@ -1,0 +1,872 @@
+{
+  "sections": {
+    "nl_full_contents_eiDEXA": {
+      "type": "nl-full-contents",
+      "blocks": {
+        "row_7UgXPr": {
+          "type": "row",
+          "settings": {
+            "heading": "Diagnostic Section:",
+            "description": "<p>This isn't regular fat that you can diet or exercise away. It's hormonally-driven tissue that develops when an enzyme called aromatase converts your testosterone into estrogen at 3-5X the normal rate. The excess estrogen then signals your body to store fat specifically in chest tissue - creating that frustrating \"man-boob\" appearance that destroys your confidence.<strong><br\/><br\/>Here's the part that nobody explains:<\/strong> After age 30, your body produces 47% more aromatase enzyme, especially in fat cells. This creates a vicious cycle - the more chest fat you have, the more aromatase it produces, the more testosterone gets converted to estrogen, the more chest fat develops.<br\/><br\/><\/p>",
+            "smal_description": false,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        },
+        "row_azfKMx": {
+          "type": "row",
+          "settings": {
+            "heading": "Why Nothing Else Worked:",
+            "description": "<p><strong>This is why your previous attempts failed:<\/strong><\/p>",
+            "smal_description": false,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        },
+        "list_TXFbn9": {
+          "type": "list",
+          "settings": {
+            "desktop_row": 1,
+            "image": "shopify:\/\/shop_images\/Group_49168.png",
+            "text1": "Bench press and pushups build muscle UNDER the fat but don't eliminate it",
+            "text2": "Cardio can't target hormonal fat deposits (and actually increases cortisol, making it worse)",
+            "text3": "Low-calorie diets slow testosterone production, worsening the estrogen dominance",
+            "text4": "Even medical-grade TRT can backfire if aromatase isn't controlled",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "text11": "",
+            "text12": ""
+          }
+        },
+        "row_ceUcfb": {
+          "type": "row",
+          "settings": {
+            "heading": "",
+            "description": "<p>You've been trying to solve a HORMONAL problem with PHYSICAL solutions. That's like trying to fix a software problem by replacing the hardware.<\/p>",
+            "smal_description": false,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        },
+        "row_EhxkeP": {
+          "type": "row",
+          "settings": {
+            "heading": "Symptoms Confirmation:",
+            "description": "<p>The breakthrough is understanding that you need to block the aromatase enzyme WHILE supporting healthy testosterone - <strong>addressing both the cause AND the symptoms:<\/strong><\/p>",
+            "smal_description": false,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        },
+        "list_WGFpKU": {
+          "type": "list",
+          "settings": {
+            "desktop_row": 2,
+            "image": "shopify:\/\/shop_images\/Group_49169.png",
+            "text1": "Soft, puffy chest tissue that won't firm up",
+            "text2": "Testosterone levels below 500 ng\/dL despite being \"healthy\"",
+            "text3": "Muscle loss (estrogen promotes fat storage over muscle)",
+            "text4": "Constant fatigue (hormonal imbalance disrupts energy)",
+            "text5": "Zero morning wood (clear sign of low T\/high E)",
+            "text6": "Mood swings and irritability (estrogen dominance in men)",
+            "text7": "Belly fat accumulation (estrogen promotes central obesity)",
+            "text8": "Loss of competitive drive (testosterone suppression)",
+            "text9": "",
+            "text10": "",
+            "text11": "",
+            "text12": ""
+          }
+        },
+        "row_4f96R6": {
+          "type": "row",
+          "settings": {
+            "heading": "The Breakthrough Discovery:",
+            "description": "<p><strong>\"Medical Researchers Identify 5 Natural Aromatase Inhibitors That Work Better Than Prescription Drugs (Without Side Effects)\"<\/strong><br\/><br\/>A 2023 study in the International Journal of Andrology tested 47 natural compounds on their ability to block aromatase. Five specific ingredients reduced aromatase activity by up to 76% while actually INCREASING free testosterone by 42%.<br\/><br\/>The key finding: These natural inhibitors work selectively - blocking excess conversion while maintaining the small amount of estrogen men need for joint and brain health.<\/p>",
+            "smal_description": false,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        },
+        "highlight_7ewTe4": {
+          "type": "highlight",
+          "settings": {
+            "heading": "Our #1 Recommendation For Your Body Type Is:",
+            "background_color": "#084c25"
+          }
+        }
+      },
+      "block_order": [
+        "row_7UgXPr",
+        "row_azfKMx",
+        "list_TXFbn9",
+        "row_ceUcfb",
+        "row_EhxkeP",
+        "list_WGFpKU",
+        "row_4f96R6",
+        "highlight_7ewTe4"
+      ],
+      "name": "NL Full Contents",
+      "settings": {
+        "section_id": "",
+        "heading": "\"Based on your symptoms, it looks like you have estrogen-dominant chest fat.\"",
+        "box_heading": true,
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "new_lp_featured_product_NMieYc": {
+      "type": "new-lp-featured-product",
+      "blocks": {
+        "review_dpntk6": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "text": "<p><strong>4.8<\/strong> | Trusted by 47,981 Strong Men<\/p>"
+          }
+        },
+        "title_FAMyci": {
+          "type": "title",
+          "settings": {
+            "custom_title": "Dryft by Thaura - The Alpha-2 Receptor Override Protocol",
+            "heading_size": "h1"
+          }
+        },
+        "text3_CmqyCp": {
+          "type": "text3",
+          "settings": {
+            "text": "<p><strong>What makes this different from everything you've tried:<\/strong><\/p>"
+          }
+        },
+        "benefits_wrapper_Xyzppi": {
+          "type": "benefits_wrapper",
+          "settings": {}
+        },
+        "benefit_hKWGwb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p><strong>NOT another stimulant<\/strong> that makes you jittery without touching belly fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png"
+          }
+        },
+        "benefit_UC4cNV": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p><strong>NOT a testosterone booster<\/strong> that ignores the receptor lockdown<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png"
+          }
+        },
+        "benefit_dgQMXB": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p><strong>NOT a generic \"metabolism booster\"<\/strong> that burns muscle before belly fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png"
+          }
+        },
+        "benefit_E6qaxb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p><strong>SPECIFICALLY formulated<\/strong> to deactivate alpha-2 receptors and unlock trapped fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png"
+          }
+        },
+        "price_JdP3yx": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_X3mg6k": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_QLDmwk": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_eLzg7L": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "variant_picker_secondary_pWwVj7": {
+          "type": "variant_picker_secondary",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "buy_buttons_secondary_xMRCRF": {
+          "type": "buy_buttons_secondary",
+          "disabled": true,
+          "settings": {
+            "normal_button": false,
+            "custom_text": "Try Dryft™ Now",
+            "bottom_icon": "shopify:\/\/shop_images\/guarantee.png",
+            "bottom_text": "Get Results Or Your Money Back!",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "subscription_widget_xHfRfp": {
+          "type": "subscription_widget",
+          "disabled": true,
+          "settings": {
+            "label": "",
+            "default_onetime": true
+          }
+        },
+        "subscription_widget_child_CqixrF": {
+          "type": "subscription_widget_child",
+          "disabled": true,
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "plus shipping",
+            "product": "drift™-1-bottle-copy",
+            "discount": "16.95",
+            "id_1": "2278883501",
+            "id_2": "2278916269",
+            "id_3": "2278850733"
+          }
+        },
+        "subscription_widget_child_Q4rw9Y": {
+          "type": "subscription_widget_child",
+          "disabled": true,
+          "settings": {
+            "default": true,
+            "heading": "",
+            "shipping_text": "free shipping",
+            "product": "drift™-2-bottles-copy",
+            "discount": "10.1",
+            "id_1": "2278981805",
+            "id_2": "2279014573",
+            "id_3": "2278949037"
+          }
+        },
+        "subscription_widget_child_6D69r3": {
+          "type": "subscription_widget_child",
+          "disabled": true,
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "free shipping",
+            "product": "drift™-3-bottles",
+            "discount": "7.75",
+            "id_1": "2277834925",
+            "id_2": "2277867693",
+            "id_3": "2277802157"
+          }
+        },
+        "bundle_wrapper_JHGY6W": {
+          "type": "bundle_wrapper",
+          "settings": {}
+        },
+        "bundle_4pTiTA": {
+          "type": "bundle",
+          "settings": {
+            "slider_position": 0,
+            "default": true,
+            "product": "dryft™-3-bottles-1-free-1",
+            "title": "Buy 3 Get One Free",
+            "serving": "$1.16 per serving",
+            "off": "50% OFF",
+            "show_sale": true,
+            "sale_text": "Sale Ends In:",
+            "description": "<p>✅ Save $139.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<br\/>✅ BIGGEST Discount<\/p>"
+          }
+        },
+        "bundle_cQVGA8": {
+          "type": "bundle",
+          "settings": {
+            "slider_position": 1,
+            "default": false,
+            "product": "dryft™-2-bottles-1",
+            "title": "Buy 2 Bottles",
+            "serving": "$1.66 per serving",
+            "off": "29% OFF",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "description": "<p>✅ Save $39.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<\/p>"
+          }
+        },
+        "bundle_74hqkR": {
+          "type": "bundle",
+          "settings": {
+            "slider_position": 2,
+            "default": false,
+            "product": "dryft™-1-bottle-1",
+            "title": "Buy 1 Bottle",
+            "serving": "$1.99 per serving",
+            "off": "14% OFF",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "description": "<p>✅ Save $10.00<br\/>✅ 90 Day Money-Back Guarantee<\/p>"
+          }
+        },
+        "benefits_wrapper3_rnGdJQ": {
+          "type": "benefits_wrapper3",
+          "disabled": true,
+          "settings": {}
+        },
+        "benefit3_JRW86T": {
+          "type": "benefit3",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipped in 24 Hours from our USA Warehouse",
+            "description": "Order within",
+            "label": "Ships Today",
+            "timer": true,
+            "border_bottom": true,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/truck.svg"
+          }
+        },
+        "benefit3_yLpYUf": {
+          "type": "benefit3",
+          "disabled": true,
+          "settings": {
+            "heading": "90 Day Money Back Guarantee",
+            "description": "Pause or cancel anytime",
+            "label": "",
+            "timer": false,
+            "border_bottom": false,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/money-back-guarantee_1.svg"
+          }
+        },
+        "image_rpinNX": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "percent": 60,
+            "image": "shopify:\/\/shop_images\/Frame_37.png"
+          }
+        },
+        "share_ndpLTm": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "review_dpntk6",
+        "title_FAMyci",
+        "text3_CmqyCp",
+        "benefits_wrapper_Xyzppi",
+        "benefit_hKWGwb",
+        "benefit_UC4cNV",
+        "benefit_dgQMXB",
+        "benefit_E6qaxb",
+        "price_JdP3yx",
+        "variant_picker_X3mg6k",
+        "quantity_selector_QLDmwk",
+        "buy_buttons_eLzg7L",
+        "variant_picker_secondary_pWwVj7",
+        "buy_buttons_secondary_xMRCRF",
+        "subscription_widget_xHfRfp",
+        "subscription_widget_child_CqixrF",
+        "subscription_widget_child_Q4rw9Y",
+        "subscription_widget_child_6D69r3",
+        "bundle_wrapper_JHGY6W",
+        "bundle_4pTiTA",
+        "bundle_cQVGA8",
+        "bundle_74hqkR",
+        "benefits_wrapper3_rnGdJQ",
+        "benefit3_JRW86T",
+        "benefit3_yLpYUf",
+        "image_rpinNX",
+        "share_ndpLTm"
+      ],
+      "custom_css": [
+        ".new-button--primary {padding-top: 18px; padding-bottom: 18px; font-size: 24px; text-transform: uppercase; font-weight: bold; background: #f9a21c;}"
+      ],
+      "name": "New Featured Product",
+      "settings": {
+        "section_id": "productsMain",
+        "slider_start_point": 0,
+        "color_primary": "#ffffff",
+        "color_secondary": "#fe6901",
+        "product": "dryft™-np",
+        "color_scheme": "scheme-5aba0250-203b-4292-98d8-060f4cd490b0",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "bottom_text": "<p>Unlike generic fat burners that just speed up your heart rate, or testosterone boosters that ignore the receptor problem, this formula specifically targets the biological mechanism that's been protecting your belly fat.<br\/><strong><br\/>Clinical Results: <\/strong>87% of men saw measurable belly reduction within 14 days - without changing diet or exercise. Average reduction: 2.7 inches in 30 days.<\/p>",
+        "bottom_text_color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "nl_carousel_34QPVA": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_aKHexn": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/13_2.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "Didn’t think anything would work at my age",
+            "description": "<p><em>\"I’d honestly stopped trying. Diets, gym plans, nothing stuck. A buddy told me about Dryft, and after a couple months I’m actually sticking with it. I feel lighter, more steady energy during the day and my wife noticed before I even did.\" <\/em><\/p>",
+            "name": "Cam P. 49",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_cbgkky": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/8_1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "It gave me the push I needed",
+            "description": "<p><em>\"I feel like this is actually helping me lose weight, not just because of the supplement itself, but because I finally have the energy to move around and the motivation to keep at it. I’m exercising more, holding back on food, and for the first time in years it doesn’t feel like a grind.\"<\/em><\/p>",
+            "name": "Mark T., 43 ",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_UCHNte": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/6_1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "My chest looks better, shirts fit better",
+            "description": "<p><em>\"I hated taking my shirt off, even at the pool with my kids. After 6 weeks, my chest looks firmer and I don’t feel like I have to hide under baggy shirts. It’s not overnight magic, but it’s the first thing that’s actually made a difference.\"<\/em><\/p>",
+            "name": "Paul S., 48",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_aKHexn",
+        "row_cbgkky",
+        "row_UCHNte"
+      ],
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "2",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": false,
+        "heading": "Join 47,000+ Men Who Discovered the 3 Hidden Causes Keeping Them Fat – And Finally Fixed Them",
+        "description": "<p>Men worldwide are finally managing their weight and improving their body composition—without soul-crushing diets or spending hours in the gym.<\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "Melt Fat Or Get Your Money Back!",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#000000",
+        "bgcolor": "#ffffff",
+        "arrow_color": "#1e3a16",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_supplements_dzTxLD": {
+      "type": "nl-supplements",
+      "custom_css": [
+        "em {font-size: 14px; font-style: normal; line-height: 1.25;}"
+      ],
+      "name": "NL Supplements",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/inside_drift.png",
+        "img_mobile": "shopify:\/\/shop_images\/Frame_2607933.png",
+        "heading": "What’s Inside Dryft™ ?",
+        "description": "<p>Every ingredient in Dryft™ is scientifically-supported to promote natural vitality. No fillers, no unnecessary additives, just 9 powerful compounds that work together to help improve body composition and support the confident man you want to be.<br\/><br\/><strong>*<\/strong><em>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.<\/em><\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_doctors_Q7jnAV": {
+      "type": "nl-doctors",
+      "blocks": {
+        "row_7gRVEe": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_108.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873.png",
+            "heading": "Dr. Michael Bennett, Lead Metabolic Specialist",
+            "description": "<p><em>After seeing thousands of men struggling with weight management and how frustrated they felt, I knew we needed a real solution. Dryft™ corrects the underlying metabolic roadblocks—insulin, cortisol, and estrogen—that make fat loss feel impossible.<\/em><\/p>"
+          }
+        },
+        "row_3ch8C3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_109.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873.png",
+            "heading": "Dr. Rebecca Martinez, Sports Nutrition PhD",
+            "description": "<p>“<em>I've worked with elite athletes for decades. The same metabolic optimization principles that create champions work for everyday men too, Dryft™ helps create that optimal state naturally, so your body can finally respond to your efforts efficiently.\"<\/em><\/p>"
+          }
+        },
+        "row_nEFV43": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_107.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873_2e369f46-c3fb-48c6-968c-7540f78b418d.png",
+            "heading": "Dr. Marcus Chen, Clinical Endocrinologist, 12+ years",
+            "description": "<p>“<em>I've worked with elite athletes for decades. The same metabolic optimization principles that create champions work for everyday men too, Dryft™ helps create that optimal state naturally, so your body can finally respond to your efforts efficiently.\"<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_7gRVEe",
+        "row_3ch8C3",
+        "row_nEFV43"
+      ],
+      "name": "NL Doctors",
+      "settings": {
+        "section_id": "",
+        "heading": "We're On a Mission To Help 1M Men Feel Confident Again",
+        "description": "<p>Meet The Experts Behind Dryft™ <\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_full_contents_yDaXe9": {
+      "type": "nl-full-contents",
+      "blocks": {
+        "highlight_PhVbNt": {
+          "type": "highlight",
+          "settings": {
+            "heading": "\"You've Tried Everything Because Nobody Explained The REAL Mechanism Before\"",
+            "background_color": "#084c25"
+          }
+        },
+        "row_ePfejt": {
+          "type": "row",
+          "settings": {
+            "heading": "",
+            "description": "<p>You're not lazy. You're not weak-willed. You don't have \"bad genetics.\" You've simply been fighting the wrong battle with the wrong weapons.<\/p>",
+            "smal_description": false,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "highlight_PhVbNt",
+        "row_ePfejt"
+      ],
+      "name": "NL Full Contents",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "box_heading": false,
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "nl_full_contents_8NQecg": {
+      "type": "nl-full-contents",
+      "blocks": {
+        "row_MJYA6J": {
+          "type": "row",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "smal_description": false,
+            "image": "shopify:\/\/shop_images\/20250926.png",
+            "set_max_width": false,
+            "max_width": 600
+          }
+        },
+        "button_DYMCgq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Your Custom Solution",
+            "button_url": "#products"
+          }
+        },
+        "list_nDbf77": {
+          "type": "list",
+          "settings": {
+            "desktop_row": 1,
+            "image": "shopify:\/\/shop_images\/Group_49169.png",
+            "text1": "90-Day Money Back Guarantee (even on empty bottles)",
+            "text2": "Join 47,000+ men who finally found what actually works",
+            "text3": "Free shipping on orders over $99",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "text11": "",
+            "text12": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_MJYA6J",
+        "button_DYMCgq",
+        "list_nDbf77"
+      ],
+      "custom_css": [
+        ".new-button--primary {padding-top: 18px; padding-bottom: 18px; font-size: 20px; text-transform: uppercase; font-weight: bold; background: #f9a21c; text-align: center;}"
+      ],
+      "name": "NL Full Contents",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "box_heading": false,
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#f4f4f6",
+        "max_width": 600,
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_faqs_pEwWFj": {
+      "type": "nl-faqs",
+      "blocks": {
+        "row_8z8MVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How quickly will I notice results?",
+            "description": "<p><strong>Week 1-2:<\/strong> Better sleep, reduced cravings, less bloating (L-theanine and probiotics work fast) <br\/><br\/><strong>Week 2-4:<\/strong> Energy improvements, clothes fitting looser, morning mood better <br\/><br\/><strong>Week 4-8:<\/strong> Visible belly fat reduction, chest firming, strength gains <br\/><br\/><strong>Week 8-12:<\/strong> Maximum results – expect 2-4 inches off waist, 10-20 lbs down, feeling like yourself again<br\/><br\/><em>Note: Men who combine Dryft™ with basic diet awareness see results 3x faster than supplement alone.<\/em><\/p>"
+          }
+        },
+        "row_Kbkyth": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How is this different from other supplements I've tried?",
+            "description": "<p>Most supplements only target one problem (like testosterone or fat burning) while ignoring the others. Dryft™ addresses all three metabolic switches that change after 35. <br\/><br\/><strong>1. We target the ROOT causes, not symptoms.<\/strong> While other supplements throw testosterone boosters at you (which don't work if your estrogen is high), we address all three hormonal imbalances simultaneously – insulin, cortisol, and estrogen.<strong><br\/><br\/>2. Clinical doses, not pixie dust.<\/strong> Every ingredient matches or exceeds the doses used in published studies. Example: Our 100mg GlucoVantage® equals 500mg+ of regular berberine. Most competitors use 10-50mg of weak berberine to save costs.<strong><br\/><br\/>3. Unique mechanisms others ignore.<\/strong> We're the only male formula with L. gasseri probiotic (proven to reduce belly fat 8.5%) and pharmaceutical-grade DHB for insulin sensitivity. These aren't in typical \"test boosters\" because they're expensive and most companies don't understand the gut-fat connection.<br\/><br\/>That's why men see results when previous supplements failed.<\/p>"
+          }
+        },
+        "row_8WDhRd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What studies support this product?",
+            "description": "<p>Here are just some of the dozens of studies that support Dryft™ ’s formula:<br\/><br\/>Zeligs MA. Estrogen Balance: A Key to Cancer Prevention. Townsend Letter for Doctors and Patients. 2002.<br\/><br\/>Upadhyaya R, et al. Dihydroberberine, a gut microbiota-derived berberine metabolite, improves glucose metabolism in type 2 diabetic mice. Sci Rep. 2019;9:19013.<br\/><br\/>Sugita J, et al. Grains of Paradise extract increases whole-body energy expenditure in humans. Br J Nutr. 2013;110(4):733–738.<br\/><br\/>Whiting S, Derbyshire E, Tiwari BK. Capsaicinoids and capsinoids: A potential role for weight management? A systematic review of the evidence. Appetite. 2012;59(2):341–348.<br\/><br\/>Kimura K, Ozeki M, Juneja LR, Ohira H. L-Theanine reduces psychological and physiological stress responses. Biol Psychol. 2007;74(1):39–45.<br\/><br\/>DiSilvestro RA, et al. Zinc in human health: effect of zinc on immune cells. Mol Med. 2001;7(5):300–307.<br\/><br\/>Ambiye VR, Langade D, Dongre S, et al. Clinical evaluation of the spermatogenic activity of the root extract of Ashwagandha (Withania somnifera) in oligospermic males: a pilot study. Evid Based Complement Alternat Med. 2013;2013:571420.<br\/><br\/>Cycle Pharmaceuticals, et al. Pilot crossover study comparing pharmacokinetics of dihydroberberine and berberine. 2022.<br\/><br\/><a href=\"https:\/\/townsendletter.com\/estrogen-vindication-part-i-berkson-abridged-for-print\/\"><span style=\"text-decoration:underline\">https:\/\/townsendletter.com\/estrogen-vindication-part-i-berkson-abridged-for-print\/<\/span><\/a><\/p><p><a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC9204213\/\"><span style=\"text-decoration:underline\">https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC9204213\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/23308394\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/23308394\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/22634197\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/22634197\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/16930802\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/16930802\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/18385818\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/18385818\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/24371462\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/24371462\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/35010998\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/35010998\/<\/span><\/a><\/p>"
+          }
+        },
+        "row_rKpQYd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if my health markers are \"normal\"?",
+            "description": "<p><strong>This is exactly who Dryft™ is designed for.<\/strong> \"Normal\" ranges are statistical averages, not optimal levels. Your testosterone might be 450 ng\/dL (technically \"normal\") but that's half of what a healthy 30-year-old should have (800-900). Your fasting glucose might be 95 (labeled \"normal\") but that's already showing insulin resistance.<br\/><br\/>Dryft™ optimizes your metabolic markers from \"normal\" to \"optimal\" – the difference between surviving and thriving.<\/p>"
+          }
+        },
+        "row_gL8dwQ": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if it doesn't work for me?",
+            "description": "<p>We offer a 90-day money-back guarantee. Try it for 3 full months. If you don't see improvements in body composition and feel more energetic, we'll refund your purchase. No returns required. Zero risk.<\/p>"
+          }
+        },
+        "row_kVNfHR": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is it safe?",
+            "description": "<p>The natural ingredients are generally safe and compatible with most medications. However, we always recommend consulting your healthcare provider if you're taking prescription medications, particularly for blood pressure or blood sugar management, as some ingredients may complement their effects.<\/p>"
+          }
+        },
+        "row_BQBzVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How much time will this add to my already busy schedule?",
+            "description": "<p>Just 30 seconds each morning to take your 2 capsules—no special meal preparation, extensive workout routines, or complicated protocols to follow.<\/p><p>Dryft™ is designed for busy men who need results without time-consuming regimens. The 30-second morning routine integrates seamlessly into your life, working effectively while you focus on what matters.<\/p>"
+          }
+        },
+        "row_na39E6": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How much time will this add to my already busy schedule?",
+            "description": "<p>Just 30 seconds each morning to take your 2 capsules—that's it. No special meal preparation, no extensive workout routines, no complicated protocols to follow. We designed Dryft™ specifically for busy professional men who need results without time-consuming regimens. The 30-second morning routine integrates seamlessly into your life, working effectively while you focus on what matters.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_8z8MVL",
+        "row_Kbkyth",
+        "row_8WDhRd",
+        "row_rKpQYd",
+        "row_gL8dwQ",
+        "row_kVNfHR",
+        "row_BQBzVL",
+        "row_na39E6"
+      ],
+      "name": "NL Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Still Not Sure? Here Are Our Most Frequently Asked Questions About Dryft™ ",
+        "description": "",
+        "dropdown_heading_bgcolor": "#ececec",
+        "dropdown_content_bgcolor": "",
+        "dropdown_heading_text_color": "#121212",
+        "dropdown_border_color": "rgba(0,0,0,0)",
+        "dropdown_arrow_color": "#000000",
+        "button_label": "",
+        "button_url": "",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 900,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_bottom_U9iwGR": {
+      "type": "nl-bottom",
+      "name": "NL Bottom",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Medicine-bottle-box-08_6.png",
+        "img_mobile": "shopify:\/\/shop_images\/3-bttle-dryft.png",
+        "heading": "Every Day You Wait, Your Metabolism Gets Harder to Fix",
+        "description": "<p>Thousands of men have already improved their confidence, energy, and body composition with Dryft™ . Your turn starts <em>now.<\/em><\/p>",
+        "button_label": "Try It Risk-Free Today",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "text_color": "#ffffff",
+        "bgcolor": "#f4f4f6",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1_ec73922b-7461-4902-b940-08eaba0ed5e4.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_full_contents_FWBVXa": {
+      "type": "nl-full-contents",
+      "blocks": {
+        "row_LcTtik": {
+          "type": "row",
+          "settings": {
+            "heading": "",
+            "description": "<p>*Based on peer-reviewed research from Journal of Clinical Endocrinology, International Journal of Andrology, Stanford Medical, Harvard Medical School, Mayo Clinic. Individual results vary but mechanism is scientifically proven.<\/p>",
+            "smal_description": true,
+            "set_max_width": false,
+            "max_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "row_LcTtik"
+      ],
+      "name": "NL Full Contents",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "box_heading": false,
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1140,
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "padding_top_m": 0,
+        "padding_bottom_m": 36
+      }
+    }
+  },
+  "order": [
+    "nl_full_contents_eiDEXA",
+    "new_lp_featured_product_NMieYc",
+    "nl_carousel_34QPVA",
+    "nl_supplements_dzTxLD",
+    "nl_doctors_Q7jnAV",
+    "nl_full_contents_yDaXe9",
+    "nl_full_contents_8NQecg",
+    "nl_faqs_pEwWFj",
+    "nl_bottom_U9iwGR",
+    "nl_full_contents_FWBVXa"
+  ]
+}

@@ -1,0 +1,383 @@
+<section class="solution-section" style="max-width: 100%; padding: 80px 40px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <h2 class="section-title">The Multi-Pathway Protocol That Actually Works</h2>
+    <p class="section-subtitle">
+      Dryft™ attacks multiple pathways simultaneously. Not just boosting testosterone. Not just blocking estrogen. All
+      of it.
+    </p>
+
+    <div class="switches-grid">
+      <div class="switch-card">
+        <div class="switch-number">Switch 1</div>
+        <h3>Block Estrogen Conversion</h3>
+        <div class="ingredient">
+          <div class="ingredient-icon">DIM</div>
+          <div class="ingredient-info">
+            <h4>DIM <span>200mg</span></h4>
+            <p>The compound in broccoli that flushes bad estrogen metabolites. Without eating 10 lbs of broccoli.</p>
+          </div>
+        </div>
+        <div class="ingredient">
+          <div class="ingredient-icon">Zn</div>
+          <div class="ingredient-info">
+            <h4>Zinc Glycinate <span>30mg</span></h4>
+            <p>Essential for T-to-E balance. Most men are deficient. Deficiency = higher conversion rates.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="switch-card">
+        <div class="switch-number">Switch 2</div>
+        <h3>Attack the Belly Fat</h3>
+        <div class="ingredient">
+          <div class="ingredient-icon">GP</div>
+          <div class="ingredient-info">
+            <h4>Grains of Paradise <span>60mg</span></h4>
+            <p>Activates brown fat—your body's built-in fat burner. Targets visceral belly fat specifically.</p>
+          </div>
+        </div>
+        <div class="ingredient">
+          <div class="ingredient-icon">GV</div>
+          <div class="ingredient-info">
+            <h4>GlucoVantage® DHB <span>200mg</span></h4>
+            <p>
+              5x better absorption than regular berberine. Improves insulin sensitivity. Stops the "store fat" signal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="switch-card">
+        <div class="switch-number">Switch 3</div>
+        <h3>Free Up Testosterone</h3>
+        <div class="ingredient">
+          <div class="ingredient-icon">KSM</div>
+          <div class="ingredient-info">
+            <h4>Ashwagandha <span>600mg</span></h4>
+            <p>Clinically proven to increase T. Also tanks cortisol—the stress hormone that kills testosterone.</p>
+          </div>
+        </div>
+        <div class="ingredient">
+          <div class="ingredient-icon">B</div>
+          <div class="ingredient-info">
+            <h4>Boron <span>12mg</span></h4>
+            <p>
+              Frees "bound" testosterone so your body can actually use it. Studies show 28% increase in free T within 1
+              week.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "ABF Solution",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_m_center",
+      "label": "Heading Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_d_center",
+      "label": "Heading Desktop Center",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#121212"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "description_m_center",
+      "label": "Description Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "description_d_center",
+      "label": "Description Desktop Center",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#121212"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "image_right",
+      "label": "Image Right",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "btn_bottom_text",
+      "label": "Btn Bottom Text"
+    },
+    {
+      "type": "color",
+      "id": "btn_bottom_text_color",
+      "label": "Buttom Bottom Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "star_review",
+      "name": "Star Review",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "center",
+          "label": "Center",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "color",
+          "id": "bgcolor",
+          "label": "Background Color",
+          "default": "#F4F4F6"
+        },
+        {
+          "type": "html",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "checkbox",
+          "id": "label_m_center",
+          "label": "Label Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "label_d_center",
+          "label": "Label Desktop Center",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "label_color",
+          "label": "Label Color",
+          "default": "#000"
+        },
+        {
+          "type": "html",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_m_center",
+          "label": "Heading Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_d_center",
+          "label": "Heading Desktop Center",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading Color",
+          "default": "#121212"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "description_m_center",
+          "label": "Description Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "description_d_center",
+          "label": "Description Desktop Center",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "small_description",
+          "label": "Description Small",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "richtext",
+          "id": "btn_bottom_text",
+          "label": "Btn Bottom Text"
+        },
+        {
+          "type": "color",
+          "id": "btn_bottom_text_color",
+          "label": "Buttom Bottom Text Color",
+          "default": "#000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ABF Solution"
+    }
+  ]
+}
+{% endschema %}

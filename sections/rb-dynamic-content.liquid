@@ -1,0 +1,351 @@
+<div
+  id="{{ section.settings.section_id }}"
+>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'dynamic1' %}
+        {%- style -%}
+          .block-{{ block.id }}-padding {
+            padding-top: {{ block.settings.padding_top_m }}px;
+            padding-bottom: {{ block.settings.padding_bottom_m }}px;
+          }
+
+          @media screen and (min-width: 750px) {
+            .block-{{ block.id }}-padding {
+              padding-top: {{ block.settings.padding_top }}px;
+              padding-bottom: {{ block.settings.padding_bottom }}px;
+            }
+          }
+        {%- endstyle -%}
+
+        <div
+          id="{{ block.settings.block_id }}"
+          class="block-{{ block.id }}-padding px-5"
+          style="background-color: {{ block.settings.bgcolor }};"
+        >
+          <div class="mx-auto w-full" style="max-width: {{ block.settings.max_width }}px;">
+            <div class="flex flex-col items-center justify-center gap-6 md:gap-12">
+              <div class="flex flex-col items-center justify-center gap-6 md:gap-12">
+                {% if block.settings.heading != blank %}
+                  <div
+                    class="text-[26px] md:text-[40px] font-bold !leading-tight text-[#000]  {% if block.settings.heading_m_center %} max-md:text-center {% endif %} {% if block.settings.heading_d_center %} md:text-center {% endif %}"
+                    style="color: {{ block.settings.heading_color }};"
+                  >
+                    {{ block.settings.heading }}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.description != blank %}
+                  <div
+                    class="{% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[17px] md:text-[20px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                    style="color: {{ block.settings.description_color }};"
+                  >
+                    {{ block.settings.description }}
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if block.settings.description2 != blank %}
+                <div class="w-full grid md:grid-cols-2 gap-6 md:gap-10">
+                  {% if block.settings.description2 != blank %}
+                    <div
+                      class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000] max-md:text-center"
+                      style="color: {{ block.settings.description2_color }};"
+                    >
+                      {{ block.settings.description2 }}
+                    </div>
+                  {% endif %}
+
+                  <div class="bg-white p-5 rounded-[12px] flex flex-col gap-5 h-fit">
+                    {% if block.settings.description3 != blank %}
+                      <div
+                        class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000] max-md:text-center"
+                        style="color: {{ block.settings.description3_color }};"
+                      >
+                        {{ block.settings.description3 }}
+                      </div>
+                    {% endif %}
+                    <div class="flex flex-col gap-3">
+                      {% for i in (1..8) %}
+                        {% assign description_name = 'list' | append: i %}
+                        {% assign description = block.settings[description_name] %}
+
+                        {% if description != blank %}
+                          <div class="flex gap-2 items-center">
+                            {% if block.settings.icon != blank %}
+                              {{
+                                block.settings.icon
+                                | image_url: width: 16
+                                | image_tag: class: 'w-full max-w-[16px] h-fit'
+                              }}
+                            {% endif %}
+                            <div
+                              class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000]"
+                              style="color: {{ block.settings.list_color }}"
+                            >
+                              {{ description }}
+                            </div>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    {% if block.settings.description4 != blank %}
+                      <div
+                        class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000] max-md:text-center"
+                        style="color: {{ block.settings.description4_color }};"
+                      >
+                        {{ block.settings.description4 }}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if block.settings.button_label != blank %}
+                <div class="w-full md:w-fit mx-auto md:min-w-[600px]">
+                  <a
+                    href="{{ block.settings.button_url }}"
+                    class="new-button--primary"
+                  >
+                    {{ block.settings.button_label }}
+                    {%- render 'icon-arrow-right' -%}
+                  </a>
+                  {% if block.settings.btn_bottom_text != blank %}
+                    <div
+                      class="text-center mt-3 text-[14px] md:text-[16px] font-normal !leading-tight text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                      style="color: {{ block.settings.btn_bottom_text_color }};"
+                    >
+                      {{ block.settings.btn_bottom_text }}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "RB Dynamic Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "dynamic1",
+      "name": "Dynamic 1",
+      "settings": [
+        {
+          "type": "text",
+          "id": "block_id",
+          "label": "Block ID"
+        },
+        {
+          "type": "html",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_m_center",
+          "label": "Heading Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_d_center",
+          "label": "Heading Desktop Center",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading Color",
+          "default": "#121212"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "description_m_center",
+          "label": "Description Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "description_d_center",
+          "label": "Description Desktop Center",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        },
+        {
+          "type": "richtext",
+          "id": "description2",
+          "label": "Description 2"
+        },
+        {
+          "type": "color",
+          "id": "description2_color",
+          "label": "Description 2 Color",
+          "default": "#121212"
+        },
+        {
+          "type": "richtext",
+          "id": "description3",
+          "label": "Description 3"
+        },
+        {
+          "type": "color",
+          "id": "description3_color",
+          "label": "Description 3 Color",
+          "default": "#121212"
+        },
+        {
+          "type": "richtext",
+          "id": "description4",
+          "label": "Description 4"
+        },
+        {
+          "type": "color",
+          "id": "description4_color",
+          "label": "Description 4 Color",
+          "default": "#121212"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "list1",
+          "label": "List 1"
+        },
+        {
+          "type": "richtext",
+          "id": "list2",
+          "label": "List 2"
+        },
+        {
+          "type": "richtext",
+          "id": "list3",
+          "label": "List 3"
+        },
+        {
+          "type": "richtext",
+          "id": "list4",
+          "label": "List 4"
+        },
+        {
+          "type": "richtext",
+          "id": "list5",
+          "label": "List 5"
+        },
+        {
+          "type": "color",
+          "id": "list_color",
+          "label": "List Color",
+          "default": "#121212"
+        },
+        {
+          "type": "color",
+          "id": "bgcolor",
+          "label": "Background Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "range",
+          "id": "max_width",
+          "min": 600,
+          "max": 1800,
+          "step": 20,
+          "unit": "px",
+          "label": "Max Width",
+          "default": 1200
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Top",
+          "default": 72
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Bottom",
+          "default": 72
+        },
+        {
+          "type": "range",
+          "id": "padding_top_m",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Top (Mobile)",
+          "default": 36
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom_m",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Padding Bottom (Mobile)",
+          "default": 36
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "richtext",
+          "id": "btn_bottom_text",
+          "label": "Btn Bottom Text"
+        },
+        {
+          "type": "color",
+          "id": "btn_bottom_text_color",
+          "label": "Buttom Bottom Text Color",
+          "default": "#000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RB Dynamic Content"
+    }
+  ]
+}
+{% endschema %}

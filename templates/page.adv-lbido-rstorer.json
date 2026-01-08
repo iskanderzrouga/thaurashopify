@@ -1,0 +1,689 @@
+{
+  "sections": {
+    "adv_main_secondary_header_DxVUpL": {
+      "type": "adv-main-secondary-header",
+      "name": "Adv Secondary Header",
+      "settings": {
+        "section_id": "",
+        "text": "Advertorial",
+        "logo": "shopify:\/\/shop_images\/StrongMenDaily.svg",
+        "bgcolor": "#1544aa",
+        "bgcolor2": "#ebebeb",
+        "max_width": 1040,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_ybDHaH": {
+      "type": "adv-main-secondary",
+      "blocks": {
+        "publish_date_yFFpm3": {
+          "type": "publish_date",
+          "settings": {
+            "color": "#1544aa",
+            "description": "<p>Mon. March 16, 2025<\/p>",
+            "image": "shopify:\/\/shop_images\/calendar-event.png"
+          }
+        },
+        "avatar_QxfVcr": {
+          "type": "avatar",
+          "settings": {
+            "heading": "",
+            "description": "<p>Special Advertorial by <strong>Alex Bronwasser<\/strong><br\/><em>Senior Editor<\/em><\/p>",
+            "color": "#121212",
+            "image": "shopify:\/\/shop_images\/image_1550_393cd2d8-6afd-4090-a6d5-3631be58b49d.png"
+          }
+        },
+        "image_dWGaFp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223803_bf07816d-c8a3-474b-a285-8c673fc3a823.png",
+            "max_width": 700
+          }
+        },
+        "description_GeYckr": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>There's a conversation you're not having. And the silence is getting louder.<\/strong><br\/> <br\/>It started gradually. So gradually you barely noticed.<br\/> <br\/>The spark you used to have? It just... faded.<br\/> <br\/>Your wife initiates less. You initiate less. And when intimacy does happen, you're going through the motions.<br\/> <br\/>You tell yourself it's stress. Or that you're tired. Or this is just what happens when you get older.<br\/> <br\/>But deep down, you know it's been months. Maybe longer.<br\/> <br\/><strong>The distance between you and your partner is growing. <\/strong>Not because you don't love each other. But because something fundamental has shifted.<br\/> <br\/>The intimacy that used to bond you? It's disappearing.<br\/> <br\/>You feel it. She feels it. Neither of you is saying it out loud.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_mHncRT": {
+          "type": "heading",
+          "settings": {
+            "heading": "One in Three Men Over 35 Are Going Through This. Nobody's Talking About It.",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_and_text_MiNkrF": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p>Here's what nobody told you:<br\/><br\/><strong>Declining libido after 35 is extremely common. One in three men experience it.<\/strong><br\/><br\/>It's not about your relationship. It's not about attraction. It's not in your head.<br\/><br\/><strong>It's hormonal.<\/strong><br\/><br\/>After 35, testosterone naturally drops about 1% per year. But combine that with chronic stress (which elevates cortisol), poor sleep, and life?<br\/><br\/>Your testosterone production tanks. Your cortisol stays high. Your libido disappears.<br\/><br\/><strong>Cortisol—your stress hormone—actively suppresses testosterone production.<\/strong><\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250912_3.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "description_B7fqn4": {
+          "type": "description",
+          "settings": {
+            "description": "<p>When you're chronically stressed from work, responsibilities, lack of sleep, your body stays in survival mode. And in survival mode, sex drive is not a priority.<br\/> <br\/><strong>Your body is choosing stress response over sexual function.<\/strong><br\/> <br\/>This isn't in your head. This is basic biology.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_rYyb4N": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why You Haven't Done Anything About It Yet",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_rgwJLH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223803_6.png",
+            "max_width": 700
+          }
+        },
+        "description_GcTHPf": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Let's be honest:<br\/> <br\/><strong>The gas station pills are a joke.<\/strong> You're not buying \"Rhino 9000.\" Those are scams at best, dangerous at worst.<br\/> <br\/><strong>You're not going to your doctor. <\/strong>Walking in and saying \"my sex drive is gone\" feels humiliating. Plus, you're not interested in prescription drugs with side effects.<br\/> <br\/><strong>You've tried ignoring it.<\/strong> Hoping it'll fix itself. Blaming work stress. \"It'll get better when things calm down.\"<br\/> <br\/><strong>You're not solving your sleep problem. You're creating a dependency.<\/strong><br\/> <br\/>But things never calm down. And it's not getting better.<br\/> <br\/>So you're stuck. Knowing something's wrong but embarrassed to address it.<br\/> <br\/><strong>Meanwhile, the intimacy in your relationship keeps fading.<\/strong><br\/> <br\/>And deep down, you know this can't be the solution for the rest of your life. But you also can't sleep without it.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_XbJJYn": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "What If Your Drive Could Be Restored Naturally—Without Sketchy Pills or Prescriptions?",
+            "description": "<p>Here's what you need to understand:<br\/> <br\/><strong>Your testosterone isn't \"gone.\" It's suppressed.<\/strong><br\/> <br\/>Your body can still produce healthy testosterone. But right now:<br\/> <br\/><\/p><ul><li>Chronic stress is suppressing production<\/li><li>Elevated cortisol is blocking testosterone<\/li><li>Age-related decline is accelerating faster than it should<\/li><\/ul>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/Frame_2147223913_8d16e823-29ef-4dd5-bfa9-698b301f4ceb.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "description_BGUCDP": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>When you lower cortisol and support natural testosterone production, your drive comes back.<\/strong><br\/> <br\/>Not through artificial stimulation. Not through sketchy chemicals.<br\/> <br\/>Through restoring your body's natural hormonal balance.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_teK664": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Science: How to Actually Restore Testosterone Naturally",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "description_ekPUHG": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Clinical research proves what works:<br\/> <br\/><strong>KSM-66 Ashwagandha – 600mg daily<br\/> <\/strong><br\/>The most studied adaptogen for male hormonal health.<br\/> <br\/>Studies show:<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "icon_text_qBFdwT": {
+          "type": "icon_text",
+          "settings": {
+            "five_col": false,
+            "color": "#0b0b0b",
+            "highlight": "27.9-32%",
+            "bgcolor": "#eff8fe",
+            "description1": "<p><strong>Increases testosterone by 17% <\/strong>in men<\/p>",
+            "sub_description1": "<p>*Results are based on individuals ingredients<\/p>",
+            "icon1": "shopify:\/\/shop_images\/Group_2085661494_3.png",
+            "description2": "<p><strong>Reduces cortisol by 27.9-32%<\/strong> (removing the hormone suppressing your T)<\/p>",
+            "sub_description2": "<p>*Results are based on individuals ingredients<\/p>",
+            "icon2": "shopify:\/\/shop_images\/Frame_1707481874_d208e398-1473-4341-98d3-bfdc06876f62.png",
+            "description3": "<p><strong>Significantly improves sexual function scores<\/strong><\/p>",
+            "sub_description3": "",
+            "icon3": "shopify:\/\/shop_images\/Group_2085661494_4.png",
+            "description4": "<p>Increases sperm count by 167% and motility by 57%<\/p>",
+            "sub_description4": "<p>*Results are based on individuals ingredients<\/p>",
+            "icon4": "shopify:\/\/shop_images\/Frame_1707481875_1.png",
+            "description5": "",
+            "sub_description5": ""
+          }
+        },
+        "description_8dwP64": {
+          "type": "description",
+          "settings": {
+            "description": "<p><em>One study looked at men with low libido. After 8 weeks of 600mg daily, they reported:<\/em><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "icon_text_ywJP8d": {
+          "type": "icon_text",
+          "settings": {
+            "five_col": false,
+            "color": "#0b0b0b",
+            "highlight": "",
+            "bgcolor": "#eff8fe",
+            "description1": "<p>Significant improvements in sexual desire<\/p>",
+            "sub_description1": "",
+            "icon1": "shopify:\/\/shop_images\/Group_2085661495.png",
+            "description2": "<p>Increased satisfaction with performance<\/p>",
+            "sub_description2": "",
+            "icon2": "shopify:\/\/shop_images\/Group_2085661495_1.png",
+            "description3": "<p>Better intimate relationships<\/p>",
+            "sub_description3": "",
+            "icon3": "shopify:\/\/shop_images\/Frame_1707481875_2.png",
+            "description4": "<p>Improved confidence<\/p>",
+            "sub_description4": "",
+            "icon4": "shopify:\/\/shop_images\/Frame_1707481875_3.png",
+            "description5": "",
+            "sub_description5": ""
+          }
+        },
+        "description_E3L9D4": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>Zinc – 30mg daily<br\/><br\/><\/strong>Essential for testosterone production. Low zinc = low testosterone.<br\/> <br\/>Men with low zinc who supplemented for 6 months doubled their testosterone levels.<br\/> <br\/><strong>Boron – 12mg daily<\/strong><br\/> <br\/>Regulates sex hormones.<br\/> <br\/>Studies show:<br\/><br\/>✅ <strong>Increases free testosterone by 25% <\/strong>within one week<br\/>✅ <strong>Reduces estrogen by 40-50%<\/strong> in men<br\/>✅ Lowers SHBG (the protein that binds testosterone, making it unavailable)<br\/>✅ Increases sperm count by 167% and motility by 57%<br\/><br\/><strong>This is published, peer-reviewed research. Not marketing hype.<\/strong><br\/> <br\/>When you combine these three—Ashwagandha to lower cortisol and raise testosterone, Zinc to support production, Boron to increase free T—you restore hormonal balance naturally.<br\/><br\/><strong>Your body starts producing testosterone the way it's supposed to. And your drive returns.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_aVTJbJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "This Is Not \"Male Enhancement.\" This Is Hormonal Restoration.",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "description_TDzWkr": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Let me be clear about what this is:<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_cLcty7": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p><strong>This is NOT:<\/strong><br\/><br\/><\/p><ul><li>A stimulant or drug<\/li><li>Artificial hormones or steroids<\/li><li>A \"performance pill\"<\/li><li>Testosterone replacement therapy (TRT)<\/li><li>Anything that overrides your natural function<\/li><\/ul>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/Rectangle_240648329.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "image_and_text_nTti4B": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p><strong>This IS:<\/strong><br\/><br\/><\/p><ul><li>Natural compounds that support your body's testosterone production<\/li><li>Herbs that reduce the stress hormones suppressing your T<\/li><li>Essential minerals your body needs<\/li><li>Restoration of natural hormonal balance<\/li><\/ul>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/Frame_2147223976.png",
+            "image_right": true,
+            "max_width": 360
+          }
+        },
+        "description_Pp8heD": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>TRT replaces your natural function.<\/strong> Your body stops producing on its own.<br\/><br\/><strong>Adaptogens and minerals support your body to restore its own production.<\/strong><br\/><br\/>You're not adding artificial testosterone. You're removing the blocks preventing your body from making it naturally.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_XJtdGt": {
+          "type": "heading",
+          "settings": {
+            "heading": "What It Actually Feels Like When Your Drive Returns",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_THLxxm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223804.png",
+            "max_width": 700
+          }
+        },
+        "description_aKdQ3c": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Here's what men report after 3-4 weeks:<br\/><br\/><strong>The desire comes back first. <\/strong>Not forced. Not artificial. You just... want to again. That spark that's been missing? It reignites.<br\/><br\/><strong>Then confidence returns. <\/strong>You're not anxious about performance. You're not in your head. You're present and engaged.<br\/><br\/><strong>Intimacy improves.<\/strong> Not just physically. Your partner notices you're more engaged, more affectionate, more present. The emotional connection strengthens.<br\/><br\/><strong>You feel like yourself again. <\/strong>That version from your late 20s or early 30s—confident, driven, vital—starts to return.<br\/><br\/>One man said: \"I didn't realize how much I'd been going through the motions until I had the drive back. It's like color came back into a black and white picture.\"<br\/><br\/><strong>This isn't about becoming superhuman. It's about being normal again.<\/strong><br\/><br\/>The way you're supposed to feel. Before stress and declining hormones stole your drive.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_ALJgmB": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Formula: Clinical Doses That Actually Work",
+            "heading_color": "#0b0b0b",
+            "italic": true,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "description_LNy7Ck": {
+          "type": "description",
+          "settings": {
+            "description": "<p><em>Most \"male\" supplements are garbage. Proprietary blends with weak doses. Sketchy ingredients. Marketing hype.<br\/><br\/><\/em><em><strong>Thaura is different. Clinical dosing. Published research backing every claim.<\/strong><\/em><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "ingredients_9nHaYG": {
+          "type": "ingredients",
+          "settings": {
+            "heading": "Each 2-capsule serving contains:",
+            "description": "<p>Plus: GlucoVantage®, L-Theanine, DIM, and metabolic support for complete hormonal optimization<\/p>",
+            "color": "#0b0b0b",
+            "bgcolor": "#1544aa",
+            "btn_text1": "600mg KSM-66® Ashwagandha",
+            "heading1": "600mg KSM-66® Ashwagandha",
+            "description1": "<p>Exact dose shown to increase testosterone 17% and reduce cortisol 27.9%<\/p>",
+            "icon1": "shopify:\/\/shop_images\/Frame_2607849.png",
+            "btn_text2": "30mg Zinc (as Zinc Glycinate)",
+            "heading2": "30mg Zinc (as Zinc Glycinate)",
+            "description2": "<p>Essential for testosterone production. 43% more absorbable than standard forms<\/p>",
+            "icon2": "shopify:\/\/shop_images\/image_33_9fad0f94-8397-4586-9104-396d44a43726.png",
+            "btn_text3": "12mg Boron (as Boron Glycinate)",
+            "heading3": "12mg Boron (as Boron Glycinate)",
+            "description3": "<p>Essential for testosterone production. 43% more absorbable than standard forms<\/p>",
+            "icon3": "shopify:\/\/shop_images\/image_32_1_b09d0e4d-01c5-490a-a25e-127d8e967da8.png"
+          }
+        },
+        "description_GXHUgh": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>Everything is:<\/strong><br\/><br\/><\/p><ul><li>Third-party tested for purity<\/li><li>No proprietary blends<\/li><li>No artificial junk<\/li><li>Made in USA, GMP-certified<br\/><\/li><\/ul><p><br\/><strong>Zero sketchy ingredients. Zero undisclosed compounds. Just clinically-proven ingredients at research-backed doses.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_aaR6Xh": {
+          "type": "heading",
+          "settings": {
+            "heading": "90 Days to Restore Your Drive (Discreetly, Risk-Free)",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        }
+      },
+      "block_order": [
+        "publish_date_yFFpm3",
+        "avatar_QxfVcr",
+        "image_dWGaFp",
+        "description_GeYckr",
+        "heading_mHncRT",
+        "image_and_text_MiNkrF",
+        "description_B7fqn4",
+        "heading_rYyb4N",
+        "image_rgwJLH",
+        "description_GcTHPf",
+        "image_and_text_XbJJYn",
+        "description_BGUCDP",
+        "heading_teK664",
+        "description_ekPUHG",
+        "icon_text_qBFdwT",
+        "description_8dwP64",
+        "icon_text_ywJP8d",
+        "description_E3L9D4",
+        "heading_aVTJbJ",
+        "description_TDzWkr",
+        "image_and_text_cLcty7",
+        "image_and_text_nTti4B",
+        "description_Pp8heD",
+        "heading_XJtdGt",
+        "image_THLxxm",
+        "description_aKdQ3c",
+        "heading_ALJgmB",
+        "description_LNy7Ck",
+        "ingredients_9nHaYG",
+        "description_GXHUgh",
+        "heading_aaR6Xh"
+      ],
+      "name": "Adv Main Secondary",
+      "settings": {
+        "heading": "Your Drive Isn't Gone. It Just Needs Restoring. (And No, This Isn't Another Scam.)",
+        "heading_color": "#0b0b0b",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 50,
+        "padding_bottom": 12,
+        "padding_top_m": 20,
+        "padding_bottom_m": 12
+      }
+    },
+    "nl_guarantee_YQwgGV": {
+      "type": "nl-guarantee",
+      "name": "NL Guarantee",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Group_49198.png",
+        "heading": "Your Purchase Is Protected by Our 90-Day \"See Results or Pay Nothing\" Guarantee",
+        "description": "<p>You've tried other products with disappointing results. That’s why we’re taking all the risk.<br\/> <br\/>Try Dryft for a full 90 days. If you don't feel more energetic, see visible changes, or notice clothes fitting better – simply send us an email, and we will refund 100% of your purchase. You don't even have to return the bottles.<br\/> <br\/>Why 90 days? Because real metabolic change takes time and we want you to experience the full benefits before deciding. Either way, you're covered.<\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_image_text_4VwQk3": {
+      "type": "adv-main-secondary-image-text",
+      "blocks": {
+        "row_QYCc9t": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 1",
+            "description": "<p>Improved sleep, better mood, less stress. Hormonal changes beginning.<\/p>"
+          }
+        },
+        "row_yjzYxF": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 3-4",
+            "description": "<p>Desire starts returning. You think about intimacy naturally. Confidence improves.<\/p>"
+          }
+        },
+        "row_T97LcW": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 5-8",
+            "description": "<p>Drive becomes noticeably stronger. Intimacy improves—both frequency and quality. Your partner likely notices without you saying anything.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_QYCc9t",
+        "row_yjzYxF",
+        "row_T97LcW"
+      ],
+      "name": "ADV 2 Image Text",
+      "settings": {
+        "section_id": "",
+        "heading": "Here's what to expect:",
+        "color": "#00754a",
+        "image": "shopify:\/\/shop_images\/Frame_1707481808_2.png",
+        "image_right": true,
+        "image_max_width": 400,
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_JCUFhz": {
+      "type": "adv-main-secondary",
+      "blocks": {
+        "description_ACzK6z": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>If you don't notice significant improvement in your sleep quality and morning alertness by day 90, we'll refund every penny.<\/strong><br\/><br\/>No hassle. Just email us.<br\/><br\/><strong>And we ship discreetly. Plain packaging.<\/strong> No embarrassing labels. Your privacy matters.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_7QFdzy": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "Your Relationship Deserves This",
+            "description": "<p>How much longer are you going to avoid this?<br\/> <br\/>How many more months of distance? Of going through motions? Of avoiding intimacy because you're anxious?<br\/> <br\/><strong>Your drive isn't gone. It's suppressed by stress hormones and declining testosterone.<\/strong><br\/> <br\/>And that's fixable.<br\/> <br\/>Not with sketchy pills. Not with embarrassing doctor visits. Not with prescription drugs.<br\/> <br\/><strong>With natural, clinically-proven compounds that restore your hormonal balance.<\/strong><br\/> <br\/>So you can:<br\/> <br\/><\/p><ul><li>Feel desire again naturally<\/li><li>Have the confidence you used to have<\/li><li>Reconnect with your partner intimately<\/li><li>Feel like the man you're supposed to be<\/li><\/ul>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250913_1_b5e4155b-d1e4-4ef9-b8f1-2cf384a4cacb.png",
+            "image_right": false,
+            "max_width": 360
+          }
+        }
+      },
+      "block_order": [
+        "description_ACzK6z",
+        "image_and_text_7QFdzy"
+      ],
+      "name": "Adv Main Secondary",
+      "settings": {
+        "heading": "",
+        "heading_color": "#0b0b0b",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_product_JJWzFx": {
+      "type": "adv-main-secondary-product",
+      "blocks": {
+        "row_bVXG6C": {
+          "type": "row",
+          "settings": {
+            "description": "<p>600mg clinical-dose KSM-66<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_5.png"
+          }
+        },
+        "row_n3HJa6": {
+          "type": "row",
+          "settings": {
+            "description": "<p>30mg Zinc + 12mg Boron<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521.png"
+          }
+        },
+        "row_6EtNYU": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Full hormone-balancing formula<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521_1.png"
+          }
+        },
+        "row_wQ3Q69": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Third-party tested<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_6.png"
+          }
+        },
+        "row_rVgJCx": {
+          "type": "row",
+          "settings": {
+            "description": "<p>90-day money-back guarantee<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_7.png"
+          }
+        },
+        "row_cFHUAk": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Discreet packaging<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521_2.png"
+          }
+        },
+        "row_Lw38wf": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Free<br\/>shipping<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661521_4.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_bVXG6C",
+        "row_n3HJa6",
+        "row_6EtNYU",
+        "row_wQ3Q69",
+        "row_rVgJCx",
+        "row_cFHUAk",
+        "row_Lw38wf"
+      ],
+      "name": "ADV 2 Product",
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08_6.png",
+        "heading": "<p>Exclusive Discount Up to <br\/><strong>50% OFF!<\/strong><\/p>",
+        "description": "<p>This limited time deal is in high demand and stock keeps selling out.<\/p>",
+        "button_label": "GET THAURA NOW",
+        "button_url": "shopify:\/\/pages\/libido-pdp",
+        "bottom_text": "<p>This special offer is valid until <strong>Tuesday, October 7, 2025<\/strong><\/p>",
+        "deco_image": "shopify:\/\/shop_images\/Frame_2147223934_d672502d-5f61-4531-a351-1436b773c381.png",
+        "bgcolor": "#f1f1f1",
+        "border_color": "#1544aa",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "adv_main_secondary_note_Bkk4Md": {
+      "type": "adv-main-secondary-note",
+      "name": "ADV 2 Note",
+      "settings": {
+        "section_id": "",
+        "description": "<p><strong>P.S. <\/strong>— This problem doesn't fix itself. Testosterone keeps declining. Cortisol stays elevated. The gap keeps growing.<br\/><br\/>You can keep avoiding it. Keep hoping it'll magically improve. Keep blaming stress.<br\/><br\/>Or you can address the actual hormonal problem.<br\/><br\/>Thousands of men have already done it. Your turn.<\/p>",
+        "button_label": "TRY THAURA RISK-FREE",
+        "button_url": "shopify:\/\/pages\/libido-pdp",
+        "bgcolor": "#eff8fe",
+        "border_color": "#ff3000",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "adv_main_secondary_faqs_RG3QTP": {
+      "type": "adv-main-secondary-faqs",
+      "blocks": {
+        "row_6kW6xC": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is this safe?",
+            "description": "<p>Natural ingredients with excellent safety profiles in studies. If you have health conditions or take meds, consult your doctor first.<\/p>"
+          }
+        },
+        "row_DriJTc": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How is this different from \"male enhancement\" pills?",
+            "description": "<p>Those are stimulants or synthetic compounds. Thaura uses clinically-studied adaptogens and minerals that support your body's natural hormone production. We're restoring balance, not forcing artificial effects.<\/p>"
+          }
+        },
+        "row_MTgmrU": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Will this work if my testosterone is \"normal\"?",
+            "description": "<p>Yes. \"Normal range\" is 300-1000 ng\/dL—that's massive. You can be at 350 (technically normal) and feel terrible. This supports optimal levels within healthy range.<\/p>"
+          }
+        },
+        "row_nKdnr9": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "When will I notice results?",
+            "description": "<p>Most men notice improved mood within 2 weeks. Libido improvements typically weeks 3-4. Full benefits build over 6-8 weeks.<\/p>"
+          }
+        },
+        "row_PLRMQj": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is packaging discreet?",
+            "description": "<p>Yes. Plain packaging with no labels indicating what's inside. Complete privacy.<\/p>"
+          }
+        },
+        "row_JV4fpy": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if it doesn't work?",
+            "description": "<p>Email us within 90 days for full refund.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_6kW6xC",
+        "row_DriJTc",
+        "row_MTgmrU",
+        "row_nKdnr9",
+        "row_PLRMQj",
+        "row_JV4fpy"
+      ],
+      "name": "ADV 2 Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Quick Answers",
+        "description": "",
+        "dropdown_heading_bgcolor": "",
+        "dropdown_content_bgcolor": "",
+        "button_label": "START RESTORING YOUR DRIVE TODAY",
+        "button_url": "shopify:\/\/pages\/libido-pdp",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#171717",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "adv_main_secondary_footer_fH7cQW": {
+      "type": "adv-main-secondary-footer",
+      "name": "Adv Secondary Footer",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_color": "#444444",
+        "description": "<p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.<\/p>",
+        "description_color": "#444444",
+        "button_label": "",
+        "button_url": "",
+        "border_color": "#d9d9d9",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "padding_top_m": 28,
+        "padding_bottom_m": 28
+      }
+    }
+  },
+  "order": [
+    "adv_main_secondary_header_DxVUpL",
+    "adv_main_secondary_ybDHaH",
+    "nl_guarantee_YQwgGV",
+    "adv_main_secondary_image_text_4VwQk3",
+    "adv_main_secondary_JCUFhz",
+    "adv_main_secondary_product_JJWzFx",
+    "adv_main_secondary_note_Bkk4Md",
+    "adv_main_secondary_faqs_RG3QTP",
+    "adv_main_secondary_footer_fH7cQW"
+  ]
+}

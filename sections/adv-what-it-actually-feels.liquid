@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="{{ 'section-adv-what-it-actually-feels.css' | asset_url }}">
+
+<section class="adv-what-it-feels">
+  <div class="adv-what-it-feels__container page-width">
+    
+    {%- comment -%} Mobile Order: Headline → Image → Body → Conclusion {%- endcomment -%}
+    {%- comment -%} Desktop Order: Headline+Body (left) → Image (right) → Conclusion (full width) {%- endcomment -%}
+    
+    {%- if section.settings.headline != blank -%}
+      <h2 class="adv-what-it-feels__headline adv-what-it-feels__headline--mobile-only">
+        {{ section.settings.headline }}
+      </h2>
+    {%- endif -%}
+    
+    <div class="adv-what-it-feels__content">
+      
+      <div class="adv-what-it-feels__text-content">
+        {%- if section.settings.headline != blank -%}
+          <h2 class="adv-what-it-feels__headline adv-what-it-feels__headline--desktop-only">
+            {{ section.settings.headline }}
+          </h2>
+        {%- endif -%}
+
+        {%- if section.settings.body_text != blank -%}
+          <div class="adv-what-it-feels__body">
+            {{ section.settings.body_text }}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- if section.settings.main_image != blank -%}
+        <div class="adv-what-it-feels__image-wrapper">
+          <img
+            src="{{ section.settings.main_image | image_url: width: 1000 }}"
+            loading="lazy"
+            width="{{ section.settings.main_image.width }}"
+            height="{{ section.settings.main_image.height }}"
+            alt="{{ section.settings.main_image.alt | escape }}"
+            class="adv-what-it-feels__image"
+          >
+        </div>
+      {%- endif -%}
+
+    </div>
+
+    {%- if section.settings.conclusion_text != blank -%}
+      <div class="adv-what-it-feels__conclusion">
+        {{ section.settings.conclusion_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  .adv-what-it-feels {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-what-it-feels {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "What It Actually Feels",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image",
+      "info": "Recommended: 500x442px"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "What It Actually Feels Like When You Don't Crash"
+    },
+    {
+      "type": "richtext",
+      "id": "body_text",
+      "label": "Body Text",
+      "default": "<p>Here's what men report after 2-3 weeks:<br><br>2:30 PM arrives... and nothing happens.<br><br>No wall. No fog. No desperate coffee run.<br><br>You're just working. Focused. Clear.<br><br>3 PM. 4 PM. 5 PM. You're finishing strong instead of barely hanging on.<br><br>You drive home. Walk through that door.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "conclusion_text",
+      "label": "Conclusion Text",
+      "default": "<p>And you actually have energy.<br><br>Your daughter asks you to play. Instead of crushing guilt, you think, \"Yeah, let's do it.\"<br><br>You get on the floor. You wrestle. You're present—not zoned out scrolling your phone.<br><br>Dinner happens and you're in the conversation. Not staring into space.<br><br>This is steady energy.<br><br>Not jittery. Not wired. Not fake.<br><br>Just functional. Consistent. Like you remember feeling before stress and exhaustion became normal.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "What It Actually Feels"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,614 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .section-{{ section.id }}-padding .section-main-image {
+    border-radius: {{ section.settings.border_radius }}px;
+  }
+{%- endstyle -%}
+
+<div
+  id="{{ section.settings.section_id }}"
+  class="section-{{ section.id }}-padding px-5 relative"
+  style="background-color: {{ section.settings.bgcolor }};"
+>
+  {% if section.settings.bg != blank %}
+    {{
+      section.settings.bg
+      | image_url: width: 1920
+      | image_tag: class: 'absolute top-0 left-0 w-full h-full object-cover', sizes: '1920px'
+    }}
+  {% endif %}
+
+  <div class="mx-auto w-full relative" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12 w-full">
+      <div class="w-full">
+        {% if section.settings.product != blank %}
+          {% render 'product-image-slider-horizontal',
+            product: section.settings.product,
+            slider_start_point: section.settings.slider_start_point
+          %}
+        {% endif %}
+      </div>
+
+      <div class="flex flex-col gap-5">
+        {% if section.blocks.size > 0 %}
+          <div class="w-full gap-[15px] md:gap-5">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'star_review' %}
+                  <div class="flex items-center gap-3 {% if block.settings.center %} justify-center {% endif %}">
+                    {% if block.settings.image != blank %}
+                      {{
+                        block.settings.image
+                        | image_url: width: 96
+                        | image_tag: class: 'w-full max-w-[80px] md:max-w-[96px]', sizes: '96px'
+                      }}
+                    {% endif %}
+                    {% if block.settings.description != blank %}
+                      <div
+                        class="text-[12px] md:text-[16px] font-medium !leading-tight text-[#000000] [&>p>strong]:font-normal [&>p>strong]:underline [&>p>strong.highlight]:text-[#084C25] [&>p>strong.highlight]:no-underline"
+                        style="color: {{ block.settings.description_color }};"
+                      >
+                        {{ block.settings.description | highlight: '‘Excellent’' }}
+                      </div>
+                    {% endif %}
+                  </div>
+              {% endcase %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <div class="flex flex-col items-center justify-center gap-5">
+          {% if section.settings.heading != blank %}
+            <h2
+              class="text-[30px] md:text-[36px] font-bold !leading-tight text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
+              style="color: {{ section.settings.heading_color }};"
+            >
+              {{ section.settings.heading }}
+            </h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div
+              class="text-[16px] md:text-[20px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if section.settings.description_d_center %} md:text-center {% endif %}"
+              style="color: {{ section.settings.description_color }};"
+            >
+              {{ section.settings.description }}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if section.blocks.size > 0 %}
+          <div class="w-full flex flex-col gap-2">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'row' %}
+                  <div class="flex items-center gap-2">
+                    {% if block.settings.image != blank %}
+                      {{
+                        block.settings.image
+                        | image_url: width: 10
+                        | image_tag: class: 'w-full max-w-[10px]', sizes: '10px'
+                      }}
+                    {% endif %}
+                    {% if block.settings.description != blank %}
+                      <div
+                        class="{% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[14px] md:text-[16px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                        style="color: {{ block.settings.description_color }};"
+                      >
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+                  </div>
+              {% endcase %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if section.settings.note_text != blank %}
+          <div class="border border-dashed border-[#FF8686] bg-[#FFECEC] rounded-[10px] text-black font-normal text-sm !leading-tight px-3 md:px-4 py-[10px] md:py-3 text-center">
+            {{ section.settings.note_text }}
+          </div>
+        {% endif %}
+
+        {% assign now = 'now' | date: '%s' | plus: 0 %}
+        {% assign two_days = 2 | times: 86400 %}
+        {% assign shipped_start_date = now | plus: two_days | date: '%a, %b %d' %}
+
+        <div class="flex items-center justify-around gap-5 border-b border-[#0000001A] pb-5">
+          <div class="flex items-center gap-2">
+            <span class="border border-[#084C25] w-3 h-3 rounded-[12px] !flex items-center justify-center">
+              <span class="w-[6px] h-[6px] bg-[#084C25] rounded-[5px] !block"></span>
+            </span>
+            <span class="text-black font-normal text-sm !leading-tight ">Ships by {{ shipped_start_date }}</span>
+          </div>
+          <div class="text-black font-normal text-sm !leading-tight ">Fast US Shipping</div>
+        </div>
+
+        {% render 'bundle-subscription-buy-horizontal', section: section %}
+
+        {% if section.settings.guarantee_text != blank %}
+          <div class="flex items-center justify-center gap-3 bg-[#0000000D] rounded-[10px] p-3">
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.66798 3.69873V6.96875C1.66328 10.4388 3.70236 13.6037 6.73986 14.8488C6.98361 14.9487 7.24142 14.9987 7.49923 14.9987C7.75703 14.9987 8.01484 14.9487 8.2586 14.8488L8.7133 14.6637C11.5211 13.5087 13.3352 10.6137 13.3305 7.28873V3.69873C13.3305 3.42874 13.1336 3.20874 12.8805 3.19873C11.1977 3.12875 9.47734 2.42374 7.7758 1.09375C7.61172 0.96875 7.38673 0.96875 7.22265 1.09375C5.52112 2.42374 3.80078 3.12875 2.11799 3.19873C1.86484 3.20874 1.66798 3.42874 1.66798 3.69873ZM4.8789 7.58875C5.06172 7.39374 5.36173 7.39374 5.54455 7.58875L6.87109 9.00375L9.45391 6.24875C9.63673 6.05374 9.93673 6.05374 10.1196 6.24875C10.3023 6.44376 10.3023 6.75873 10.1196 6.95374L7.20391 10.0638C7.11485 10.1588 6.99297 10.2087 6.87109 10.2087C6.74455 10.2087 6.62736 10.1588 6.5383 10.0638L4.8789 8.29373C4.69611 8.09875 4.69611 7.78375 4.8789 7.58875Z" fill="#084C25"/>
+            </svg>
+            <div class="text-black font-normal text-sm !leading-tight ">
+              {{ section.settings.guarantee_text }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AC Featured Product",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "range",
+      "id": "slider_start_point",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "min",
+      "label": "Slider Start Point",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_m_center",
+      "label": "Heading Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_d_center",
+      "label": "Heading Desktop Center",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#121212"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "description_m_center",
+      "label": "Description Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "description_d_center",
+      "label": "Description Desktop Center",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#121212"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "note_text",
+      "label": "Note Text",
+      "default": "⚠️ Beware of Amazon fakes! Dryft™ is exclusively sold here on our website."
+    },
+    {
+      "type": "text",
+      "id": "guarantee_text",
+      "label": "Guarantee Text",
+      "default": "Feel the difference in 90 days or your money back"
+    },
+    {
+      "type": "html",
+      "id": "sub_heading",
+      "label": "SubHeading",
+      "default": "Save 20% with automatic refills"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "image_right",
+      "label": "Image Right",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "btn_bottom_text",
+      "label": "Btn Bottom Text"
+    },
+    {
+      "type": "color",
+      "id": "btn_bottom_text_color",
+      "label": "Buttom Bottom Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "star_review",
+      "name": "Star Review",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "center",
+          "label": "Center",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "color",
+          "id": "bgcolor",
+          "label": "Background Color",
+          "default": "#F4F4F6"
+        },
+        {
+          "type": "html",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "checkbox",
+          "id": "label_m_center",
+          "label": "Label Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "label_d_center",
+          "label": "Label Desktop Center",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "label_color",
+          "label": "Label Color",
+          "default": "#000"
+        },
+        {
+          "type": "html",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_m_center",
+          "label": "Heading Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_d_center",
+          "label": "Heading Desktop Center",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading Color",
+          "default": "#121212"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "description_m_center",
+          "label": "Description Mobile Center",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "description_d_center",
+          "label": "Description Desktop Center",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "small_description",
+          "label": "Description Small",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "richtext",
+          "id": "btn_bottom_text",
+          "label": "Btn Bottom Text"
+        },
+        {
+          "type": "color",
+          "id": "btn_bottom_text_color",
+          "label": "Buttom Bottom Text Color",
+          "default": "#000"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "slider_position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Slider Position",
+          "default": 0
+        },
+        {
+          "type": "checkbox",
+          "id": "default",
+          "label": "Default",
+          "default": false
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "bottle_price",
+          "label": "Bottle Price"
+        },
+        {
+          "type": "text",
+          "id": "serving",
+          "label": "Serving"
+        },
+        {
+          "type": "text",
+          "id": "month",
+          "label": "Month"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge"
+        },
+        {
+          "type": "color",
+          "id": "badge_bg",
+          "label": "Badge Background"
+        },
+        {
+          "type": "text",
+          "id": "checkbox_description",
+          "label": "Checkbox Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "off",
+          "label": "OFF",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sale",
+          "label": "Show Sale",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "sale_text",
+          "label": "Sale Text",
+          "default": "Sale Ends In:"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_timer",
+          "label": "Hide Timer",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "header",
+          "content": "Setting to support Subscription"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_subscription",
+          "label": "Enable Subscription",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "sub_id",
+          "label": "Subscription ID",
+          "visible_if": "{{ block.settings.enable_subscription}}"
+        },
+        {
+          "type": "text",
+          "id": "sub_perceont_off",
+          "label": "Subscription Percent OFF",
+          "visible_if": "{{ block.settings.enable_subscription}}"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AC Featured Product"
+    }
+  ]
+}
+{% endschema %}

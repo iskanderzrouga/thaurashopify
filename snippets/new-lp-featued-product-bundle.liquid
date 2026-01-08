@@ -1,0 +1,151 @@
+<div class="w-full flex flex-col gap-4">
+  <div class="grid md:grid-cols-3 gap-1">
+    {% for block in section.blocks %}
+      {% if block.type == 'bundle' %}
+        <div
+          nl-product-secondary-card
+          data-position="{{ block.settings.slider_position }}"
+          data-id="{{ block.id }}"
+          class="group {% if block.settings.default %} active {% endif %} border-[2px] border-transparent [&.active]:border-[#EBA12F] rounded-[12px]"
+        >
+          <div class="border border-[#EBA12F] rounded-[12px] bg-[#D1E1D7] group-[.active]:bg-[#247042] px-2 py-3 md:py-5 flex flex-row md:flex-col h-full justify-between items-center gap-4 cursor-pointer">
+            <div class="flex flex-col gap-[6px] md:items-center md:text-center">
+              {% if block.settings.off != blank %}
+                <div class="text-[12px] md:text-[12px] font-normal !leading-tight text-[#084C25] bg-[#EBA12F] px-3 md:px-5 py-1 h-fit text-center whitespace-nowrap w-fit">
+                  {{ block.settings.off }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.title != blank %}
+                <div class="text-[16px] md:text-[18px] font-bold !leading-tight text-[#247042] group-[.active]:text-[#fff]">
+                  {{ block.settings.title }}
+                </div>
+              {% endif %}
+              {% if block.settings.show_sale %}
+                <div>
+                  {% if block.settings.sale_text != blank %}
+                    <div class="w-fit">
+                      <span class="text-[12px] md:text-[12px] font-bold !leading-tight text-[#fff] bg-[#FF0000] p-1 rounded-[4px] text-center w-fit">
+                        {{ block.settings.sale_text }}
+                      </span>
+                      <span class="ml-1 timer text-[14px] md:text-[16px] font-bold !leading-tight text-[#247042] group-[.active]:text-[#EBA12F]">
+                        <span class="minute">10</span>:<span class="second">00</span></span
+                      >
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="flex flex-col items-center gap-1">
+              {% if block.settings.product != blank %}
+                <div class="flex items-center gap-1">
+                  <div class="text-[19px] md:text-[20px] font-bold !leading-tight text-[#084C25] group-[.active]:text-[#EBA12F]">
+                    {{ block.settings.product.selected_or_first_available_variant.price | money }}
+                  </div>
+                  {% if block.settings.product.selected_or_first_available_variant.compare_at_price > block.settings.product.selected_or_first_available_variant.price %}
+                    <div class="text-[14px] md:text-[14px] font-bold !leading-tight text-[#00000078] group-[.active]:text-[#FFFFFF78] line-through">
+                      {{ block.settings.product.selected_or_first_available_variant.compare_at_price | money }}
+                    </div>
+                  {% endif %}
+                </div>
+              {% endif %}
+              {% if block.settings.serving != blank %}
+                <div class="text-[14px] md:text-[14px] font-bold !leading-tight text-[#247042] group-[.active]:text-[#fff]">
+                  {{ block.settings.serving }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="w-full">
+    {% for block in section.blocks %}
+      {% if block.type == 'bundle' %}
+        {% if block.settings.description != blank %}
+          <div
+            nl-product-secondary-description
+            data-id="{{ block.id }}"
+            class="text-[14px] md:text-[14px] font-normal !leading-tight text-[#000] md:text-[#084C25] w-full hidden [&.active]:block {% if block.settings.default %} active {% endif %}"
+            style="color: {{section.settings.color_primary}};"
+          >
+            {{ block.settings.description }}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% for block in section.blocks %}
+    {% if block.type == 'bundle' %}
+      <div
+        nl-product-secondary-add-cart
+        data-id="{{ block.id }}"
+        class="w-full hidden [&.active]:block {% if block.settings.default %} active {% endif %}"
+      >
+        {%- assign product_form_id = 'product-form-' | append: section.id -%}
+        {%- render 'buy-buttons--secondary',
+          block: block,
+          product: block.settings.product,
+          product_form_id: product_form_id,
+          section_id: section.id
+        -%}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <script>
+    document.querySelectorAll('[nl-product-secondary-card]').forEach((tab) => {
+      tab.addEventListener('click', function () {
+        const dataId = this.getAttribute('data-id');
+        document.querySelectorAll(`[nl-product-secondary-card]`).forEach((el) => {
+          el.classList.remove('active');
+        });
+        this.classList.add('active');
+
+        document.querySelectorAll('[nl-product-secondary-add-cart]').forEach((btn) => {
+          btn.classList.remove('active');
+        });
+        const matchingBtn = document.querySelector(`[nl-product-secondary-add-cart][data-id="${dataId}"]`);
+        if (matchingBtn) {
+          matchingBtn.classList.add('active');
+        }
+
+        document.querySelectorAll('[nl-product-secondary-description]').forEach((des) => {
+          des.classList.remove('active');
+        });
+        const matchingDescription = document.querySelector(`[nl-product-secondary-description][data-id="${dataId}"]`);
+        if (matchingDescription) {
+          matchingDescription.classList.add('active');
+        }
+      });
+    });
+
+    const duration = 10 * 60; // 10 minutes in seconds
+    let startTime = Date.now();
+    function updateTimers() {
+      const now = Date.now();
+      const elapsed = Math.floor((now - startTime) / 1000);
+      const timeLeft = duration - (elapsed % duration);
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+      const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      const minsFormatted = `${String(mins).padStart(2, '0')}`;
+      const secsFormatted = `${String(secs).padStart(2, '0')}`;
+      // document.querySelectorAll('.timer').forEach((timer) => {
+      //   timer.textContent = formatted;
+      // });
+      document.querySelectorAll('.timer .minute').forEach((timer) => {
+        timer.textContent = minsFormatted;
+      });
+      document.querySelectorAll('.timer .second').forEach((timer) => {
+        timer.textContent = secsFormatted;
+      });
+    }
+    // Update every second
+    setInterval(updateTimers, 1000);
+  </script>
+</div>

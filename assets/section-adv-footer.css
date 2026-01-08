@@ -1,0 +1,105 @@
+/* =================================================================
+   ADV Footer Section Styles
+   Figma Design Values Applied
+   ================================================================= */
+
+/* Footer Styles */
+.adv-footer {
+  width: 100%;
+  position: relative;
+  border-top: 2px solid #d9d9d9;
+  /* Background color applied via inline style for customization */
+}
+
+/* Mobile First - 400px container */
+.adv-footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 20px 32px 20px;
+  margin: 0 auto;
+}
+
+/* Text Styles */
+.adv-footer__text {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  width: 100%;
+  /* Color applied via inline style for customization */
+}
+
+/* =================================================================
+   Desktop Styles (750px and up) - 1440px container
+   ================================================================= */
+@media screen and (min-width: 750px) {
+  .adv-footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1440px;
+    padding: 50px 150px;
+    gap: 30px;
+  }
+
+  .adv-footer__text {
+    font-size: 16px !important;
+    text-align: center;
+    width: 100%;
+    max-width: 1140px;
+  }
+}
+
+/* =================================================================
+   Large Desktop Styles (990px and up)
+   ================================================================= */
+@media screen and (min-width: 990px) {
+  .adv-footer__container {
+    max-width: 1440px;
+  }
+}
+
+/* =================================================================
+   Accessibility & Print Styles
+   ================================================================= */
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .adv-footer {
+    border-top: 3px solid currentColor;
+  }
+
+  .adv-footer__text {
+    font-weight: 600 !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .adv-footer {
+    background-color: white !important;
+    border-top: 1px solid #000;
+  }
+
+  .adv-footer__text {
+    color: #000 !important;
+  }
+
+  .adv-footer__container {
+    padding: 20px 10px !important;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.adv-footer:focus-within {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}

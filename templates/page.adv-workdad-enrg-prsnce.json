@@ -1,0 +1,597 @@
+{
+  "sections": {
+    "adv_main_secondary_header_DxVUpL": {
+      "type": "adv-main-secondary-header",
+      "name": "Adv Secondary Header",
+      "settings": {
+        "section_id": "",
+        "text": "Advertorial",
+        "logo": "shopify:\/\/shop_images\/StrongMenDaily.svg",
+        "bgcolor": "#1544aa",
+        "bgcolor2": "#ebebeb",
+        "max_width": 1040,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_ybDHaH": {
+      "type": "adv-main-secondary",
+      "blocks": {
+        "publish_date_yFFpm3": {
+          "type": "publish_date",
+          "settings": {
+            "color": "#1544aa",
+            "description": "<p>Mon. March 16, 2025<\/p>",
+            "image": "shopify:\/\/shop_images\/calendar-event.png"
+          }
+        },
+        "avatar_QxfVcr": {
+          "type": "avatar",
+          "settings": {
+            "heading": "",
+            "description": "<p>Special Advertorial by <strong>Alex Bronwasser<\/strong><br\/><em>Senior Editor<\/em><\/p>",
+            "color": "#121212",
+            "image": "shopify:\/\/shop_images\/image_1550_393cd2d8-6afd-4090-a6d5-3631be58b49d.png"
+          }
+        },
+        "image_dWGaFp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223803_1.png",
+            "max_width": 700
+          }
+        },
+        "description_GeYckr": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Monday through Friday, you're a ghost in your own home.<br\/> <br\/>You walk through the door at 6 PM.<br\/> <br\/>Your daughter lights up. \"Daddy! Come play with me!\"<br\/> <br\/>And every fiber of your being wants to say yes. But your body says no.<br\/> <br\/>\"Not tonight, sweetie. Daddy's really tired.\"<br\/> <br\/>It happens again Tuesday. Wednesday. By Thursday, she's not even asking anymore.<br\/> <br\/>She's learned that weeknight dad doesn't have anything left. That you're only really \"there\" on Saturday mornings.<br\/> <br\/>Your son shows you his Lego creation. You barely look. \"That's great, bud.\"<br\/> <br\/>You sit on the couch. Your wife sits on the other end. The distance isn't just physical.<br\/> <br\/>And deep down, you know: This isn't who you wanted to be as a father.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_mHncRT": {
+          "type": "heading",
+          "settings": {
+            "heading": "You Tell Yourself It's Just Part of Working Hard. But Is It?",
+            "heading_color": "#0b0b0b",
+            "italic": true,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_and_text_MiNkrF": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "",
+            "description": "<p>Here's what you've been telling yourself:<br\/> <br\/>\"This is just what happens when you work full-time.\"<br\/> <br\/>\"I'm getting older. Of course I'm tired.\"<br\/> <br\/>\"At least I'm providing. That's what matters.\"<br\/> <br\/>But here's what nobody's telling you:<br\/> <br\/><strong>One in three working fathers over 35 struggle with the exact same thing. <br\/><br\/><\/strong>Coming home drained. Having nothing left. Waiting for the weekend.<br\/> <br\/>And it's not because you're weak. It's not because you don't care.<br\/> <br\/><strong>It's because your body is running on empty.<br\/><\/strong><br\/>Think about it: You've been up since 6 AM. Powered through 8-10 hours. Meetings. Deadlines. Stress.<\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250912_2.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "description_MxPW9n": {
+          "type": "description",
+          "settings": {
+            "description": "<p>By the time you walk through that door, your stress hormones are tapped out. Your cortisol has been elevated all day.<br\/> <br\/>Your natural energy systems are depleted.<br\/> <br\/><strong>You're not choosing to be absent. Your body has no fuel left.<\/strong><br\/> <br\/>And pushing through harder? Drinking more coffee? That's not fixing it. That's accepting that 71% of your family time happens in survival mode.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_aC9tfX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Millions of Dads Have Energy After Work. What's Different?",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_jmqg7J": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223803_1_b3634c8e-50df-4b32-9588-daa0a63db3f8.png",
+            "max_width": 700
+          }
+        },
+        "description_k47q9x": {
+          "type": "description",
+          "settings": {
+            "description": "<p>There are millions of men who work just as hard as you. Same hours. Same stress.<br\/> <br\/>But they come home energized.<br\/> <br\/>They get on the floor and play. They're present at dinner. They don't spend weeknights in a fog.<br\/> <br\/><strong>So what's different?<\/strong><br\/> <br\/>It's not that they care more. (You care. That's why this hurts.)<br\/> <br\/>It's not easier jobs. (They're grinding like you.)<br\/> <br\/><strong>The difference: Their bodies can sustain energy production all day.<\/strong><br\/> <br\/>Here's what's happening:<br\/> <br\/>When you're under chronic stress—work, responsibilities, poor sleep—your body produces elevated cortisol (your stress hormone).<br\/> <br\/><strong>High cortisol:<br\/><br\/><\/strong>✅ Depletes your natural energy reserves<br\/>✅ Ruins your sleep quality (so you wake up behind)<\/p><p>✅ Causes brain fog and irritability<\/p><p>✅ Makes you crash by 3 PM<br\/><br\/>By 6 PM when you get home? There's nothing left.<br\/> <br\/><strong>This isn't a motivation problem. This is a cortisol problem.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_aqQqHy": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "\"But I've Tried Everything. Nothing Works.\"",
+            "description": "<p>You've tried pushing through. Doesn't work—you burn out harder.<br\/> <br\/>You've tried coffee. It helps for an hour, then you crash worse.<br\/> <br\/>You've tried energy drinks. Same spike, same crash.<br\/> <br\/>You've tried \"getting more sleep.\" But you can't fall asleep because cortisol is still high. And even when you do sleep, you wake up exhausted.<\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/Frame_2147223914.png",
+            "image_right": false,
+            "max_width": 400
+          }
+        },
+        "description_thhXAx": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>Here's what you haven't tried:<\/strong><br\/> <br\/>Actually lowering your cortisol so your body can produce natural, sustained energy again.<br\/> <br\/>Not stimulating yourself with caffeine (which raises cortisol more). Not \"pushing through\" (which depletes you further).<br\/> <br\/><strong>Actually restoring your body's ability to create fuel that lasts all day.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_QfDyMK": {
+          "type": "heading",
+          "settings": {
+            "heading": "How Adaptogens Restore Energy Without Stimulants",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_pThVWy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223903.png",
+            "max_width": 700
+          }
+        },
+        "description_JYTbtj": {
+          "type": "description",
+          "settings": {
+            "description": "<p>There's a category of natural compounds called adaptogens that work completely differently.<br\/> <br\/><strong>Adaptogens don't stimulate you. They restore you.<\/strong><br\/> <br\/>The most studied adaptogen is <strong>KSM-66 Ashwagandha.<\/strong><br\/> <br\/>Clinical studies show 600mg daily:<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "icon_text_qBFdwT": {
+          "type": "icon_text",
+          "settings": {
+            "five_col": false,
+            "color": "#0b0b0b",
+            "highlight": "27.9-32%",
+            "bgcolor": "#eff8fe",
+            "description1": "<p><em><strong>Reduces cortisol by<\/strong><\/em><em> 27.9-32%<\/em><\/p>",
+            "sub_description1": "<p>*Results are based on individuals ingredients<\/p>",
+            "icon1": "shopify:\/\/shop_images\/Group_2085661494_4cf76695-8763-4fc9-8745-1b7f7703c0bd.png",
+            "description2": "<p><em><strong>Improves sustained energy <\/strong><\/em><em>throughout the day<\/em><\/p>",
+            "sub_description2": "",
+            "icon2": "shopify:\/\/shop_images\/Group_2085661494_1.png",
+            "description3": "<p><em><strong>Improves sleep quality <\/strong><\/em><em>so you wake up rested<\/em><\/p>",
+            "sub_description3": "",
+            "icon3": "shopify:\/\/shop_images\/Group_2085661494_2.png",
+            "description4": "<p><em><strong>Improves sleep quality<\/strong><\/em><em> so you wake up rested<\/em><\/p>",
+            "sub_description4": "",
+            "icon4": "shopify:\/\/shop_images\/Frame_1707481875_c0fa8f09-70ea-4ff0-84f6-4d6e3702fb59.png",
+            "description5": "",
+            "sub_description5": ""
+          }
+        },
+        "description_E3L9D4": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Here's why this matters:<br\/> <br\/>When cortisol drops to healthy levels, your body stops operating in crisis mode. Your natural energy systems work properly again.<br\/> <br\/><strong>You're not being stimulated. You're being restored.<\/strong><br\/> <br\/>Think of it like this:<br\/> <br\/><strong>Caffeine =<\/strong> Whipping a tired horse to run faster. Works briefly. Then it collapses.<br\/> <br\/><strong>Adaptogens =<\/strong> Actually feeding the horse. Now it can run all day because it has real fuel.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "image_and_text_cLcty7": {
+          "type": "image_and_text",
+          "settings": {
+            "heading": "What It Actually Feels Like to Have Energy Left",
+            "description": "<p>Here's what men report after 3-4 weeks:<br\/> <br\/><strong>You walk through the door at 6 PM... and you're not empty.<\/strong><br\/> <br\/>Your daughter asks you to play. Instead of crushing guilt, you think: \"Yeah, let's do it.\"<br\/> <br\/>You get on the floor. Build the Lego tower. You're actually engaged—not going through motions.<br\/> <br\/>Dinner happens and you're in the conversation. Not  staring at your phone too fried to process words. <br\/> <br\/>Actually listening. Actually there.<br\/> <br\/>Bedtime comes. You read the story. You're not rushing to collapse. You're savoring it.<\/p>",
+            "color": "#0b0b0b",
+            "image": "shopify:\/\/shop_images\/20250913_1.png",
+            "image_right": true,
+            "max_width": 400
+          }
+        },
+        "description_Pp8heD": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>This is what it feels like when you're not running on empty.<\/strong><br\/> <br\/>Not jittery. Not wired. Just... there. Present. Like you remember feeling before stress piled up.<br\/> <br\/>Your wife notices. \"You seem different lately.\"<br\/> <br\/>Your kids notice. They start approaching you again in evenings. They've learned you're available now.<br\/> <br\/>That guilt eating at you? It starts to fade. <strong>Because you're actually showing up as the dad you want to be.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_ALJgmB": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Formula: Natural Energy That Lasts Into Evenings",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "description_LNy7Ck": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Most energy supplements are just caffeine with marketing. They spike you, crash you, leave you worse off.<br\/> <br\/><strong>Thaura was designed around clinical research.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "ingredients_9nHaYG": {
+          "type": "ingredients",
+          "settings": {
+            "heading": "Each 2-capsule serving contains:",
+            "description": "<p>Plus: Zinc, Boron, DIM, and metabolic support ingredients for complete hormone and energy optimization.<\/p>",
+            "color": "#0b0b0b",
+            "bgcolor": "#1544aa",
+            "btn_text1": "KSM-66® Ashwagandha",
+            "heading1": "600mg KSM-66® Ashwagandha",
+            "description1": "<p>The exact clinical dose proven to reduce cortisol 27.9% and impro ve sustained energy<\/p>",
+            "icon1": "shopify:\/\/shop_images\/image_30_b9198d61-0cca-4715-962f-92b5d020bd6b.png",
+            "btn_text2": "GlucoVantage® Dihydroberberine",
+            "heading2": "200mg GlucoVantage® Dihydroberberine",
+            "description2": "<p>Prevents energy crashes from blood sugar swings (5x more absorbable than regular berberine)<\/p>",
+            "icon2": "shopify:\/\/shop_images\/image_29_d1f12cc3-1994-497e-b1b4-31cd9c0ca4d6.png",
+            "btn_text3": "L-Theanine",
+            "heading3": "160mg L-Theanine",
+            "description3": "<p>Calm focus without<br\/>drowsiness<\/p>",
+            "icon3": "shopify:\/\/shop_images\/image_32_5eb29607-8775-422c-9736-a621a5833710.png"
+          }
+        },
+        "description_GXHUgh": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>Everything is:<\/strong><br\/><br\/><\/p><ul><li>Third-party tested for purity<\/li><li>No proprietary blends (you see exactly what you get)<\/li><li>No artificial junk<\/li><li>Made in USA, GMP-certified facility<br\/><\/li><\/ul><p><br\/><strong>Zero caffeine. Zero stimulants. Zero crash.<\/strong><\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_aaR6Xh": {
+          "type": "heading",
+          "settings": {
+            "heading": "90 Days to Be the Dad You Want to Be",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        }
+      },
+      "block_order": [
+        "publish_date_yFFpm3",
+        "avatar_QxfVcr",
+        "image_dWGaFp",
+        "description_GeYckr",
+        "heading_mHncRT",
+        "image_and_text_MiNkrF",
+        "description_MxPW9n",
+        "heading_aC9tfX",
+        "image_jmqg7J",
+        "description_k47q9x",
+        "image_and_text_aqQqHy",
+        "description_thhXAx",
+        "heading_QfDyMK",
+        "image_pThVWy",
+        "description_JYTbtj",
+        "icon_text_qBFdwT",
+        "description_E3L9D4",
+        "image_and_text_cLcty7",
+        "description_Pp8heD",
+        "heading_ALJgmB",
+        "description_LNy7Ck",
+        "ingredients_9nHaYG",
+        "description_GXHUgh",
+        "heading_aaR6Xh"
+      ],
+      "name": "Adv Main Secondary",
+      "settings": {
+        "heading": "Your Kids Stopped Asking You to Play. And You Know Exactly Why.",
+        "heading_color": "#0b0b0b",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 50,
+        "padding_bottom": 12,
+        "padding_top_m": 20,
+        "padding_bottom_m": 12
+      }
+    },
+    "nl_guarantee_YQwgGV": {
+      "type": "nl-guarantee",
+      "name": "NL Guarantee",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Group_49198.png",
+        "heading": "Your Purchase Is Protected by Our 90-Day \"See Results or Pay Nothing\" Guarantee",
+        "description": "<p>You've tried other products with disappointing results. That’s why we’re taking all the risk.<br\/> <br\/>Try Dryft for a full 90 days. If you don't feel more energetic, see visible changes, or notice clothes fitting better – simply send us an email, and we will refund 100% of your purchase. You don't even have to return the bottles.<br\/> <br\/>Why 90 days? Because real metabolic change takes time and we want you to experience the full benefits before deciding. Either way, you're covered.<br\/><\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_image_text_4VwQk3": {
+      "type": "adv-main-secondary-image-text",
+      "blocks": {
+        "row_QYCc9t": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 1",
+            "description": "<p>Slightly less irritable in evenings. Maybe you don't collapse immediately. Some notice nothing yet—adaptogens build gradually.<\/p>"
+          }
+        },
+        "row_yjzYxF": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 2-3",
+            "description": "<p>The shift happens. You come home with actual energy. The couch doesn't call. Your kids ask you to play and you genuinely want to.<\/p>"
+          }
+        },
+        "row_T97LcW": {
+          "type": "row",
+          "settings": {
+            "heading": "Week 4+",
+            "description": "<p>Being present becomes your normal. You have fuel to show up—at work AND at home. Your family gets the real you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_QYCc9t",
+        "row_yjzYxF",
+        "row_T97LcW"
+      ],
+      "name": "ADV 2 Image Text",
+      "settings": {
+        "section_id": "",
+        "heading": "Here's what to expect:",
+        "color": "#00754a",
+        "image": "shopify:\/\/shop_images\/Frame_1707481808_1.png",
+        "image_right": true,
+        "image_max_width": 400,
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_JCUFhz": {
+      "type": "adv-main-secondary",
+      "blocks": {
+        "description_ACzK6z": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>If you don't feel significant improvement by day 90, we'll refund every penny.<\/strong><br\/><br\/>No forms. No hoops. Just email us.<\/p>",
+            "color": "#0b0b0b"
+          }
+        },
+        "heading_pKR8gb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Kids Are Only Young Once",
+            "heading_color": "#0b0b0b",
+            "italic": false,
+            "small_heading": false,
+            "big_heading": false
+          }
+        },
+        "image_JrKAG6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_2147223804_1.png",
+            "max_width": 700
+          }
+        },
+        "description_4Bhxbz": {
+          "type": "description",
+          "settings": {
+            "description": "<p>How long are you going to accept being \"Weekend Dad\"?<br\/> <br\/>How many more times will you say \"not tonight, buddy\" before he stops asking?<br\/> <br\/><strong>Your kids don't need a perfect dad. They need a present dad.<\/strong><br\/> <br\/>They don't care about your job title. Your projects. Your emails.<br\/> <br\/>They care if you're there. Really there. Engaged. Playing. Laughing. Present.<br\/> <br\/><strong>Right now, you're giving your best energy to your job. Your family gets the scraps.<br\/> <\/strong><br\/>That's not because you don't love them. That's because you're running on empty.<br\/> <br\/>And you can fix this.<br\/> <br\/>Not by working less. Not by \"trying harder.\" Not by pushing through until burnout.<br\/> <br\/><strong>By actually giving your body what it needs to sustain energy all day.<\/strong><br\/> <br\/>So when you walk through that door at 6 PM, you still have something left to give.<\/p>",
+            "color": "#0b0b0b"
+          }
+        }
+      },
+      "block_order": [
+        "description_ACzK6z",
+        "heading_pKR8gb",
+        "image_JrKAG6",
+        "description_4Bhxbz"
+      ],
+      "name": "Adv Main Secondary",
+      "settings": {
+        "heading": "",
+        "heading_color": "#0b0b0b",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "adv_main_secondary_product_JJWzFx": {
+      "type": "adv-main-secondary-product",
+      "blocks": {
+        "row_bVXG6C": {
+          "type": "row",
+          "settings": {
+            "description": "<p>600mg clinical-dose KSM-66<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_ef41f8e7-9629-44ba-8fe3-f0b0d2e710e6.png"
+          }
+        },
+        "row_n3HJa6": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Zero caffeine, zero crash<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_1.png"
+          }
+        },
+        "row_6EtNYU": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Third-party tested<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_2.png"
+          }
+        },
+        "row_wQ3Q69": {
+          "type": "row",
+          "settings": {
+            "description": "<p>90-day money-back guarantee<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_3.png"
+          }
+        },
+        "row_rVgJCx": {
+          "type": "row",
+          "settings": {
+            "description": "<p>Free shipping<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_2085661520_4.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_bVXG6C",
+        "row_n3HJa6",
+        "row_6EtNYU",
+        "row_wQ3Q69",
+        "row_rVgJCx"
+      ],
+      "name": "ADV 2 Product",
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08_6.png",
+        "heading": "<p>Exclusive Discount Up to <br\/><strong>50% OFF!<\/strong><\/p>",
+        "description": "<p>This limited time deal is in high demand and stock keeps selling out.<\/p>",
+        "button_label": "GET THAURA NOW",
+        "button_url": "shopify:\/\/pages\/wrker-dad-fmly-pdp",
+        "bottom_text": "<p>This special offer is valid until <strong>Tuesday, October 7, 2025<\/strong><\/p>",
+        "deco_image": "shopify:\/\/shop_images\/Frame_2147223934_d672502d-5f61-4531-a351-1436b773c381.png",
+        "bgcolor": "#f1f1f1",
+        "border_color": "#1544aa",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "adv_main_secondary_note_Bkk4Md": {
+      "type": "adv-main-secondary-note",
+      "name": "ADV 2 Note",
+      "settings": {
+        "section_id": "",
+        "description": "<p><strong>P.S. <\/strong>— Your daughter is 6 now. Or 8. Or 10.<br\/> <br\/>In ten years, she won't remember how hard you worked. She won't remember the projects or promotions.<br\/> <br\/>She'll remember if you showed up.<br\/> <br\/>If you played when she asked. If you were present at dinner. If you seemed happy to see her.<br\/> <br\/>You can't get these years back. But you can get your energy back.<\/p>",
+        "button_label": "TRY THAURA RISK-FREE",
+        "button_url": "shopify:\/\/pages\/wrker-dad-fmly-pdp",
+        "bgcolor": "#eff8fe",
+        "border_color": "#ff3000",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "padding_top_m": 36,
+        "padding_bottom_m": 0
+      }
+    },
+    "adv_main_secondary_faqs_RG3QTP": {
+      "type": "adv-main-secondary-faqs",
+      "blocks": {
+        "row_6kW6xC": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is this just caffeine?",
+            "description": "<p>No. Zero caffeine. Zero stimulants. Adaptogens reduce cortisol and restore natural energy production. Completely different.<\/p>"
+          }
+        },
+        "row_DriJTc": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "I'm just getting older. Can this really help?",
+            "description": "<p>You're probably 40s or 50s—that's not old. The issue is chronic cortisol depleting your energy. Fix that, energy returns.<\/p>"
+          }
+        },
+        "row_MTgmrU": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "When will I feel it?",
+            "description": "<p>Most men notice improved evening energy within 2-3 weeks. Full benefits build over 3-4 weeks.<\/p>"
+          }
+        },
+        "row_nKdnr9": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Can I take it with coffee?",
+            "description": "<p>Yes. Though many naturally drink less coffee within a few weeks.<\/p>"
+          }
+        },
+        "row_JV4fpy": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if it doesn't work?",
+            "description": "<p> Email us within 90 days for a full refund.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_6kW6xC",
+        "row_DriJTc",
+        "row_MTgmrU",
+        "row_nKdnr9",
+        "row_JV4fpy"
+      ],
+      "name": "ADV 2 Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Quick Answers",
+        "description": "",
+        "dropdown_heading_bgcolor": "",
+        "dropdown_content_bgcolor": "",
+        "button_label": "GET STARTED NOW",
+        "button_url": "shopify:\/\/pages\/wrker-dad-fmly-pdp",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#171717",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1040,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "adv_main_secondary_footer_fH7cQW": {
+      "type": "adv-main-secondary-footer",
+      "name": "Adv Secondary Footer",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_color": "#444444",
+        "description": "<p>These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.<\/p>",
+        "description_color": "#444444",
+        "button_label": "",
+        "button_url": "",
+        "border_color": "#d9d9d9",
+        "bgcolor": "#ffffff",
+        "max_width": 1040,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "padding_top_m": 28,
+        "padding_bottom_m": 28
+      }
+    }
+  },
+  "order": [
+    "adv_main_secondary_header_DxVUpL",
+    "adv_main_secondary_ybDHaH",
+    "nl_guarantee_YQwgGV",
+    "adv_main_secondary_image_text_4VwQk3",
+    "adv_main_secondary_JCUFhz",
+    "adv_main_secondary_product_JJWzFx",
+    "adv_main_secondary_note_Bkk4Md",
+    "adv_main_secondary_faqs_RG3QTP",
+    "adv_main_secondary_footer_fH7cQW"
+  ]
+}

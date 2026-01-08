@@ -1,0 +1,358 @@
+/**
+ * Section: What It Actually Feels Like
+ * 100% Figma Accuracy - Desktop & Mobile Responsive
+ * Font: Open Sans (Bold for headline, Regular for body)
+ * Layout: Text Left, Image Right (REVERSED from Wait Caffeine section)
+ */
+
+/* ============================================
+   CSS VARIABLES - DESIGN TOKENS
+   ============================================ */
+
+:root {
+  /* Colors - Exact from Figma */
+  --adv-what-it-feels-bg: #ffffff;
+  --adv-what-it-feels-text-color: #0b0b0b;
+
+  /* Typography - Desktop (Exact from Figma) */
+  --adv-what-it-feels-headline-size: 32px;
+  --adv-what-it-feels-headline-line-height: 38.4px;
+  --adv-what-it-feels-body-size: 20px;
+  --adv-what-it-feels-body-line-height: 28px;
+
+  /* Spacing - Desktop */
+  --adv-what-it-feels-section-gap: 30px;
+  --adv-what-it-feels-content-gap: 50px;
+}
+
+/* ============================================
+   SECTION CONTAINER
+   ============================================ */
+
+.adv-what-it-feels {
+  background-color: var(--adv-what-it-feels-bg) !important;
+  width: 100% !important;
+  margin: 0 !important;
+  /* Padding applied via inline style from section settings */
+}
+
+.adv-what-it-feels__container {
+  max-width: 1440px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 150px !important; /* Only horizontal padding */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: var(--adv-what-it-feels-section-gap) !important;
+}
+
+/* ============================================
+   CONTENT LAYOUT (Desktop: Text Left, Image Right)
+   ============================================ */
+
+.adv-what-it-feels__content {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: var(--adv-what-it-feels-content-gap) !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+  margin: 0 !important;
+}
+
+/* ============================================
+   TEXT CONTENT (LEFT SIDE on Desktop)
+   ============================================ */
+
+.adv-what-it-feels__text-content {
+  flex: 0 0 490px !important;
+  width: 490px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 30px !important;
+  order: 1 !important; /* Text first on Desktop */
+}
+
+/* Headline - Bold ONLY, NOT Italic (Exact Figma: OpenSans-Bold) */
+.adv-what-it-feels__headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-it-feels-headline-size) !important;
+  font-weight: 700 !important; /* Bold */
+  font-style: normal !important; /* NOT Italic */
+  line-height: var(--adv-what-it-feels-headline-line-height) !important;
+  color: var(--adv-what-it-feels-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+/* Prevent any italic styling on headline */
+.adv-what-it-feels__headline,
+.adv-what-it-feels__headline * {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+/* Desktop: Hide mobile-only headline, show desktop-only headline */
+.adv-what-it-feels__headline--mobile-only {
+  display: none !important;
+}
+
+.adv-what-it-feels__headline--desktop-only {
+  display: block !important;
+}
+
+/* Body Text - Regular/Normal by default, allows Bold from editor */
+.adv-what-it-feels__body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-it-feels-body-size) !important;
+  font-weight: 400 !important; /* Regular/Normal by default */
+  font-style: normal !important; /* NOT Italic */
+  line-height: var(--adv-what-it-feels-body-line-height) !important;
+  color: var(--adv-what-it-feels-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.adv-what-it-feels__body p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 400 !important; /* Regular/Normal by default */
+  font-style: normal !important; /* NOT Italic */
+  line-height: inherit !important;
+  color: inherit !important;
+  text-align: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Allow Bold from rich text editor (strong/b tags) */
+.adv-what-it-feels__body strong,
+.adv-what-it-feels__body b {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 700 !important; /* Allow Bold */
+  font-style: normal !important; /* Keep NOT italic */
+}
+
+/* Prevent Italic (em/i tags should stay normal) */
+.adv-what-it-feels__body em,
+.adv-what-it-feels__body i {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: inherit !important; /* Keep current weight (can be bold) */
+  font-style: normal !important; /* Force NOT italic */
+}
+
+/* ============================================
+   IMAGE SECTION (RIGHT SIDE on Desktop)
+   ============================================ */
+
+.adv-what-it-feels__image-wrapper {
+  flex: 0 0 500px !important;
+  width: 500px !important;
+  height: 442px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  order: 2 !important; /* Image second on Desktop */
+}
+
+.adv-what-it-feels__image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ============================================
+   CONCLUSION TEXT (Full Width) - Regular/Normal
+   ============================================ */
+
+.adv-what-it-feels__conclusion {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-it-feels-body-size) !important;
+  font-weight: 400 !important; /* Regular/Normal by default */
+  font-style: normal !important; /* NOT Italic */
+  line-height: var(--adv-what-it-feels-body-line-height) !important;
+  color: var(--adv-what-it-feels-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+}
+
+.adv-what-it-feels__conclusion p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 400 !important; /* Regular/Normal by default */
+  font-style: normal !important; /* NOT Italic */
+  line-height: inherit !important;
+  color: inherit !important;
+  text-align: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Allow Bold from rich text editor (strong/b tags) */
+.adv-what-it-feels__conclusion strong,
+.adv-what-it-feels__conclusion b {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 700 !important; /* Allow Bold */
+  font-style: normal !important; /* Keep NOT italic */
+}
+
+/* Prevent Italic (em/i tags should stay normal) */
+.adv-what-it-feels__conclusion em,
+.adv-what-it-feels__conclusion i {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: inherit !important; /* Keep current weight (can be bold) */
+  font-style: normal !important; /* Force NOT italic */
+}
+
+/* ============================================
+   MOBILE RESPONSIVE (1000% Exact from Figma Mobile Design)
+   Max-width: 749px
+   ============================================ */
+
+@media screen and (max-width: 749px) {
+  :root {
+    /* Typography - Mobile (Exact from Figma) */
+    --adv-what-it-feels-headline-size: 26px;
+    --adv-what-it-feels-headline-line-height: 31.2px;
+    --adv-what-it-feels-body-size: 18px;
+    --adv-what-it-feels-body-line-height: 25.2px;
+
+    /* Spacing - Mobile (Exact from Figma) */
+    --adv-what-it-feels-section-gap: 20px;
+    --adv-what-it-feels-content-gap: 20px;
+  }
+
+  /* Container - Mobile: 400px max-width */
+  .adv-what-it-feels__container {
+    max-width: 400px !important;
+    padding: 0 20px !important; /* 20px horizontal padding to center 360px content */
+    gap: var(--adv-what-it-feels-section-gap) !important;
+  }
+
+  /* Mobile: Show mobile-only headline, hide desktop-only headline */
+  .adv-what-it-feels__headline--mobile-only {
+    display: block !important;
+    width: 360px !important;
+    margin: 0 auto !important;
+  }
+
+  .adv-what-it-feels__headline--desktop-only {
+    display: none !important;
+  }
+
+  /* Content Layout: Column on Mobile */
+  .adv-what-it-feels__content {
+    flex-direction: column !important;
+    max-width: 360px !important;
+    width: 360px !important;
+    gap: var(--adv-what-it-feels-content-gap) !important;
+    margin: 0 auto !important;
+  }
+
+  /* Text Content - Mobile Width (Only contains Body text on mobile) */
+  .adv-what-it-feels__text-content {
+    flex: 1 1 auto !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    gap: 0 !important; /* No gap needed since headline is hidden */
+    order: 2 !important; /* Body comes after Image on mobile */
+  }
+
+  /* Image - Mobile Size */
+  .adv-what-it-feels__image-wrapper {
+    flex: 0 0 auto !important;
+    width: 360px !important;
+    height: 304.16px !important;
+    order: 1 !important; /* Image comes first after headline on mobile */
+  }
+
+  /* Headline - Mobile Typography */
+  .adv-what-it-feels__headline {
+    font-size: var(--adv-what-it-feels-headline-size) !important;
+    line-height: var(--adv-what-it-feels-headline-line-height) !important;
+  }
+
+  /* Body Text - Mobile Typography */
+  .adv-what-it-feels__body {
+    font-size: var(--adv-what-it-feels-body-size) !important;
+    line-height: var(--adv-what-it-feels-body-line-height) !important;
+  }
+
+  /* Conclusion - Mobile Width & Typography */
+  .adv-what-it-feels__conclusion {
+    max-width: 360px !important;
+    width: 360px !important;
+    font-size: var(--adv-what-it-feels-body-size) !important;
+    line-height: var(--adv-what-it-feels-body-line-height) !important;
+  }
+}
+
+/* ============================================
+   TABLET RESPONSIVE
+   Max-width: 989px
+   ============================================ */
+
+@media screen and (max-width: 989px) and (min-width: 750px) {
+  .adv-what-it-feels__container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  /* Content Layout: Column on Tablet */
+  .adv-what-it-feels__content {
+    flex-direction: column !important;
+    max-width: 100% !important;
+  }
+
+  /* Text Content - Tablet Width */
+  .adv-what-it-feels__text-content {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    max-width: 490px !important;
+    order: 1 !important;
+  }
+
+  /* Image - Tablet Size (scale proportionally) */
+  .adv-what-it-feels__image-wrapper {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    height: auto !important;
+    aspect-ratio: 500 / 442 !important;
+    order: 2 !important;
+  }
+
+  /* Conclusion - Tablet Width */
+  .adv-what-it-feels__conclusion {
+    max-width: 100% !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY & INTERACTIONS
+   ============================================ */
+
+.adv-what-it-feels__image {
+  transition: transform 0.3s ease !important;
+}
+
+.adv-what-it-feels__image:hover {
+  transform: scale(1.02) !important;
+}
+
+/* Focus styles for accessibility */
+.adv-what-it-feels *:focus-visible {
+  outline: 2px solid var(--adv-what-it-feels-text-color) !important;
+  outline-offset: 2px !important;
+}

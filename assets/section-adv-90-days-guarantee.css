@@ -1,0 +1,496 @@
+/* ============================================
+   90 DAYS GUARANTEE SECTION
+   Exact from Figma Design
+   ============================================ */
+
+:root {
+  /* Colors */
+  --adv-90-days-bg: #ffffff;
+  --adv-90-days-text-black: #0b0b0b;
+  --adv-90-days-text-dark: #000000;
+  --adv-90-days-gray-box-bg: #f6f6f6;
+  --adv-90-days-gray-box-border: #aaaaaa;
+  --adv-90-days-green-title: #00754a; /* rgb(0, 117, 74) from Figma */
+  --adv-90-days-green-dark: #084c25; /* rgb(8, 76, 37) from Figma */
+
+  /* Typography - Desktop */
+  --adv-90-days-headline-size: 32px;
+  --adv-90-days-headline-line-height: 38.4px;
+  --adv-90-days-guarantee-title-size: 34px;
+  --adv-90-days-guarantee-title-line-height: 40px;
+  --adv-90-days-guarantee-body-size: 17px;
+  --adv-90-days-guarantee-body-line-height: 24px;
+  --adv-90-days-timeline-title-size: 36px;
+  --adv-90-days-timeline-title-line-height: 50.4px;
+  --adv-90-days-timeline-badge-size: 16px;
+  --adv-90-days-timeline-text-size: 16px;
+  --adv-90-days-timeline-text-line-height: 22.4px;
+  --adv-90-days-bottom-size: 20px;
+  --adv-90-days-bottom-line-height: 28px;
+
+  /* Spacing */
+  --adv-90-days-section-gap: 25px;
+  --adv-90-days-guarantee-gap: 20px;
+  --adv-90-days-timeline-gap: 20px;
+}
+
+/* ============================================
+     CONTAINER
+     ============================================ */
+
+.adv-90-days {
+  background-color: var(--adv-90-days-bg) !important;
+  width: 100% !important;
+}
+
+.adv-90-days__container {
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--adv-90-days-section-gap) !important;
+}
+
+/* ============================================
+     MAIN HEADLINE
+     ============================================ */
+
+.adv-90-days__headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-headline-size) !important;
+  font-weight: 700 !important; /* Bold */
+  line-height: var(--adv-90-days-headline-line-height) !important;
+  color: var(--adv-90-days-text-black) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+/* ============================================
+     GUARANTEE BOX (Gray)
+     ============================================ */
+
+.adv-90-days__guarantee-box {
+  background-color: var(--adv-90-days-gray-box-bg) !important;
+  border: 1px solid var(--adv-90-days-gray-box-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0px 4px 7px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -5px rgba(0, 0, 0, 0.1) !important;
+  padding: 60px 30px !important;
+  width: 100% !important;
+}
+
+.adv-90-days__guarantee-content {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: var(--adv-90-days-guarantee-gap) !important;
+  max-width: 984px !important;
+  margin: 0 auto !important;
+}
+
+/* Icon/Badge */
+.adv-90-days__icon-wrapper {
+  flex-shrink: 0 !important;
+  width: 380px !important;
+  height: 380px !important;
+}
+
+.adv-90-days__icon {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* Guarantee Text */
+.adv-90-days__guarantee-text {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 28px !important; /* ~27.93px from Figma */
+}
+
+.adv-90-days__guarantee-title {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-guarantee-title-size) !important;
+  font-weight: 700 !important; /* Bold */
+  line-height: var(--adv-90-days-guarantee-title-line-height) !important;
+  color: var(--adv-90-days-text-dark) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-90-days__guarantee-body {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-guarantee-body-size) !important;
+  font-weight: 400 !important; /* Regular/Roman */
+  line-height: var(--adv-90-days-guarantee-body-line-height) !important;
+  color: var(--adv-90-days-text-dark) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-90-days__guarantee-body p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+}
+
+.adv-90-days__guarantee-body p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ============================================
+     TIMELINE BOX (White) - Grid Layout
+     ============================================ */
+
+.adv-90-days__timeline-box {
+  background-color: #ffffff !important;
+  border: 1px solid var(--adv-90-days-green-title) !important;
+  border-radius: 12px !important;
+  padding: 0 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Timeline Items - Content Section */
+.adv-90-days__timeline-items {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--adv-90-days-timeline-gap) !important;
+  padding: 20px 15px !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
+@media screen and (min-width: 750px) {
+  .adv-90-days__timeline-items {
+    padding: 30px !important;
+    gap: 30px !important;
+  }
+}
+
+.adv-90-days__timeline-title {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-timeline-title-size) !important;
+  font-weight: 700 !important; /* Bold */
+  line-height: var(--adv-90-days-timeline-title-line-height) !important;
+  color: var(--adv-90-days-green-title) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 750px) {
+  .adv-90-days__timeline-title {
+    text-align: left !important;
+  }
+}
+
+.adv-90-days__timeline-text {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-timeline-text-size) !important;
+  font-weight: 400 !important; /* Regular/Roman */
+  line-height: var(--adv-90-days-timeline-text-line-height) !important;
+  color: var(--adv-90-days-text-dark) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 750px) {
+  .adv-90-days__timeline-text {
+    text-align: left !important;
+  }
+}
+
+/* Timeline Tabs (Interactive) - Grid on Mobile, Flex on Desktop */
+.adv-90-days__timeline-tabs {
+  width: 100% !important;
+}
+
+.adv-90-days__timeline-tab {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-timeline-badge-size) !important;
+  font-weight: 500 !important;
+  line-height: 19.2px !important;
+  color: var(--adv-90-days-green-dark) !important;
+  text-align: center !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 8px 16px !important;
+  border: 1px solid var(--adv-90-days-green-dark) !important;
+  border-radius: 100px !important;
+  background-color: transparent !important;
+
+  cursor: pointer !important;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+  width: 100% !important; /* Full width on mobile for grid */
+}
+
+@media screen and (min-width: 750px) {
+  .adv-90-days__timeline-tab {
+    width: fit-content !important;
+    padding: 8px 20px !important;
+  }
+}
+
+.adv-90-days__timeline-tab:hover {
+  background-color: rgba(8, 76, 37, 0.1) !important;
+}
+
+.adv-90-days__timeline-tab.active {
+  background-color: var(--adv-90-days-green-dark) !important;
+  color: #ffffff !important;
+}
+
+/* Timeline Descriptions Container */
+.adv-90-days__timeline-descriptions {
+  position: relative !important;
+  min-height: 120px !important;
+  width: 100% !important;
+}
+
+/* Timeline Image - Grid Layout Compatible */
+.adv-90-days__timeline-image-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 300px !important;
+  background-color: #ffffff !important;
+  overflow: hidden !important;
+  border-radius: 12px 12px 0 0 !important; /* Top corners on mobile */
+}
+
+@media screen and (min-width: 750px) {
+  .adv-90-days__timeline-image-wrapper {
+    min-height: 400px !important;
+    border-radius: 12px 0 0 12px !important; /* Left corners on desktop */
+  }
+}
+
+.adv-90-days__timeline-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* ============================================
+     BOTTOM TEXT
+     ============================================ */
+
+.adv-90-days__bottom-bold {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-bottom-size) !important;
+  font-weight: 700 !important; /* Bold */
+  line-height: var(--adv-90-days-bottom-line-height) !important;
+  color: var(--adv-90-days-text-black) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-90-days__bottom-text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-90-days-bottom-size) !important;
+  font-weight: 400 !important; /* Regular */
+  line-height: var(--adv-90-days-bottom-line-height) !important;
+  color: var(--adv-90-days-text-black) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-90-days__bottom-text p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+}
+
+.adv-90-days__bottom-text p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ============================================
+     MOBILE RESPONSIVE (< 750px)
+     ============================================ */
+
+@media screen and (max-width: 749px) {
+  :root {
+    /* Typography - Mobile */
+    --adv-90-days-headline-size: 26px;
+    --adv-90-days-headline-line-height: 31.2px;
+    --adv-90-days-guarantee-title-size: 28px;
+    --adv-90-days-guarantee-title-line-height: 33.6px;
+    --adv-90-days-guarantee-body-size: 16px;
+    --adv-90-days-guarantee-body-line-height: 22.4px;
+    --adv-90-days-timeline-title-size: 28px;
+    --adv-90-days-timeline-title-line-height: 39.2px;
+    --adv-90-days-timeline-badge-size: 16px;
+    --adv-90-days-timeline-text-size: 20px;
+    --adv-90-days-timeline-text-line-height: 28px;
+    --adv-90-days-bottom-size: 20px;
+    --adv-90-days-bottom-line-height: 28px;
+    --adv-90-days-bottom-text-size: 18px;
+    --adv-90-days-bottom-text-line-height: 25.2px;
+
+    /* Spacing - Mobile */
+    --adv-90-days-section-gap: 20px;
+    --adv-90-days-guarantee-gap: 30px;
+    --adv-90-days-timeline-gap: 20px;
+  }
+
+  .adv-90-days__container {
+    gap: var(--adv-90-days-section-gap) !important;
+  }
+
+  /* Headline - Mobile */
+  .adv-90-days__headline {
+    max-width: 360px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Guarantee Box - Mobile (with overlapping badge) */
+  .adv-90-days__guarantee-box {
+    position: relative !important;
+    max-width: 370px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-top: 123px !important; /* Space for badge above (from Figma: badge starts 123px before gray box) */
+    padding: 15px !important; /* Uniform padding */
+    padding-top: 140px !important; /* Top padding for overlapping badge content (127px overlap + 13px spacing) */
+  }
+
+  .adv-90-days__guarantee-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: var(--adv-90-days-guarantee-gap) !important;
+    position: static !important; /* Changed to static */
+  }
+
+  /* Badge - Overlapping on top of Gray Box */
+  .adv-90-days__icon-wrapper {
+    position: absolute !important;
+    top: -123px !important; /* Badge starts 123px above gray box (from Figma data) */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 250px !important;
+    height: 250px !important;
+    z-index: 10 !important;
+  }
+
+  .adv-90-days__icon {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .adv-90-days__guarantee-text {
+    width: 100% !important;
+    max-width: 340px !important;
+    gap: var(--adv-90-days-guarantee-gap) !important;
+  }
+
+  .adv-90-days__guarantee-title {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .adv-90-days__guarantee-body {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* Timeline Box - Mobile (Grid Layout) */
+  .adv-90-days__timeline-box {
+    max-width: 370px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .adv-90-days__timeline-items {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .adv-90-days__timeline-title {
+    text-align: center !important;
+    font-weight: 700 !important;
+    font-style: italic !important; /* Bold Italic on mobile */
+    width: 100% !important;
+  }
+
+  /* Timeline Tabs - Already using grid-cols-2 from Tailwind */
+  .adv-90-days__timeline-tab {
+    font-size: 14px !important;
+  }
+
+  /* Center the last odd tab (3rd tab) on mobile */
+  .adv-90-days__timeline-tab:nth-child(3):last-child {
+    grid-column: 1 / -1 !important;
+    max-width: 50% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Timeline Descriptions - Mobile */
+  .adv-90-days__timeline-descriptions {
+    min-height: 150px !important;
+  }
+
+  .adv-90-days__timeline-text {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* Bottom Text - Mobile */
+  .adv-90-days__bottom-bold {
+    max-width: 360px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    font-size: var(--adv-90-days-bottom-size) !important;
+    line-height: var(--adv-90-days-bottom-line-height) !important;
+  }
+
+  .adv-90-days__bottom-text {
+    max-width: 360px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    font-size: var(--adv-90-days-bottom-text-size) !important;
+    line-height: var(--adv-90-days-bottom-text-line-height) !important;
+  }
+}
+
+/* ============================================
+     TABLET RESPONSIVE (750px - 989px)
+     ============================================ */
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .adv-90-days__guarantee-content {
+    gap: 30px !important;
+  }
+
+  .adv-90-days__icon-wrapper {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .adv-90-days__timeline-content {
+    gap: 30px !important;
+  }
+
+  .adv-90-days__timeline-image-wrapper {
+    width: 350px !important;
+  }
+}

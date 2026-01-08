@@ -1,0 +1,830 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @media screen and (min-width: 1240px) {
+    .section-{{ section.id }}-padding .nl-carousel__main-carousel {
+        max-width: {{ section.settings.max_width }}px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+{%- endstyle -%}
+
+<div id="{{ section.settings.section_id }}" class="section-{{ section.id }}-padding relative" style="background-color: {{ section.settings.bgcolor }}">
+  {% if section.settings.bg_img != blank %}
+    {{
+      section.settings.bg_img
+      | image_url: width: 1920
+      | image_tag: class: 'w-full absolute top-0 left-0 h-full object-cover', sizes: '1920px'
+    }}
+  {% endif %}
+  <div class="mx-auto w-full max-w-[1420px] flex flex-col items-center justify-center gap-4 md:gap-8 relative">
+    <div
+      class="flex {% unless section.settings.heading_top %} md:hidden {% endunless %} flex-col items-center justify-center gap-4 text-center mx-auto"
+      style="max-width: {{ section.settings.max_width }}px;"
+    >
+      {% if section.settings.heading != blank %}
+        <h2
+          class="text-[26px] md:text-[36px] font-bold !leading-tight"
+          style="color: {{ section.settings.heading_color }};"
+        >
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div
+          class="text-[17px] md:text-[20px] font-normal !leading-[1.5] text-[#000]"
+          style="color: {{ section.settings.text_color }};"
+        >
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="nl-carousel__main-carousel w-full {% unless section.settings.heading_top %} md:flex md:items-center md:gap-10 {% endunless %}">
+      {% unless section.settings.heading_top %}
+        <div
+          class="hidden md:flex flex-col justify-center gap-5 md:max-w-[30%] md:min-w-[30%]"
+        >
+          {% if section.settings.heading != blank %}
+            <h2
+              class="text-[26px] md:text-[36px] font-bold !leading-tight"
+              style="color: {{ section.settings.heading_color }};"
+            >
+              {{ section.settings.heading }}
+            </h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div
+              class="text-[17px] md:text-[20px] font-normal !leading-[1.5] text-[#000]"
+              style="color: {{ section.settings.text_color }};"
+            >
+              {{ section.settings.description }}
+            </div>
+          {% endif %}
+
+          <div class="flex flex-col justify-center gap-[10px]">
+            {% if section.settings.button_label != blank %}
+              <div class="w-full">
+                <a href="{{ section.settings.button_url }}" class="new-button--{{section.settings.button_type}} nl-smooth-scroll-btn" style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_text_color }};">
+                  {{ section.settings.button_label }}
+                  {%- render 'icon-arrow-right' -%}
+                </a>
+              </div>
+            {% endif %}
+
+            {% if section.settings.product_bottom_label != blank %}
+              <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit">
+                {% if section.settings.bottom_label_icon != blank %}
+                  {{
+                    section.settings.bottom_label_icon
+                    | image_url: width: 24
+                    | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
+                  }}
+                {% endif %}
+
+                <div
+                  class="text-[15px] md:text-[15px] font-normal !leading-tight"
+                  style="color: {{ section.settings.bottom_label_color }};"
+                >
+                  {{ section.settings.product_bottom_label }}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endunless %}
+
+      <div class="w-full flex-1 {% if section.settings.show_arrows %}pb-[30px] md:pb-[100px]{% else %}pb-0{% endif %}">
+        {% if section.blocks.size > 0 %}
+          <div class="splide nl-carousel">
+            <div class="splide__track">
+              <div class="splide__list">
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'row' %}
+                      <div class="splide__slide">
+                        <div class="nl-carousel-card flex flex-col h-full border border-[#AAAAAA] rounded-[12px] mx-auto overflow-hidden">
+                          {% if block.settings.image != blank %}
+                            <div class="w-full overflow-hidden" style="height: {{ section.settings.image_height_mobile }}px;">
+                              {{
+                                block.settings.image
+                                | image_url: width: 400
+                                | image_tag: class: 'w-full h-full object-cover', sizes: '400px'
+                              }}
+                            </div>
+                          {% endif %}
+
+                          <div class="flex flex-col justify-between flex-1 bg-white">
+                            <div class="px-3 md:px-4 py-3 md:py-4 flex flex-col {% if block.settings.center_text %} items-center justify-center text-center {% endif %} gap-[8px] md:gap-[10px]">
+                              {% if block.settings.stars != blank %}
+                                {{
+                                  block.settings.stars
+                                  | image_url: width: 90
+                                  | image_tag: class: 'w-full max-w-[80px] md:max-w-[90px]', sizes: '90px'
+                                }}
+                              {% endif %}
+
+                              {% if block.settings.tag != blank %}
+                                <div class="text-[11px] md:text-[12px] font-normal !leading-tight text-[#fff] px-2 md:px-3 py-1 md:py-1.5 rounded-[6px] bg-[#247042] w-fit">
+                                  {{ block.settings.tag }}
+                                </div>
+                              {% endif %}
+
+                              {% if block.settings.heading != blank %}
+                                <div class="text-[14px] md:text-[16px] font-bold !leading-tight text-[#000]">
+                                  {{ block.settings.heading }}
+                                </div>
+                              {% endif %}
+
+                              {% if block.settings.description != blank %}
+                                <div class="text-[13px] md:text-[14px] font-normal !leading-[1.4] text-[#000]">
+                                  {{ block.settings.description }}
+                                </div>
+                              {% endif %}
+                              
+                              {% if block.settings.testimonial_text != blank %}
+                                <div class="mt-2 flex items-start testimonial-quote {% if block.settings.center_text %} justify-center {% endif %}">
+                                  <div class="text-[28px] md:text-[32px] leading-[0] font-bold text-[#247042] mr-1">"</div>
+                                  <div class="text-[12px] md:text-[13px] font-normal italic !leading-[1.5] text-[#333]">
+                                    {{ block.settings.testimonial_text }}
+                                  </div>
+                                </div>
+                              {% endif %}
+                            </div>
+
+                            {% if block.settings.name != blank %}
+                              <div class="bg-[#F6F6F6] py-2 md:py-2.5 px-3 md:px-4 flex items-center justify-between gap-2">
+                                {% if block.settings.name != blank %}
+                                  <div class="flex items-center gap-2">
+                                    {% if block.settings.avatar != blank %}
+                                      {{
+                                        block.settings.avatar
+                                        | image_url: width: 20
+                                        | image_tag: class: 'w-full max-w-[18px] md:max-w-[20px] rounded-full', sizes: '20px'
+                                      }}
+                                    {% endif %}
+                                    <div class="text-[13px] md:text-[14px] font-bold !leading-tight text-[#000]">
+                                      {{ block.settings.name }}
+                                    </div>
+                                  </div>
+                                {% endif %}
+
+                {% if block.settings.verified != blank or block.settings.icon != blank %}
+                  <div class="flex items-center gap-1.5">
+                    {% if block.settings.icon != blank %}
+                      {{
+                        block.settings.icon
+                        | image_url: width: 12
+                        | image_tag: class: 'w-full max-w-[11px] md:max-w-[12px]', sizes: '12px'
+                      }}
+                    {% endif %}
+                    {% if block.settings.verified != blank %}
+                      <div class="text-[11px] md:text-[12px] font-[300] !leading-tight text-[#000] whitespace-nowrap">
+                        {{ block.settings.verified }}
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                              </div>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                  {% endcase %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="w-full flex {% unless section.settings.heading_top %} md:hidden {% endunless %} flex-col items-center justify-center gap-[10px] {% if section.settings.show_arrows %}mt-[50px] md:mt-0{% else %}mt-8{% endif %}">
+      {% if section.settings.button_label != blank %}
+        <div class="w-full max-w-[500px] mx-auto">
+          <a href="{{ section.settings.button_url }}" class="new-button--{{section.settings.button_type}} nl-smooth-scroll-btn" style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_text_color }};">
+            {{ section.settings.button_label }}
+            {% if section.settings.button_type == 'primary' %}
+              {%- render 'icon-arrow-right' -%}
+            {% elsif section.settings.button_type == 'secondary' %}
+              {%- render 'icon-arrow-right-secondary' -%}
+            {% endif %}
+          </a>
+        </div>
+      {% endif %}
+
+      {% if section.settings.product_bottom_label != blank %}
+        <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
+          {% if section.settings.bottom_label_icon != blank %}
+            {{
+              section.settings.bottom_label_icon
+              | image_url: width: 24
+              | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
+            }}
+          {% endif %}
+
+          <div
+            class="text-[15px] md:text-[15px] font-normal !leading-tight"
+            style="color: {{ section.settings.bottom_label_color }};"
+          >
+            {{ section.settings.product_bottom_label }}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if section.settings.product_bottom_text != blank %}
+        <div class="text-[14px] md:text-[14px] font-[300] !leading-tight text-[#000]">
+          {{ section.settings.product_bottom_text }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  // Smooth scroll functionality
+  document.querySelectorAll('.nl-smooth-scroll-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        var target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var maxWidth = {{ section.settings.max_width }};
+    var containerWidth = 1420;
+    var shouldCenter = maxWidth < containerWidth;
+    
+    var splide = new Splide('.section-{{ section.id }}-padding .nl-carousel', {
+      perPage: {{section.settings.desktop_carousel_count}},
+      perMove: 1,
+      rewind: true,
+      gap: '{{ section.settings.carousel_gap_desktop }}px',
+      trimSpace: false,
+      pagination: false,
+      arrows: {{ section.settings.show_arrows }},
+      padding: shouldCenter ? { left: '0px', right: '0px' } : { left: '0px', right: '100px' },
+      breakpoints: {
+        1240: {
+          perPage: 2,
+          perMove: 1,
+          gap: '{{ section.settings.carousel_gap_tablet }}px',
+          padding: { left: '0px', right: '0px' },
+        },
+        767: {
+          perPage: 1,
+          perMove: 1,
+          pagination: true,
+          gap: '0px',
+          padding: { right: '0', left: '0' },
+        },
+      },
+    });
+    splide.mount();
+  });
+</script>
+
+<style>
+  .section-{{ section.id }}-padding .new-button--primary svg,
+  .section-{{ section.id }}-padding .new-button--primary svg path,
+  .section-{{ section.id }}-padding .new-button--secondary svg,
+  .section-{{ section.id }}-padding .new-button--secondary svg path,
+  .section-{{ section.id }}-padding .new-button--tertiary svg,
+  .section-{{ section.id }}-padding .new-button--tertiary svg path {
+    fill: {{ section.settings.button_text_color }} !important;
+    stroke: {{ section.settings.button_text_color }} !important;
+  }
+  
+  {% if section.settings.show_arrows %}
+  .section-{{ section.id }}-padding .nl-carousel .splide__arrow--prev {
+    bottom: -120px;
+    top: auto;
+    width: 54px;
+    height: 54px;
+    background: transparent;
+    border: 1px solid {{ section.settings.arrow_color }};
+    right: auto;
+    {% if section.settings.heading_top %}
+      left: calc(50% - 150px);
+    {% else %}
+      left: calc(50% - 80px);
+    {% endif %}
+  }
+  .section-{{ section.id }}-padding .nl-carousel .splide__arrow--next {
+    bottom: -120px;
+    top: auto;
+    width: 54px;
+    height: 54px;
+    background: transparent;
+    border: 1px solid {{ section.settings.arrow_color }};
+    {% if section.settings.heading_top %}
+      right: calc(50% - 10px);
+    {% else %}
+      right: calc(50% - 80px);
+    {% endif %}
+  }
+  .section-{{ section.id }}-padding .nl-carousel .splide__arrow svg {
+    fill: {{ section.settings.arrow_color }};
+  }
+  {% else %}
+  .section-{{ section.id }}-padding .nl-carousel .splide__arrow {
+    display: none !important;
+  }
+  {% endif %}
+  .section-{{ section.id }}-padding .nl-carousel .splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid {{ section.settings.arrow_color }};
+  }
+  .section-{{ section.id }}-padding .nl-carousel .splide__pagination__page.is-active {
+    width: 40px;
+    border-radius: 20px;
+    background: {{ section.settings.arrow_color }};
+    opacity: 1;
+    transform: unset;
+  }
+  .section-{{ section.id }}-padding .nl-carousel .splide__pagination {
+    {% if section.settings.show_arrows %}
+    bottom: -32px;
+    {% else %}
+    bottom: -20px;
+    {% endif %}
+    position: relative;
+    display: none;
+  }
+  .section-{{ section.id }}-padding {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  /* Center carousel when max-width is smaller than container */
+  @media screen and (min-width: 1240px) {
+    .section-{{ section.id }}-padding .nl-carousel {
+      margin: 0 auto;
+    }
+    .section-{{ section.id }}-padding .nl-carousel .splide__track {
+      margin: 0 auto;
+    }
+    .section-{{ section.id }}-padding .nl-carousel .splide__list {
+      display: flex;
+      justify-content: space-around;
+      gap: {{ section.settings.carousel_gap_desktop }}px; /* Customizable gap */
+    }
+    
+    /* FIX: Override Splide's default slide width and margin for proper centering */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide {
+      width: auto !important; /* Remove calc(50% - 10px) */
+      margin-right: 0 !important; /* Remove margin-right: 20px */
+      flex: 0 0 auto; /* Allow slide to size naturally */
+    }
+    
+    /* When max-width is less than container, remove extra padding */
+    {% if section.settings.max_width < 1420 %}
+    .section-{{ section.id }}-padding .nl-carousel .splide__track {
+      padding-right: 0 !important;
+    }
+    {% endif %}
+  }
+  
+  @media screen and (max-width: 1150px) and (min-width: 768px) {
+    .section-{{ section.id }}-padding .nl-carousel .splide__list {
+      display: flex;
+      justify-content: space-around;
+      gap: {{ section.settings.carousel_gap_tablet }}px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* Fix full width issue on mobile */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide {
+      width: 100% !important;
+      margin-right: 0 !important;
+      padding-bottom: 0;
+    }
+    
+    .section-{{ section.id }}-padding .nl-carousel .splide__list {
+      gap: 0 !important; /* Remove gap on mobile for full width */
+    }
+    
+    /* Center the card within the slide */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .nl-carousel-card {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: {{ section.settings.card_max_width_mobile }}px;
+    }
+    
+    /* Hide avatar on mobile */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .nl-carousel-card .bg-[#F6F6F6] img {
+      display: none;
+    }
+    
+    /* Better layout for name and verification on mobile */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .nl-carousel-card > div > div:last-child {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    
+    /* Adjust name font size on mobile - make it smaller */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .nl-carousel-card .bg-[#F6F6F6] .text-\[13px\] {
+      font-size: 11px !important;
+    }
+    
+    /* Ensure verification badge stays on same line */
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .nl-carousel-card .bg-[#F6F6F6] .whitespace-nowrap {
+      white-space: nowrap;
+    }
+    
+    .section-{{ section.id }}-padding .nl-carousel .splide__arrow--prev {
+      right: auto;
+      left: calc(50% - 80px);
+    }
+    .section-{{ section.id }}-padding .nl-carousel .splide__arrow--next {
+      right: calc(50% - 80px);
+    }
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .testimonial-quote {
+      display: block !important;
+      margin-top: 12px;
+      text-align: center;
+    }
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide .testimonial-quote > div:first-child {
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+    .section-{{ section.id }}-padding .nl-carousel .splide__pagination {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1151px) and (max-width: 1239px) {
+    .section-{{ section.id }}-padding .nl-carousel .splide__list {
+      display: flex;
+      justify-content: space-around;
+      gap: {{ section.settings.carousel_gap_tablet }}px;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding .nl-carousel .splide__slide > div > div:first-child {
+      height: {{ section.settings.image_height_desktop }}px !important;
+    }
+    .section-{{ section.id }}-padding .nl-carousel-card {
+      max-width: {{ section.settings.card_max_width }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "NL Carousel New",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "text",
+      "id": "desktop_carousel_count",
+      "label": "Desktop Carousel Count",
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "image_height_mobile",
+      "min": 120,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Card Image Height (Mobile)",
+      "default": 160
+    },
+    {
+      "type": "range",
+      "id": "image_height_desktop",
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Card Image Height (Desktop)",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "card_max_width_mobile",
+      "min": 260,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Card Max Width (Mobile)",
+      "default": 320
+    },
+    {
+      "type": "range",
+      "id": "card_max_width",
+      "min": 300,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Card Max Width (Desktop)",
+      "default": 360
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "default": true,
+      "label": "Show Navigation Arrows"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_top",
+      "default": true,
+      "label": "Heading Top"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "tertiary",
+          "label": "Tertiary"
+        }
+      ],
+      "default": "primary",
+      "label": "Button Type"
+    },
+    {
+      "type": "text",
+      "id": "product_bottom_label",
+      "label": "Product Bottom Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_label_icon",
+      "label": "Bottom Label Icon"
+    },
+    {
+      "type": "richtext",
+      "id": "product_bottom_text",
+      "label": "Product Bottom Text"
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Description Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color",
+      "default": "#247042"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "bottom_label_color",
+      "label": "Product Bottom Label Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow Color",
+      "default": "#1E3A16"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Carousel Gap Settings"
+    },
+    {
+      "type": "range",
+      "id": "carousel_gap_desktop",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Gap Between Cards (Desktop)",
+      "default": 20,
+      "info": "Space between carousel cards on desktop (>= 1240px)"
+    },
+    {
+      "type": "range",
+      "id": "carousel_gap_tablet",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Gap Between Cards (Tablet)",
+      "default": 16,
+      "info": "Space between carousel cards on tablet (768px - 1239px)"
+    },
+    {
+      "type": "range",
+      "id": "carousel_gap_mobile",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Gap Between Cards (Mobile)",
+      "default": 0,
+      "info": "Note: Gap is set to 0 on mobile to ensure cards take full width"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "center_text",
+          "default": true,
+          "label": "Center Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "stars",
+          "label": "Stars"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "verified",
+          "label": "Verified"
+        },
+        {
+          "type": "richtext",
+          "id": "testimonial_text",
+          "label": "Testimonial Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "NL Carousel New"
+    }
+  ]
+}
+{% endschema %}
+

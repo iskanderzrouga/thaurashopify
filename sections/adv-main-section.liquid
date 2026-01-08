@@ -1,0 +1,1058 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+    #shopify-section-nl-animation-secondary, #shopify-section-nl-header, footer {
+    display: none!important;
+  }
+  .section-{{ section.id }}-padding em strong {
+    font-size: 12px;
+    font-style: normal;
+    vertical-align: top;
+    font-weight: 400;
+  }
+  .section-{{ section.id }}-padding ul {
+    list-style: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+{%- endstyle -%}
+
+<div class="bg-[#042A1D] p-4">
+  <div class="mx-auto flex items-center gap-4" style="max-width: {{ section.settings.max_width }}px;">
+    {% if section.settings.header_text != blank %}
+      <div
+        class="text-[16px] md:text-[16px] font-medium !leading-tight text-[#fff]"
+      >
+        {{ section.settings.header_text }}
+      </div>
+      {% if section.settings.header_icon != blank %}
+        {{
+          section.settings.header_icon
+          | image_url: width: 30
+          | image_tag: class: 'w-full max-w-[30px]', sizes: '30px'
+        }}
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
+
+<div class="section-{{ section.id }}-padding px-5" style="background-color: {{ section.settings.bgcolor }}">
+  <div class="mx-auto w-full flex flex-col gap-10" style="max-width: {{ section.settings.max_width }}px;">
+    {% if section.settings.update_text != blank %}
+      <div
+        class="text-[16px] md:text-[18px] font-medium !leading-tight text-[#fff] px-7 py-4 rounded-[8px] [&>p>a]:underline"
+        style="background-color: {{ section.settings.update_bgcolor }}"
+      >
+        {{ section.settings.update_text }}
+      </div>
+    {% endif %}
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="col-span-1 md:col-span-2">
+        <div class="flex flex-col items-center justify-center gap-6 md:gap-12">
+          {% if section.blocks.size > 0 %}
+            <div class="w-full flex flex-col gap-5">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'heading' %}
+                    {% if block.settings.heading != blank %}
+                      <div class="{% if block.settings.big_heading %} text-[24px] md:text-[36px] {% elsif block.settings.small_heading %} text-[20px] md:text-[20px] {% else %} text-[20px] md:text-[30px] {% endif %} font-bold !leading-tight text-[#000000]">
+                        {{ block.settings.heading }}
+                      </div>
+                    {% endif %}
+
+                  {% when 'description' %}
+                    {% if block.settings.description != blank %}
+                      <div class="adv-main-section__description text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] overflow-auto">
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+
+                  {% when 'description_red' %}
+                    {% if block.settings.description != blank %}
+                      <div
+                        class="adv-main-section__description p-4 text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] overflow-auto {% if block.settings.text_center %} text-center {% endif %}"
+                        style="background-color: {{ block.settings.bgcolor }}; color: {{ block.settings.color }}"
+                      >
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.dynamic_date %}
+                      {% if block.settings.description2 != blank %}
+                        <div
+                          class="adv-main-section__description p-4 text-[16px] md:text-[16px] font-bold !leading-[1.5] text-[#000000] overflow-auto {% if block.settings.text_center %} text-center {% endif %}"
+                          style="background-color: {{ block.settings.bgcolor }}; color: {{ block.settings.color }}"
+                        >
+                          {% assign date_day = 'now' | date: '%d' %}
+                          {% assign date_month = 'now' | date: '%B' %}
+                          {% assign date_year = 'now' | date: '%Y' %}
+                          {% assign date_string = date_month
+                            | append: ' '
+                            | append: date_day
+                            | append: ', '
+                            | append: date_year
+                          %}
+                          {{ block.settings.description2 | replace: 'DATEPLACEHOLDER', date_string }}
+                        </div>
+                      {% endif %}
+                    {% endif %}
+
+                  {% when 'all_in_one' %}
+                    <div class="flex flex-col gap-5">
+                      {% if block.settings.heading != blank %}
+                        <div class="{% if block.settings.big_heading %} text-[24px] md:text-[36px] {% elsif block.settings.small_heading %} text-[20px] md:text-[20px] {% else %} text-[20px] md:text-[30px] {% endif %} font-bold !leading-tight text-[#000000]">
+                          {{ block.settings.heading }}
+                        </div>
+                      {% endif %}
+                      {% if block.settings.switch_image_description %}
+                        {% if block.settings.image != blank %}
+                          {{
+                            block.settings.image
+                            | image_url: width: 1000
+                            | image_tag: class: 'w-full max-w-full md:max-w-[80%] mx-auto', sizes: '1000px'
+                          }}
+                        {% endif %}
+                      {% endif %}
+                      {% if block.settings.description != blank %}
+                        <div class="adv-main-section__description text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] overflow-auto">
+                          {{ block.settings.description }}
+                        </div>
+                      {% endif %}
+                      {% unless block.settings.switch_image_description %}
+                        {% if block.settings.image != blank %}
+                          {{
+                            block.settings.image
+                            | image_url: width: 1000
+                            | image_tag: class: 'w-full max-w-full md:max-w-[80%] mx-auto', sizes: '1000px'
+                          }}
+                        {% endif %}
+                      {% endunless %}
+                    </div>
+
+                  {% when 'avatar' %}
+                    <div class="flex gap-3 items-center">
+                      {% if block.settings.image != blank %}
+                        {{
+                          block.settings.image
+                          | image_url: width: 62
+                          | image_tag: class: 'w-full max-w-[62px]', sizes: '62px'
+                        }}
+                      {% endif %}
+                      <div class="flex flex-col gap-1">
+                        {% if block.settings.heading != blank %}
+                          <div class="adv-main-section__description text-[16px] md:text-[16px] font-bold !leading-[1.5] text-[#000000] overflow-auto">
+                            {{ block.settings.heading }}
+                          </div>
+                        {% endif %}
+                        {% if block.settings.description != blank %}
+                          <div class="adv-main-section__description text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] overflow-auto">
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+
+                  {% when 'card' %}
+                    <div class="flex flex-col text-center gap-3 items-center bg-[#F3F4F6] p-4 rounded-[4px]">
+                      {% if block.settings.second_type %}
+                        {% if block.settings.image != blank %}
+                          {{
+                            block.settings.image
+                            | image_url: width: 320
+                            | image_tag: class: 'w-full max-w-[320px]', sizes: '320px'
+                          }}
+                        {% endif %}
+                      {% endif %}
+
+                      {% unless block.settings.second_type %}
+                        {% if block.settings.description != blank %}
+                          <div class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] overflow-auto">
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                        {% if block.settings.image != blank %}
+                          {{
+                            block.settings.image
+                            | image_url: width: 200
+                            | image_tag: class: 'w-full max-w-[200px]', sizes: '200px'
+                          }}
+                        {% endif %}
+                      {% endunless %}
+
+                      {% if block.settings.heading != blank %}
+                        <div class="text-[16px] md:text-[16px] font-bold !leading-[1.5] text-[#000000] overflow-auto">
+                          {{ block.settings.heading }}
+                        </div>
+                      {% endif %}
+
+                      {% if block.settings.second_type %}
+                        {% if block.settings.description != blank %}
+                          <div class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] overflow-auto text-left">
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                      {% endif %}
+                    </div>
+
+                  {% when 'image' %}
+                    {% if block.settings.image != blank %}
+                      {{
+                        block.settings.image
+                        | image_url: width: 1000
+                        | image_tag: class: 'w-full max-w-full md:max-w-[80%] mx-auto', sizes: '1000px'
+                      }}
+                    {% endif %}
+
+                  {% when 'video' %}
+                    {% if block.settings.url != blank %}
+                      <video
+                        src="{{ block.settings.url }}"
+                        type="video/mp4"
+                        class="w-full object-contain"
+                        loop
+                        muted
+                        playsinline
+                        autoplay
+                        disablepictureinpicture
+                        controlslist="nodownload"
+                        height="auto"
+                        style="width:100%;"
+                      ></video>
+                    {% endif %}
+
+                  {% when 'video2' %}
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                      <div>
+                        {% if block.settings.url1 != blank %}
+                          <video
+                            src="{{ block.settings.url1 }}"
+                            type="video/mp4"
+                            class="w-full object-contain"
+                            loop
+                            muted
+                            playsinline
+                            autoplay
+                            disablepictureinpicture
+                            controlslist="nodownload"
+                            height="auto"
+                            style="width:100%;"
+                          ></video>
+                        {% endif %}
+                        {% if block.settings.image1 != blank %}
+                          {{
+                            block.settings.image1
+                            | image_url: width: 500
+                            | image_tag: class: 'w-full max-w-full', sizes: '500px'
+                          }}
+                        {% endif %}
+                      </div>
+                      <div>
+                        {% if block.settings.url2 != blank %}
+                          <video
+                            src="{{ block.settings.url2 }}"
+                            type="video/mp4"
+                            class="w-full object-contain"
+                            loop
+                            muted
+                            playsinline
+                            autoplay
+                            disablepictureinpicture
+                            controlslist="nodownload"
+                            height="auto"
+                            style="width:100%;"
+                          ></video>
+                        {% endif %}
+                        {% if block.settings.image2 != blank %}
+                          {{
+                            block.settings.image2
+                            | image_url: width: 500
+                            | image_tag: class: 'w-full max-w-full', sizes: '500px'
+                          }}
+                        {% endif %}
+                      </div>
+                    </div>
+
+                  {% when 'product_card' %}
+                    <div style="border: 1px solid {{block.settings.border_color}};">
+                      <div class="grid grid-cols-1 md:grid-cols-1 gap-5 p-5 md:p-10 lg:p-[60px]">
+                        {% if block.settings.image != blank %}
+                          {{
+                            block.settings.image
+                            | image_url: width: 1000
+                            | image_tag: class: 'w-full max-w-full', sizes: '1000px'
+                          }}
+                        {% endif %}
+
+                        <div class="flex flex-col gap-4">
+                          {% if block.settings.heading != blank %}
+                            <div class="text-[24px] md:text-[30px] font-normal !leading-tight text-[#000000]">
+                              {{ block.settings.heading }}
+                            </div>
+                          {% endif %}
+                          {% if block.settings.description != blank %}
+                            <div class="adv-main-section__description text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000]">
+                              {{ block.settings.description }}
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+
+                      {% if block.settings.bottom_description != blank %}
+                        <div
+                          class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000] p-5 md:p-10 lg:p-[60px]"
+                          style="background-color: {{block.settings.bottom_bgcolor}};"
+                        >
+                          {{ block.settings.bottom_description }}
+                        </div>
+                      {% endif %}
+                    </div>
+
+                  {% when 'icon_text' %}
+                    <div class="grid grid-cols-3 gap-4 max-w-[500px] mx-auto">
+                      {% for i in (1..7) %}
+                        {% assign description_name = 'text' | append: i %}
+                        {% assign description = block.settings[description_name] %}
+                        {% assign image_name = 'image' | append: i %}
+                        {% assign image = block.settings[image_name] %}
+
+                        {% if description != blank %}
+                          <div class="flex flex-col items-center justify-center gap-2">
+                            {% if image != blank %}
+                              {{
+                                image
+                                | image_url: width: 64
+                                | image_tag: class: 'w-full h-fit object-fit max-w-[64px]'
+                              }}
+                            {% endif %}
+                            <div class="text-[14px] md:text-[14px] font-normal !leading-[1.5] text-[#000000] text-center">
+                              {{ description }}
+                            </div>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+                  {% when 'button' %}
+                    {% if block.settings.button_label != blank %}
+                      <div class="w-full">
+                        <a
+                          href="{{ block.settings.button_url }}"
+                          class="new-button--tertiary"
+                        >
+                          {{ block.settings.button_label }}
+                          {%- render 'icon-arrow-right-black' -%}
+                        </a>
+                      </div>
+                    {% endif %}
+
+                  {% when 'review' %}
+                    <div class="flex flex-col w-full gap-5">
+                      {% for block in section.blocks %}
+                        {% if block.type == 'review_item' %}
+                          <div
+                            class="rounded-[8px] p-5 grid grid-cols-1 md:grid-cols-3 gap-5"
+                            style="background-color: {{ block.settings.card_bgcolor }}"
+                          >
+                            {% if block.settings.image != blank %}
+                              {{
+                                block.settings.image
+                                | image_url: width: 300
+                                | image_tag: class: 'col-span-1 w-full rounded-[4px] object-contain', sizes: '300px'
+                              }}
+                            {% endif %}
+                            <div class="flex flex-col gap-1 col-span-1 md:col-span-2">
+                              {% if block.settings.name != blank %}
+                                <div class="text-[16px] md:text-[16px] font-bold !leading-[1.5] text-[#000000]">
+                                  {{ block.settings.name }}
+                                </div>
+                              {% endif %}
+                              {% if block.settings.description != blank %}
+                                <div class="text-[16px] md:text-[16px] font-normal !leading-[1.5] text-[#000000]">
+                                  {{ block.settings.description }}
+                                </div>
+                              {% endif %}
+                            </div>
+                          </div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+
+                  {% when 'testimonial' %}
+                    <div
+                      class="rounded-[8px] p-6 flex items-center justify-center flex-col gap-4"
+                      style="background-color: {{ block.settings.card_bgcolor }}"
+                    >
+                      {% if block.settings.heading != blank %}
+                        <div class="text-[20px] md:text-[20px] font-bold !leading-tight text-[#000000] text-center">
+                          {{ block.settings.heading }}
+                        </div>
+                      {% endif %}
+
+                      <div class="flex justify-center items-center gap-3">
+                        {% if block.settings.stars != blank %}
+                          {{
+                            block.settings.stars
+                            | image_url: width: 100
+                            | image_tag: class: 'w-full max-w-[100px]', sizes: '100px'
+                          }}
+                        {% endif %}
+                        {% if block.settings.description != blank %}
+                          <div class="text-[14px] md:text-[14px] font-normal !leading-[1.5] text-[#000000]">
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                      </div>
+
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="flex flex-col gap-5">
+                          {% for block in section.blocks %}
+                            {% if block.type == 'testimonial_item' %}
+                              {% unless block.settings.row_2 %}
+                                {% render 'adv-main-section-testimonial', block: block %}
+                              {% endunless %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                        <div class="flex flex-col gap-5">
+                          {% for block in section.blocks %}
+                            {% if block.type == 'testimonial_item' %}
+                              {% if block.settings.row_2 %}
+                                {% render 'adv-main-section-testimonial', block: block %}
+                              {% endif %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if section.settings.button_label != blank %}
+            <div class="w-full md:w-fit mx-auto">
+              <a
+                href="{{ section.settings.button_url }}"
+                class="new-button--primary"
+              >
+                {{ section.settings.button_label }}
+                {%- render 'icon-arrow-right' -%}
+              </a>
+            </div>
+          {% endif %}
+
+          {% if section.settings.disclaimer != blank %}
+            <div
+              class="text-[12px] md:text-[14px] font-medium !leading-tight text-[#6B7280] text-center pt-6 border-t border-[#E5E7EB]"
+            >
+              {{ section.settings.disclaimer }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="col-span-1 hidden md:block relative">
+        <div class="flex flex-col items-center text-center gap-5 sticky top-5">
+          {% if section.settings.sidebar_c_heading != blank
+            or section.settings.sidebar_c_description != blank
+            or section.settings.sidebar_c_image != blank
+          %}
+            <div
+              class="flex flex-col items-center justify-center gap-[10px] md:gap-[20px] p-5 rounded-[8px]"
+              style="background-color: {{ section.settings.sidebar_c_bgcolor }}; box-shadow: 0px 2px 4px -2px #0000001A;"
+            >
+              {% if section.settings.sidebar_c_heading != blank %}
+                <div class="text-[20px] md:text-[20px] font-bold !leading-tight text-[#000000] text-center">
+                  {{ section.settings.sidebar_c_heading }}
+                </div>
+              {% endif %}
+
+              <div class="flex items-center gap-3">
+                {% if section.settings.sidebar_c_stars != blank %}
+                  {{
+                    section.settings.sidebar_c_stars
+                    | image_url: width: 100
+                    | image_tag: class: 'w-full max-w-[100px]', sizes: '100px'
+                  }}
+                {% endif %}
+                {% if section.settings.sidebar_c_description != blank %}
+                  <div class="text-[14px] md:text-[14px] font-normal !leading-[1.5] text-[#000000]">
+                    {{ section.settings.sidebar_c_description }}
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if section.settings.sidebar_c_image != blank %}
+                {{
+                  section.settings.sidebar_c_image
+                  | image_url: width: 200
+                  | image_tag: class: 'w-full max-w-[200px] mx-auto', sizes: '200px'
+                }}
+              {% endif %}
+
+              {% if section.settings.sidebar_c_button_label != blank %}
+                <div class="w-full md:w-fit mx-auto">
+                  <a
+                    href="{{ section.settings.sidebar_c_button_url }}"
+                    class="new-button--tertiary !p-[14px] !text-lg"
+                  >
+                    {{ section.settings.sidebar_c_button_label }}
+                    {%- render 'icon-arrow-right-black' -%}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Adv Main Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Header Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_icon",
+      "label": "Header Icon"
+    },
+    {
+      "type": "header",
+      "content": "Sidebar Content"
+    },
+    {
+      "type": "color",
+      "id": "sidebar_c_bgcolor",
+      "label": "Background Color",
+      "default": "#fff7f3"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_c_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "sidebar_c_description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "sidebar_c_stars",
+      "label": "Stars"
+    },
+    {
+      "type": "image_picker",
+      "id": "sidebar_c_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_c_button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "sidebar_c_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "disclaimer",
+      "label": "Disclaimer"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "all_in_one",
+      "name": "All In One",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "big_heading",
+          "label": "Big Heading",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "small_heading",
+          "label": "Small Heading",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "switch_image_description",
+          "label": "Switch Image and Description",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "small_heading",
+          "label": "Small Heading",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "big_heading",
+          "label": "Big Heading",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "description_red",
+      "name": "Description Red",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "description2",
+          "label": "Description 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "dynamic_date",
+          "label": "Dynamic Date",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "bgcolor",
+          "label": "Background Color",
+          "default": "#DC2626"
+        },
+        {
+          "type": "checkbox",
+          "id": "text_center",
+          "label": "Text Center",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "type": "video2",
+      "name": "Video 2",
+      "settings": [
+        {
+          "type": "text",
+          "id": "url1",
+          "label": "URL 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "text",
+          "id": "url2",
+          "label": "URL 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        }
+      ]
+    },
+    {
+      "type": "icon_text",
+      "name": "Icon Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text1",
+          "label": "Text 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "text",
+          "id": "text2",
+          "label": "Text 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        },
+        {
+          "type": "text",
+          "id": "text3",
+          "label": "Text 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image 3"
+        }
+      ]
+    },
+    {
+      "type": "avatar",
+      "name": "Avatar",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "second_type",
+          "label": "Second Type",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": []
+    },
+    {
+      "type": "review_item",
+      "name": "Review Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "card_bgcolor",
+          "label": "Card Color",
+          "default": "#F3F4F6"
+        }
+      ]
+    },
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "color",
+          "id": "card_bgcolor",
+          "label": "Card Color",
+          "default": "#F3F4F6"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "stars",
+          "label": "Stars"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "testimonial_item",
+      "name": "Testimonial Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "stars",
+          "label": "Stars"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "color",
+          "id": "card_bgcolor",
+          "label": "Card Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "checkbox",
+          "id": "row_2",
+          "label": "Row 2?",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "product_card",
+      "name": "Product Card",
+      "settings": [
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border Color",
+          "default": "#fe6901"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "bottom_description",
+          "label": "Bottom_Description"
+        },
+        {
+          "type": "color",
+          "id": "bottom_bgcolor",
+          "label": "Bottom Color",
+          "default": "#FFF7F3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Adv Main Section"
+    }
+  ]
+}
+{% endschema %}

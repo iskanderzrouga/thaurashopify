@@ -1,0 +1,2372 @@
+{
+  "sections": {
+    "nl_thin_icon_text_jEL6P9": {
+      "type": "nl-thin-icon-text",
+      "name": "NL Thin Icon Text",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "description": "<p>No Results In 90 Days? Your Money-Back Guarantee<\/p>",
+        "image": "shopify:\/\/shop_images\/Mask_group_4661acb4-0a34-4df8-9d04-bddde0c8dc1d.png",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#1e3a16",
+        "max_width": 1200,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "padding_top_m": 8,
+        "padding_bottom_m": 8
+      }
+    },
+    "nl_main_banner_JYhfH3": {
+      "type": "nl-main-banner",
+      "blocks": {
+        "star_review_y9ETxy": {
+          "type": "star_review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "rating": "4.8",
+            "text": "+47,000 Active Users"
+          }
+        },
+        "review_aHknwG": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "name": "Jim, 49",
+            "image": "shopify:\/\/shop_images\/Frame_1707481779.png",
+            "icon": "shopify:\/\/shop_images\/Subtract_1.png",
+            "heading": "Verified Buyer"
+          }
+        },
+        "mobile_card_review_Lnw6ck": {
+          "type": "mobile_card_review",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "heading": "Actually Fits My Life",
+            "text": "\"I'm 42 with two kids, no time for complicated stuff. This is just 2 pills with breakfast. Down 8 pounds, feeling more like myself again. Nothing crazy, just steady progress.\""
+          }
+        },
+        "card_review_aHazHE": {
+          "type": "card_review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_2358.png",
+            "name": "Tom R., 36",
+            "icon": "shopify:\/\/shop_images\/Subtract_57573616-090c-4dab-89e6-30b1bc209654.svg",
+            "verified": "Verified Buyer",
+            "text": "<p>\"I would finish dinner, sit down on the couch, and within an hour I was back in the kitchen. Every. Single. Night. Now that voice in my head is just... quiet.\" <\/p>"
+          }
+        },
+        "description_JNrjae": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Your body has been sabotaged by 3 chemical switches that got stuck in the \"on\" position. While other solutions tell you to \"use willpower\" or \"eat earlier,\" Dryft™ targets all 3 switches for the complete reset you actually need.<br\/><br\/>Dryft™ helps calm the evening cravings that start way too early—so you can stop the nightly kitchen trips before they start. Scientifically formulated for anyone who:<\/p>"
+          }
+        },
+        "feature_wrapper_kixEeh": {
+          "type": "feature_wrapper",
+          "settings": {}
+        },
+        "feature_JrwyMU": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Stop Fake Hunger Signals"
+          }
+        },
+        "feature_J98xpF": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Feel Calm After Dinner"
+          }
+        },
+        "feature_VQfzm3": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Fix Your 3 Hormonal Problems"
+          }
+        },
+        "feature_YELhgJ": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Wake Up Feeling Lighter"
+          }
+        },
+        "feature_x63DxR": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Break the Evening Eating Loop"
+          }
+        },
+        "button_XbpXVi": {
+          "type": "button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "star_review_y9ETxy",
+        "review_aHknwG",
+        "mobile_card_review_Lnw6ck",
+        "card_review_aHazHE",
+        "description_JNrjae",
+        "feature_wrapper_kixEeh",
+        "feature_JrwyMU",
+        "feature_J98xpF",
+        "feature_VQfzm3",
+        "feature_YELhgJ",
+        "feature_x63DxR",
+        "button_XbpXVi"
+      ],
+      "name": "NL Main Banner",
+      "settings": {
+        "section_id": "",
+        "heading": "The False Hunger Signal: Why Your Body Tells You to Eat When You're Not Actually Hungry (And Why Your Gut Is Lying to Your Brain)",
+        "highlight": "The False Hunger Signal:",
+        "image": "shopify:\/\/shop_images\/banner-bg.png",
+        "image_m": "shopify:\/\/shop_images\/bg-mb.png",
+        "button_label": "TRY DRYFT™ RISK-FREE",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "*Results are based on scientific studies of individual ingredients in the formula and may vary",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "<p>90-Day Money Back Guarantee<\/p>",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 24,
+        "padding_bottom_m": 0
+      }
+    },
+    "nl_banner_LqEXKC": {
+      "type": "nl-banner",
+      "disabled": true,
+      "name": "NL Banner",
+      "settings": {
+        "section_id": "",
+        "heading": "<p><strong>More Definition, Less Fat - Just 2 Capsules a Day<\/strong><\/p>",
+        "description": "<p>No diets. No gimmicks. This carefully formulated blend of 9 science-backed ingredients <strong>helps address the underlying factors blocking results <\/strong>--- so you can finally lose the stubborn chest and belly fat that have been holding you back.<\/p>",
+        "product_image": "shopify:\/\/shop_images\/Medicine-bottle-box-03.png",
+        "image": "shopify:\/\/shop_images\/image_64_5eacfed0-ecc0-4597-98e7-23d54a934e1d.png",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_m": 0,
+        "padding_bottom_m": 0
+      }
+    },
+    "new_lp_featured_product_NMieYc": {
+      "type": "new-lp-featured-product",
+      "blocks": {
+        "review_dpntk6": {
+          "type": "review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "text": "<p><strong>4.8<\/strong> | Trusted by 47,981 Strong Men<\/p>"
+          }
+        },
+        "title_FAMyci": {
+          "type": "title",
+          "settings": {
+            "custom_title": "Try Dryft™ : Formulated For Real Results",
+            "heading_size": "h1"
+          }
+        },
+        "text2_JEBJ9f": {
+          "type": "text2",
+          "disabled": true,
+          "settings": {
+            "text": "Go from embarrassing dad bod to lean muscle and commanding presence - without extreme diets, fat burners, or spending hours in the gym."
+          }
+        },
+        "benefits_wrapper_Xyzppi": {
+          "type": "benefits_wrapper",
+          "settings": {}
+        },
+        "benefit_hKWGwb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Helps melt stubborn belly fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_UC4cNV": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Supports healthy hormone balance naturally<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_dgQMXB": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Helps flush excess estrogen to reduce chest fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_E6qaxb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Helps support a healthy metabolism and fat burning<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "price_JdP3yx": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_X3mg6k": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_QLDmwk": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_eLzg7L": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "variant_picker_secondary_pWwVj7": {
+          "type": "variant_picker_secondary",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "buy_buttons_secondary_xMRCRF": {
+          "type": "buy_buttons_secondary",
+          "disabled": true,
+          "settings": {
+            "normal_button": false,
+            "custom_text": "Try Dryft™ Now",
+            "bottom_icon": "shopify:\/\/shop_images\/guarantee.png",
+            "bottom_text": "Get Results Or Your Money Back!",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "subscription_widget_xHfRfp": {
+          "type": "subscription_widget",
+          "settings": {
+            "label": "",
+            "default_onetime": false
+          }
+        },
+        "subscription_widget_child_CqixrF": {
+          "type": "subscription_widget_child",
+          "settings": {
+            "default": true,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-1-bottle-copy",
+            "discount": "16.95",
+            "id_1": "2278883501",
+            "id_2": "2278916269",
+            "id_3": "2278850733"
+          }
+        },
+        "subscription_widget_child_Q4rw9Y": {
+          "type": "subscription_widget_child",
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-2-bottles-copy",
+            "discount": "10.1",
+            "id_1": "2278981805",
+            "id_2": "2279014573",
+            "id_3": "2278949037"
+          }
+        },
+        "subscription_widget_child_6D69r3": {
+          "type": "subscription_widget_child",
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-3-bottles",
+            "discount": "7.75",
+            "id_1": "2277834925",
+            "id_2": "2277867693",
+            "id_3": "2277802157"
+          }
+        },
+        "benefits_wrapper3_rnGdJQ": {
+          "type": "benefits_wrapper3",
+          "settings": {}
+        },
+        "benefit3_JRW86T": {
+          "type": "benefit3",
+          "settings": {
+            "heading": "Shipped in 24 Hours from our USA Warehouse",
+            "description": "Order within",
+            "label": "Ships Today",
+            "timer": true,
+            "border_bottom": true,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/truck.svg"
+          }
+        },
+        "benefit3_yLpYUf": {
+          "type": "benefit3",
+          "settings": {
+            "heading": "90 Day Money Back Guarantee",
+            "description": "Pause or cancel anytime",
+            "label": "",
+            "timer": false,
+            "border_bottom": false,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/money-back-guarantee_1.svg"
+          }
+        },
+        "image_rpinNX": {
+          "type": "image",
+          "settings": {
+            "percent": 60,
+            "image": "shopify:\/\/shop_images\/Frame_37.png"
+          }
+        },
+        "share_ndpLTm": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "review_dpntk6",
+        "title_FAMyci",
+        "text2_JEBJ9f",
+        "benefits_wrapper_Xyzppi",
+        "benefit_hKWGwb",
+        "benefit_UC4cNV",
+        "benefit_dgQMXB",
+        "benefit_E6qaxb",
+        "price_JdP3yx",
+        "variant_picker_X3mg6k",
+        "quantity_selector_QLDmwk",
+        "buy_buttons_eLzg7L",
+        "variant_picker_secondary_pWwVj7",
+        "buy_buttons_secondary_xMRCRF",
+        "subscription_widget_xHfRfp",
+        "subscription_widget_child_CqixrF",
+        "subscription_widget_child_Q4rw9Y",
+        "subscription_widget_child_6D69r3",
+        "benefits_wrapper3_rnGdJQ",
+        "benefit3_JRW86T",
+        "benefit3_yLpYUf",
+        "image_rpinNX",
+        "share_ndpLTm"
+      ],
+      "disabled": true,
+      "name": "New Featured Product",
+      "settings": {
+        "section_id": "productsMain",
+        "color_primary": "#000000",
+        "color_secondary": "#fe6901",
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "bottom_text": "",
+        "bottom_text_color": "#000000",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "nl_logos_PkLwVA": {
+      "type": "nl-logos",
+      "blocks": {
+        "logo_zFq7rG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/digital-journal.png"
+          }
+        },
+        "logo_HjEVTg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fox_Networks_Group_US_logo_svg.png"
+          }
+        },
+        "logo_Fpp8rX": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bingh.png"
+          }
+        },
+        "logo_yYzdzD": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nbc-new-logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_zFq7rG",
+        "logo_HjEVTg",
+        "logo_Fpp8rX",
+        "logo_yYzdzD"
+      ],
+      "name": "NL Logos",
+      "settings": {
+        "section_id": "",
+        "heading": "Scientifically Backed Ingredients Featured In",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "show_payment_icons": false,
+        "bottom_description": "",
+        "bgcolor": "#f6f7ef",
+        "max_width": 800,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_m": 24,
+        "padding_bottom_m": 24
+      }
+    },
+    "nl_carousel_34QPVA": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_aKHexn": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_131_8fe9c9aa-6891-47b3-bb58-e26891f4fbfe.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "“My wife can't believe I stopped raiding the pantry”",
+            "description": "<p><em>\"I've always struggled with late-night cravings. Since starting Dryft™, I'm not constantly thinking about my next meal. I can go hours without snacking, and I'm finally seeing my waistline shrink. My wife is amazed at how now I get home and having dinner is just enough.\"<\/em><\/p>",
+            "name": "Tom R., 54",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_cbgkky": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_80_5094c698-c0ea-4447-8eea-55bd15c9cb89.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "\"The urge just... disappeared\"",
+            "description": "<p><em>\"I used to eat a sleeve of crackers, a bowl of cereal, and whatever leftovers were in the fridge—every night before bed. I felt so out of control. Two weeks on Dryft and I just... stopped. I didn't fight it. I didn't try. The urge was gone. I actually go to bed now.\"<\/em><\/p>",
+            "name": "Wayne F., 50",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_UCHNte": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_130_0d113d32-9b37-4ea4-952e-99548f26544e.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "\"That voice in my head got quiet\"",
+            "description": "<p><em>\"By 8 PM I was always thinking about what I could snack on. Ice cream, chips, peanut butter—didn't matter. Since taking Dryft, that voice in my head just got quiet. I sit on the couch now and don't even think about food. Game changer.\"<\/em><\/p>",
+            "name": "Pablo R., 46",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_aKHexn",
+        "row_cbgkky",
+        "row_UCHNte"
+      ],
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "2",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": false,
+        "heading": "Join 47,000+ People Who Discovered the 3 Hidden Signals Behind Evening Cravings—And Finally Fixed Them",
+        "description": "<p>People worldwide are finally managing their evening appetite without willpower battles, restrictive meal timing, or spending hours in the gym.<\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "Melt Fat Or Get Your Money Back!",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#000000",
+        "bgcolor": "#ffffff",
+        "arrow_color": "#1e3a16",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "cr_unique_eYUpeA": {
+      "type": "cr-unique",
+      "blocks": {
+        "s1_contents_mrDFM8": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "\"Evening Cravings\" Is the #1 Most Frustrating Symptom for Men Trying to Lose Weight Over 30",
+            "heading_color": "#00754a",
+            "description": "<p>You're eating healthy meals. You're staying active. You finish dinner feeling satisfied.<br\/>But two hours later, you're thinking about food again.<br\/><br\/>You tell yourself not to eat. You try to ignore it. But by 9 PM, you're standing in the kitchen eating things you didn't plan to eat. And to make it worse, you just want something quick so you grab the chips, cookies, pizza whatever it's fast and easy. You feel you are out of control, but…<br\/><br\/>It's not your fault.<\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_i9Tj4P": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "How Your Metabolism Changes After 30",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_jjzmfD": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "<p><strong>UNDER 30: BALANCED METABOLISM<\/strong><\/p>",
+            "img_label_color": "#252726",
+            "image": "shopify:\/\/shop_images\/chart02.png",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": true,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_Eh7FBP": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "<p><strong>OVER 30: HORMONAL SHIFT & CRAVINGS<\/strong><\/p>",
+            "img_label_color": "#252726",
+            "image": "shopify:\/\/shop_images\/chart01.png",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": true,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_HtEjMC": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "graph1",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": true,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": true
+          }
+        },
+        "s1_tab_GFmTHd": {
+          "type": "s1_tab",
+          "settings": {
+            "id": "graph1",
+            "img_label": "<p>Under 30: Balanced Metabolism<\/p>",
+            "img_label_color": "#ffffff",
+            "img_label_bgcolor": "#084c25",
+            "image": "shopify:\/\/shop_images\/Frame_2147224665.png",
+            "active": true
+          }
+        },
+        "s1_tab_7JPPdG": {
+          "type": "s1_tab",
+          "settings": {
+            "id": "graph1",
+            "img_label": "<p>Over 30: Hormonal Shift & Cravings<\/p>",
+            "img_label_color": "#ffffff",
+            "img_label_bgcolor": "#a4000a",
+            "image": "shopify:\/\/shop_images\/Frame_2147224667.png",
+            "active": false
+          }
+        },
+        "s1_contents_zn7dFa": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p>After age 30, three chemical switches in your body get stuck in the wrong position. These switches control your stress levels, your calm chemicals, and the signals between your gut and your brain.<br\/>When these switches malfunction, your body sends fake hunger signals that feel 100% real.<\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_fxxYGJ": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "boxList",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p><strong>That's why:<\/strong><br\/><\/p><ul><li><strong>“Just don't eat” doesn't work<\/strong> → You're fighting a false alarm your body actually believes<\/li><\/ul><p><\/p><ul><li><strong>“Eat earlier” doesn't work <\/strong>→ The switches trigger at the same time regardless of when you ate<\/li><\/ul><p><\/p><ul><li><strong>“Use willpower” doesn't work <\/strong>→ Willpower can't override a chemical signal<\/li><\/ul>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_YekKNM": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p>You've tried keto. Intermittent fasting. Meal timing. Appetite suppressants. Nothing stuck because they only targeted ONE switch—or worse, they ignored the switches completely.<br\/><br\/><strong>Here's what's actually broken:<\/strong><\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s1_contents_GnFJU6": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "cards1",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": true,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s1_card_reAa7f": {
+          "type": "s1_card",
+          "settings": {
+            "id": "cards1",
+            "tab": "Switch 1",
+            "image": "shopify:\/\/shop_images\/Frame_2147224583.png",
+            "heading1": "Your Stress Switch Won't Turn Off",
+            "heading2": "",
+            "description": "<p><strong>Making your body think it needs emergency energy<\/strong><br\/><br\/>All day, your body makes cortisol (your stress chemical). It's supposed to drop at night so you can relax.<br\/><br\/>But when you sit on the couch scrolling through your phone—reading news, comparing yourself to others, thinking about tomorrow's problems—your stress switch stays ON.<br\/>Your body thinks: \"Still in danger. Still need fuel.\"<br\/>Even though you just ate.<\/p>",
+            "active": true
+          }
+        },
+        "s1_card_4Kx4hJ": {
+          "type": "s1_card",
+          "settings": {
+            "id": "cards1",
+            "tab": "Switch 2",
+            "image": "shopify:\/\/shop_images\/Frame_2147224583_1.png",
+            "heading1": "Your Calm Switch Keeps Shutting Off",
+            "heading2": "",
+            "description": "<p><strong>Making your brain scream for quick-fix foods<\/strong><br\/><br\/>Your brain uses serotonin (your calm chemical) to feel satisfied and content.<br\/>When serotonin drops too low, your brain panics and sends urgent emergency signals: \"Need sugar NOW. Need carbs NOW. Need salt NOW.\"<br\/>This is why you crave cookies, chips, and ice cream—not chicken and broccoli. Your brain is desperately trying to boost serotonin back up with quick-fix foods.<\/p>",
+            "active": false
+          }
+        },
+        "s1_card_zcV7P7": {
+          "type": "s1_card",
+          "settings": {
+            "id": "cards1",
+            "tab": "Switch 3",
+            "image": "shopify:\/\/shop_images\/Frame_2147224583_2.png",
+            "heading1": "Your Gut-Brain Line Gets Crossed",
+            "heading2": "",
+            "description": "<p><strong>Making false alarms feel 100% real<\/strong><br\/><br\/>Your gut is supposed to send clear messages to your brain: \"We're full. We're satisfied. All good.\"<br\/>But when the stress switch is stuck ON and the calm switch keeps shutting OFF, that communication line gets scrambled.<br\/>Instead of \"we're good,\" your gut sends a loud emergency broadcast: \"HUNGRY. NEED FOOD. EAT NOW.\"<br\/>Your brain hears this signal and responds exactly as it should—by making you walk to the kitchen.<br\/>The signal is fake. But it feels completely real.<\/p>",
+            "active": false
+          }
+        },
+        "s1_contents_KDVDyh": {
+          "type": "s1_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p>\u2028You eat healthy meals (until the cravings attack). You stay active. You do everything \"right.\"<br\/><br\/>But the switches stay stuck. The false signals keep firing. The cravings keep coming.<br\/><br\/>Energy drops. Weight not only stays on, but increases. You are left completely frustrated because you see yourself and what you see does not reflect your effort.<br\/><br\/><strong>The solution isn't working harder—it's fixing what's actually broken.<\/strong><br\/><br\/>By targeting all three switches with the right compounds at clinically effective doses, you can reset your body's signaling system to work with you instead of against you.<br\/><strong><br\/>That's exactly what Dryft™ does.<\/strong><\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "tab_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_contents_cX874R": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "",
+            "heading": "Join Thousands Who Are Breaking the Loop & Eliminating Cravings For Good",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "review_parent": false,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_contents_CM9nrL": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "s2-review1",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "review_parent": true,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_review_zTh9iV": {
+          "type": "s2_review",
+          "settings": {
+            "id": "s2-review1",
+            "image": "shopify:\/\/shop_images\/image_129_e38a7c71-2aec-4868-a015-2f905d773c3f.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_df630e1d-782f-424b-81c0-af292a63d677.png",
+            "description": "Every single night I'd tell myself 'not tonight.' And every night I'd end up standing in front of the fridge at 10 PM eating cold pizza or spoonfuls of peanut butter. The guilt was crushing. Three weeks on Dryft and I actually just... go to bed. No battle. No guilt. I feel like myself again.",
+            "name": "David K., 56",
+            "icon": "shopify:\/\/shop_images\/Group_49169_c69912ef-e593-4a87-8a71-5617085bbe90.png",
+            "verified": "Verified Buyer"
+          }
+        },
+        "s2_contents_VNtbDM": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "s2-animation1",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "review_parent": false,
+            "animation_parent": true,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_animation_r8yNYK": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2-animation1",
+            "description": "150,000 bottles sold",
+            "icon": "shopify:\/\/shop_images\/Subtract_29bd4477-9a32-4e36-93d8-33a9214fc17f.png"
+          }
+        },
+        "s2_animation_xnmVmj": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2-animation1",
+            "description": "Sold out twice in 1 year",
+            "icon": "shopify:\/\/shop_images\/Subtract_29bd4477-9a32-4e36-93d8-33a9214fc17f.png"
+          }
+        },
+        "s2_animation_i7whHY": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2-animation1",
+            "description": "Over 40k men report feeling confident",
+            "icon": "shopify:\/\/shop_images\/Subtract_29bd4477-9a32-4e36-93d8-33a9214fc17f.png"
+          }
+        },
+        "s2_animation_mgVxfM": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2-animation1",
+            "description": "Over 4,984 5-Star Reviews",
+            "icon": "shopify:\/\/shop_images\/Subtract_29bd4477-9a32-4e36-93d8-33a9214fc17f.png"
+          }
+        },
+        "s2_contents_JcwU8f": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p>The problem is, popular diets and supplements throw random ingredients at you, completely ignoring what’s going on inside. Worse, they use synthetic fillers and proprietary blends that hide weak doses.<br\/><br\/><strong>Dryft™ works by targeting all three metabolic switches at once with clinically-effective doses.<\/strong><br\/><br\/>Just 2 capsules a day reset: <\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "review_parent": false,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_contents_C8k9pc": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "s2-card1",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "review_parent": false,
+            "animation_parent": false,
+            "card_parent": true,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_card_cA7teW": {
+          "type": "s2_card",
+          "settings": {
+            "id": "s2-card1",
+            "image": "shopify:\/\/shop_images\/Frame_2147224684.png",
+            "heading": "The Calm Switch",
+            "description": "<p><strong>L-Theanine + Ashwagandha (KSM-66) + Saffron<\/strong><br\/><br\/>These three ingredients work together to turn your stress switch OFF. When cortisol drops naturally, your body stops sending \"need food now\" panic signals.\u2028<br\/><br\/><em>L-Theanine stops stress without making you drowsy. Ashwagandha KSM-66 lowers your stress hormone by up to 32%. Saffron helps your brain make more calm chemicals.<\/em><\/p>"
+          }
+        },
+        "s2_card_XE38dV": {
+          "type": "s2_card",
+          "settings": {
+            "id": "s2-card1",
+            "image": "shopify:\/\/shop_images\/Frame_2147224664.png",
+            "heading": "The Energy Switch",
+            "description": "<p><strong>GlucoVantage® Dihydroberberine<\/strong><br\/><br\/>This ingredient flips your fat-burning switch ON. Instead of storing food as fat, your body turns it into energy. It also stops blood sugar crashes that trigger emergency cravings.<br\/><br\/><em>GlucoVantage activates brown fat tissue and helps you burn up to 100 extra calories per day—even at rest.<\/em><\/p>"
+          }
+        },
+        "s2_card_iABUmr": {
+          "type": "s2_card",
+          "settings": {
+            "id": "s2-card1",
+            "image": "shopify:\/\/shop_images\/Group_2085661762.png",
+            "heading": "The Balance Switch",
+            "description": "<p><strong>DIM + Boron + Zinc + B-3 Probiotic<br\/><\/strong><br\/>These three ingredients work together to turn your stress switch OFF. When cortisol drops naturally, your body stops sending \"need food now\" panic signals.\u2028<br\/><br\/><em>L-Theanine stops stress without making you drowsy. Ashwagandha KSM-66 lowers your stress hormone by up to 32%. Saffron helps your brain make more calm chemicals.<\/em><\/p>"
+          }
+        },
+        "s2_contents_yQQiR3": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p><strong>This focused 3-in-1 approach is why Dryft™ delivers lasting results when other solutions fail.<\/strong><\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "review_parent": false,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "s1_contents_mrDFM8",
+        "s1_contents_i9Tj4P",
+        "s1_contents_jjzmfD",
+        "s1_contents_Eh7FBP",
+        "s1_contents_HtEjMC",
+        "s1_tab_GFmTHd",
+        "s1_tab_7JPPdG",
+        "s1_contents_zn7dFa",
+        "s1_contents_fxxYGJ",
+        "s1_contents_YekKNM",
+        "s1_contents_GnFJU6",
+        "s1_card_reAa7f",
+        "s1_card_4Kx4hJ",
+        "s1_card_zcV7P7",
+        "s1_contents_KDVDyh",
+        "s2_contents_cX874R",
+        "s2_contents_CM9nrL",
+        "s2_review_zTh9iV",
+        "s2_contents_VNtbDM",
+        "s2_animation_r8yNYK",
+        "s2_animation_xnmVmj",
+        "s2_animation_i7whHY",
+        "s2_animation_mgVxfM",
+        "s2_contents_JcwU8f",
+        "s2_contents_C8k9pc",
+        "s2_card_cA7teW",
+        "s2_card_XE38dV",
+        "s2_card_iABUmr",
+        "s2_contents_yQQiR3"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.s2_items_2:last-child {grid-column: 1\/5; } #boxList {background: white; border-radius: 10px; padding-top: 14px; }}",
+        "@media screen and (min-width: 768px) {.s4_items_2--20 {grid-column: 2\/4; } .s4_items_2--21 {grid-column: 4\/6; }}"
+      ],
+      "name": "CR Unique",
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/image_59.png",
+        "arrow_color": "#084c25",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "cr_ingredients_U9cMEa": {
+      "type": "cr-ingredients-tab-style",
+      "blocks": {
+        "tab_zmTQzR": {
+          "type": "tab",
+          "settings": {
+            "first": true,
+            "label": "Stress & Craving Control",
+            "index": "1"
+          }
+        },
+        "tab_mFybfc": {
+          "type": "tab",
+          "settings": {
+            "first": false,
+            "label": "Hormone & Energy Balance",
+            "index": "2"
+          }
+        },
+        "tab_7BinMX": {
+          "type": "tab",
+          "settings": {
+            "first": false,
+            "label": "Metabolism & Fat Burning",
+            "index": "3"
+          }
+        },
+        "tab_pUmnhK": {
+          "type": "tab",
+          "settings": {
+            "first": false,
+            "label": "Gut-brain Communication",
+            "index": "4"
+          }
+        },
+        "row_b8j3n4": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_29_be8f38ea-b9db-42b1-9ed7-5189e7b22d04.png",
+            "heading": "Saffron Extract (30 mg)",
+            "label": "≥2% safranal, ≥3% crocin",
+            "description": "<p>Think of this as your brain's \"calm button.\" Saffron helps your brain make more serotonin (the chemical that makes you feel satisfied and happy). When serotonin is balanced, your brain stops screaming for cookies and chips. Clinical studies show people taking saffron had significantly fewer snacking episodes and better control around food.<\/p>"
+          }
+        },
+        "row_4GELVj": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_41b4ffab-7d65-4973-a12b-e183e2f119b1.png",
+            "heading": "L-Theanine (80 mg)",
+            "label": "",
+            "description": "<p>The \"calm without drowsy\" ingredient from green tea. L-Theanine helps lower your stress hormone (cortisol) during evening hours—so your body actually knows it's time to relax instead of staying in \"alert mode.\" This stops the false hunger signals before they start.<\/p>"
+          }
+        },
+        "row_Yfc6NK": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_1_1768b921-c5e7-4998-910b-e210ac613090.png",
+            "heading": "Ashwagandha Extract (300 mg)",
+            "label": "5% withanolides",
+            "description": "<p>One of the most studied stress-fighters on Earth. Ashwagandha helps lower cortisol by up to 32% and keeps your stress switch from staying stuck in the \"ON\" position all night. When stress drops, fake hunger signals stop firing.<\/p>"
+          }
+        },
+        "row_eAYUew": {
+          "type": "row",
+          "settings": {
+            "index": "2",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_29_1_b1fc1d41-2f36-4a20-9315-f5589b6f43ce.png",
+            "heading": "Diindolylmethane (DIM) \u2028(100 mg)",
+            "label": "",
+            "description": "<p>Found in broccoli and cauliflower, DIM helps your body process hormones properly. Think of it like a filter that removes the \"bad\" forms of hormones and keeps the \"good\" ones. This helps maintain the metabolic balance your body needs to burn fat instead of store it.<\/p>"
+          }
+        },
+        "row_kA4iBn": {
+          "type": "row",
+          "settings": {
+            "index": "2",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_2.png",
+            "heading": "Boron (as glycinate) (6 mg)",
+            "label": "",
+            "description": "<p>A trace mineral that helps support healthy hormone levels and keeps your metabolism running smoothly. Boron works with DIM to maintain the hormonal environment needed for a lean, energetic body.<\/p>"
+          }
+        },
+        "row_qUaMdB": {
+          "type": "row",
+          "settings": {
+            "index": "2",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_3.png",
+            "heading": "Zinc (as glycinate) (15 mg)",
+            "label": "",
+            "description": "<p>Essential for over 300 processes in your body—including appetite control, mood regulation, and metabolism. Many people don't get enough zinc from food. This highly absorbable form makes sure your body has what it needs to function properly.<\/p>"
+          }
+        },
+        "row_nrkEVm": {
+          "type": "row",
+          "settings": {
+            "index": "3",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_29_2.png",
+            "heading": "GlucoVantage® Dihydroberberine (100 mg)",
+            "label": "",
+            "description": "<p>Think of it as your body’s switch—deciding to “store fat” or “burn energy.” Dihydroberberine keeps it on “burn,” is 5x more absorbable than regular berberine, and clinically shown to reduce waist circumference by 3.27 cm, lower blood sugar spikes, and support steady, lasting energy.<\/p>"
+          }
+        },
+        "row_MPf6xm": {
+          "type": "row",
+          "settings": {
+            "index": "3",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_4.png",
+            "heading": "Grains of Paradise Extract (30 mg)",
+            "label": "12.5% 6-paradol",
+            "description": "<p>Contains special compounds that wake up your brown fat (the good fat that burns calories like a furnace). Think of it as turning up your body's thermostat. Clinical trials show significant increases in whole-body energy expenditure and visceral fat reduction.<\/p>"
+          }
+        },
+        "row_Am8rny": {
+          "type": "row",
+          "settings": {
+            "index": "3",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_5.png",
+            "heading": "Cayenne Pepper Powder (120 mg)",
+            "label": "40,000 SHU",
+            "description": "<p>Like turning up your internal furnace. The heat you feel when you eat spicy food? That's your body burning more calories. Research shows cayenne significantly boosts your calorie-burning engine and helps you burn fat even while resting.<\/p>"
+          }
+        },
+        "row_mVmnqV": {
+          "type": "row",
+          "settings": {
+            "index": "4",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_29_3.png",
+            "heading": "Bifidobacterium breve B-3 (100 mg) 1×10⁹ CFU",
+            "label": "",
+            "description": "<p>The gut-brain connector. B-3 helps restore clear communication between your digestive system and your brain. When this line is clear, your gut stops sending false \"HUNGRY\" alarms. Your brain can finally tell the difference between \"I'm bored\" and \"I'm actually hungry.\"<\/p>"
+          }
+        },
+        "row_JXzcBd": {
+          "type": "row",
+          "settings": {
+            "index": "4",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_6.png",
+            "heading": "Lactobacillus gasseri (50 mg) 200B CFU\/g",
+            "label": "",
+            "description": "<p>Picture a bouncer at your gut's door. This probiotic literally helps block some of the fat you eat from being stored. It's like a security system that won't let excess fat through. Clinical trials show significant belly fat reduction in just 12 weeks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_zmTQzR",
+        "tab_mFybfc",
+        "tab_7BinMX",
+        "tab_pUmnhK",
+        "row_b8j3n4",
+        "row_4GELVj",
+        "row_Yfc6NK",
+        "row_eAYUew",
+        "row_kA4iBn",
+        "row_qUaMdB",
+        "row_nrkEVm",
+        "row_MPf6xm",
+        "row_Am8rny",
+        "row_mVmnqV",
+        "row_JXzcBd"
+      ],
+      "custom_css": [
+        "h2 {max-width: 900px;}"
+      ],
+      "name": "CR Ingredients Tabs",
+      "settings": {
+        "section_id": "two-capsules-day",
+        "heading": "2 Capsules a Day → 11 Clinically Backed Ingredients → 1 Transformation",
+        "description": "<h3>The #1 Scientifically Formulated Evening Craving Control System<br\/><br\/><\/h3><p>This breakthrough formula helps fix all three broken switches—so your hard work can finally show results in the calm evenings and confident mornings you deserve.<br\/><br\/><br\/><\/p><h3>All without willpower, synthetic hormones, or restrictive diets.<\/h3>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_69.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_case_study_JmWWhj": {
+      "type": "nl-case-study",
+      "blocks": {
+        "row_7fV6kf": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_121.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Estrogen_Vindication_part_I-Berkson_Abridged_compressed.pdf?v=1756492047",
+            "description": "Estrogen Vindication part I-Berkson Abridged for PRINT"
+          }
+        },
+        "row_QNfeX9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_122.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Modulation_of_Gut_Microbiota_and_Metabolites_by_Berberine_in_Treating_Mice_With_Disturbances_in_Glucose_and_Lipid_Metabolism__compressed.pdf?v=1756492052",
+            "description": "Modulation of Gut Microbiota and Metabolites by Berberine in Treating Mice With Disturbances in Glucose and Lipid Metabolism"
+          }
+        },
+        "row_zqGynR": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_123.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Grains_of_paradise_Aframomum_melegueta_extract_activates_brown_adipose_tissue_and_increases_whole-body_energy_expenditure_in_men.pdf?v=1756474327",
+            "description": "Grains of paradise (Aframomum melegueta) extract activates brown adipose tissue and increases whole-body energy expenditure in men"
+          }
+        },
+        "row_nHgK8b": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_124.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Capsaicinoids_and_capsinoids._A_potential_role_for_weight_management__A_systematic_review_of_the_evidence.pdf?v=1756474322",
+            "description": "Capsaicinoids and capsinoids. A potential role for weight management? A systematic review of the evidence"
+          }
+        },
+        "row_NNC7VE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_125.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/L-Theanine_reduces_psychological_and_physiological_stress_responses.pdf?v=1756474326",
+            "description": "L-Theanine reduces psychological and physiological stress responses"
+          }
+        },
+        "row_q3pQQi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_126.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Zinc_in_human_health__effect_of_zinc_on_immune_cells.pdf?v=1756474327",
+            "description": "Zinc in human health: effect of zinc on immune cells"
+          }
+        },
+        "row_hd9qnk": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_127.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Clinical_Evaluation_of_the_Spermatogenic_Activity_of_the_Root_Extract_of_Ashwagandha_Withania_somnifera_in_Oligospermic_Males__A_Pilot_Study.pdf?v=1756474325",
+            "description": "Clinical Evaluation of the Spermatogenic Activity of the Root Extract of Ashwagandha (Withania somnifera) in Oligospermic Males: A Pilot Study"
+          }
+        },
+        "row_W6fMtM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_128.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Absorption_Kinetics_of_Berberine_and_Dihydroberberine_and_Their_Impact_on_Glycemia__A_Randomized_Controlled_Crossover_Pilot_Trial.pdf?v=1756474333",
+            "description": "Absorption Kinetics of Berberine and Dihydroberberine and Their Impact on Glycemia: A Randomized, Controlled, Crossover Pilot Trial"
+          }
+        }
+      },
+      "block_order": [
+        "row_7fV6kf",
+        "row_QNfeX9",
+        "row_zqGynR",
+        "row_nHgK8b",
+        "row_NNC7VE",
+        "row_q3pQQi",
+        "row_hd9qnk",
+        "row_W6fMtM"
+      ],
+      "disabled": true,
+      "name": "NL Case Study",
+      "settings": {
+        "section_id": "",
+        "heading": "Backed by Clinical Research. Real Ingredients That Deliver Real Results.",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "padding_top_m": 0,
+        "padding_bottom_m": 80
+      }
+    },
+    "nl_unique_s4_C8RgYV": {
+      "type": "nl-unique-s4",
+      "blocks": {
+        "s4_review_gGbL4x": {
+          "type": "s4_review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_135.1_c35eeb91-2c62-434d-b3a9-1c7f6fb00612.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_1287a69c-c852-486f-bbbc-92ed531192fc.png",
+            "description": "<p><strong>I'M BACK!<\/strong> My drive is back, I'm losing weight, and I feel stronger and more motivated than ever before.<\/p>",
+            "name": "Kevin G.",
+            "icon": "shopify:\/\/shop_images\/Group_49169.png",
+            "verified": "Verified Buyer"
+          }
+        },
+        "s4_items_2_N4kA76": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": true,
+            "image": "shopify:\/\/shop_images\/image_117_6daa002b-48cc-4e2c-bb4f-d4196928065f.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_117_1.png",
+            "heading": "Feel Calm After Dinner",
+            "description": "That voice that says \"go to the kitchen\" gets quieter. Finally enjoy your evening without battling food thoughts. Sit on the couch and just... relax."
+          }
+        },
+        "s4_items_2_L9NCtN": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/senior-man-running-exercising-sport-fitness-active-2025-02-01-17-53-17-utc_b464c2bc-4211-48a4-ba3d-6a000e302905.png",
+            "image_mobile": "shopify:\/\/shop_images\/senior-man-running-exercising-sport-fitness-active-2025-02-01-17-53-17-utc_1.png",
+            "heading": "Sleep Better at Night",
+            "description": "Stop falling asleep on the couch with guilt. Wake up refreshed, energized, and ready for the day—without that heavy feeling from late-night eating."
+          }
+        },
+        "s4_items_2_RL4K39": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/image_140_0bbd8734-7af4-4035-b333-f08bdeb284b3.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_140_1.png",
+            "heading": "See Real Changes",
+            "description": "Stop fighting your body. Once the three switches are working properly, your efforts in the kitchen create visible results you and others notice."
+          }
+        },
+        "s4_items_2_JKL8YM": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/grey-man-smiling-and-looking-aside-while-standing-2025-02-14-08-27-47-utc_16381a7e-3e18-460c-a0f8-31c163f38dbb.png",
+            "image_mobile": "shopify:\/\/shop_images\/grey-man-smiling-and-looking-aside-while-standing-2025-02-14-08-27-47-utc_1.png",
+            "heading": "Feel Confident Again",
+            "description": "Walk into any room with your head held high. The confidence that comes from feeling in control of your evenings changes everything."
+          }
+        },
+        "s4_items_2_RDaMGN": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/image_133_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_133_2.png",
+            "heading": "Work With Your Body, Not Against It",
+            "description": "Stop battling hormonal imbalances. Dryft™ supports your metabolism so your body works with you, not against you."
+          }
+        }
+      },
+      "block_order": [
+        "s4_review_gGbL4x",
+        "s4_items_2_N4kA76",
+        "s4_items_2_L9NCtN",
+        "s4_items_2_RL4K39",
+        "s4_items_2_JKL8YM",
+        "s4_items_2_RDaMGN"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.s4_items_2--5 {grid-column: 2\/4; } .s4_items_2--6 {grid-column: 4\/6; }}"
+      ],
+      "name": "NL Unique S4",
+      "settings": {
+        "section_id": "",
+        "s4_heading": "Transform Your Evenings & Confidence With Dryft™",
+        "s4_description": "<p>Dryft™ doesn't just help with cravings. Dryft™ helps support overall wellbeing so you feel more confident in yourself.<\/p>",
+        "s4_subheading": "",
+        "s4_description_2": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group_f40b8ed1-02ac-4088-a7e7-f5d4ee4cb760.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "bg": "shopify:\/\/shop_images\/image_67_22b7e036-1883-48db-868d-26bf5f7f95f8.png",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_product_progress_yppJHC": {
+      "type": "nl-product-progress",
+      "blocks": {
+        "row_Tpa7UJ": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 1-7",
+            "subheading": "Switches Start Resetting",
+            "description": "<p>Better sleep, fewer evening cravings, less guilt. Wake with purpose and clarity instead of shame. Cravings begin to quiet.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_55604032.png"
+          }
+        },
+        "row_xiWLtX": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 8-21",
+            "subheading": "Early Changes Appear",
+            "description": "<p>Improved energy, more restful sleep, better mood and focus. The urgent \"need food NOW\" feeling starts fading. You go to bed without thinking about the kitchen.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_55604033.png"
+          }
+        },
+        "row_7WGVRf": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 21-60",
+            "subheading": "Visible Progress",
+            "description": "<p>You stop thinking about food after dinner—it's not even a decision anymore. Clothes fit more comfortably. Energy stays consistent. Others begin to notice.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_55604029.png"
+          }
+        },
+        "row_xL4Yjr": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 60-90",
+            "subheading": "Complete Reset",
+            "description": "<p>Maximum benefits achieved. All three switches working properly. Evening cravings are rare. Sleep is restorative. You feel like yourself again—calm, in control, confident.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_55604035.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_Tpa7UJ",
+        "row_xiWLtX",
+        "row_7WGVRf",
+        "row_xL4Yjr"
+      ],
+      "name": "NL Product Progress",
+      "settings": {
+        "section_id": "",
+        "heading": "Your 90-Day Timeline",
+        "description": "<p><em>*Individual results may vary. Improvements based on user feedback<\/em><\/p>",
+        "button_label": "TRY DRYFT™ RISK-FREE FOR 90 DAYS",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group_f40b8ed1-02ac-4088-a7e7-f5d4ee4cb760.png",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_benefits_HdqD84": {
+      "type": "nl-benefits",
+      "blocks": {
+        "row_wyLUmf": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/sportsman-doing-situps-in-gym-2025-01-29-12-48-12-utc.png",
+            "heading": "Helps Support Healthy Weight Management",
+            "description": "<p>Helps address metabolic factors - no extreme diets required. Finally see the results your hard work deserves.<\/p>"
+          }
+        },
+        "row_8EAaca": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_84.png",
+            "heading": "Helps Improve Body Composition",
+            "description": "<p>Helps support natural metabolic balance for improved appearance. Feel more confident in fitted clothing.<\/p>"
+          }
+        },
+        "row_bTxkat": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_89.png",
+            "heading": "Helps You Look Like You Work Out - Without Living in the Gym",
+            "description": "<p>Supported metabolic health may help enhance the visible results of your fitness efforts.<br\/><br\/><\/p>"
+          }
+        },
+        "row_UzmWd8": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/satisfied-man-relaxing-in-bed-2025-02-14-22-57-27-utc_1.png",
+            "heading": "Helps You Wake Up with Energy and Mental Clarity",
+            "description": "<p>No more sluggish mornings or afternoon energy crashes. Feel alert and focused throughout the day.<\/p>"
+          }
+        },
+        "row_tnUg87": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/young-couple-relaxing-in-bed-and-having-fun-2025-03-13-08-15-42-utc_1.png",
+            "heading": "Helps Support Vitality",
+            "description": "<p>Clinically dosed ingredients help promote energy, supporting performance and recovery so you feel like a healthier, more confident version of yourself.<\/p>"
+          }
+        },
+        "row_QffjcD": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_88.png",
+            "heading": "Helps You Feel Confident in Every Setting",
+            "description": "<p>Approach meetings and social situations with renewed confidence. No more feeling self-conscious or avoiding activities you enjoy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_wyLUmf",
+        "row_8EAaca",
+        "row_bTxkat",
+        "row_UzmWd8",
+        "row_tnUg87",
+        "row_QffjcD"
+      ],
+      "disabled": true,
+      "name": "NL Benefits",
+      "settings": {
+        "section_id": "",
+        "heading": "Experience Comprehensive Support With Thaura Dryft™ ",
+        "description": "<p>Dryft™ doesn't just help with weight management. Dryft™ helps men over 30 support overall wellbeing to feel more confident in themselves.<\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_67.png",
+        "bg_img_inner": "shopify:\/\/shop_images\/image_64_5e0f3ffe-e4f4-4847-8211-b28e16eb4a5d.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_carousel_69B766": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_QhtYXh": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/happy-middle-aged-man-stretching-in-bed-in-the-mor-2025-03-18-17-03-41-utc.png",
+            "tag": "Days 1-7",
+            "heading": "Enhanced Energy, Better Sleep",
+            "description": "<p>Improved energy, more restful sleep, better mood and focus. Wake up with purpose and drive instead of struggling through your day.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        },
+        "row_XNHRWq": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/fitness-at-home-2025-01-09-06-46-42-utc.png",
+            "tag": "Days 7-14",
+            "heading": "She Starts To Notice",
+            "description": "<p>Body composition begins improving, clothes fit more comfortably (users report pants fitting 1-2 inches looser), and you feel stronger despite less gym time. Morning energy remains consistent. You naturally stand taller, and others begin to notice.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        },
+        "row_JijNeG": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/mature-handsome-muscular-persian-man-shirtless-and-2025-01-29-03-46-47-utc.png",
+            "tag": "Days 21-60",
+            "heading": "Visible Progress",
+            "description": "<p>Your appearance improves, confidence returns. You have more stamina for activities with your family. Colleagues notice your increased energy and presence in meetings. You feel more comfortable in your own skin.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        },
+        "row_wRzTHW": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/shirtless-male-athlete-having-workout-on-sports-gr-2025-03-25-08-01-42-utc.png",
+            "tag": "Days 60-90",
+            "heading": "Optimal Results",
+            "description": "<p>Maximum benefits achieved. Your physique has improved, energy levels are consistent, appetite is regulated, and sleep is restorative. You feel like a revitalized version of yourself.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_QhtYXh",
+        "row_XNHRWq",
+        "row_JijNeG",
+        "row_wRzTHW"
+      ],
+      "disabled": true,
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "3",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": true,
+        "heading": "Men Over 30: Finally Target the Stubborn Weight That’s Been Holding You Back",
+        "description": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "<p><em><br\/>*Individual results may vary. Improvements based on user feedback<\/em><\/p>",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#000000",
+        "bgcolor": "#ffffff",
+        "arrow_color": "#1e3a16",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_formula_fjNMit": {
+      "type": "nl-formula",
+      "blocks": {
+        "row_i3HYrK": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49182.png",
+            "heading": "",
+            "description": "<p> Free From Gluten, Dairy, Sugar & GMOs<\/p>"
+          }
+        },
+        "row_7tmRDr": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49181.png",
+            "heading": "",
+            "description": "<p>No Artificial Additives<\/p>"
+          }
+        },
+        "row_CK8JL6": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49189.png",
+            "heading": "",
+            "description": "<p>No Soy, No Estrogenic Compounds<\/p>"
+          }
+        },
+        "row_4W9LN4": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49194.png",
+            "heading": "",
+            "description": "<p>Formulated in the USA in an FDA-Registered Facility<\/p>"
+          }
+        },
+        "row_iGUCGt": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49191.png",
+            "heading": "",
+            "description": "<p>Clinically Dosed, Backed by 1,000s of Studies<\/p>"
+          }
+        },
+        "row_ACnPpA": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49193.png",
+            "heading": "",
+            "description": "<p>Triple-Tested for Purity, Potency, and Dosage Accuracy<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_i3HYrK",
+        "row_7tmRDr",
+        "row_CK8JL6",
+        "row_4W9LN4",
+        "row_iGUCGt",
+        "row_ACnPpA"
+      ],
+      "name": "NL Formula",
+      "settings": {
+        "section_id": "",
+        "heading": "Try Our Premium Quality & Diet-Friendly Formula Today!",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/bg-mmg.png",
+        "bg_img_m": "shopify:\/\/shop_images\/Frame_1618873406.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_animation_gUBxx9": {
+      "type": "nl-animation",
+      "blocks": {
+        "text_EJGUGR": {
+          "type": "text",
+          "settings": {
+            "show_dot": true,
+            "text": "SAVE $48 On Bulk Orders Today"
+          }
+        }
+      },
+      "block_order": [
+        "text_EJGUGR"
+      ],
+      "name": "NL Animation",
+      "settings": {
+        "section_id": "",
+        "repeat_count": 50,
+        "animation_length": 100,
+        "max_width": 360,
+        "bgcolor": "#e9f0cc",
+        "text_color": "#1e3a16",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_m": 0,
+        "padding_bottom_m": 0
+      }
+    },
+    "nl_product_variants_BreT68": {
+      "type": "nl-product-variants-secondary",
+      "blocks": {
+        "row_kNfYBx": {
+          "type": "row",
+          "settings": {
+            "heading": "Select Your Order"
+          }
+        },
+        "row_nLUt3n": {
+          "type": "row",
+          "settings": {
+            "heading": "Billing Info"
+          }
+        },
+        "row_ahWapp": {
+          "type": "row",
+          "settings": {
+            "heading": "Thank You"
+          }
+        },
+        "card_zENppW": {
+          "type": "card",
+          "settings": {
+            "slider_position": 0,
+            "default": true,
+            "product": "dryft™-3-bottles-1-free-1",
+            "title": "Buy 3 Get One Free",
+            "bottle_price": "$34.99",
+            "serving": "$0.84 per capsule",
+            "off": "32% OFF",
+            "show_sale": true,
+            "sale_text": "Sale Ends In",
+            "hide_timer": false,
+            "description": "<p>✅ Save $89.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<br\/>✅ BIGGEST Discount<\/p>",
+            "enable_subscription": false,
+            "sub_id": "",
+            "onetime_heading": "One Time Purchase",
+            "subscription_heading": "Subscribe & Save",
+            "sub_price": "",
+            "sub_compare_price": "",
+            "sub_save": "",
+            "sub_per_price": "",
+            "sub_description1": "",
+            "sub_description2": "",
+            "sub_description3": "",
+            "sub_description4": "",
+            "sub_description5": ""
+          }
+        },
+        "card_xEeHCB": {
+          "type": "card",
+          "settings": {
+            "slider_position": 1,
+            "default": false,
+            "product": "dryft™-2-bottles-1",
+            "title": "Buy 2 Bottles",
+            "bottle_price": "$44.98",
+            "serving": "$1.16 per capsule",
+            "off": "7% OFF",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "hide_timer": false,
+            "description": "<p>✅ Save $9.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<\/p>",
+            "enable_subscription": false,
+            "sub_id": "",
+            "onetime_heading": "One Time Purchase",
+            "subscription_heading": "Subscribe & Save",
+            "sub_price": "",
+            "sub_compare_price": "",
+            "sub_save": "",
+            "sub_per_price": "",
+            "sub_description1": "",
+            "sub_description2": "",
+            "sub_description3": "",
+            "sub_description4": "",
+            "sub_description5": ""
+          }
+        },
+        "card_djwGYt": {
+          "type": "card",
+          "settings": {
+            "slider_position": 2,
+            "default": false,
+            "product": "dryft™-1-bottle-1",
+            "title": "Buy 1 Bottle",
+            "bottle_price": "",
+            "serving": "$1.25 per capsule",
+            "off": "",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "hide_timer": false,
+            "description": "<p>✅ 90 Day Money-Back Guarantee<\/p>",
+            "enable_subscription": true,
+            "sub_id": "2479161517",
+            "onetime_heading": "One Time Purchase",
+            "subscription_heading": "Subscribe & Save",
+            "sub_price": "$59.95",
+            "sub_compare_price": "$69.95",
+            "sub_save": "SAVE 14%",
+            "sub_per_price": "$1.07 per serving",
+            "sub_icon": "shopify:\/\/shop_images\/Subtract_29ecfb6a-b933-4156-8369-f50a169034d4.png",
+            "sub_description1": "<p>Delivery Every 28 Days<\/p>",
+            "sub_description2": "<p>Free Shipping<\/p>",
+            "sub_description3": "<p>Pause, Skip, Modify or Cancel Anytime<\/p>",
+            "sub_description4": "",
+            "sub_description5": ""
+          }
+        },
+        "faeture_x6BwKj": {
+          "type": "faeture",
+          "disabled": true,
+          "settings": {}
+        },
+        "faeture_item_chGLJU": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ Save $139.95<\/p>"
+          }
+        },
+        "faeture_item_mzXgX4": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ Unlock FREE Shipping Today Only<\/p>"
+          }
+        },
+        "faeture_item_6dnMmC": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ 90 Day Money-Back Guarantee<\/p>"
+          }
+        },
+        "faeture_item_TkhRM4": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ BIGGEST Discount<\/p>"
+          }
+        },
+        "faeture2_Y6aNQq": {
+          "type": "faeture2",
+          "settings": {}
+        },
+        "faeture2_item_3nk6wb": {
+          "type": "faeture2_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Mask_group_9912d440-a36c-4a93-ba21-d7493f24214e.png",
+            "text": "<p>90-Day Money Back Guarantee<\/p>"
+          }
+        },
+        "faeture2_item_9bwqim": {
+          "type": "faeture2_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/gift_94f0dfdc-faae-49ac-bd7b-31508fa9fbfc.png",
+            "text": "<p>Free Shipping<\/p>"
+          }
+        },
+        "faeture2_item_9AU3za": {
+          "type": "faeture2_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/truck.png",
+            "text": "<p>Ships within 24 Hours Mon-Fri<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_kNfYBx",
+        "row_nLUt3n",
+        "row_ahWapp",
+        "card_zENppW",
+        "card_xEeHCB",
+        "card_djwGYt",
+        "faeture_x6BwKj",
+        "faeture_item_chGLJU",
+        "faeture_item_mzXgX4",
+        "faeture_item_6dnMmC",
+        "faeture_item_TkhRM4",
+        "faeture2_Y6aNQq",
+        "faeture2_item_3nk6wb",
+        "faeture2_item_9bwqim",
+        "faeture2_item_9AU3za"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.nl-product-variants__variant-2 {grid-column: 2 \/ 3; grid-row: 1 \/ 2; }}",
+        "@media screen and (max-width: 767px) {.nl-product-variants__variant-2 {grid-row: 1 \/ 2; } .nl-product-variants__variant-1 {grid-row: 2 \/ 3; }}"
+      ],
+      "name": "NL Product Secondary",
+      "settings": {
+        "product": "dryft™-np",
+        "slider_start_point": 0,
+        "section_id": "products",
+        "timer_minute": 30,
+        "heading": "Select Your Package Below",
+        "description": "",
+        "sale_label": "Buy 3 Get One Free Offer Expires in:",
+        "hide_timer": false,
+        "card_label": "Choose Your Supply",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_2.png",
+        "bottom_heading": "Our trusted payment processors",
+        "bottom_description": "<p>We use a 256-bit secure shopping cart where 100% of your data is encrypted, safe, and secure. This is the same data standard used by most banks, governments, and military organizations.<\/p>",
+        "bottom_icons": "shopify:\/\/shop_images\/Frame_2607927_c2efbdf6-3d03-4d4e-a998-9df55227afa8.png",
+        "bottom_img": "shopify:\/\/shop_images\/Mask_group_2.png",
+        "bottom_img_2": "shopify:\/\/shop_images\/Mask_group_1_b77639b7-af17-41cd-820e-1464800eaeaf.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_guarantee_BnwdGF": {
+      "type": "nl-guarantee",
+      "name": "NL Guarantee",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Group_49198.png",
+        "heading": "You Have 90 Days to Decide If This Works",
+        "description": "<p>You've tried willpower. You've tried eating earlier. You've tried \"just going to bed.\"<br\/><br\/>Nothing worked.<br\/><br\/>That's why you get 90 full days to try Dryft™ risk-free.<br\/>If you don't feel calmer in the evenings... if you don't notice fewer cravings... if you don't wake up feeling better... we'll refund every penny. No returns. No hassle.<br\/><br\/>Why 90 days? Because some people feel it in a week. Others need a month. We want you to experience the full transformation—so you either love it or pay nothing.<\/p>",
+        "button_label": "TRY DRYFT™ NOW",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_carousel_r94Qen": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_rGhKqh": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_138.1_e89085b0-0b81-481f-b547-f697ffc02c21.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"Skeptical after trying other supplements without success. But the research on their ingredients convinced me to try. Week 2: more energy. Week 4: clothes fitting better. Week 8: feeling better than I have in years.\"<\/p>",
+            "name": "Michael R., 41",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_CQV7zN": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_87_d675012e-ecc6-4f71-93cd-8998be481c3c.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"I've always struggled with late-night cravings. Since starting Dryft™, I'm not constantly thinking about my next meal. I can go hours without snacking, and I'm finally seeing my waistline shrink. My wife is amazed at how I'm not raiding the pantry every evening.\" <\/p>",
+            "name": "Tom R., 36",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_zxWqCQ": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_102_31558856-e168-47bf-8a04-18a550692caf.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"​​Just seeing my reflection in a window doesn't fill me with disappointment in myself, but confidence, maybe even a bit of joy. I should have done this a long time ago. And yes, people treat you differently, I tend to get a lot more small talk, smiles and attention from women (I'm not married). To be sure, part of this is my own confidence improving\"<\/p>",
+            "name": "Robert J., 55",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_kM9kyp": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_136.1_192a0ca4-262d-4a98-a3dc-476cbdee45d7.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"I was considering more drastic measures, but tried this first. Excellent decision. My weight is down 10 lbs in 90 days, body composition has improved, and I'm sleeping well. Even started dating again. This has significantly improved my quality of life.\"<\/p>",
+            "name": "David K., 52",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_Uccg7W": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_132_212d53ea-514e-476c-9349-e2197d127806.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"My health and life has improved immeasurably. My skin is healthy again, and I recognize the face in the mirror. Clothing fits better\"<\/p>",
+            "name": "James T., 47",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_Aa3UJC": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_137.1_4fdf629c-a228-40d9-9739-a5b397079915.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"My husband went from falling asleep on the couch every night to planning date nights again. He's confident, energetic, and more engaged with me. I got my husband back!\"<\/p>",
+            "name": "Sarah M.",
+            "avatar": "shopify:\/\/shop_images\/image.png",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_GggWJB": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_139.1_cb778200-8ce7-4c67-8470-028f518c4c89.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"He actively participates with the children now instead of being depleted from work. His energy has improved, and his smile has returned. Great choice, highly recommends it.\"<\/p>",
+            "name": "Jennifer L.",
+            "avatar": "shopify:\/\/shop_images\/image_44bdc023-8c0c-45c8-94ef-4a6e7086bf2b.png",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rGhKqh",
+        "row_CQV7zN",
+        "row_zxWqCQ",
+        "row_kM9kyp",
+        "row_Uccg7W",
+        "row_Aa3UJC",
+        "row_GggWJB"
+      ],
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "3",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": true,
+        "heading": "Real Men, Verified Results: Why Men Call Dryft™ a \"Game-Changer\" for Their Health",
+        "description": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "",
+        "heading_color": "#f3f3f3",
+        "text_color": "#ffffff",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1.png",
+        "arrow_color": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_supplements_dzTxLD": {
+      "type": "nl-supplements",
+      "custom_css": [
+        "em {font-size: 14px; font-style: normal; line-height: 1.25;}",
+        "h2 {color: #00754a !important;}"
+      ],
+      "name": "NL Supplements",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/supply.png",
+        "img_mobile": "shopify:\/\/shop_images\/Frame_2607933_53cdb0c4-09ea-42f7-b5b6-5bfedcb6e9cd.png",
+        "heading": "What’s Inside Dryft™?",
+        "description": "<p>Every ingredient in Dryft™ is scientifically-supported to promote natural vitality by addressing what's really important—your metabolic balance. No fillers, no unnecessary additives, just 9 powerful compounds that work together to help improve body composition and support the confident person you want to be.<br\/><br\/><em>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.<\/em><\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_doctors_Q7jnAV": {
+      "type": "nl-doctors",
+      "blocks": {
+        "row_7gRVEe": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_108.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873.png",
+            "heading": "Dr. Michael Bennett, Lead Metabolic Specialist",
+            "description": "<p><em>After seeing thousands of men struggling with weight management and how frustrated they felt, I knew we needed a real solution. Dryft™ corrects the underlying metabolic roadblocks—insulin, cortisol, and estrogen—that make fat loss feel impossible.<\/em><\/p>"
+          }
+        },
+        "row_3ch8C3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_109.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873.png",
+            "heading": "Dr. Rebecca Martinez, Sports Nutrition PhD",
+            "description": "<p>“<em>I've worked with elite athletes for decades. The same metabolic optimization principles that create champions work for everyday men too, Dryft™ helps create that optimal state naturally, so your body can finally respond to your efforts efficiently.\"<\/em><\/p>"
+          }
+        },
+        "row_nEFV43": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_107.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873_2e369f46-c3fb-48c6-968c-7540f78b418d.png",
+            "heading": "Dr. Marcus Chen, Clinical Endocrinologist, 12+ years",
+            "description": "<p>“<em>I've worked with elite athletes for decades. The same metabolic optimization principles that create champions work for everyday men too, Dryft™ helps create that optimal state naturally, so your body can finally respond to your efforts efficiently.\"<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_7gRVEe",
+        "row_3ch8C3",
+        "row_nEFV43"
+      ],
+      "disabled": true,
+      "name": "NL Doctors",
+      "settings": {
+        "section_id": "",
+        "heading": "We're On a Mission To Help 1M Men Feel Confident Again",
+        "description": "<p>Meet The Experts Behind Dryft™ <\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_faqs_pEwWFj": {
+      "type": "nl-faqs",
+      "blocks": {
+        "row_8z8MVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How quickly will I notice results?",
+            "description": "<p><strong>Week 1-2:<\/strong> Better sleep, fewer cravings, less guilt (L-theanine and probiotics work fast)<\/p><p><strong>Week 2-4:<\/strong> Energy improvements, clothes fitting looser, morning mood better<\/p><p><strong>Week 4-8:<\/strong> Visible changes, chest firming, strength gains<\/p><p><strong>Week 8-12:<\/strong> Maximum results—expect 2-4 inches off waist, 10-20 lbs down, feeling like yourself again<br\/><br\/><\/p><p><em>Note: People who combine Dryft™ with basic diet awareness see results 3x faster than supplement alone.<\/em><\/p>"
+          }
+        },
+        "row_Kbkyth": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How is this different from other supplements I've tried?",
+            "description": "<p>Most supplements only target one thing (like testosterone boosters or fat burners). Dryft™ targets all THREE metabolic switches at once. That's why it works when other solutions fail.<\/p>"
+          }
+        },
+        "row_8WDhRd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What studies support this product?",
+            "description": "<p>Every ingredient is backed by clinical research. We use the same doses that worked in the studies—not weak amounts that don't do anything. You can find study links on our \"Science\" page.<\/p>"
+          }
+        },
+        "row_rKpQYd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if my health markers are \"normal\"?",
+            "description": "<p>That's exactly who this is for. Most of our customers have \"normal\" health markers but still feel frustrated because the three switches are stuck. We help reset the whole system, not just one marker.<\/p>"
+          }
+        },
+        "row_gL8dwQ": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if it doesn't work for me?",
+            "description": "<p>90-day money-back guarantee. Try it for 3 full months. If you don't see improvements, we'll refund your purchase. No returns required. Zero risk.<\/p>"
+          }
+        },
+        "row_kVNfHR": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is it safe?",
+            "description": "<p>All natural ingredients. No synthetic hormones. No stimulants. Made in an FDA-registered facility. However, always check with your doctor if you're on medications—especially for blood pressure or blood sugar.<\/p>"
+          }
+        },
+        "row_BQBzVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How much time will this add to my already busy schedule?",
+            "description": "<p>30 seconds in the morning. Take 2 capsules with breakfast. That's it. No meal prep, no complicated routines, no extra steps.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_8z8MVL",
+        "row_Kbkyth",
+        "row_8WDhRd",
+        "row_rKpQYd",
+        "row_gL8dwQ",
+        "row_kVNfHR",
+        "row_BQBzVL"
+      ],
+      "custom_css": [
+        ".dropdown-parent {border: 1px solid #084c25; border-radius: 12px;}",
+        ".dropdown-parent.active .dropdown-heading {background: #084c25 !important; border-radius: 12px 12px 0 0;}",
+        ".dropdown-parent.active .dropdown-heading > * {color: #fff !important;}"
+      ],
+      "name": "NL Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Still Not Sure? Here Are Our Most Frequently Asked Questions About Dryft™",
+        "description": "",
+        "dropdown_heading_bgcolor": "rgba(0,0,0,0)",
+        "dropdown_content_bgcolor": "",
+        "dropdown_heading_text_color": "#121212",
+        "dropdown_border_color": "#084c25",
+        "dropdown_arrow_color": "#000000",
+        "button_label": "",
+        "button_url": "",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 900,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_bottom_U9iwGR": {
+      "type": "nl-bottom",
+      "name": "NL Bottom",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Medicine-bottle-box-08_7.png",
+        "img_mobile": "shopify:\/\/shop_images\/3b.png",
+        "heading": "Every Day You Wait, The Switches Stay Stuck",
+        "description": "<p>Thousands of people have already reset their three switches and taken back their evenings with Dryft™. Your turn starts now.<\/p>",
+        "button_label": "Try It Risk-Free Today",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "text_color": "#ffffff",
+        "bgcolor": "#f4f4f6",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1_ec73922b-7461-4902-b940-08eaba0ed5e4.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "1758717670bfcc4e38": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "nl_thin_icon_text_jEL6P9",
+    "nl_main_banner_JYhfH3",
+    "nl_banner_LqEXKC",
+    "new_lp_featured_product_NMieYc",
+    "nl_logos_PkLwVA",
+    "nl_carousel_34QPVA",
+    "cr_unique_eYUpeA",
+    "cr_ingredients_U9cMEa",
+    "nl_case_study_JmWWhj",
+    "nl_unique_s4_C8RgYV",
+    "nl_product_progress_yppJHC",
+    "nl_benefits_HdqD84",
+    "nl_carousel_69B766",
+    "nl_formula_fjNMit",
+    "nl_animation_gUBxx9",
+    "nl_product_variants_BreT68",
+    "nl_guarantee_BnwdGF",
+    "nl_carousel_r94Qen",
+    "nl_supplements_dzTxLD",
+    "nl_doctors_Q7jnAV",
+    "nl_faqs_pEwWFj",
+    "nl_bottom_U9iwGR",
+    "1758717670bfcc4e38"
+  ]
+}

@@ -1,0 +1,513 @@
+{% comment %}
+  Section: What If Your Body - Adaptogens Education Section
+  Converts Figma design with 100% accuracy
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'section-adv-what-if-your-body.css' | asset_url }}">
+<script src="{{ 'section-adv-what-if-your-body.js' | asset_url }}" defer></script>
+
+<section class="adv-what-if-your-body">
+  <div class="page-width">
+    <div class="adv-what-if-your-body__container">
+    
+
+    {%- if section.blocks.size > 0 -%}
+      {%- assign feature_blocks = section.blocks | where: 'type', 'feature' -%}
+      {%- assign features_rendered = false -%}
+      
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'headline' -%}
+            {%- if block.settings.headline_text != blank -%}
+              <h2 class="adv-what-if-your-body__headline" {{ block.shopify_attributes }}>
+                {{ block.settings.headline_text }}
+      </h2>
+    {%- endif -%}
+          {%- when 'main_image' -%}
+            {%- if block.settings.image != blank -%}
+              <div class="adv-what-if-your-body__image-wrapper" {{ block.shopify_attributes }}>
+                <img
+                  src="{{ block.settings.image | image_url: width: 2080 }}"
+          loading="lazy"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
+                  alt="{{ block.settings.image.alt | escape }}"
+          class="adv-what-if-your-body__image"
+                >
+              </div>
+            {%- endif -%}
+          {%- when 'intro_text' -%}
+            {%- if block.settings.text_content != blank -%}
+              <div class="adv-what-if-your-body__intro" {{ block.shopify_attributes }}>
+                {{ block.settings.text_content }}
+              </div>
+            {%- endif -%}
+          {%- when 'conclusion_text' -%}
+            {%- if block.settings.text_content != blank -%}
+              <div class="adv-what-if-your-body__conclusion" {{ block.shopify_attributes }}>
+                {{ block.settings.text_content }}
+              </div>
+            {%- endif -%}
+          {%- when 'features' -%}
+            <div class="adv-what-if-your-body__features-block adv-what-if-your-body__features-block--{{ block.settings.text_color }}" {{ block.shopify_attributes }}>
+              {%- assign feature_count = 0 -%}
+              {%- if block.settings.feature_text_1 != blank -%}{%- assign feature_count = feature_count | plus: 1 -%}{%- endif -%}
+              {%- if block.settings.feature_text_2 != blank -%}{%- assign feature_count = feature_count | plus: 1 -%}{%- endif -%}
+              {%- if block.settings.feature_text_3 != blank -%}{%- assign feature_count = feature_count | plus: 1 -%}{%- endif -%}
+              {%- if block.settings.feature_text_4 != blank -%}{%- assign feature_count = feature_count | plus: 1 -%}{%- endif -%}
+              {%- if block.settings.feature_text_5 != blank -%}{%- assign feature_count = feature_count | plus: 1 -%}{%- endif -%}
+              
+              <div class="adv-what-if-your-body__features-grid" data-features-count="{{ feature_count }}">
+                {%- if block.settings.feature_text_1 != blank -%}
+                  <div class="adv-what-if-your-body__feature-item">
+                    <div class="adv-what-if-your-body__feature-content">
+                      {%- if block.settings.icon_1 != blank -%}
+                        <div class="adv-what-if-your-body__icon-container">
+                          <img
+                            src="{{ block.settings.icon_1 | image_url: width: 240 }}"
+                            loading="lazy"
+                            width="120"
+                            height="120"
+                            alt="{{ block.settings.feature_text_1 | strip_html | escape }}"
+                            class="adv-what-if-your-body__icon"
+        >
+      </div>
+    {%- endif -%}
+
+                      <div class="adv-what-if-your-body__feature-text">
+                        {{ block.settings.feature_text_1 }}
+                      </div>
+                    </div>
+      </div>
+    {%- endif -%}
+
+                {%- if block.settings.feature_text_2 != blank -%}
+                  <div class="adv-what-if-your-body__feature-item">
+                <div class="adv-what-if-your-body__feature-content">
+                      {%- if block.settings.icon_2 != blank -%}
+                    <div class="adv-what-if-your-body__icon-container">
+                      <img
+                            src="{{ block.settings.icon_2 | image_url: width: 240 }}"
+                        loading="lazy"
+                        width="120"
+                        height="120"
+                            alt="{{ block.settings.feature_text_2 | strip_html | escape }}"
+                        class="adv-what-if-your-body__icon"
+                      >
+                    </div>
+                  {%- endif -%}
+                  
+                      <div class="adv-what-if-your-body__feature-text">
+                        {{ block.settings.feature_text_2 }}
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+                
+                {%- if block.settings.feature_text_3 != blank -%}
+                  <div class="adv-what-if-your-body__feature-item">
+                    <div class="adv-what-if-your-body__feature-content">
+                      {%- if block.settings.icon_3 != blank -%}
+                        <div class="adv-what-if-your-body__icon-container">
+                          <img
+                            src="{{ block.settings.icon_3 | image_url: width: 240 }}"
+                            loading="lazy"
+                            width="120"
+                            height="120"
+                            alt="{{ block.settings.feature_text_3 | strip_html | escape }}"
+                            class="adv-what-if-your-body__icon"
+                          >
+                        </div>
+                      {%- endif -%}
+                      
+                      <div class="adv-what-if-your-body__feature-text">
+                        {{ block.settings.feature_text_3 }}
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+                
+                {%- if block.settings.feature_text_4 != blank -%}
+                  <div class="adv-what-if-your-body__feature-item">
+                    <div class="adv-what-if-your-body__feature-content">
+                      {%- if block.settings.icon_4 != blank -%}
+                        <div class="adv-what-if-your-body__icon-container">
+                          <img
+                            src="{{ block.settings.icon_4 | image_url: width: 240 }}"
+                            loading="lazy"
+                            width="120"
+                            height="120"
+                            alt="{{ block.settings.feature_text_4 | strip_html | escape }}"
+                            class="adv-what-if-your-body__icon"
+                          >
+                        </div>
+                      {%- endif -%}
+                      
+                    <div class="adv-what-if-your-body__feature-text">
+                        {{ block.settings.feature_text_4 }}
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+                
+                {%- if block.settings.feature_text_5 != blank -%}
+                  <div class="adv-what-if-your-body__feature-item">
+                    <div class="adv-what-if-your-body__feature-content">
+                      {%- if block.settings.icon_5 != blank -%}
+                        <div class="adv-what-if-your-body__icon-container">
+                          <img
+                            src="{{ block.settings.icon_5 | image_url: width: 240 }}"
+                            loading="lazy"
+                            width="120"
+                            height="120"
+                            alt="{{ block.settings.feature_text_5 | strip_html | escape }}"
+                            class="adv-what-if-your-body__icon"
+                          >
+                    </div>
+                  {%- endif -%}
+                      
+                      <div class="adv-what-if-your-body__feature-text">
+                        {{ block.settings.feature_text_5 }}
+                      </div>
+                    </div>
+                </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- when 'feature' -%}
+            {%- unless features_rendered -%}
+              {%- if feature_blocks.size > 0 -%}
+                <div class="adv-what-if-your-body__features">
+                  {%- for feature_block in feature_blocks -%}
+                    <div class="adv-what-if-your-body__feature" {{ feature_block.shopify_attributes }}>
+                      <div class="adv-what-if-your-body__feature-content">
+                        {%- if feature_block.settings.icon != blank -%}
+                          <div class="adv-what-if-your-body__icon-container">
+                            <img
+                              src="{{ feature_block.settings.icon | image_url: width: 240 }}"
+                              loading="lazy"
+                              width="120"
+                              height="120"
+                              alt="{{ feature_block.settings.feature_text | escape }}"
+                              class="adv-what-if-your-body__icon"
+                            >
+      </div>
+    {%- endif -%}
+
+                        {%- if feature_block.settings.feature_text != blank -%}
+                          <div class="adv-what-if-your-body__feature-text">
+                            {{ feature_block.settings.feature_text }}
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endfor -%}
+      </div>
+                {%- assign features_rendered = true -%}
+              {%- endif -%}
+            {%- endunless -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .adv-what-if-your-body__container {
+    max-width: {{ section.settings.content_width }}px;
+    margin: 0 auto;
+  }
+
+  .adv-what-if-your-body {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-what-if-your-body {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "What If Your Body",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 1050
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom (Mobile)",
+      "default": 32
+    }
+  ],
+  "blocks": [
+    {
+      "type": "headline",
+      "name": "Headline",
+      "settings": [
+        {
+          "type": "text",
+          "id": "headline_text",
+          "label": "Headline Text",
+          "default": "What If Your Body Could Make Steady Energy All Day—Without Borrowing From Tomorrow?"
+        }
+      ]
+    },
+    {
+      "type": "main_image",
+      "name": "Main Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "intro_text",
+      "name": "Introduction Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Introduction Text",
+          "default": "<p>This is where adaptogens change everything.<br><br>Adaptogens don't stimulate you. They restore you.<br><br>Here's the difference:<br><br>Caffeine says: \"Block tiredness. Release stress hormones. Keep going no matter what.\"<br><br>Adaptogens say: \"Let's fix WHY you're tired in the first place.\"<br><br>The most researched adaptogen for energy and stress is KSM-66 Ashwagandha.<br><br>Clinical studies show that 600mg daily:</p>"
+        }
+      ]
+    },
+    {
+      "type": "conclusion_text",
+      "name": "Conclusion Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Conclusion Text",
+          "default": "<p>Here's why this matters for your 3 PM crash:<br><br>When cortisol is always high—from work stress, poor sleep, constant caffeine—your body can't make real energy.<br><br>You're stuck in panic mode all day.<br><br>KSM-66 lowers your stress response. When cortisol drops, your body can finally produce steady energy the way it's designed to.<br><br>You're not being stimulated. You're being restored.</p>"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "name": "Features",
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_color",
+          "label": "Text Color",
+          "options": [
+            {
+              "value": "black",
+              "label": "Black"
+            },
+            {
+              "value": "blue",
+              "label": "Blue"
+            }
+          ],
+          "default": "black"
+        },
+        {
+          "type": "header",
+          "content": "Feature 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_1",
+          "label": "Icon 1"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_text_1",
+          "label": "Feature Text 1",
+          "info": "Use the B button above for bold text, or <span class='highlight'>text</span> for blue highlight.",
+          "default": "<p>Increases testosterone by 17% in men</p>"
+        },
+        {
+          "type": "header",
+          "content": "Feature 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_2",
+          "label": "Icon 2"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_text_2",
+          "label": "Feature Text 2",
+          "info": "Use the B button above for bold text, or <span class='highlight'>text</span> for blue highlight.",
+          "default": "<p>Reduces cortisol by 27.9-32% (removing the hormone suppressing your T)</p>"
+        },
+        {
+          "type": "header",
+          "content": "Feature 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_3",
+          "label": "Icon 3"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_text_3",
+          "label": "Feature Text 3",
+          "info": "Use the B button above for bold text, or <span class='highlight'>text</span> for blue highlight.",
+          "default": "<p>Significantly improves sexual function scores</p>"
+        },
+        {
+          "type": "header",
+          "content": "Feature 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_4",
+          "label": "Icon 4"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_text_4",
+          "label": "Feature Text 4",
+          "info": "Use the B button above for bold text, or <span class='highlight'>text</span> for blue highlight.",
+          "default": "<p>Increases sperm count by 167% and motility by 57%</p>"
+        },
+        {
+          "type": "header",
+          "content": "Feature 5"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_5",
+          "label": "Icon 5"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_text_5",
+          "label": "Feature Text 5",
+          "info": "Use the B button above for bold text, or <span class='highlight'>text</span> for blue highlight.",
+          "default": "<p>Significant improvements in sexual desire</p>"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        },
+      {
+        "type": "richtext",
+        "id": "feature_text",
+        "label": "Feature Text",
+        "info": "Use <span class='highlight'>text</span> for blue color, or add class='number' for numbers. Use <strong>text</strong> for bold.",
+        "default": "<p>Feature description</p>"
+      }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "What If Your Body",
+      "blocks": [
+        {
+          "type": "headline"
+        },
+        {
+          "type": "main_image"
+        },
+        {
+          "type": "intro_text"
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p>Reduces cortisol by 27.9-32% (your stress hormone)</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p>Improves sustained energy throughout the day</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p>Supports quality sleep so you wake up rested</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p>Reduces anxiety so you're not irritable with your family</p>"
+          }
+        },
+        {
+          "type": "conclusion_text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

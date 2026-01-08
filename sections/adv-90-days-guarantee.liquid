@@ -1,0 +1,450 @@
+<link rel="stylesheet" href="{{ 'section-adv-90-days-guarantee.css' | asset_url }}">
+
+<section class="adv-90-days" data-section-id="{{ section.id }}">
+  <div class="adv-90-days__container page-width">
+    
+    {%- comment -%} Main Headline {%- endcomment -%}
+    {%- if section.settings.headline != blank -%}
+      <h2 class="adv-90-days__headline">
+        {{ section.settings.headline }}
+      </h2>
+    {%- endif -%}
+
+    {%- comment -%} Guarantee Box (Gray) {%- endcomment -%}
+    <div class="adv-90-days__guarantee-box">
+      <div class="adv-90-days__guarantee-content">
+        
+        {%- comment -%} Guarantee Icon {%- endcomment -%}
+        {%- if section.settings.guarantee_icon != blank -%}
+          <div class="adv-90-days__icon-wrapper">
+            <img
+              src="{{ section.settings.guarantee_icon | image_url: width: 760 }}"
+              loading="lazy"
+              width="380"
+              height="380"
+              alt="90 Day Guarantee"
+              class="adv-90-days__icon"
+            >
+          </div>
+        {%- endif -%}
+
+        {%- comment -%} Guarantee Text {%- endcomment -%}
+        <div class="adv-90-days__guarantee-text">
+          {%- if section.settings.guarantee_title != blank -%}
+            <h3 class="adv-90-days__guarantee-title">
+              {{ section.settings.guarantee_title }}
+            </h3>
+          {%- endif -%}
+
+          {%- if section.settings.guarantee_body != blank -%}
+            <div class="adv-90-days__guarantee-body">
+              {{ section.settings.guarantee_body }}
+            </div>
+          {%- endif -%}
+        </div>
+
+      </div>
+    </div>
+
+    {%- comment -%} Timeline Box (White) - Interactive Version with Grid Layout {%- endcomment -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="adv-90-days__timeline-box">
+        <div class="flex flex-col md:grid md:grid-cols-5">
+          
+          {%- comment -%} Timeline Image Section - Left on Desktop, Top on Mobile {%- endcomment -%}
+          <div class="md:col-span-2 adv-90-days__timeline-image-wrapper">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'timeline_item' -%}
+                  {%- if block.settings.image != blank -%}
+                    {%- assign image_class = 'adv-90-days__timeline-image-item' -%}
+                    {%- if forloop.first -%}
+                      {%- assign image_class = 'adv-90-days__timeline-image-item active' -%}
+                    {%- endif -%}
+                    <img
+                      src="{{ block.settings.image | image_url: width: 800 }}"
+                      loading="lazy"
+                      width="400"
+                      height="473"
+                      alt="{{ block.settings.badge_text }}"
+                      class="{{ image_class }}"
+                      data-timeline-index="{{ forloop.index }}"
+                    >
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+          
+          {%- comment -%} Timeline Content Section - Right on Desktop, Bottom on Mobile {%- endcomment -%}
+          <div class="md:col-span-3 adv-90-days__timeline-items">
+            
+            {%- if section.settings.timeline_title != blank -%}
+              <h3 class="adv-90-days__timeline-title">
+                {{ section.settings.timeline_title }}
+              </h3>
+            {%- endif -%}
+
+            {%- comment -%} Timeline Tabs - Grid on Mobile, Flex on Desktop {%- endcomment -%}
+            <div class="adv-90-days__timeline-tabs grid grid-cols-2 md:flex md:flex-wrap gap-2 md:gap-3">
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'timeline_item' -%}
+                    {%- if block.settings.badge_text != blank -%}
+                      <button
+                        type="button"
+                        class="adv-90-days__timeline-tab{% if forloop.first %} active{% endif %}"
+                        data-timeline-index="{{ forloop.index }}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.badge_text }}
+                      </button>
+                    {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
+            </div>
+
+            {%- comment -%} Timeline Descriptions {%- endcomment -%}
+            <div class="adv-90-days__timeline-descriptions">
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'timeline_item' -%}
+                    <div
+                      class="adv-90-days__timeline-description{% if forloop.first %} active{% endif %}"
+                      data-timeline-index="{{ forloop.index }}"
+                    >
+                      {%- if block.settings.item_text != blank -%}
+                        <p class="adv-90-days__timeline-text">
+                          {{ block.settings.item_text }}
+                        </p>
+                      {%- endif -%}
+                    </div>
+                {%- endcase -%}
+              {%- endfor -%}
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} Bottom Bold Text {%- endcomment -%}
+    {%- if section.settings.bottom_bold_text != blank -%}
+      <p class="adv-90-days__bottom-bold">
+        {{ section.settings.bottom_bold_text }}
+      </p>
+    {%- endif -%}
+
+    {%- comment -%} Bottom Regular Text {%- endcomment -%}
+    {%- if section.settings.bottom_text != blank -%}
+      <div class="adv-90-days__bottom-text">
+        {{ section.settings.bottom_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  .adv-90-days {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  .adv-90-days__container {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-90-days {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+
+  /* Interactive Timeline Styles */
+  .adv-90-days__timeline-image-item {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 450ms cubic-bezier(0.4, 0.0, 0.2, 1),
+                transform 450ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .adv-90-days__timeline-image-item.active {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+  }
+
+  .adv-90-days__timeline-description {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 450ms cubic-bezier(0.4, 0.0, 0.2, 1) 50ms,
+                transform 450ms cubic-bezier(0.4, 0.0, 0.2, 1) 50ms;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .adv-90-days__timeline-description.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
+  }
+
+  .adv-90-days__timeline-tab {
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  .adv-90-days__timeline-image-wrapper {
+    position: relative;
+    min-height: 300px;
+  }
+
+  .adv-90-days__timeline-descriptions {
+    position: relative;
+    min-height: 100px;
+  }
+
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .adv-90-days__timeline-image-item,
+    .adv-90-days__timeline-description,
+    .adv-90-days__timeline-tab {
+      transition: none !important;
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    const sectionId = '{{ section.id }}';
+    const section = document.querySelector(`[data-section-id="${sectionId}"]`);
+    if (!section) return;
+
+    let isAnimating = false;
+
+    const tabs = section.querySelectorAll('.adv-90-days__timeline-tab');
+    
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        if (isAnimating) return;
+
+        const dataIndex = tab.getAttribute('data-timeline-index');
+        const newImage = section.querySelector(`.adv-90-days__timeline-image-item[data-timeline-index="${dataIndex}"]`);
+        const newDescription = section.querySelector(`.adv-90-days__timeline-description[data-timeline-index="${dataIndex}"]`);
+
+        if (tab.classList.contains('active')) return;
+        if (!newImage || !newDescription) return;
+
+        isAnimating = true;
+
+        // Remove active state from all tabs
+        section.querySelectorAll('.adv-90-days__timeline-tab').forEach((el) => {
+          el.classList.remove('active');
+        });
+        tab.classList.add('active');
+
+        // Fade out current image and description
+        section.querySelectorAll('.adv-90-days__timeline-image-item.active').forEach((el) => {
+          el.classList.remove('active');
+        });
+
+        section.querySelectorAll('.adv-90-days__timeline-description.active').forEach((el) => {
+          el.classList.remove('active');
+        });
+
+        // Fade in new content
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            newImage.classList.add('active');
+            newDescription.classList.add('active');
+          });
+        });
+
+        setTimeout(() => {
+          isAnimating = false;
+        }, 500);
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "90 Days Guarantee",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main Headline"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "90 Days to Feel the Difference or Get Your Money Back"
+    },
+    {
+      "type": "header",
+      "content": "Guarantee Box (Gray)"
+    },
+    {
+      "type": "image_picker",
+      "id": "guarantee_icon",
+      "label": "Guarantee Icon",
+      "info": "Recommended: 380x380px"
+    },
+    {
+      "type": "text",
+      "id": "guarantee_title",
+      "label": "Guarantee Title",
+      "default": "Your Purchase Is Protected by Our 90-Day \"See Results or Pay Nothing\" Guarantee"
+    },
+    {
+      "type": "richtext",
+      "id": "guarantee_body",
+      "label": "Guarantee Body Text",
+      "default": "<p>You've tried other products with disappointing results. That's why we're taking all the risk.</p><p>Try Dryft for a full 90 days. If you don't feel more energetic, see visible changes, or notice clothes fitting better – simply send us an email, and we will refund 100% of your purchase. You don't even have to return the bottles.</p><p>Why 90 days? Because real metabolic change takes time and we want you to experience the full benefits before deciding. Either way, you're covered.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Timeline Box (White)"
+    },
+    {
+      "type": "text",
+      "id": "timeline_title",
+      "label": "Timeline Title",
+      "default": "Here's what to expect:"
+    },
+    {
+      "type": "image_picker",
+      "id": "timeline_image",
+      "label": "Timeline Image",
+      "info": "Recommended: 400x473px"
+    },
+    {
+      "type": "header",
+      "content": "Bottom Text"
+    },
+    {
+      "type": "text",
+      "id": "bottom_bold_text",
+      "label": "Bottom Bold Text",
+      "default": "If you don't feel significantly better by day 90, email us for a full refund."
+    },
+    {
+      "type": "richtext",
+      "id": "bottom_text",
+      "label": "Bottom Regular Text",
+      "default": "<p>No questions. No hassle.</p><p>Why? Because we know this works. We've seen it work for thousands of men stuck in the same caffeine trap.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "timeline_item",
+      "name": "Timeline Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge Text",
+          "default": "Week 1",
+          "info": "e.g. Week 1, Weeks 2-4, Week 6+"
+        },
+        {
+          "type": "textarea",
+          "id": "item_text",
+          "label": "Item Text",
+          "default": "Slightly better focus. Less afternoon drag. Some notice nothing yet—that's normal. Adaptogens build in your system."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Timeline Image",
+          "info": "Recommended: 400x473px - Image will switch when tab is clicked"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "90 Days Guarantee",
+      "blocks": [
+        {
+          "type": "timeline_item",
+          "settings": {
+            "badge_text": "Week 1",
+            "item_text": "Slightly better focus. Less afternoon drag. Some notice nothing yet—that's normal. Adaptogens build in your system."
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "badge_text": "Week 2-3",
+            "item_text": "This is when most men feel the shift. The 3 PM wall disappears. Energy stays steady through the afternoon."
+          }
+        },
+        {
+          "type": "timeline_item",
+          "settings": {
+            "badge_text": "Week 4+",
+            "item_text": "Steady energy becomes your baseline. You stop thinking about it. You just have fuel when you need it. At work. At home. With your family."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

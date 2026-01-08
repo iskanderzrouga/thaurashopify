@@ -1,0 +1,167 @@
+{% comment %}
+  Section: Features Grid - Flexible Features Display Section
+  Supports up to 5 features in a responsive grid layout
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ 'section-features-grid.css' | asset_url }}">
+<script src="{{ 'section-features-grid.js' | asset_url }}" defer></script>
+
+<section class="features-grid">
+  <div class="features-grid__container page-width">
+    
+    {%- if section.settings.headline != blank -%}
+      <h2 class="features-grid__headline">
+        {{ section.settings.headline }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <div class="features-grid__subheading">
+        {{ section.settings.subheading }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="features-grid__features" data-features-count="{{ section.blocks.size }}">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'feature' -%}
+              <div class="features-grid__feature" {{ block.shopify_attributes }}>
+                <div class="features-grid__feature-content">
+                  {%- if block.settings.icon != blank -%}
+                    <div class="features-grid__icon-container">
+                      <img
+                        src="{{ block.settings.icon | image_url: width: 240 }}"
+                        loading="lazy"
+                        width="120"
+                        height="120"
+                        alt="{{ block.settings.feature_text | strip_html | escape }}"
+                        class="features-grid__icon"
+                      >
+                    </div>
+                  {%- endif -%}
+                  
+                  {%- if block.settings.feature_text != blank -%}
+                    <div class="features-grid__feature-text">
+                      {{ block.settings.feature_text }}
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.bottom_text != blank -%}
+      <div class="features-grid__bottom-text">
+        {{ section.settings.bottom_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Key Benefits"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>Clinical studies show 600mg daily:</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "bottom_text",
+      "label": "Bottom Text",
+      "default": "<p>Here's why this matters:<br><br>When cortisol drops to healthy levels, your body stops operating in crisis mode. Your natural energy systems work properly again.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        },
+        {
+          "type": "richtext",
+          "id": "feature_text",
+          "label": "Feature Text",
+          "info": "Use <span class='highlight'>text</span> for blue color, or add class='number' for numbers. Use <strong>text</strong> for bold.",
+          "default": "<p>Feature description</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Grid",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p><strong>Reduces cortisol by 27.9-32%</strong> <em>(your stress hormone)</em></p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p><strong>Improves sustained energy</strong> throughout the day</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p><strong>Supports quality sleep</strong> so you wake up rested</p>"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "feature_text": "<p><strong>Reduces anxiety</strong> so you're not irritable <em>with your family</em></p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

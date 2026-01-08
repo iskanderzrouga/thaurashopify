@@ -1,0 +1,524 @@
+{{ 'section-adv-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-hero-wrapper" style="background: {{ section.settings.background_color }};">
+  <div class="page-width">
+    <div class="adv-hero-content">
+      {%- if section.settings.main_headline != blank -%}
+        <h1 class="adv-hero-headline">{{ section.settings.main_headline }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.subheadline != blank -%}
+        <div class="adv-hero-subheadline">
+          {{ section.settings.subheadline }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.show_author_info -%}
+        <div class="adv-author-info">
+          {%- if section.settings.show_date -%}
+            <div class="adv-date">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M15.8333 3.33333H4.16667C3.24619 3.33333 2.5 4.07952 2.5 5V16.6667C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6667V5C17.5 4.07952 16.7538 3.33333 15.8333 3.33333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 1.66667V5.00001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.66667 1.66667V5.00001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 8.33333H17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>{{ section.settings.publish_date }}</span>
+            </div>
+          {%- endif -%}
+
+          <div class="adv-author-wrapper">
+            {%- if section.settings.author_image -%}
+              <img
+                class="adv-author-image"
+                src="{{ section.settings.author_image | image_url: width: 120 }}"
+                alt="{{ section.settings.author_name }}"
+                width="60"
+                height="60"
+                loading="lazy"
+              >
+            {%- endif -%}
+            
+            <div class="adv-author-text">
+              <p class="adv-author-label">
+                {%- assign label_parts = section.settings.author_label | split: ' by ' -%}
+                {%- if label_parts.size == 2 -%}
+                  {{ label_parts[0] }} by <strong>{{ label_parts[1] }}</strong>
+                {%- else -%}
+                  {{ section.settings.author_label }}
+                {%- endif -%}
+              </p>
+              <p class="adv-author-title">{{ section.settings.author_title }}</p>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.featured_image -%}
+        <div class="adv-hero-image">
+          <img
+            src="{{ section.settings.featured_image | image_url: width: 2000 }}"
+            alt="{{ section.settings.featured_image.alt | default: section.settings.main_headline }}"
+            width="{{ section.settings.featured_image.width }}"
+            height="{{ section.settings.featured_image.height }}"
+            loading="eager"
+          >
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.intro_text != blank -%}
+        <div class="adv-intro-text">
+          {{ section.settings.intro_text }}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .adv-hero-wrapper {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  .adv-hero-content {
+    max-width: {{ section.settings.content_width }}px;
+    margin: 0 auto;
+  }
+
+  .adv-hero-headline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: {{ section.settings.headline_size }}px;
+    line-height: 1.2;
+    color: {{ section.settings.headline_color }};
+    margin: 0 0 25px;
+    font-weight: {{ section.settings.headline_weight }};
+  }
+
+  .adv-hero-subheadline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: {{ section.settings.subheadline_size }}px;
+    line-height: 1.5;
+    color: {{ section.settings.subheadline_color }};
+    margin-bottom: 32px;
+  }
+
+  .adv-author-info {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .adv-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: {{ section.settings.date_color }};
+    font-size: {{ section.settings.meta_font_size }}px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+  }
+
+  .adv-author-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .adv-author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .adv-author-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .adv-author-text p {
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: {{ section.settings.meta_font_size }}px;
+    color: {{ section.settings.author_color }};
+  }
+
+  .adv-author-label {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .adv-author-label strong {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .adv-author-title {
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .adv-hero-image {
+    margin: 25px 0;
+    border-radius: {{ section.settings.image_radius }}px;
+    overflow: hidden;
+  }
+
+  .adv-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .adv-intro-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: {{ section.settings.intro_size }}px;
+    line-height: 1.4;
+    color: #0B0B0B;
+  }
+
+  .adv-intro-text p {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    line-height: 1.4 !important;
+    color: #0B0B0B !important;
+    margin-bottom: 1em;
+  }
+
+  .adv-intro-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Only apply bold if there are multiple paragraphs */
+  .adv-intro-text p:first-child:not(:only-child) {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    line-height: 1.4 !important;
+    color: #0B0B0B !important;
+  }
+
+  .adv-intro-text p:last-child:not(:only-child) {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    line-height: 1.4 !important;
+    color: #0B0B0B !important;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-hero-wrapper {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    .adv-hero-headline {
+      font-size: {{ section.settings.mobile_headline_size }}px;
+    }
+
+    .adv-hero-subheadline {
+      font-size: {{ section.settings.mobile_subheadline_size }}px;
+    }
+
+    .adv-intro-text {
+      font-size: {{ section.settings.mobile_intro_size }}px;
+    }
+
+    .adv-date,
+    .adv-author-text p {
+      font-size: {{ section.settings.mobile_meta_size }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - Hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Main Headline"
+    },
+    {
+      "type": "textarea",
+      "id": "main_headline",
+      "label": "Headline",
+      "default": "Why Your Third Coffee Is Making Your 3PM Crash Worse"
+    },
+    {
+      "type": "range",
+      "id": "headline_size",
+      "min": 24,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Headline size (Desktop)",
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "mobile_headline_size",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Headline size (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "headline_weight",
+      "label": "Headline weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "color",
+      "id": "headline_color",
+      "label": "Headline color",
+      "default": "#0B0B0B"
+    },
+    {
+      "type": "header",
+      "content": "Subheadline (Optional)"
+    },
+    {
+      "type": "richtext",
+      "id": "subheadline",
+      "label": "Subheadline"
+    },
+    {
+      "type": "range",
+      "id": "subheadline_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheadline size (Desktop)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_subheadline_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheadline size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "subheadline_color",
+      "label": "Subheadline color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Author Information"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author_info",
+      "label": "Show author info",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show publish date",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "publish_date",
+      "label": "Publish date",
+      "default": "Mon. March 16, 2025"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "text",
+      "id": "author_label",
+      "label": "Author label",
+      "default": "Special Advertorial by Alex Bronwasser"
+    },
+    {
+      "type": "text",
+      "id": "author_title",
+      "label": "Author title",
+      "default": "Senior Editor"
+    },
+    {
+      "type": "range",
+      "id": "meta_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Meta font size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_meta_size",
+      "min": 11,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Meta font size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "date_color",
+      "label": "Date color",
+      "default": "#1544aa"
+    },
+    {
+      "type": "color",
+      "id": "author_color",
+      "label": "Author text color",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Featured Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_image",
+      "label": "Featured image"
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Intro Text"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Introduction text"
+    },
+    {
+      "type": "range",
+      "id": "intro_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Intro size (Desktop)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_intro_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Intro size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 1050
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#0B0B0B"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Hero"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,161 @@
+/* =================================================================
+   ADV Header StrongMenDaily Section Styles
+   Fully Responsive Design
+   ================================================================= */
+
+/* Container Styles */
+.adv-header-stongmendaily {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Background color applied via inline style for customization */
+}
+
+/* Mobile First - Full width container with left alignment */
+.adv-header-stongmendaily__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  min-height: 60px;
+  padding: 12px clamp(16px, 4vw, 20px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Logo Wrapper - Mobile First */
+.adv-header-stongmendaily__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* Logo Image Styles - Fluid Responsive Size */
+.adv-header-stongmendaily__logo {
+  display: block;
+  width: clamp(160px, 35vw, 200px);
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* =================================================================
+   Tablet Styles (600px and up)
+   ================================================================= */
+@media screen and (min-width: 600px) {
+  .adv-header-stongmendaily__container {
+    min-height: 65px;
+    padding: 14px clamp(24px, 5vw, 40px);
+  }
+
+  .adv-header-stongmendaily__logo {
+    width: clamp(200px, 28vw, 240px);
+  }
+}
+
+/* =================================================================
+   Tablet Large (750px and up)
+   ================================================================= */
+@media screen and (min-width: 750px) {
+  .adv-header-stongmendaily__container {
+    min-height: 70px;
+    padding: 16px clamp(40px, 6vw, 60px);
+  }
+
+  .adv-header-stongmendaily__logo {
+    width: clamp(220px, 25vw, 260px);
+  }
+}
+
+/* =================================================================
+   Desktop Small (990px and up)
+   ================================================================= */
+@media screen and (min-width: 990px) {
+  .adv-header-stongmendaily__container {
+    min-height: 80px;
+    padding: 19px clamp(60px, 8vw, 100px) 19px clamp(60px, 8vw, 100px);
+  }
+
+  .adv-header-stongmendaily__logo {
+    width: clamp(220px, 18vw, 250px);
+  }
+}
+
+/* =================================================================
+   Desktop Medium (1200px and up)
+   ================================================================= */
+@media screen and (min-width: 1200px) {
+  .adv-header-stongmendaily__container {
+    max-width: 1440px;
+    padding: 19px 100px 19px 120px;
+  }
+
+  .adv-header-stongmendaily__logo {
+    width: clamp(250px, 20vw, 280px);
+  }
+}
+
+/* =================================================================
+   Desktop Large (1400px and up)
+   ================================================================= */
+@media screen and (min-width: 1400px) {
+  .adv-header-stongmendaily__container {
+    max-width: 1440px;
+    padding: 19px 150px 19px 160px;
+  }
+
+  .adv-header-stongmendaily__logo {
+    width: var(--logo-width, 290px);
+  }
+}
+
+/* =================================================================
+   Extra Large Desktop (1600px and up)
+   ================================================================= */
+@media screen and (min-width: 1600px) {
+  .adv-header-stongmendaily__container {
+    max-width: 1440px;
+    padding: 19px 200px 19px 200px;
+  }
+
+  .adv-header-stongmendaily__logo {
+    width: var(--logo-width, 292px);
+  }
+}
+
+/* =================================================================
+   Accessibility & Print Styles
+   ================================================================= */
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .adv-header-stongmendaily {
+    border: 1px solid currentColor;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .adv-header-stongmendaily {
+    background-color: white !important;
+  }
+
+  .adv-header-stongmendaily__container {
+    padding: 10px !important;
+    max-width: 100% !important;
+  }
+
+  .adv-header-stongmendaily__logo-wrapper {
+    justify-content: flex-start !important;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.adv-header-stongmendaily a:focus-visible {
+  outline: 2px solid #005fcc;
+  outline-offset: 4px;
+}

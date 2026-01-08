@@ -1,0 +1,1958 @@
+{
+  "sections": {
+    "nl_thin_icon_text_jEL6P9": {
+      "type": "nl-thin-icon-text",
+      "name": "NL Thin Icon Text",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "description": "<p>No Results In 90 Days? Your Money-Back Guarantee<\/p>",
+        "image": "shopify:\/\/shop_images\/Mask_group_4661acb4-0a34-4df8-9d04-bddde0c8dc1d.png",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#1e3a16",
+        "max_width": 1200,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "padding_top_m": 8,
+        "padding_bottom_m": 8
+      }
+    },
+    "nl_main_banner_JYhfH3": {
+      "type": "nl-main-banner-dark",
+      "blocks": {
+        "star_review_y9ETxy": {
+          "type": "star_review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "rating": "4.8",
+            "text": "+47,000 Active Users"
+          }
+        },
+        "review_aHknwG": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "name": "Jim, 49",
+            "image": "shopify:\/\/shop_images\/Frame_1707481779.png",
+            "icon": "shopify:\/\/shop_images\/Subtract_1.png",
+            "heading": "Verified Buyer"
+          }
+        },
+        "mobile_card_review_Lnw6ck": {
+          "type": "mobile_card_review",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "heading": "Actually Fits My Life",
+            "text": "\"I'm 42 with two kids, no time for complicated stuff. This is just 2 pills with breakfast. Down 8 pounds, feeling more like myself again. Nothing crazy, just steady progress.\""
+          }
+        },
+        "card_review_aHazHE": {
+          "type": "card_review",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_2358.png",
+            "name": "Tom R., 36",
+            "icon": "shopify:\/\/shop_images\/Subtract_57573616-090c-4dab-89e6-30b1bc209654.svg",
+            "verified": "Verified Buyer",
+            "text": "<p>\"I would finish dinner, sit down on the couch, and within an hour I was back in the kitchen. Every. Single. Night. Now that voice in my head is just... quiet.\" <\/p>"
+          }
+        },
+        "description_JNrjae": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Every major fat-loss supplement is formulated based on studies of white men. But Black men have 5 proven metabolic differences that make those formulas fail. That's not your fault—but now there's finally a solution made for YOUR biology.<\/p>"
+          }
+        },
+        "feature_wrapper_kixEeh": {
+          "type": "feature_wrapper",
+          "settings": {}
+        },
+        "feature_JrwyMU": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Formulated specifically for Black male metabolism - created from black only male studies"
+          }
+        },
+        "feature_J98xpF": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Targets the 5 metabolic differences that make other supplements fail"
+          }
+        },
+        "feature_VQfzm3": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Melts stubborn chest & belly fat that won't respond to generic formulas"
+          }
+        },
+        "feature_YELhgJ": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Fixes the hormonal imbalances unique to Black men over 30"
+          }
+        },
+        "feature_x63DxR": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Works WITH your body's chemistry, not against it"
+          }
+        },
+        "button_XbpXVi": {
+          "type": "button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "star_review_y9ETxy",
+        "review_aHknwG",
+        "mobile_card_review_Lnw6ck",
+        "card_review_aHazHE",
+        "description_JNrjae",
+        "feature_wrapper_kixEeh",
+        "feature_JrwyMU",
+        "feature_J98xpF",
+        "feature_VQfzm3",
+        "feature_YELhgJ",
+        "feature_x63DxR",
+        "button_XbpXVi"
+      ],
+      "name": "NL Main Banner Dark",
+      "settings": {
+        "section_id": "",
+        "bg": "shopify:\/\/shop_images\/image_64_9b142f82-ca3c-4a4d-9573-17b23805f43d.png",
+        "heading": "You're Taking Supplements Made For White Men. That's Why They're Not Working.",
+        "highlight": "",
+        "image": "shopify:\/\/shop_images\/banner-bg-g.png",
+        "image_m": "shopify:\/\/shop_images\/bg-mb.png",
+        "button_label": "TRY DRYFT™ RISK-FREE",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "*Results are based on scientific studies of individual ingredients in the formula and may vary",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "<p>90-Day Money Back Guarantee<\/p>",
+        "bgcolor": "#084c25",
+        "text_color": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 24,
+        "padding_bottom_m": 0
+      }
+    },
+    "nl_logos_PkLwVA": {
+      "type": "nl-logos",
+      "blocks": {
+        "logo_zFq7rG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/digital-journal.png"
+          }
+        },
+        "logo_HjEVTg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fox_Networks_Group_US_logo_svg.png"
+          }
+        },
+        "logo_Fpp8rX": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bingh.png"
+          }
+        },
+        "logo_yYzdzD": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nbc-new-logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_zFq7rG",
+        "logo_HjEVTg",
+        "logo_Fpp8rX",
+        "logo_yYzdzD"
+      ],
+      "name": "NL Logos",
+      "settings": {
+        "section_id": "",
+        "heading": "Scientifically Back Ingredient Featured In",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "show_payment_icons": false,
+        "bottom_description": "",
+        "bgcolor": "#f6f7ef",
+        "max_width": 800,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_m": 24,
+        "padding_bottom_m": 24
+      }
+    },
+    "nl_step_image_text_NDcNFi": {
+      "type": "nl-step-image-text",
+      "blocks": {
+        "row_wh3njK": {
+          "type": "row",
+          "settings": {
+            "heading": "\"Do You Use The Same Hair Products As A White Guy?\"",
+            "image": "shopify:\/\/shop_images\/image_55604106.png",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Group_2085661779.png",
+            "text": "<p>Of course not.<br\/><br\/>You walk into the hair care aisle. You know exactly where to go.<br\/><br\/>You don't grab the same products white men use. Why? Because your hair is completely different. Different texture. Different needs. Different structure.<br\/><br\/>You need different products. That's just common sense.<\/p>"
+          }
+        },
+        "row_yzr7d3": {
+          "type": "row",
+          "settings": {
+            "heading": "What about lotion?",
+            "image": "shopify:\/\/shop_images\/image_55604103.png",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Group_2085661776.png",
+            "text": "<p>If you've got Black skin, you know you can't just use any random moisturizer.<br\/><br\/>Your skin loses water faster. You need thicker formulas. You might deal with hyperpigmentation or dark spots that need specific ingredients like vitamin C or retinoids.<br\/><br\/>White guys? Their skin is more sensitive to sun damage. Different moisture loss rates. Different concerns.<br\/><br\/>Different skin. Different products. Different ingredients.<br\/><br\/>Again - nobody questions this. It's obvious.<\/p>"
+          }
+        },
+        "row_gWfYkj": {
+          "type": "row",
+          "settings": {
+            "heading": "So Why The Hell Are You Taking The Same Fat-Loss Supplement As White Men?",
+            "image": "shopify:\/\/shop_images\/image_55604101.png",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Group_2085661778.png",
+            "text": "<p>Think about it.<br\/><br\/>Your hair is different. So you use different products.<br\/><br\/>Your skin is different. So you use different lotion.<br\/>Your metabolism is different too.<br\/><br\/>Your body burns calories differently. Your hormones work differently. Your body stores and burns fat differently.<br\/><br\/>So why are you using the exact same supplement formula as white men?<\/p>"
+          }
+        },
+        "row_Nh8wNp": {
+          "type": "row",
+          "settings": {
+            "heading": "Here's The Dirty Secret The Supplement Industry Doesn't Want You To Know:",
+            "image": "shopify:\/\/shop_images\/image_55604099.png",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Group_2085661777.png",
+            "text": "<p>Every major fat-loss supplement on the market is formulated based on studies that used mostly white male participants.<br\/><br\/>They take that research. They create a formula. Then they slap a label on it and sell it to EVERYONE - including Black men - as if all bodies work the same way.<br\/><br\/>But they don't.<br\/><br\/>You wouldn't use white guy hair products. You wouldn't use white guy lotion.<br\/><br\/>So why are you taking supplements made for white guy bodies?<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_wh3njK",
+        "row_yzr7d3",
+        "row_gWfYkj",
+        "row_Nh8wNp"
+      ],
+      "name": "NL Step Image Text",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "product_bottom_label": ""
+      }
+    },
+    "bm_unique_hFbdVm": {
+      "type": "bm-unique",
+      "blocks": {
+        "s2_contents_j7CL3f": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "",
+            "heading": "Your Body Works Completely Different",
+            "heading_color": "#00754a",
+            "description": "<p>Just like your hair has a different texture and needs different products...<br\/><br\/>Just like your skin loses moisture differently and needs different ingredients...<br\/><br\/>Your body has a different metabolism and needs different supplements.<br\/><br\/>If you're a Black man over 30, your body has 5 major metabolic differences compared to white men:<\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "feature_parent": false,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_contents_pJmE7i": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "card22",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "feature_parent": false,
+            "animation_parent": false,
+            "card_parent": true,
+            "card_image": "shopify:\/\/shop_images\/Untitled_design_3_6.png",
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_card_gLH39e": {
+          "type": "s2_card",
+          "settings": {
+            "id": "card22",
+            "num": "1",
+            "heading": " Your resting metabolism burns ~5% fewer calories per day",
+            "description": "<p> (That's 80 calories less every single day - just sitting still)<\/p>",
+            "full_width": false
+          }
+        },
+        "s2_card_YTfk6M": {
+          "type": "s2_card",
+          "settings": {
+            "id": "card22",
+            "num": "2",
+            "heading": "Your body burns carbs first, not fat",
+            "description": "<p> (White men's bodies switch to burning fat easier. Yours doesn't - so fat stays stored)<\/p>",
+            "full_width": false
+          }
+        },
+        "s2_card_7Pj4T9": {
+          "type": "s2_card",
+          "settings": {
+            "id": "card22",
+            "num": "3",
+            "heading": "Your insulin resistance is significantly higher",
+            "description": "<p> (Even at the same body weight as a white man, your insulin works differently - sending stronger \"store fat\" signals)<\/p>",
+            "full_width": false
+          }
+        },
+        "s2_card_XXjfe9": {
+          "type": "s2_card",
+          "settings": {
+            "id": "card22",
+            "num": "4",
+            "heading": "Your cortisol rhythm is flatter",
+            "description": "<p> (White men's cortisol drops at night. Yours stays elevated - triggering late-night cravings and belly fat storage)<\/p>",
+            "full_width": false
+          }
+        },
+        "s2_card_TxaCf9": {
+          "type": "s2_card",
+          "settings": {
+            "id": "card22",
+            "num": "5",
+            "heading": " Your estrogen levels are consistently higher",
+            "description": "<p> (This creates stubborn \"soft fat\" in your chest and midsection that's nearly impossible to burn with standard supplements)<\/p>",
+            "full_width": true
+          }
+        },
+        "s2_contents_7rDWHJ": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "s2reviewaa",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "feature_parent": false,
+            "animation_parent": true,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_animation_RQAkMX": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2reviewaa",
+            "description": "150,000 bottles sold",
+            "icon": "shopify:\/\/shop_images\/Group_144.png"
+          }
+        },
+        "s2_animation_ieeRiB": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2reviewaa",
+            "description": "Sold out twice in 1 year",
+            "icon": "shopify:\/\/shop_images\/Group_144.png"
+          }
+        },
+        "s2_animation_Mw4wxP": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2reviewaa",
+            "description": "Over 40k men report feeling confident",
+            "icon": "shopify:\/\/shop_images\/Group_144.png"
+          }
+        },
+        "s2_animation_dM9nUB": {
+          "type": "s2_animation",
+          "settings": {
+            "id": "s2reviewaa",
+            "description": "Over 4,984 5-Star Reviews",
+            "icon": "shopify:\/\/shop_images\/Group_144.png"
+          }
+        },
+        "s2_contents_rgDV4f": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "",
+            "heading": "This Is Why Everything You've Tried Has Failed",
+            "heading_color": "#00754a",
+            "description": "<p>You wouldn't put white guy hair products in your hair and expect good results.<br\/><br\/>You wouldn't use white guy lotion on your skin and expect it to work properly.<br\/><br\/>So why would you put white guy supplements in your body and expect them to work?<br\/><br\/>You've been following the instructions. Taking the pills. Doing the work.<br\/><br\/>But you've been using a formula designed for someone else's body.<br\/>It's like trying to use a light moisturizer when your skin needs something thicker. It's not going to work - no matter how much you apply.<br\/><br\/>Same thing here.<br\/><br\/>White men can take generic fat burners and see results because those formulas match their physiology.<br\/><br\/><strong>But when YOU take them? The formula doesn't address:<\/strong><\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "feature_parent": false,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_contents_M4THLn": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "feauter22",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "feature_parent": true,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        },
+        "s2_feature_FNQtmg": {
+          "type": "s2_feature",
+          "settings": {
+            "id": "feauter22",
+            "image": "shopify:\/\/shop_images\/calories_1.png",
+            "description": "<p>Your slower resting burn<\/p>"
+          }
+        },
+        "s2_feature_PqRaQd": {
+          "type": "s2_feature",
+          "settings": {
+            "id": "feauter22",
+            "image": "shopify:\/\/shop_images\/oil_1.png",
+            "description": "<p>Your carb-first fuel preference<\/p>"
+          }
+        },
+        "s2_feature_FmDYFw": {
+          "type": "s2_feature",
+          "settings": {
+            "id": "feauter22",
+            "image": "shopify:\/\/shop_images\/insulin_1.png",
+            "description": "<p>Your insulin resistance<\/p>"
+          }
+        },
+        "s2_feature_btfGkn": {
+          "type": "s2_feature",
+          "settings": {
+            "id": "feauter22",
+            "image": "shopify:\/\/shop_images\/syndrome_1.png",
+            "description": "<p>Your elevated cortisol<\/p>"
+          }
+        },
+        "s2_feature_zgLqzp": {
+          "type": "s2_feature",
+          "settings": {
+            "id": "feauter22",
+            "image": "shopify:\/\/shop_images\/hormonal_1.png",
+            "description": "<p>Your higher estrogen<\/p>"
+          }
+        },
+        "s2_contents_YWHKLy": {
+          "type": "s2_contents",
+          "settings": {
+            "id": "",
+            "heading": "",
+            "heading_color": "#00754a",
+            "description": "<p><strong>That's why the results are slow. Or nonexistent.<\/strong><br\/><br\/>It's not you. It's the formula.<br\/><br\/>You need a formula made for YOUR body. Just like you need hair products made for YOUR hair. And lotion made for YOUR skin.<\/p>",
+            "description_color": "#252726",
+            "img_label": "",
+            "img_label_color": "#252726",
+            "feature_parent": false,
+            "animation_parent": false,
+            "card_parent": false,
+            "hide_mobile": false,
+            "hide_desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "s2_contents_j7CL3f",
+        "s2_contents_pJmE7i",
+        "s2_card_gLH39e",
+        "s2_card_YTfk6M",
+        "s2_card_7Pj4T9",
+        "s2_card_XXjfe9",
+        "s2_card_TxaCf9",
+        "s2_contents_7rDWHJ",
+        "s2_animation_RQAkMX",
+        "s2_animation_ieeRiB",
+        "s2_animation_Mw4wxP",
+        "s2_animation_dM9nUB",
+        "s2_contents_rgDV4f",
+        "s2_contents_M4THLn",
+        "s2_feature_FNQtmg",
+        "s2_feature_PqRaQd",
+        "s2_feature_FmDYFw",
+        "s2_feature_btfGkn",
+        "s2_feature_zgLqzp",
+        "s2_contents_YWHKLy"
+      ],
+      "name": "BM Unique",
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Frame_2147224670.png",
+        "arrow_color": "#084c25",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_tab_card_AWqUBd": {
+      "type": "bl-tab-card",
+      "blocks": {
+        "row_zjJXPA": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f6f6",
+            "label": "DIFFERENCE #1",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#00754a",
+            "heading": "Black Men Burn Fewer Calories At Rest",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#00754a",
+            "subheading1": "<p>The Science<\/p>",
+            "subheading2": "<p>What This Means<\/p>",
+            "subheading3": "<p>Why Other Supplements Fail<\/p>",
+            "subheading4": "<p>How Dryft™ Fixes It<\/p>",
+            "subheading_color": "#000000",
+            "description1": "<p>Multiple studies show that Black men have a resting metabolic rate (RMR) that's approximately 5% lower than white men - even at the same age, weight, and fitness level.<\/p>",
+            "description2": "<p>You burn 80 fewer calories daily—2,400 monthly, or 7 pounds yearly—of fat that doesn’t get burned.<\/p>",
+            "description3": "<p>Generic fat burners don't account for this lower baseline. They assume everyone burns the same amount at rest.<\/p>",
+            "description4": "<p>Cayenne Pepper Extract and Grains of Paradise are thermogenic compounds that specifically boost your resting burn - countering this metabolic disadvantage and creative a competitive advantage for you body type.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/a_medium_close-up_slightly_low-angle_portrait_shows_a_tired_chubby_man_with_dark_brown_skin_appeari_rl7iizyqxgxu5q1zvhar_2_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604032_b6405f0c-735f-479d-b374-163a77233953.png",
+            "icon": "shopify:\/\/shop_images\/Frame_2147224444.png",
+            "icon_mobile": "shopify:\/\/shop_images\/Frame_2147224444_5.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_EjymMn": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f6f6",
+            "label": "DIFFERENCE #2",
+            "label_m_center": false,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "Black Men Burn Carbs, Not Fat",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#00754a",
+            "subheading1": "<p>The Science<\/p>",
+            "subheading2": "<p>What This Means<\/p>",
+            "subheading3": "<p>Why Other Supplements Fail<\/p>",
+            "subheading4": "<p>How Dryft™ Fixes It<\/p>",
+            "subheading_color": "#000000",
+            "description1": "<p>Research shows Black men burn less fat and more carbs than white men. While white men’s bodies burn fat even at rest, yours keeps it locked in storage.<\/p>",
+            "description2": "<p>Even in a calorie deficit, your body burns carbs, not stored fat—so chest and belly fat stay.<\/p>",
+            "description3": "<p>Standard fat burners use caffeine or stimulants but don’t train your body to burn fat instead of carbs.<\/p>",
+            "description4": "<p>Grains of Paradise contains 6-paradol that activates brown adipose tissue (BAT) - literally training your body to burn fat for fuel. Clinical studies show increased fat oxidation and reduced visceral fat.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/a_half-body_image_of_tired_chubby_black_man_in_his_40s_with_wrinkles_looks_exhausted_and_tired_qx6nxq7d11m364tc0yqp_2_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604032_1.png",
+            "icon": "shopify:\/\/shop_images\/Frame_2147224444_1.png",
+            "icon_mobile": "shopify:\/\/shop_images\/Frame_2147224444_6.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_h7fEVX": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f6f6",
+            "label": "DIFFERENCE #3",
+            "label_m_center": false,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "Black Men Have Higher Insulin Resistance",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#00754a",
+            "subheading1": "<p>The Science<\/p>",
+            "subheading2": "<p>What This Means<\/p>",
+            "subheading3": "<p>Why Other Supplements Fail<\/p>",
+            "subheading4": "<p>How Dryft™ Fixes It<\/p>",
+            "subheading_color": "#000000",
+            "description1": "<p>Even with identical weight and fat levels, Black men have higher insulin resistance, sending stronger “store fat” signals to belly and chest.<\/p>",
+            "description2": "<p>Eating carbs spikes insulin longer, leading to more fat storage, increased hunger, and stronger cravings every time.<\/p>",
+            "description3": "<p>Generic formulas ignore insulin, focusing on “boosting metabolism” while your insulin quietly works against you around the clock.<\/p>",
+            "description4": "<p>Dihydroberberine (GlucoVantage®) is clinically proven to improve insulin sensitivity - helping your cells respond to insulin properly so fat can be mobilized instead of stored.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Whisk_3fe44aa730bb9dfad6f4d204de9db41edr_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604032_2.png",
+            "icon": "shopify:\/\/shop_images\/Frame_2147224444_2.png",
+            "icon_mobile": "shopify:\/\/shop_images\/Frame_2147224444_7.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_7DYgTm": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f6f6",
+            "label": "DIFFERENCE #4",
+            "label_m_center": false,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "Black Men Have A \"Flat\" Cortisol Curve",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#00754a",
+            "subheading1": "<p>The Science<\/p>",
+            "subheading2": "<p>What This Means<\/p>",
+            "subheading3": "<p>Why Other Supplements Fail<\/p>",
+            "subheading4": "<p>How Dryft™ Fixes It<\/p>",
+            "subheading_color": "#000000",
+            "description1": "<p>Multiple studies show that Black men have a resting metabolic rate (RMR) that's approximately 5% lower than white men - even at the same age, weight, and fitness level.<\/p>",
+            "description2": "<p>Even without feeling stressed, your body stays in physiological stress, promoting fat storage and making fat loss difficult.<\/p>",
+            "description3": "<p>They completely ignore cortisol. Some even make it WORSE by adding high doses of stimulants.<\/p>",
+            "description4": "<p>Ashwagandha (KSM-66®) and L-Theanine are clinically proven to reduce cortisol and restore a healthy stress rhythm - targeting the exact pattern that drives fat storage in Black men.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Frame_1707481809_863f31b1-d8f9-4696-9816-1e296f8b6507.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1707481809_2.png",
+            "icon": "shopify:\/\/shop_images\/Frame_2147224444_3.png",
+            "icon_mobile": "shopify:\/\/shop_images\/Frame_2147224444_8.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_WzYHcM": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f6f6",
+            "label": "DIFFERENCE #5",
+            "label_m_center": false,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "Black Men Have Higher Estrogen Levels",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#00754a",
+            "subheading1": "<p>The Science<\/p>",
+            "subheading2": "<p>What This Means<\/p>",
+            "subheading3": "<p>Why Other Supplements Fail<\/p>",
+            "subheading4": "<p>How Dryft™ Fixes It<\/p>",
+            "subheading_color": "#000000",
+            "description1": "<p>Studies show Black men have higher estrogen (estradiol) levels than white men, leading to chest and belly fat, reduced testosterone, and lower energy and motivation.<\/p>",
+            "description2": "<p>That \"soft\" fat in your chest? It's not just excess calories. It's hormonally-driven fat caused by elevated estrogen.<\/p>",
+            "description3": "<p>Generic fat burners ignore hormones—they may drop weight, but chest fat stays since the hormonal issue persists.<\/p>",
+            "description4": "<p>DIM (Diindolylmethane) helps your body metabolize excess estrogen, while Zinc and Boron support healthy testosterone production - addressing BOTH sides of the hormonal equation.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Frame_1707481809_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Frame_1707481809_3.png",
+            "icon": "shopify:\/\/shop_images\/Frame_2147224444_4.png",
+            "icon_mobile": "shopify:\/\/shop_images\/Frame_2147224444_9.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_zjJXPA",
+        "row_EjymMn",
+        "row_h7fEVX",
+        "row_7DYgTm",
+        "row_WzYHcM"
+      ],
+      "name": "BL Tab Card",
+      "settings": {
+        "section_id": "",
+        "heading": "The 5 Metabolic Differences Between Black Men and White Men",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#ffffff",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "bg": "shopify:\/\/shop_images\/Untitled-2.jpg",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_img_text_M6T9ff": {
+      "type": "bl-img-text",
+      "name": "BL Image Text",
+      "settings": {
+        "section_id": "",
+        "heading": "The First Fat-Loss Formula Built Specifically For Black Men Over 30",
+        "heading_m_center": true,
+        "heading_d_center": false,
+        "heading_color": "#00754a",
+        "subheading": "<p><strong>Introducing Dryft™<\/strong><\/p>",
+        "subheading_m_center": true,
+        "subheading_d_center": false,
+        "subheading_color": "#252726",
+        "description": "<p>Dryft™ isn't a \"one-size-fits-all\" formula repackaged with new marketing.<br\/><br\/>It's a precision-targeted solution designed specifically for the 5 metabolic differences that make Black men's bodies work differently.<\/p>",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#252726",
+        "image": "shopify:\/\/shop_images\/imgs.png",
+        "image_mobile": "shopify:\/\/shop_images\/ses.png",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_row_cards_MdigVH": {
+      "type": "bl-row-cards",
+      "blocks": {
+        "row_xeCeC4": {
+          "type": "row",
+          "settings": {
+            "mobile_full": false,
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#084c25",
+            "heading": "Boosting your resting burn",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#ffffff",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "image": "shopify:\/\/shop_images\/metabolism_1.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_kT9Qdq": {
+          "type": "row",
+          "settings": {
+            "mobile_full": false,
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#084c25",
+            "heading": "Training your body to burn fat instead of carbs",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#ffffff",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "image": "shopify:\/\/shop_images\/Back.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_q4hRg8": {
+          "type": "row",
+          "settings": {
+            "mobile_full": false,
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#084c25",
+            "heading": "Fixing insulin resistance",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#ffffff",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "image": "shopify:\/\/shop_images\/Insulin.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_DzfdMc": {
+          "type": "row",
+          "settings": {
+            "mobile_full": false,
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#084c25",
+            "heading": "Restoring your cortisol rhythm",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#ffffff",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "image": "shopify:\/\/shop_images\/recovery_1.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_t4ftHB": {
+          "type": "row",
+          "settings": {
+            "mobile_full": true,
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#084c25",
+            "heading": "Balancing your hormones",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#ffffff",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "image": "shopify:\/\/shop_images\/hormonal_1_1.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_xeCeC4",
+        "row_kT9Qdq",
+        "row_q4hRg8",
+        "row_DzfdMc",
+        "row_t4ftHB"
+      ],
+      "name": "BL Row Cards",
+      "settings": {
+        "section_id": "",
+        "heading": "We Call It The Flex-First Fat-Access Reset™",
+        "heading_m_center": true,
+        "heading_d_center": false,
+        "heading_color": "#ffffff",
+        "description": "<p>Instead of forcing your body to work harder with stimulants and caffeine, Dryft™ re-matches your metabolism to work the way it should by:<\/p>",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#ffffff",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_category_switch_qQxVhp": {
+      "type": "bl-category-switch",
+      "blocks": {
+        "row_QYFBaq": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#ffffff",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "Switch #1: The Fat-Burning Switch",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#252726",
+            "description": "<p><strong>❌ The Problem (In Black Men):<\/strong><br\/>● 5% lower resting burn than white men<br\/>● Body burns carbs first, not fat<br\/>● Fat stays locked in storage<br\/><br\/><strong>✅ How Dryft™ Fixes It:<\/strong><br\/>Cayenne Pepper Extract (40,000 SHU)\u2028 Capsaicin produces heat in your body, directly boosting your resting metabolic rate. Studies show it increases fat oxidation even at rest - teaching your body to burn fat instead of storing it.<br\/><br\/><strong>Grains of Paradise Extract\u2028<\/strong>Contains 6-paradol compounds that activate brown adipose tissue (BAT) - the \"good fat\" that burns stored fat for energy. Clinical trials show it increases whole-body energy expenditure by an average of 137 calories per day and significantly reduces visceral fat.\u2028<br\/><br\/><strong>The Result:<\/strong>\u2028 Your body finally starts tapping into stored fat - especially the stubborn chest and belly fat that won't budge with generic supplements.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#252726",
+            "image": "shopify:\/\/shop_images\/q2.jpg",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_iaKX4y": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#ffffff",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "Switch #2: \u2028The Insulin-Control Switch",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#252726",
+            "description": "<p><strong>❌ The Problem (In Black Men):<\/strong><br\/>● Significantly higher insulin resistance than white men<br\/>● So when you eat bread, rice, or anything with carbs, your body says \"store this as fat\" instead of \"use this for energy.\"<br\/>● Constant hunger and cravings\u2028<br\/><br\/><strong>✅ How Dryft™ Fixes It:<\/strong><br\/>Dihydroberberine\u2028Tells your body to USE carbs for energy instead of storing them as belly fat.<br\/>Studies show it shrinks your waist by over half an inch in 12 weeks.\u2028<br\/><br\/><strong>Lactobacillus gasseri\u2028<\/strong>Good bacteria that lives in your gut and eats belly fat.<br\/>Studies show 8.5% reduction in belly fat.\u2028<br\/><br\/><strong>The Result:<\/strong>\u2028Less hunger. Fewer cravings. Your body stops storing everything as fat.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#252726",
+            "image": "shopify:\/\/shop_images\/q1.jpg",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_AJxWKR": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#ffffff",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "Switch #3: \u2028The Hormone-Balance Switch",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#252726",
+            "description": "<p><strong>❌ The Problem (In Black Men):<\/strong><br\/>● 5% lower resting burn than white men<br\/>● Body burns carbs first, not fat<br\/>● Fat stays locked in storage<br\/><br\/><strong>✅ How Dryft™ Fixes It:<\/strong><br\/>Cayenne Pepper Extract (40,000 SHU)\u2028 Capsaicin produces heat in your body, directly boosting your resting metabolic rate. Studies show it increases fat oxidation even at rest - teaching your body to burn fat instead of storing it.<br\/><br\/><strong>Grains of Paradise Extract<\/strong>\u2028Contains 6-paradol compounds that activate brown adipose tissue (BAT) - the \"good fat\" that burns stored fat for energy. Clinical trials show it increases whole-body energy expenditure by an average of 137 calories per day and significantly reduces visceral fat.\u2028<br\/><br\/><strong>The Result:\u2028<\/strong> Your body finally starts tapping into stored fat - especially the stubborn chest and belly fat that won't budge with generic supplements.<\/p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#252726",
+            "image": "shopify:\/\/shop_images\/q3.jpg",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_QYFBaq",
+        "row_iaKX4y",
+        "row_AJxWKR"
+      ],
+      "name": "BL Category Switch",
+      "settings": {
+        "section_id": "",
+        "heading": "How Dryft™ Fixes What Other Supplements Ignore",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#00754a",
+        "description": "<p>Just 2 capsules a day flips all three metabolic switches<\/p>",
+        "description_m_center": true,
+        "description_d_center": true,
+        "description_color": "#000000",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#f6f6f6",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_compare_NCxfhb": {
+      "type": "bl-compare",
+      "blocks": {
+        "row_9JNCpy": {
+          "type": "row",
+          "settings": {
+            "border_color": "#000000",
+            "bgcolor": "#ffffff",
+            "heading": "Other supplements",
+            "heading_color": "#121212",
+            "subheading": "(made for white men)",
+            "subheading_color": "#121212",
+            "description1": "<p>Just add caffeine (fake energy, no real results)<\/p>",
+            "description2": "<p>Ignore your insulin problem<\/p>",
+            "description3": "<p>Ignore your stress hormone<\/p>",
+            "description4": "<p>Ignore your high estrogen<\/p>",
+            "description5": "",
+            "description6": "",
+            "description7": "",
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/WWWWWW_2_1.png",
+            "icon": "shopify:\/\/shop_images\/image_1546.png"
+          }
+        },
+        "row_7GMh6y": {
+          "type": "row",
+          "settings": {
+            "border_color": "#000000",
+            "bgcolor": "#247042",
+            "heading": "Dryft™",
+            "heading_color": "#ffffff",
+            "subheading": "(made for Black men)",
+            "subheading_color": "#ffffff",
+            "description1": "<p>Fixes your slow metabolism<\/p>",
+            "description2": "<p>Fixes your insulin problem<\/p>",
+            "description3": "<p>Fixes your stress hormone<\/p>",
+            "description4": "<p>Fixes your high estrogen<\/p>",
+            "description5": "",
+            "description6": "",
+            "description7": "",
+            "description_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/WWWWWW_2_1_1.png",
+            "icon": "shopify:\/\/shop_images\/Group_2607714.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_9JNCpy",
+        "row_7GMh6y"
+      ],
+      "name": "BL Compare",
+      "settings": {
+        "section_id": "",
+        "heading": "Why This Works When Other Supplements Failed",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#00754a",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_carousel_r94Qen": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_rGhKqh": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_87_c9b1c079-75ce-4fb2-ac36-99776a809fa6.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "\"Finally something that actually works\"",
+            "description": "<p>\"Bro, I've tried EVERYTHING. All those fat burners they sell at GNC? Nothing. Straight up wasted money. Started taking Dryft about 2 months ago and my chest is finally flattening out. Lost about 18 pounds, but more importantly I can see my body actually changing. Wish I found this years ago.\"<\/p>",
+            "name": "Marcus T., 49",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_CQV7zN": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_139.1_a686334b-2d13-4281-8bef-98ffc37e868e.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "\"My wife noticed before I did\"",
+            "description": "<p>\"I was skeptical because I've tried so many supplements that didn't do anything. My wife was the first one to say something - 'Your chest looks different.' She was right. After about 6 weeks on Dryft, my man boobs are way smaller and my stomach is flatter. I feel way better too. More energy, sleeping better. This stuff is legit.\"<\/p>",
+            "name": "Darnell J., 58",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_zxWqCQ": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_136.1_d47f5af4-fab5-4e52-8884-82d597b80602.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "\"Wish I started this in my 30s\"",
+            "description": "<p>\"I'm 58. I figured it was too late for me. But after 3 months on Dryft, I lost 24 pounds and my chest fat is basically gone. My doctor even said my blood sugar numbers improved. I feel 10 years younger. If you're on the fence, just try it. You won't regret it.\"<\/p>",
+            "name": "David K., 56",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "card_6kmUTe": {
+          "type": "card",
+          "settings": {
+            "heading": "4,864+",
+            "description": "<p>5-Star Reviews<\/p>"
+          }
+        },
+        "card_X6FpCh": {
+          "type": "card",
+          "settings": {
+            "heading": "150,000",
+            "description": "<p>bottles sold<\/p>"
+          }
+        },
+        "card_YGa7Kj": {
+          "type": "card",
+          "settings": {
+            "heading": "40,000+",
+            "description": "<p>Black men feeling confident again<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_rGhKqh",
+        "row_CQV7zN",
+        "row_zxWqCQ",
+        "card_6kmUTe",
+        "card_X6FpCh",
+        "card_YGa7Kj"
+      ],
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "3",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": true,
+        "show_arrows": true,
+        "heading_top": true,
+        "heading": "Real Men, Verified Results: Why Men Call Dryft™ a \"Game-Changer\" for Their Health",
+        "description": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "",
+        "heading_color": "#f3f3f3",
+        "text_color": "#ffffff",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1.png",
+        "arrow_color": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_tab_ingredients_CRhYT3": {
+      "type": "bl-tab-ingredients",
+      "blocks": {
+        "row_6TrC9X": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "FOR METABOLIC DISADVANTAGE",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "FOR METABOLIC DISADVANTAGE",
+            "heading_m_center": true,
+            "heading_d_center": false,
+            "heading_color": "#00754a",
+            "description": "<p><strong>Why Black Men Need This:<\/strong><br\/>Your resting burn is ~5% lower than white men. Your body burns carbs first, not fat.<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image1": "shopify:\/\/shop_images\/image_29_383ac8b1-e77e-4585-8e2d-dfd70a0f3f37.png",
+            "subheading1": "<p>Cayenne Pepper Extract (40,000 SHU) - 120mg<\/p>",
+            "description1": "<p>Capsaicin increases thermogenesis (heat production) in your body, directly boosting resting metabolic rate. Studies show it increases fat oxidation even when you're sitting still - countering the metabolic disadvantage Black men face.<\/p>",
+            "image2": "shopify:\/\/shop_images\/image_29_1_320dce2b-0399-402c-a6b4-cf31605af9bd.png",
+            "subheading2": "<p>Grains of Paradise Extract (12.5% 6 paradol) - 30mg<\/p>",
+            "description2": "<p>Activates brown adipose tissue (BAT), which burns stored fat to produce heat. Clinical trials show it increases whole-body energy expenditure by 137 calories per day and reduces visceral fat. This directly addresses the lower resting burn and poor fat oxidation in Black men.<\/p>",
+            "subheading3": "",
+            "description3": "",
+            "subheading4": "",
+            "description4": "",
+            "subheading5": "",
+            "description5": "",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_RRLPC8": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "FOR INSULIN RESISTANCE",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "FOR INSULIN RESISTANCE",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#00754a",
+            "description": "<p><strong>Why Black Men Need This:<\/strong><br\/>Even at the same body weight as white men, Black men have significantly higher insulin resistance - making fat storage more likely and fat burning harder.<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image1": "shopify:\/\/shop_images\/image_30_2ae60906-610d-48fd-ad04-f7b995e2d29e.png",
+            "subheading1": "<p>Dihydroberberine (GlucoVantage®) - 100mg<\/p>",
+            "description1": "<p>A highly-absorbable form of berberine that activates AMPK - the master switch for glucose metabolism. Clinical studies show:<br\/><\/p><ul><li>1.27 cm reduction in waist circumference<\/li><li>Improved insulin sensitivity<\/li><li>Better glucose uptake into cells (instead of fat storage)<\/li><\/ul><p><br\/>This directly counters the insulin resistance that plagues Black men at higher rates than white men.<\/p>",
+            "image2": "shopify:\/\/shop_images\/image_29_2_d518f6f7-7c79-435a-bbb4-acfa739fb55e.png",
+            "subheading2": "<p>Lactobacillus gasseri (10 Billion CFU) - 50mg<\/p>",
+            "description2": "<p>The ONLY probiotic strain with clinical evidence for reducing abdominal fat (8.5% reduction in trials). It works by improving gut health and insulin sensitivity - addressing the root cause of belly fat storage in Black men.<\/p>",
+            "subheading3": "",
+            "description3": "",
+            "subheading4": "",
+            "description4": "",
+            "subheading5": "",
+            "description5": "",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_HizT6F": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "FOR CORTISOL DYSREGULATION",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "FOR CORTISOL DYSREGULATION",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#00754a",
+            "description": "<p><strong>Why Black Men Need This:<\/strong><br\/>Black men have a \"flatter\" cortisol curve - meaning stress hormones stay elevated all day and into the evening. This drives cravings, fat storage, and insulin resistance.<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image1": "shopify:\/\/shop_images\/image_30_1_f37216a2-388e-4e77-998a-fc5eaf7db40f.png",
+            "subheading1": "<p>Ashwagandha Extract (KSM-66®) - 300mg<\/p>",
+            "description1": "<p>The gold-standard ashwagandha clinically proven to reduce cortisol by 27.9%. This directly restores the healthy cortisol rhythm that Black men need to:<br\/><\/p><ul><li>Stop late-night cravings<\/li><li>Improve sleep quality<\/li><li>Reduce stress-driven belly fat storage<\/li><\/ul>",
+            "image2": "shopify:\/\/shop_images\/image_30_2_6bfb8b95-3a6c-4f80-a655-bfcc8c475ba7.png",
+            "subheading2": "<p>L-Theanine - 80mg<\/p>",
+            "description2": "<p>Promotes relaxation without drowsiness. Lowers heart rate and blood pressure under stress. Improves sleep quality. Works synergistically with Ashwagandha to restore the cortisol rhythm that's disrupted in Black men.<\/p>",
+            "image3": "shopify:\/\/shop_images\/image_29_3_a65e9d2b-9327-4963-bad4-58209834bb3e.png",
+            "subheading3": "<p>Saffron Extract (≥2% safranal, ≥3% crocin) - 30mg<\/p>",
+            "description3": "<p>Reduces stress-driven emotional eating and cravings. Helps regulate mood and appetite - targeting the evening cravings driven by elevated cortisol in Black men.<\/p>",
+            "subheading4": "",
+            "description4": "",
+            "subheading5": "",
+            "description5": "",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_9JyWTW": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "FOR HORMONAL IMBALANCE",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "FOR HORMONAL IMBALANCE",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#00754a",
+            "description": "<p><strong>Why Black Men Need This:<\/strong><br\/>Black men consistently have higher estrogen levels than white men - causing stubborn chest fat, low energy, and reduced testosterone.<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image1": "shopify:\/\/shop_images\/image_29_4.png",
+            "subheading1": "<p>Diindolylmethane (DIM) - 100mg<\/p>",
+            "description1": "<p>Supports healthy estrogen metabolism, helping your body convert \"bad\" estrogen metabolites into \"good\" ones. Also acts as a mild aromatase inhibitor, preventing testosterone from converting into estrogen. This directly addresses the higher baseline estrogen in Black men.<\/p>",
+            "image2": "shopify:\/\/shop_images\/image_30_3_3cf7b74e-92ff-4093-b84b-a4a260f7d10c.png",
+            "subheading2": "<p>Zinc (as glycinate) - 15mg<\/p>",
+            "description2": "<p>Essential for testosterone production. Deficiency is directly linked to low testosterone. Supports healthy hormone balance - especially important as Black men experience faster age-related testosterone decline.<\/p>",
+            "image3": "shopify:\/\/shop_images\/image_29_5.png",
+            "subheading3": "<p>Boron (as glycinate) - 6mg<\/p>",
+            "description3": "<p>Clinical studies show it increases free testosterone while simultaneously reducing estradiol (estrogen). A one-two punch for the hormonal imbalance that creates chest fat in Black men.<\/p>",
+            "image4": "shopify:\/\/shop_images\/image_30_4_1a27047b-28b0-46eb-8e70-3e965df22495.png",
+            "subheading4": "<p>Bifidobacterium breve B-3 (1 Billion CFU) - 100mg<\/p>",
+            "description4": "<p>Studied specifically for weight management in pre-obese adults. Improves metabolic disorders and insulin sensitivity - supporting the overall hormonal and metabolic reset.<\/p>",
+            "subheading5": "",
+            "description5": "",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_6TrC9X",
+        "row_RRLPC8",
+        "row_HizT6F",
+        "row_9JyWTW"
+      ],
+      "name": "BL Tab Ingredients",
+      "settings": {
+        "section_id": "",
+        "heading": "11 Clinically-Backed Ingredients That Target Black Male Physiology",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#ffffff",
+        "description": "<p>Unlike generic formulas that copy-paste ingredients from white male studies, every ingredient in Dryft™ is specifically chosen to address the 5 metabolic differences in Black men.<\/p>",
+        "description_m_center": true,
+        "description_d_center": true,
+        "description_color": "#ffffff",
+        "bg": "shopify:\/\/shop_images\/image_69_ff587f39-d042-411b-806d-959eadfb25e0.png",
+        "border_radius": 0,
+        "btn_top_text1": "",
+        "btn_top_text2": "",
+        "btn_top_text_color": "#084c25",
+        "button_label": "",
+        "button_url": "#products",
+        "icon": "shopify:\/\/shop_images\/Mask_group_57a20879-52c0-4093-b0d4-c5d9a9824ff4.png",
+        "btn_bottom_text": "<p>90-Day Money Back Guarantee<\/p>",
+        "btn_bottom_text_color": "#084c25",
+        "bgcolor": "#f6f7ef",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "bl_tab_card_secondary_CRhYT3": {
+      "type": "bl-tab-card-secondary",
+      "blocks": {
+        "row_6TrC9X": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "WEEK 1",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "The Foundation",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p><strong>What's Happening Inside:\u2028<\/strong><br\/>L-Theanine and Ashwagandha start reducing cortisol. Probiotics begin improving gut health.\u2028<br\/><br\/><strong>What You'll Notice:<\/strong><br\/>● Better sleep quality<br\/>● Reduced late-night cravings<br\/>● More stable energy throughout the day<br\/>● Less bloating<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/image_55604032_18225659-5ece-4e11-bfa5-d33db79d0598.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604084.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_RRLPC8": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "WEEK 2-3",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "The Switches Start Flipping",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p><strong>What's Happening Inside:\u2028<\/strong>Dihydroberberine improves insulin sensitivity. Grains of Paradise activates fat-burning. Zinc and Boron support testosterone production.<br\/><br\/><strong>What You'll Notice:<\/strong><br\/>● Clothes fitting slightly looser<br\/>● Morning energy improves significantly<br\/>● Fewer cravings for sugar and carbs<br\/>● Better mood and mental clarity<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/image_55604032_1_db3e5026-0b35-4109-910f-dc6248bef845.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604085.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_HizT6F": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "WEEK 4-6",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "Visible Changes",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p><strong>What's Happening Inside:\u2028<\/strong><br\/>All three metabolic switches are now activated. Your body is burning fat more efficiently, insulin is working properly, and hormones are rebalancing.<br\/><strong><br\/>What You'll Notice:<\/strong><br\/>● Chest fat visibly reducing<br\/>● Belt notch or two tighter<br\/>● 5-10 lbs down on the scale<br\/>● People start commenting on your appearance Significantly more energy<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/image_55604032_2_55a28e29-0cf8-4044-8fb5-68723f22e45a.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604086.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_9JyWTW": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f6f7ef",
+            "label": "WEEK 8-12",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#00754a",
+            "heading": "Full Transformation",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p><strong>What's Happening Inside:\u2028<\/strong><br\/>Your metabolism has fully adapted. Fat-burning is optimized. Hormones are balanced. The metabolic disadvantages have been countered.<br\/><br\/><strong>What You'll Notice:<\/strong><br\/>● 15-25 lbs down<br\/>● Chest is flat (or significantly flatter)<br\/>● 2-4 inches off your waist<br\/>● Visible muscle definition<br\/>● Confidence fully restored<br\/>● You feel like yourself again<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/image_55604032_3.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_55604088.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_6TrC9X",
+        "row_RRLPC8",
+        "row_HizT6F",
+        "row_9JyWTW"
+      ],
+      "name": "BL Tab Card Secondary",
+      "settings": {
+        "section_id": "",
+        "heading": "What To Expect When You Start Dryft™",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#00754a",
+        "description": "<p>Unlike generic supplements that promise overnight miracles, Dryft™ works by fixing the underlying metabolic issues. Here's the realistic timeline:<\/p>",
+        "description_m_center": true,
+        "description_d_center": true,
+        "description_color": "#000000",
+        "border_radius": 0,
+        "btn_top_text1": "<p>*Individual results may vary. Improvements based on user feedback<\/p>",
+        "btn_top_text2": "<p>Men who combine Dryft™ with basic diet awareness see results 3x faster.<\/p>",
+        "btn_top_text_color": "#084c25",
+        "button_label": "Start Your Transformation Today",
+        "button_url": "#products",
+        "icon": "shopify:\/\/shop_images\/Mask_group_57a20879-52c0-4093-b0d4-c5d9a9824ff4.png",
+        "btn_bottom_text": "<p>90-Day Money Back Guarantee<\/p>",
+        "btn_bottom_text_color": "#084c25",
+        "bgcolor": "#ffffff",
+        "max_width": 1000,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_main_banner_AdseJYhfH3": {
+      "type": "nl-main-banner-dark",
+      "blocks": {
+        "star_review_y9ETxy": {
+          "type": "star_review",
+          "disabled": true,
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "rating": "4.8",
+            "text": "+47,000 Active Users"
+          }
+        },
+        "review_aHknwG": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "name": "Jim, 49",
+            "image": "shopify:\/\/shop_images\/Frame_1707481779.png",
+            "icon": "shopify:\/\/shop_images\/Subtract_1.png",
+            "heading": "Verified Buyer"
+          }
+        },
+        "mobile_card_review_Lnw6ck": {
+          "type": "mobile_card_review",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "heading": "Actually Fits My Life",
+            "text": "\"I'm 42 with two kids, no time for complicated stuff. This is just 2 pills with breakfast. Down 8 pounds, feeling more like myself again. Nothing crazy, just steady progress.\""
+          }
+        },
+        "card_review_aHazHE": {
+          "type": "card_review",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_2358.png",
+            "name": "Tom R., 36",
+            "icon": "shopify:\/\/shop_images\/Subtract_57573616-090c-4dab-89e6-30b1bc209654.svg",
+            "verified": "Verified Buyer",
+            "text": "<p>\"I would finish dinner, sit down on the couch, and within an hour I was back in the kitchen. Every. Single. Night. Now that voice in my head is just... quiet.\" <\/p>"
+          }
+        },
+        "description_JNrjae": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "description": "<p>Every major fat-loss supplement is formulated based on studies of white men. But Black men have 5 proven metabolic differences that make those formulas fail. That's not your fault—but now there's finally a solution made for YOUR biology.<\/p>"
+          }
+        },
+        "feature_wrapper_kixEeh": {
+          "type": "feature_wrapper",
+          "settings": {}
+        },
+        "feature_JrwyMU": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "Formulated specifically for Black male physiology (not copied from white male studies)"
+          }
+        },
+        "feature_VQfzm3": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "Clinically-effective doses (not \"fairy dust\" amounts)"
+          }
+        },
+        "feature_YELhgJ": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "Free from gluten, dairy, sugar, GMOs"
+          }
+        },
+        "feature_x63DxR": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "No artificial additives or synthetic hormones"
+          }
+        },
+        "feature_fVwUe8": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "No soy or estrogenic compounds"
+          }
+        },
+        "feature_kzJadU": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "Made in FDA-Registered, GMP-Certified facility"
+          }
+        },
+        "feature_UVdHNU": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_c9271a48-1c77-432c-a1c6-76eb30da6138.png",
+            "description": "Triple-tested for purity, potency, and accuracy"
+          }
+        },
+        "button_XbpXVi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "star_review_y9ETxy",
+        "review_aHknwG",
+        "mobile_card_review_Lnw6ck",
+        "card_review_aHazHE",
+        "description_JNrjae",
+        "feature_wrapper_kixEeh",
+        "feature_JrwyMU",
+        "feature_VQfzm3",
+        "feature_YELhgJ",
+        "feature_x63DxR",
+        "feature_fVwUe8",
+        "feature_kzJadU",
+        "feature_UVdHNU",
+        "button_XbpXVi"
+      ],
+      "name": "NL Main Banner Dark",
+      "settings": {
+        "section_id": "",
+        "bg": "shopify:\/\/shop_images\/image_64_9b142f82-ca3c-4a4d-9573-17b23805f43d.png",
+        "heading": "Premium Quality You Can Trust",
+        "highlight": "",
+        "image": "shopify:\/\/shop_images\/banner-bg-g_090c5552-6d15-4551-ada8-6f1fd1bc536e.png",
+        "image_m": "shopify:\/\/shop_images\/bg-mb-badge.png",
+        "button_label": "TRY DRYFT™ RISK-FREE",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "*Results are based on scientific studies of individual ingredients in the formula and may vary",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "<p>90-Day Money Back Guarantee<\/p>",
+        "bgcolor": "#084c25",
+        "text_color": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_m": 24,
+        "padding_bottom_m": 24
+      }
+    },
+    "nl_product_variants_BreT68": {
+      "type": "nl-product-variants-no-sub",
+      "blocks": {
+        "row_kNfYBx": {
+          "type": "row",
+          "settings": {
+            "heading": "Select Your Order"
+          }
+        },
+        "row_nLUt3n": {
+          "type": "row",
+          "settings": {
+            "heading": "Billing Info"
+          }
+        },
+        "row_ahWapp": {
+          "type": "row",
+          "settings": {
+            "heading": "Thank You"
+          }
+        }
+      },
+      "block_order": [
+        "row_kNfYBx",
+        "row_nLUt3n",
+        "row_ahWapp"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.nl-product-variants__variant-wrapper-2 {grid-column: 2 \/ 3; grid-row: 1 \/ 2; }}",
+        "@media screen and (max-width: 767px) {.nl-product-variants__variant-wrapper-2 {grid-row: 1 \/ 2; } .nl-product-variants__variant-wrapper-1 {grid-row: 2 \/ 3; }}"
+      ],
+      "name": "NL Product Variants Nosub",
+      "settings": {
+        "product": "dryft™-np",
+        "default_index": 2,
+        "section_id": "products",
+        "heading": "Select Your Package Below",
+        "description": "",
+        "button_label": "BUY DRYFT™ NOW",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_2.png",
+        "bottom_heading": "Our trusted payment processors",
+        "bottom_description": "<p>We use a 256-bit secure shopping cart where 100% of your data is encrypted, safe, and secure. This is the same data standard used by most banks, governments, and military organisations.<\/p>",
+        "bottom_icons": "shopify:\/\/shop_images\/Frame_2607927.png",
+        "bottom_img": "shopify:\/\/shop_images\/Mask_group_1.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_guarantee_BnwdGF": {
+      "type": "nl-guarantee",
+      "name": "NL Guarantee",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Group_49198.png",
+        "heading": "Your Purchase Is Protected By Our 90-Day \"See Results Or Pay Nothing\" Guarantee",
+        "description": "<p><strong>We know you've wasted money on supplements that didn't work.<\/strong><br\/><br\/>Generic formulas made for white men failed you because they weren't designed for your body.<br\/><br\/><strong>That's why we're taking ALL the risk:<\/strong><br\/><br\/>Try Dryft™ for 90 full days. If you don't see your chest flattening, your energy improving, and your body finally responding - email us and we'll refund 100% of your purchase.<br\/><br\/><strong>You don't even have to return the bottles.<br\/><\/strong><br\/><strong>Why 90 days?<\/strong> Because real metabolic change takes time. We want you to experience the full transformation.<br\/><br\/><strong>Why do we do this? <\/strong>Because thousands of Black men are already seeing results with a formula actually made for them. We're confident you will too.<\/p>",
+        "button_label": "TRY DRYFT™ NOW",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_faqs_pEwWFj": {
+      "type": "nl-faqs",
+      "blocks": {
+        "row_8z8MVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How is this different from other fat-loss supplements?",
+            "description": "<p><strong>Simple: Every other supplement is formulated based on white male physiology.<\/strong><br\/>They use studies that primarily included white men. Then they sell that same formula to everyone.<strong><br\/><br\/>Dryft™ is different.<\/strong><br\/><br\/>Every ingredient was specifically chosen to address the 5 proven metabolic differences between Black men and white men:<\/p><p>1. Lower resting burn<\/p><p>2. Lower fat oxidation (carb-first fuel use)<\/p><p>3. Higher insulin resistance<\/p><p>4. Flatter cortisol curve<\/p><p>5. Higher estrogen levels<br\/><br\/><\/p><p><strong>That's why other supplements failed you. And why Dryft™ works.<\/strong><\/p>"
+          }
+        },
+        "row_Kbkyth": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Why haven't I heard about these differences before?",
+            "description": "<p>Because the supplement industry doesn't want to invest in race-specific research. It's easier and cheaper to make one formula and sell it to everyone.<br\/><br\/>But the scientific research is clear: Black men and white men have significantly different metabolic and hormonal profiles. Ignoring those differences is why generic supplements fail.<\/p>"
+          }
+        },
+        "row_8WDhRd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "I'm skeptical. How do I know this will work for me?",
+            "description": "<p><strong>Fair question.<\/strong> You've been burned before.<br\/><br\/>Here's why Dryft™ is different:<\/p><p><strong>1. The science is real.<\/strong> Every metabolic difference we mention is backed by peer-reviewed research.<\/p><p><strong>2. The ingredients are clinically-dosed.<\/strong> We don't use \"fairy dust\" amounts.<\/p><p><strong>3. Thousands of Black men are already seeing results<\/strong> (check the reviews).<\/p><p><strong>4. You're protected by our 90-day guarantee.<\/strong> If it doesn't work, you get every penny back.<\/p><p><br\/>You have nothing to lose and everything to gain.<\/p>"
+          }
+        },
+        "row_rKpQYd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Will this work if I'm not working out?",
+            "description": "<p>Yes - but results will be slower.<br\/><br\/>Dryft™ fixes the metabolic issues that make fat loss hard for Black men. It will work even if you're not exercising.<strong><br\/><br\/>However,<\/strong> adding even basic activity (walking, light workouts) will accelerate results significantly.<\/p>"
+          }
+        },
+        "row_gL8dwQ": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How long until I see results?",
+            "description": "<p><strong>Week 1-2:<\/strong> Better sleep, more energy, fewer cravings<br\/> <strong>Week 4-6:<\/strong> Visible fat loss, clothes fitting looser<br\/> <strong>Week 8-12:<\/strong> Major transformation - flat chest, 15-25 lbs down<br\/><br\/>Most men see noticeable changes by week 4. Full transformation by week 12.<\/p>"
+          }
+        },
+        "row_kVNfHR": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is it safe?",
+            "description": "<p>Yes. Dryft™ contains:<br\/><br\/><\/p><ul><li>✅ Natural, clinically-studied ingredients<\/li><li>✅ No synthetic hormones<\/li><li>✅ No harsh stimulants<\/li><li>✅ No banned substances<\/li><\/ul><p><strong><br\/>However:<\/strong> Not for use if pregnant, nursing, immunocompromised, or under medical treatment. Consult your doctor if on medication.<\/p>"
+          }
+        },
+        "row_BQBzVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if it doesn't work for me?",
+            "description": "<p>Email us within 90 days and we'll refund 100% of your purchase. You don't even need to return the bottles.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_8z8MVL",
+        "row_Kbkyth",
+        "row_8WDhRd",
+        "row_rKpQYd",
+        "row_gL8dwQ",
+        "row_kVNfHR",
+        "row_BQBzVL"
+      ],
+      "custom_css": [
+        ".dropdown-parent {border: 1px solid #084c25; border-radius: 12px;}",
+        ".dropdown-parent.active .dropdown-heading {background: #084c25 !important; border-radius: 12px 12px 0 0;}",
+        ".dropdown-parent.active .dropdown-heading > * {color: #fff !important;}"
+      ],
+      "name": "NL Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Questions About Dryft™",
+        "description": "",
+        "dropdown_heading_bgcolor": "rgba(0,0,0,0)",
+        "dropdown_content_bgcolor": "",
+        "dropdown_heading_text_color": "#121212",
+        "dropdown_border_color": "#084c25",
+        "dropdown_arrow_color": "#000000",
+        "button_label": "",
+        "button_url": "",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 900,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "br_bottom_U9iwGR": {
+      "type": "br-bottom",
+      "blocks": {
+        "feature_Ti7pPt": {
+          "type": "feature",
+          "settings": {
+            "description": "<p>Boosts your resting burn (countering the 5% disadvantage)<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame_2147223913_13deeb1d-94d7-4e1e-bf5d-22cb0439e0e2.png"
+          }
+        },
+        "feature_h3DAXX": {
+          "type": "feature",
+          "settings": {
+            "description": "<p>Trains your body to burn fat instead of carbs<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame_2147223913_13deeb1d-94d7-4e1e-bf5d-22cb0439e0e2.png"
+          }
+        },
+        "feature_Dk3Paq": {
+          "type": "feature",
+          "settings": {
+            "description": "<p>Fixes insulin resistance (turning off the \"store fat\" signal)<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame_2147223913_13deeb1d-94d7-4e1e-bf5d-22cb0439e0e2.png"
+          }
+        },
+        "feature_nQwXzr": {
+          "type": "feature",
+          "settings": {
+            "description": "<p>Restores your cortisol rhythm (eliminating stress cravings)<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame_2147223913_13deeb1d-94d7-4e1e-bf5d-22cb0439e0e2.png"
+          }
+        },
+        "feature_X6NaV9": {
+          "type": "feature",
+          "settings": {
+            "description": "<p>Balances your hormones (reduces estrogen, supports testosterone)<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame_2147223913_13deeb1d-94d7-4e1e-bf5d-22cb0439e0e2.png"
+          }
+        }
+      },
+      "block_order": [
+        "feature_Ti7pPt",
+        "feature_h3DAXX",
+        "feature_Dk3Paq",
+        "feature_nQwXzr",
+        "feature_X6NaV9"
+      ],
+      "name": "BR Bottom",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Medicine-bottle-box-08_7.png",
+        "img_mobile": "shopify:\/\/shop_images\/3b.png",
+        "heading": "Stop Using Supplements Made \u2028For White Men",
+        "description": "<p>For the first time ever, there's a fat-loss formula designed specifically for Black male physiology.\u2028<br\/><br\/>Dryft™ addresses all 5 metabolic differences that make generic supplements fail:<\/p>",
+        "description2": "<p><strong>The result?<\/strong> Your body finally responds the way it should.<br\/><br\/><strong>Thousands of Black men have already transformed with Dryft™. You're next.<\/strong><\/p>",
+        "button_label": "Try Dryft™ Risk-Free Today",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "text_color": "#ffffff",
+        "bgcolor": "#f4f4f6",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1_ec73922b-7461-4902-b940-08eaba0ed5e4.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    }
+  },
+  "order": [
+    "nl_thin_icon_text_jEL6P9",
+    "nl_main_banner_JYhfH3",
+    "nl_logos_PkLwVA",
+    "nl_step_image_text_NDcNFi",
+    "bm_unique_hFbdVm",
+    "bl_tab_card_AWqUBd",
+    "bl_img_text_M6T9ff",
+    "bl_row_cards_MdigVH",
+    "bl_category_switch_qQxVhp",
+    "bl_compare_NCxfhb",
+    "nl_carousel_r94Qen",
+    "bl_tab_ingredients_CRhYT3",
+    "bl_tab_card_secondary_CRhYT3",
+    "nl_main_banner_AdseJYhfH3",
+    "nl_product_variants_BreT68",
+    "nl_guarantee_BnwdGF",
+    "nl_faqs_pEwWFj",
+    "br_bottom_U9iwGR"
+  ]
+}

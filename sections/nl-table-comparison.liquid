@@ -1,0 +1,590 @@
+{%- comment -%}
+  Section: Table Comparison
+  
+  This section creates a comparison table with customizable columns and rows.
+  It supports both a plain background color or an optional background image.
+  
+  Usage:
+  1. Add the section to your page
+  2. Configure the main heading and button text
+  3. Add column headers using blocks
+  4. Add rows using blocks
+  5. Customize colors and backgrounds as needed
+  
+  Features:
+  - Customizable background (solid color or image)
+  - Adjustable background image opacity
+  - Customizable table headers and cell colors
+  - Mobile responsive design
+  - CTA button with optional guarantee badge
+{%- endcomment -%}
+
+{%- liquid
+  # Variables
+  assign heading = section.settings.heading
+  assign button_text = section.settings.button_text
+  assign button_url = section.settings.button_url
+  assign guarantee_text = section.settings.guarantee_text
+  assign show_background_image = section.settings.show_background_image
+  
+  # Set default visible columns if not specified
+  if section.settings.visible_columns == blank
+    assign visible_columns = 3
+  else
+    assign visible_columns = section.settings.visible_columns
+  endif
+  
+  # Colors
+  assign bg_color = section.settings.bg_color
+  assign card_bg_color = section.settings.card_bg_color
+  assign heading_color = section.settings.heading_color
+-%}
+
+{{ 'section-nl-table-comparison.css' | asset_url | stylesheet_tag }}
+
+<section 
+  class="nl-table-comparison relative w-full overflow-hidden"
+  {% unless section.settings.show_background_image %}
+    style="background-color: {{ bg_color }};"
+  {% endunless %}
+  {{ section.shopify_attributes }}
+>
+  <!-- Background Image (Rotated) -->
+  {% if section.settings.background_image and section.settings.show_background_image %}
+    {{
+      section.settings.background_image
+      | image_url: width: 1920
+      | image_tag:
+        class: 'w-full absolute top-0 left-0 h-full object-cover',
+        sizes: '1920px'
+    }}
+  {% endif %}
+
+  <div class="container mx-auto px-4 lg:px-8 relative">
+    <!-- Main Card Container -->
+    <div class="nl-table-comparison__card" style="background-color: {% if section.settings.show_background_image %}{{ card_bg_color }}{% else %}#ffffff{% endif %};">
+      <div class="nl-table-comparison__inner">
+        
+        <!-- Main Heading -->
+        {% if heading != blank %}
+          <h2 class="nl-table-comparison__heading" style="color: {{ heading_color }};">
+            {{ heading }}
+          </h2>
+        {% endif %}
+
+        <!-- Comparison Table -->
+        <div class="nl-table-comparison__table-container">
+          <!-- Desktop Table (hidden on mobile) -->
+          <div class="nl-table-comparison__desktop-table">
+            <table class="nl-table-comparison__table">
+              <!-- Header Row -->
+              <thead>
+                <tr>
+                  <th class="nl-table-comparison__empty-header"></th>
+                  {% assign column_index = 0 %}
+                  {% for column in section.blocks %}
+                    {% if column.type == 'column' %}
+                      {% assign column_index = column_index | plus: 1 %}
+                      {% if column_index <= section.settings.visible_columns %}
+                        <th 
+                          class="nl-table-comparison__column-header"
+                          style="background-color: {{ column.settings.header_bg_color }};"
+                        >
+                          {{ column.settings.column_title }}
+                        </th>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </tr>
+              </thead>
+
+              <!-- Table Body -->
+              <tbody>
+                {% for row in section.blocks %}
+                  {% if row.type == 'row' %}
+                    <tr>
+                      <!-- Row Label -->
+                      <td class="nl-table-comparison__row-label">
+                        {{ row.settings.row_label }}
+                      </td>
+
+                      {% if section.settings.visible_columns >= 1 %}
+                        <!-- Cell 1 (First column) -->
+                        <td 
+                          class="nl-table-comparison__cell"
+                          style="background-color: {{ row.settings.cell_1_bg }};"
+                        >
+                          {{ row.settings.cell_1_text }}
+                        </td>
+                      {% endif %}
+
+                      {% if section.settings.visible_columns >= 2 %}
+                        <!-- Cell 2 (Second column) -->
+                        <td 
+                          class="nl-table-comparison__cell"
+                          style="background-color: {{ row.settings.cell_2_bg }};"
+                        >
+                          {{ row.settings.cell_2_text }}
+                        </td>
+                      {% endif %}
+
+                      {% if section.settings.visible_columns >= 3 %}
+                        <!-- Cell 3 (Third column) -->
+                        <td 
+                          class="nl-table-comparison__cell"
+                          style="background-color: {{ row.settings.cell_3_bg }};"
+                        >
+                          {{ row.settings.cell_3_text }}
+                        </td>
+                      {% endif %}
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Table (visible only on mobile) -->
+          <div class="nl-table-comparison__mobile-table">
+            <div class="nl-table-comparison__mobile-table-scroll">
+              <table class="nl-table-comparison__table">
+                <!-- Header Row -->
+                <thead>
+                  <tr>
+                    <th class="nl-table-comparison__empty-header"></th>
+                    
+                    {% assign column_count = 0 %}
+                    {% for column in section.blocks %}
+                      {% if column.type == 'column' %}
+                        {% assign column_count = column_count | plus: 1 %}
+                        {% if column_count <= section.settings.visible_columns %}
+                          <th 
+                            class="nl-table-comparison__column-header {% if column_count == section.settings.visible_columns and column_count == 3 %}nl-table-comparison__column-header--scroll{% endif %}"
+                            style="background-color: {{ column.settings.header_bg_color }};"
+                          >
+                            {{ column.settings.column_title }}
+                          </th>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </tr>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+                  {% for row in section.blocks %}
+                    {% if row.type == 'row' %}
+                      <tr>
+                        <!-- Row Label -->
+                        <td class="nl-table-comparison__row-label">
+                          {{ row.settings.row_label }}
+                        </td>
+
+                        {% if section.settings.visible_columns >= 1 %}
+                          <!-- Cell 1 (First column) -->
+                          <td 
+                            class="nl-table-comparison__cell"
+                            style="background-color: {{ row.settings.cell_1_bg }};"
+                          >
+                            {{ row.settings.cell_1_text }}
+                          </td>
+                        {% endif %}
+
+                        {% if section.settings.visible_columns >= 2 %}
+                          <!-- Cell 2 (Second column) -->
+                          <td 
+                            class="nl-table-comparison__cell"
+                            style="background-color: {{ row.settings.cell_2_bg }};"
+                          >
+                            {{ row.settings.cell_2_text }}
+                          </td>
+                        {% endif %}
+
+                        {% if section.settings.visible_columns >= 3 %}
+                          <!-- Cell 3 (Third column - scrollable) -->
+                          <td 
+                            class="nl-table-comparison__cell nl-table-comparison__cell--scroll"
+                            style="background-color: {{ row.settings.cell_3_bg }};"
+                          >
+                            {{ row.settings.cell_3_text }}
+                          </td>
+                        {% endif %}
+                      </tr>
+                    {% endif %}
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        {% if button_text != blank %}
+          <div class="nl-table-comparison__cta-container">
+            <a 
+              href="{{ button_url | default: '#' }}" 
+              class="nl-table-comparison__button nl-smooth-scroll-btn"
+              style="background-color: {{ section.settings.button_bg_color }};"
+            >
+              <div class="nl-table-comparison__button-content">
+                <span>{{ button_text }}</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-[-90deg]">
+                  <path d="M8 12L12 8L8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Guarantee Badge -->
+            {% if guarantee_text != blank %}
+              <div class="nl-table-comparison__guarantee">
+                {% if section.settings.guarantee_icon %}
+                  <div class="nl-table-comparison__guarantee-icon">
+                    <img src="{{ section.settings.guarantee_icon | image_url: width: 24 }}" alt="" width="24" height="24" loading="lazy">
+                  </div>
+                {% endif %}
+                <p class="nl-table-comparison__guarantee-text">{{ guarantee_text }}</p>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Smooth scroll functionality
+  document.querySelectorAll('.nl-smooth-scroll-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        var target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Table Comparison",
+  "tag": "section",
+  "class": "section-nl-table-comparison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "range",
+      "id": "visible_columns",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Number of Visible Columns",
+      "default": 3,
+      "info": "Set to 2 to hide the 'More Coffee' column, or to 1 to show only the 'Thaura' column"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Being Weekend Dad vs Every Day Dad"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_background_image",
+      "label": "Use Green Background with Image",
+      "default": true,
+      "info": "When enabled, uses green background with image. When disabled, uses white background."
+    },
+    {
+      "type": "range",
+      "id": "background_opacity",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Background Image Opacity",
+      "default": 30
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Try Dryft™ Now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "guarantee_icon",
+      "label": "Guarantee Icon"
+    },
+    {
+      "type": "text",
+      "id": "guarantee_text",
+      "label": "Guarantee Text",
+      "default": "Melt Fat Or Get Your Money Back!"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#1e3a16"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card Background",
+      "default": "#f4f4f6"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#00754a"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background",
+      "default": "#084c25"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column Header",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "column_title",
+          "label": "Column Title",
+          "default": "Column"
+        },
+        {
+          "type": "color",
+          "id": "header_bg_color",
+          "label": "Header Background Color",
+          "default": "#084c25"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Table Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "row_label",
+          "label": "Row Label",
+          "default": "Row Label"
+        },
+        {
+          "type": "header",
+          "content": "First Column"
+        },
+        {
+          "type": "textarea",
+          "id": "cell_1_text",
+          "label": "Cell 1 Text",
+          "default": "Content here"
+        },
+        {
+          "type": "color",
+          "id": "cell_1_bg",
+          "label": "Cell 1 Background",
+          "default": "#eef2d4"
+        },
+        {
+          "type": "header",
+          "content": "Second Column"
+        },
+        {
+          "type": "textarea",
+          "id": "cell_2_text",
+          "label": "Cell 2 Text",
+          "default": "Content here"
+        },
+        {
+          "type": "color",
+          "id": "cell_2_bg",
+          "label": "Cell 2 Background",
+          "default": "#f2d4d6"
+        },
+        {
+          "type": "header",
+          "content": "Third Column (Optional)"
+        },
+        {
+          "type": "textarea",
+          "id": "cell_3_text",
+          "label": "Cell 3 Text",
+          "default": "Content here",
+          "info": "This content will only show when 'Number of Visible Columns' is set to 3"
+        },
+        {
+          "type": "color",
+          "id": "cell_3_bg",
+          "label": "Cell 3 Background",
+          "default": "#f2d4d6"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table Comparison",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "column_title": "Thaura",
+            "header_bg_color": "#084c25"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "column_title": "Pushing Through",
+            "header_bg_color": "#9f1e1b"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "column_title": "More Coffee",
+            "header_bg_color": "#9f1e1b"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Monday-Friday evenings",
+            "cell_1_text": "Energy for family",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Collapsed on couch",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Wired but exhausted",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "When kids ask to play",
+            "cell_1_text": "\"Let's do it\"",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "\"Not tonight, too tired\"",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "\"Maybe this weekend\"",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Weeknight presence",
+            "cell_1_text": "Engaged and present",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Physically there, mentally checked out",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Anxious, irritable",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Weekend difference",
+            "cell_1_text": "Consistent all week",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Only \"on\" Saturday-Sunday",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Playing catch-up, still tired",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Kids' experience",
+            "cell_1_text": "Dad shows up every day",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Weekend Dad",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Unpredictable Dad",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Your guilt level",
+            "cell_1_text": "Minimal - you're showing up",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Crushing - you know you're absent",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Constant",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Long-term pattern",
+            "cell_1_text": "Sustainable",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Leads to burnout",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Gets worse over time",
+            "cell_3_bg": "#f2d4d6"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

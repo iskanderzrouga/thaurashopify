@@ -1,0 +1,219 @@
+/* ============================================
+   YOUR KIDS WON'T SECTION
+   Exact from Figma Design
+   ============================================ */
+
+:root {
+  /* Colors */
+  --adv-kids-bg: #ffffff;
+  --adv-kids-text-color: #0b0b0b;
+
+  /* Typography - Desktop */
+  --adv-kids-headline-size: 32px;
+  --adv-kids-headline-line-height: 38.4px;
+  --adv-kids-body-size: 20px;
+  --adv-kids-body-line-height: 28px;
+
+  /* Spacing */
+  --adv-kids-section-gap: 25px;
+
+  /* Dimensions */
+  --adv-kids-max-width: 1040px;
+  --adv-kids-image-height: 638px;
+}
+
+/* ============================================
+   MAIN SECTION
+   ============================================ */
+
+.adv-your-kids {
+  background-color: var(--adv-kids-bg) !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.adv-your-kids__container {
+  margin: 0 auto !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--adv-kids-section-gap) !important;
+  align-items: flex-start !important;
+}
+
+/* ============================================
+   HEADLINE (Bold, NOT Italic)
+   ============================================ */
+
+.adv-your-kids__headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-kids-headline-size) !important;
+  font-weight: 700 !important; /* Bold */
+  font-style: normal !important; /* NOT Italic */
+  line-height: var(--adv-kids-headline-line-height) !important;
+  color: var(--adv-kids-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.adv-your-kids__headline p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 700 !important; /* Bold */
+  font-style: normal !important; /* NOT Italic */
+  line-height: inherit !important;
+  color: inherit !important;
+  text-align: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ============================================
+   MAIN IMAGE
+   ============================================ */
+
+.adv-your-kids__image-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: var(--adv-kids-image-height) !important;
+  overflow: hidden !important;
+  background-color: #d9d9d9 !important; /* Gray placeholder */
+}
+
+.adv-your-kids__image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ============================================
+   BODY TEXT (Regular, Normal by default)
+   ============================================ */
+
+.adv-your-kids__body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-kids-body-size) !important;
+  font-weight: 400 !important; /* Regular */
+  font-style: normal !important; /* Normal by default (NOT forced Italic) */
+  line-height: var(--adv-kids-body-line-height) !important;
+  color: var(--adv-kids-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.adv-your-kids__body p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 400 !important; /* Regular by default */
+  font-style: normal !important; /* Normal by default (NOT forced Italic) */
+  line-height: inherit !important;
+  color: inherit !important;
+  text-align: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure paragraphs have proper spacing */
+.adv-your-kids__body p + p {
+  margin-top: 28px !important; /* Same as line-height for spacing between paragraphs */
+}
+
+/* Allow Bold from rich text editor (strong/b tags) */
+.adv-your-kids__body strong,
+.adv-your-kids__body b {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 700 !important; /* Allow Bold */
+  font-style: normal !important; /* Keep normal by default */
+}
+
+/* Allow Italic from rich text editor (em/i tags) */
+.adv-your-kids__body em,
+.adv-your-kids__body i {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: inherit !important; /* Inherit weight (can be bold or regular) */
+  font-style: italic !important; /* Allow Italic */
+}
+
+/* Allow Bold Italic combination */
+.adv-your-kids__body strong em,
+.adv-your-kids__body strong i,
+.adv-your-kids__body b em,
+.adv-your-kids__body b i,
+.adv-your-kids__body em strong,
+.adv-your-kids__body i strong,
+.adv-your-kids__body em b,
+.adv-your-kids__body i b {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 700 !important; /* Bold */
+  font-style: italic !important; /* Italic */
+}
+
+/* ============================================
+   MOBILE RESPONSIVE (max-width: 749px)
+   ============================================ */
+
+@media screen and (max-width: 749px) {
+  :root {
+    /* Typography - Mobile */
+    --adv-kids-headline-size: 26px;
+    --adv-kids-headline-line-height: 31.2px;
+    --adv-kids-body-size: 18px;
+    --adv-kids-body-line-height: 25.2px;
+
+    /* Spacing - Mobile */
+    --adv-kids-section-gap: 20px;
+
+    /* Dimensions - Mobile (Exact from Figma Frame 2147223886) */
+    --adv-kids-max-width: 400px; /* Container: 400px */
+    --adv-kids-content-width: 360px; /* Content inside: 360px */
+    --adv-kids-image-height: 360px; /* Image: 360x360px square */
+  }
+
+
+  /* Ensure all content elements are 360px */
+  .adv-your-kids__headline,
+  .adv-your-kids__image-wrapper,
+  .adv-your-kids__body {
+    max-width: var(--adv-kids-content-width) !important; /* 360px */
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .adv-your-kids__image-wrapper {
+    height: var(
+      --adv-kids-image-height
+    ) !important; /* 360px square from Figma */
+    aspect-ratio: 1 / 1 !important; /* Square aspect ratio */
+  }
+
+  .adv-your-kids__headline {
+    font-size: var(--adv-kids-headline-size) !important;
+    line-height: var(--adv-kids-headline-line-height) !important;
+  }
+
+  .adv-your-kids__body {
+    font-size: var(--adv-kids-body-size) !important;
+    line-height: var(--adv-kids-body-line-height) !important;
+  }
+
+  /* Paragraph spacing on mobile */
+  .adv-your-kids__body p + p {
+    margin-top: 25.2px !important; /* Same as mobile line-height */
+  }
+}
+
+/* ============================================
+   TABLET RESPONSIVE (750px - 989px)
+   ============================================ */
+
+/* @media screen and (min-width: 750px) and (max-width: 989px) {
+  .adv-your-kids__container {
+    max-width: 700px !important;
+    padding: 0 30px !important;
+  }
+} */

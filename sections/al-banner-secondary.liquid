@@ -1,0 +1,250 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="section-{{ section.id }}-padding relative flex flex-col-reverse md:grid md:grid-cols-2"
+  style="background-color: {{ section.settings.bgcolor }}"
+>
+  <div
+    class="mx-auto w-full relative md:min-h-[650px] flex items-center md:ml-auto px-5 pt-10 pb-20 md:p-16"
+    style="max-width: {{ section.settings.max_width | divided_by : 2 }}px;"
+  >
+    <div class="flex flex-col h-full justify-center gap-6 md:gap-12">
+      {% if section.settings.heading != blank %}
+        <h2 class="text-[26px] md:text-[40px] font-bold !leading-tight text-[#272727]">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#272727]">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="flex flex-col items-center justify-center md:items-start gap-6 md:max-w-[660px] text-center md:text-left">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'heading' %}
+                {% if block.settings.heading != blank %}
+                  <div
+                    class="{% if block.settings.small_heading %} text-[32px] md:text-[32px] lg:text-[46px] {% else %} text-[36px] md:text-[40px] lg:text-[62px] {% endif %} font-bold !leading-tight text-[#272727]"
+                    style="color: {{section.settings.color_primary}}"
+                  >
+                    {{ block.settings.heading }}
+                  </div>
+                {% endif %}
+
+              {% when 'description' %}
+                {% if block.settings.description != blank %}
+                  <div
+                    class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#272727]"
+                    style="color: {{section.settings.color_secondary}}"
+                  >
+                    {{ block.settings.description }}
+                  </div>
+                {% endif %}
+
+              {% when 'button' %}
+                {% if block.settings.button_label != blank %}
+                  <div class="w-full md:w-fit mx-auto md:mx-0 mt-6">
+                    <a
+                      href="{{ block.settings.button_url }}"
+                      class="new-button--secondary"
+                    >
+                      {{ block.settings.button_label }}
+                      {%- render 'icon-arrow-right' -%}
+                    </a>
+                  </div>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-full md:w-fit mx-auto">
+          <a
+            href="{{ section.settings.button_url }}"
+            class="new-button--primary"
+          >
+            {{ section.settings.button_label }}
+            {%- render 'icon-arrow-right' -%}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if section.settings.bg_image != blank %}
+    {{
+      section.settings.bg_image
+      | image_url: width: 1000
+      | image_tag: class: 'w-full h-full object-cover', sizes: '1000px'
+    }}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "AL Banner Secondary",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_primary",
+      "label": "Primary Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary Color",
+      "default": "#00176B"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "BG Image"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "small_heading",
+          "label": "Small Heading",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AL Banner Secondary"
+    }
+  ]
+}
+{% endschema %}

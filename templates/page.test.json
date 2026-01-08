@@ -1,0 +1,300 @@
+{
+  "sections": {
+    "new_lp_featured_product_NMieYc": {
+      "type": "new-lp-featured-product-2",
+      "blocks": {
+        "review_dpntk6": {
+          "type": "review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "text": "<p><strong>4.8<\/strong> | Trusted by 47,981 Strong Men<\/p>"
+          }
+        },
+        "title_FAMyci": {
+          "type": "title",
+          "settings": {
+            "custom_title": "Try Dryft™ : Formulated For Real Results",
+            "heading_size": "h1"
+          }
+        },
+        "text2_JEBJ9f": {
+          "type": "text2",
+          "disabled": true,
+          "settings": {
+            "text": "Go from embarrassing dad bod to lean muscle and commanding presence - without extreme diets, fat burners, or spending hours in the gym."
+          }
+        },
+        "benefits_wrapper_Xyzppi": {
+          "type": "benefits_wrapper",
+          "settings": {}
+        },
+        "benefit_hKWGwb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>No More 3 PM Crash<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_UC4cNV": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Zero Caffeine<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_dgQMXB": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Energy Left for Family<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_E6qaxb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Clinically Proven: 27.9% Cortisol Reduction<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "bundle_inzVD3": {
+          "type": "bundle",
+          "settings": {}
+        },
+        "card_ygxxAe": {
+          "type": "card",
+          "settings": {
+            "slider_position": 0,
+            "default": true,
+            "product": "drift™-3-bottles",
+            "title": "Buy 3 Get One Free",
+            "serving": "$1.16 per serving",
+            "off": "50% OFF",
+            "show_sale": true,
+            "sale_text": "Sale Ends In:",
+            "description": "<p>✅ Save $139.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<br\/>✅ BIGGEST Discount<\/p>"
+          }
+        },
+        "card_fe3a3K": {
+          "type": "card",
+          "settings": {
+            "slider_position": 1,
+            "default": false,
+            "product": "drift™-2-bottles",
+            "title": "Buy 2 Bottles",
+            "serving": "$1.66 per serving",
+            "off": "29% OFF",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "description": "<p>✅ Save $39.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<\/p>"
+          }
+        },
+        "card_4bVrp9": {
+          "type": "card",
+          "settings": {
+            "slider_position": 2,
+            "default": false,
+            "product": "drift™-1-bottle",
+            "title": "Buy 1 Bottle",
+            "serving": "$1.99 per serving",
+            "off": "14% OFF",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "description": "<p>✅ Save $10.00<br\/>✅ 90 Day Money-Back Guarantee<\/p>"
+          }
+        },
+        "price_JdP3yx": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_X3mg6k": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_QLDmwk": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_eLzg7L": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "variant_picker_secondary_pWwVj7": {
+          "type": "variant_picker_secondary",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "buy_buttons_secondary_xMRCRF": {
+          "type": "buy_buttons_secondary",
+          "disabled": true,
+          "settings": {
+            "normal_button": false,
+            "custom_text": "Try Dryft™ Now",
+            "bottom_icon": "shopify:\/\/shop_images\/guarantee.png",
+            "bottom_text": "Get Results Or Your Money Back!",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "subscription_widget_xHfRfp": {
+          "type": "subscription_widget",
+          "disabled": true,
+          "settings": {
+            "label": "",
+            "default_onetime": false
+          }
+        },
+        "subscription_widget_child_CqixrF": {
+          "type": "subscription_widget_child",
+          "disabled": true,
+          "settings": {
+            "default": true,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-1-bottle-copy",
+            "discount": "16.95",
+            "id_1": "2278883501",
+            "id_2": "2278916269",
+            "id_3": "2278850733"
+          }
+        },
+        "subscription_widget_child_Q4rw9Y": {
+          "type": "subscription_widget_child",
+          "disabled": true,
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-2-bottles-copy",
+            "discount": "10.1",
+            "id_1": "2278981805",
+            "id_2": "2279014573",
+            "id_3": "2278949037"
+          }
+        },
+        "subscription_widget_child_6D69r3": {
+          "type": "subscription_widget_child",
+          "disabled": true,
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-3-bottles",
+            "discount": "7.75",
+            "id_1": "2277834925",
+            "id_2": "2277867693",
+            "id_3": "2277802157"
+          }
+        },
+        "benefits_wrapper3_rnGdJQ": {
+          "type": "benefits_wrapper3",
+          "disabled": true,
+          "settings": {}
+        },
+        "benefit3_JRW86T": {
+          "type": "benefit3",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipped in 24 Hours from our USA Warehouse",
+            "description": "Order within",
+            "label": "Ships Today",
+            "timer": true,
+            "border_bottom": true,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/truck.svg"
+          }
+        },
+        "benefit3_yLpYUf": {
+          "type": "benefit3",
+          "disabled": true,
+          "settings": {
+            "heading": "90 Day Money Back Guarantee",
+            "description": "Pause or cancel anytime",
+            "label": "",
+            "timer": false,
+            "border_bottom": false,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/money-back-guarantee_1.svg"
+          }
+        },
+        "image_rpinNX": {
+          "type": "image",
+          "settings": {
+            "percent": 60,
+            "image": "shopify:\/\/shop_images\/Frame_37.png"
+          }
+        },
+        "share_ndpLTm": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "review_dpntk6",
+        "title_FAMyci",
+        "text2_JEBJ9f",
+        "benefits_wrapper_Xyzppi",
+        "benefit_hKWGwb",
+        "benefit_UC4cNV",
+        "benefit_dgQMXB",
+        "benefit_E6qaxb",
+        "bundle_inzVD3",
+        "card_ygxxAe",
+        "card_fe3a3K",
+        "card_4bVrp9",
+        "price_JdP3yx",
+        "variant_picker_X3mg6k",
+        "quantity_selector_QLDmwk",
+        "buy_buttons_eLzg7L",
+        "variant_picker_secondary_pWwVj7",
+        "buy_buttons_secondary_xMRCRF",
+        "subscription_widget_xHfRfp",
+        "subscription_widget_child_CqixrF",
+        "subscription_widget_child_Q4rw9Y",
+        "subscription_widget_child_6D69r3",
+        "benefits_wrapper3_rnGdJQ",
+        "benefit3_JRW86T",
+        "benefit3_yLpYUf",
+        "image_rpinNX",
+        "share_ndpLTm"
+      ],
+      "name": "New Featured Product 2",
+      "settings": {
+        "section_id": "productsMain",
+        "color_primary": "#000000",
+        "color_secondary": "#fe6901",
+        "product": "drift",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "bottom_text": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "new_lp_featured_product_NMieYc"
+  ]
+}

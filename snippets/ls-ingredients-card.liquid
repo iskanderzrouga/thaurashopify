@@ -1,0 +1,42 @@
+<div class="border border-[#084C25] rounded-[16px]">
+  {% if heading != blank %}
+    <div class="rounded-t-[16px] bg-[#084C25] p-[10px] md:p-3">
+      <h2 class="text-[20px] md:text-[26px] font-bold !leading-tight text-[#fff] text-center italic">
+        {{ heading }}
+      </h2>
+    </div>
+  {% endif %}
+
+  <div class="bg-white rounded-b-[16px] p-5 md:p-[30px] flex flex-col gap-4 md:gap-5 w-full">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when type %}
+          <div class="flex items-center gap-4 w-full">
+            {% if block.settings.image != blank %}
+              {{
+                block.settings.image
+                | image_url: width: 90
+                | image_tag:
+                  class: 'w-full max-w-[60px] md:max-w-[90px] rounded-[100px] border border-[#084C25]',
+                  sizes: '90px'
+              }}
+            {% endif %}
+
+            <div class="flex flex-col gap-2 justify-center">
+              {% if block.settings.heading != blank %}
+                <div class="text-[18px] md:text-[18px] font-bold !leading-tight text-[#0B0B0B]">
+                  {{ block.settings.heading }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.description != blank %}
+                <div class="text-[16px] md:text-[18px] font-normal !leading-tight text-[#0B0B0B]">
+                  {{ block.settings.description }}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>

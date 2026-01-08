@@ -1,0 +1,211 @@
+{{ 'section-adv-header.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-header-wrapper">
+  {%- if section.settings.show_advertorial_label -%}
+    <div class="adv-label-bar">
+      <div class="page-width">
+        <p class="adv-label">{{ section.settings.advertorial_label }}</p>
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="adv-logo-bar">
+    <div class="page-width">
+      {%- if section.settings.logo -%}
+        <div class="adv-logo">
+          <img
+            src="{{ section.settings.logo | image_url: width: 400 }}"
+            alt="{{ section.settings.logo.alt | default: shop.name }}"
+            width="{{ section.settings.logo.width }}"
+            height="{{ section.settings.logo.height }}"
+            loading="lazy"
+          >
+        </div>
+      {%- else -%}
+        <h2 class="adv-site-name">{{ section.settings.site_name | default: shop.name }}</h2>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  .adv-header-wrapper {
+    background: {{ section.settings.background_color }};
+  }
+
+  .adv-label-bar {
+    text-align: center;
+    padding: 8px 0;
+    background: {{ section.settings.label_background }};
+  }
+
+  .adv-label {
+    margin: 0;
+    font-size: {{ section.settings.label_font_size }}px;
+    color: {{ section.settings.label_color }};
+    font-weight: 400;
+  }
+
+  .adv-logo-bar {
+    padding: 20px 0;
+  }
+
+  .adv-logo img {
+    max-width: {{ section.settings.logo_max_width }}px;
+    height: auto;
+  }
+
+  .adv-site-name {
+    font-size: {{ section.settings.site_name_size }}px;
+    color: {{ section.settings.text_color }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-logo img {
+      max-width: {{ section.settings.mobile_logo_width }}px;
+    }
+    
+    .adv-label {
+      font-size: {{ section.settings.mobile_label_size }}px;
+    }
+    
+    .adv-site-name {
+      font-size: {{ section.settings.mobile_site_name_size }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - Header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Advertorial Label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_advertorial_label",
+      "label": "Show advertorial label",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "advertorial_label",
+      "label": "Label text",
+      "default": "Advertorial"
+    },
+    {
+      "type": "color",
+      "id": "label_background",
+      "label": "Label background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label text color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Label font size (Desktop)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_label_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Label font size (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Logo / Site Name"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "site_name",
+      "label": "Site name (if no logo)",
+      "default": "StrongMenDaily"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo max width (Desktop)",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_width",
+      "min": 80,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo max width (Mobile)",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "site_name_size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Site name size (Desktop)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_site_name_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Site name size (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Header"
+    }
+  ]
+}
+{% endschema %}
+
+

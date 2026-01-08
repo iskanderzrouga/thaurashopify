@@ -1,0 +1,436 @@
+{%- liquid
+  # Variables
+  assign heading = section.settings.heading
+  assign button_text = section.settings.button_text
+  assign button_url = section.settings.button_url
+  assign guarantee_text = section.settings.guarantee_text
+  assign show_guarantee = section.settings.show_guarantee
+  
+  # Colors
+  assign bg_color = section.settings.bg_color
+  assign card_bg_color = section.settings.card_bg_color
+  assign heading_color = section.settings.heading_color
+  
+  # Padding
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+-%}
+
+<style>
+  .dad-comparison-table * {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+</style>
+
+<section 
+  class="dad-comparison-table relative w-full overflow-hidden py-20 lg:py-24"
+  style="background-color: {{ bg_color }};"
+  {{ section.shopify_attributes }}
+>
+  <!-- Background Image (Rotated) -->
+  {% if section.settings.background_image %}
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <div class="rotate-90 scale-y-[-1]">
+        <img 
+          src="{{ section.settings.background_image | image_url: width: 2560 }}" 
+          alt="" 
+          class="w-[2556px] h-[1440px] object-cover opacity-30"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    <!-- Main Card Container -->
+    <div 
+      class="max-w-[1240px] mx-auto rounded-2xl overflow-hidden"
+      style="background-color: {{ card_bg_color }}; box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.1), 0px 4px 7px -4px rgba(0,0,0,0.1);"
+    >
+      <div class="pt-12 pb-20 px-6 lg:px-20 lg:pt-14 lg:pb-24">
+        
+        <!-- Main Heading -->
+        {% if heading != blank %}
+          <h2 
+            class="text-center font-bold text-[32px] lg:text-[36px] leading-[1.4] mb-12 lg:mb-14"
+            style="color: {{ heading_color }};"
+          >
+            {{ heading }}
+          </h2>
+        {% endif %}
+
+        <!-- Comparison Table -->
+        <div class="bg-white rounded-2xl overflow-hidden mb-12 lg:mb-14" style="box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.1), 0px 4px 7px -4px rgba(0,0,0,0.1);">
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse" style="border: 1px solid #aaaaaa;">
+              <!-- Header Row -->
+              <thead>
+                <tr>
+                  <th class="bg-white border border-[#aaaaaa] w-[200px] min-w-[180px] p-0"></th>
+                  {% for column in section.blocks %}
+                    {% if column.type == 'column' %}
+                      <th 
+                        class="border border-[#aaaaaa] font-bold text-xl lg:text-2xl text-white text-center px-4 py-3 w-[300px] min-w-[250px]"
+                        style="background-color: {{ column.settings.header_bg_color }};"
+                      >
+                        {{ column.settings.column_title }}
+                      </th>
+                    {% endif %}
+                  {% endfor %}
+                </tr>
+              </thead>
+
+              <!-- Table Body -->
+              <tbody>
+                {% for row in section.blocks %}
+                  {% if row.type == 'row' %}
+                    <tr>
+                      <!-- Row Label -->
+                      <td class="bg-white border border-[#aaaaaa] font-bold text-[18px] lg:text-[22px] text-black text-center px-3 py-4 align-middle">
+                        {{ row.settings.row_label }}
+                      </td>
+
+                      <!-- Cell 1 (Thaura) -->
+                      <td 
+                        class="border border-[#aaaaaa] font-medium text-[16px] lg:text-[18px] text-black text-center px-4 py-4 align-middle"
+                        style="background-color: {{ row.settings.cell_1_bg }};"
+                      >
+                        {{ row.settings.cell_1_text }}
+                      </td>
+
+                      <!-- Cell 2 (Pushing Through) -->
+                      <td 
+                        class="border border-[#aaaaaa] font-medium text-[16px] lg:text-[18px] text-black text-center px-4 py-4 align-middle"
+                        style="background-color: {{ row.settings.cell_2_bg }};"
+                      >
+                        {{ row.settings.cell_2_text }}
+                      </td>
+
+                      <!-- Cell 3 (More Coffee) -->
+                      <td 
+                        class="border border-[#aaaaaa] font-medium text-[16px] lg:text-[18px] text-black text-center px-4 py-4 align-middle"
+                        style="background-color: {{ row.settings.cell_3_bg }};"
+                      >
+                        {{ row.settings.cell_3_text }}
+                      </td>
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        {% if button_text != blank %}
+          <div class="flex flex-col items-center gap-3 max-w-[500px] mx-auto">
+            <a 
+              href="{{ button_url | default: '#' }}" 
+              class="w-full h-[50px] rounded-full flex items-center justify-center gap-2 font-bold text-[18px] lg:text-[20px] text-white uppercase transition-all hover:opacity-90"
+              style="background-color: {{ section.settings.button_bg_color }};"
+            >
+              <span class="tracking-wide">{{ button_text }}</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-[-90deg]">
+                <path d="M8 12L12 8L8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- Guarantee Badge -->
+            {% if show_guarantee and guarantee_text != blank %}
+              <div class="flex items-center gap-2 justify-center">
+                <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: #247042;">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.5L4.5 8L11 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p class="text-[14px] text-black leading-[1.4] font-normal">{{ guarantee_text }}</p>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Dad Comparison Table",
+  "tag": "section",
+  "class": "section-dad-comparison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Being Weekend Dad vs Every Day Dad"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image (Optional)"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Try Dryft™ Now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_guarantee",
+      "label": "Show Guarantee Badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "guarantee_text",
+      "label": "Guarantee Text",
+      "default": "Melt Fat Or Get Your Money Back!"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#1e3a16"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card Background",
+      "default": "#f4f4f6"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#00754a"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background",
+      "default": "#084c25"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column Header",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "column_title",
+          "label": "Column Title",
+          "default": "Column"
+        },
+        {
+          "type": "color",
+          "id": "header_bg_color",
+          "label": "Header Background Color",
+          "default": "#084c25"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Table Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "row_label",
+          "label": "Row Label",
+          "default": "Row Label"
+        },
+        {
+          "type": "textarea",
+          "id": "cell_1_text",
+          "label": "Cell 1 Text (Thaura)",
+          "default": "Content here"
+        },
+        {
+          "type": "color",
+          "id": "cell_1_bg",
+          "label": "Cell 1 Background",
+          "default": "#eef2d4"
+        },
+        {
+          "type": "textarea",
+          "id": "cell_2_text",
+          "label": "Cell 2 Text (Pushing Through)",
+          "default": "Content here"
+        },
+        {
+          "type": "color",
+          "id": "cell_2_bg",
+          "label": "Cell 2 Background",
+          "default": "#f2d4d6"
+        },
+        {
+          "type": "textarea",
+          "id": "cell_3_text",
+          "label": "Cell 3 Text (More Coffee)",
+          "default": "Content here"
+        },
+        {
+          "type": "color",
+          "id": "cell_3_bg",
+          "label": "Cell 3 Background",
+          "default": "#f2d4d6"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dad Comparison Table",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "column_title": "Thaura",
+            "header_bg_color": "#084c25"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "column_title": "Pushing Through",
+            "header_bg_color": "#9f1e1b"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "column_title": "More Coffee",
+            "header_bg_color": "#9f1e1b"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Monday-Friday evenings",
+            "cell_1_text": "Energy for family",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Collapsed on couch",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Wired but exhausted",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "When kids ask to play",
+            "cell_1_text": "\"Let's do it\"",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "\"Not tonight, too tired\"",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "\"Maybe this weekend\"",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Weeknight presence",
+            "cell_1_text": "Engaged and present",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Physically there, mentally checked out",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Anxious, irritable",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Weekend difference",
+            "cell_1_text": "Consistent all week",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Only \"on\" Saturday-Sunday",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Playing catch-up, still tired",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Kids' experience",
+            "cell_1_text": "Dad shows up every day",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Weekend Dad",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Unpredictable Dad",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Your guilt level",
+            "cell_1_text": "Minimal - you're showing up",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Crushing - you know you're absent",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Constant",
+            "cell_3_bg": "#f2d4d6"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "row_label": "Long-term pattern",
+            "cell_1_text": "Sustainable",
+            "cell_1_bg": "#eef2d4",
+            "cell_2_text": "Leads to burnout",
+            "cell_2_bg": "#f2d4d6",
+            "cell_3_text": "Gets worse over time",
+            "cell_3_bg": "#f2d4d6"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

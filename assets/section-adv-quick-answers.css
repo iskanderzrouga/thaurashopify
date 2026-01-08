@@ -1,0 +1,561 @@
+/* ============================================================================
+   Section: Quick Answers (FAQ Accordion)
+   Description: Pixel-perfect Figma-to-Shopify conversion using native HTML5 <details>
+   Approach: Mobile-first responsive design with exact Figma values
+   ============================================================================ */
+
+/* ============================================================================
+   BASE STYLES - MOBILE FIRST (0-749px)
+   ============================================================================ */
+
+.adv-qa-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  display: block;
+}
+
+.adv-qa-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.adv-qa-inner {
+  background-color: var(--adv-qa-inner-bg, #f4f4f6);
+  width: 100%;
+  padding: 24px 20px;
+  border-radius: 0;
+}
+
+.adv-qa-content {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ============================================================================
+   HEADING STYLES
+   ============================================================================ */
+
+.adv-qa__heading {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--adv-qa-heading-color, #000000);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================================
+   ACCORDION LIST
+   ============================================================================ */
+
+.adv-qa__accordion-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================================
+   ACCORDION ITEM (DETAILS)
+   ============================================================================ */
+
+.adv-qa__accordion-item {
+  width: 100%;
+  margin: -1px 0 0 0;
+  padding: 0;
+}
+
+.adv-qa__accordion-item:first-child {
+  margin-top: 0;
+}
+
+/* ============================================================================
+   ACCORDION QUESTION (SUMMARY)
+   ============================================================================ */
+
+.adv-qa__question {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid var(--adv-qa-border-color, #25505f);
+  border-bottom: 1px solid var(--adv-qa-border-color, #25505f);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hide default details marker */
+.adv-qa__question::-webkit-details-marker,
+.adv-qa__question::marker {
+  display: none;
+}
+
+.adv-qa__question:hover {
+  background-color: rgba(37, 80, 95, 0.05);
+}
+
+.adv-qa__question:focus {
+  outline: 2px solid var(--adv-qa-border-color, #25505f);
+  outline-offset: -2px;
+}
+
+.adv-qa__question-text {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--adv-qa-question-color, #000000);
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================================
+   ACCORDION ICON (PLUS/MINUS)
+   ============================================================================ */
+
+.adv-qa__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--adv-qa-icon-color, #25505f);
+}
+
+.adv-qa__icon-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.adv-qa__icon-vertical {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+/* When accordion is open */
+.adv-qa__accordion-item[open] .adv-qa__icon-vertical {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+/* ============================================================================
+   ACCORDION ANSWER (COLLAPSIBLE CONTENT)
+   ============================================================================ */
+
+.adv-qa__answer {
+  overflow: hidden;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.adv-qa__answer-inner {
+  padding: 0 0 16px 0;
+}
+
+.adv-qa__answer-content {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--adv-qa-answer-color, #4a4a4a);
+  margin: 0;
+  padding: 0;
+}
+
+.adv-qa__answer-content p {
+  margin: 0 0 12px 0;
+}
+
+.adv-qa__answer-content p:last-child {
+  margin-bottom: 0;
+}
+
+.adv-qa__answer-content ul,
+.adv-qa__answer-content ol {
+  margin: 0 0 12px 0;
+  padding-left: 20px;
+}
+
+.adv-qa__answer-content li {
+  margin-bottom: 8px;
+}
+
+.adv-qa__answer-content li:last-child {
+  margin-bottom: 0;
+}
+
+.adv-qa__answer-content a {
+  color: var(--adv-qa-border-color, #25505f);
+  text-decoration: underline;
+}
+
+.adv-qa__answer-content a:hover {
+  text-decoration: none;
+}
+
+.adv-qa__answer-content strong,
+.adv-qa__answer-content b {
+  font-weight: 600;
+}
+
+/* ============================================================================
+   CTA BUTTON SECTION
+   ============================================================================ */
+
+.adv-qa__cta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.adv-qa__cta-button {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--adv-qa-cta-bg, #00c249);
+  color: var(--adv-qa-cta-text, #ffffff);
+  font-family: "Open Sans", "Inter", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.36;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 0px 0px var(--adv-qa-cta-shadow, #028332);
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out, transform 0.1s ease-in-out;
+  padding: 0 24px;
+  margin: 0;
+}
+
+.adv-qa__cta-button:hover {
+  opacity: 0.8;
+}
+
+.adv-qa__cta-button:active {
+  transform: translateY(2px);
+  box-shadow: 0px 2px 0px 0px var(--adv-qa-cta-shadow, #028332);
+}
+
+.adv-qa__cta-button:focus {
+  outline: 2px solid var(--adv-qa-cta-bg, #00c249);
+  outline-offset: 4px;
+}
+
+/* ============================================================================
+   TABLET STYLES (750px - 989px)
+   ============================================================================ */
+
+@media screen and (min-width: 750px) {
+  .adv-qa-container {
+    padding: 0 40px;
+  }
+
+  .adv-qa-inner {
+    padding: 32px 32px;
+  }
+
+  .adv-qa-content {
+    gap: 48px;
+  }
+
+  .adv-qa__heading {
+    font-size: 32px;
+  }
+
+  .adv-qa__question {
+    gap: 20px;
+    padding: 16px 0;
+  }
+
+  .adv-qa__question-text {
+    font-size: 16px;
+  }
+
+  .adv-qa__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .adv-qa__answer-inner {
+    padding: 0 0 20px 0;
+  }
+
+  .adv-qa__answer-content {
+    font-size: 15px;
+  }
+
+  .adv-qa__cta-button {
+    height: 60px;
+    font-size: 20px;
+    box-shadow: 0px 5px 0px 0px var(--adv-qa-cta-shadow, #028332);
+  }
+
+  .adv-qa__cta-button:active {
+    box-shadow: 0px 3px 0px 0px var(--adv-qa-cta-shadow, #028332);
+  }
+}
+
+/* ============================================================================
+   DESKTOP STYLES (990px+)
+   ============================================================================ */
+
+@media screen and (min-width: 990px) {
+  .adv-qa-container {
+    padding: 0 150px;
+  }
+
+  .adv-qa-inner {
+    max-width: 1040px;
+    padding: 32px 48px;
+  }
+
+  .adv-qa-content {
+    gap: 65px;
+  }
+
+  .adv-qa__heading {
+    font-size: 36px;
+    line-height: 50.4px;
+  }
+
+  .adv-qa__question {
+    gap: 24px;
+    padding: 20px 0;
+  }
+
+  .adv-qa__question-text {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  .adv-qa__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .adv-qa__answer-inner {
+    padding: 0 0 24px 0;
+  }
+
+  .adv-qa__answer-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .adv-qa__cta-button {
+    height: 70px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px 0px var(--adv-qa-cta-shadow, #028332);
+    line-height: 32.68px;
+  }
+
+  .adv-qa__cta-button:active {
+    box-shadow: 0px 4px 0px 0px var(--adv-qa-cta-shadow, #028332);
+  }
+}
+
+/* ============================================================================
+   LARGE DESKTOP STYLES (1200px+)
+   ============================================================================ */
+
+@media screen and (min-width: 1200px) {
+  .adv-qa-inner {
+    padding: 32px 48px;
+  }
+}
+
+/* ============================================================================
+   PRINT STYLES
+   ============================================================================ */
+
+@media print {
+  .adv-qa-wrapper {
+    padding: 20px !important;
+  }
+
+  .adv-qa-container {
+    padding: 0 !important;
+  }
+
+  .adv-qa-inner {
+    padding: 20px;
+  }
+
+  .adv-qa__question {
+    border: 1px solid #000;
+    page-break-inside: avoid;
+  }
+
+  .adv-qa__accordion-item {
+    page-break-inside: avoid;
+  }
+
+  .adv-qa__accordion-item[open] {
+    page-break-inside: auto;
+  }
+
+  .adv-qa__answer {
+    animation: none;
+  }
+
+  .adv-qa__answer-inner {
+    padding: 12px 0;
+  }
+
+  .adv-qa__icon {
+    display: none;
+  }
+
+  .adv-qa__cta-button {
+    border: 2px solid #000;
+    box-shadow: none;
+  }
+}
+
+/* ============================================================================
+   ACCESSIBILITY & INTERACTION STATES
+   ============================================================================ */
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .adv-qa__question,
+  .adv-qa__icon-vertical,
+  .adv-qa__answer,
+  .adv-qa__cta-button {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  @keyframes slideDown {
+    from,
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .adv-qa__question {
+    border-width: 2px;
+  }
+
+  .adv-qa__cta-button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Focus visible for better keyboard navigation */
+.adv-qa__question:focus-visible {
+  outline: 3px solid var(--adv-qa-border-color, #25505f);
+  outline-offset: 2px;
+}
+
+.adv-qa__cta-button:focus-visible {
+  outline: 3px solid var(--adv-qa-cta-bg, #00c249);
+  outline-offset: 4px;
+}
+
+/* ============================================================================
+   SHOPIFY THEME EDITOR SUPPORT
+   ============================================================================ */
+
+/* Ensure proper display in theme editor */
+.shopify-section--adv-quick-answers {
+  position: relative;
+}
+
+/* Theme editor hover state */
+.shopify-section--adv-quick-answers:hover {
+  outline: 2px dashed #5c6ac4;
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   UTILITY CLASSES
+   ============================================================================ */
+
+/* Hide on specific breakpoints if needed */
+.adv-qa-wrapper.hide-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .adv-qa-wrapper.hide-mobile {
+    display: block;
+  }
+
+  .adv-qa-wrapper.hide-tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .adv-qa-wrapper.hide-tablet {
+    display: block;
+  }
+
+  .adv-qa-wrapper.hide-desktop {
+    display: none;
+  }
+}
+
+/* ============================================================================
+   LOADING STATE (OPTIONAL)
+   ============================================================================ */
+
+.adv-qa-wrapper[data-loading="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* ============================================================================
+   END OF STYLES
+   ============================================================================ */

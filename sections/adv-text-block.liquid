@@ -1,0 +1,523 @@
+{{ 'section-adv-text-block.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-text-block-wrapper" style="background: {{ section.settings.background_color }};">
+  <div class="page-width">
+    <div class="adv-text-block-inner" style="max-width: {{ section.settings.content_width }}px;">
+      
+      {%- if section.settings.heading != blank -%}
+        <h2 class="adv-text-block-heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.content != blank -%}
+        <div class="adv-text-block-content">
+          {{ section.settings.content }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.show_button -%}
+        <div class="adv-text-block-cta">
+          <a 
+            href="{{ section.settings.button_link }}" 
+            class="adv-text-block-button"
+            style="background: {{ section.settings.button_bg }}; color: {{ section.settings.button_color }};"
+          >
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      {%- endif -%}
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .adv-text-block-wrapper {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  .adv-text-block-inner {
+    margin: 0 auto;
+    text-align: {{ section.settings.text_alignment }};
+    {%- if section.settings.show_box_style -%}
+      padding: {{ section.settings.box_padding }}px;
+      border: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
+      border-radius: {{ section.settings.border_radius }}px;
+      background: {{ section.settings.box_background }};
+    {%- endif -%}
+  }
+
+  .adv-text-block-heading {
+    font-size: {{ section.settings.heading_size }}px;
+    line-height: 1.2;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 {{ section.settings.heading_margin }}px;
+    font-weight: {{ section.settings.heading_weight }};
+  }
+
+  .adv-text-block-content {
+    font-size: {{ section.settings.text_size }}px;
+    line-height: {{ section.settings.line_height }};
+    color: {{ section.settings.text_color }};
+  }
+
+  .adv-text-block-content p {
+    margin: 0 0 {{ section.settings.paragraph_spacing }}px;
+  }
+
+  .adv-text-block-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .adv-text-block-content strong {
+    font-weight: 600;
+    color: {{ section.settings.highlight_color }};
+  }
+
+  .adv-text-block-content em {
+    font-style: italic;
+    color: {{ section.settings.text_color }};
+  }
+
+  .adv-text-block-cta {
+    margin-top: {{ section.settings.button_margin }}px;
+  }
+
+  .adv-text-block-button {
+    display: inline-block;
+    padding: {{ section.settings.button_padding_y }}px {{ section.settings.button_padding_x }}px;
+    font-size: {{ section.settings.button_size }}px;
+    font-weight: {{ section.settings.button_weight }};
+    border-radius: {{ section.settings.button_radius }}px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .adv-text-block-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-text-block-wrapper {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    .adv-text-block-inner {
+      {%- if section.settings.show_box_style -%}
+        padding: {{ section.settings.mobile_box_padding }}px;
+      {%- endif -%}
+    }
+
+    .adv-text-block-heading {
+      font-size: {{ section.settings.mobile_heading_size }}px;
+    }
+
+    .adv-text-block-content {
+      font-size: {{ section.settings.mobile_text_size }}px;
+    }
+
+    .adv-text-block-button {
+      font-size: {{ section.settings.mobile_button_size }}px;
+      padding: {{ section.settings.mobile_button_padding_y }}px {{ section.settings.mobile_button_padding_x }}px;
+      {%- if section.settings.mobile_button_full_width -%}
+        display: block;
+        width: 100%;
+      {%- endif -%}
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - Text Block",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading (optional)"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 18,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (Desktop)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "min": 16,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (Mobile)",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "heading_margin",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading margin bottom",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text content"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_size",
+      "min": 14,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "min": 1.2,
+      "max": 2,
+      "step": 0.1,
+      "label": "Line height",
+      "default": 1.6
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Paragraph spacing",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Box Style (Optional)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_box_style",
+      "label": "Show as boxed content",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "box_padding",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Box padding (Desktop)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_box_padding",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Box padding (Mobile)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "box_background",
+      "label": "Box background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "header",
+      "content": "Call to Action Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "TRY THAURA RISK-FREE →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "range",
+      "id": "button_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Button size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "button_weight",
+      "label": "Button weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "button_padding_x",
+      "min": 24,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Button horizontal padding (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "button_padding_y",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_padding_x",
+      "min": 16,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Button horizontal padding (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_padding_y",
+      "min": 10,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "button_margin",
+      "min": 16,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Button margin top",
+      "default": 32
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_button_full_width",
+      "label": "Full width button on mobile",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 1050
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight color (for bold text)",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Text Block"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,350 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="section-{{ section.id }}-padding px-[15px] md:rounded-t-[30px]"
+  style="background-color: {{ section.settings.bgcolor }}"
+>
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col items-center justify-center gap-[30px] md:gap-[60px] w-full">
+      {% if section.settings.heading != blank %}
+        <h2
+          class="text-[36px] md:text-[50px] font-semibold text-[#FE6901] !leading-tight text-center"
+          style="color: {{section.settings.color_primary}}"
+        >
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      <div class="w-full">
+        <div class="splide mb-16 lg:mb-8 al-flip-card__slider w-full">
+          <div class="splide__track pb-2">
+            <ul class="splide__list md:!grid md:!grid-cols-2 md:gap-5">
+              {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'row' %}
+                      <div class="splide__slide">
+                        <div class="al-flip-card__item group relative bg-[#FE6901] rounded-[20px] flex flex-col items-center justify-between gap-[60px] h-full px-4 py-12 md:py-5 text-center cursor-pointer">
+                          {% if block.settings.label != blank %}
+                            <div
+                              class="text-[22px] md:text-[28px] px-5 py-2 font-bold !leading-tight text-[#FE6901] bg-[#FFF5EB] rounded-[5px]"
+                              style="color: {{section.settings.color_primary}}"
+                            >
+                              {{ block.settings.label }}
+                            </div>
+                          {% endif %}
+
+                          {% if block.settings.heading != blank %}
+                            <div
+                              class="text-[28px] md:text-[32px] font-bold !leading-tight text-[#FFF5EB]"
+                              style="color: {{section.settings.color_secondary}}"
+                            >
+                              {{ block.settings.heading }}
+                            </div>
+                          {% endif %}
+
+                          {% if block.settings.button_text != blank %}
+                            <div class="flex items-center justify-center gap-2">
+                              <div
+                                class="text-[20px] md:text-[24px] font-normal !leading-tight text-[#FFFFFA]"
+                                style="color: {{section.settings.color_secondary}}"
+                              >
+                                {{ block.settings.button_text }}
+                              </div>
+                              {% render 'icon-arrow-right' %}
+                            </div>
+                          {% endif %}
+
+                          <div class="absolute overflow-y-auto opacity-0  duration-100 group-[.active]:opacity-100 top-0 left-0 w-full h-full border border-[#FE6901] rounded-[20px] bg-[#FFFFFA] px-4 py-5 flex flex-col items-center text-center gap-[30px]">
+                            {% if block.settings.tag != blank %}
+                              <div
+                                class="text-[22px] md:text-[28px] px-5 py-2 font-bold !leading-tight text-[#FFFFFA] bg-[#FE6901] rounded-[5px]"
+                                style="color: {{section.settings.color_secondary}}"
+                              >
+                                {{ block.settings.tag }}
+                              </div>
+                            {% endif %}
+
+                            {% if block.settings.description != blank %}
+                              <div
+                                class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#212537]"
+                                style="color: {{section.settings.color_tertiary}}"
+                              >
+                                {{ block.settings.description }}
+                              </div>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                  {% endcase %}
+                {% endfor %}
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-full md:w-fit mx-auto md:min-w-[500px]">
+          {% render 'new-button', section: section %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__pagination__page {
+    height: 10px;
+    background: transparent;
+    width: 10px;
+    border: 1px solid #FE6901;
+  }
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__pagination__page.is-active {
+    background: #FE6901;
+    transform: unset;
+    width: 40px;
+    border-radius: 20px;
+  }
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__pagination {
+    gap: 5px;
+    bottom: -40px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__arrow {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #00176b;
+    background-color: transparent;
+    opacity: 1;
+    top: auto;
+    bottom: -80px;
+  }
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: #00176b;
+  }
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__arrow--prev {
+    right: 80px;
+    left: auto;
+  }
+  .section-{{ section.id }}-padding .al-flip-card__slider .splide__arrow--next {
+    right: 0px;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('.section-{{ section.id }}-padding .al-flip-card__slider', {
+      perPage: 1,
+      perMove: 1,
+      rewind: true,
+      gap: '15px',
+      trimSpace: false,
+      pagination: true,
+      mediaQuery: 'min',
+      arrows: false,
+      breakpoints: {
+        767: {
+          destroy: true,
+        },
+      },
+    });
+    splide.mount();
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const flipCards = document.querySelectorAll('.section-{{ section.id }}-padding .al-flip-card__item');
+
+    flipCards.forEach((card) => {
+      card.addEventListener('click', () => {
+        card.classList.add('active');
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "AL Flip Card",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "tertiary",
+          "label": "Tertiary"
+        }
+      ],
+      "default": "primary",
+      "label": "Button Type"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_primary",
+      "label": "Primary Color",
+      "default": "#FE6901"
+    },
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary Color",
+      "default": "#00176B"
+    },
+    {
+      "type": "color",
+      "id": "color_tertiary",
+      "label": "Tertiary Color",
+      "default": "#212537"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AL Flip Card"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,568 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 72,
+        "padding_bottom": 28
+      }
+    },
+    "sticky_add_to_cart_UCwBgx": {
+      "type": "sticky-add-to-cart",
+      "name": "Sticky Add To Cart",
+      "settings": {
+        "link": "shopify:\/\/products\/drift-1",
+        "primary_color": "#000000",
+        "secondary_color": "#000000",
+        "bgcolor": "#042a1d",
+        "btn_text": "GET UP TO 50% OFF",
+        "hide_shipping": true
+      }
+    },
+    "adv_main_section_NQXY9y": {
+      "type": "adv-main-section",
+      "blocks": {
+        "all_in_one_Gc7VPd": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "I Treated 10,000 Men Who Couldn't Lose Weight: Here's The Real Problem Their Doctors Missed",
+            "big_heading": true,
+            "small_heading": false,
+            "description": "<p>My breakthrough research reveals why men over 30 can't burn belly fat or build muscle - even when they're doing everything right<\/p>",
+            "switch_image_description": false
+          }
+        },
+        "avatar_MyFPUC": {
+          "type": "avatar",
+          "settings": {
+            "heading": "By Dr. Marcus Chen, MD",
+            "description": "<p>Harvard-Trained Endocrinologist<\/p>",
+            "image": "shopify:\/\/shop_images\/Container.png"
+          }
+        },
+        "description_qLg8xU": {
+          "type": "description",
+          "settings": {
+            "description": "<p>I'll never forget the day David walked into my Boston clinic.<br\/><br\/>It was textbook…<br\/><br\/>At 43, this former college athlete had done everything \"right\" – clean eating, regular workouts, even tracking macros. Yet he was carrying an extra 34 pounds that wouldn't budge, embarrassed by his stubborn \"man boobs\" and a gut that hung over his jeans.<br\/><br\/>Dark circles framed his eyes, and as he sat slumped in the chair in front of me, I knew I was his last hope. <br\/><br\/>I've heard this same story hundreds of times from men over 30. They were doing everything right, yet their bodies were working against them. Their doctors would run standard blood panels, pronounce them \"normal,\" and simply tell them to try harder.<br\/><br\/>For years, I followed the same approach – advising these men to eat clean and exercise more intensely. But the results were always the same: minimal progress followed by crushing plateaus.<br\/><br\/>That day with David, something in me snapped. I knew we were missing something fundamental.<\/p>"
+          }
+        },
+        "all_in_one_4hdKM9": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "The Real Reason Your Hard Work Isn't Showing",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>Determined to find answers, I partnered with my colleague Dr. Michael Bennett, a renowned metabolic specialist. Together, we collected and analyzed over 10,000 blood panels from men aged 35-60, looking beyond the standard markers most doctors check.<br\/><br\/>What we discovered shocked us both.<br\/><br\/>We identified a specific hormonal pattern that was present in 83% of men struggling with stubborn weight issues,<br\/><br\/>We call it the 'Metabolic Trap' – three interconnected imbalances that create the perfect storm for fat storage, particularly in the chest and belly.<br\/><br\/>The Metabolic Trap consists of:<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_ea99aa58-82b3-4559-a57e-c2c1c602e1a8.png",
+            "switch_image_description": false
+          }
+        },
+        "heading_dMX34d": {
+          "type": "heading",
+          "settings": {
+            "heading": "1. Elevated Cortisol (Stress Hormone)",
+            "small_heading": true,
+            "big_heading": false
+          }
+        },
+        "description_red_KWmVzT": {
+          "type": "description_red",
+          "settings": {
+            "description": "<p>Studies show men with abdominal obesity have elevated long-term cortisol compared to lean men<\/p>",
+            "description2": "",
+            "dynamic_date": false,
+            "color": "#ffffff",
+            "bgcolor": "#dc2626",
+            "text_center": true
+          }
+        },
+        "all_in_one_bMa9QQ": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>Do you gain weight easily around your midsection? Feel wired but tired? Crave sugar in the afternoon? These are telltale signs of elevated cortisol.<br\/><br\/>Even mild, everyday stress keeps cortisol elevated just enough to trigger fat storage specifically around your belly. This \"stress belly\" is notoriously resistant to diet and exercise.<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_1.png",
+            "switch_image_description": false
+          }
+        },
+        "heading_N6a8MT": {
+          "type": "heading",
+          "settings": {
+            "heading": "2. Estrogen Dominance",
+            "small_heading": true,
+            "big_heading": false
+          }
+        },
+        "description_red_hN3Mx4": {
+          "type": "description_red",
+          "settings": {
+            "description": "<p>Modern environments expose men to thousands of estrogen-mimicking compounds.<\/p>",
+            "description2": "",
+            "dynamic_date": false,
+            "color": "#ffffff",
+            "bgcolor": "#dc2626",
+            "text_center": true
+          }
+        },
+        "all_in_one_DiFad6": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>Notice mood swings? Low libido? Enlarged breast tissue or \"man boobs\"? <br\/><br\/>These are classic signs of estrogen dominance in men.<br\/><br\/>This, combined with the fact that fat tissue itself produces estrogen, creates a vicious cycle leading to feminizing effects and stubborn chest fat.<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "switch_image_description": false
+          }
+        },
+        "heading_7dRarb": {
+          "type": "heading",
+          "settings": {
+            "heading": "3. Insulin Resistance",
+            "small_heading": true,
+            "big_heading": false
+          }
+        },
+        "description_red_Vw6Nbr": {
+          "type": "description_red",
+          "settings": {
+            "description": "<p>Research shows insulin sensitivity naturally declines with age, making you more likely to store fat<\/p>",
+            "description2": "",
+            "dynamic_date": false,
+            "color": "#ffffff",
+            "bgcolor": "#dc2626",
+            "text_center": true
+          }
+        },
+        "description_nnp7dd": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Is your waist over 40 inches? Feel fatigued after meals? Experience increased hunger even after eating? <br\/><br\/>These signal insulin resistance. As men age, cells become less responsive to insulin, making your body store calories as fat instead of burning them for energy -- even when you're eating clean.<br\/><br\/>What makes this so insidious, is that standard blood tests typically miss these imbalances because they're looking at each hormone in isolation, not how they interact with each other.<br\/><br\/>Creating an epidemic of men that feel like David - hopeless. <br\/><br\/>But as I told him all of this, for the first time in months, I saw hope in David's eyes.<\/p>"
+          }
+        },
+        "all_in_one_hrnnyg": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Finally See the Weight Loss You Deserve",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>Armed with this breakthrough, I developed a protocol specifically formulated to address all three aspects of the Metabolic Trap simultaneously. <br\/><br\/>I began testing it with David and other patients who had been struggling for years.<br\/><br\/>The results were remarkable.<em><br\/><br\/><\/em>“The first week, I noticed better sleep and more consistent energy. By week three, my pants were fitting looser. I can't believe it – nothing else has ever worked like this.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_17_11126ece-623c-41bf-a680-f497db717416.png",
+            "switch_image_description": true
+          }
+        },
+        "card_4g3aJE": {
+          "type": "card",
+          "settings": {
+            "heading": "- David, 43",
+            "description": "<p>\"The first week, I noticed better sleep and more consistent energy. By week three, my pants were fitting looser. I can't believe it – nothing else has ever worked like this.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Container_1.png",
+            "second_type": false
+          }
+        },
+        "description_gddzU3": {
+          "type": "description",
+          "settings": {
+            "description": "<p>After 60 days, David had lost 27 pounds of fat, primarily from his chest and midsection – areas that had previously been resistant to all his efforts.<br\/><br\/>But it wasn’t just that…<br\/><br\/>His appetite was curbed, so he felt full and satiated after his main meals. <br\/><br\/>Sleep was deeper, more restorative, which helped him recover from the gym. <br\/><br\/>And he was lifting heavier than he had in years, more comfortably, without strain. <br\/><br\/>Not to mention, his clothes fitted loosely, and his chest and stomach were finally flattening. <br\/><br\/>As word spread about its success, my practice was flooded with men experiencing the same issues. I knew I needed to make this solution accessible to more people than I could personally treat.<\/p>"
+          }
+        },
+        "button_cpm3QG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check Availability & Apply 50% OFF",
+            "button_url": "shopify:\/\/products\/drift-1"
+          }
+        },
+        "icon_text_Ti77my": {
+          "type": "icon_text",
+          "settings": {
+            "text1": "Money Back Guarantee",
+            "image1": "shopify:\/\/shop_images\/Container_2.png",
+            "text2": "Free Shipping",
+            "image2": "shopify:\/\/shop_images\/Container_3.png",
+            "text3": "Made in USA",
+            "image3": "shopify:\/\/shop_images\/Container_4.png"
+          }
+        },
+        "all_in_one_kPCexX": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "The Breakthrough Formula Freeing Men From Baggy Shirts",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "",
+            "image": "shopify:\/\/shop_images\/Image_3.png",
+            "switch_image_description": false
+          }
+        },
+        "description_X34dLF": {
+          "type": "description",
+          "settings": {
+            "description": "<p>So I partnered with Thaura, a research-focused supplement company, to develop a formula that precisely targets the Metabolic Trap. We spent years perfecting this formula, ensuring every ingredient was included at its clinically effective dose.<br\/><br\/>The result is <strong>Dryft™<\/strong> – a breakthrough formulation containing nine science-backed ingredients that work together to restore hormonal balance and optimize metabolism.<\/p>"
+          }
+        },
+        "card_RffBXz": {
+          "type": "card",
+          "settings": {
+            "heading": "Each serving contains:",
+            "description": "<ul><li><strong>KSM-66® Ashwagandha Extract<\/strong> – This gold-standard adaptogen has been shown in my clinical research to reduce cortisol by up to 27%, helping to break the stress-fat cycle<\/li><li><strong>DIM + Boron Complex<\/strong> – This powerful duo supports healthy estrogen metabolism while promoting optimal testosterone utilization, specifically targeting chest fat and \"man boobs\"<\/li><li><strong>GlucoVantage® Dihydroberberine<\/strong> – 5x more powerful than regular berberine, this patented compound improves insulin sensitivity to help prevent calories from being stored as stubborn fat<\/li><li><strong>Lactobacillus Gasseri (10 Billion CFU)<\/strong> – A specialized probiotic strain shown in our studies to reduce visceral fat by up to 8.5% in just 12 weeks<\/li><li><strong>Plus five additional targeted ingredients<\/strong> working synergistically to address each aspect of the Metabolic Trap <\/li><\/ul>",
+            "image": "shopify:\/\/shop_images\/Image_4.png",
+            "second_type": true
+          }
+        },
+        "description_AHfa3X": {
+          "type": "description",
+          "settings": {
+            "description": "<p>What makes Dryft™ different is that it's not just another fat burner filled with stimulants.<br\/><br\/>It's a comprehensive approach to male hormonal health that addresses the root causes of stubborn weight gain.<\/p>"
+          }
+        },
+        "all_in_one_FwefDA": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "The Results Speak for Themselves",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>Since its release, Dryft™ has helped over 47,000 men finally burn fat and see start seeing results.<\/p>",
+            "switch_image_description": false
+          }
+        },
+        "review_WE7rRB": {
+          "type": "review",
+          "settings": {}
+        },
+        "review_item_gfNdKa": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_10.png",
+            "name": "Michael R., 41",
+            "description": "<p>\"I tried everything – keto, intermittent fasting, even looked into TRT. Nothing worked. After 3 weeks on Dryft™ , I'm down a belt notch, sleeping better, and my wife actually commented on my energy. This is the real deal.\"<\/p>",
+            "card_bgcolor": "#f3f4f6"
+          }
+        },
+        "review_item_UqweiE": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Container_7.png",
+            "name": "James T., 47",
+            "description": "<p>\"After wasting money on 'fat burners,' I didn't believe Thauras claims. But the science made sense. Week 2: more energy. Week 4: pants looser. Week 8: haven't felt this good since my 20s.\"<\/p>",
+            "card_bgcolor": "#f3f4f6"
+          }
+        },
+        "review_item_7bidLe": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Container_8.png",
+            "name": "Robert J., 45",
+            "description": "<p>\"My 10-year-old son asked if we could go swimming last weekend. Thanks to Dryft, I didn't hesitate to say yes. The look on his face when we spent the whole day at the pool together was worth every cent. I'm not just healthier – I can be a better dad now.\"<\/p>",
+            "card_bgcolor": "#f3f4f6"
+          }
+        },
+        "review_item_EwwfCL": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Container_9.png",
+            "name": "Sarah M",
+            "description": "<p>\"I'd lost hope. My husband had given up on himself – stopped trying, stopped caring. Dryft didn't just change his body, it saved our relationship. He's confident, energetic, and the same man I married 15 years ago.\"<\/p>",
+            "card_bgcolor": "#f3f4f6"
+          }
+        },
+        "review_item_GjjiYw": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_11.png",
+            "name": "Mandy K.",
+            "description": "<p>\"I bought this for my husband and I can't believe the transformation! His confidence is through the roof, he's got amazing energy, and we’re closer than ever. It's like he's a completely different man!\"<\/p>",
+            "card_bgcolor": "#f3f4f6"
+          }
+        },
+        "button_Q8UxtL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check Availability & Apply 50% OFF",
+            "button_url": "shopify:\/\/products\/drift-1"
+          }
+        },
+        "icon_text_VcMGQg": {
+          "type": "icon_text",
+          "settings": {
+            "text1": "Money Back Guarantee",
+            "image1": "shopify:\/\/shop_images\/Container_2.png",
+            "text2": "Free Shipping",
+            "image2": "shopify:\/\/shop_images\/Container_3.png",
+            "text3": "Made in USA",
+            "image3": "shopify:\/\/shop_images\/Container_4.png"
+          }
+        },
+        "all_in_one_xDbxQn": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Your 90-Day Journey to a Leaner, More Energetic You",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>Based on the thousands of men I've worked with, here's what you can expect when you start taking Dryft™ :<\/p>",
+            "switch_image_description": false
+          }
+        },
+        "all_in_one_3UhDDx": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Days 1-7: Wake Up Feeling Alive Again",
+            "big_heading": false,
+            "small_heading": true,
+            "description": "<p>Improved energy, deeper sleep, and better mood and focus. For the first time in years, you wake up with purpose instead of dragging yourself through another day.<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_5.png",
+            "switch_image_description": false
+          }
+        },
+        "all_in_one_XmQ8g8": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Days 7-21: Feel Your Clothes Getting Looser",
+            "big_heading": false,
+            "small_heading": true,
+            "description": "<p>Your chest begins feeling firmer, your gut no longer hangs over your jeans (my patients report pants fitting 1-2 inches looser), and you feel stronger despite doing less in the gym.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_1_c8c940d0-4e44-4d0e-992d-bb6e32cdae36.png",
+            "switch_image_description": false
+          }
+        },
+        "all_in_one_GYdkQ6": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Days 21-60: People Start To Notice",
+            "big_heading": false,
+            "small_heading": true,
+            "description": "<p>You look noticeably leaner and more defined. You can run around with your kids for hours. In the office, you command more respect in meetings, and colleagues ask what you've been doing.<br\/><br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/Image_6.png",
+            "switch_image_description": false
+          }
+        },
+        "all_in_one_nBmmki": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Days 60-90: Peak Results",
+            "big_heading": false,
+            "small_heading": true,
+            "description": "<p>Peak results achieved. Your physique is lean, your energy is back, your appetite is controlled, and you sleep like you did in college.<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_7.png",
+            "switch_image_description": false
+          }
+        },
+        "all_in_one_LBK9dg": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Don't Miss This Chance to Transform Your Body and Life",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "",
+            "image": "shopify:\/\/shop_images\/Image_8.png",
+            "switch_image_description": false
+          }
+        },
+        "description_red_nFigd8": {
+          "type": "description_red",
+          "settings": {
+            "description": "",
+            "description2": "Update: As of DATEPLACEHOLDER - The demand for Dryft™ has increased dramatically and inventory has been flying off the shelves. Order your own for 50% OFF + FREE SHIPPING before it's too late.",
+            "dynamic_date": true,
+            "color": "#000000",
+            "bgcolor": "#fef9c3",
+            "text_center": false
+          }
+        },
+        "all_in_one_kykhML": {
+          "type": "all_in_one",
+          "settings": {
+            "heading": "Try Dryft™ 100% Risk-Free Today",
+            "big_heading": false,
+            "small_heading": false,
+            "description": "<p>I'm so confident in this formula that I've insisted on a comprehensive 90-day, 100% money-back guarantee.<br\/><br\/>I understand you're skeptical after years of frustration. <br\/><br\/>That's why I want you to experience Dryft™ completely risk-free. If you don't feel more energetic and notice your clothes fitting better within 90 days, I'll personally ensure you get every cent back – no questions asked. <br\/><br\/>For a limited time, readers of this article can save <strong>XX%<\/strong> on their first order of Dryft™ . This exclusive offer won't last long, as Dryft™ has sold out twice already this year due to overwhelming demand from my patients and their referrals.<br\/><br\/>Unlike other supplements that require complicated regimens, Dryft™ is simple: just 2 capsules each morning. <br\/><br\/>No crazy restrictive diets, no working out at 5am every day – just the support your body needs to work with you instead of against you.<\/p>",
+            "switch_image_description": false
+          }
+        },
+        "button_PjUcMB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Click Here to Claim Your 50% Discount on Dryft™ ",
+            "button_url": "shopify:\/\/products\/drift-1"
+          }
+        },
+        "description_aLDtJb": {
+          "type": "description",
+          "settings": {
+            "description": "<p>If you've been told your blood tests are \"normal\" yet you still struggle with stubborn weight, low energy, and a body that doesn't reflect your efforts – you're not alone, and you're not imagining things. <br\/><br\/>The Metabolic Trap is real, and addressing it could be the breakthrough you've been waiting for.<br\/><br\/>Don't spend another year fighting a losing battle against your hormones. Take the first step toward reclaiming your body, your energy, and your confidence today.<\/p>"
+          }
+        },
+        "button_rz6Efp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Try Dryft™ Risk-Free Now – Save 50% Today™",
+            "button_url": "shopify:\/\/products\/drift-1"
+          }
+        },
+        "testimonial_tTTe4r": {
+          "type": "testimonial",
+          "settings": {
+            "card_bgcolor": "#f3f4f6",
+            "heading": "What Men are saying about Dryft™ ",
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>47,819 Reviews<\/p>"
+          }
+        },
+        "testimonial_item_rzNcmp": {
+          "type": "testimonial_item",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>“I have purchased Dryft multiple times now. My first purchase was made in March 2025. I wanted to wait for the actual impact and the benefit; I didn’t want to rush into conclusions. With confidence, I can say that I am so glad that I found Thaura! Reasons why I needed Dryft: I was very concerned about the heartburn that I had occasionally (more often than it should happen). I also struggle with constant bloating, stubborn weight (specifically the belly area). Once I started taking Dryft, I noticed that the bloating feeling was minimized, almost gone. I truly feel much better in the abdominal area (Before taking this product, I had times when I felt so bloated that it felt like my stomach was up to my chest). Next, my heartburn is gone. Since March, I only felt a 2-3 times light possibility of heartburn, but it wasn't completely established. Last, I noticed better results with my weekly exercises.”<br\/><br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/Image_12.png",
+            "name": "- Daniel B.",
+            "card_bgcolor": "#ffffff",
+            "row_2": false
+          }
+        },
+        "testimonial_item_j3jXhF": {
+          "type": "testimonial_item",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>\"I've tried everything under the sun, but nothing worked like Dryft. It got me started on the right track, but my results really took off as I continued. I'm down 15 pounds of pure fat in 6 weeks, and my strength is through the roof. Plus, those stubborn love handles are finally disappearing!\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_14.png",
+            "name": "- James T.",
+            "card_bgcolor": "#ffffff",
+            "row_2": true
+          }
+        },
+        "testimonial_item_mzEiHb": {
+          "type": "testimonial_item",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>\"I was sceptical initially but after having my blood work done that showed hormonal imbalance I thought I'd give it a try, I'm about 9 weeks in now and genuinely feel considerably better, my energy levels have improved significantly and I feel alive again, my confidence has improved and my stamina in the gym.. and out has really increased.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Container_11.png",
+            "name": "- Daniel F.",
+            "card_bgcolor": "#ffffff",
+            "row_2": false
+          }
+        },
+        "testimonial_item_yDjkWR": {
+          "type": "testimonial_item",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>\"I was ready to give up until I was recommended Dryft. Down 19 pounds in 60 days, and my chest finally looks normal again. Worth every penny.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_15.png",
+            "name": "- Mark L.",
+            "card_bgcolor": "#ffffff",
+            "row_2": true
+          }
+        },
+        "testimonial_item_9DArrG": {
+          "type": "testimonial_item",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>\"I am getting my jaw line back and am burning calories like I did when I was younger. My chest fat is reducing in size and I feel fitter.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_13.png",
+            "name": "- Edward G.",
+            "card_bgcolor": "#ffffff",
+            "row_2": false
+          }
+        },
+        "testimonial_item_4RnNaG": {
+          "type": "testimonial_item",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Container_5.png",
+            "description": "<p>\"My husband was skeptical about trying another supplement, but Dryft proved him wrong. He's lost that stubborn belly fat, his energy is amazing, and he's got this powerful confidence I haven't seen in years. I'm loving the new him!\"<\/p>",
+            "image": "shopify:\/\/shop_images\/Image_16.png",
+            "name": "- Michelle P.",
+            "card_bgcolor": "#ffffff",
+            "row_2": true
+          }
+        },
+        "button_kwwyi6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Try Dryft™ Risk-Free Now – Save 50% Today™",
+            "button_url": "shopify:\/\/products\/drift-1"
+          }
+        }
+      },
+      "block_order": [
+        "all_in_one_Gc7VPd",
+        "avatar_MyFPUC",
+        "description_qLg8xU",
+        "all_in_one_4hdKM9",
+        "heading_dMX34d",
+        "description_red_KWmVzT",
+        "all_in_one_bMa9QQ",
+        "heading_N6a8MT",
+        "description_red_hN3Mx4",
+        "all_in_one_DiFad6",
+        "heading_7dRarb",
+        "description_red_Vw6Nbr",
+        "description_nnp7dd",
+        "all_in_one_hrnnyg",
+        "card_4g3aJE",
+        "description_gddzU3",
+        "button_cpm3QG",
+        "icon_text_Ti77my",
+        "all_in_one_kPCexX",
+        "description_X34dLF",
+        "card_RffBXz",
+        "description_AHfa3X",
+        "all_in_one_FwefDA",
+        "review_WE7rRB",
+        "review_item_gfNdKa",
+        "review_item_UqweiE",
+        "review_item_7bidLe",
+        "review_item_EwwfCL",
+        "review_item_GjjiYw",
+        "button_Q8UxtL",
+        "icon_text_VcMGQg",
+        "all_in_one_xDbxQn",
+        "all_in_one_3UhDDx",
+        "all_in_one_XmQ8g8",
+        "all_in_one_GYdkQ6",
+        "all_in_one_nBmmki",
+        "all_in_one_LBK9dg",
+        "description_red_nFigd8",
+        "all_in_one_kykhML",
+        "button_PjUcMB",
+        "description_aLDtJb",
+        "button_rz6Efp",
+        "testimonial_tTTe4r",
+        "testimonial_item_rzNcmp",
+        "testimonial_item_j3jXhF",
+        "testimonial_item_mzEiHb",
+        "testimonial_item_yDjkWR",
+        "testimonial_item_9DArrG",
+        "testimonial_item_4RnNaG",
+        "button_kwwyi6"
+      ],
+      "name": "Adv Main Section",
+      "settings": {
+        "header_text": "TRENDING IN THE US",
+        "header_icon": "shopify:\/\/shop_images\/Image_9.png",
+        "sidebar_c_bgcolor": "#f3f4f6",
+        "sidebar_c_heading": "Finally, lose stubborn weight - even if nothing's worked before",
+        "sidebar_c_description": "<p>47,819 Reviews<\/p>",
+        "sidebar_c_stars": "shopify:\/\/shop_images\/Container_5.png",
+        "sidebar_c_image": "shopify:\/\/shop_images\/Container_6.png",
+        "sidebar_c_button_label": "Check Availability & Apply 50% OFF",
+        "sidebar_c_button_url": "shopify:\/\/products\/drift-1",
+        "button_label": "",
+        "button_url": "",
+        "disclaimer": "<p>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.<\/p>",
+        "bgcolor": "#ffffff",
+        "max_width": 960,
+        "padding_top": 36,
+        "padding_bottom": 100,
+        "padding_top_m": 20,
+        "padding_bottom_m": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sticky_add_to_cart_UCwBgx",
+    "adv_main_section_NQXY9y"
+  ]
+}

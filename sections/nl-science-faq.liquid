@@ -1,0 +1,255 @@
+{%- comment -%}
+  Section: Science FAQ
+  
+  A section displaying scientific data in an accordion format with product image.
+  
+  Features:
+  - Customizable heading
+  - Expandable accordion items with scientific data
+  - Product image display
+  - References section
+  - Fully responsive design
+{%- endcomment -%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-nl-science-faq.css' | asset_url | stylesheet_tag }}
+
+<div id="{{ section.settings.section_id }}" class="nl-science-faq section-{{ section.id }}-padding">
+  <div class="page-width nl-science-faq__page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="nl-science-faq__heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+    
+    <div class="nl-science-faq__container">
+      <div class="nl-science-faq__flex-wrapper">
+        {% if section.settings.product_image != blank %}
+          <div class="nl-science-faq__product-image">
+            {{
+              section.settings.product_image
+              | image_url: width: 966
+              | image_tag:
+                class: 'nl-science-faq__image',
+                loading: 'lazy',
+                alt: section.settings.product_image_alt | escape
+            }}
+          </div>
+        {% endif %}
+        
+        <div class="nl-science-faq__accordion-container">
+        <div class="nl-science-faq__accordion">
+          {% for block in section.blocks %}
+            {% if block.type == 'faq_item' %}
+              <div class="nl-science-faq__item{% if forloop.first %} nl-science-faq__item--active{% endif %}" {{ block.shopify_attributes }}>
+                <button class="nl-science-faq__question" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="nl-science-faq-content-{{ block.id }}">
+                  <span>{{ block.settings.title }}</span>
+                  <span class="nl-science-faq__icon">
+                    <svg viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false" class="icon icon-chevron">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8.4L3.6 5L2.9 5.7L7 9.8L11.1 5.7L10.4 5L7 8.4Z" fill="currentColor"/>
+                    </svg>
+                  </span>
+                </button>
+                <div id="nl-science-faq-content-{{ block.id }}" class="nl-science-faq__answer" {% unless forloop.first %}hidden{% endunless %}>
+                  {{ block.settings.content }}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        
+        {% if section.settings.references != blank %}
+          <div class="nl-science-faq__references">
+            {{ section.settings.references }}
+          </div>
+        {% endif %}
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.nl-science-faq__item');
+    
+    accordionItems.forEach(item => {
+      const trigger = item.querySelector('.nl-science-faq__question');
+      const content = item.querySelector('.nl-science-faq__answer');
+      
+      trigger.addEventListener('click', () => {
+        const expanded = trigger.getAttribute('aria-expanded') === 'true';
+        
+        // Close all items
+        accordionItems.forEach(otherItem => {
+          const otherTrigger = otherItem.querySelector('.nl-science-faq__question');
+          const otherContent = otherItem.querySelector('.nl-science-faq__answer');
+          
+          otherTrigger.setAttribute('aria-expanded', 'false');
+          otherContent.hidden = true;
+          otherItem.classList.remove('nl-science-faq__item--active');
+        });
+        
+        // If the clicked item was not expanded, open it
+        if (!expanded) {
+          trigger.setAttribute('aria-expanded', 'true');
+          content.hidden = false;
+          item.classList.add('nl-science-faq__item--active');
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Science FAQ",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Science Behind Being Present for Your Family"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "product_image_alt",
+      "label": "Product Image Alt Text",
+      "default": "Product bottle and packaging"
+    },
+    {
+      "type": "richtext",
+      "id": "references",
+      "label": "References",
+      "default": "<p><strong>References:</strong> ¹ Chandrasekhar K, et al. Indian J Psychol Med. 2012 ² Andrade C, et al. Indian J Psychiatry. 2000 ³ Langade D, et al. Cureus. 2019 ⁴ Cooley K, et al. PLoS One. 2009</p>"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question",
+          "default": "44% Improvement in Stress Scores¹"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Answer",
+          "default": "<p>600mg KSM-66 reduced stress assessment scores 44% vs 5.5% placebo over 60 days. Less chronic stress = energy left when workday ends.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Science FAQ",
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "title": "44% Improvement in Stress Scores¹",
+            "content": "<p>600mg KSM-66 reduced stress assessment scores 44% vs 5.5% placebo over 60 days. Less chronic stress = energy left when workday ends.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "title": "41% Reduction in Anxiety²",
+            "content": "<p>Clinical studies show a significant reduction in anxiety symptoms with KSM-66 Ashwagandha supplementation.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "title": "27.9% Cortisol Reduction¹",
+            "content": "<p>In a 60-day double-blind study, 600mg KSM-66 reduced serum cortisol by 27.9% vs placebo. Lower cortisol = your body stops depleting energy by mid-afternoon.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "title": "72% Sleep Quality Improvement³",
+            "content": "<p>Participants reported significantly improved sleep quality, helping you wake refreshed and maintain energy throughout the day.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "title": "Significant Quality of Life Improvements⁴",
+            "content": "<p>Studies show meaningful improvements in overall quality of life metrics with regular supplementation.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

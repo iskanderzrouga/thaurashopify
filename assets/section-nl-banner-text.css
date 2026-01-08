@@ -1,0 +1,91 @@
+/* Section: Banner Text */
+
+.nl-banner-text__wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.nl-banner-text__container {
+  position: relative;
+  width: 100%;
+  height: 158px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.nl-banner-text__bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.nl-banner-text__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.nl-banner-text__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.nl-banner-text__heading {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nl-banner-text__subheading {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .nl-banner-text__wrapper {
+    border-radius: 12px;
+  }
+
+  .nl-banner-text__container {
+    height: auto;
+    min-height: 120px;
+    border-radius: 12px;
+  }
+
+  .nl-banner-text__content {
+    padding: 20px 15px;
+    gap: 10px;
+  }
+
+  .nl-banner-text__heading {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .nl-banner-text__subheading {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}

@@ -1,0 +1,601 @@
+{{ 'section-adv-comparison.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-comparison-wrapper" style="background: {{ section.settings.background_color }};">
+  <div class="page-width">
+    <div class="adv-comparison-inner" style="max-width: {{ section.settings.content_width }}px;">
+      
+      {%- if section.settings.heading != blank -%}
+        <h2 class="adv-comparison-heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      <div class="adv-comparison-grid adv-mobile-{{ section.settings.mobile_layout }}">
+        
+        {%- comment -%} First Image {%- endcomment -%}
+        <div class="adv-comparison-column">
+          {%- if section.settings.image_1 -%}
+            <div class="adv-comparison-image">
+              <img
+                src="{{ section.settings.image_1 | image_url: width: 600 }}"
+                alt="{{ section.settings.label_1 }}"
+                loading="lazy"
+              >
+              {%- if section.settings.label_1 != blank -%}
+                <div class="adv-comparison-label" style="background: {{ section.settings.label_1_bg }}; color: {{ section.settings.label_1_color }};">
+                  {{ section.settings.label_1 }}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} Second Image {%- endcomment -%}
+        <div class="adv-comparison-column">
+          {%- if section.settings.image_2 -%}
+            <div class="adv-comparison-image">
+              <img
+                src="{{ section.settings.image_2 | image_url: width: 600 }}"
+                alt="{{ section.settings.label_2 }}"
+                loading="lazy"
+              >
+              {%- if section.settings.label_2 != blank -%}
+                <div class="adv-comparison-label" style="background: {{ section.settings.label_2_bg }}; color: {{ section.settings.label_2_color }};">
+                  {{ section.settings.label_2 }}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+
+      </div>
+
+      {%- if section.settings.bottom_text != blank -%}
+        <div class="adv-comparison-text">
+          {{ section.settings.bottom_text }}
+        </div>
+      {%- endif -%}
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .adv-comparison-wrapper {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  .adv-comparison-inner {
+    margin: 0 auto;
+  }
+
+  .adv-comparison-heading {
+    font-size: {{ section.settings.heading_size }}px;
+    line-height: 1.2;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 {{ section.settings.heading_margin }}px;
+    text-align: {{ section.settings.heading_alignment }};
+    font-weight: {{ section.settings.heading_weight }};
+  }
+
+  .adv-comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ section.settings.column_gap }}px;
+    margin-bottom: {{ section.settings.grid_margin }}px;
+  }
+
+  .adv-comparison-column {
+    position: relative;
+  }
+
+  .adv-comparison-image {
+    position: relative;
+    border-radius: {{ section.settings.image_radius }}px;
+    overflow: hidden;
+    {%- if section.settings.show_border -%}
+      border: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
+    {%- endif -%}
+  }
+
+  .adv-comparison-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .adv-comparison-label {
+    position: absolute;
+    bottom: {{ section.settings.label_position }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: {{ section.settings.label_padding_y }}px {{ section.settings.label_padding_x }}px;
+    font-size: {{ section.settings.label_size }}px;
+    font-weight: {{ section.settings.label_weight }};
+    border-radius: {{ section.settings.label_radius }}px;
+    text-transform: {{ section.settings.label_transform }};
+    letter-spacing: {{ section.settings.label_spacing }}px;
+  }
+
+  .adv-comparison-text {
+    font-size: {{ section.settings.text_size }}px;
+    line-height: {{ section.settings.line_height }};
+    color: {{ section.settings.text_color }};
+    text-align: {{ section.settings.text_alignment }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-comparison-wrapper {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    .adv-comparison-heading {
+      font-size: {{ section.settings.mobile_heading_size }}px;
+      margin-bottom: {{ section.settings.mobile_heading_margin }}px;
+    }
+
+    .adv-mobile-stack .adv-comparison-grid {
+      grid-template-columns: 1fr;
+      gap: {{ section.settings.mobile_gap }}px;
+    }
+
+    .adv-comparison-label {
+      font-size: {{ section.settings.mobile_label_size }}px;
+      padding: {{ section.settings.mobile_label_padding_y }}px {{ section.settings.mobile_label_padding_x }}px;
+    }
+
+    .adv-comparison-text {
+      font-size: {{ section.settings.mobile_text_size }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - Comparison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (Desktop)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "min": 18,
+      "max": 42,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (Mobile)",
+      "default": 28
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_margin",
+      "min": 16,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading margin bottom (Desktop)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_margin",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading margin bottom (Mobile)",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "First Image (Left)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "text",
+      "id": "label_1",
+      "label": "Label 1",
+      "default": "CAFFEINE"
+    },
+    {
+      "type": "color",
+      "id": "label_1_bg",
+      "label": "Label 1 background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "label_1_color",
+      "label": "Label 1 text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Second Image (Right)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "text",
+      "id": "label_2",
+      "label": "Label 2",
+      "default": "THAURA"
+    },
+    {
+      "type": "color",
+      "id": "label_2_bg",
+      "label": "Label 2 background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "label_2_color",
+      "label": "Label 2 text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Label Settings"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Label font size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_label_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Label font size (Mobile)",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "label_weight",
+      "label": "Label weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "label_transform",
+      "label": "Label text transform",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "uppercase", "label": "Uppercase" },
+        { "value": "capitalize", "label": "Capitalize" }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "label_spacing",
+      "min": 0,
+      "max": 4,
+      "step": 0.5,
+      "unit": "px",
+      "label": "Letter spacing",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "label_padding_x",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Label horizontal padding (Desktop)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "label_padding_y",
+      "min": 6,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Label vertical padding (Desktop)",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "mobile_label_padding_x",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Label horizontal padding (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_label_padding_y",
+      "min": 4,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "label": "Label vertical padding (Mobile)",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "label_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Label border radius",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "label_position",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Label position from bottom",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "options": [
+        { "value": "stack", "label": "Stack vertically" },
+        { "value": "keep", "label": "Keep 2 columns" }
+      ],
+      "default": "stack"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 12,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap (Desktop)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "grid_margin",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Grid margin bottom",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "label": "Show image border",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Bottom Text"
+    },
+    {
+      "type": "richtext",
+      "id": "bottom_text",
+      "label": "Text below images"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "min": 1.2,
+      "max": 2,
+      "step": 0.1,
+      "label": "Line height",
+      "default": 1.6
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 1050
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Comparison"
+    }
+  ]
+}
+{% endschema %}

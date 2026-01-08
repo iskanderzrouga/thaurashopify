@@ -1,0 +1,28 @@
+<div class="group ac-faqs {% if forloop.first %} active {% endif %} flex flex-col w-full border border-[#52A475] rounded-[10px] p-5">
+  <div class="ac-faqs-heading flex items-center justify-between gap-5 cursor-pointer">
+    {% if block.settings.heading != blank %}
+      <div
+        class="text-[20px] md:text-[20px] font-bold !leading-tight text-[#000]  {% if block.settings.heading_m_center %} max-md:text-center {% endif %} {% if block.settings.heading_d_center %} md:text-center {% endif %}"
+        style="color: {{ block.settings.heading_color }};"
+      >
+        {{ block.settings.heading }}
+      </div>
+    {% endif %}
+    {% if section.settings.image != blank %}
+      {{
+        section.settings.image
+        | image_url: width: 24
+        | image_tag: class: 'w-full max-w-[24px] group-[.active]:rotate-180', sizes: '24px'
+      }}
+    {% endif %}
+  </div>
+
+  {% if block.settings.description != blank %}
+    <div
+      class="pt-5 hidden group-[.active]:block {% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[16px] md:text-[16px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+      style="color: {{ block.settings.description_color }};"
+    >
+      {{ block.settings.description }}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,238 @@
+/* ========================================
+   ADV - YOU TELL YOURSELF SECTION
+   100% Figma Accurate Conversion
+   ======================================== */
+
+/* Container Styles */
+.adv-you-tell-yourself-section {
+  background-color: #ffffff !important;
+  width: 100% !important;
+}
+
+.adv-you-tell-yourself-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
+  align-items: flex-start !important;
+}
+
+/* Headline Styles */
+.adv-you-tell-yourself-section .page-width .adv-you-tell-yourself-headline,
+section.adv-you-tell-yourself-section .adv-you-tell-yourself-headline,
+.adv-you-tell-yourself-headline {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  font-size: 32px !important;
+  line-height: 1.2 !important;
+  color: #0b0b0b !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  text-align-last: left !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+/* Headline paragraph (from richtext) */
+.adv-you-tell-yourself-headline p {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  font-size: 32px !important;
+  line-height: 1.2 !important;
+  color: #0b0b0b !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  display: block !important;
+}
+
+/* Main Content Layout */
+.adv-you-tell-yourself-content {
+  display: flex !important;
+  gap: 50px !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Image Wrapper */
+.adv-you-tell-yourself-image-wrapper {
+  height: 560px !important;
+  width: 490px !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.adv-you-tell-yourself-image {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: 50% 50% !important;
+  pointer-events: none !important;
+  max-width: none !important;
+}
+
+.adv-you-tell-yourself-image-placeholder {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Text Column */
+.adv-you-tell-yourself-text-column {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 30px !important;
+  align-items: flex-start !important;
+  width: 490px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Bottom Content */
+.adv-you-tell-yourself-bottom-content {
+  display: flex !important;
+  gap: 50px !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Text Block Styles */
+.adv-you-tell-yourself-text-block {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  color: #0b0b0b !important;
+  width: 100% !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+/* Paragraph Styles within Text Blocks */
+.adv-you-tell-yourself-text-block p {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  color: #0b0b0b !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  white-space: pre-wrap !important;
+}
+
+/* Empty paragraph spacing */
+.adv-you-tell-yourself-text-block p:empty {
+  line-height: 1 !important;
+  height: 1em !important;
+}
+
+/* Bold text within paragraphs */
+.adv-you-tell-yourself-text-block p strong,
+.adv-you-tell-yourself-text-block strong {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  font-size: 20px !important;
+  color: #0b0b0b !important;
+}
+
+/* Ensure spacing between paragraphs */
+.adv-you-tell-yourself-text-block p + p {
+  margin-top: 0.5em !important;
+}
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+@media screen and (max-width: 1080px) {
+  .adv-you-tell-yourself-container {
+    width: calc(100% - 40px) !important;
+    margin: 0 20px !important;
+  }
+
+  .adv-you-tell-yourself-content {
+    width: 100% !important;
+  }
+
+  .adv-you-tell-yourself-bottom-content {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  /* Stack layout on tablets and mobile */
+  .adv-you-tell-yourself-content {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+
+  .adv-you-tell-yourself-image-wrapper {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 490 / 560 !important;
+  }
+
+  .adv-you-tell-yourself-text-column {
+    width: 100% !important;
+  }
+
+  /* Adjust headline size for mobile */
+  .adv-you-tell-yourself-headline {
+    font-size: 28px !important;
+  }
+
+  /* Adjust text size for mobile */
+  .adv-you-tell-yourself-text-block,
+  .adv-you-tell-yourself-text-block p,
+  .adv-you-tell-yourself-text-block strong {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .adv-you-tell-yourself-container {
+    width: calc(100% - 32px) !important;
+    margin: 0 16px !important;
+  }
+
+  .adv-you-tell-yourself-headline {
+    font-size: 24px !important;
+  }
+
+  .adv-you-tell-yourself-text-block,
+  .adv-you-tell-yourself-text-block p,
+  .adv-you-tell-yourself-text-block strong {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  .adv-you-tell-yourself-section {
+    background-color: #ffffff !important;
+  }
+
+  .adv-you-tell-yourself-image {
+    max-width: 100% !important;
+  }
+}

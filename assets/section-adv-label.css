@@ -1,0 +1,22 @@
+/* ADV Label Bar - Advertorial Label Section */
+
+.adv-label-bar {
+  position: relative;
+  z-index: 10;
+}
+
+.adv-label-container {
+  padding: 0 20px;
+}
+
+.adv-label-text {
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media screen and (max-width: 749px) {
+  .adv-label-container {
+    padding: 0 15px;
+  }
+}

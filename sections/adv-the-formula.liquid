@@ -1,0 +1,254 @@
+<link rel="stylesheet" href="{{ 'section-adv-the-formula.css' | asset_url }}">
+<script src="{{ 'section-adv-the-formula.js' | asset_url }}" defer></script>
+
+<section class="adv-formula" data-section-id="{{ section.id }}">
+  <div class="adv-formula__container page-width">
+    
+    {%- if section.settings.headline != blank -%}
+      <h2 class="adv-formula__headline">
+        {{ section.settings.headline }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.intro_text != blank -%}
+      <div class="adv-formula__intro">
+        {{ section.settings.intro_text }}
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} Blue Box with Ingredients {%- endcomment -%}
+    <div class="adv-formula__blue-box">
+      
+      {%- if section.settings.box_header != blank -%}
+        <div class="adv-formula__box-header">
+          <h3 class="adv-formula__box-header-text">{{ section.settings.box_header }}</h3>
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="adv-formula__cards">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'ingredient' -%}
+                <div class="adv-formula__card" {{ block.shopify_attributes }}>
+                  {%- comment -%} Image on LEFT side (70px width) {%- endcomment -%}
+                  <div class="adv-formula__card-icon">
+                    {%- if block.settings.icon != blank -%}
+                      <img
+                        src="{{ block.settings.icon | image_url: width: 140 }}"
+                        loading="lazy"
+                        width="70"
+                        height="auto"
+                        alt="{{ block.settings.title | escape }}"
+                        class="adv-formula__icon-image"
+                      >
+                    {%- endif -%}
+                  </div>
+                  
+                  {%- comment -%} Text on RIGHT side (196px width) {%- endcomment -%}
+                  <div class="adv-formula__card-content">
+                    {%- if block.settings.title != blank -%}
+                      <h4 class="adv-formula__card-title">{{ block.settings.title }}</h4>
+                    {%- endif -%}
+                    
+                    {%- if block.settings.description != blank -%}
+                      <p class="adv-formula__card-description">{{ block.settings.description }}</p>
+                    {%- endif -%}
+                  </div>
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.box_footer != blank -%}
+        <div class="adv-formula__box-footer">
+          <p class="adv-formula__box-footer-text">{{ section.settings.box_footer }}</p>
+        </div>
+      {%- endif -%}
+
+    </div>
+
+    {%- if section.settings.quality_title != blank -%}
+      <div class="adv-formula__quality-title">
+        {{ section.settings.quality_title }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.quality_list != blank -%}
+      <div class="adv-formula__quality-list">
+        {{ section.settings.quality_list }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.conclusion_text != blank -%}
+      <div class="adv-formula__conclusion">
+        {{ section.settings.conclusion_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  .adv-formula {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-formula {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "The Formula",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Main Headline",
+      "default": "The Formula: Clinical Doses That Actually Work"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Introduction Text",
+      "default": "<p>Most supplements are designed by marketers, not scientists. Weak doses. Trendy ingredients. \"EXTREME ENERGY!\" labels.<br><br>Thaura was designed by looking at clinical research first.<br><br>What works? At what dose? In what form?</p>"
+    },
+    {
+      "type": "text",
+      "id": "box_header",
+      "label": "Blue Box Header",
+      "default": "Each 2-capsule serving contains:"
+    },
+    {
+      "type": "text",
+      "id": "box_footer",
+      "label": "Blue Box Footer",
+      "default": "Plus: Zinc, Boron, DIM, and metabolic support ingredients for complete hormone and energy optimization."
+    },
+    {
+      "type": "text",
+      "id": "quality_title",
+      "label": "Quality Section Title",
+      "default": "Everything is:"
+    },
+    {
+      "type": "richtext",
+      "id": "quality_list",
+      "label": "Quality List",
+      "default": "<p>Third-party tested for purity<br>No proprietary blends (you see exactly what you get)<br>No artificial junk<br>Made in USA, GMP-certified facility</p>"
+    },
+    {
+      "type": "text",
+      "id": "conclusion_text",
+      "label": "Conclusion Text",
+      "default": "Most importantly: Zero caffeine. Zero stimulants. Zero crash."
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image",
+          "info": "Recommended: 70px width"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Ingredient Title",
+          "default": "600mg KSM-66® Ashwagandha"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "The exact clinical dose proven to reduce cortisol 27.9% and improve sustained energy"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "The Formula",
+      "blocks": [
+        {
+          "type": "ingredient",
+          "settings": {
+            "title": "600mg KSM-66® Ashwagandha",
+            "description": "The exact clinical dose proven to reduce cortisol 27.9% and improve sustained energy"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "title": "200mg GlucoVantage® Dihydroberberine",
+            "description": "Prevents energy crashes from blood sugar swings (5x more absorbable than regular berberine)"
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "title": "160mg L-Theanine",
+            "description": "Calm focus without drowsiness"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

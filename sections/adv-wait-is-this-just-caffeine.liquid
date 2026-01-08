@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="{{ 'section-adv-wait-is-this-just-caffeine.css' | asset_url }}">
+
+<section class="adv-wait-caffeine">
+  <div class="adv-wait-caffeine__container page-width">
+    
+    {%- comment -%} Mobile Order: Headline → Image → Body → Conclusion {%- endcomment -%}
+    {%- comment -%} Desktop Order: Image (left) → Headline+Body (right) → Conclusion (full width) {%- endcomment -%}
+    
+    {%- if section.settings.headline != blank -%}
+      <h2 class="adv-wait-caffeine__headline adv-wait-caffeine__headline--mobile-only">
+        {{ section.settings.headline }}
+      </h2>
+    {%- endif -%}
+    
+    <div class="adv-wait-caffeine__content">
+      
+      {%- if section.settings.comparison_image != blank -%}
+        <div class="adv-wait-caffeine__image-wrapper">
+          <img
+            src="{{ section.settings.comparison_image | image_url: width: 980 }}"
+            loading="lazy"
+            width="{{ section.settings.comparison_image.width }}"
+            height="{{ section.settings.comparison_image.height }}"
+            alt="{{ section.settings.comparison_image.alt | escape }}"
+            class="adv-wait-caffeine__image"
+          >
+        </div>
+      {%- endif -%}
+
+      <div class="adv-wait-caffeine__text-content">
+        {%- if section.settings.headline != blank -%}
+          <h2 class="adv-wait-caffeine__headline adv-wait-caffeine__headline--desktop-only">
+            {{ section.settings.headline }}
+          </h2>
+        {%- endif -%}
+
+        {%- if section.settings.body_text != blank -%}
+          <div class="adv-wait-caffeine__body">
+            {{ section.settings.body_text }}
+          </div>
+        {%- endif -%}
+      </div>
+
+    </div>
+
+    {%- if section.settings.conclusion_text != blank -%}
+      <div class="adv-wait-caffeine__conclusion">
+        {{ section.settings.conclusion_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  .adv-wait-caffeine {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-wait-caffeine {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Wait, Is This Caffeine?",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "comparison_image",
+      "label": "Comparison Image",
+      "info": "Recommended: 490x414px. Image showing caffeine vs product comparison."
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "\"Wait—Is This Just Caffeine With a Different Name?\""
+    },
+    {
+      "type": "richtext",
+      "id": "body_text",
+      "label": "Body Text",
+      "default": "<p>No. Zero caffeine. Zero stimulants.<br><br>I know you're skeptical. Every \"energy\" product is just caffeine disguised.<br><br>Pre-workouts? Caffeine.<br>Energy drinks? Caffeine and sugar.<br>\"Natural energy\" pills? Usually green tea extract (which is just... caffeine).</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "conclusion_text",
+      "label": "Conclusion Text",
+      "default": "<p>Adaptogens are completely different.<br><br>They've been studied for decades in modern clinical research. KSM-66 specifically has over 20 peer-reviewed human studies.<br><br>Think of it this way:<br><br>Caffeine = Flooring the gas pedal when you're out of gas. Sure, you go faster for a minute. But you're still out of fuel. Then you crash.<br><br>Adaptogens = Actually refilling your tank.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wait, Is This Caffeine?"
+    }
+  ]
+}
+{% endschema %}
+

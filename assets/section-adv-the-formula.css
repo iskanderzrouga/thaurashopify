@@ -1,0 +1,604 @@
+/**
+ * Section: The Formula - Clinical Doses
+ * 100% Figma Accuracy - Desktop & Mobile Responsive
+ * Fonts: Open Sans (main text), Helvetica Neue (card text)
+ * Features: Blue bordered box with ingredient cards
+ */
+
+/* ============================================
+   CSS VARIABLES - DESIGN TOKENS
+   ============================================ */
+
+:root {
+  /* Colors - Exact from Figma */
+  --adv-formula-bg: #ffffff;
+  --adv-formula-text-color: #0b0b0b;
+  --adv-formula-blue: #1544aa;
+  --adv-formula-blue-header-text: #ffffff;
+  --adv-formula-card-bg: #ffffff;
+  --adv-formula-card-border: #aaaaaa;
+  --adv-formula-card-title: #000000;
+
+  /* Typography - Desktop (Exact from Figma) */
+  --adv-formula-headline-size: 32px;
+  --adv-formula-headline-line-height: 38.4px;
+  --adv-formula-body-size: 20px;
+  --adv-formula-body-line-height: 28px;
+  --adv-formula-box-header-size: 26px;
+  --adv-formula-box-header-line-height: 36.4px;
+  --adv-formula-card-title-size: 20px;
+  --adv-formula-card-title-line-height: 24px;
+  --adv-formula-card-desc-size: 16px;
+  --adv-formula-card-desc-line-height: 22.4px;
+
+  /* Spacing - Desktop */
+  --adv-formula-section-gap: 30px;
+  --adv-formula-card-gap: 16px;
+  --adv-formula-card-inner-gap: 10px;
+}
+
+/* ============================================
+   SECTION CONTAINER
+   ============================================ */
+
+.adv-formula {
+  background-color: var(--adv-formula-bg) !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.adv-formula__container {
+  max-width: 1440px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 150px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: var(--adv-formula-section-gap) !important;
+}
+
+/* ============================================
+   MAIN HEADLINE
+   ============================================ */
+
+.adv-formula__headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-headline-size) !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-headline-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+}
+
+/* ============================================
+   INTRODUCTION TEXT
+   ============================================ */
+
+.adv-formula__intro {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-body-size) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-body-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+}
+
+.adv-formula__intro p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Allow Bold from rich text editor */
+.adv-formula__intro strong,
+.adv-formula__intro b {
+  font-weight: 700 !important;
+}
+
+/* ============================================
+   BLUE BOX CONTAINER
+   ============================================ */
+
+.adv-formula__blue-box {
+  background-color: var(--adv-formula-card-bg) !important;
+  border: 1px solid var(--adv-formula-blue) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Blue Header Bar */
+.adv-formula__box-header {
+  background-color: var(--adv-formula-blue) !important;
+  padding: 15px 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.adv-formula__box-header-text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-box-header-size) !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  line-height: var(--adv-formula-box-header-line-height) !important;
+  color: var(--adv-formula-blue-header-text) !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ============================================
+   INGREDIENT CARDS CONTAINER
+   ============================================ */
+
+.adv-formula__cards {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--adv-formula-card-gap) !important;
+  padding: 30px 27px !important;
+  width: 100% !important;
+}
+
+/* Individual Card - HORIZONTAL LAYOUT (Image Left, Text Right) */
+.adv-formula__card {
+  background-color: var(--adv-formula-card-bg) !important;
+  border: 1px solid var(--adv-formula-card-border) !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 4px 7px -4px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -5px rgba(0, 0, 0, 0.1) !important;
+  padding: 0 !important;
+  width: 300px !important;
+  height: 200px !important;
+  display: flex !important;
+  flex-direction: row !important; /* Horizontal: Image left, Text right */
+  overflow: hidden !important;
+}
+
+/* Card Icon - Left Side (70px × 307px in Figma, cropped to 200px) */
+.adv-formula__card-icon {
+  width: 70px !important;
+  height: 100% !important;
+  flex-shrink: 0 !important;
+  overflow: hidden !important;
+  background-color: #d9d9d9 !important;
+}
+
+.adv-formula__icon-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* Card Content - Right Side (196px width in Figma) */
+.adv-formula__card-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--adv-formula-card-inner-gap) !important;
+  flex: 1 !important;
+  padding: 15px !important;
+  justify-content: flex-start !important;
+  width: 196px !important;
+}
+
+/* Card Title */
+.adv-formula__card-title {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-card-title-size) !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-card-title-line-height) !important;
+  color: var(--adv-formula-card-title) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Card Description */
+.adv-formula__card-description {
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-card-desc-size) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-card-desc-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ============================================
+   BLUE BOX FOOTER
+   ============================================ */
+
+.adv-formula__box-footer {
+  padding: 0 27px 29px 27px !important;
+  width: 100% !important;
+}
+
+.adv-formula__box-footer-text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-body-size) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-body-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 932px !important;
+  margin: 0 auto !important;
+}
+
+/* ============================================
+   QUALITY SECTION
+   ============================================ */
+
+.adv-formula__quality-title {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-body-size) !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-body-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+}
+
+.adv-formula__quality-list {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-body-size) !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-body-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+}
+
+.adv-formula__quality-list p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ============================================
+   CONCLUSION TEXT
+   ============================================ */
+
+.adv-formula__conclusion {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-formula-body-size) !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: var(--adv-formula-body-line-height) !important;
+  color: var(--adv-formula-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1040px !important;
+}
+
+/* ============================================
+   DESKTOP: Ensure all cards are visible
+   ============================================ */
+
+@media screen and (min-width: 750px) {
+  .adv-formula__card {
+    display: flex !important; /* Force show on desktop */
+  }
+
+  .adv-formula__tabs {
+    display: none !important; /* Hide tabs on desktop */
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE (< 750px) - TABS/PILLS SYSTEM
+   Max-width: 749px
+   ============================================ */
+
+@media screen and (max-width: 749px) {
+  :root {
+    /* Typography - Mobile (Exact from Figma) */
+    --adv-formula-headline-size: 26px;
+    --adv-formula-headline-line-height: 31.2px;
+    --adv-formula-body-size: 18px;
+    --adv-formula-body-line-height: 25.2px;
+    --adv-formula-box-header-size: 20px;
+    --adv-formula-box-header-line-height: 28px;
+
+    /* Spacing - Mobile */
+    --adv-formula-section-gap: 20px;
+    --adv-formula-card-gap: 12px;
+
+    /* Tabs Colors */
+    --adv-formula-tab-active-bg: #084c25;
+    --adv-formula-tab-active-text: #ffffff;
+    --adv-formula-tab-inactive-bg: #ffffff;
+    --adv-formula-tab-inactive-text: #084c25;
+    --adv-formula-tab-inactive-border: #084c25;
+  }
+
+  .adv-formula__container {
+    max-width: 400px !important;
+    padding: 0 20px !important;
+  }
+
+  /* Blue Box - Mobile */
+  .adv-formula__blue-box {
+    border-radius: 12px !important;
+  }
+
+  /* TABS/PILLS Container (Mobile Only) */
+  .adv-formula__tabs {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 329px !important;
+    margin: 20px auto !important;
+    padding: 0 !important;
+  }
+
+  /* Individual Tab Button (Pill Shape - Exact from Figma) */
+  .adv-formula__tab {
+    /* Typography: Helvetica Neue Medium 20px/24px */
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important; /* Medium */
+    line-height: 24px !important;
+    text-align: center !important;
+    white-space: nowrap !important; /* Keep text on one line */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+
+    /* Layout & Spacing */
+    padding: 11px 20px !important; /* Reduced horizontal padding for long text */
+    border: 1.61px solid var(--adv-formula-tab-inactive-border) !important;
+    border-radius: 161px !important; /* Pill shape */
+
+    /* Colors */
+    background-color: var(--adv-formula-tab-inactive-bg) !important;
+    color: var(--adv-formula-tab-inactive-text) !important;
+
+    cursor: pointer !important;
+
+    /* Reset button styles */
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    outline: none !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Active Tab (Green) with smooth transition */
+  .adv-formula__tab--active {
+    background-color: var(--adv-formula-tab-active-bg) !important;
+    color: var(--adv-formula-tab-active-text) !important;
+    border-color: var(--adv-formula-tab-active-bg) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* Inactive Tab transition */
+  .adv-formula__tab:not(.adv-formula__tab--active) {
+    transition: all 0.3s ease !important;
+  }
+
+  /* Smaller font for long button text (mobile optimization) */
+  @media screen and (max-width: 360px) {
+    .adv-formula__tab {
+      font-size: 18px !important; /* Slightly smaller on very small screens */
+      padding: 11px 15px !important;
+    }
+  }
+
+  /* Tab Hover State - NO opacity change */
+  .adv-formula__tab:hover {
+    /* No hover effect - keep solid color */
+  }
+
+  /* Tab Active/Press State - Smooth click animation */
+  .adv-formula__tab:active {
+    transform: scale(0.97) !important;
+    transition: transform 0.1s ease !important;
+  }
+
+  /* Cards Container - Only show one card at a time on mobile */
+  .adv-formula__cards {
+    flex-direction: column !important;
+    padding: 0 15px 20px 15px !important;
+    gap: 0 !important; /* No gap since only one card visible */
+    align-items: center !important;
+  }
+
+  /* Card Dimensions - Exact from Figma: 300x200px */
+  .adv-formula__card {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: 200px !important;
+    min-height: 200px !important;
+    /* Smooth animation transitions */
+    transition: opacity 0.3s ease, transform 0.3s ease !important;
+    will-change: opacity, transform !important;
+    /* display will be controlled by JS */
+  }
+
+  /* Card Animation States */
+  .adv-formula__card[data-active="false"] {
+    display: none !important;
+    opacity: 0 !important;
+    transform: scale(0.95) translateY(10px) !important;
+  }
+
+  .adv-formula__card[data-active="true"] {
+    display: flex !important;
+    opacity: 1 !important;
+    transform: scale(1) translateY(0) !important;
+    animation: cardFadeIn 0.4s ease-out !important;
+  }
+
+  /* Card Fade In Animation */
+  @keyframes cardFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95) translateY(10px);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.01) translateY(-2px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  /* Content animation inside card */
+  .adv-formula__card[data-active="true"] .adv-formula__card-icon,
+  .adv-formula__card[data-active="true"] .adv-formula__card-content {
+    animation: contentSlideIn 0.5s ease-out 0.1s backwards !important;
+  }
+
+  @keyframes contentSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Mobile: Keep horizontal layout but adjust sizing */
+  .adv-formula__card-icon {
+    width: 70px !important;
+  }
+
+  .adv-formula__card-content {
+    width: auto !important;
+    padding: 15px !important;
+  }
+
+  /* Mobile: Card Content Gap */
+  .adv-formula__card-content {
+    gap: 10px !important; /* From Figma */
+  }
+
+  /* Mobile: Card Title - Helvetica Neue Bold (Exact from Figma) */
+  .adv-formula__card-title {
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important; /* Bold */
+    line-height: 24px !important;
+    color: #000000 !important; /* Black from Figma */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Mobile: Card Description - Open Sans Regular (Exact from Figma) */
+  .adv-formula__card-description {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important; /* Regular */
+    line-height: 22.4px !important;
+    color: #0b0b0b !important; /* From Figma */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Box Footer - Mobile (Exact from Figma) */
+  .adv-formula__box-footer {
+    padding: 0 15px 20px 15px !important;
+  }
+
+  .adv-formula__box-footer-text {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important; /* Regular */
+    line-height: 24px !important;
+    color: #0b0b0b !important;
+  }
+}
+
+/* ============================================
+   TABLET RESPONSIVE
+   Max-width: 989px
+   ============================================ */
+
+@media screen and (max-width: 989px) and (min-width: 750px) {
+  .adv-formula__container {
+    padding: 0 40px !important;
+  }
+
+  /* Cards - Wrap to 2 columns on tablet */
+  .adv-formula__cards {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .adv-formula__card {
+    width: calc(50% - 8px) !important;
+    min-width: 280px !important;
+    height: 200px !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY & INTERACTIONS
+   ============================================ */
+
+.adv-formula__card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.adv-formula__card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.15),
+    0px 15px 20px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Focus styles for accessibility */
+.adv-formula *:focus-visible {
+  outline: 2px solid var(--adv-formula-blue) !important;
+  outline-offset: 2px !important;
+}

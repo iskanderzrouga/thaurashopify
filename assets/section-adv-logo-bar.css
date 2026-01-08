@@ -1,0 +1,33 @@
+/* ADV Logo Bar Section */
+
+.adv-logo-bar {
+  position: relative;
+  z-index: 9;
+}
+
+.adv-logo-container {
+  position: relative;
+}
+
+.adv-logo-image {
+  display: block;
+}
+
+.adv-logo-placeholder {
+  line-height: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 749px) {
+  .adv-logo-container {
+    justify-content: center;
+  }
+}
+
+/* Print styles */
+@media print {
+  .adv-logo-bar {
+    background-color: transparent !important;
+  }
+}
+

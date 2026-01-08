@@ -1,0 +1,395 @@
+{%- comment -%}
+  Section: What Changes
+  
+  A section displaying a product image surrounded by 6 feature blocks highlighting benefits.
+  
+  Features:
+  - Central product image
+  - 6 feature blocks with icons, titles, and descriptions
+  - Background gradient image
+  - Fully responsive design
+{%- endcomment -%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-nl-what-changes.css' | asset_url | stylesheet_tag }}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navButtons = document.querySelectorAll('.nl-what-changes__nav-button');
+    const features = document.querySelectorAll('.nl-what-changes__mobile-feature');
+    let isAnimating = false;
+    
+    navButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Prevent multiple clicks during animation
+        if (isAnimating) return;
+        
+        const index = this.getAttribute('data-index');
+        const newFeature = document.querySelector(`.nl-what-changes__mobile-feature[data-index="${index}"]`);
+        
+        // Check if the button is already active
+        if (this.classList.contains('nl-what-changes__nav-button--active')) return;
+        if (!newFeature) return;
+        
+        isAnimating = true;
+        
+        // Update active button
+        navButtons.forEach(btn => btn.classList.remove('nl-what-changes__nav-button--active'));
+        this.classList.add('nl-what-changes__nav-button--active');
+        
+        // Fade out current feature
+        features.forEach(feature => {
+          feature.classList.remove('nl-what-changes__mobile-feature--active');
+        });
+        
+        // Small delay to ensure the fade-out starts, then fade in new feature
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            newFeature.classList.add('nl-what-changes__mobile-feature--active');
+          });
+        });
+        
+        // Reset animation lock after transition completes
+        setTimeout(() => {
+          isAnimating = false;
+        }, 500); // 450ms transition + 50ms buffer
+      });
+    });
+  });
+</script>
+
+<div id="{{ section.settings.section_id }}" class="nl-what-changes section-{{ section.id }}-padding">
+  <div class="nl-what-changes__background">
+    {% if section.settings.background_image != blank %}
+      {{
+        section.settings.background_image
+        | image_url: width: 2560
+        | image_tag:
+          class: 'nl-what-changes__bg-image',
+          loading: 'lazy',
+          alt: ''
+      }}
+    {% endif %}
+  </div>
+
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="nl-what-changes__heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+    
+    <!-- Desktop Layout -->
+    <div class="nl-what-changes__container nl-what-changes__desktop">
+      <div class="nl-what-changes__features-left">
+        {% for block in section.blocks %}
+          {% if block.type == 'feature' and block.settings.position == 'left' %}
+            <div class="nl-what-changes__feature nl-what-changes__feature--left" {{ block.shopify_attributes }}>
+              <div class="nl-what-changes__content nl-what-changes__content--right">
+                {% if block.settings.icon != blank %}
+                  <div class="nl-what-changes__icon-container">
+                    <div class="nl-what-changes__icon">
+                      {{
+                        block.settings.icon
+                        | image_url: width: 85
+                        | image_tag:
+                          class: 'nl-what-changes__icon-img',
+                          loading: 'lazy',
+                          alt: block.settings.title | escape
+                      }}
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.title != blank %}
+                  <h3 class="nl-what-changes__title">{{ block.settings.title }}</h3>
+                {% endif %}
+                {% if block.settings.description != blank %}
+                  <div class="nl-what-changes__description">{{ block.settings.description }}</div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      <div class="nl-what-changes__product">
+        {% if section.settings.product_image != blank %}
+          {{
+            section.settings.product_image
+            | image_url: width: 300
+            | image_tag:
+              class: 'nl-what-changes__product-img',
+              loading: 'lazy',
+              alt: section.settings.product_image_alt | escape
+          }}
+        {% endif %}
+      </div>
+      
+      <div class="nl-what-changes__features-right">
+        {% for block in section.blocks %}
+          {% if block.type == 'feature' and block.settings.position == 'right' %}
+            <div class="nl-what-changes__feature nl-what-changes__feature--right" {{ block.shopify_attributes }}>
+              <div class="nl-what-changes__content nl-what-changes__content--left">
+                {% if block.settings.icon != blank %}
+                  <div class="nl-what-changes__icon-container">
+                    <div class="nl-what-changes__icon">
+                      {{
+                        block.settings.icon
+                        | image_url: width: 85
+                        | image_tag:
+                          class: 'nl-what-changes__icon-img',
+                          loading: 'lazy',
+                          alt: block.settings.title | escape
+                      }}
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.title != blank %}
+                  <h3 class="nl-what-changes__title">{{ block.settings.title }}</h3>
+                {% endif %}
+                {% if block.settings.description != blank %}
+                  <div class="nl-what-changes__description">{{ block.settings.description }}</div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    
+    <!-- Mobile Layout with Numbered Navigation -->
+    <div class="nl-what-changes__mobile">
+      <div class="nl-what-changes__nav">
+        {% assign feature_count = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'feature' %}
+            {% assign feature_count = feature_count | plus: 1 %}
+            <button class="nl-what-changes__nav-button{% if feature_count == 1 %} nl-what-changes__nav-button--active{% endif %}" data-index="{{ feature_count }}">
+              {{ feature_count }}
+            </button>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      <div class="nl-what-changes__mobile-content">
+        {% assign feature_count = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'feature' %}
+            {% assign feature_count = feature_count | plus: 1 %}
+            <div class="nl-what-changes__mobile-feature{% if feature_count == 1 %} nl-what-changes__mobile-feature--active{% endif %}" data-index="{{ feature_count }}" {{ block.shopify_attributes }}>
+              <div class="nl-what-changes__content nl-what-changes__content--center">
+                <div class="nl-what-changes__icon-container">
+                  {% if block.settings.icon != blank %}
+                    <div class="nl-what-changes__icon">
+                      {{
+                        block.settings.icon
+                        | image_url: width: 85
+                        | image_tag:
+                          class: 'nl-what-changes__icon-img',
+                          loading: 'lazy',
+                          alt: block.settings.title | escape
+                      }}
+                    </div>
+                  {% endif %}
+                </div>
+                {% if block.settings.title != blank %}
+                  <h3 class="nl-what-changes__title">{{ block.settings.title }}</h3>
+                {% endif %}
+                {% if block.settings.description != blank %}
+                  <div class="nl-what-changes__description">{{ block.settings.description }}</div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      
+      <!-- Product image removed from mobile view -->
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "What Changes",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Changes When You Actually Show Up"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "product_image_alt",
+      "label": "Product Image Alt Text",
+      "default": "Product bottle"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left Side"
+            },
+            {
+              "value": "right",
+              "label": "Right Side"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Feature description text goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "What Changes",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "position": "left",
+            "title": "Be Present, Not Just Physically There",
+            "description": "Get on floor and play when asked. Be engaged at dinner table. Read bedtime stories without rushing. Kids get real you."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "position": "left",
+            "title": "No More Weekend-Only Dad",
+            "description": "Be fully present 7 days, not just Saturday mornings. Kids are only young once. Don't miss weeknights waiting for weekend."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "position": "left",
+            "title": "Energy for What They Want to Do",
+            "description": "Wrestling, catch, bikes, whatever. You have fuel to engage. Not forcing it—you actually want to."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "position": "right",
+            "title": "Stop Choosing Between Work and Family",
+            "description": "You work hard to provide. Now you can show up for them too. Steady energy that doesn't quit at 6 PM."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "position": "right",
+            "title": "Better Mood and Patience",
+            "description": "When not running on stress hormones, you're calmer. More patient. Better at handling frustrations. Whole dynamic improves."
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "position": "right",
+            "title": "Science-Backed, Not Stimulants",
+            "description": "600mg clinical KSM-66 proven to reduce cortisol 27.9%. Natural restoration, not artificial stimulation. Zero caffeine."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

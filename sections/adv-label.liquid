@@ -1,0 +1,114 @@
+{{ 'section-adv-label.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-label-bar" style="background-color: {{ section.settings.background_color }};">
+  <div class="adv-label-container">
+    <p class="adv-label-text" style="color: {{ section.settings.text_color }}; font-size: {{ section.settings.font_size }}px;">
+      {{ section.settings.label_text }}
+    </p>
+  </div>
+</div>
+
+<style>
+  .adv-label-bar {
+    width: 100%;
+    height: {{ section.settings.bar_height }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .adv-label-container {
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+  }
+
+  .adv-label-text {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    line-height: normal;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-label-bar {
+      height: {{ section.settings.mobile_bar_height }}px;
+    }
+
+    .adv-label-text {
+      font-size: {{ section.settings.mobile_font_size }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - Label Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label_text",
+      "label": "Label text",
+      "default": "Advertorial"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Bar height (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_bar_height",
+      "min": 20,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Bar height (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#1544aa"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Label Bar"
+    }
+  ]
+}
+{% endschema %}
+

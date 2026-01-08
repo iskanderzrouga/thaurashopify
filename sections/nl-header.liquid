@@ -1,0 +1,166 @@
+{% comment %} Hide on ADV pages {% endcomment %}
+{% unless page.handle == 'adv-3pm-wordad' or page.handle == 'adv-lbido-rstorer' or page.handle == 'adv-workdad-enrg-prsnce' or page.handle == 'adv-strss-deepr' %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="{{ section.settings.section_id }}" class="section-{{ section.id }}-padding px-5" style="background-color: {{ section.settings.bgcolor }}">
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex items-center justify-between gap-6 md:gap-12">
+      {% if section.settings.logo != blank %}
+        <div>
+          {{
+            section.settings.logo
+            | image_url: width: 300
+            | image_tag: class: 'w-full max-w-full nl-header__logo', sizes: '300px', preload: true
+          }}
+        </div>
+      {% endif %}
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-fit">
+          <a
+            href="{{ section.settings.button_url }}"
+            class="new-button--primary"
+          >
+            {{ section.settings.button_label }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+      .section-{{ section.id }}-padding .nl-header__logo {
+      max-width: {{ section.settings.logo_max_width }}px;
+    }
+      @media screen and (max-width: 767px) {
+    .section-{{ section.id }}-padding .nl-header__logo {
+      max-width: {{ section.settings.logo_max_width_m }}px;
+    }
+  }
+</style>
+
+{% endunless %}
+
+{% schema %}
+{
+  "name": "NL Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo Max Width",
+      "default": 190
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width_m",
+      "min": 50,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo Max Width (Mobile)",
+      "default": 110
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "NL Header"
+    }
+  ]
+}
+{% endschema %}

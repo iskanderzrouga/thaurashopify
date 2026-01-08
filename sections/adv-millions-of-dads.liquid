@@ -1,0 +1,192 @@
+{{ 'section-adv-millions-of-dads.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-millions-of-dads">
+  <div class="adv-millions-of-dads__container">
+    
+    {%- if section.settings.heading != blank -%}
+      <h2 class="adv-millions-of-dads__heading">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.main_image != blank -%}
+      <div class="adv-millions-of-dads__image-container">
+        <img 
+          src="{{ section.settings.main_image | image_url: width: 1040 }}"
+          srcset="{{ section.settings.main_image | image_url: width: 520 }} 520w,
+                  {{ section.settings.main_image | image_url: width: 1040 }} 1040w,
+                  {{ section.settings.main_image | image_url: width: 2080 }} 2080w"
+          sizes="(max-width: 1040px) 100vw, 1040px"
+          alt="{{ section.settings.main_image.alt | escape }}"
+          class="adv-millions-of-dads__image"
+          loading="lazy"
+          width="1040"
+          height="638"
+        >
+        
+        {%- if section.settings.product_image != blank -%}
+          <div class="adv-millions-of-dads__product-image">
+            <img 
+              src="{{ section.settings.product_image | image_url: width: 450 }}"
+              srcset="{{ section.settings.product_image | image_url: width: 225 }} 225w,
+                      {{ section.settings.product_image | image_url: width: 450 }} 450w"
+              sizes="129px"
+              alt="{{ section.settings.product_image.alt | escape }}"
+              loading="lazy"
+              width="450"
+              height="227"
+            >
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.intro_text != blank -%}
+      <div class="adv-millions-of-dads__intro-text">
+        {{ section.settings.intro_text }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.show_checklist -%}
+      <div class="adv-millions-of-dads__checklist">
+        <div class="adv-millions-of-dads__checklist-inner">
+          {%- for i in (1..4) -%}
+            {%- assign item_key = 'checklist_item_' | append: i -%}
+            {%- assign item_text = section.settings[item_key] -%}
+            {%- if item_text != blank -%}
+              <div class="adv-millions-of-dads__checklist-item">
+                <span class="adv-millions-of-dads__checkmark">✅</span>
+                <p class="adv-millions-of-dads__checklist-text">{{ item_text }}</p>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.conclusion_text != blank -%}
+      <div class="adv-millions-of-dads__conclusion-text">
+        {{ section.settings.conclusion_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ADV - Millions of Dads",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Millions of Dads Have Energy After Work. What's Different?"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image (Bottle)"
+    },
+    {
+      "type": "header",
+      "content": "Intro Text"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Introduction Text",
+      "default": "<p>There are millions of men who work just as hard as you. Same hours. Same stress.</p><p>But they come home energized.</p><p>They get on the floor and play. They're present at dinner. They don't spend weeknights in a fog.</p><p><strong>So what's different?</strong></p><p>It's not that they care more. (You care. That's why this hurts.)</p><p>It's not easier jobs. (They're grinding like you.)</p><p><strong>The difference: Their bodies can sustain energy production all day.</strong></p><p>Here's what's happening:</p><p>When you're under chronic stress—work, responsibilities, poor sleep—your body produces elevated cortisol (your stress hormone).</p><p><strong>High cortisol:</strong></p>"
+    },
+    {
+      "type": "header",
+      "content": "Checklist"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_checklist",
+      "label": "Show Checklist",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "checklist_item_1",
+      "label": "Checklist Item 1",
+      "default": "Depletes your natural energy reserves"
+    },
+    {
+      "type": "text",
+      "id": "checklist_item_2",
+      "label": "Checklist Item 2",
+      "default": "Ruins your sleep quality (so you wake up behind)"
+    },
+    {
+      "type": "text",
+      "id": "checklist_item_3",
+      "label": "Checklist Item 3",
+      "default": "Causes brain fog and irritability"
+    },
+    {
+      "type": "text",
+      "id": "checklist_item_4",
+      "label": "Checklist Item 4",
+      "default": "Makes you crash by 3 PM"
+    },
+    {
+      "type": "header",
+      "content": "Conclusion Text"
+    },
+    {
+      "type": "richtext",
+      "id": "conclusion_text",
+      "label": "Conclusion Text",
+      "default": "<p>By 6 PM when you get home? There's nothing left.</p><p><strong>This isn't a motivation problem. This is a cortisol problem.</strong></p>"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Millions of Dads"
+    }
+  ]
+}
+{% endschema %}
+

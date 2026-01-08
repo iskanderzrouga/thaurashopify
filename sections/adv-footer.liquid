@@ -1,0 +1,105 @@
+{% comment %}
+  ADV Footer Section
+  Displays FDA disclaimer text
+  Only shows on ADV pages
+{% endcomment %}
+
+{{ 'section-adv-footer.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Show only on ADV pages {% endcomment %}
+{% if page.handle == 'adv-3pm-wordad' or page.handle == 'adv-lbido-rstorer' or page.handle == 'adv-workdad-enrg-prsnce' or page.handle == 'adv-strss-deepr' %}
+
+<footer class="adv-footer" 
+        style="
+          background-color: {{ section.settings.background_color }} !important;
+          border-top-color: {{ section.settings.border_color }} !important;
+        ">
+  <div class="adv-footer__container">
+    {% if section.settings.disclaimer_text != blank %}
+      <p class="adv-footer__text"
+         style="
+           color: {{ section.settings.text_color }} !important;
+           font-size: {{ section.settings.font_size_mobile }}px !important;
+         ">
+        {{ section.settings.disclaimer_text }}
+      </p>
+    {% endif %}
+  </div>
+</footer>
+
+<style>
+  @media screen and (min-width: 750px) {
+    .adv-footer-section .adv-footer__text {
+      font-size: {{ section.settings.font_size_desktop }}px !important;
+    }
+  }
+</style>
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "ADV Footer",
+  "class": "adv-footer-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Footer Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Top Color",
+      "default": "#D9D9D9"
+    },
+    {
+      "type": "header",
+      "content": "Disclaimer Text"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer_text",
+      "label": "Disclaimer Text",
+      "default": "These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease."
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#444444"
+    },
+    {
+      "type": "range",
+      "id": "font_size_desktop",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font Size (Desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font Size (Mobile)",
+      "default": 14
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV Footer"
+    }
+  ]
+}
+{% endschema %}
+

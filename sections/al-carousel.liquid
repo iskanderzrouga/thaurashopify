@@ -1,0 +1,312 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="section-{{ section.id }}-padding px-[15px]"
+  style="background-color: {{ section.settings.bgcolor }}"
+>
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col items-center justify-center gap-[30px] md:gap-[60px] w-full">
+      {% if section.settings.heading != blank %}
+        <h2
+          class="text-[36px] md:text-[50px] font-semibold text-[#00176B] !leading-tight text-center"
+          style="color: {{section.settings.color_primary}}"
+        >
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      <div class="w-full">
+        <div class="splide mb-16 lg:mb-8 al-carousel__slider">
+          <div class="splide__track pb-2">
+            <ul class="splide__list">
+              {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'row' %}
+                      <div class="splide__slide">
+                        <div class="border border-[#5395FF] rounded-[20px] bg-[#FFFFFA] h-full">
+                          {% if block.settings.image != blank %}
+                            {{
+                              block.settings.image
+                              | image_url: width: 600
+                              | image_tag: class: 'w-full rounded-t-[20px]', sizes: '600px'
+                            }}
+                          {% endif %}
+
+                          <div class="flex flex-col gap-5 px-4 py-[20px] md:py-[30px]">
+                            {% if block.settings.heading != blank %}
+                              <div
+                                class="text-[22px] md:text-[24px] font-bold !leading-tight text-[#212537]"
+                                style="color: {{section.settings.color_secondary}}"
+                              >
+                                {{ block.settings.heading }}
+                              </div>
+                            {% endif %}
+
+                            {% if block.settings.description != blank %}
+                              <div
+                                class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#212537]"
+                                style="color: {{section.settings.color_secondary}}"
+                              >
+                                {{ block.settings.description }}
+                              </div>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                  {% endcase %}
+                {% endfor %}
+              {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-full md:w-fit mx-auto md:min-w-[500px]">
+          {% render 'new-button', section: section %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__pagination__page {
+    height: 10px;
+    background: transparent;
+    width: 10px;
+    border: 1px solid {{section.settings.color_tertiary}};
+  }
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__pagination__page.is-active {
+    background: {{section.settings.color_tertiary}};
+    transform: unset;
+    width: 40px;
+    border-radius: 20px;
+  }
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__pagination {
+    gap: 5px;
+    bottom: -40px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__arrow {
+    width: 48px;
+    height: 48px;
+    border: 2px solid {{section.settings.color_tertiary}};
+    background-color: transparent;
+    opacity: 1;
+    top: auto;
+    bottom: -80px;
+  }
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: {{section.settings.color_tertiary}};
+  }
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__arrow--prev {
+    right: 80px;
+    left: auto;
+  }
+  .section-{{ section.id }}-padding .al-carousel__slider .splide__arrow--next {
+    right: 0px;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('.section-{{ section.id }}-padding .al-carousel__slider', {
+      perPage: 3,
+      perMove: 1,
+      arrows: true,
+      rewind: true,
+      gap: '15px',
+      trimSpace: false,
+      breakpoints: {
+        768: {
+          perPage: 1,
+          arrows: false,
+        },
+      },
+    });
+    splide.mount();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "AL Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "tertiary",
+          "label": "Tertiary"
+        }
+      ],
+      "default": "primary",
+      "label": "Button Type"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_primary",
+      "label": "Primary Color",
+      "default": "#FE6901"
+    },
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary Color",
+      "default": "#00176B"
+    },
+    {
+      "type": "color",
+      "id": "color_tertiary",
+      "label": "Tertiary Color",
+      "default": "#212537"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AL Carousel"
+    }
+  ]
+}
+{% endschema %}

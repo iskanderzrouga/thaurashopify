@@ -1,0 +1,16 @@
+<div class="border border-white rounded-[20px] flex items-center flex-col gap-3 p-5">
+  {% if block.settings.image != blank %}
+    {{ block.settings.image | image_url: width: 85 | image_tag: class: 'max-w-[85px] w-full', sizes: '85px' }}
+  {% endif %}
+  {% if block.settings.heading != blank %}
+    <div class="text-[16px] md:text-[16px] font-bold !leading-tight text-[#fff]">
+      {{ block.settings.heading }}
+    </div>
+  {% endif %}
+
+  {% if block.settings.description != blank %}
+    <div class="text-[#fff] text-[14px] md:text-base font-normal !leading-tight">
+      {{ block.settings.description }}
+    </div>
+  {% endif %}
+</div>

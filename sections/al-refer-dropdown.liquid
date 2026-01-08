@@ -1,0 +1,200 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding px-5" style="background-color: {{ section.settings.bgcolor }}">
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col items-center justify-center gap-6 md:gap-12">
+      {% if section.settings.heading != blank %}
+        <h2 class="text-[26px] md:text-[40px] font-bold !leading-tight text-[#272727]">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#272727]">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="w-full">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'row' %}
+                <div class="al-refer-dropdown__item group rounded-[12px] p-5 w-full flex flex-col gap-5 border-[2px]" style="border-color: {{section.settings.color_primary}}">
+                  {% if block.settings.heading != blank %}
+                    <div class="al-refer-dropdown__heading flex items-center justify-between text-left gap-5 cursor-pointer w-full">
+                      <div class="text-2xl font-bold m-0" style="color: {{section.settings.color_secondary}}">{{ block.settings.heading }}</div>
+                      <div class="w-8 h-8 [&>svg]:w-full [&>svg]:h-full">
+                        {% render 'newIcons' %}
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if block.settings.description != blank %}
+                    <div class="hidden text-left group-[.active]:block">
+                      <div class="text-base leading-6 m-0 overflow-x-auto" style="color: {{section.settings.color_secondary}}">{{ block.settings.description }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-full md:w-fit mx-auto">
+          <a
+            href="{{ section.settings.button_url }}"
+            class="new-button--primary"
+          >
+            {{ section.settings.button_label }}
+            {%- render 'icon-arrow-right' -%}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.al-refer-dropdown__heading').forEach((heading) => {
+      heading.addEventListener('click', () => {
+        const dropdownParent = heading.closest('.al-refer-dropdown__item');
+        if (dropdownParent) {
+          dropdownParent.classList.toggle('active');
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "AL Refer Dropdown",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_primary",
+      "label": "Primary Color",
+      "default": "#FE6901"
+    },
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary Color",
+      "default": "#00176B"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AL Refer Dropdown"
+    }
+  ]
+}
+{% endschema %}

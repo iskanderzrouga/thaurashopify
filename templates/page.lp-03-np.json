@@ -1,0 +1,2090 @@
+{
+  "sections": {
+    "nl_thin_icon_text_jEL6P9": {
+      "type": "nl-thin-icon-text",
+      "name": "NL Thin Icon Text",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "description": "<p>No Results In 90 Days? Your Money-Back Guarantee<\/p>",
+        "image": "shopify:\/\/shop_images\/Mask_group_4661acb4-0a34-4df8-9d04-bddde0c8dc1d.png",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#1e3a16",
+        "max_width": 1200,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "padding_top_m": 8,
+        "padding_bottom_m": 8
+      }
+    },
+    "nl_main_banner_JYhfH3": {
+      "type": "nl-main-banner",
+      "blocks": {
+        "star_review_y9ETxy": {
+          "type": "star_review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "rating": "4.8",
+            "text": "+47,000 Active Users"
+          }
+        },
+        "review_aHknwG": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "name": "Jim, 49",
+            "image": "shopify:\/\/shop_images\/Frame_1707481779.png",
+            "icon": "shopify:\/\/shop_images\/Subtract_1.png",
+            "heading": "Verified Buyer"
+          }
+        },
+        "mobile_card_review_Lnw6ck": {
+          "type": "mobile_card_review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Medicine-bottle-box-08.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_d2cde9f4-b648-4e6e-bcd7-c28d6c47fb1c.png",
+            "heading": "Actually Fits My Life",
+            "text": "\"I'm 42 with two kids, no time for complicated stuff. This is just 2 pills with breakfast. My chest is noticeably flatter after about 6 weeks. My t-shirts fit better, and I feel less fluffy.\""
+          }
+        },
+        "description_JNrjae": {
+          "type": "description",
+          "settings": {
+            "description": "<p>As men age, estrogen levels often rise leading to stubborn chest fat that diet and exercise struggle to reduce. While surgery only removes tissue, Thaura is formulated to support hormonal balance naturally, helping restore confidence and energy.<\/p>"
+          }
+        },
+        "feature_wrapper_kixEeh": {
+          "type": "feature_wrapper",
+          "settings": {}
+        },
+        "feature_JrwyMU": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Flatten Chest Fat (Without Surgery)"
+          }
+        },
+        "feature_J98xpF": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Reduce Stubborn Belly Fat"
+          }
+        },
+        "feature_VQfzm3": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Balance Excess Estrogen Naturally"
+          }
+        },
+        "feature_YELhgJ": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Boost Energy & Drive"
+          }
+        },
+        "feature_x63DxR": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Subtract_bed85bb3-30e2-49b7-9ab0-33bf636cc380.png",
+            "description": "Restore Testosterone Levels"
+          }
+        },
+        "button_XbpXVi": {
+          "type": "button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "star_review_y9ETxy",
+        "review_aHknwG",
+        "mobile_card_review_Lnw6ck",
+        "description_JNrjae",
+        "feature_wrapper_kixEeh",
+        "feature_JrwyMU",
+        "feature_J98xpF",
+        "feature_VQfzm3",
+        "feature_YELhgJ",
+        "feature_x63DxR",
+        "button_XbpXVi"
+      ],
+      "name": "NL Main Banner",
+      "settings": {
+        "section_id": "",
+        "heading": "The Hidden Hormonal Reason Behind Stubborn Chest Fat (And Why Surgery Alone Doesn’t Solve It)",
+        "highlight": "",
+        "image": "shopify:\/\/shop_images\/Group_1321314437_1.png",
+        "image_m": "shopify:\/\/shop_images\/Pills_Bottle_Mockup_3.png",
+        "button_label": "TRY DRYFT™ RISK-FREE",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "*Results are based on scientific studies of individual ingredients in the formula and may vary",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "<p>90-Day Money Back Guarantee<\/p>",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 24,
+        "padding_bottom_m": 0
+      }
+    },
+    "nl_banner_LqEXKC": {
+      "type": "nl-banner",
+      "disabled": true,
+      "name": "NL Banner",
+      "settings": {
+        "section_id": "",
+        "heading": "<p><strong>More Definition, Less Fat - Just 2 Capsules a Day<\/strong><\/p>",
+        "description": "<p>No diets. No gimmicks. This carefully formulated blend of 9 science-backed ingredients <strong>helps address the underlying factors blocking results <\/strong>--- so you can finally lose the stubborn chest and belly fat that have been holding you back.<\/p>",
+        "product_image": "shopify:\/\/shop_images\/Medicine-bottle-box-03.png",
+        "image": "shopify:\/\/shop_images\/image_64_5eacfed0-ecc0-4597-98e7-23d54a934e1d.png",
+        "button_label": "",
+        "button_url": "",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_m": 0,
+        "padding_bottom_m": 0
+      }
+    },
+    "new_lp_featured_product_NMieYc": {
+      "type": "new-lp-featured-product",
+      "blocks": {
+        "review_dpntk6": {
+          "type": "review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "text": "<p><strong>4.8<\/strong> | Trusted by 47,981 Strong Men<\/p>"
+          }
+        },
+        "title_FAMyci": {
+          "type": "title",
+          "settings": {
+            "custom_title": "Try Dryft™ : Formulated For Real Results",
+            "heading_size": "h1"
+          }
+        },
+        "text2_JEBJ9f": {
+          "type": "text2",
+          "disabled": true,
+          "settings": {
+            "text": "Go from embarrassing dad bod to lean muscle and commanding presence - without extreme diets, fat burners, or spending hours in the gym."
+          }
+        },
+        "benefits_wrapper_Xyzppi": {
+          "type": "benefits_wrapper",
+          "settings": {}
+        },
+        "benefit_hKWGwb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Helps melt stubborn belly fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_UC4cNV": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Supports healthy hormone balance naturally<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_dgQMXB": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Helps flush excess estrogen to reduce chest fat<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "benefit_E6qaxb": {
+          "type": "benefit",
+          "settings": {
+            "description": "<p>Helps support a healthy metabolism and fat burning<\/p>",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "price_JdP3yx": {
+          "type": "price",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker_X3mg6k": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_QLDmwk": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_eLzg7L": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "variant_picker_secondary_pWwVj7": {
+          "type": "variant_picker_secondary",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "square"
+          }
+        },
+        "buy_buttons_secondary_xMRCRF": {
+          "type": "buy_buttons_secondary",
+          "disabled": true,
+          "settings": {
+            "normal_button": false,
+            "custom_text": "Try Dryft™ Now",
+            "bottom_icon": "shopify:\/\/shop_images\/guarantee.png",
+            "bottom_text": "Get Results Or Your Money Back!",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "subscription_widget_xHfRfp": {
+          "type": "subscription_widget",
+          "settings": {
+            "label": "",
+            "default_onetime": false
+          }
+        },
+        "subscription_widget_child_CqixrF": {
+          "type": "subscription_widget_child",
+          "settings": {
+            "default": true,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-1-bottle-copy",
+            "discount": "16.95",
+            "id_1": "2278883501",
+            "id_2": "2278916269",
+            "id_3": "2278850733"
+          }
+        },
+        "subscription_widget_child_Q4rw9Y": {
+          "type": "subscription_widget_child",
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-2-bottles-copy",
+            "discount": "10.1",
+            "id_1": "2278981805",
+            "id_2": "2279014573",
+            "id_3": "2278949037"
+          }
+        },
+        "subscription_widget_child_6D69r3": {
+          "type": "subscription_widget_child",
+          "settings": {
+            "default": false,
+            "heading": "",
+            "shipping_text": "",
+            "product": "drift™-3-bottles",
+            "discount": "7.75",
+            "id_1": "2277834925",
+            "id_2": "2277867693",
+            "id_3": "2277802157"
+          }
+        },
+        "benefits_wrapper3_rnGdJQ": {
+          "type": "benefits_wrapper3",
+          "settings": {}
+        },
+        "benefit3_JRW86T": {
+          "type": "benefit3",
+          "settings": {
+            "heading": "Shipped in 24 Hours from our USA Warehouse",
+            "description": "Order within",
+            "label": "Ships Today",
+            "timer": true,
+            "border_bottom": true,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/truck.svg"
+          }
+        },
+        "benefit3_yLpYUf": {
+          "type": "benefit3",
+          "settings": {
+            "heading": "90 Day Money Back Guarantee",
+            "description": "Pause or cancel anytime",
+            "label": "",
+            "timer": false,
+            "border_bottom": false,
+            "reset_time": "00:00:00",
+            "icon": "shopify:\/\/shop_images\/money-back-guarantee_1.svg"
+          }
+        },
+        "image_rpinNX": {
+          "type": "image",
+          "settings": {
+            "percent": 60,
+            "image": "shopify:\/\/shop_images\/Frame_37.png"
+          }
+        },
+        "share_ndpLTm": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "review_dpntk6",
+        "title_FAMyci",
+        "text2_JEBJ9f",
+        "benefits_wrapper_Xyzppi",
+        "benefit_hKWGwb",
+        "benefit_UC4cNV",
+        "benefit_dgQMXB",
+        "benefit_E6qaxb",
+        "price_JdP3yx",
+        "variant_picker_X3mg6k",
+        "quantity_selector_QLDmwk",
+        "buy_buttons_eLzg7L",
+        "variant_picker_secondary_pWwVj7",
+        "buy_buttons_secondary_xMRCRF",
+        "subscription_widget_xHfRfp",
+        "subscription_widget_child_CqixrF",
+        "subscription_widget_child_Q4rw9Y",
+        "subscription_widget_child_6D69r3",
+        "benefits_wrapper3_rnGdJQ",
+        "benefit3_JRW86T",
+        "benefit3_yLpYUf",
+        "image_rpinNX",
+        "share_ndpLTm"
+      ],
+      "disabled": true,
+      "name": "New Featured Product",
+      "settings": {
+        "section_id": "productsMain",
+        "color_primary": "#000000",
+        "color_secondary": "#fe6901",
+        "product": "",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "bottom_text": "",
+        "bottom_text_color": "#000000",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "nl_logos_PkLwVA": {
+      "type": "nl-logos",
+      "blocks": {
+        "logo_zFq7rG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/digital-journal.png"
+          }
+        },
+        "logo_HjEVTg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fox_Networks_Group_US_logo_svg.png"
+          }
+        },
+        "logo_Fpp8rX": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bingh.png"
+          }
+        },
+        "logo_yYzdzD": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nbc-new-logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_zFq7rG",
+        "logo_HjEVTg",
+        "logo_Fpp8rX",
+        "logo_yYzdzD"
+      ],
+      "name": "NL Logos",
+      "settings": {
+        "section_id": "",
+        "heading": "Scientifically Backed Ingredients Featured In",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "show_payment_icons": false,
+        "bottom_description": "",
+        "bgcolor": "#f6f7ef",
+        "max_width": 800,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_m": 24,
+        "padding_bottom_m": 24
+      }
+    },
+    "nl_carousel_34QPVA": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_aKHexn": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-10-03_at_11.25.54_AM.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "Honestly didn't expect much",
+            "description": "<p><em>\"I've always carried weight in my chest. Tried other supplements with zero results. Been taking Dryft for about 8 weeks and my chest looks noticeably flatter—less puffy. Still have work to do but I wore a fitted polo last week without feeling self-conscious. That hasn't happened in years.\"<\/em><\/p>",
+            "name": "James T. 54",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_cbgkky": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-10-03_at_10.34.30_AM.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "Skeptical but it's working",
+            "description": "<p><em>\"I'm 44 and was saving up for gynecomastia surgery when my buddy mentioned Dryft. Figured I'd try it since it was way cheaper. Started noticing my chest felt firmer around week 5. Not a miracle, but my shirts button better now. Wish I'd found this before wasting money on other supplements that did nothing.\"<\/em><\/p>",
+            "name": "Paul M., 43 ",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_UCHNte": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_130.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "My chest looks better, shirts fit better",
+            "description": "<p><em>\"I hated taking my shirt off, even at the pool with my kids. After 6 weeks, my chest looks firmer and I don’t feel like I have to hide under baggy shirts. It’s not overnight magic, but it’s the first thing that’s actually made a difference.\"<\/em><\/p>",
+            "name": "Paul S., 48",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_aKHexn",
+        "row_cbgkky",
+        "row_UCHNte"
+      ],
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "2",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": false,
+        "heading": "Join 47,000+ Men Who Finally Flattened Their Chest (Without Surgery Or Crash Diets)",
+        "description": "<p>Men worldwide are finally eliminating stubborn chest fat and rebalancing their hormones—without expensive surgery, soul-crushing diets, or spending hours in the gym.<\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "Melt Fat Or Get Your Money Back!",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#000000",
+        "bgcolor": "#ffffff",
+        "arrow_color": "#1e3a16",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_unique_eYUpeA": {
+      "type": "nl-unique",
+      "blocks": {
+        "s1_items_MrtYx7": {
+          "type": "s1_items",
+          "settings": {
+            "description": "<p>Helps reduce belly fat on your waist and chest<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract.png"
+          }
+        },
+        "s1_items_YQLrTn": {
+          "type": "s1_items",
+          "settings": {
+            "description": "<p>Helps sustain energy throughout the day - fewer afternoon slumps<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract.png"
+          }
+        },
+        "s1_items_99RECW": {
+          "type": "s1_items",
+          "settings": {
+            "description": "<p>Supports better mood and focus - feel sharp and motivated<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract.png"
+          }
+        },
+        "s1_items_XAQbRM": {
+          "type": "s1_items",
+          "settings": {
+            "description": "<p>Helps restore natural drive and vitality<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract.png"
+          }
+        },
+        "s1_items_QmBRrN": {
+          "type": "s1_items",
+          "settings": {
+            "description": "<p>Supports deeper sleep, so you can wake up feeling refreshed<\/p>",
+            "icon": "shopify:\/\/shop_images\/Subtract.png"
+          }
+        },
+        "s2_items_1_JdFz7H": {
+          "type": "s2_items_1",
+          "settings": {
+            "number": "1",
+            "heading": "Your insulin sensitivity drops",
+            "description": "<p>making your body store fat instead of burning it<\/p>"
+          }
+        },
+        "s2_items_1_6QYJCG": {
+          "type": "s2_items_1",
+          "settings": {
+            "number": "2",
+            "heading": "Cortisol stays elevated",
+            "description": "<p>triggering chest fat storage and late-night cravings<\/p>"
+          }
+        },
+        "s2_items_1_FjhR4n": {
+          "type": "s2_items_1",
+          "settings": {
+            "number": "3",
+            "heading": "Estrogen builds from processed foods and plastics",
+            "description": "<p>creating \"soft\" fat in your chest and midsection<\/p>"
+          }
+        },
+        "s2_items_2_xknQUK": {
+          "type": "s2_items_2",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_49168.png",
+            "description": "<p>You wear dark, baggy shirts year-round <\/p>"
+          }
+        },
+        "s2_items_2_AD3GUP": {
+          "type": "s2_items_2",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_49168.png",
+            "description": "<p>Beach days fill you with anxiety<\/p>"
+          }
+        },
+        "s2_items_2_rDCQkK": {
+          "type": "s2_items_2",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_49168.png",
+            "description": "<p>Your gut hangs over your jeans<\/p>"
+          }
+        },
+        "s2_items_2_paWRjJ": {
+          "type": "s2_items_2",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_49168.png",
+            "description": "<p>Chest fat doesn’t budge no matter your workout split  <\/p>"
+          }
+        },
+        "s2_items_2_mTwQPC": {
+          "type": "s2_items_2",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_49168.png",
+            "description": "<p>You’re sitting back while other guys lead the room<\/p>"
+          }
+        },
+        "s3_items_P9i4kL": {
+          "type": "s3_items",
+          "settings": {
+            "description": "Cortisol"
+          }
+        },
+        "s3_items_eqJNCL": {
+          "type": "s3_items",
+          "settings": {
+            "description": "Estrogen"
+          }
+        },
+        "s3_items_jkgr8w": {
+          "type": "s3_items",
+          "settings": {
+            "description": "Insulin"
+          }
+        },
+        "s4_review_PUPyk9": {
+          "type": "s4_review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_129.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "description": "I’d lost hope. He'd given up on himself - stopped trying, stopped caring. Dryft™ didn't just change his body, it saved our relationship. He's confident, energetic and the same man I married 15 years ago. Our friends can't believe the transformation. ",
+            "name": "Sarah M.",
+            "avatar": "shopify:\/\/shop_images\/image.png",
+            "icon": "shopify:\/\/shop_images\/Subtract_1.png",
+            "verified": "Verified Buyer"
+          }
+        },
+        "s4_items_npzfC4": {
+          "type": "s4_items",
+          "settings": {
+            "description": "Over 4,984 5-Star Reviews",
+            "icon": "shopify:\/\/shop_images\/Subtract_586f44bb-71a2-422a-9e0c-ac0dd3a4514c.png"
+          }
+        },
+        "s4_items_bLTkzR": {
+          "type": "s4_items",
+          "settings": {
+            "description": "150,000 bottles sold",
+            "icon": "shopify:\/\/shop_images\/Subtract_586f44bb-71a2-422a-9e0c-ac0dd3a4514c.png"
+          }
+        },
+        "s4_items_xNeLGX": {
+          "type": "s4_items",
+          "settings": {
+            "description": "Sold out twice in 1 year",
+            "icon": "shopify:\/\/shop_images\/Subtract_586f44bb-71a2-422a-9e0c-ac0dd3a4514c.png"
+          }
+        },
+        "s4_items_EeqPch": {
+          "type": "s4_items",
+          "settings": {
+            "description": "Over 40,000 men report feeling confident",
+            "icon": "shopify:\/\/shop_images\/Subtract_586f44bb-71a2-422a-9e0c-ac0dd3a4514c.png"
+          }
+        },
+        "s4_items_2_4maTic": {
+          "type": "s4_items_2",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_76.png",
+            "heading": "Helps improve chest appearance",
+            "description": "feel more confident in fitted shirts"
+          }
+        },
+        "s4_items_2_CCarxR": {
+          "type": "s4_items_2",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_77.png",
+            "heading": "Helps manage abdominal weight",
+            "description": "supporting a more defined midsection"
+          }
+        },
+        "s4_items_2_BV9Xaf": {
+          "type": "s4_items_2",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_78.png",
+            "heading": "Helps maintain energy throughout the day",
+            "description": "enjoy consistent productivity without multiple cups of coffee"
+          }
+        },
+        "s4_items_2_JHphAT": {
+          "type": "s4_items_2",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_79.png",
+            "heading": "Helps promote daily confidence",
+            "description": "feel more like yourself again"
+          }
+        },
+        "s4_items_2_3cgBGj": {
+          "type": "s4_items_2",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_80.png",
+            "heading": "Helps support efficient metabolism",
+            "description": "assisting your body's natural fat-burning processes"
+          }
+        },
+        "s4_items_2_MxNbAe": {
+          "type": "s4_items_2",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_81.png",
+            "heading": "Feel like the dominant man you're meant to be",
+            "description": "the sex drive and vitality that made women notice and men respect you"
+          }
+        },
+        "s4_items_3_MPAbtf": {
+          "type": "s4_items_3",
+          "settings": {
+            "number": "1",
+            "heading": "The Appetite Switch",
+            "description": "L-Theanine + Ashwagandha help support healthy cortisol levels (reductions up to 32%), helping address stress-related fat storage throughout the body—including stubborn areas like the chest. Cayenne Pepper helps promote thermogenesis to support overall fat burning."
+          }
+        },
+        "s4_items_3_yLwYf7": {
+          "type": "s4_items_3",
+          "settings": {
+            "number": "2",
+            "heading": "The Metabolic Switch",
+            "description": "GlucoVantage® helps promote efficient nutrient use while Grains of Paradise supports increased energy expenditure potentially burning additional calories daily. This enhanced metabolic support helps your body tap into stored fat throughout problem areas, including the chest."
+          }
+        },
+        "s4_items_3_xqitpi": {
+          "type": "s4_items_3",
+          "settings": {
+            "number": "3",
+            "heading": "The Energy Switch",
+            "description": "DIM and Boron work together to flush excess estrogen, while Zinc supports healthy hormone levels. The result? Steady, all-day energy without the crash, better workouts, and the drive to build muscle while losing chest fat."
+          }
+        }
+      },
+      "block_order": [
+        "s1_items_MrtYx7",
+        "s1_items_YQLrTn",
+        "s1_items_99RECW",
+        "s1_items_XAQbRM",
+        "s1_items_QmBRrN",
+        "s2_items_1_JdFz7H",
+        "s2_items_1_6QYJCG",
+        "s2_items_1_FjhR4n",
+        "s2_items_2_xknQUK",
+        "s2_items_2_AD3GUP",
+        "s2_items_2_rDCQkK",
+        "s2_items_2_paWRjJ",
+        "s2_items_2_mTwQPC",
+        "s3_items_P9i4kL",
+        "s3_items_eqJNCL",
+        "s3_items_jkgr8w",
+        "s4_review_PUPyk9",
+        "s4_items_npzfC4",
+        "s4_items_bLTkzR",
+        "s4_items_xNeLGX",
+        "s4_items_EeqPch",
+        "s4_items_2_4maTic",
+        "s4_items_2_CCarxR",
+        "s4_items_2_BV9Xaf",
+        "s4_items_2_JHphAT",
+        "s4_items_2_3cgBGj",
+        "s4_items_2_MxNbAe",
+        "s4_items_3_MPAbtf",
+        "s4_items_3_yLwYf7",
+        "s4_items_3_xqitpi"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.s2_items_2:last-child {grid-column: 1\/5; }}",
+        "@media screen and (min-width: 768px) {.s4_items_2--20 {grid-column: 2\/4; } .s4_items_2--21 {grid-column: 4\/6; }}"
+      ],
+      "name": "NL Unique",
+      "settings": {
+        "section_id": "weight-loss-frustrating",
+        "show_section1": false,
+        "s1_bg": "shopify:\/\/shop_images\/image_64_85ed6dbc-749f-4055-a7fc-56bf54b6a3d7.png",
+        "s1_image": "shopify:\/\/shop_images\/3_bottles_a8739ca6-6f7a-4e4a-b6f1-9ffb6f9d7215.png",
+        "s1_heading": "In as little as 14 days...",
+        "s1_description": "<p>*Results are based on scientific studies of individual ingredients in the formula and may vary<\/p>",
+        "s2_heading": "“Chest Fat” Is the #1 Most Frustrating Symptom for Men Over 30",
+        "s2_subheading": "Even When You’re Doing Everything Right",
+        "s2_description": "<p>You've tried keto, intermittent fasting, even those energy supplements and fat-burners from the vitamin store. Nothing worked long-term because they ignored what really changed after 35.<br\/><br\/>After 35, your metabolism changes in ways most supplements and diets don’t address.<br\/><br\/>That's why you can follow the same diet that worked before and see minimal results. Or work out consistently but still have a soft chest. Your body isn't broken - you're just using the wrong approach for what your current metabolism can handle.<br\/><br\/>Think of it like outdated software – you're still running the same diet and exercise routines, but your body responds differently now. Here's what's actually happening:<\/p>",
+        "s2_image": "shopify:\/\/shop_images\/Group_49166_4f32e67a-66c7-431a-be40-a6c14d43d9eb.png",
+        "s2_subheading2": "",
+        "s2_description2": "<p>The result? You eat well. You stay active. But the results are minimal. Energy fluctuates. And your body composition doesn't reflect your efforts. <strong><br\/><br\/>The solution isn't working harder – it's working smarter.<\/strong> By targeting these specific metabolic switches, with the right compounds at the right doses, you can finally firm up stubborn chest areas and reclaim the confident physique you had in your 20s.<br\/><\/p>",
+        "show_section3": false,
+        "s3_heading": "Finally, Fix All Three Roadblocks at Once!",
+        "s3_subheading": "<p><strong>Thanks To Breakthrough Research From Leading Hormone Scientists  <br\/><br\/>There's now a proven a way for men of all ages, body types, and fitness levels to reduce chest and belly fat<\/strong><\/p>",
+        "s3_description": "<p><em>While other men effortlessly maintain their physique as they age, 65% are frustrated by man boobs and beer bellies, no matter how little they drink or how much they train. It's time to break free from the cycle of working hard with no results..<\/em><\/p>",
+        "s4_heading": "Join Thousands of Men Finally Chest Fat & Reclaiming Their Confidence",
+        "s4_description": "<p>The problem is, popular diets and supplements throw random ingredients at you, completely ignoring what’s going on inside. Worse, they use synthetic fillers and proprietary blends that hide weak doses.<strong><br\/><br\/>Dryft™ works by targeting all three metabolic switches at once with clinically-effective doses. <\/strong><br\/><br\/>Just 2 capsules a day reset: <\/p>",
+        "s4_subheading": "",
+        "s4_description_2": "<p><strong>This focused 3-in-1 approach is why Dryft™ delivers lasting chest fat loss and hormone balance when other solutions fail.<\/strong><\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "bg": "shopify:\/\/shop_images\/Group_49250.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_ingredients_U9cMEa": {
+      "type": "nl-ingredients-tab-style",
+      "blocks": {
+        "tab_zmTQzR": {
+          "type": "tab",
+          "settings": {
+            "first": true,
+            "label": "Metabolism &Fat Burning",
+            "index": "1"
+          }
+        },
+        "tab_mFybfc": {
+          "type": "tab",
+          "settings": {
+            "first": false,
+            "label": "Hormone & Cortisol Balance",
+            "index": "2"
+          }
+        },
+        "tab_7BinMX": {
+          "type": "tab",
+          "settings": {
+            "first": false,
+            "label": "Energy & Focus",
+            "index": "3"
+          }
+        },
+        "tab_pUmnhK": {
+          "type": "tab",
+          "settings": {
+            "first": false,
+            "label": "Cravings & Appetite Control",
+            "index": "4"
+          }
+        },
+        "row_b8j3n4": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_29_5457902a-80a5-4946-bc05-e0005682499c.png",
+            "heading": "GlucoVantage® (Dihydroberberine)",
+            "description": "<p>Think of it like a traffic cop in your body: When you eat carbs, this ingredient directs them toward your muscles for energy instead of letting them take the \"fat storage highway.\" It's 5x more powerful than regular berberine because it actually gets absorbed. <a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC12307485\/\" target=\"_blank\" title=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC12307485\/\">Clinical studies show it reduces waist circumference by an average of 3.27 cm.<\/a><\/p>"
+          }
+        },
+        "row_4GELVj": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_30_fc6f7621-5500-4cc6-a969-f51ac850ef29.png",
+            "heading": "Grains of Paradise",
+            "description": "<p>Contains 6-paradol compounds that selectively activate brown adipose tissue (BAT)—metabolically active fat cells that burn calories through non-shivering thermogenesis. Think of BAT as specialized furnaces that consume stored fat to generate heat. <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/24759256\/\" target=\"_blank\" title=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/24759256\/\">Clinical trials demonstrate significant increases in whole-body energy expenditure and visceral fat reduction.<\/a><\/p>"
+          }
+        },
+        "row_Yfc6NK": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_27_172739bd-7c66-4c26-99c4-1650f5e9f4d0.png",
+            "heading": "Lactobacillus Gasseri (10 Billion CFU)",
+            "description": "<p>Picture a bouncer at your gut's door: This probiotic literally escorts some of the fat you eat right out of your body before it can be stored. It's like having a security system that says \"nope, not today\" to excess dietary fat. <a href=\"https:\/\/www.cambridge.org\/core\/journals\/british-journal-of-nutrition\/article\/effect-of-lactobacillus-gasseri-sbt2055-in-fermented-milk-on-abdominal-adiposity-in-adults-in-a-randomised-controlled-trial\/304E3E2EE11E0D3D4F5D85E7046118A1\" target=\"_blank\" title=\"https:\/\/www.cambridge.org\/core\/journals\/british-journal-of-nutrition\/article\/effect-of-lactobacillus-gasseri-sbt2055-in-fermented-milk-on-abdominal-adiposity-in-adults-in-a-randomised-controlled-trial\/304E3E2EE11E0D3D4F5D85E7046118A1\">Clinical trials show significant belly fat reduction in 12 weeks.<\/a><\/p>"
+          }
+        },
+        "row_Nyn4qF": {
+          "type": "row",
+          "settings": {
+            "index": "1",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_31_0d5b4975-c005-4e64-baa3-a9c5fc2b75be.png",
+            "heading": "Cayenne Pepper Extract (40,000 SHU)",
+            "description": "<p>Like turning up your body's thermostat: The capsaicin makes your internal furnace burn hotter, so you're torching more calories even while watching TV. <a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC2922296\/\" target=\"_blank\" title=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC2922296\/\">Research shows it significantly boosts your calorie-burning engine.<\/a><\/p>"
+          }
+        },
+        "row_eAYUew": {
+          "type": "row",
+          "settings": {
+            "index": "2",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_26_9a3d2cf0-5033-4d8f-a7bb-fa56a935561a.png",
+            "heading": "Ashwagandha Extract (KSM-66)",
+            "description": "<p>Think of cortisol as a panicked manager: When you're stressed, cortisol screams \"STORE EVERYTHING AS FAT!\" Ashwagandha is like a wise coach that calms down the panicked manager, so your body stops hoarding calories around your belly. <a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC5871210\/\" target=\"_blank\" title=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC5871210\/\">Clinical studies show it silences the stress-storage signal.<\/a><\/p>"
+          }
+        },
+        "row_kA4iBn": {
+          "type": "row",
+          "settings": {
+            "index": "2",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_28_9457cacb-4210-4fef-93c5-531744982c27.png",
+            "heading": "DIM + Boron Power Duo",
+            "description": "<p>Imagine your hormones as a seesaw: Too much estrogen tips you toward soft, feminine fat storage. This duo is like adding weight to the testosterone side—<a href=\"https:\/\/www.researchgate.net\/publication\/49656718_Comparative_effects_of_daily_and_weekly_boron_supplementation_on_plasma_steroid_hormones_and_proinflammatory_cytokines\" target=\"_blank\" title=\"https:\/\/www.researchgate.net\/publication\/49656718_Comparative_effects_of_daily_and_weekly_boron_supplementation_on_plasma_steroid_hormones_and_proinflammatory_cytokines\">Boron boosts free testosterone 28% and cuts estrogen 39% in just 7 days.<\/a> DIM helps your body flush out the \"bad\" estrogen that makes you soft.<\/p>"
+          }
+        },
+        "row_qUaMdB": {
+          "type": "row",
+          "settings": {
+            "index": "2",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_33_e8d9b6bf-5d5d-4b19-95f5-946886da0ba9.png",
+            "heading": "Zinc Glycinate",
+            "description": "<p>Like premium oil for a high-performance engine: Your testosterone production machinery needs zinc to run. Without it, even a Ferrari becomes a broken-down car. <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/8875519\/\" target=\"_blank\" title=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/8875519\/\">Studies show fixing zinc deficiency can nearly double testosterone.<\/a><\/p>"
+          }
+        },
+        "row_nrkEVm": {
+          "type": "row",
+          "settings": {
+            "index": "3",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_32_773bf314-961c-4da9-9477-9fda9251430a.png",
+            "heading": "L-Theanine",
+            "description": "<p>Crosses the blood-brain barrier to increase alpha brain wave activity and modulate neurotransmitter balance (dopamine, serotonin). <a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC8475422\/\" target=\"_blank\" title=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC8475422\/\">Clinical studies demonstrate significant anxiety reduction and improved sleep quality metrics.<\/a><\/p>"
+          }
+        },
+        "row_MPf6xm": {
+          "type": "row",
+          "settings": {
+            "index": "3",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_26_1_746fb4f0-3545-42f1-b367-05dd98563c71.png",
+            "heading": "Ashwagandha Extract (KSM-66)",
+            "description": "<p>Beyond cortisol regulation, this adaptogen supports endogenous testosterone production. <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/30854916\/\" target=\"_blank\" title=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/30854916\/\">Randomized trials show 14.7% greater testosterone increases in aging males<\/a>, directly supporting energy metabolism and vitality.<\/p>"
+          }
+        },
+        "row_Am8rny": {
+          "type": "row",
+          "settings": {
+            "index": "3",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_33_1.png",
+            "heading": "Zinc Glycinate",
+            "description": "<p>Functions as cofactor for over 300 enzymatic reactions governing cellular energy production and hormone synthesis. Zinc deficiency impairs metabolic efficiency and recovery processes.<\/p>"
+          }
+        },
+        "row_mVmnqV": {
+          "type": "row",
+          "settings": {
+            "index": "4",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_26_2.png",
+            "heading": "Ashwagandha Extract (KSM-66)",
+            "description": "<p>Think of stress cravings like a fire alarm: When cortisol goes off, it screams \"EAT EVERYTHING NOW!\" Ashwagandha turns off that false alarm, so you stop reaching for junk food every time life gets stressful. <a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC5871210\/\" target=\"_blank\" title=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC5871210\/\">Studies show it dramatically reduces stress-triggered food cravings.<\/a><\/p>"
+          }
+        },
+        "row_JXzcBd": {
+          "type": "row",
+          "settings": {
+            "index": "4",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_32_1.png",
+            "heading": "L-Theanine",
+            "description": "<p>Promotes parasympathetic nervous system activation, supporting cognitive control over food choices during stress responses. Maintains focus without stimulatory side effects.<\/p>"
+          }
+        },
+        "row_GwePyd": {
+          "type": "row",
+          "settings": {
+            "index": "4",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_31_1_37768158-a618-4b1a-bc37-0c79e0115f00.png",
+            "heading": "Cayenne Pepper Extract (40,000 SHU)",
+            "description": "<p>Imagine your appetite as a volume dial: Capsaicin naturally turns down the volume on hunger signals, making it easier to eat the right amount without feeling deprived. <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/23406619\/\" target=\"_blank\" title=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/23406619\/\">Research shows it helps reduce overall food intake.<\/a><\/p>"
+          }
+        },
+        "row_gPqakC": {
+          "type": "row",
+          "settings": {
+            "index": "4",
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_29_1_c7ab89ee-f5cb-4647-95f5-ae8e64c33333.png",
+            "heading": "GlucoVantage® (Dihydroberberine)",
+            "description": "<p>Improves insulin sensitivity and glucose homeostasis, preventing reactive hypoglycemia that triggers carbohydrate cravings and compensatory eating behaviors.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_zmTQzR",
+        "tab_mFybfc",
+        "tab_7BinMX",
+        "tab_pUmnhK",
+        "row_b8j3n4",
+        "row_4GELVj",
+        "row_Yfc6NK",
+        "row_Nyn4qF",
+        "row_eAYUew",
+        "row_kA4iBn",
+        "row_qUaMdB",
+        "row_nrkEVm",
+        "row_MPf6xm",
+        "row_Am8rny",
+        "row_mVmnqV",
+        "row_JXzcBd",
+        "row_GwePyd",
+        "row_gPqakC"
+      ],
+      "custom_css": [
+        "h2 {max-width: 900px;}"
+      ],
+      "name": "NL Ingredients Tabs",
+      "settings": {
+        "section_id": "two-capsules-day",
+        "heading": "<p>2 Capsules a Day → 9-Clinically Backed Ingredients → 1 Transformation<\/p>",
+        "description": "<h3>The #1 Scientifically Formulated Supplement For Men Over 30<br\/><br\/><\/h3><p>This breakthrough formula helps support metabolic balance so your hard work can finally show results in the body and confidence you deserve.<br\/><br\/><br\/><\/p><h3><strong>All without synthetic hormones, stimulants, or extreme diets.<\/strong><br\/><\/h3>",
+        "label": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_69.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_case_study_JmWWhj": {
+      "type": "nl-case-study",
+      "blocks": {
+        "row_7fV6kf": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_121.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Estrogen_Vindication_part_I-Berkson_Abridged_compressed.pdf?v=1756492047",
+            "description": "Estrogen Vindication part I-Berkson Abridged for PRINT"
+          }
+        },
+        "row_QNfeX9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_122.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Modulation_of_Gut_Microbiota_and_Metabolites_by_Berberine_in_Treating_Mice_With_Disturbances_in_Glucose_and_Lipid_Metabolism__compressed.pdf?v=1756492052",
+            "description": "Modulation of Gut Microbiota and Metabolites by Berberine in Treating Mice With Disturbances in Glucose and Lipid Metabolism"
+          }
+        },
+        "row_zqGynR": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_123.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Grains_of_paradise_Aframomum_melegueta_extract_activates_brown_adipose_tissue_and_increases_whole-body_energy_expenditure_in_men.pdf?v=1756474327",
+            "description": "Grains of paradise (Aframomum melegueta) extract activates brown adipose tissue and increases whole-body energy expenditure in men"
+          }
+        },
+        "row_nHgK8b": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_124.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Capsaicinoids_and_capsinoids._A_potential_role_for_weight_management__A_systematic_review_of_the_evidence.pdf?v=1756474322",
+            "description": "Capsaicinoids and capsinoids. A potential role for weight management? A systematic review of the evidence"
+          }
+        },
+        "row_NNC7VE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_125.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/L-Theanine_reduces_psychological_and_physiological_stress_responses.pdf?v=1756474326",
+            "description": "L-Theanine reduces psychological and physiological stress responses"
+          }
+        },
+        "row_q3pQQi": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_126.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Zinc_in_human_health__effect_of_zinc_on_immune_cells.pdf?v=1756474327",
+            "description": "Zinc in human health: effect of zinc on immune cells"
+          }
+        },
+        "row_hd9qnk": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_127.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Clinical_Evaluation_of_the_Spermatogenic_Activity_of_the_Root_Extract_of_Ashwagandha_Withania_somnifera_in_Oligospermic_Males__A_Pilot_Study.pdf?v=1756474325",
+            "description": "Clinical Evaluation of the Spermatogenic Activity of the Root Extract of Ashwagandha (Withania somnifera) in Oligospermic Males: A Pilot Study"
+          }
+        },
+        "row_W6fMtM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_128.png",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0713\/6195\/3965\/files\/Absorption_Kinetics_of_Berberine_and_Dihydroberberine_and_Their_Impact_on_Glycemia__A_Randomized_Controlled_Crossover_Pilot_Trial.pdf?v=1756474333",
+            "description": "Absorption Kinetics of Berberine and Dihydroberberine and Their Impact on Glycemia: A Randomized, Controlled, Crossover Pilot Trial"
+          }
+        }
+      },
+      "block_order": [
+        "row_7fV6kf",
+        "row_QNfeX9",
+        "row_zqGynR",
+        "row_nHgK8b",
+        "row_NNC7VE",
+        "row_q3pQQi",
+        "row_hd9qnk",
+        "row_W6fMtM"
+      ],
+      "disabled": true,
+      "name": "NL Case Study",
+      "settings": {
+        "section_id": "",
+        "heading": "Backed by Clinical Research. Real Ingredients That Deliver Real Results.",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "padding_top_m": 0,
+        "padding_bottom_m": 80
+      }
+    },
+    "nl_unique_s4_C8RgYV": {
+      "type": "nl-unique-s4",
+      "blocks": {
+        "s4_review_gGbL4x": {
+          "type": "s4_review",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_135.1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating_1287a69c-c852-486f-bbbc-92ed531192fc.png",
+            "description": "<p><strong>I'M BACK! <\/strong>My drive is back, I'm losing chest fat, and I feel stronger and more motivated than ever before. <\/p>",
+            "name": "Kevin G.",
+            "icon": "shopify:\/\/shop_images\/Group_49169.png",
+            "verified": "Verified Buyer"
+          }
+        },
+        "s4_items_2_N4kA76": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": true,
+            "image": "shopify:\/\/shop_images\/image_117.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_117_acf2e9ff-f530-47cf-bc81-44a9b02e7d0c.png",
+            "heading": "Feel Good In Fitted Shirts",
+            "description": "Those \"man boobs\" that kept you in oversized shirts? Firmer. That gut hanging over your jeans? Flatter. Finally feel comfortable in clothes that actually fit."
+          }
+        },
+        "s4_items_2_L9NCtN": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/senior-man-running-exercising-sport-fitness-active-2025-02-01-17-53-17-utc.png",
+            "image_mobile": "shopify:\/\/shop_images\/senior-man-running-exercising-sport-fitness-active-2025-02-01-17-53-17-utc_05ad7e3e-e128-472b-b8b7-fd5148641355.png",
+            "heading": "Enjoy All-day Energy",
+            "description": "Finally, stop being the guy who is asleep on the couch by 8PM. Wake up refreshed, power through your day, and still have energy for family time – all without excessive caffeine."
+          }
+        },
+        "s4_items_2_RL4K39": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/image_140.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_140_22135ef0-d3da-4883-ad10-362301e0e40a.png",
+            "heading": "See Visible Results",
+            "description": "Stop putting in work without seeing results.  Once your metabolic switches are flipped, your efforts in the gym and kitchen create visible changes that you and others will notice."
+          }
+        },
+        "s4_items_2_JKL8YM": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/grey-man-smiling-and-looking-aside-while-standing-2025-02-14-08-27-47-utc.png",
+            "image_mobile": "shopify:\/\/shop_images\/grey-man-smiling-and-looking-aside-while-standing-2025-02-14-08-27-47-utc_0baf0e2f-dae4-4871-8362-2a1784df40ab.png",
+            "heading": "Reclaim Confidence",
+            "description": "Walk into any room with your head held high. The confidence that comes from looking and feeling your best changes everything."
+          }
+        },
+        "s4_items_2_RDaMGN": {
+          "type": "s4_items_2",
+          "settings": {
+            "first": false,
+            "image": "shopify:\/\/shop_images\/image_133.png",
+            "image_mobile": "shopify:\/\/shop_images\/image_133_54e92476-228c-42d6-844e-18b020efbcdf.png",
+            "heading": "Work With Your Body, Not Against It",
+            "description": "Stop battling against hormonal imbalances. Dryft™ supports your metabolism so your body works with you, not against you."
+          }
+        }
+      },
+      "block_order": [
+        "s4_review_gGbL4x",
+        "s4_items_2_N4kA76",
+        "s4_items_2_L9NCtN",
+        "s4_items_2_RL4K39",
+        "s4_items_2_JKL8YM",
+        "s4_items_2_RDaMGN"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.s4_items_2--5 {grid-column: 2\/4; } .s4_items_2--6 {grid-column: 4\/6; }}"
+      ],
+      "name": "NL Unique S4",
+      "settings": {
+        "section_id": "",
+        "s4_heading": "Transform Your Chest Fat & Life With Dryft™ ",
+        "s4_description": "<p>Dryft™ doesn't just help with eliminating chest fat. Dryft™ helps men over 30 support overall wellbeing to feel more confident in themselves.<\/p>",
+        "s4_subheading": "",
+        "s4_description_2": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group_f40b8ed1-02ac-4088-a7e7-f5d4ee4cb760.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "bg": "shopify:\/\/shop_images\/image_67_22b7e036-1883-48db-868d-26bf5f7f95f8.png",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_product_progress_yppJHC": {
+      "type": "nl-product-progress",
+      "blocks": {
+        "row_Tpa7UJ": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 1-7",
+            "subheading": "Enhanced Energy, Better Sleep",
+            "description": "<p>Improved energy, more restful sleep, better mood and focus. Wake up with purpose and drive instead of struggling through your day. Cravings begin to subside.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_141_1.png"
+          }
+        },
+        "row_xiWLtX": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 7-14",
+            "subheading": "Clothes Fit Different",
+            "description": "<p>Body composition begins improving, clothes fit more comfortably (users report pants fitting 1-2 inches looser). That bloated feeling gone. Gym sessions feel more productive. Mental clarity improves.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_142.png"
+          }
+        },
+        "row_7WGVRf": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 21-60",
+            "subheading": "Visible Progress",
+            "description": "<p>This is when it gets exciting. Your chest looks firmer, the gut starts to flatten, and your face appears leaner. People will start to comment.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_144.png"
+          }
+        },
+        "row_xL4Yjr": {
+          "type": "row",
+          "settings": {
+            "heading": "Days 60-90",
+            "subheading": "Optimal Results",
+            "description": "<p>Maximum benefits achieved. Your physique has improved, energy levels are consistent, appetite is regulated, and sleep is restorative. You look and feel like yourself again – only better.<\/p>",
+            "image": "shopify:\/\/shop_images\/image_143.png"
+          }
+        }
+      },
+      "block_order": [
+        "row_Tpa7UJ",
+        "row_xiWLtX",
+        "row_7WGVRf",
+        "row_xL4Yjr"
+      ],
+      "name": "NL Product Progress",
+      "settings": {
+        "section_id": "",
+        "heading": "Your 90-Day Timeline",
+        "description": "<p><em>*Individual results may vary. Improvements based on user feedback<\/em><\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group_f40b8ed1-02ac-4088-a7e7-f5d4ee4cb760.png",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_benefits_HdqD84": {
+      "type": "nl-benefits",
+      "blocks": {
+        "row_wyLUmf": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/sportsman-doing-situps-in-gym-2025-01-29-12-48-12-utc.png",
+            "heading": "Helps Support Healthy Weight Management",
+            "description": "<p>Helps address metabolic factors - no extreme diets required. Finally see the results your hard work deserves.<\/p>"
+          }
+        },
+        "row_8EAaca": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_84.png",
+            "heading": "Helps Improve Body Composition",
+            "description": "<p>Helps support natural metabolic balance for improved appearance. Feel more confident in fitted clothing.<\/p>"
+          }
+        },
+        "row_bTxkat": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_89.png",
+            "heading": "Helps You Look Like You Work Out - Without Living in the Gym",
+            "description": "<p>Supported metabolic health may help enhance the visible results of your fitness efforts.<br\/><br\/><\/p>"
+          }
+        },
+        "row_UzmWd8": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/satisfied-man-relaxing-in-bed-2025-02-14-22-57-27-utc_1.png",
+            "heading": "Helps You Wake Up with Energy and Mental Clarity",
+            "description": "<p>No more sluggish mornings or afternoon energy crashes. Feel alert and focused throughout the day.<\/p>"
+          }
+        },
+        "row_tnUg87": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/young-couple-relaxing-in-bed-and-having-fun-2025-03-13-08-15-42-utc_1.png",
+            "heading": "Helps Support Vitality",
+            "description": "<p>Clinically dosed ingredients help promote energy, supporting performance and recovery so you feel like a healthier, more confident version of yourself.<\/p>"
+          }
+        },
+        "row_QffjcD": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/image_88.png",
+            "heading": "Helps You Feel Confident in Every Setting",
+            "description": "<p>Approach meetings and social situations with renewed confidence. No more feeling self-conscious or avoiding activities you enjoy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_wyLUmf",
+        "row_8EAaca",
+        "row_bTxkat",
+        "row_UzmWd8",
+        "row_tnUg87",
+        "row_QffjcD"
+      ],
+      "disabled": true,
+      "name": "NL Benefits",
+      "settings": {
+        "section_id": "",
+        "heading": "Experience Comprehensive Support With Thaura Dryft™ ",
+        "description": "<p>Dryft™ doesn't just help with weight management. Dryft™ helps men over 30 support overall wellbeing to feel more confident in themselves.<\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_67.png",
+        "bg_img_inner": "shopify:\/\/shop_images\/image_64_5e0f3ffe-e4f4-4847-8211-b28e16eb4a5d.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_carousel_69B766": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_QhtYXh": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/happy-middle-aged-man-stretching-in-bed-in-the-mor-2025-03-18-17-03-41-utc.png",
+            "tag": "Days 1-7",
+            "heading": "Enhanced Energy, Better Sleep",
+            "description": "<p>Improved energy, more restful sleep, better mood and focus. Wake up with purpose and drive instead of struggling through your day.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        },
+        "row_XNHRWq": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/fitness-at-home-2025-01-09-06-46-42-utc.png",
+            "tag": "Days 7-14",
+            "heading": "She Starts To Notice",
+            "description": "<p>Body composition begins improving, clothes fit more comfortably (users report pants fitting 1-2 inches looser), and you feel stronger despite less gym time. Morning energy remains consistent. You naturally stand taller, and others begin to notice.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        },
+        "row_JijNeG": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/mature-handsome-muscular-persian-man-shirtless-and-2025-01-29-03-46-47-utc.png",
+            "tag": "Days 21-60",
+            "heading": "Visible Progress",
+            "description": "<p>Your appearance improves, confidence returns. You have more stamina for activities with your family. Colleagues notice your increased energy and presence in meetings. You feel more comfortable in your own skin.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        },
+        "row_wRzTHW": {
+          "type": "row",
+          "settings": {
+            "center_text": false,
+            "image": "shopify:\/\/shop_images\/shirtless-male-athlete-having-workout-on-sports-gr-2025-03-25-08-01-42-utc.png",
+            "tag": "Days 60-90",
+            "heading": "Optimal Results",
+            "description": "<p>Maximum benefits achieved. Your physique has improved, energy levels are consistent, appetite is regulated, and sleep is restorative. You feel like a revitalized version of yourself.<\/p>",
+            "name": "",
+            "verified": "",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_QhtYXh",
+        "row_XNHRWq",
+        "row_JijNeG",
+        "row_wRzTHW"
+      ],
+      "disabled": true,
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "3",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": true,
+        "heading": "Men Over 30: Finally Target the Stubborn Weight That’s Been Holding You Back",
+        "description": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "<p><em><br\/>*Individual results may vary. Improvements based on user feedback<\/em><\/p>",
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#000000",
+        "bgcolor": "#ffffff",
+        "arrow_color": "#1e3a16",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_formula_fjNMit": {
+      "type": "nl-formula",
+      "blocks": {
+        "row_i3HYrK": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49182.png",
+            "heading": "",
+            "description": "<p> Free From Gluten, Dairy, Sugar & GMOs<\/p>"
+          }
+        },
+        "row_7tmRDr": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49181.png",
+            "heading": "",
+            "description": "<p>No Artificial Additives<\/p>"
+          }
+        },
+        "row_CK8JL6": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49189.png",
+            "heading": "",
+            "description": "<p>No Soy, No Estrogenic Compounds<\/p>"
+          }
+        },
+        "row_4W9LN4": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49194.png",
+            "heading": "",
+            "description": "<p>Formulated in the USA in an FDA-Registered Facility<\/p>"
+          }
+        },
+        "row_iGUCGt": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49191.png",
+            "heading": "",
+            "description": "<p>Clinically Dosed, Backed by 1,000s of Studies<\/p>"
+          }
+        },
+        "row_ACnPpA": {
+          "type": "row",
+          "settings": {
+            "desktop_large": false,
+            "image": "shopify:\/\/shop_images\/Group_49193.png",
+            "heading": "",
+            "description": "<p>Triple-Tested for Purity, Potency, and Dosage Accuracy<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_i3HYrK",
+        "row_7tmRDr",
+        "row_CK8JL6",
+        "row_4W9LN4",
+        "row_iGUCGt",
+        "row_ACnPpA"
+      ],
+      "name": "NL Formula",
+      "settings": {
+        "section_id": "",
+        "heading": "Try Our Premium Quality & Diet-Friendly Formula Today!",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/Frame_2607846_723f86c3-5ea2-4e38-a675-1c21eaf8cdf2.png",
+        "bg_img_m": "shopify:\/\/shop_images\/Frame_1618873406.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_animation_gUBxx9": {
+      "type": "nl-animation",
+      "blocks": {
+        "text_EJGUGR": {
+          "type": "text",
+          "settings": {
+            "show_dot": true,
+            "text": "SAVE $48 On Bulk Orders Today"
+          }
+        }
+      },
+      "block_order": [
+        "text_EJGUGR"
+      ],
+      "name": "NL Animation",
+      "settings": {
+        "section_id": "",
+        "repeat_count": 50,
+        "animation_length": 100,
+        "max_width": 360,
+        "bgcolor": "#e9f0cc",
+        "text_color": "#1e3a16",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_m": 0,
+        "padding_bottom_m": 0
+      }
+    },
+    "nl_product_variants_BreT68": {
+      "type": "nl-product-variants-no-sub",
+      "blocks": {
+        "row_kNfYBx": {
+          "type": "row",
+          "settings": {
+            "heading": "Select Your Order"
+          }
+        },
+        "row_nLUt3n": {
+          "type": "row",
+          "settings": {
+            "heading": "Billing Info"
+          }
+        },
+        "row_ahWapp": {
+          "type": "row",
+          "settings": {
+            "heading": "Thank You"
+          }
+        }
+      },
+      "block_order": [
+        "row_kNfYBx",
+        "row_nLUt3n",
+        "row_ahWapp"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.nl-product-variants__variant-wrapper-2 {grid-column: 2 \/ 3; grid-row: 1 \/ 2; }}",
+        "@media screen and (max-width: 767px) {.nl-product-variants__variant-wrapper-2 {grid-row: 1 \/ 2; } .nl-product-variants__variant-wrapper-1 {grid-row: 2 \/ 3; }}"
+      ],
+      "name": "NL Product Variants Nosub",
+      "settings": {
+        "product": "dryft™-np",
+        "default_index": 2,
+        "section_id": "products",
+        "heading": "Select Your Package Below",
+        "description": "",
+        "button_label": "BUY DRYFT™ NOW",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_2.png",
+        "bottom_heading": "Our trusted payment processors",
+        "bottom_description": "<p>We use a 256-bit secure shopping cart where 100% of your data is encrypted, safe, and secure. This is the same data standard used by most banks, governments, and military organisations.<\/p>",
+        "bottom_icons": "shopify:\/\/shop_images\/Frame_2607927.png",
+        "bottom_img": "shopify:\/\/shop_images\/Mask_group_1.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_guarantee_BnwdGF": {
+      "type": "nl-guarantee",
+      "name": "NL Guarantee",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/Group_49198.png",
+        "heading": "Your Purchase Is Protected by Our 90-Day \"See Results or Pay Nothing\" Guarantee",
+        "description": "<p>You've tried other products with disappointing results. That’s why we’re taking all the risk.<\/p><p>Try Dryft™ for a full 90 days. If you don't feel more energetic, see visible changes, or notice clothes fitting better – simply send us an email, and we will refund 100% of your purchase. You don't even have to return the bottles.<\/p><p>Why 90 days? Because real metabolic change takes time and we want you to experience the full benefits before deciding. Either way, you're covered.<\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_carousel_r94Qen": {
+      "type": "nl-carousel",
+      "blocks": {
+        "row_rGhKqh": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_138.1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"Skeptical after trying other supplements without success. But the research on their ingredients convinced me to try. Week 2: more energy. Week 4: clothes fitting better. Week 8: feeling better than I have in years.\"<\/p>",
+            "name": "Michael R., 41",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_CQV7zN": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_87_0900b209-cf64-4759-b498-5d8280b941a3.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"I've always struggled with late-night cravings. Since starting Dryft™ , I'm not constantly thinking about my next meal. I can go hours without snacking, and I'm finally seeing my waistline shrink. My wife is amazed at how I'm not raiding the pantry every evening.\" <\/p>",
+            "name": "Tom R., 36",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_zxWqCQ": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_102_dd1a27bc-f55e-4b22-81a7-22de65411e4d.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"​​Now when I catch my reflection, I feel confident instead of disappointed. I should have started this sooner. People definitely treat me differently - more respect, more attention. My confidence is clearly showing\" <\/p>",
+            "name": "Robert J., 45",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_kM9kyp": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_136.1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"I was considering more drastic measures, but tried this first. Excellent decision. My weight is down 10 lbs in 90 days, body composition has improved, and I'm sleeping well. Even started dating again. This has significantly improved my quality of life.\"<\/p>",
+            "name": "David K., 52",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_Uccg7W": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_132.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"I absolutely feel a difference in my appetite and energy. The impact physically has been fantastic. My clothes fit again and my partner has noticed a difference\"<\/p>",
+            "name": "James T., 47",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_Aa3UJC": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_137.1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"My husband went from falling asleep on the couch every night to planning date nights again. He's confident, energetic, and more engaged with me. I got my husband back!\"<\/p>",
+            "name": "Sarah M.",
+            "avatar": "shopify:\/\/shop_images\/image.png",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        },
+        "row_GggWJB": {
+          "type": "row",
+          "settings": {
+            "center_text": true,
+            "image": "shopify:\/\/shop_images\/image_139.1.png",
+            "stars": "shopify:\/\/shop_images\/Star_Rating.svg",
+            "tag": "",
+            "heading": "",
+            "description": "<p>\"He actively participates with the children now instead of being depleted from work. His energy has improved, and his smile has returned. Great choice, highly recommends it.\"<\/p>",
+            "name": "Jennifer L.",
+            "avatar": "shopify:\/\/shop_images\/image_44bdc023-8c0c-45c8-94ef-4a6e7086bf2b.png",
+            "icon": "shopify:\/\/shop_images\/checkmark.svg",
+            "verified": "Verified Buyer",
+            "testimonial_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_rGhKqh",
+        "row_CQV7zN",
+        "row_zxWqCQ",
+        "row_kM9kyp",
+        "row_Uccg7W",
+        "row_Aa3UJC",
+        "row_GggWJB"
+      ],
+      "name": "NL Carousel",
+      "settings": {
+        "section_id": "",
+        "desktop_carousel_count": "3",
+        "image_height_mobile": 160,
+        "image_height_desktop": 180,
+        "card_max_width_mobile": 320,
+        "card_max_width": 360,
+        "show_cards": false,
+        "show_arrows": true,
+        "heading_top": true,
+        "heading": "Real Men, Verified Results: Why Men Call Dryft™ a \"Game-Changer\" for Their Health",
+        "description": "",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "product_bottom_text": "",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "button_bg_color": "#247042",
+        "button_text_color": "#ffffff",
+        "bottom_label_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1.png",
+        "arrow_color": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_supplements_dzTxLD": {
+      "type": "nl-supplements",
+      "custom_css": [
+        "em {font-size: 14px; font-style: normal; line-height: 1.25;}"
+      ],
+      "name": "NL Supplements",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/inside_drift.png",
+        "img_mobile": "shopify:\/\/shop_images\/Frame_2607933.png",
+        "heading": "What’s Inside Dryft™ ?",
+        "description": "<p>Every ingredient in Dryft™ is scientifically-supported to promote natural vitality. No fillers, no unnecessary additives, just 9 powerful compounds that work together to help improve body composition and support the confident man you want to be.<br\/><br\/><strong>*<\/strong><em>These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.<\/em><\/p>",
+        "button_label": "Try Dryft™ Now",
+        "button_url": "#products",
+        "button_type": "primary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/guarantee.png",
+        "text_color": "#000000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_doctors_Q7jnAV": {
+      "type": "nl-doctors",
+      "blocks": {
+        "row_7gRVEe": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_108.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873.png",
+            "heading": "Dr. Michael Bennett, Lead Metabolic Specialist",
+            "description": "<p><em>After seeing thousands of men struggling with weight management and how frustrated they felt, I knew we needed a real solution. Dryft™ corrects the underlying metabolic roadblocks—insulin, cortisol, and estrogen—that make fat loss feel impossible.<\/em><\/p>"
+          }
+        },
+        "row_3ch8C3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_109.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873.png",
+            "heading": "Dr. Rebecca Martinez, Sports Nutrition PhD",
+            "description": "<p>“<em>I've worked with elite athletes for decades. The same metabolic optimization principles that create champions work for everyday men too, Dryft™ helps create that optimal state naturally, so your body can finally respond to your efforts efficiently.\"<\/em><\/p>"
+          }
+        },
+        "row_nEFV43": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_107.png",
+            "bg": "shopify:\/\/shop_images\/Frame_2607873_2e369f46-c3fb-48c6-968c-7540f78b418d.png",
+            "heading": "Dr. Marcus Chen, Clinical Endocrinologist, 12+ years",
+            "description": "<p>“<em>I've worked with elite athletes for decades. The same metabolic optimization principles that create champions work for everyday men too, Dryft™ helps create that optimal state naturally, so your body can finally respond to your efforts efficiently.\"<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_7gRVEe",
+        "row_3ch8C3",
+        "row_nEFV43"
+      ],
+      "name": "NL Doctors",
+      "settings": {
+        "section_id": "",
+        "heading": "We're On a Mission To Help 1M Men Feel Confident Again",
+        "description": "<p>Meet The Experts Behind Dryft™ <\/p>",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_faqs_pEwWFj": {
+      "type": "nl-faqs",
+      "blocks": {
+        "row_8z8MVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How quickly will I notice results?",
+            "description": "<p><strong>Week 1-2:<\/strong> Better sleep, reduced cravings, less bloating (L-theanine and probiotics work fast) <br\/><br\/><strong>Week 2-4:<\/strong> Energy improvements, clothes fitting looser, morning mood better <br\/><br\/><strong>Week 4-8:<\/strong> Visible chest fat reduction, chest firming, strength gains <br\/><br\/><strong>Week 8-12:<\/strong> Maximum results – expect 2-4 inches off waist, 10-20 lbs down, feeling like yourself again<br\/><br\/><em>Note: Men who combine Dryft™ with basic diet awareness see results 3x faster than supplement alone.<\/em><\/p>"
+          }
+        },
+        "row_Kbkyth": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How is this different from other supplements I've tried?",
+            "description": "<p>Most supplements only target one problem (like testosterone or fat burning) while ignoring the others. Dryft™ addresses all three metabolic switches that change after 35. <br\/><br\/><strong>1. We target the ROOT causes, not symptoms.<\/strong> While other supplements throw testosterone boosters at you (which don't work if your estrogen is high), we address all three hormonal imbalances simultaneously – insulin, cortisol, and estrogen.<strong><br\/><br\/>2. Clinical doses, not pixie dust.<\/strong> Every ingredient matches or exceeds the doses used in published studies. Example: Our 100mg GlucoVantage® equals 500mg+ of regular berberine. Most competitors use 10-50mg of weak berberine to save costs.<strong><br\/><br\/>3. Unique mechanisms others ignore.<\/strong> We're the only male formula with L. gasseri probiotic (proven to reduce belly fat 8.5%) and pharmaceutical-grade DHB for insulin sensitivity. These aren't in typical \"test boosters\" because they're expensive and most companies don't understand the gut-fat connection.<br\/><br\/>That's why men see results when previous supplements failed.<\/p>"
+          }
+        },
+        "row_8WDhRd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What studies support this product?",
+            "description": "<p>Here are just some of the dozens of studies that support Dryft™ ’s formula:<br\/><br\/>Zeligs MA. Estrogen Balance: A Key to Cancer Prevention. Townsend Letter for Doctors and Patients. 2002.<br\/><br\/>Upadhyaya R, et al. Dihydroberberine, a gut microbiota-derived berberine metabolite, improves glucose metabolism in type 2 diabetic mice. Sci Rep. 2019;9:19013.<br\/><br\/>Sugita J, et al. Grains of Paradise extract increases whole-body energy expenditure in humans. Br J Nutr. 2013;110(4):733–738.<br\/><br\/>Whiting S, Derbyshire E, Tiwari BK. Capsaicinoids and capsinoids: A potential role for weight management? A systematic review of the evidence. Appetite. 2012;59(2):341–348.<br\/><br\/>Kimura K, Ozeki M, Juneja LR, Ohira H. L-Theanine reduces psychological and physiological stress responses. Biol Psychol. 2007;74(1):39–45.<br\/><br\/>DiSilvestro RA, et al. Zinc in human health: effect of zinc on immune cells. Mol Med. 2001;7(5):300–307.<br\/><br\/>Ambiye VR, Langade D, Dongre S, et al. Clinical evaluation of the spermatogenic activity of the root extract of Ashwagandha (Withania somnifera) in oligospermic males: a pilot study. Evid Based Complement Alternat Med. 2013;2013:571420.<br\/><br\/>Cycle Pharmaceuticals, et al. Pilot crossover study comparing pharmacokinetics of dihydroberberine and berberine. 2022.<br\/><br\/><a href=\"https:\/\/townsendletter.com\/estrogen-vindication-part-i-berkson-abridged-for-print\/\"><span style=\"text-decoration:underline\">https:\/\/townsendletter.com\/estrogen-vindication-part-i-berkson-abridged-for-print\/<\/span><\/a><\/p><p><a href=\"https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC9204213\/\"><span style=\"text-decoration:underline\">https:\/\/pmc.ncbi.nlm.nih.gov\/articles\/PMC9204213\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/23308394\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/23308394\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/22634197\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/22634197\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/16930802\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/16930802\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/18385818\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/18385818\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/24371462\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/24371462\/<\/span><\/a><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/35010998\/\"><span style=\"text-decoration:underline\">https:\/\/pubmed.ncbi.nlm.nih.gov\/35010998\/<\/span><\/a><\/p>"
+          }
+        },
+        "row_rKpQYd": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if my health markers are \"normal\"?",
+            "description": "<p><strong>This is exactly who Dryft™ is designed for.<\/strong> \"Normal\" ranges are statistical averages, not optimal levels. Your testosterone might be 450 ng\/dL (technically \"normal\") but that's half of what a healthy 30-year-old should have (800-900). Your fasting glucose might be 95 (labeled \"normal\") but that's already showing insulin resistance.<br\/><br\/>Dryft™ optimizes your metabolic markers from \"normal\" to \"optimal\" – the difference between surviving and thriving.<\/p>"
+          }
+        },
+        "row_gL8dwQ": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "What if it doesn't work for me?",
+            "description": "<p>We offer a 90-day money-back guarantee. Try it for 3 full months. If you don't see improvements in body composition and feel more energetic, we'll refund your purchase. No returns required. Zero risk.<\/p>"
+          }
+        },
+        "row_kVNfHR": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Is it safe?",
+            "description": "<p>The natural ingredients are generally safe and compatible with most medications. However, we always recommend consulting your healthcare provider if you're taking prescription medications, particularly for blood pressure or blood sugar management, as some ingredients may complement their effects.<\/p>"
+          }
+        },
+        "row_BQBzVL": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How much time will this add to my already busy schedule?",
+            "description": "<p>Just 30 seconds each morning to take your 2 capsules—no special meal preparation, extensive workout routines, or complicated protocols to follow.<\/p><p>Dryft™ is designed for busy men who need results without time-consuming regimens. The 30-second morning routine integrates seamlessly into your life, working effectively while you focus on what matters.<\/p>"
+          }
+        },
+        "row_na39E6": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "How much time will this add to my already busy schedule?",
+            "description": "<p>Just 30 seconds each morning to take your 2 capsules—that's it. No special meal preparation, no extensive workout routines, no complicated protocols to follow. We designed Dryft™ specifically for busy professional men who need results without time-consuming regimens. The 30-second morning routine integrates seamlessly into your life, working effectively while you focus on what matters.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_8z8MVL",
+        "row_Kbkyth",
+        "row_8WDhRd",
+        "row_rKpQYd",
+        "row_gL8dwQ",
+        "row_kVNfHR",
+        "row_BQBzVL",
+        "row_na39E6"
+      ],
+      "name": "NL Faqs",
+      "settings": {
+        "section_id": "",
+        "heading": "Still Not Sure? Here Are Our Most Frequently Asked Questions About Dryft™ ",
+        "description": "",
+        "dropdown_heading_bgcolor": "#dfdfdf",
+        "dropdown_content_bgcolor": "",
+        "dropdown_heading_text_color": "#121212",
+        "dropdown_border_color": "#f3f3f3",
+        "dropdown_arrow_color": "#000000",
+        "button_label": "",
+        "button_url": "",
+        "discount_code": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#000000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 900,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_bottom_U9iwGR": {
+      "type": "nl-bottom",
+      "name": "NL Bottom",
+      "settings": {
+        "section_id": "",
+        "img": "shopify:\/\/shop_images\/1_bottles.png",
+        "img_mobile": "shopify:\/\/shop_images\/3_bottles_a8739ca6-6f7a-4e4a-b6f1-9ffb6f9d7215.png",
+        "heading": "Every Day You Wait, Your Metabolism Gets Harder to Fix",
+        "description": "<p>Thousands of men have already improved their confidence, energy, and body composition with Dryft™ . Your turn starts <em>now.<\/em><\/p>",
+        "button_label": "Try It Risk-Free Today",
+        "button_url": "#products",
+        "button_type": "secondary",
+        "product_bottom_label": "90-Day Money Back Guarantee",
+        "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "text_color": "#ffffff",
+        "bgcolor": "#f4f4f6",
+        "bg_img": "shopify:\/\/shop_images\/image_64_1_ec73922b-7461-4902-b940-08eaba0ed5e4.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "1758717670bfcc4e38": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "nl_thin_icon_text_jEL6P9",
+    "nl_main_banner_JYhfH3",
+    "nl_banner_LqEXKC",
+    "new_lp_featured_product_NMieYc",
+    "nl_logos_PkLwVA",
+    "nl_carousel_34QPVA",
+    "nl_unique_eYUpeA",
+    "nl_ingredients_U9cMEa",
+    "nl_case_study_JmWWhj",
+    "nl_unique_s4_C8RgYV",
+    "nl_product_progress_yppJHC",
+    "nl_benefits_HdqD84",
+    "nl_carousel_69B766",
+    "nl_formula_fjNMit",
+    "nl_animation_gUBxx9",
+    "nl_product_variants_BreT68",
+    "nl_guarantee_BnwdGF",
+    "nl_carousel_r94Qen",
+    "nl_supplements_dzTxLD",
+    "nl_doctors_Q7jnAV",
+    "nl_faqs_pEwWFj",
+    "nl_bottom_U9iwGR",
+    "1758717670bfcc4e38"
+  ]
+}

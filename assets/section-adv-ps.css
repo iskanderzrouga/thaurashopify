@@ -1,0 +1,223 @@
+/* ========================================
+   ADV PS Section - Exact Figma Fidelity
+   ======================================== */
+
+/* CSS Custom Properties (Design Tokens) */
+:root {
+  /* Colors */
+  --adv-ps-bg-main: #ffffff;
+  --adv-ps-bg-text-box: #eff8fe;
+  --adv-ps-border-color: #ff3000;
+  --adv-ps-text-color: #333333;
+  --adv-ps-button-bg: #00c249;
+  --adv-ps-button-shadow: #028332;
+  --adv-ps-button-text: #ffffff;
+
+  /* Typography */
+  --adv-ps-text-font-size: 22px;
+  --adv-ps-text-line-height: 30.8px;
+  --adv-ps-button-font-size: 24px;
+  --adv-ps-button-line-height: 32.68px;
+
+  /* Spacing */
+  --adv-ps-container-padding-v: 50px;
+  --adv-ps-container-padding-h: 150px;
+  --adv-ps-container-gap: 30px;
+  --adv-ps-text-box-padding-v: 25px;
+  --adv-ps-text-box-padding-h: 40px;
+
+  /* Effects */
+  --adv-ps-button-radius: 10px;
+  --adv-ps-button-shadow-offset: 6px;
+}
+
+/* Main Section */
+.adv-ps {
+  background-color: var(--adv-ps-bg-main) !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.adv-ps__container {
+  max-width: 1440px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: var(--adv-ps-container-gap) !important;
+}
+
+/* Text Box */
+.adv-ps__text-box {
+  width: 100% !important;
+  max-width: 1040px !important;
+  background-color: var(--adv-ps-bg-text-box) !important;
+  padding: var(--adv-ps-text-box-padding-v) var(--adv-ps-text-box-padding-h) !important;
+  box-shadow: inset 0 0 0 1px var(--adv-ps-border-color) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.adv-ps__text {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: var(--adv-ps-text-font-size) !important;
+  line-height: var(--adv-ps-text-line-height) !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--adv-ps-text-color) !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+/* Rich text formatting */
+.adv-ps__text p {
+  margin: 0 0 10px 0 !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: var(--adv-ps-text-font-size) !important;
+  line-height: var(--adv-ps-text-line-height) !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--adv-ps-text-color) !important;
+}
+
+.adv-ps__text p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Button */
+.adv-ps__button {
+  width: 100% !important;
+  max-width: 1040px !important;
+  height: 70px !important;
+  background-color: var(--adv-ps-button-bg) !important;
+  border-radius: var(--adv-ps-button-radius) !important;
+  box-shadow: 0px var(--adv-ps-button-shadow-offset) 0px 0px
+    var(--adv-ps-button-shadow) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: opacity 0.2s ease-in-out, transform 0.1s ease-in-out !important;
+  border: none !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: var(--adv-ps-button-font-size) !important;
+  line-height: var(--adv-ps-button-line-height) !important;
+  font-weight: 700 !important;
+  color: var(--adv-ps-button-text) !important;
+  text-align: center !important;
+}
+
+.adv-ps__button:hover {
+  opacity: 0.8 !important;
+}
+
+.adv-ps__button:active {
+  transform: scale(0.95) !important;
+}
+
+.adv-ps__button[aria-disabled="true"] {
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+/* ========================================
+   Responsive Breakpoints
+   ======================================== */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  :root {
+    --adv-ps-container-padding-h: 80px;
+    --adv-ps-text-font-size: 20px;
+    --adv-ps-text-line-height: 28px;
+    --adv-ps-button-font-size: 22px;
+    --adv-ps-button-line-height: 30px;
+  }
+
+  .adv-ps__text-box {
+    max-width: 100% !important;
+  }
+
+  .adv-ps__button {
+    max-width: 100% !important;
+    height: 65px !important;
+  }
+}
+
+/* Mobile (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  :root {
+    --adv-ps-container-padding-v: 30px;
+    --adv-ps-container-padding-h: 20px;
+    --adv-ps-container-gap: 20px;
+    --adv-ps-text-box-padding-v: 20px;
+    --adv-ps-text-box-padding-h: 25px;
+    --adv-ps-text-font-size: 18px;
+    --adv-ps-text-line-height: 26px;
+    --adv-ps-button-font-size: 20px;
+    --adv-ps-button-line-height: 28px;
+    --adv-ps-button-shadow-offset: 4px;
+  }
+
+  .adv-ps__text-box {
+    max-width: 100% !important;
+  }
+
+  .adv-ps__button {
+    max-width: 100% !important;
+    height: 60px !important;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  :root {
+    --adv-ps-container-padding-h: 15px;
+    --adv-ps-text-box-padding-h: 20px;
+    --adv-ps-text-font-size: 16px;
+    --adv-ps-text-line-height: 24px;
+    --adv-ps-button-font-size: 18px;
+    --adv-ps-button-line-height: 26px;
+  }
+
+  .adv-ps__button {
+    height: 55px !important;
+  }
+}
+
+/* ========================================
+   Accessibility & Print Styles
+   ======================================== */
+
+/* Focus states for keyboard navigation */
+.adv-ps__button:focus-visible {
+  outline: 3px solid var(--adv-ps-border-color) !important;
+  outline-offset: 3px !important;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .adv-ps__button {
+    transition: none !important;
+  }
+
+  .adv-ps__button:active {
+    transform: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .adv-ps__button {
+    box-shadow: none !important;
+    border: 2px solid var(--adv-ps-button-bg) !important;
+  }
+
+  .adv-ps__text-box {
+    box-shadow: none !important;
+    border: 1px solid var(--adv-ps-border-color) !important;
+  }
+}

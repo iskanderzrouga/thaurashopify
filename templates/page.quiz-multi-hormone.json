@@ -1,0 +1,499 @@
+{
+  "sections": {
+    "quiz_header_Weghcc": {
+      "type": "quiz-header",
+      "name": "Quiz Header",
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/Group_30.png",
+        "bgcolor": "#084c25",
+        "max_width": 1200,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_top_m": 12,
+        "padding_bottom_m": 12
+      }
+    },
+    "quiz_answer_top_iVHX6b": {
+      "type": "quiz-answer-top",
+      "name": "Quiz Answer Top",
+      "settings": {
+        "section_id": "",
+        "heading": "<span>Your Recommended Protocol:<\/span>\n<br>\n4-Month Full Endocrine Cascade Reset",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#ffffff",
+        "description": "<p>Based on your results, you're dealing with multi-hormone imbalance—the most complex fat-storage pattern.<\/p>",
+        "description_m_center": true,
+        "description_d_center": true,
+        "description_color": "#ffffff",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bg": "shopify:\/\/shop_images\/bg.png",
+        "bgcolor": "#ffffff",
+        "max_width": 880,
+        "padding_top": 68,
+        "padding_bottom": 68,
+        "padding_top_m": 32,
+        "padding_bottom_m": 32
+      }
+    },
+    "nl_product_variants_BreT68": {
+      "type": "nl-product-variants-secondary",
+      "blocks": {
+        "row_kNfYBx": {
+          "type": "row",
+          "settings": {
+            "heading": "Select Your Order"
+          }
+        },
+        "row_nLUt3n": {
+          "type": "row",
+          "settings": {
+            "heading": "Billing Info"
+          }
+        },
+        "row_ahWapp": {
+          "type": "row",
+          "settings": {
+            "heading": "Thank You"
+          }
+        },
+        "card_zENppW": {
+          "type": "card",
+          "settings": {
+            "slider_position": 0,
+            "default": true,
+            "product": "dryft™-3-bottles-1-free-1",
+            "title": "Buy 3 Get One Free",
+            "bottle_price": "$34.99",
+            "serving": "$0.84 per capsule",
+            "off": "32% OFF",
+            "show_sale": true,
+            "sale_text": "Sale Ends In",
+            "hide_timer": false,
+            "description": "<p>✅ Save $89.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<br\/>✅ BIGGEST Discount<\/p>",
+            "enable_subscription": false,
+            "sub_id": "",
+            "onetime_heading": "One Time Purchase",
+            "subscription_heading": "Subscribe & Save",
+            "sub_price": "",
+            "sub_compare_price": "",
+            "sub_save": "",
+            "sub_per_price": "",
+            "sub_description1": "",
+            "sub_description2": "",
+            "sub_description3": "",
+            "sub_description4": "",
+            "sub_description5": ""
+          }
+        },
+        "card_xEeHCB": {
+          "type": "card",
+          "settings": {
+            "slider_position": 1,
+            "default": false,
+            "product": "dryft™-2-bottles-1",
+            "title": "Buy 2 Bottles",
+            "bottle_price": "$44.98",
+            "serving": "$1.16 per capsule",
+            "off": "7% OFF",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "hide_timer": false,
+            "description": "<p>✅ Save $9.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<\/p>",
+            "enable_subscription": false,
+            "sub_id": "",
+            "onetime_heading": "One Time Purchase",
+            "subscription_heading": "Subscribe & Save",
+            "sub_price": "",
+            "sub_compare_price": "",
+            "sub_save": "",
+            "sub_per_price": "",
+            "sub_description1": "",
+            "sub_description2": "",
+            "sub_description3": "",
+            "sub_description4": "",
+            "sub_description5": ""
+          }
+        },
+        "card_djwGYt": {
+          "type": "card",
+          "settings": {
+            "slider_position": 2,
+            "default": false,
+            "product": "dryft™-1-bottle-1",
+            "title": "Buy 1 Bottle",
+            "bottle_price": "",
+            "serving": "$1.25 per capsule",
+            "off": "",
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "hide_timer": false,
+            "description": "<p>✅ 90 Day Money-Back Guarantee<\/p>",
+            "enable_subscription": true,
+            "sub_id": "2479161517",
+            "onetime_heading": "One Time Purchase",
+            "subscription_heading": "Subscribe & Save",
+            "sub_price": "$59.95",
+            "sub_compare_price": "$69.95",
+            "sub_save": "SAVE 14%",
+            "sub_per_price": "$1.07 per serving",
+            "sub_icon": "shopify:\/\/shop_images\/Subtract_29ecfb6a-b933-4156-8369-f50a169034d4.png",
+            "sub_description1": "<p>Delivery Every 28 Days<\/p>",
+            "sub_description2": "<p>Free Shipping<\/p>",
+            "sub_description3": "<p>Pause, Skip, Modify or Cancel Anytime<\/p>",
+            "sub_description4": "",
+            "sub_description5": ""
+          }
+        },
+        "faeture_x6BwKj": {
+          "type": "faeture",
+          "disabled": true,
+          "settings": {}
+        },
+        "faeture_item_chGLJU": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ Save $139.95<\/p>"
+          }
+        },
+        "faeture_item_mzXgX4": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ Unlock FREE Shipping Today Only<\/p>"
+          }
+        },
+        "faeture_item_6dnMmC": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ 90 Day Money-Back Guarantee<\/p>"
+          }
+        },
+        "faeture_item_TkhRM4": {
+          "type": "faeture_item",
+          "disabled": true,
+          "settings": {
+            "text": "<p>✅ BIGGEST Discount<\/p>"
+          }
+        },
+        "faeture2_Y6aNQq": {
+          "type": "faeture2",
+          "settings": {}
+        },
+        "faeture2_item_3nk6wb": {
+          "type": "faeture2_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Mask_group_9912d440-a36c-4a93-ba21-d7493f24214e.png",
+            "text": "<p>90-Day Money Back Guarantee<\/p>"
+          }
+        },
+        "faeture2_item_9bwqim": {
+          "type": "faeture2_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/gift_94f0dfdc-faae-49ac-bd7b-31508fa9fbfc.png",
+            "text": "<p>Free Shipping<\/p>"
+          }
+        },
+        "faeture2_item_9AU3za": {
+          "type": "faeture2_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/truck.png",
+            "text": "<p>Ships within 24 Hours Mon-Fri<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_kNfYBx",
+        "row_nLUt3n",
+        "row_ahWapp",
+        "card_zENppW",
+        "card_xEeHCB",
+        "card_djwGYt",
+        "faeture_x6BwKj",
+        "faeture_item_chGLJU",
+        "faeture_item_mzXgX4",
+        "faeture_item_6dnMmC",
+        "faeture_item_TkhRM4",
+        "faeture2_Y6aNQq",
+        "faeture2_item_3nk6wb",
+        "faeture2_item_9bwqim",
+        "faeture2_item_9AU3za"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.nl-product-variants__variant-2 {grid-column: 2 \/ 3; grid-row: 1 \/ 2; }}",
+        "@media screen and (max-width: 767px) {.nl-product-variants__variant-2 {grid-row: 1 \/ 2; } .nl-product-variants__variant-1 {grid-row: 2 \/ 3; }}"
+      ],
+      "name": "NL Product Secondary",
+      "settings": {
+        "product": "dryft™-np",
+        "slider_start_point": 0,
+        "section_id": "products",
+        "timer_minute": 30,
+        "heading": "Select Your Package Below",
+        "description": "",
+        "sale_label": "Buy 3 Get One Free Offer Expires in:",
+        "hide_timer": false,
+        "card_label": "Choose Your Supply",
+        "button_label": "",
+        "button_url": "",
+        "button_type": "primary",
+        "product_bottom_label": "",
+        "text_color": "#ffffff",
+        "bgcolor": "#ffffff",
+        "bg_img": "shopify:\/\/shop_images\/image_64_2.png",
+        "bottom_heading": "Our trusted payment processors",
+        "bottom_description": "<p>We use a 256-bit secure shopping cart where 100% of your data is encrypted, safe, and secure. This is the same data standard used by most banks, governments, and military organizations.<\/p>",
+        "bottom_icons": "shopify:\/\/shop_images\/Frame_2607927_c2efbdf6-3d03-4d4e-a998-9df55227afa8.png",
+        "bottom_img": "shopify:\/\/shop_images\/Mask_group_2.png",
+        "bottom_img_2": "shopify:\/\/shop_images\/Mask_group_1_b77639b7-af17-41cd-820e-1464800eaeaf.png",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "quiz_image_text_49CVyt": {
+      "type": "quiz-image-text",
+      "blocks": {
+        "row_kggm6C": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p>Most formulas are designed to fix ONE hormonal problem.<br\/><br\/>They'll target cortisol OR estrogen OR testosterone.<br\/><br\/>But never all three at once.<br\/><br\/>The problem is, when you have fat in BOTH your chest and belly, it means your entire endocrine cascade is broken.<br\/><br\/>High cortisol suppresses testosterone.<br\/><br\/>Low testosterone allows aromatase to convert what little T you have into estrogen.<br\/><br\/>High estrogen creates more aromatase activity, which converts even MORE testosterone.<br\/><br\/>You're stuck in a hormonal death spiral where each imbalance makes the others worse.<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Frame_2147224823_2.png",
+            "image_left": true,
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_kggm6C"
+      ],
+      "name": "Quiz Image Text",
+      "settings": {
+        "section_id": "",
+        "heading": "Here's why standard supplements fail for you:",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#000000",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 12,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "quiz_image_text_AwdGTn": {
+      "type": "quiz-image-text",
+      "blocks": {
+        "row_mjRdVB": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "Thaura's formula is the only one designed to break ALL THREE cycles simultaneously.",
+            "heading_m_center": true,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "<p>We don't just throw in a bunch of random ingredients.<br\/><br\/>We use a sequenced approach based on how your endocrine system actually works:<br\/><br\/><strong>Layer 1:<\/strong> HPA-axis adaptogens (ashwagandha, rhodiola) regulate cortisol first—because high cortisol blocks everything else from working.<br\/><br\/><strong>Layer 2:<\/strong> Aromatase inhibitors (DIM, chrysin, zinc) stop testosterone-to-estrogen conversion.<br\/><br\/><strong>Layer 3:<\/strong> Testosterone optimization compounds (tongkat ali, boron) restore T production once cortisol is controlled and aromatase is blocked.<br\/><br\/>This is the ONLY way to address multi-hormone imbalance. You have to fix them in the right order, at the same time.<\/p>",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Frame_2147225071_2.png",
+            "image_left": false,
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_mjRdVB"
+      ],
+      "name": "Quiz Image Text",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#000000",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 12,
+        "image_right": true,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "quiz_comparison_cards_GPbwMn": {
+      "type": "quiz-comparison-cards",
+      "blocks": {
+        "row_jcfjCc": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "Month 1-2",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p>Cortisol starts normalizing. Belly fat storage slows. Aromatase activity decreases. Estrogen levels begin dropping.<\/p>",
+            "description_m_center": true,
+            "description_d_center": true,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Frame_2147225080.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "row_JPabAH": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#f4f4f6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000000",
+            "heading": "Month 3-4",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#000000",
+            "description": "<p>Testosterone production ramps up as cortisol stays stable and aromatase stays blocked. All three hormones reach their new baseline simultaneously. Chest AND belly fat start releasing at the same time.<\/p>",
+            "description_m_center": true,
+            "description_d_center": true,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify:\/\/shop_images\/Frame_2147225081.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "row_jcfjCc",
+        "row_JPabAH"
+      ],
+      "name": "Quiz Comparison Cards",
+      "settings": {
+        "section_id": "",
+        "heading": "Here's why this requires 4 months:",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#000000",
+        "description": "<p>Each hormone resets on a different timeline.<br\/><br\/>Cortisol regulation: 4-6 weeks<br\/> Estrogen normalization: 8-12 weeks<br\/> Testosterone restoration: 12-16 weeks<br\/><br\/>If you stop at 30 days, cortisol might improve but estrogen and testosterone are still broken.<br\/><br\/> If you stop at 60 days, cortisol and estrogen improve but testosterone hasn't caught up yet.<\/p>",
+        "description_m_center": true,
+        "description_d_center": true,
+        "description_color": "#000000",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#f6f7ef",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "quiz_answer_bottom_RUBAFU": {
+      "type": "quiz-answer-bottom",
+      "name": "Quiz Answer Bottom",
+      "settings": {
+        "section_id": "",
+        "heading": "This is why we recommend the <span>4-month supply.<\/span>",
+        "heading_m_center": true,
+        "heading_d_center": false,
+        "heading_color": "#ffffff",
+        "description": "<p>Multi-hormone imbalances are the hardest to fix because you're waiting for the SLOWEST hormone to catch up.<br\/><br\/>Anything less than 4 months leaves at least one hormone unresolved.<br\/><br\/>And if even ONE stays broken, the entire cascade collapses again.<\/p>",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/img-on-top.png",
+        "image_mobile": "shopify:\/\/shop_images\/Group_2085661846.png",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "Get My 4-Month Protocol",
+        "button_url": "#products",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bg": "shopify:\/\/shop_images\/bg.png",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    }
+  },
+  "order": [
+    "quiz_header_Weghcc",
+    "quiz_answer_top_iVHX6b",
+    "nl_product_variants_BreT68",
+    "quiz_image_text_49CVyt",
+    "quiz_image_text_AwdGTn",
+    "quiz_comparison_cards_GPbwMn",
+    "quiz_answer_bottom_RUBAFU"
+  ]
+}

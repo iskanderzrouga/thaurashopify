@@ -1,0 +1,115 @@
+{{ 'section-adv-ps.css' | asset_url | stylesheet_tag }}
+
+<section class="adv-ps">
+  <div class="adv-ps__container">
+    <div class="adv-ps__text-box">
+      <p class="adv-ps__text">
+        {{ section.settings.ps_text }}
+      </p>
+    </div>
+    
+    {% if section.settings.show_button %}
+      <a 
+        href="{{ section.settings.button_link }}" 
+        class="adv-ps__button"
+        {% if section.settings.button_link == blank %}aria-disabled="true"{% endif %}
+      >
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .adv-ps {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-ps {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV PS Section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "ps_text",
+      "label": "P.S. Text",
+      "default": "<p>P.S. — How long have you been dealing with the 3 PM crash? Six months?</p><p>A year?</p><p>At some point you have to ask: Is caffeine actually working? Or are you just managing exhaustion?</p><p>Give your body 90 days to show you what real energy feels like.</p><p>If it doesn't work, you get your money back.</p><p>But if it does? You get your evenings back. You get to show up for your family. You get to be the dad who still has something left at 7 PM.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show Button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "TRY THAURA RISK-FREE →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV PS Section"
+    }
+  ]
+}
+{% endschema %}
+
+

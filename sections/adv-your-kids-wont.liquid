@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="{{ 'section-adv-your-kids-wont.css' | asset_url }}">
+
+<section class="adv-your-kids" data-section-id="{{ section.id }}">
+  <div class="adv-your-kids__container page-width">
+    
+    {%- comment -%} Main Headline {%- endcomment -%}
+    {%- if section.settings.headline != blank -%}
+      <h2 class="adv-your-kids__headline">
+        {{ section.settings.headline }}
+      </h2>
+    {%- endif -%}
+
+    {%- comment -%} Main Image {%- endcomment -%}
+    {%- if section.settings.main_image != blank -%}
+      <div class="adv-your-kids__image-wrapper">
+        <img
+          src="{{ section.settings.main_image | image_url: width: 2080 }}"
+          loading="lazy"
+          width="{{ section.settings.main_image.width }}"
+          height="{{ section.settings.main_image.height }}"
+          alt="{{ section.settings.main_image.alt | escape }}"
+          class="adv-your-kids__image"
+        >
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} Body Text (Long Paragraph - Italic) {%- endcomment -%}
+    {%- if section.settings.body_text != blank -%}
+      <div class="adv-your-kids__body">
+        {{ section.settings.body_text }}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  .adv-your-kids {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-your-kids {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV: Your Kids Won't",
+  "tag": "section",
+  "class": "section-adv-your-kids",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Section: Your Kids Won't Remember Your Job Title"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "headline",
+      "label": "Headline",
+      "info": "Main headline (Bold, Black)",
+      "default": "<p>Your Kids Won't Remember Your Job Title. They'll Remember If You Showed Up.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image",
+      "info": "Recommended size: 1040x638px"
+    },
+    {
+      "type": "richtext",
+      "id": "body_text",
+      "label": "Body Text",
+      "info": "Long paragraph text (Italic, Black). Use rich text editor for formatting.",
+      "default": "<p>Be direct for a second:</p><p>Your kids won't remember that project you finished. Or those emails you answered.</p><p>They'll remember if you were there. Really there.</p><p>Present. Energized. Engaged.</p><p>Not the exhausted version who collapsed on the couch every night.</p><p>Right now, you're giving your best energy to work. Your family gets leftovers.</p><p>That's not a character flaw. That's a fuel problem.</p><p>And you can fix it.</p><p>Not with another coffee. Not with another energy drink that spikes and crashes you.</p><p>With a fundamentally different approach—one that works with your body, not against it.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Your Kids Won't",
+      "settings": {
+        "headline": "<p>Your Kids Won't Remember Your Job Title. They'll Remember If You Showed Up.</p>",
+        "body_text": "<p>Be direct for a second:</p><p>Your kids won't remember that project you finished. Or those emails you answered.</p><p>They'll remember if you were there. Really there.</p><p>Present. Energized. Engaged.</p><p>Not the exhausted version who collapsed on the couch every night.</p><p>Right now, you're giving your best energy to work. Your family gets leftovers.</p><p>That's not a character flaw. That's a fuel problem.</p><p>And you can fix it.</p><p>Not with another coffee. Not with another energy drink that spikes and crashes you.</p><p>With a fundamentally different approach—one that works with your body, not against it.</p>"
+      }
+    }
+  ]
+}
+{% endschema %}
+

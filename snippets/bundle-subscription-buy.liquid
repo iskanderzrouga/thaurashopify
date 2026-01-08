@@ -1,0 +1,289 @@
+<div class="flex flex-col gap-1 md:gap-3">
+  {% for block in section.blocks %}
+    {% if block.type == 'card' %}
+      <div
+        nl-product-secondary-card
+        data-position="{{ block.settings.slider_position }}"
+        {% if block.settings.enable_subscription %}
+          data-subscription-id="{{ block.settings.sub_id }}"
+          data-subscription-percent="{{ block.settings.sub_perceont_off }}"
+        {% endif %}
+        data-id="{{ block.id }}"
+        checkbox-description="{{ block.settings.checkbox_description }}"
+        class="group {% if block.settings.enable_subscription %} subcard {% endif %} {% if block.settings.default %} active {% endif %} border-[2px] border-[#e0e0e0] [&.active]:border-[#00754a] rounded-[12px]"
+      >
+        {% assign sub_percent = block.settings.sub_perceont_off | plus: 0 | divided_by: 100.000 %}
+        {% assign inverted_percent = 1 | minus: sub_percent %}
+        {% assign inverted_percent_plus = 1 | plus: sub_percent %}
+
+        {% assign compare = block.settings.product.selected_or_first_available_variant.compare_at_price %}
+        {% assign price = block.settings.product.selected_or_first_available_variant.price %}
+        {% assign sub_price = block.settings.product.selected_or_first_available_variant.price
+          | times: inverted_percent
+        %}
+
+        {% if compare > price %}
+          {% assign discount_decimal = compare | minus: price | times: 1.0 | divided_by: compare %}
+          {% assign discount_percent = discount_decimal | times: 100 | round %}
+        {% else %}
+          {% assign discount_percent = 0 %}
+        {% endif %}
+
+        {% if compare > sub_price %}
+          {% assign sub_discount_decimal = compare | minus: sub_price | times: 1.0 | divided_by: compare %}
+          {% assign sub_discount_percent = sub_discount_decimal | times: 100 | round %}
+        {% else %}
+          {% assign sub_discount_percent = 0 %}
+        {% endif %}
+
+        <div class="rounded-[12px] bg-[#fff] group-[.active]:bg-[#f8fffe] p-3 md:px-4 md:py-5 flex justify-between gap-4 cursor-pointer relative">
+          {% if block.settings.badge != blank %}
+            <div
+              class="absolute right-4 -top-[12px] text-[11px] md:text-[11px] font-normal !leading-tight text-[#fff] whitespace-nowrap bg-[#e8e8e8] px-2 py-1 rounded-[4px]"
+              style="background-color: {{ block.settings.badge_bg }};"
+            >
+              {{ block.settings.badge }}
+            </div>
+          {% endif %}
+
+          <div class="flex justify-between gap-4 w-full">
+            <div class="flex items-center gap-2">
+              <div class="w-5 h-5 min-w-5 border-[2px] border-[#ccc] rounded-[20px] group-[.active]:border-[#00754a] !flex items-center justify-center">
+                <div class="w-[10px] h-[10px] min-w-[10px] rounded-[10px] bg-[#00754a] hidden group-[.active]:!block"></div>
+              </div>
+              
+              <div class="flex flex-col gap-1">
+                {% if block.settings.title != blank %}
+                  <div class="text-[15px] md:text-[15px] font-bold !leading-tight text-[#1a1a1a] whitespace-nowrap">
+                    {{ block.settings.title }}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.bottle_price != blank %}
+                  <div class="text-[12px] md:text-[12px] font-normal !leading-tight text-[#1a1a1a] whitespace-nowrap">
+                    <span class="hidden group-[.onetimecard]:inline">${{ block.settings.bottle_price }}</span>
+                    <span class="hidden group-[.subcard]:inline">
+                      $
+                      {% assign raw = block.settings.bottle_price | plus: 0 | times: inverted_percent | round: 2 %}
+                      {% assign cents = raw | times: 100 | round %}
+                      {% assign dollars = cents | divided_by: 100 %}
+                      {% assign remainder = cents | modulo: 100 %}
+                      {% if remainder < 10 %}
+                        {{ dollars }}.0{{ remainder }}
+                      {% else %}
+                        {{ dollars }}.{{ remainder }}
+                      {% endif %}
+
+                      {% comment %} {{- block.settings.bottle_price | plus: 0 | times: inverted_percent | round: 2 -}} {% endcomment %}
+                    </span>
+                    <span class=""> per bottle</span>
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if block.settings.month != blank %}
+                <div class="text-[11px] md:text-[11px] font-normal !leading-tight text-[#1a1a1a] whitespace-nowrap bg-[#e8e8e8] px-2 py-1 rounded-[4px]">
+                  {{ block.settings.month }}
+                </div>
+              {% endif %}
+            </div>
+
+            {% if block.settings.product != blank %}
+              <div class="flex flex-col items-end gap-2">
+                <div class="text-[18px] md:text-[18px] font-bold !leading-tight text-[#1a1a1a]">
+                  <span class="hidden group-[.onetimecard]:inline">
+                    {{- block.settings.product.selected_or_first_available_variant.price | money -}}
+                  </span>
+                  <span class="hidden group-[.subcard]:inline">
+                    {{-
+                      block.settings.product.selected_or_first_available_variant.price
+                      | times: inverted_percent
+                      | round: 2
+                      | money
+                    -}}
+                  </span>
+                </div>
+                {% if block.settings.product.selected_or_first_available_variant.compare_at_price
+                    > block.settings.product.selected_or_first_available_variant.price
+                %}
+                  <div class="text-[13px] md:text-[13px] font-normal !leading-tight text-[#666] line-through">
+                    {{ block.settings.product.selected_or_first_available_variant.compare_at_price | money }}
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <div class="rounded-[10px] border-[2px] border-dashed border-[#00754a] px-5 py-3 w-full mb-5">
+    <div class="flex gap-2 items-center checkbox-row cursor-pointer">
+      <div class="checkbox-widget active"></div>
+      <div class="flex flex-col">
+        {% if section.settings.sub_heading != blank %}
+          <div
+            class="text-[16px] md:text-[18px] font-bold  !leading-tight text-[#00754a]"
+          >
+            {{ section.settings.sub_heading }}
+          </div>
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {% if block.type == 'card' and block.settings.default %}
+            <div
+              class="bundle-subscription__checkbox-description text-[10px] md:text-[12px] font-normal !leading-tight text-[#666]"
+            >
+              {{ block.settings.checkbox_description }}
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% comment %} {% if section.settings.sub_description != blank %}
+          <div
+            class="text-[10px] md:text-[12px] font-normal !leading-tight text-[#666]"
+          >
+            {{ section.settings.sub_description }}
+          </div>
+        {% endif %} {% endcomment %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% for block in section.blocks %}
+  {% if block.type == 'card' %}
+    <div
+      nl-product-secondary-add-cart
+      data-id="{{ block.id }}"
+      class="w-full hidden [&.active]:block {% if block.settings.default %} active {% endif %}"
+    >
+      {%- assign product_form_id = 'product-form-' | append: section.id -%}
+      {%- render 'buy-buttons--secondary',
+        block: block,
+        product: block.settings.product,
+        product_form_id: product_form_id,
+        section_id: section.id
+      -%}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  document.querySelectorAll('[nl-product-secondary-card]').forEach((tab) => {
+    tab.addEventListener('click', function () {
+      const dataId = this.getAttribute('data-id');
+      document.querySelectorAll(`[nl-product-secondary-card]`).forEach((el) => {
+        el.classList.remove('active');
+      });
+      this.classList.add('active');
+
+      document.querySelectorAll('[nl-product-secondary-add-cart]').forEach((btn) => {
+        btn.classList.remove('active');
+      });
+      const matchingBtn = document.querySelector(`[nl-product-secondary-add-cart][data-id="${dataId}"]`);
+      if (matchingBtn) {
+        matchingBtn.classList.add('active');
+      }
+
+      document.querySelectorAll('[nl-product-secondary-description]').forEach((des) => {
+        des.classList.remove('active');
+      });
+      const matchingDescription = document.querySelector(`[nl-product-secondary-description][data-id="${dataId}"]`);
+      if (matchingDescription) {
+        matchingDescription.classList.add('active');
+      }
+
+      const checkboxDescripton = tab.getAttribute('checkbox-description');
+      const checkboxDescriptionElement = document.querySelector('.bundle-subscription__checkbox-description');
+      if (checkboxDescriptionElement) {
+        checkboxDescriptionElement.textContent = checkboxDescripton;
+      }
+
+      // --- subscription logic ---
+      if (this.getAttribute('data-subscription-card') === 'true') {
+        const activeSubCard = this.querySelector('[nl-product-secondary-card__sub-card].active');
+        let assignedValue = '';
+        if (activeSubCard) {
+          const type = activeSubCard.getAttribute('data-type');
+          if (type === 'subscription') {
+            assignedValue = activeSubCard.getAttribute('data-subscription-id') || '';
+          }
+        }
+
+        // set input value on matchingBtn
+        if (matchingBtn) {
+          const input = matchingBtn.querySelector('[re-sub-widget__selling-plan-input]');
+          if (input) {
+            input.value = assignedValue;
+          }
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('click', function (e) {
+    // Detect click on the entire row
+    const row = e.target.closest('.checkbox-row');
+    if (!row) return;
+
+    // Find the checkbox widget inside the row
+    const box = row.querySelector('.checkbox-widget');
+    if (!box) return;
+
+    // Toggle checkbox state
+    box.classList.toggle('active');
+
+    // Select all product cards inside this section
+    const cards = document.querySelectorAll('.section-{{ section.id }}-padding [nl-product-secondary-card]');
+
+    // If checked
+    if (box.classList.contains('active')) {
+      cards.forEach((card) => {
+        card.classList.add('subcard');
+        card.classList.remove('onetimecard');
+      });
+    }
+    // If unchecked
+    else {
+      cards.forEach((card) => {
+        card.classList.add('onetimecard');
+        card.classList.remove('subcard');
+      });
+    }
+
+    // All selling plan inputs in this section
+    const allSellingPlanInputs = document.querySelectorAll(
+      '.section-{{ section.id }}-padding [nl-product-secondary-add-cart] [re-sub-widget__selling-plan-input]'
+    );
+
+    // If checked → match each card to its own input
+    if (box.classList.contains('active')) {
+      cards.forEach((card) => {
+        const dataId = card.getAttribute('data-id');
+        const subId = card.getAttribute('data-subscription-id');
+
+        const matchingContainer = document.querySelector(
+          `.section-{{ section.id }}-padding [nl-product-secondary-add-cart][data-id="${dataId}"]`
+        );
+
+        if (matchingContainer) {
+          const input = matchingContainer.querySelector('[re-sub-widget__selling-plan-input]');
+          if (input) input.value = subId || '';
+        }
+      });
+    }
+
+    // If unchecked → clear all inputs
+    else {
+      allSellingPlanInputs.forEach((input) => {
+        input.value = '';
+      });
+    }
+  });
+</script>

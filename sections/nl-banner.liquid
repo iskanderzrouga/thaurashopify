@@ -1,0 +1,154 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="{{ section.settings.section_id }}" class="section-{{ section.id }}-padding md:px-5" style="background-color: {{ section.settings.bgcolor }}">
+  <div class="mx-auto w-full relative" style="max-width: {{ section.settings.max_width }}px;">
+    {% if section.settings.image != blank %}
+      {{
+        section.settings.image
+        | image_url: width: 1140
+        | image_tag: class: 'w-full md:rounded-[40px] absolute top-0 left-0 h-full object-cover', sizes: '1420px'
+      }}
+    {% endif %}
+
+    <div class="px-5 py-5 md:px-10 md:py-6 relative grid grid-cols-5 items-center gap-3">
+      {% if section.settings.product_image != blank %}
+        {{
+          section.settings.product_image
+          | image_url: width: 300
+          | image_tag: class: 'col-span-2 max-w-[280px] mx-auto w-full', sizes: '1300px'
+        }}
+      {% endif %}
+
+      <div class="col-span-3 w-full flex flex-col gap-2">
+        {% if section.settings.heading != blank %}
+          <div class="text-[17px] md:text-[24px] font-medium !leading-tight text-[#FFFFFF]">
+            {{ section.settings.heading }}
+          </div>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div class="text-[10px] md:text-[14px] font-normal !leading-tight text-[#FFFFFF]">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "NL Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "NL Banner"
+    }
+  ]
+}
+{% endschema %}

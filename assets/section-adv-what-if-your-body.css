@@ -1,0 +1,1001 @@
+/*
+  Section: What If Your Body - CSS
+  100% Figma Accuracy Implementation - Desktop + Mobile
+  All values extracted directly from Figma design data
+*/
+
+/* Root Variables - Exact Figma Values */
+:root {
+  /* Colors - Exact HEX from Figma */
+  --adv-what-if-text-color: #0b0b0b; /* rgb(11, 11, 11) */
+  --adv-what-if-features-bg: #eff8fe; /* rgb(239, 248, 254) */
+  --adv-what-if-icon-bg: #ffffff; /* rgb(255, 255, 255) */
+  --adv-what-if-icon-border: #1544aa; /* rgb(21, 68, 170) */
+
+  /* Typography - Desktop (Exact Figma Values) */
+  --adv-what-if-headline-size: 32px;
+  --adv-what-if-headline-line-height: 38.4px;
+  --adv-what-if-body-size: 20px;
+  --adv-what-if-body-line-height: 28px;
+
+  /* Spacing - Desktop (Exact Figma Values) */
+  --adv-what-if-gap: 25px;
+  --adv-what-if-features-padding: 20px;
+  --adv-what-if-icon-gap: 10px;
+
+  /* Dimensions - Desktop (Exact Figma Values) */
+  --adv-what-if-container-width: 1040px;
+  --adv-what-if-icon-size: 120px;
+  --adv-what-if-icon-border-width: 5px;
+  --adv-what-if-icon-border-radius: 428.57px;
+  --adv-what-if-feature-width: 220px;
+  --adv-what-if-features-gap: 25px;
+}
+
+/* Main Section */
+.adv-what-if-your-body {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  overflow: hidden !important;
+}
+
+.adv-what-if-your-body__container {
+  max-width: var(--adv-what-if-container-width) !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--adv-what-if-gap) !important;
+}
+
+/* Headline - Bold Italic (Figma: OpenSans-BoldItalic) */
+.adv-what-if-your-body__headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-if-headline-size) !important;
+  font-weight: 700 !important; /* Bold */
+  font-style: italic !important; /* Italic */
+  line-height: var(--adv-what-if-headline-line-height) !important;
+  color: var(--adv-what-if-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+/* Main Image Wrapper */
+.adv-what-if-your-body__image-wrapper {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-what-if-your-body__image {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: cover !important;
+}
+
+/* Introduction and Conclusion Text - Regular/Normal by default, allows Bold from editor */
+.adv-what-if-your-body__intro,
+.adv-what-if-your-body__conclusion {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-if-body-size) !important;
+  font-weight: 400 !important; /* Regular/Normal by default */
+  font-style: normal !important; /* NOT Italic */
+  line-height: var(--adv-what-if-body-line-height) !important;
+  color: var(--adv-what-if-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.adv-what-if-your-body__intro p,
+.adv-what-if-your-body__conclusion p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-if-body-size) !important;
+  font-weight: 400 !important; /* Regular/Normal by default */
+  font-style: normal !important; /* NOT Italic */
+  line-height: var(--adv-what-if-body-line-height) !important;
+  color: var(--adv-what-if-text-color) !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Allow Bold from rich text editor (strong/b tags) */
+.adv-what-if-your-body__intro strong,
+.adv-what-if-your-body__intro b,
+.adv-what-if-your-body__conclusion strong,
+.adv-what-if-your-body__conclusion b {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 700 !important; /* Allow Bold */
+  font-style: normal !important; /* Keep NOT italic */
+}
+
+/* Prevent Italic (em/i tags should stay normal) */
+.adv-what-if-your-body__intro em,
+.adv-what-if-your-body__intro i,
+.adv-what-if-your-body__conclusion em,
+.adv-what-if-your-body__conclusion i {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: inherit !important; /* Keep current weight (can be bold) */
+  font-style: normal !important; /* Force NOT italic */
+}
+
+/* Features Container - Exact Figma Layout */
+.adv-what-if-your-body__features {
+  width: 100% !important;
+  background-color: var(--adv-what-if-features-bg) !important;
+  padding: var(--adv-what-if-features-padding) !important;
+  display: grid !important;
+  gap: 3rem !important;
+  justify-items: center !important;
+  align-items: start !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 280px)) !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+/* Individual Feature - Exact Figma Dimensions */
+.adv-what-if-your-body__feature {
+  width: 100% !important;
+  max-width: 280px !important;
+  min-width: 200px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-what-if-your-body__feature-content {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: var(--adv-what-if-icon-gap) !important;
+}
+
+/* Icon Container - Exact Figma Styling */
+.adv-what-if-your-body__icon-container {
+  width: var(--adv-what-if-icon-size) !important;
+  height: var(--adv-what-if-icon-size) !important;
+  min-width: var(--adv-what-if-icon-size) !important;
+  min-height: var(--adv-what-if-icon-size) !important;
+  background-color: var(--adv-what-if-icon-bg) !important;
+  border-radius: var(--adv-what-if-icon-border-radius) !important;
+  box-shadow: inset 0 0 0 var(--adv-what-if-icon-border-width)
+    var(--adv-what-if-icon-border) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+}
+
+.adv-what-if-your-body__icon {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Feature Text - Normal by default, allow Shopify editor control */
+.adv-what-if-your-body__feature-text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: var(--adv-what-if-body-size) !important;
+  font-weight: 400;
+  font-style: normal !important;
+  line-height: var(--adv-what-if-body-line-height) !important;
+  color: var(--adv-what-if-text-color) !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+/* Feature Text - Paragraph spacing */
+.adv-what-if-your-body__feature-text p {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  font-style: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  text-align: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Feature Text - Allow Shopify editor to control bold */
+.adv-what-if-your-body__feature-text strong,
+.adv-what-if-your-body__feature-text b {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: bold;
+  font-style: normal !important;
+  line-height: inherit !important;
+  color: var(--adv-what-if-text-color) !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Feature Text - Remove italic from em tags */
+.adv-what-if-your-body__feature-text em,
+.adv-what-if-your-body__feature-text i {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: inherit !important;
+  color: var(--adv-what-if-text-color) !important;
+}
+
+/* Feature Text - Blue color for highlight (keep normal style) */
+.adv-what-if-your-body__feature-text .highlight,
+.adv-what-if-your-body__feature-text .number,
+.adv-what-if-your-body__feature-text .blue {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: inherit !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  line-height: inherit !important;
+  color: var(--adv-what-if-icon-border) !important;
+}
+
+/* Feature Text - Support for inline style colors */
+.adv-what-if-your-body__feature-text span[style*="color"] {
+  font-weight: inherit !important;
+  font-style: normal !important;
+}
+
+/* Responsive Design - Mobile (360px from Figma) */
+@media screen and (max-width: 749px) {
+  :root {
+    /* Mobile Typography - Exact Figma Mobile Values */
+    --adv-what-if-headline-size: 26px;
+    --adv-what-if-headline-line-height: 31.2px;
+    --adv-what-if-body-size: 18px;
+    --adv-what-if-body-line-height: 25.2px;
+
+    /* Mobile Spacing - Exact Figma Mobile Values */
+    --adv-what-if-gap: 20px;
+    --adv-what-if-features-padding: 20px 5px;
+    --adv-what-if-features-gap: 20px;
+
+    /* Mobile Dimensions - Exact Figma Mobile Values */
+    --adv-what-if-feature-width: calc(50% - 10px);
+    --adv-what-if-icon-size: 120px;
+  }
+
+  .adv-what-if-your-body__container {
+    gap: var(--adv-what-if-gap) !important;
+  }
+
+  .adv-what-if-your-body__features {
+    padding: 20px 5px !important;
+    gap: 2.5rem !important;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 250px)) !important;
+  }
+
+  .adv-what-if-your-body__feature {
+    width: 100% !important;
+    max-width: 250px !important;
+    min-width: 180px !important;
+  }
+}
+
+/* Tablet Responsive (749px - 989px) */
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  :root {
+    --adv-what-if-headline-size: 28px;
+    --adv-what-if-headline-line-height: 34px;
+    --adv-what-if-body-size: 18px;
+    --adv-what-if-body-line-height: 26px;
+    --adv-what-if-feature-width: calc(50% - 12.5px);
+  }
+
+  .adv-what-if-your-body__container {
+    padding: 40px 20px !important;
+  }
+
+  .adv-what-if-your-body__features {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .adv-what-if-your-body__feature {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: auto !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Large Desktop (1100px+) */
+@media screen and (max-width: 1100px) {
+  .adv-what-if-your-body__container {
+    max-width: 100% !important;
+  }
+}
+
+/* Very Small Mobile (under 400px) */
+@media screen and (max-width: 400px) {
+  :root {
+    --adv-what-if-headline-size: 22px;
+    --adv-what-if-headline-line-height: 28px;
+    --adv-what-if-body-size: 16px;
+    --adv-what-if-body-line-height: 22px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .adv-what-if-your-body {
+    background-color: white !important;
+  }
+
+  .adv-what-if-your-body__features {
+    background-color: var(--adv-what-if-features-bg) !important;
+    break-inside: avoid !important;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .adv-what-if-your-body * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Features Grid Block Styles */
+.adv-what-if-your-body__features-grid {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.adv-what-if-your-body__features-grid-container {
+  display: grid !important;
+  gap: 3rem !important;
+  justify-items: center !important;
+  align-items: start !important;
+  width: 100% !important;
+}
+
+/* Grid Layout based on feature count */
+.adv-what-if-your-body__features-grid-container[data-features-count="1"] {
+  grid-template-columns: 1fr !important;
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+
+.adv-what-if-your-body__features-grid-container[data-features-count="2"] {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+
+.adv-what-if-your-body__features-grid-container[data-features-count="3"] {
+  grid-template-columns: repeat(3, 1fr) !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+
+.adv-what-if-your-body__features-grid-container[data-features-count="4"] {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.adv-what-if-your-body__features-grid-container[data-features-count="5"] {
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 2rem !important;
+}
+
+/* Individual Grid Feature */
+.adv-what-if-your-body__grid-feature {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 280px !important;
+  min-width: 200px !important;
+}
+
+.adv-what-if-your-body__grid-feature-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  width: 100% !important;
+}
+
+/* Grid Icon Container */
+.adv-what-if-your-body__grid-icon-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: var(--adv-what-if-icon-size) !important;
+  height: var(--adv-what-if-icon-size) !important;
+  border-radius: 50% !important;
+  background: var(--adv-what-if-icon-bg) !important;
+  border: 2px solid rgba(37, 99, 235, 0.1) !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+.adv-what-if-your-body__grid-icon {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: contain !important;
+}
+
+/* Grid Feature Text */
+.adv-what-if-your-body__grid-feature-text {
+  font-size: 1.6rem !important;
+  line-height: 1.4 !important;
+  color: var(--adv-what-if-text-color) !important;
+  text-align: center !important;
+}
+
+.adv-what-if-your-body__grid-feature-text p {
+  margin: 0 !important;
+}
+
+.adv-what-if-your-body__grid-feature-text strong {
+  font-weight: 700 !important;
+  color: var(--adv-what-if-text-color) !important;
+}
+
+.adv-what-if-your-body__grid-feature-text em {
+  font-style: italic !important;
+  color: rgba(11, 11, 11, 0.75) !important;
+}
+
+.adv-what-if-your-body__grid-feature-text .highlight {
+  color: var(--adv-what-if-icon-border) !important;
+  font-weight: 600 !important;
+}
+
+.adv-what-if-your-body__grid-feature-text .number {
+  font-weight: 700 !important;
+  font-size: 1.1em !important;
+}
+
+/* Hover Effects */
+.adv-what-if-your-body__grid-feature:hover
+  .adv-what-if-your-body__grid-icon-container {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 990px) {
+  .adv-what-if-your-body__features-grid-container {
+    gap: 2.5rem !important;
+  }
+
+  .adv-what-if-your-body__features-grid-container[data-features-count="4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .adv-what-if-your-body__features-grid-container[data-features-count="5"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .adv-what-if-your-body__grid-feature-text {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 749px) {
+  .adv-what-if-your-body__features-grid-container {
+    gap: 3rem !important;
+  }
+
+  .adv-what-if-your-body__features-grid-container[data-features-count="1"],
+  .adv-what-if-your-body__features-grid-container[data-features-count="2"],
+  .adv-what-if-your-body__features-grid-container[data-features-count="3"],
+  .adv-what-if-your-body__features-grid-container[data-features-count="4"],
+  .adv-what-if-your-body__features-grid-container[data-features-count="5"] {
+    grid-template-columns: 1fr !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+
+  .adv-what-if-your-body__grid-feature-text {
+    font-size: 1.4rem !important;
+  }
+
+  .adv-what-if-your-body__grid-icon-container {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .adv-what-if-your-body__grid-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .adv-what-if-your-body__grid-feature-content {
+    gap: 1.5rem !important;
+  }
+
+  .adv-what-if-your-body__grid-icon-container {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .adv-what-if-your-body__grid-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .adv-what-if-your-body__grid-feature-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* Features Block Styles - Single Block with Background */
+.adv-what-if-your-body__features-block {
+  width: 100% !important;
+  background-color: #eff8fe !important;
+  padding: var(--adv-what-if-features-padding) !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+
+.adv-what-if-your-body__features-grid {
+  display: grid !important;
+  gap: 3rem !important;
+  justify-items: center !important;
+  justify-content: center !important;
+  align-items: start !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Grid Layout based on feature count */
+.adv-what-if-your-body__features-grid[data-features-count="1"] {
+  grid-template-columns: 1fr !important;
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+
+.adv-what-if-your-body__features-grid[data-features-count="2"] {
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+
+.adv-what-if-your-body__features-grid[data-features-count="3"] {
+  grid-template-columns: repeat(3, 1fr) !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+
+.adv-what-if-your-body__features-grid[data-features-count="4"] {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.adv-what-if-your-body__features-grid[data-features-count="5"] {
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 1.5rem !important;
+  padding: 20px 10px !important;
+}
+
+/* Make feature items more flexible for 5 features */
+.adv-what-if-your-body__features-grid[data-features-count="5"]
+  .adv-what-if-your-body__feature-item {
+  max-width: 190px !important;
+  min-width: 160px !important;
+}
+
+.adv-what-if-your-body__features-grid[data-features-count="5"]
+  .adv-what-if-your-body__icon-container {
+  width: 90px !important;
+  height: 90px !important;
+}
+
+.adv-what-if-your-body__features-grid[data-features-count="5"]
+  .adv-what-if-your-body__icon {
+  width: 90px !important;
+  height: 90px !important;
+}
+
+/* Smaller text for 5 features */
+.adv-what-if-your-body__features-grid[data-features-count="5"]
+  .adv-what-if-your-body__feature-text {
+  font-size: 15px !important;
+  line-height: 1.4 !important;
+}
+
+/* Individual Feature Item */
+.adv-what-if-your-body__feature-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 280px !important;
+  min-width: 200px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.adv-what-if-your-body__feature-content {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.adv-what-if-your-body__feature-item .adv-what-if-your-body__feature-text {
+  font-style: normal !important;
+  width: 100% !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  box-sizing: border-box !important;
+}
+
+.adv-what-if-your-body__feature-item .adv-what-if-your-body__feature-text em {
+  font-style: normal !important;
+}
+
+.adv-what-if-your-body__feature-item .adv-what-if-your-body__feature-text * {
+  font-style: normal !important;
+}
+
+/* Allow strong tags to be bold in Features Block - MUST come after * selector */
+.adv-what-if-your-body__feature-item
+  .adv-what-if-your-body__feature-text
+  strong,
+.adv-what-if-your-body__feature-item .adv-what-if-your-body__feature-text b {
+  font-weight: bold !important;
+  font-style: normal !important;
+}
+
+/* Text Color Options */
+.adv-what-if-your-body__features-block--blue
+  .adv-what-if-your-body__feature-text {
+  color: #1544aa !important;
+}
+
+.adv-what-if-your-body__features-block--blue
+  .adv-what-if-your-body__feature-text
+  * {
+  color: #1544aa !important;
+}
+
+/* Blue highlight for blue text */
+.adv-what-if-your-body__features-block--blue
+  .adv-what-if-your-body__feature-text
+  .highlight {
+  color: #0066cc !important;
+  font-weight: 600 !important;
+}
+
+.adv-what-if-your-body__features-block--black
+  .adv-what-if-your-body__feature-text {
+  color: #0b0b0b !important;
+}
+
+.adv-what-if-your-body__features-block--black
+  .adv-what-if-your-body__feature-text
+  * {
+  color: #0b0b0b !important;
+}
+
+/* Blue highlight for black text */
+.adv-what-if-your-body__features-block--black
+  .adv-what-if-your-body__feature-text
+  .highlight {
+  color: #1544aa !important;
+  font-weight: 600 !important;
+}
+
+/* Tablet Responsive for Features Block */
+@media screen and (max-width: 990px) {
+  .adv-what-if-your-body__features-grid {
+    gap: 2.5rem !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+  }
+
+  /* Adjust size for 5 features on tablet */
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-item {
+    max-width: 200px !important;
+    min-width: 170px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__icon-container {
+    width: 85px !important;
+    height: 85px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__icon {
+    width: 85px !important;
+    height: 85px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-text {
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+}
+
+/* Mobile Responsive for Features Block */
+@media screen and (max-width: 749px) {
+  .adv-what-if-your-body__features-block {
+    padding: 1.5rem 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .adv-what-if-your-body__features-grid {
+    gap: 2rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Smaller icons and text for ALL features on mobile */
+  .adv-what-if-your-body__features-block
+    .adv-what-if-your-body__icon-container {
+    width: 80px !important;
+    height: 80px !important;
+    min-width: 80px !important;
+    min-height: 80px !important;
+  }
+
+  .adv-what-if-your-body__features-block .adv-what-if-your-body__icon {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .adv-what-if-your-body__features-block .adv-what-if-your-body__feature-text {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .adv-what-if-your-body__features-block
+    .adv-what-if-your-body__feature-content {
+    gap: 8px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 1 feature: center it */
+  .adv-what-if-your-body__features-grid[data-features-count="1"] {
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* 2 features: 2 columns */
+  .adv-what-if-your-body__features-grid[data-features-count="2"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* 3 features: 2 columns + 1 centered */
+  .adv-what-if-your-body__features-grid[data-features-count="3"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="3"]
+    .adv-what-if-your-body__feature-item:nth-child(3) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+  }
+
+  /* 4 features: 2x2 grid */
+  .adv-what-if-your-body__features-grid[data-features-count="4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* 5 features: 2x2 + 1 centered */
+  .adv-what-if-your-body__features-grid[data-features-count="5"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    gap: 1rem !important;
+    padding: 0 0.5rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-item:nth-child(5) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    max-width: 160px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-item {
+    max-width: 48% !important;
+    min-width: 140px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  /* Smaller icons for 5 features on mobile */
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__icon-container {
+    width: 65px !important;
+    height: 65px !important;
+    min-width: 65px !important;
+    min-height: 65px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__icon {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  /* Smaller text for 5 features on mobile */
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-text {
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-text
+    p {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Smaller gap between icon and text */
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-content {
+    gap: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .adv-what-if-your-body__feature-item {
+    max-width: 280px !important;
+    min-width: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Extra Small Mobile (Under 480px) - Further optimizations for 5 features */
+@media screen and (max-width: 480px) {
+  .adv-what-if-your-body__features-block {
+    padding: 1.2rem 0.5rem !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"] {
+    max-width: 100% !important;
+    gap: 0.8rem !important;
+    padding: 0 0.3rem !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-item {
+    max-width: 47% !important;
+    min-width: 130px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-item:nth-child(5) {
+    max-width: 47% !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__icon-container {
+    width: 55px !important;
+    height: 55px !important;
+    min-width: 55px !important;
+    min-height: 55px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__icon {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-text {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-text
+    p {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .adv-what-if-your-body__features-grid[data-features-count="5"]
+    .adv-what-if-your-body__feature-content {
+    gap: 5px !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .adv-what-if-your-body__headline,
+  .adv-what-if-your-body__intro,
+  .adv-what-if-your-body__conclusion,
+  .adv-what-if-your-body__feature-text,
+  .adv-what-if-your-body__grid-feature-text {
+    color: #000000 !important;
+  }
+
+  .adv-what-if-your-body__icon-container,
+  .adv-what-if-your-body__grid-icon-container {
+    box-shadow: inset 0 0 0 calc(var(--adv-what-if-icon-border-width) + 1px)
+      #000000 !important;
+  }
+
+  .adv-what-if-your-body__feature-text .highlight,
+  .adv-what-if-your-body__feature-text .number,
+  .adv-what-if-your-body__feature-text .blue,
+  .adv-what-if-your-body__grid-feature-text .highlight,
+  .adv-what-if-your-body__grid-feature-text .number,
+  .adv-what-if-your-body__grid-feature-text .blue {
+    color: #0000ff !important;
+  }
+}

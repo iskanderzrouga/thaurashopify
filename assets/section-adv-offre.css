@@ -1,0 +1,146 @@
+/* ADV Offre Section - Premium Discount Offer */
+
+/* Main Wrapper */
+.adv-offre-wrapper {
+  width: 100%;
+}
+
+/* Container */
+.adv-offre-container {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Product Section */
+.adv-offre-product {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adv-offre-product-shadow {
+  pointer-events: none;
+}
+
+.adv-offre-product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Content Section */
+.adv-offre-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.adv-offre-headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+.adv-offre-description {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+/* Button */
+.adv-offre-button {
+  font-family: "Open Sans", "Noto Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  line-height: normal;
+  border: none;
+}
+
+/* Deadline */
+.adv-offre-deadline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+/* Features Section */
+.adv-offre-features {
+  width: 100%;
+}
+
+.adv-offre-feature-item {
+  box-sizing: border-box;
+}
+
+.adv-offre-feature-icon-wrapper {
+  width: 100%;
+}
+
+.adv-offre-feature-icon-circle {
+  flex-shrink: 0;
+}
+
+.adv-offre-feature-icon {
+  display: block;
+}
+
+.adv-offre-feature-title {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Typography Fallbacks */
+@supports not (font-variation-settings: normal) {
+  .adv-offre-headline,
+  .adv-offre-description,
+  .adv-offre-button,
+  .adv-offre-deadline {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  .adv-offre-feature-title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+}
+
+/* Responsive Utilities */
+@media screen and (max-width: 749px) {
+  .adv-offre-headline,
+  .adv-offre-description,
+  .adv-offre-deadline {
+    text-align: center !important;
+  }
+
+  .adv-offre-features {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+
+  .adv-offre-feature-item {
+    flex-shrink: 0 !important;
+  }
+
+  .adv-offre-product-image {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .adv-offre-content-inner {
+    gap: 15px !important;
+  }
+}
+
+/* Desktop - Ensure all features display properly */
+@media screen and (min-width: 750px) {
+  .adv-offre-features {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+  }
+
+  .adv-offre-feature-item {
+    flex-shrink: 0 !important;
+  }
+}

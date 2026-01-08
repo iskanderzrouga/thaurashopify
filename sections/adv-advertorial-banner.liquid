@@ -1,0 +1,77 @@
+{% comment %}
+  ADV Advertorial Banner Section
+  Simple banner displaying "Advertorial" text
+{% endcomment %}
+
+{{ 'section-adv-advertorial-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-advertorial-banner" 
+     style="background-color: {{ section.settings.background_color }} !important;">
+  <div class="adv-advertorial-banner__container">
+    <p class="adv-advertorial-banner__text"
+       style="
+         color: {{ section.settings.text_color }} !important;
+         --font-size-mobile: {{ section.settings.font_size_mobile }}px;
+         --font-size-desktop: {{ section.settings.font_size_desktop }}px;
+       ">
+      {{ section.settings.text | default: 'Advertorial' }}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ADV Advertorial Banner",
+  "class": "adv-advertorial-banner-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#1544AA"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Banner Text",
+      "default": "Advertorial"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "font_size_desktop",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Font Size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font Size (Mobile)",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV Advertorial Banner"
+    }
+  ]
+}
+{% endschema %}
+

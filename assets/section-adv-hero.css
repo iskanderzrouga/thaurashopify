@@ -1,0 +1,154 @@
+/* ADV Hero Section Styles - Matching Figma Design 100% */
+
+/* Main Wrapper */
+.adv-hero-wrapper {
+  background: #ffffff;
+}
+
+/* Content Container */
+.adv-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headline */
+.adv-hero-headline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+/* Subheadline */
+.adv-hero-subheadline {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-weight: 400;
+}
+
+/* Author Info Section */
+.adv-author-info {
+  width: 100%;
+  max-width: 755px;
+}
+
+/* Date Styling */
+.adv-date {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.adv-date svg {
+  flex-shrink: 0;
+}
+
+/* Author Wrapper */
+.adv-author-wrapper {
+  width: 100%;
+}
+
+/* Author Text */
+.adv-author-text {
+  flex: 1;
+}
+
+.adv-author-text p {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+.adv-author-label {
+  font-weight: 400;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+/* Bold text within author label (e.g., "Alex Bronwasser") */
+.adv-author-label strong {
+  font-weight: 700;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+.adv-author-title {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+}
+
+/* Featured Image */
+.adv-hero-image {
+  width: 100%;
+}
+
+/* Intro Text */
+.adv-intro-text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  color: #0b0b0b;
+  line-height: 1.4;
+}
+
+.adv-intro-text p {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: 1.4 !important;
+  color: #0b0b0b !important;
+  margin-bottom: 1em;
+}
+
+.adv-intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* First and last paragraphs bold with specific color - only if multiple paragraphs */
+.adv-intro-text p:first-child:not(:only-child) {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: 1.4 !important;
+  color: #0b0b0b !important;
+}
+
+.adv-intro-text p:last-child:not(:only-child) {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  line-height: 1.4 !important;
+  color: #0b0b0b !important;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 749px) {
+  .adv-author-info {
+    max-width: 100%;
+  }
+
+  .adv-author-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Typography Fallbacks */
+@supports not (font-variation-settings: normal) {
+  .adv-hero-headline,
+  .adv-hero-subheadline,
+  .adv-intro-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+
+  .adv-date,
+  .adv-author-text p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+}

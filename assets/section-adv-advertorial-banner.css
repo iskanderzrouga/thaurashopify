@@ -1,0 +1,96 @@
+/* =================================================================
+   ADV Advertorial Banner Section Styles
+   Figma Design Values Applied
+   ================================================================= */
+
+/* Container Styles */
+.adv-advertorial-banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Background color applied via inline style for customization */
+}
+
+/* Mobile First - 400px container */
+.adv-advertorial-banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2px 0;
+  margin: 0 auto;
+}
+
+/* Text Styles */
+.adv-advertorial-banner__text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: var(--font-size-mobile, 16px) !important;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Color applied via inline style for customization */
+}
+
+/* =================================================================
+   Desktop Styles (750px and up) - 1440px container
+   ================================================================= */
+@media screen and (min-width: 750px) {
+  .adv-advertorial-banner__container {
+    max-width: 1440px;
+    padding: 5px 0 6px 0;
+  }
+
+  .adv-advertorial-banner__text {
+    font-size: var(--font-size-desktop, 18px) !important;
+  }
+}
+
+/* =================================================================
+   Large Desktop Styles (990px and up)
+   ================================================================= */
+@media screen and (min-width: 990px) {
+  .adv-advertorial-banner__container {
+    max-width: 1440px;
+  }
+}
+
+/* =================================================================
+   Accessibility & Print Styles
+   ================================================================= */
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .adv-advertorial-banner {
+    border: 1px solid currentColor;
+  }
+
+  .adv-advertorial-banner__text {
+    font-weight: 700 !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .adv-advertorial-banner {
+    background-color: white !important;
+    border: 1px solid #000;
+  }
+
+  .adv-advertorial-banner__text {
+    color: #000 !important;
+  }
+
+  .adv-advertorial-banner__container {
+    padding: 10px 0 !important;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.adv-advertorial-banner:focus-within {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}

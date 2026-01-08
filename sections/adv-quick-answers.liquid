@@ -1,0 +1,435 @@
+{% comment %}
+  Section: Quick Answers (FAQ Accordion)
+  Description: Accordion-style FAQ section with collapsible questions/answers and CTA button
+  Usage: Add to any page for FAQ content with customizable styling
+  Uses: Native HTML5 <details> element for reliability and accessibility
+{% endcomment %}
+
+{{ 'section-adv-quick-answers.css' | asset_url | stylesheet_tag }}
+
+<div 
+  class="adv-qa-wrapper{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="adv-quick-answers"
+  data-close-others="{{ section.settings.close_others }}"
+  style="
+    --adv-qa-inner-bg: {{ section.settings.background_color | default: '#F4F4F6' }};
+    --adv-qa-heading-color: {{ section.settings.heading_color | default: '#000000' }};
+    --adv-qa-question-color: {{ section.settings.question_color | default: '#000000' }};
+    --adv-qa-answer-color: {{ section.settings.answer_color | default: '#4A4A4A' }};
+    --adv-qa-border-color: {{ section.settings.border_color | default: '#25505F' }};
+    --adv-qa-icon-color: {{ section.settings.icon_color | default: '#25505F' }};
+    --adv-qa-cta-bg: {{ section.settings.cta_bg_color | default: '#00C249' }};
+    --adv-qa-cta-shadow: {{ section.settings.cta_shadow_color | default: '#028332' }};
+    --adv-qa-cta-text: {{ section.settings.cta_text_color | default: '#FFFFFF' }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="page-width">
+    <div class="adv-qa-container">
+      <div class="adv-qa-inner">
+        <div class="adv-qa-content">
+          
+          {% if section.settings.heading != blank %}
+            <h2 class="adv-qa__heading">
+              {{ section.settings.heading }}
+            </h2>
+          {% endif %}
+
+          {% if section.blocks.size > 0 %}
+            <div class="adv-qa__accordion-list">
+              {% for block in section.blocks %}
+                {% if block.type == 'accordion_item' %}
+                  <details 
+                    class="adv-qa__accordion-item" 
+                    {{ block.shopify_attributes }}
+                    data-block-id="{{ block.id }}"
+                    {% if section.settings.open_first and forloop.first %}open{% endif %}
+                  >
+                    <summary class="adv-qa__question">
+                      <span class="adv-qa__question-text">
+                        {{ block.settings.question }}
+                      </span>
+                      <span class="adv-qa__icon" aria-hidden="true">
+                        <svg class="adv-qa__icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="adv-qa__icon-horizontal" d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                          <path class="adv-qa__icon-vertical" d="M12 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </span>
+                    </summary>
+
+                    <div class="adv-qa__answer">
+                      <div class="adv-qa__answer-inner">
+                        <div class="adv-qa__answer-content rte">
+                          {{ block.settings.answer }}
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if section.settings.cta_text != blank and section.settings.cta_url != blank %}
+            <div class="adv-qa__cta-container">
+              <a
+                href="{{ section.settings.cta_url }}"
+                class="adv-qa__cta-button"
+                {% if section.settings.cta_target %}target="_blank" rel="noopener noreferrer"{% endif %}
+              >
+                {{ section.settings.cta_text }}
+              </a>
+            </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {% if section.settings.heading_font %}
+    .adv-qa-wrapper[data-section-id="{{ section.id }}"] .adv-qa__heading {
+      font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+      font-weight: {{ section.settings.heading_font.weight }};
+      font-style: {{ section.settings.heading_font.style }};
+    }
+    {{ section.settings.heading_font | font_face: font_display: 'swap' }}
+  {% endif %}
+
+  {% if section.settings.body_font %}
+    .adv-qa-wrapper[data-section-id="{{ section.id }}"] .adv-qa__question-text,
+    .adv-qa-wrapper[data-section-id="{{ section.id }}"] .adv-qa__answer-content {
+      font-family: {{ section.settings.body_font.family }}, {{ section.settings.body_font.fallback_families }};
+      font-weight: {{ section.settings.body_font.weight }};
+      font-style: {{ section.settings.body_font.style }};
+    }
+    {{ section.settings.body_font | font_face: font_display: 'swap' }}
+  {% endif %}
+
+  {% if section.settings.button_font %}
+    .adv-qa-wrapper[data-section-id="{{ section.id }}"] .adv-qa__cta-button {
+      font-family: {{ section.settings.button_font.family }}, {{ section.settings.button_font.fallback_families }};
+      font-weight: {{ section.settings.button_font.weight }};
+      font-style: {{ section.settings.button_font.style }};
+    }
+    {{ section.settings.button_font | font_face: font_display: 'swap' }}
+  {% endif %}
+</style>
+
+<script>
+  (function() {
+    'use strict';
+
+    // Initialize Quick Answers Accordion
+    function initQuickAnswers() {
+      const sections = document.querySelectorAll('[data-section-type="adv-quick-answers"]');
+      
+      sections.forEach(section => {
+        const closeOthers = section.getAttribute('data-close-others') === 'true';
+        const accordionItems = section.querySelectorAll('.adv-qa__accordion-item');
+        
+        if (!closeOthers) return;
+        
+        accordionItems.forEach(item => {
+          item.addEventListener('toggle', function(e) {
+            if (this.open) {
+              // Close all other items in the same section
+              accordionItems.forEach(otherItem => {
+                if (otherItem !== this && otherItem.open) {
+                  otherItem.open = false;
+                }
+              });
+            }
+          });
+        });
+      });
+    }
+
+    // Initialize on page load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initQuickAnswers);
+    } else {
+      initQuickAnswers();
+    }
+
+    // Reinitialize on Shopify section events (Theme Editor)
+    if (typeof Shopify !== 'undefined' && Shopify.designMode) {
+      document.addEventListener('shopify:section:load', initQuickAnswers);
+      document.addEventListener('shopify:section:reorder', initQuickAnswers);
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Quick Answers (FAQ)",
+  "tag": "section",
+  "class": "section section-adv-quick-answers",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Visibility"
+    },
+    {
+      "type": "paragraph",
+      "content": "Configure the FAQ accordion section with customizable questions and answers."
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Quick Answers",
+      "info": "Main heading for the FAQ section"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading Font",
+      "default": "helvetica_n7",
+      "info": "Choose font for the heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Content Typography"
+    },
+    {
+      "type": "font_picker",
+      "id": "body_font",
+      "label": "Body Font",
+      "default": "helvetica_n4",
+      "info": "Choose font for questions and answers"
+    },
+    {
+      "type": "color",
+      "id": "question_color",
+      "label": "Question Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "answer_color",
+      "label": "Answer Color",
+      "default": "#4A4A4A"
+    },
+    {
+      "type": "header",
+      "content": "Accordion Behavior"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first",
+      "label": "Open First Item by Default",
+      "default": false,
+      "info": "Automatically expand the first FAQ item"
+    },
+    {
+      "type": "checkbox",
+      "id": "close_others",
+      "label": "Close Others When Opening",
+      "default": true,
+      "info": "Only allow one accordion item open at a time"
+    },
+    {
+      "type": "header",
+      "content": "Accordion Style"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#25505F",
+      "info": "Color for accordion item borders"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon Color",
+      "default": "#25505F",
+      "info": "Color for plus/minus icons"
+    },
+    {
+      "type": "header",
+      "content": "Call to Action Button"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button Text",
+      "default": "GET STARTED NOW →",
+      "info": "Text displayed on the CTA button"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button URL",
+      "info": "Link destination for the CTA button"
+    },
+    {
+      "type": "checkbox",
+      "id": "cta_target",
+      "label": "Open in New Tab",
+      "default": false,
+      "info": "Open link in a new browser tab"
+    },
+    {
+      "type": "font_picker",
+      "id": "button_font",
+      "label": "Button Font",
+      "default": "helvetica_n7",
+      "info": "Choose font for the button"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_color",
+      "label": "Button Background",
+      "default": "#00C249"
+    },
+    {
+      "type": "color",
+      "id": "cta_shadow_color",
+      "label": "Button Shadow",
+      "default": "#028332",
+      "info": "3D shadow effect color"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#F4F4F6",
+      "info": "Inner container background color"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Custom CSS"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom CSS Class",
+      "info": "Add custom CSS class for additional styling"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "accordion_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "What is your question?",
+          "info": "The question text that users click to expand"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>This is the answer to the question above.</p>",
+          "info": "The answer content (supports HTML)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quick Answers (FAQ)",
+      "blocks": [
+        {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How does this product work?",
+            "answer": "<p>Our product is designed to deliver optimal results through a carefully formulated blend of ingredients that work synergistically with your body.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Is it safe to use daily?",
+            "answer": "<p>Yes, our product is completely safe for daily use. It has been tested and approved by health professionals.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "question": "When will I see results?",
+            "answer": "<p>Most users report noticeable results within 2-4 weeks of consistent daily use.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Can I return it if I'm not satisfied?",
+            "answer": "<p>Absolutely! We offer a 90-day money-back guarantee. If you're not completely satisfied, simply return it for a full refund.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "question": "Are there any side effects?",
+            "answer": "<p>Our product is made from natural ingredients and is generally well-tolerated. However, as with any supplement, consult your healthcare provider if you have concerns.</p>"
+          }
+        },
+        {
+          "type": "accordion_item",
+          "settings": {
+            "question": "How should I store the product?",
+            "answer": "<p>Store in a cool, dry place away from direct sunlight. Keep the container tightly closed when not in use.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

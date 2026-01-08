@@ -1,0 +1,436 @@
+{% assign repeat_count = section.settings.repeat_count %}
+{% assign animation_max_width = section.settings.animation_max_width %}
+{% assign animation_max_width_px = animation_max_width | append: 'px' %}
+{% assign animation_length = section.settings.animation_length %}
+{% assign total_width = repeat_count | times: animation_max_width %}
+{% assign half_width = total_width | divided_by: 2 %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .section-{{ section.id }}-padding .section-main-image {
+    border-radius: {{ section.settings.border_radius }}px;
+  }
+
+  .section-{{ section.id }}-padding .qb-animation__item {
+    max-width: {{ animation_max_width }}px;
+    min-width: {{ animation_max_width }}px;
+  }
+
+  .section-{{ section.id }}-padding .qb-animation {
+    animation: NlAnimation-{{ section.id }} {{ animation_length }}s linear infinite;
+    width: {{ total_width }}px;
+  }
+  @keyframes NlAnimation-{{ section.id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-{{half_width}}px);
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="{{ section.settings.section_id }}"
+  class="relative min-h-[100vh] w-full flex items-center justify-center"
+  style="background-color: {{ section.settings.bgcolor }};"
+>
+  <div class="mx-auto w-full relative grid md:grid-cols-5 h-full min-h-[100vh]">
+    <div class="md:col-span-3 relative section-{{ section.id }}-padding px-5 flex items-center justify-center">
+      {% if section.settings.bg != blank %}
+        {{
+          section.settings.bg
+          | image_url: width: 1920
+          | image_tag: class: 'absolute top-0 left-0 w-full h-full object-cover', sizes: '1920px'
+        }}
+      {% endif %}
+
+      <div class="relative flex flex-col items-center justify-center gap-3">
+        {% if section.settings.heading != blank %}
+          <h2
+            class="max-w-[540px] text-[32px] md:text-[48px] font-bold !leading-tight [&>span]:text-[#EBA12F] text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
+            style="color: {{ section.settings.heading_color }};"
+          >
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div
+            class="max-w-[540px] text-[18px] md:text-[20px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if section.settings.description_d_center %} md:text-center {% endif %}"
+            style="color: {{ section.settings.description_color }};"
+          >
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+
+        <div class="border rounded-[12px] border-white overflow-hidden w-full max-w-[320px] md:max-w-[500px] bg-white mt-3">
+          <div class="qb-animation flex items-center">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'slider' %}
+                  {% if block.settings.image != blank %}
+                    <div class="qb-animation__item px-1">
+                      {{
+                        block.settings.image
+                        | image_url: width: animation_max_width
+                        | image_tag: class: 'w-full h-full object-cover', sizes: animation_max_width_px
+                      }}
+                    </div>
+                  {% endif %}
+              {% endcase %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% if section.settings.button_label != blank %}
+          <div class="w-full md:w-fit mx-auto">
+            <a href="{{ section.settings.button_url }}" class="new-button--primary">
+              {{ section.settings.button_label }}
+              {%- render 'icon-arrow-right' -%}
+            </a>
+            {% if section.settings.btn_bottom_text != blank %}
+              <div
+                class="text-[14px] md:text-[16px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                style="color: {{ section.settings.btn_bottom_text_color }};"
+              >
+                {{ section.settings.btn_bottom_text }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="md:col-span-2 relative section-{{ section.id }}-padding px-5 md:px-10 lg:px-[60px] flex flex-col items-center justify-center gap-4 md:gap-8">
+      <div class="flex items-center gap-[30px] md:gap-[45px] w-fit mx-auto relative">
+        <div
+          class="absolute h-[6px] md:h-[10px] border border-[#084C25] !block w-[90%] left-[5%] top-[12px] md:top-[17px]"
+          style="display: block!important;"
+        ></div>
+        {% for i in (1..section.settings.total_step) %}
+          <div class="relative {% if i <= section.settings.current_step %} active {% endif %} w-full min-w-[30px] md:min-w-[44px] flex items-center justify-center font-bold text-[21px] md:text-[32px] text-center border border-[#084C25] text-[#084C25] rounded-[100px] bg-white [&.active]:bg-[#EBA12F] !leading-[1] aspect-[1/1] object-contain">
+            {{ i }}
+          </div>
+        {% endfor %}
+      </div>
+      {% if section.settings.quiz_description != blank %}
+        <div
+          class="text-[26px] md:text-[32px] font-medium text-center !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if section.settings.description_d_center %} md:text-center {% endif %}"
+          style="color: {{ section.settings.q_description_color }};"
+        >
+          {{ section.settings.quiz_description }}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="flex flex-col gap-2 w-full max-md:pb-[100px]">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'question' %}
+                {% if block.settings.description != blank %}
+                  <a
+                    href="{{ block.settings.url }}"
+                    class="quiz-question cursor-pointer text-[18px] md:text-[20px] p-[14px] md:p-5 font-normal !leading-tight text-[#000000] border border-[#CFCFCF] rounded-[8px] w-full flex items-center justify-center text-center hover:!text-white hover:bg-[#084C25] duration-150 [&.active]:!text-white [&.active]:bg-[#084C25]"
+                    style="color: {{ block.settings.description_color }};"
+                  >
+                    {{ block.settings.description }}
+                  </a>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% comment %} <script>
+  document.querySelectorAll('.section-{{ section.id }}-padding .quiz-question').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.section-{{ section.id }}-padding .quiz-question').forEach(q => q.classList.remove('active'));
+      item.classList.add('active');
+
+      const activeCount = document.querySelectorAll('.quiz-question.active').length;
+      if (activeCount === parseInt("{{ section.settings.total_step }}")) {
+        window.location.href = "{{ section.settings.quiz_url }}";
+      }
+    });
+  });
+</script> {% endcomment %}
+
+{% schema %}
+{
+  "name": "Quiz Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "url",
+      "id": "quiz_url",
+      "label": "Quiz URL"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_m_center",
+      "label": "Heading Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_d_center",
+      "label": "Heading Desktop Center",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#121212"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "description_m_center",
+      "label": "Description Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "description_d_center",
+      "label": "Description Desktop Center",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "btn_bottom_text",
+      "label": "Btn Bottom Text"
+    },
+    {
+      "type": "color",
+      "id": "btn_bottom_text_color",
+      "label": "Buttom Bottom Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "header",
+      "content": "Animation Settings"
+    },
+    {
+      "type": "range",
+      "id": "repeat_count",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "x",
+      "label": "Repeat Count",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "animation_length",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "x",
+      "label": "Animation Length",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "animation_max_width",
+      "min": 100,
+      "max": 2000,
+      "step": 20,
+      "unit": "px",
+      "label": "Min Width",
+      "default": 360
+    },
+    {
+      "type": "header",
+      "content": "Quiz Settings"
+    },
+    {
+      "type": "range",
+      "id": "total_step",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Total Step",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "current_step",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Current Step",
+      "default": 1
+    },
+    {
+      "type": "richtext",
+      "id": "quiz_description",
+      "label": "Quiz Description"
+    },
+    {
+      "type": "color",
+      "id": "q_description_color",
+      "label": "Quiz Description Color",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slider",
+      "name": "Slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#121212"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quiz Banner"
+    }
+  ]
+}
+{% endschema %}

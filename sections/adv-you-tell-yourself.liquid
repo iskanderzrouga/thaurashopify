@@ -1,0 +1,109 @@
+{{ 'section-adv-you-tell-yourself.css' | asset_url | stylesheet_tag }}
+
+<section class="adv-you-tell-yourself-section" data-section-id="{{ section.id }}" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="adv-you-tell-yourself-container page-width">
+    
+    {%- comment -%} Main Headline {%- endcomment -%}
+    {%- if section.settings.headline != blank -%}
+    <div class="adv-you-tell-yourself-headline" style="text-align: left !important;">
+      {{ section.settings.headline }}
+    </div>
+    {%- endif -%}
+
+    {%- comment -%} Content Row: Image + Text {%- endcomment -%}
+    <div class="adv-you-tell-yourself-content">
+      <div class="adv-you-tell-yourself-image-wrapper">
+        {%- if section.settings.image != blank -%}
+          <img 
+            src="{{ section.settings.image | image_url: width: 980 }}"
+            srcset="{{ section.settings.image | image_url: width: 490 }} 490w,
+                    {{ section.settings.image | image_url: width: 980 }} 980w"
+            sizes="(min-width: 1040px) 490px, 100vw"
+            alt="{{ section.settings.image.alt | escape }}"
+            width="490"
+            height="560"
+            loading="lazy"
+            class="adv-you-tell-yourself-image"
+          >
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'adv-you-tell-yourself-image-placeholder' }}
+        {%- endif -%}
+      </div>
+
+      <div class="adv-you-tell-yourself-text-column">
+        {%- if section.settings.text_block_1 != blank -%}
+        <div class="adv-you-tell-yourself-text-block">
+          {{ section.settings.text_block_1 }}
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- comment -%} Bottom Text Block {%- endcomment -%}
+    {%- if section.settings.text_block_2 != blank -%}
+    <div class="adv-you-tell-yourself-bottom-content">
+      <div class="adv-you-tell-yourself-text-block">
+        {{ section.settings.text_block_2 }}
+      </div>
+    </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Adv - You Tell Yourself",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "richtext",
+      "id": "headline",
+      "label": "Headline",
+      "default": "<p>You Tell Yourself It's Just Part of Working Hard. But Is It?</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "text_block_1",
+      "label": "Text Block 1",
+      "default": "<p>Here's what you've been telling yourself:</p><p>\"This is just what happens when you work full-time.\"</p><p>\"I'm getting older. Of course I'm tired.\"</p><p>\"At least I'm providing. That's what matters.\"</p><p>But here's what nobody's telling you:</p><p><strong>One in three working fathers over 35 struggle with the exact same thing.</strong> Coming home drained. Having nothing left. Waiting for the weekend.</p><p>And it's not because you're weak. It's not because you don't care.</p><p><strong>It's because your body is running on empty.</strong></p><p>Think about it: You've been up since 6 AM. Powered through 8-10 hours. Meetings. Deadlines. Stress.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text_block_2",
+      "label": "Text Block 2",
+      "default": "<p>By the time you walk through that door, your stress hormones are tapped out. Your cortisol has been elevated all day.</p><p>Your natural energy systems are depleted.</p><p><strong>You're not choosing to be absent. Your body has no fuel left.</strong></p><p>And pushing through harder? Drinking more coffee? That's not fixing it. That's accepting that 71% of your family time happens in survival mode.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Adv - You Tell Yourself"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,244 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="{{ section.settings.section_id }}" class="section-{{ section.id }}-padding px-5">
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div
+      class="border-[2px] rounded-[16px]"
+      style="background-color: {{ section.settings.bgcolor }}; border-color: {{ section.settings.border_color }};"
+    >
+      {% if section.settings.deco_image != blank %}
+        {{
+          section.settings.deco_image
+          | image_url: width: 1100
+          | image_tag: class: 'w-full rounded-t-[16px]', sizes: '1100px'
+        }}
+      {% endif %}
+
+      <div class="grid grid-cols-1 md:grid-cols-8 gap-6 md:gap-12 px-5 md:px-10 py-10 items-center">
+        {% if section.settings.image != blank %}
+          <div class="md:col-span-3 text-center">
+            {{
+              section.settings.image
+              | image_url: width: 300
+              | image_tag: class: 'w-full max-w-[140px] md:max-w-[290px] mx-auto', sizes: '300px'
+            }}
+          </div>
+        {% endif %}
+
+        <div class="md:col-span-5 flex flex-col items-center justify-center text-center gap-5">
+          {% if section.settings.heading != blank %}
+            <h2 class="text-[28px] md:text-[40px] font-bold !leading-tight text-[#000] [&>p>strong]:text-[#FF0000]">
+              {{ section.settings.heading }}
+            </h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div class="text-[14px] md:text-[18px] font-normal !leading-tight text-[#000]">
+              {{ section.settings.description }}
+            </div>
+          {% endif %}
+
+          {% if section.settings.button_label != blank %}
+            <div class="w-full">
+              <a
+                href="{{ section.settings.button_url }}"
+                class="new-button--adv-secondary"
+              >
+                {{ section.settings.button_label }}
+                {%- render 'icon-arrow-right' -%}
+              </a>
+            </div>
+          {% endif %}
+
+          {% if section.settings.bottom_text != blank %}
+            <div class="text-[12px] md:text-[16px] font-normal !leading-tight text-[#000] [&>p>strong]:text-[#FF0000]">
+              {% assign date_day = 'now' | date: '%d' %}
+              {% assign date_month = 'now' | date: '%B' %}
+              {% assign date_year = 'now' | date: '%Y' %}
+              {% assign date_weekday = 'now' | date: '%A' %}
+              {% assign date_string = date_weekday
+                | append: ', '
+                | append: date_month
+                | append: ' '
+                | append: date_day
+                | append: ', '
+                | append: date_year
+              %}
+              {{ section.settings.bottom_text | replace: 'DATEPLACEHOLDER', date_string }}
+            </div>
+          {% endif %}
+
+          {% if section.blocks.size > 0 %}
+            <div class="flex justify-center items-start flex-wrap gap-2 md:gap-3">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'row' %}
+                    <div class="flex flex-col items-center justify-center gap-[10px] md:gap-[20x] max-w-[28%] md:max-w-[18%]">
+                      {% if block.settings.image != blank %}
+                        {{
+                          block.settings.image
+                          | image_url: width: 50
+                          | image_tag: class: 'w-full max-w-[50px]', sizes: '50px'
+                        }}
+                      {% endif %}
+
+                      {% if block.settings.description != blank %}
+                        <div class="text-[12px] md:text-[14px] font-normal !leading-tight text-[#000]">
+                          {{ block.settings.description }}
+                        </div>
+                      {% endif %}
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ADV 2 Product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "bottom_text",
+      "label": "Bottom Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "deco_image",
+      "label": "Deco Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#F1F1F1"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#1544AA"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV 2 Product"
+    }
+  ]
+}
+{% endschema %}

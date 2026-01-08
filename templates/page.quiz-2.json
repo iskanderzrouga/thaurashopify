@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 72,
+        "padding_bottom": 28
+      }
+    },
+    "1757958033dfce1789": {
+      "type": "apps",
+      "blocks": {
+        "octane_ai_advanced_quiz_maker_octaneai_section_VKMacE": {
+          "type": "shopify:\/\/apps\/octane-ai-advanced-quiz-maker\/blocks\/octaneai_section\/db2513a5-c9b0-40fd-9058-42c28e6e6502",
+          "settings": {
+            "octane_id": "pkxhlbbkpyfmt32i:CFO1jcG6mRr2v6fk:quiz",
+            "embed_type": "fullscreen",
+            "enable_loading": false,
+            "stroke_color": "#000000",
+            "mobile_height": "match_browser",
+            "mobile_custom_height_px": 600,
+            "desktop_height": "match_browser",
+            "desktop_custom_height_px": 600
+          }
+        }
+      },
+      "block_order": [
+        "octane_ai_advanced_quiz_maker_octaneai_section_VKMacE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1757958033dfce1789"
+  ]
+}

@@ -1,0 +1,393 @@
+<div class="section-{{ section.id }}-padding w-full">
+  <div class="w-full max-w-[1200px] mx-auto" style="margin: auto;">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+      <div class="">
+        {% if section.settings.product != blank %}
+          {% render 'product-image-slider-horizontal',
+            product: section.settings.product,
+            slider_start_point: section.settings.slider_start_point
+          %}
+        {% endif %}
+      </div>
+
+      <div class="hero-content">
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">4.8 | 47,000+ Happy Customers</span>
+        </div>
+
+        <h1 class="hero-title">Dryft™ Metabolic Reset Formula</h1>
+
+        <p class="hero-subtitle">
+          <strong>Break the Belly Fat Cycle</strong>
+          — Your gut is converting testosterone to estrogen. Dryft™ attacks all three pathways to finally flatten
+          stubborn belly fat.
+        </p>
+
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            Block aromatase conversion in belly fat
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            Target stubborn visceral fat specifically
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            Support natural hormone balance
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            Clinically dosed — no weak powder
+          </div>
+          <div class="benefit-item">
+            <span class="check">✓</span>
+            Clean, third-party tested formula
+          </div>
+        </div>
+
+        <div class="amazon-warning">
+          <p>⚠️ Beware of Amazon fakes! Dryft™ is exclusively sold here on our website.</p>
+        </div>
+
+        {% assign now = 'now' | date: '%s' | plus: 0 %}
+        {% assign two_days = 2 | times: 86400 %}
+        {% assign shipped_start_date = now | plus: two_days | date: '%a, %b %d' %}
+
+        <div class="shipping-info">
+          <div class="ships-by">
+            <span class="dot"></span>
+            <span
+              >Ships by
+              <strong>{{ shipped_start_date }}</strong>
+            </span>
+          </div>
+          <div class="fast-shipping">
+            🇺🇸 Fast
+            <strong>US</strong>
+            Shipping
+          </div>
+        </div>
+
+        <p class="bundle-title">Buy More — Save More</p>
+
+        {% render 'bundle-subscription-buy', section: section %}
+
+        <div class="guarantee mt-5">
+          <span class="guarantee-icon">🛡️</span>
+          <span class="guarantee-text">Feel the difference in 90 days or your money back</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ABF Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Subscription Heading",
+      "default": "Save 25% with Automatic Refills"
+    },
+    {
+      "type": "text",
+      "id": "sub_description",
+      "label": "Subscription Description",
+      "default": "Zero Commitment, Cancel Anytime"
+    },
+    {
+      "type": "range",
+      "id": "slider_start_point",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "min",
+      "label": "Slider Start Point",
+      "default": 0
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_m_center",
+      "label": "Heading Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_d_center",
+      "label": "Heading Desktop Center",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#121212"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "description_m_center",
+      "label": "Description Mobile Center",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "description_d_center",
+      "label": "Description Desktop Center",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#121212"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "image_right",
+      "label": "Image Right",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "richtext",
+      "id": "btn_bottom_text",
+      "label": "Btn Bottom Text"
+    },
+    {
+      "type": "color",
+      "id": "btn_bottom_text_color",
+      "label": "Buttom Bottom Text Color",
+      "default": "#000"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "range",
+          "id": "slider_position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Slider Position",
+          "default": 0
+        },
+        {
+          "type": "checkbox",
+          "id": "default",
+          "label": "Default",
+          "default": false
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "bottle_price",
+          "label": "Bottle Price"
+        },
+        {
+          "type": "text",
+          "id": "serving",
+          "label": "Serving"
+        },
+        {
+          "type": "text",
+          "id": "month",
+          "label": "Month"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Badge"
+        },
+        {
+          "type": "color",
+          "id": "badge_bg",
+          "label": "Badge Background"
+        },
+        {
+          "type": "text",
+          "id": "checkbox_description",
+          "label": "Checkbox Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "off",
+          "label": "OFF",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sale",
+          "label": "Show Sale",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "sale_text",
+          "label": "Sale Text",
+          "default": "Sale Ends In:"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_timer",
+          "label": "Hide Timer",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "header",
+          "content": "Setting to support Subscription"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_subscription",
+          "label": "Enable Subscription",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "sub_id",
+          "label": "Subscription ID",
+          "visible_if": "{{ block.settings.enable_subscription}}"
+        },
+        {
+          "type": "text",
+          "id": "sub_perceont_off",
+          "label": "Subscription Percent OFF",
+          "visible_if": "{{ block.settings.enable_subscription}}"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ABF Hero"
+    }
+  ]
+}
+{% endschema %}

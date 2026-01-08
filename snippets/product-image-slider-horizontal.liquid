@@ -1,0 +1,143 @@
+<div class="product-thumbnail-slider">
+  <div id="product-main-slider" class="splide mb-3">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for media in product.media %}
+          {% if media.media_type == 'image' %}
+            {% if media.alt contains 'carousel-hidden' %}
+            {% else %}
+              <li class="splide__slide">
+                <img
+                  src="{{ media.src | image_url }}"
+                  class="rounded-[12px] md:rounded-[16px]"
+                  width="auto"
+                  height="auto"
+                  alt="{{ media.alt }}"
+                >
+              </li>
+            {% endif %}
+          {% elsif media.media_type == 'video' %}
+            <li class="splide__slide">
+              {% render 'product-thumbnail-2',
+                media: media,
+                media_count: 0,
+                position: 1,
+                desktop_layout: 'thumbnail_slider',
+                mobile_layout: 'show',
+                loop: false,
+                modal_id: section.id,
+                xr_button: true,
+                media_width: media_width,
+                media_fit: 'cover',
+                constrain_to_viewport: true,
+                lazy_load: false
+              %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div id="product-thumbnail-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for media in product.media %}
+          {% if media.media_type == 'image' %}
+            {% if media.alt contains 'carousel-hidden' %}
+            {% else %}
+              <li class="splide__slide">
+                <img
+                  src="{{ media.src | image_url }}"
+                  class="rounded-[3px] md:rounded-[6px]"
+                  width="100"
+                  height="100"
+                  alt="{{ media.alt }}"
+                >
+              </li>
+            {% endif %}
+          {% elsif media.media_type == 'video' %}
+            {% comment %}
+              <video class="w-full" muted>
+                <source src="{{ media.sources[0].url }}" type="video/mp4">
+              </video>
+            {% endcomment %}
+            <li class="splide__slide">
+              <img src="{{ media.preview_image | image_url }}" width="100" height="100" alt="{{ media.alt }}">
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  .product-thumbnail-slider .splide__arrow {
+    background: white;
+    width: 30px;
+    height: 30px;
+    opacity: 1 !important;
+    border: 2px solid #EBA12F;
+  }
+  @media screen and (min-width: 600px) {
+  .product-thumbnail-slider .splide__arrow {
+        width: 26px;
+        height: 26px;
+        top: auto;
+        bottom: -78px;
+    }
+    }
+  .product-thumbnail-slider .splide__arrow svg {
+    fill: #EBA12F;
+    width: 12px;
+    height: 12px;
+  }
+  .product-thumbnail-slider .splide__track--nav > .splide__list > .splide__slide.is-active {
+    border: 1px solid #EBA12F;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var main = new Splide('#product-main-slider', {
+      type: 'fade',
+      rewind: true,
+      pagination: false,
+      arrows: true,
+      start: {{ slider_start_point }}
+    });
+
+    var thumbnails = new Splide('#product-thumbnail-slider', {
+      fixedWidth: 80,
+      fixedHeight: 80,
+      gap: 10,
+      rewind: true,
+      pagination: false,
+      arrows: false,
+      cover: true,
+      isNavigation: true,
+      start: {{ slider_start_point }},
+      breakpoints: {
+        600: {
+          fixedWidth: 54,
+          fixedHeight: 54,
+          gap: 4,
+        },
+      },
+    });
+
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
+
+    document.querySelectorAll('[nl-product-secondary-card]').forEach((card) => {
+      card.addEventListener('click', function () {
+        const position = parseInt(this.getAttribute('data-position'), 10);
+        if (!isNaN(position)) {
+          thumbnails.go(position); // Splide index starts at 0
+        }
+      });
+    });
+  });
+</script>

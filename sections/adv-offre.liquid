@@ -1,0 +1,1235 @@
+{{ 'section-adv-offre.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-offre-wrapper" style="background: {{ section.settings.background_color }};">
+  <div class="page-width">
+    <div class="adv-offre-container">
+      
+      {%- comment -%} Diagonal Stripe Border Top {%- endcomment -%}
+      {%- if section.settings.stripe_image -%}
+        <div class="adv-offre-stripe-top">
+          <img
+            src="{{ section.settings.stripe_image | image_url: width: 2000 }}"
+            alt="Stripe decoration"
+            class="adv-offre-stripe-image"
+            loading="eager"
+          >
+        </div>
+      {%- endif -%}
+
+      <div class="adv-offre-inner">
+        
+        {%- comment -%} Product Image Section {%- endcomment -%}
+        <div class="adv-offre-product">
+          {%- if section.settings.product_image -%}
+            <div class="adv-offre-product-shadow"></div>
+            <img
+              class="adv-offre-product-image"
+              src="{{ section.settings.product_image | image_url: width: 800 }}"
+              alt="{{ section.settings.product_image.alt | default: 'Product' }}"
+              width="{{ section.settings.product_image.width }}"
+              height="{{ section.settings.product_image.height }}"
+              loading="lazy"
+            >
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} Content Section {%- endcomment -%}
+        <div class="adv-offre-content">
+          
+          <div class="adv-offre-content-inner">
+            {%- if section.settings.headline != blank -%}
+              <h2 class="adv-offre-headline">
+                {%- assign headline_parts = section.settings.headline | split: '||' -%}
+                {%- if headline_parts.size == 2 -%}
+                  {{ headline_parts[0] }}
+                  <span class="adv-offre-highlight">{{ headline_parts[1] }}</span>
+                {%- else -%}
+                  {{ section.settings.headline }}
+                {%- endif -%}
+              </h2>
+            {%- endif -%}
+
+            {%- if section.settings.description != blank -%}
+              <p class="adv-offre-description">{{ section.settings.description }}</p>
+            {%- endif -%}
+
+            {%- comment -%} CTA Button & Deadline Container {%- endcomment -%}
+            <div class="adv-offre-cta-container">
+              {%- if section.settings.button_text != blank -%}
+                <div class="adv-offre-button-wrapper">
+                  <a 
+                    href="{{ section.settings.button_link }}" 
+                    class="adv-offre-button"
+                    style="background: {{ section.settings.button_color }}; box-shadow: 0px 6px 0px 0px {{ section.settings.button_shadow_color }};"
+                  >
+                    {{ section.settings.button_text }}
+                  </a>
+                </div>
+              {%- endif -%}
+
+              {%- if section.settings.offer_deadline != blank -%}
+                <p class="adv-offre-deadline">
+                  {%- assign deadline_parts = section.settings.offer_deadline | split: '||' -%}
+                  {%- if deadline_parts.size == 2 -%}
+                    {{ deadline_parts[0] }}
+                    <span class="adv-offre-deadline-highlight">{{ deadline_parts[1] }}</span>
+                  {%- else -%}
+                    {{ section.settings.offer_deadline }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+            </div>
+          </div>
+
+          {%- comment -%} Features Grid - Outside gap system {%- endcomment -%}
+          {%- if section.blocks.size > 0 -%}
+            <div class="adv-offre-features">
+              {%- for block in section.blocks -%}
+                <div class="adv-offre-feature-item" {{ block.shopify_attributes }}>
+                  
+                  {%- if block.settings.icon -%}
+                    <div class="adv-offre-feature-icon-wrapper">
+                      <div class="adv-offre-feature-icon-circle" style="background: {{ section.settings.icon_background }};">
+                        <img
+                          src="{{ block.settings.icon | image_url: width: 120 }}"
+                          alt="{{ block.settings.title }}"
+                          width="60"
+                          height="60"
+                          loading="lazy"
+                          class="adv-offre-feature-icon"
+                        >
+                      </div>
+                    </div>
+                  {%- endif -%}
+
+                  {%- if block.settings.title != blank -%}
+                    <p class="adv-offre-feature-title">{{ block.settings.title }}</p>
+                  {%- endif -%}
+
+                </div>
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .adv-offre-wrapper {
+    padding: {{ section.settings.section_padding_top }}px 0 {{ section.settings.section_padding_bottom }}px;
+  }
+
+  .adv-offre-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    background: {{ section.settings.container_background }};
+    border-radius: {{ section.settings.border_radius }}px;
+    border: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
+    overflow: hidden;
+    position: relative;
+    height: 710px;
+  }
+
+  .adv-offre-stripe-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: {{ section.settings.stripe_height }}px;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .adv-offre-stripe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .adv-offre-inner {
+    padding: {{ section.settings.inner_padding_top }}px {{ section.settings.inner_padding_horizontal }}px {{ section.settings.inner_padding_bottom }}px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: {{ section.settings.content_gap }}px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .adv-offre-product {
+    position: relative;
+    width: {{ section.settings.product_width }}px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .adv-offre-product-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30%;
+    background: {{ section.settings.shadow_color }};
+    border-radius: 50%;
+    filter: blur({{ section.settings.shadow_blur }}px);
+    opacity: {{ section.settings.shadow_opacity }};
+  }
+
+  .adv-offre-product-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 340.58 / 601.14;
+    flex-shrink: 0;
+  }
+
+  .adv-offre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: {{ section.settings.content_max_width }}px;
+  }
+
+  .adv-offre-content-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: {{ section.settings.content_spacing }}px;
+    width: 100%;
+  }
+
+  .adv-offre-headline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: {{ section.settings.headline_size }}px;
+    line-height: {{ section.settings.headline_line_height }};
+    color: {{ section.settings.headline_color }};
+    font-weight: {{ section.settings.headline_weight }};
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .adv-offre-highlight {
+    color: {{ section.settings.highlight_color }};
+    font-weight: {{ section.settings.highlight_weight }};
+  }
+
+  .adv-offre-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: {{ section.settings.description_size }}px;
+    line-height: {{ section.settings.description_line_height }};
+    color: {{ section.settings.description_color }};
+    font-weight: {{ section.settings.description_weight }};
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .adv-offre-cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .adv-offre-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .adv-offre-button {
+    font-family: 'Open Sans', 'Noto Sans', sans-serif;
+    font-size: {{ section.settings.button_size }}px;
+    font-weight: {{ section.settings.button_weight }};
+    color: {{ section.settings.button_text_color }};
+    text-decoration: none;
+    padding: {{ section.settings.button_padding_vertical }}px {{ section.settings.button_padding_horizontal }}px;
+    border-radius: {{ section.settings.button_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    min-height: 70px;
+  }
+
+  .adv-offre-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .adv-offre-button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px 0px {{ section.settings.button_shadow_color }} !important;
+  }
+
+  .adv-offre-deadline {
+    font-family: 'Open Sans', sans-serif;
+    font-size: {{ section.settings.deadline_size }}px;
+    line-height: 1.4;
+    color: {{ section.settings.deadline_color }};
+    font-weight: {{ section.settings.deadline_weight }};
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .adv-offre-deadline-highlight {
+    color: {{ section.settings.deadline_highlight_color }};
+  }
+
+  .adv-offre-features {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: {{ section.settings.features_gap }}px;
+    margin-top: {{ section.settings.features_margin_top }}px;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    justify-content: center;
+  }
+
+  .adv-offre-feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: {{ section.settings.feature_item_gap }}px;
+    text-align: center;
+    width: {{ section.settings.feature_item_width }}px;
+    flex-shrink: 0;
+  }
+
+  .adv-offre-feature-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .adv-offre-feature-icon-circle {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .adv-offre-feature-icon {
+    width: {{ section.settings.icon_inner_size }}px;
+    height: {{ section.settings.icon_inner_size }}px;
+    object-fit: contain;
+  }
+
+  .adv-offre-feature-title {
+    font-family: 'Inter', sans-serif;
+    font-size: {{ section.settings.feature_title_size }}px;
+    line-height: {{ section.settings.feature_title_line_height }};
+    color: {{ section.settings.feature_title_color }};
+    font-weight: {{ section.settings.feature_title_weight }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .adv-offre-inner {
+      flex-direction: column;
+      gap: {{ section.settings.mobile_content_gap }}px;
+      padding: {{ section.settings.mobile_inner_padding }}px;
+    }
+
+    .adv-offre-product {
+      width: 100%;
+      max-width: {{ section.settings.mobile_product_width }}px;
+      margin: 0 auto;
+    }
+
+    .adv-offre-content {
+      text-align: center;
+      max-width: 100%;
+      align-items: center;
+    }
+
+    .adv-offre-content-inner {
+      width: 100%;
+    }
+
+    .adv-offre-headline,
+    .adv-offre-description,
+    .adv-offre-deadline {
+      text-align: center;
+    }
+
+    .adv-offre-button-wrapper {
+      justify-content: center;
+    }
+
+    .adv-offre-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: {{ section.settings.mobile_features_gap }}px;
+      margin-top: {{ section.settings.mobile_features_margin_top }}px;
+    }
+
+    .adv-offre-feature-item {
+      width: {{ section.settings.mobile_feature_width }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-offre-wrapper {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    .adv-offre-container {
+      height: auto;
+      min-height: 500px;
+    }
+
+    .adv-offre-headline {
+      font-size: {{ section.settings.mobile_headline_size }}px;
+    }
+
+    .adv-offre-description {
+      font-size: {{ section.settings.mobile_description_size }}px;
+    }
+
+    .adv-offre-button {
+      font-size: {{ section.settings.mobile_button_size }}px;
+      padding: {{ section.settings.mobile_button_padding }}px {{ section.settings.mobile_button_padding_horizontal }}px;
+      min-height: 50px;
+    }
+
+    .adv-offre-deadline {
+      font-size: {{ section.settings.mobile_deadline_size }}px;
+    }
+
+    .adv-offre-feature-icon-circle {
+      width: {{ section.settings.mobile_icon_size }}px;
+      height: {{ section.settings.mobile_icon_size }}px;
+    }
+
+    .adv-offre-feature-icon {
+      width: {{ section.settings.mobile_icon_inner_size }}px;
+      height: {{ section.settings.mobile_icon_inner_size }}px;
+    }
+
+    .adv-offre-feature-title {
+      font-size: {{ section.settings.mobile_feature_title_size }}px;
+    }
+
+    .adv-offre-features {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - Offre Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Container Settings"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 800,
+      "max": 1440,
+      "step": 20,
+      "unit": "px",
+      "label": "Container max width",
+      "default": 1040
+    },
+    {
+      "type": "color",
+      "id": "container_background",
+      "label": "Container background",
+      "default": "#F1F1F1"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 8,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 2
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#1544AA"
+    },
+    {
+      "type": "header",
+      "content": "Diagonal Stripe"
+    },
+    {
+      "type": "image_picker",
+      "id": "stripe_image",
+      "label": "Stripe image (diagonal pattern)",
+      "info": "Upload the diagonal stripe image from Figma"
+    },
+    {
+      "type": "range",
+      "id": "stripe_height",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Stripe height",
+      "default": 21
+    },
+    {
+      "type": "header",
+      "content": "Product Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product image"
+    },
+    {
+      "type": "range",
+      "id": "product_width",
+      "min": 150,
+      "max": 600,
+      "step": 5,
+      "unit": "px",
+      "label": "Product width (Desktop)",
+      "default": 340
+    },
+    {
+      "type": "range",
+      "id": "mobile_product_width",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Product width (Mobile)",
+      "default": 150
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Shadow color",
+      "default": "rgba(0,0,0,0.3)"
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Shadow blur",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "label": "Shadow opacity",
+      "default": 0.4
+    },
+    {
+      "type": "header",
+      "content": "Headline"
+    },
+    {
+      "type": "textarea",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Exclusive Discount Up to ||50% OFF!",
+      "info": "Use || to separate normal text from highlighted text"
+    },
+    {
+      "type": "range",
+      "id": "headline_size",
+      "min": 18,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "label": "Headline size (Desktop)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_headline_size",
+      "min": 16,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Headline size (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "headline_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Headline line height",
+      "default": 1.2
+    },
+    {
+      "type": "select",
+      "id": "headline_weight",
+      "label": "Headline weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "color",
+      "id": "headline_color",
+      "label": "Headline color",
+      "default": "#0B0B0B"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight color",
+      "default": "#FF0000"
+    },
+    {
+      "type": "select",
+      "id": "highlight_weight",
+      "label": "Highlight weight",
+      "options": [
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "800"
+    },
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "This limited time deal is in high demand and stock keeps selling out."
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_description_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size (Mobile)",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "description_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Description line height",
+      "default": 1.4
+    },
+    {
+      "type": "select",
+      "id": "description_weight",
+      "label": "Description weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#0B0B0B"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "GET THAURA NOW →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button background",
+      "default": "#00C249"
+    },
+    {
+      "type": "color",
+      "id": "button_shadow_color",
+      "label": "Button shadow color",
+      "default": "#028332"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "button_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Button text size (Desktop)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button text size (Mobile)",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "button_weight",
+      "label": "Button text weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 6,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Button padding vertical",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Button padding horizontal",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_padding",
+      "min": 6,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button padding vertical (Mobile)",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_padding_horizontal",
+      "min": 15,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Button padding horizontal (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Offer Deadline"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_deadline",
+      "label": "Offer deadline text",
+      "default": "This special offer is valid until ||Tuesday, October 7, 2025",
+      "info": "Use || to separate normal text from highlighted text"
+    },
+    {
+      "type": "range",
+      "id": "deadline_size",
+      "min": 11,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Deadline size (Desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_deadline_size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Deadline size (Mobile)",
+      "default": 11
+    },
+    {
+      "type": "select",
+      "id": "deadline_weight",
+      "label": "Deadline weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "deadline_color",
+      "label": "Deadline color",
+      "default": "#0B0B0B"
+    },
+    {
+      "type": "color",
+      "id": "deadline_highlight_color",
+      "label": "Deadline highlight color",
+      "default": "#FF0000"
+    },
+    {
+      "type": "header",
+      "content": "Features Icons"
+    },
+    {
+      "type": "color",
+      "id": "icon_background",
+      "label": "Icon circle background",
+      "default": "#1544AA"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 30,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon circle size (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "icon_inner_size",
+      "min": 15,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon inner size (Desktop)",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_icon_size",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon circle size (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_icon_inner_size",
+      "min": 15,
+      "max": 70,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon inner size (Mobile)",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "feature_title_size",
+      "min": 9,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Feature title size (Desktop)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_feature_title_size",
+      "min": 9,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Feature title size (Mobile)",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "feature_title_line_height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "label": "Feature title line height",
+      "default": 1.5
+    },
+    {
+      "type": "select",
+      "id": "feature_title_weight",
+      "label": "Feature title weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "feature_title_color",
+      "label": "Feature title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "features_gap",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Features gap (Desktop)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_features_gap",
+      "min": 4,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Features gap (Mobile)",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "features_margin_top",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Features margin top (Desktop)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_features_margin_top",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Features margin top (Mobile)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "feature_item_gap",
+      "min": 2,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Item gap (icon to text)",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "feature_item_width",
+      "min": 60,
+      "max": 160,
+      "step": 1,
+      "unit": "px",
+      "label": "Feature item width",
+      "default": 119
+    },
+    {
+      "type": "range",
+      "id": "mobile_feature_width",
+      "min": 60,
+      "max": 140,
+      "step": 5,
+      "unit": "px",
+      "label": "Feature item width (Mobile)",
+      "default": 70
+    },
+    {
+      "type": "header",
+      "content": "Layout & Spacing"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "min": 300,
+      "max": 900,
+      "step": 10,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 500
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "inner_padding_top",
+      "min": 30,
+      "max": 120,
+      "step": 1,
+      "unit": "px",
+      "label": "Inner padding top",
+      "default": 77
+    },
+    {
+      "type": "range",
+      "id": "inner_padding_bottom",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Inner padding bottom",
+      "default": 77
+    },
+    {
+      "type": "range",
+      "id": "inner_padding_horizontal",
+      "min": 20,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Inner padding horizontal",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_inner_padding",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Inner padding (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "min": 20,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "label": "Content gap (Desktop)",
+      "default": 95
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_gap",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Content gap (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "min": 6,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Content elements spacing",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Section padding top (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Section padding bottom (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Section padding top (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Section padding bottom (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Feature icon"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Feature title",
+          "default": "Feature text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - Offre Section",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "600mg clinical-dose KSM-66"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Zero caffeine, zero crash"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Third-party tested"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "90-day money-back guarantee"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Free shipping"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

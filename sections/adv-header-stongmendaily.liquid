@@ -1,0 +1,88 @@
+{% comment %}
+  ADV Header StrongMenDaily Section
+  Displays the StrongMenDaily logo with customizable background
+{% endcomment %}
+
+{{ 'section-adv-header-stongmendaily.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-header-stongmendaily" 
+     style="background-color: {{ section.settings.background_color }} !important;">
+  
+  <div class="adv-header-stongmendaily__container" 
+       style="--logo-width: {{ section.settings.logo_width }}px;">
+    <div class="adv-header-stongmendaily__logo-wrapper">
+      {% if section.settings.logo_image != blank %}
+        <img 
+          src="{{ section.settings.logo_image | image_url: width: 600 }}"
+          alt="{{ section.settings.logo_alt_text | default: 'StrongMenDaily' }}"
+          class="adv-header-stongmendaily__logo"
+          width="{{ section.settings.logo_width }}"
+          height="auto"
+          loading="lazy"
+        >
+      {% else %}
+        {%- comment -%} Default logo fallback {%- endcomment -%}
+        <img 
+          src="{{ 'adv-header-strongmendaily-logo.png' | asset_url }}"
+          alt="{{ section.settings.logo_alt_text | default: 'StrongMenDaily' }}"
+          class="adv-header-stongmendaily__logo"
+          width="{{ section.settings.logo_width }}"
+          height="auto"
+          loading="lazy"
+        >
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ADV Header StrongMenDaily",
+  "class": "adv-header-stongmendaily-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ebebeb"
+    },
+    {
+      "type": "header",
+      "content": "Logo Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo Image",
+      "info": "Leave blank to use default StrongMenDaily logo"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_text",
+      "label": "Logo Alt Text",
+      "default": "StrongMenDaily",
+      "info": "For accessibility and SEO"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 100,
+      "max": 500,
+      "step": 4,
+      "unit": "px",
+      "label": "Logo Width (Desktop)",
+      "default": 292
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV Header StrongMenDaily"
+    }
+  ]
+}
+{% endschema %}
+

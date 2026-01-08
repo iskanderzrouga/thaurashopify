@@ -1,0 +1,837 @@
+{{ 'section-adv-cta-product.css' | asset_url | stylesheet_tag }}
+
+<div class="adv-cta-product-wrapper" style="background: {{ section.settings.background_color }};">
+  <div class="page-width">
+    <div class="adv-cta-product-inner" style="max-width: {{ section.settings.content_width }}px;">
+      
+      <div class="adv-cta-product-grid adv-mobile-{{ section.settings.mobile_layout }}">
+        
+        {%- comment -%} Product Image Column {%- endcomment -%}
+        <div class="adv-product-column">
+          {%- if section.settings.product_image -%}
+            <div class="adv-product-visual">
+              <img
+                src="{{ section.settings.product_image | image_url: width: 800 }}"
+                alt="{{ section.settings.product_name }}"
+                loading="lazy"
+              >
+            </div>
+          {%- endif -%}
+
+          {%- if section.blocks.size > 0 -%}
+            <div class="adv-product-features">
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'feature' -%}
+                  <div class="adv-product-feature" {{ block.shopify_attributes }}>
+                    {%- if block.settings.icon -%}
+                      <div class="adv-feature-icon">
+                        <img src="{{ block.settings.icon | image_url: width: 80 }}" alt="{{ block.settings.text }}" width="40" height="40">
+                      </div>
+                    {%- endif -%}
+                    <p class="adv-feature-text">{{ block.settings.text }}</p>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} CTA Content Column {%- endcomment -%}
+        <div class="adv-cta-column">
+          
+          {%- if section.settings.eyebrow != blank -%}
+            <p class="adv-cta-eyebrow">{{ section.settings.eyebrow }}</p>
+          {%- endif -%}
+
+          {%- if section.settings.heading != blank -%}
+            <h2 class="adv-cta-heading">{{ section.settings.heading }}</h2>
+          {%- endif -%}
+
+          {%- if section.settings.subheading != blank -%}
+            <p class="adv-cta-subheading">{{ section.settings.subheading }}</p>
+          {%- endif -%}
+
+          {%- if section.settings.show_button -%}
+            <div class="adv-cta-button-wrapper">
+              <a 
+                href="{{ section.settings.button_link }}" 
+                class="adv-cta-button"
+                style="background: {{ section.settings.button_bg }}; color: {{ section.settings.button_color }};"
+              >
+                {{ section.settings.button_text }}
+              </a>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.timer_text != blank -%}
+            <p class="adv-cta-timer">{{ section.settings.timer_text }}</p>
+          {%- endif -%}
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .adv-cta-product-wrapper {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+
+  .adv-cta-product-inner {
+    margin: 0 auto;
+  }
+
+  .adv-cta-product-grid {
+    display: grid;
+    grid-template-columns: {{ section.settings.image_width }}% 1fr;
+    gap: {{ section.settings.column_gap }}px;
+    align-items: center;
+  }
+
+  .adv-product-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .adv-product-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: {{ section.settings.features_gap }}px;
+    margin-top: {{ section.settings.features_margin }}px;
+  }
+
+  .adv-product-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 calc({{ section.settings.features_per_row }} - {{ section.settings.features_gap }}px);
+    min-width: 100px;
+  }
+
+  .adv-feature-icon {
+    width: {{ section.settings.feature_icon_size }}px;
+    height: {{ section.settings.feature_icon_size }}px;
+    background: {{ section.settings.feature_icon_bg }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .adv-feature-icon img {
+    width: calc({{ section.settings.feature_icon_size }}px / 2);
+    height: calc({{ section.settings.feature_icon_size }}px / 2);
+    object-fit: contain;
+  }
+
+  .adv-feature-text {
+    margin: 0;
+    font-size: {{ section.settings.feature_text_size }}px;
+    line-height: 1.3;
+    color: {{ section.settings.feature_text_color }};
+  }
+
+  .adv-cta-eyebrow {
+    font-size: {{ section.settings.eyebrow_size }}px;
+    color: {{ section.settings.eyebrow_color }};
+    margin: 0 0 {{ section.settings.eyebrow_margin }}px;
+    font-weight: {{ section.settings.eyebrow_weight }};
+    text-transform: {{ section.settings.eyebrow_transform }};
+    letter-spacing: {{ section.settings.eyebrow_spacing }}px;
+  }
+
+  .adv-cta-heading {
+    font-size: {{ section.settings.heading_size }}px;
+    line-height: 1.2;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 {{ section.settings.heading_margin }}px;
+    font-weight: {{ section.settings.heading_weight }};
+  }
+
+  .adv-cta-subheading {
+    font-size: {{ section.settings.subheading_size }}px;
+    line-height: 1.5;
+    color: {{ section.settings.subheading_color }};
+    margin: 0 0 {{ section.settings.subheading_margin }}px;
+  }
+
+  .adv-cta-button-wrapper {
+    margin-bottom: {{ section.settings.button_margin }}px;
+  }
+
+  .adv-cta-button {
+    display: inline-block;
+    padding: {{ section.settings.button_padding_y }}px {{ section.settings.button_padding_x }}px;
+    font-size: {{ section.settings.button_size }}px;
+    font-weight: {{ section.settings.button_weight }};
+    border-radius: {{ section.settings.button_radius }}px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .adv-cta-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+
+  .adv-cta-timer {
+    font-size: {{ section.settings.timer_size }}px;
+    color: {{ section.settings.timer_color }};
+    margin: 0;
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 989px) {
+    .adv-cta-product-grid {
+      grid-template-columns: 45% 1fr;
+      gap: {{ section.settings.tablet_gap }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .adv-cta-product-wrapper {
+      padding: {{ section.settings.mobile_padding_top }}px 0 {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    .adv-mobile-stack .adv-cta-product-grid {
+      grid-template-columns: 1fr;
+      gap: {{ section.settings.mobile_gap }}px;
+    }
+
+    .adv-mobile-stack .adv-product-column {
+      order: 1;
+    }
+
+    .adv-mobile-stack .adv-cta-column {
+      order: 2;
+      text-align: center;
+    }
+
+    .adv-cta-eyebrow {
+      font-size: {{ section.settings.mobile_eyebrow_size }}px;
+    }
+
+    .adv-cta-heading {
+      font-size: {{ section.settings.mobile_heading_size }}px;
+    }
+
+    .adv-cta-subheading {
+      font-size: {{ section.settings.mobile_subheading_size }}px;
+    }
+
+    .adv-cta-button {
+      font-size: {{ section.settings.mobile_button_size }}px;
+      padding: {{ section.settings.mobile_button_padding_y }}px {{ section.settings.mobile_button_padding_x }}px;
+      display: block;
+      width: 100%;
+    }
+
+    .adv-cta-timer {
+      font-size: {{ section.settings.mobile_timer_size }}px;
+    }
+
+    .adv-product-features {
+      justify-content: center;
+    }
+
+    .adv-product-feature {
+      flex: 1 1 calc(50% - calc({{ section.settings.features_gap }}px / 2));
+    }
+
+    .adv-feature-icon {
+      width: {{ section.settings.mobile_feature_icon_size }}px;
+      height: {{ section.settings.mobile_feature_icon_size }}px;
+    }
+
+    .adv-feature-icon img {
+      width: calc({{ section.settings.mobile_feature_icon_size }}px / 2);
+      height: calc({{ section.settings.mobile_feature_icon_size }}px / 2);
+    }
+
+    .adv-feature-text {
+      font-size: {{ section.settings.mobile_feature_text_size }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "ADV - CTA with Product",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product image"
+    },
+    {
+      "type": "text",
+      "id": "product_name",
+      "label": "Product name (for alt text)",
+      "default": "Product"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 30,
+      "max": 60,
+      "step": 5,
+      "unit": "%",
+      "label": "Image column width",
+      "default": 45
+    },
+    {
+      "type": "header",
+      "content": "Product Features (Icons below product)"
+    },
+    {
+      "type": "range",
+      "id": "features_per_row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "label": "Features per row (Desktop)",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "features_gap",
+      "min": 8,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "label": "Features gap",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "features_margin",
+      "min": 16,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Features margin top",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "feature_icon_size",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Feature icon size (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "mobile_feature_icon_size",
+      "min": 30,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Feature icon size (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "feature_icon_bg",
+      "label": "Feature icon background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "range",
+      "id": "feature_text_size",
+      "min": 11,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Feature text size (Desktop)",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "mobile_feature_text_size",
+      "min": 10,
+      "max": 14,
+      "step": 1,
+      "unit": "px",
+      "label": "Feature text size (Mobile)",
+      "default": 11
+    },
+    {
+      "type": "color",
+      "id": "feature_text_color",
+      "label": "Feature text color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "CTA Content"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Eyebrow size (Desktop)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_eyebrow_size",
+      "min": 11,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Eyebrow size (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "eyebrow_weight",
+      "label": "Eyebrow weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "eyebrow_transform",
+      "label": "Eyebrow text transform",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "uppercase", "label": "Uppercase" }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_spacing",
+      "min": 0,
+      "max": 3,
+      "step": 0.5,
+      "unit": "px",
+      "label": "Eyebrow letter spacing",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_margin",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Eyebrow margin bottom",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow color",
+      "default": "#666666"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Exclusive Discount Up to 50% OFF!"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (Desktop)",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "min": 20,
+      "max": 42,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "heading_margin",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading margin bottom",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "This limited time deal is in high demand and stock keeps selling out."
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_subheading_size",
+      "min": 14,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "subheading_margin",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Subheading margin bottom",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "GET THAURA NOW →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "range",
+      "id": "button_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button size (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Button size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "button_weight",
+      "label": "Button weight",
+      "options": [
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "button_padding_x",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Button horizontal padding (Desktop)",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "button_padding_y",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding (Desktop)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_padding_x",
+      "min": 16,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Button horizontal padding (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_button_padding_y",
+      "min": 10,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Button vertical padding (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "button_margin",
+      "min": 12,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Button margin bottom",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Timer Text"
+    },
+    {
+      "type": "text",
+      "id": "timer_text",
+      "label": "Timer/Urgency text",
+      "default": "This special offer is valid until Tuesday, October 7, 2025"
+    },
+    {
+      "type": "range",
+      "id": "timer_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Timer size (Desktop)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_timer_size",
+      "min": 11,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Timer size (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "timer_color",
+      "label": "Timer color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "options": [
+        { "value": "stack", "label": "Stack vertically" },
+        { "value": "keep", "label": "Keep 2 columns" }
+      ],
+      "default": "stack"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Column gap (Desktop)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "tablet_gap",
+      "min": 24,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap (Tablet)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "min": 20,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 800,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top (Desktop)",
+      "default": 68
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom (Desktop)",
+      "default": 68
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f9f9f9"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Feature"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ADV - CTA with Product"
+    }
+  ]
+}
+{% endschema %}

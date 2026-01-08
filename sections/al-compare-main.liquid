@@ -1,0 +1,400 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="section-{{ section.id }}-padding px-[15px] md:rounded-t-[30px]"
+  style="background-color: {{ section.settings.bgcolor }}"
+>
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col items-center justify-center gap-[30px] md:gap-[60px] w-full">
+      {% if section.settings.heading != blank %}
+        <h2
+          class="text-[36px] md:text-[50px] font-semibold text-[#FE6901] !leading-tight text-center"
+          style="color: {{section.settings.color_primary}};"
+        >
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      <div class="w-full">
+        <div class="">
+          <div class="w-full">
+            <div class="grid grid-cols-9">
+              <div class="col-span-3 !block"></div>
+              <div class="col-span-2 flex flex-col items-center justify-center pb-5">
+                {% if section.settings.brand_top_image != blank %}
+                  {{
+                    section.settings.brand_top_image
+                    | image_url: width: 150
+                    | image_tag: class: 'w-full max-w-[150px] objet-contain'
+                  }}
+                {% endif %}
+                {% if section.settings.brand_image != blank %}
+                  {{ section.settings.brand_image | image_url: width: 180 | image_tag: class: 'w-full max-w-[170px]' }}
+                {% endif %}
+              </div>
+              <div class="col-span-2 flex flex-col items-center justify-center text-center pb-5">
+                {% if section.settings.row1_image != blank %}
+                  {{
+                    section.settings.row1_image
+                    | image_url: width: 150
+                    | image_tag: class: 'w-full max-w-[150px] objet-contain'
+                  }}
+                {% endif %}
+                {% if section.settings.row1_heading != blank %}
+                  <div
+                    class="text-[10px] sm:text-[17px] md:text-[20px] font-semibold !leading-tight text-[#212537]"
+                    style="color: {{section.settings.color_tertiary}}"
+                  >
+                    {{ section.settings.row1_heading }}
+                  </div>
+                {% endif %}
+              </div>
+              <div class="col-span-2 flex flex-col items-center justify-center text-center pb-5">
+                {% if section.settings.row2_image != blank %}
+                  {{
+                    section.settings.row2_image
+                    | image_url: width: 150
+                    | image_tag: class: 'w-full max-w-[150px] objet-contain'
+                  }}
+                {% endif %}
+                {% if section.settings.row2_heading != blank %}
+                  <div
+                    class="text-[10px] sm:text-[17px] md:text-[20px] font-semibold !leading-tight text-[#212537]"
+                    style="color: {{section.settings.color_tertiary}}"
+                  >
+                    {{ section.settings.row2_heading }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+
+            <div class="w-full rounded-[16px]" style="border: 2px solid {{section.settings.color_secondary}};">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'row' %}
+                    <div
+                      class="grid grid-cols-9"
+                      {% unless forloop.last %}
+                        style="border-bottom: 2px solid {{section.settings.color_secondary}};"
+                      {% endunless %}
+                    >
+                      <div
+                        class="col-span-3 px-2 sm:px-4 md:px-7 py-4 md:py-6"
+                        style="border-right: 2px solid {{section.settings.color_secondary}};"
+                      >
+                        {% if block.settings.heading != blank %}
+                          <div
+                            class="text-[14px] sm:text-base md:text-[20px] font-semibold !leading-tight text-[#212537]"
+                            style="color: {{section.settings.color_tertiary}}"
+                          >
+                            {{ block.settings.heading }}
+                          </div>
+                        {% endif %}
+                      </div>
+                      <div
+                        class="col-span-2 px-4 md:px-7 py-4 md:py-6 flex items-center justify-center"
+                        style="border-right: 2px solid {{section.settings.color_secondary}};"
+                      >
+                        {% if block.settings.row1_answer == 'yes' %}
+                          {{
+                            section.settings.icon_yes
+                            | image_url: width: 28
+                            | image_tag: class: 'w-full max-w-[24px] md:max-w-[28px]'
+                          }}
+                        {% else %}
+                          {{
+                            section.settings.icon_no
+                            | image_url: width: 28
+                            | image_tag: class: 'w-full max-w-[24px] md:max-w-[28px]'
+                          }}
+                        {% endif %}
+                      </div>
+                      <div
+                        class="col-span-2 px-4 md:px-7 py-4 md:py-6 flex items-center justify-center"
+                        style="border-right: 2px solid {{section.settings.color_secondary}};"
+                      >
+                        {% if block.settings.row2_answer == 'yes' %}
+                          {{
+                            section.settings.icon_yes
+                            | image_url: width: 28
+                            | image_tag: class: 'w-full max-w-[24px] md:max-w-[28px]'
+                          }}
+                        {% else %}
+                          {{
+                            section.settings.icon_no
+                            | image_url: width: 28
+                            | image_tag: class: 'w-full max-w-[24px] md:max-w-[28px]'
+                          }}
+                        {% endif %}
+                      </div>
+                      <div class="col-span-2 px-4 md:px-7 py-4 md:py-6 flex items-center justify-center">
+                        {% if block.settings.row3_answer == 'yes' %}
+                          {{
+                            section.settings.icon_yes
+                            | image_url: width: 28
+                            | image_tag: class: 'w-full max-w-[24px] md:max-w-[28px]'
+                          }}
+                        {% else %}
+                          {{
+                            section.settings.icon_no
+                            | image_url: width: 28
+                            | image_tag: class: 'w-full max-w-[24px] md:max-w-[28px]'
+                          }}
+                        {% endif %}
+                      </div>
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-full md:w-fit mx-auto md:min-w-[500px]">
+          {% render 'new-button', section: section %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AL Compare Main",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_top_image",
+      "label": "Brand Top Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "Brand Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "row1_image",
+      "label": "Row 1 Image"
+    },
+    {
+      "type": "text",
+      "id": "row1_heading",
+      "label": "Row 1 Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "row2_image",
+      "label": "Row 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "row2_heading",
+      "label": "Row 2 Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_yes",
+      "label": "Icon Yes"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_no",
+      "label": "Icon No"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "tertiary",
+          "label": "Tertiary"
+        }
+      ],
+      "default": "primary",
+      "label": "Button Type"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_primary",
+      "label": "Primary Color",
+      "default": "#FE6901"
+    },
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary Color",
+      "default": "#00176B"
+    },
+    {
+      "type": "color",
+      "id": "color_tertiary",
+      "label": "Tertiary Color",
+      "default": "#212537"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "row1_answer",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            }
+          ],
+          "default": "yes",
+          "label": "Raw 1 Answer"
+        },
+        {
+          "type": "select",
+          "id": "row2_answer",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            }
+          ],
+          "default": "no",
+          "label": "Raw 2 Answer"
+        },
+        {
+          "type": "select",
+          "id": "row3_answer",
+          "options": [
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            }
+          ],
+          "default": "no",
+          "label": "Raw 3 Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AL Compare Main"
+    }
+  ]
+}
+{% endschema %}

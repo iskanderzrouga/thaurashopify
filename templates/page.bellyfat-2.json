@@ -1,0 +1,613 @@
+{
+  "sections": {
+    "abf_trust_bar_WWzTfg": {
+      "type": "abf-trust-bar",
+      "name": "ABF TrustBar",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_navigation_9PWtWM": {
+      "type": "abf-navigation",
+      "name": "ABF Navigation",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_hero_QVPmUK": {
+      "type": "abf-hero",
+      "blocks": {
+        "card_djwGYt": {
+          "type": "card",
+          "settings": {
+            "slider_position": 2,
+            "default": true,
+            "product": "dryft™-1-bottle-1",
+            "title": "Buy 1 Bottle",
+            "bottle_price": "",
+            "serving": "1.25",
+            "month": "1 Month Supply",
+            "badge": "",
+            "badge_bg": "",
+            "checkbox_description": "Shipped every month. No commitment. Cancel anytime.",
+            "off": true,
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "hide_timer": false,
+            "description": "<p>✅ 90 Day Money-Back Guarantee<\/p>",
+            "enable_subscription": true,
+            "sub_id": "2479161517",
+            "sub_perceont_off": "14.3"
+          }
+        },
+        "card_xEeHCB": {
+          "type": "card",
+          "settings": {
+            "slider_position": 1,
+            "default": false,
+            "product": "dryft™-2-bottles-copy",
+            "title": "Buy 2 Bottles",
+            "bottle_price": "66.63",
+            "serving": "1.16",
+            "month": "3 Month Supply",
+            "badge": "Most Popular",
+            "badge_bg": "#0d5c4d",
+            "checkbox_description": "Shipped every 3 months. No commitment. Cancel anytime.",
+            "off": true,
+            "show_sale": false,
+            "sale_text": "Sale Ends In:",
+            "hide_timer": false,
+            "description": "<p>✅ Save $9.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<\/p>",
+            "enable_subscription": true,
+            "sub_id": "2600009901",
+            "sub_perceont_off": "20.01"
+          }
+        },
+        "card_zENppW": {
+          "type": "card",
+          "settings": {
+            "slider_position": 0,
+            "default": false,
+            "product": "dryft™-3-bottles-1-free-2",
+            "title": "Buy 3 Get One Free",
+            "bottle_price": "46.65",
+            "serving": "0.84",
+            "month": "5 Month Supply",
+            "badge": "Best Value",
+            "badge_bg": "#00b894",
+            "checkbox_description": "Shipped every 5 months. No commitment. Cancel anytime.",
+            "off": true,
+            "show_sale": true,
+            "sale_text": "Sale Ends In",
+            "hide_timer": false,
+            "description": "<p>✅ Save $89.95<br\/>✅ Unlock FREE Shipping Today Only<br\/>✅ 90 Day Money-Back Guarantee<br\/>✅ BIGGEST Discount<\/p>",
+            "enable_subscription": true,
+            "sub_id": "2599977133",
+            "sub_perceont_off": "20"
+          }
+        }
+      },
+      "block_order": [
+        "card_djwGYt",
+        "card_xEeHCB",
+        "card_zENppW"
+      ],
+      "name": "ABF Hero",
+      "settings": {
+        "section_id": "",
+        "product": "dryft™-np",
+        "sub_heading": "Save 20% with automatic refills",
+        "sub_description": "Shipped every month. No commitment. Cancel anytime.",
+        "slider_start_point": 0,
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_social_proof_9kzdzf": {
+      "type": "abf-social-proof",
+      "disabled": true,
+      "name": "ABF Social Proof",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "nl_logos_PkLwVA": {
+      "type": "nl-logos",
+      "blocks": {
+        "logo_zFq7rG": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/digital-journal.png"
+          }
+        },
+        "logo_HjEVTg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fox_Networks_Group_US_logo_svg.png"
+          }
+        },
+        "logo_Fpp8rX": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bingh.png"
+          }
+        },
+        "logo_yYzdzD": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nbc-new-logo.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_zFq7rG",
+        "logo_HjEVTg",
+        "logo_Fpp8rX",
+        "logo_yYzdzD"
+      ],
+      "name": "NL Logos",
+      "settings": {
+        "section_id": "",
+        "heading": "Scientifically Back Ingredient Featured In",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "show_payment_icons": false,
+        "bottom_description": "",
+        "bgcolor": "#f6f7ef",
+        "max_width": 800,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_m": 24,
+        "padding_bottom_m": 24
+      }
+    },
+    "abf_problem_EVnUTy": {
+      "type": "abf-problem",
+      "blocks": {
+        "row_3waHaG": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/x-circle-fill.png",
+            "heading": "TRT (Testosterone Replacement)",
+            "description": "Injecting more T into a body with high aromatase? You're just feeding the fire. More T → more estrogen conversion → more belly fat."
+          }
+        },
+        "row_RXCxN7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/x-circle-fill.png",
+            "heading": "T-Boosters from Amazon",
+            "description": "They try to boost production. But that's not your problem. Like filling a bathtub with the drain open."
+          }
+        },
+        "row_bKbdMV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/x-circle-fill.png",
+            "heading": "Diet & Exercise Alone",
+            "description": "Working out while your hormones scream \"store fat\"? Good luck. Your biology fights every calorie deficit."
+          }
+        }
+      },
+      "block_order": [
+        "row_3waHaG",
+        "row_RXCxN7",
+        "row_bKbdMV"
+      ],
+      "name": "ABF Problem",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "image": "shopify:\/\/shop_images\/Frame_2147224823_1.png",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_solution_h9ipJC": {
+      "type": "abf-solution",
+      "name": "ABF Solution",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_timeline_MhLE8W": {
+      "type": "abf-timeline",
+      "name": "ABF Timeline",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_benefits_7hPRYF": {
+      "type": "abf-benefits",
+      "blocks": {
+        "row_LRMLnY": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_f78adbab-e789-445d-9894-92e5fd354354.png",
+            "heading": "Feel Good In Fitted Shirts",
+            "description": "That gut hanging over your jeans? Flatter. Those \"man boobs\" that kept you in oversized shirts? Firmer. Finally feel comfortable in clothes that actually fit."
+          }
+        },
+        "row_TdggzA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_f78adbab-e789-445d-9894-92e5fd354354.png",
+            "heading": "Enjoy All-Day Energy",
+            "description": "Stop being the guy who's asleep on the couch by 8PM. Wake up refreshed, power through your day, and still have energy for family time."
+          }
+        },
+        "row_bWQtaV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_f78adbab-e789-445d-9894-92e5fd354354.png",
+            "heading": "See Visible Results",
+            "description": "Stop putting in work without seeing results. Once your metabolic switches are flipped, your efforts in the gym and kitchen create visible changes."
+          }
+        },
+        "row_cWMLKe": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_f78adbab-e789-445d-9894-92e5fd354354.png",
+            "heading": "Reclaim Confidence",
+            "description": "Walk into any room with your head held high. The confidence that comes from looking and feeling your best changes everything."
+          }
+        }
+      },
+      "block_order": [
+        "row_LRMLnY",
+        "row_TdggzA",
+        "row_bWQtaV",
+        "row_cWMLKe"
+      ],
+      "name": "ABF Benefits",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_testimonials_6ciF3z": {
+      "type": "abf-testimonials",
+      "blocks": {
+        "star_review_Dzy6zW": {
+          "type": "star_review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/stars.png",
+            "description": "\"I'd tried everything — keto, testosterone boosters, even considered TRT. Nothing touched the belly fat. After 8 weeks on Dryft™, I've lost 3 inches off my waist. My wife noticed before I did.\"",
+            "image": "shopify:\/\/shop_images\/image_55604569.png",
+            "name": "Michael R., 54",
+            "verified": "✓ Verified Buyer"
+          }
+        },
+        "star_review_9KRQFH": {
+          "type": "star_review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/stars.png",
+            "description": "\"The energy is what got me first. No more 2pm crashes. Then the belly started going down. I'm wearing shirts I haven't fit into in 5 years. This stuff actually works.\"",
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-12-15_at_11.43.53_AM.png",
+            "name": "David K., 47",
+            "verified": "✓ Verified Buyer"
+          }
+        },
+        "star_review_ahG4Qg": {
+          "type": "star_review",
+          "settings": {
+            "stars": "shopify:\/\/shop_images\/stars.png",
+            "description": "\"My doctor kept telling me to lose the gut. I was eating 1,500 calories and exercising 5x a week — nothing. Finally understand why. 2 months in and I'm down 18 lbs.\"",
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-12-15_at_11.49.22_AM_749f04af-80c9-4ebf-aa0e-0c70f7c8c029.png",
+            "name": "James T., 51",
+            "verified": "✓ Verified Buyer"
+          }
+        }
+      },
+      "block_order": [
+        "star_review_Dzy6zW",
+        "star_review_9KRQFH",
+        "star_review_ahG4Qg"
+      ],
+      "name": "ABF Testimonials",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_quality_4JmYFz": {
+      "type": "abf-quality",
+      "name": "ABF Quality",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_faqs_X33pMp": {
+      "type": "abf-faqs",
+      "name": "ABF FAQs",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_cta_7NrwcV": {
+      "type": "abf-cta",
+      "name": "ABF CTA",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
+    "abf_footer_VTfNPF": {
+      "type": "abf-footer",
+      "name": "ABF Footer",
+      "settings": {
+        "section_id": "",
+        "heading": "",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#121212",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    }
+  },
+  "order": [
+    "abf_trust_bar_WWzTfg",
+    "abf_navigation_9PWtWM",
+    "abf_hero_QVPmUK",
+    "abf_social_proof_9kzdzf",
+    "nl_logos_PkLwVA",
+    "abf_problem_EVnUTy",
+    "abf_solution_h9ipJC",
+    "abf_timeline_MhLE8W",
+    "abf_benefits_7hPRYF",
+    "abf_testimonials_6ciF3z",
+    "abf_quality_4JmYFz",
+    "abf_faqs_X33pMp",
+    "abf_cta_7NrwcV",
+    "abf_footer_VTfNPF"
+  ]
+}

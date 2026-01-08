@@ -1,0 +1,318 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_m }}px;
+    padding-bottom: {{ section.settings.padding_bottom_m }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="section-{{ section.id }}-padding px-[15px] {% if section.settings.top_border %} md:rounded-t-[30px] {% endif %}"
+  style="background-color: {{ section.settings.bgcolor }}"
+>
+  <div class="mx-auto w-full" style="max-width: {{ section.settings.max_width }}px;">
+    <div class="flex flex-col items-center justify-center gap-[30px] md:gap-[60px] w-full">
+      <div class="grid grid-cols-1 md:grid-cols-10 gap-5 md:gap-12">
+        <div class="col-span-1 md:col-span-4 grid {% if section.settings.image != blank %} grid-cols-2 {% else %} grid-cols-1 {% endif %} gap-3 md:flex md:flex-col md:gap-10 items-center md:items-start">
+          {% if section.settings.heading != blank %}
+            <h2
+              class="text-[36px] md:text-[50px] font-semibold text-[#00176B] !leading-tight"
+              style="color: {{section.settings.color_primary}}"
+            >
+              {{ section.settings.heading }}
+            </h2>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div
+              class="text-[17px] md:text-[20px] font-normal !leading-[1.5] text-[#212537]"
+              style="color: {{section.settings.color_secondary}}"
+            >
+              {{ section.settings.description }}
+            </div>
+          {% endif %}
+
+          {% if section.settings.image != blank %}
+            {{
+              section.settings.image
+              | image_url: width: 600
+              | image_tag: class: 'w-full hidden md:block', sizes: '600px'
+            }}
+          {% endif %}
+
+          {% if section.settings.image_mobile != blank %}
+            {{
+              section.settings.image_mobile
+              | image_url: width: 600
+              | image_tag: class: 'w-full block md:hidden', sizes: '600px'
+            }}
+          {% endif %}
+        </div>
+
+        <div class="col-span-1 md:col-span-6">
+          {% if section.blocks.size > 0 %}
+            <div class="">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'row' %}
+                    <div
+                      data-index="{{ forloop.index }}"
+                      class="{% if forloop.first %} active {% endif %} group dropdown-parent flex flex-col gap-5"
+                    >
+                      {% if block.settings.heading != blank %}
+                        <div
+                          data-index="{{ forloop.index }}"
+                          class="dropdown-heading flex items-center justify-between py-4 border-t border-[#E1EFFF] cursor-pointer [&>svg]:min-w-[32px]"
+                        >
+                          <div
+                            class="text-[17px] md:text-[20px] font-bold !leading-tight text-[#212537]"
+                            style="color: {{section.settings.color_secondary}}"
+                          >
+                            {{ block.settings.heading }}
+                          </div>
+                          {% render 'icon-chevron-down' %}
+                        </div>
+                      {% endif %}
+
+                      {% if block.settings.description != blank %}
+                        <div
+                          class="dropdown-content group-[.active]:block hidden text-[17px] md:text-[16px] font-normal !leading-tight text-[#212537] pb-4"
+                          style="color: {{section.settings.color_secondary}}"
+                        >
+                          {{ block.settings.description }}
+                        </div>
+                      {% endif %}
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if section.settings.button_label != blank %}
+        <div class="w-full md:w-fit mx-auto md:min-w-[500px]">
+          {% render 'new-button', section: section %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdownHeadings = document.querySelectorAll('.section-{{ section.id }}-padding .dropdown-heading');
+
+    dropdownHeadings.forEach((heading) => {
+      heading.addEventListener('click', () => {
+        const index = heading.getAttribute('data-index');
+
+        // Find parent dropdown-parent with matching data-index
+        const parentDropdown = document.querySelector(
+          `.section-{{ section.id }}-padding .dropdown-parent[data-index="${index}"]`
+        );
+
+        let dropdownIsOpened = false;
+        if (parentDropdown && parentDropdown.classList.contains('active')) {
+          dropdownIsOpened = true;
+        }
+
+        // Remove "active" from all dropdown parents
+        document.querySelectorAll('.section-{{ section.id }}-padding .dropdown-parent').forEach((parent) => {
+          parent.classList.remove('active');
+        });
+
+        // Add "active" to the clicked dropdown parent
+        if (parentDropdown) {
+          if (dropdownIsOpened) {
+            parentDropdown.classList.remove('active');
+          } else {
+            parentDropdown.classList.add('active');
+          }
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "AL Dropdowns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (Mobile)"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "tertiary",
+          "label": "Tertiary"
+        }
+      ],
+      "default": "primary",
+      "label": "Button Type"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "checkbox",
+      "id": "top_border",
+      "label": "Top Border",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "color_primary",
+      "label": "Primary Color",
+      "default": "#FE6901"
+    },
+    {
+      "type": "color",
+      "id": "color_secondary",
+      "label": "Secondary Color",
+      "default": "#00176B"
+    },
+    {
+      "type": "color",
+      "id": "color_tertiary",
+      "label": "Tertiary Color",
+      "default": "#212537"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "unit": "px",
+      "label": "Max Width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_m",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AL Dropdowns"
+    }
+  ]
+}
+{% endschema %}
