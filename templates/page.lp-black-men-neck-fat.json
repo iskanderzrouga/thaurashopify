@@ -1216,7 +1216,7 @@
       }
     },
     "bl_tab_ingredients_CRhYT3": {
-      "type": "bl-tab-ingredients",
+      "type": "bl-tab-ingredients-2",
       "blocks": {
         "row_6TrC9X": {
           "type": "row",
