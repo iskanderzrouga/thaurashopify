@@ -930,11 +930,11 @@
             "label_m_center": true,
             "label_d_center": true,
             "label_color": "#000000",
-            "heading": "Switch #1: The Fat-Burning Switch",
+            "heading": "Switch #1: The Heat-Burning Switch",
             "heading_m_center": false,
             "heading_d_center": false,
             "heading_color": "#252726",
-            "description": "<p><strong>❌ The Problem (In Black Men):</strong><br/>● 5% lower resting burn than white men<br/>● Body burns carbs first, not fat<br/>● Fat stays locked in storage<br/><br/><strong>✅ How Dryft™ Fixes It:</strong><br/>Cayenne Pepper Extract (40,000 SHU)  Capsaicin produces heat in your body, directly boosting your resting metabolic rate. Studies show it increases fat oxidation even at rest - teaching your body to burn fat instead of storing it.<br/><br/><strong>Grains of Paradise Extract </strong>Contains 6-paradol compounds that activate brown adipose tissue (BAT) - the \"good fat\" that burns stored fat for energy. Clinical trials show it increases whole-body energy expenditure by an average of 137 calories per day and significantly reduces visceral fat. <br/><br/><strong>The Result:</strong>  Your body finally starts tapping into stored fat - especially the stubborn chest and belly fat that won't budge with generic supplements.</p>",
+            "description": "<p><strong>❌ The Problem:</strong><br/>Your neck has dormant beige fat that stopped burning calories and started storing them.<br/><br/><strong>✅ The Fix:</strong><br/></p><ul><li><strong>Grains of Paradise (6-paradol) - 30mg</strong> | Reactivates brown/beige fat thermogenesis in human studies</li><li><strong>Cayenne Pepper Extract - 120mg</strong> | Increases energy expenditure and fat oxidation in subcutaneous depots<br/> </li></ul><p><strong>The Result:</strong> Your neck fat starts burning calories again instead of just storing them. The furnace turns back on.</p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -954,7 +954,7 @@
             "label_m_center": true,
             "label_d_center": true,
             "label_color": "#000000",
-            "heading": "Switch #2:  The Insulin-Control Switch",
+            "heading": "Switch #2: The Insulin-Control Switch",
             "heading_m_center": false,
             "heading_d_center": false,
             "heading_color": "#252726",
@@ -978,7 +978,7 @@
             "label_m_center": true,
             "label_d_center": true,
             "label_color": "#000000",
-            "heading": "Switch #3:  The Hormone-Balance Switch",
+            "heading": "Switch #3: The Hormone-Balance Switch",
             "heading_m_center": false,
             "heading_d_center": false,
             "heading_color": "#252726",
@@ -1007,7 +1007,7 @@
         "heading_m_center": true,
         "heading_d_center": true,
         "heading_color": "#00754a",
-        "description": "<p>Just 2 capsules a day flips all three metabolic switches</p>",
+        "description": "<p>Just 2 capsules a day flips all 3 metabolic switches</p>",
         "description_m_center": true,
         "description_d_center": true,
         "description_color": "#000000",
