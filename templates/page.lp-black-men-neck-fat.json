@@ -1178,6 +1178,9 @@
         "card_X6FpCh",
         "card_YGa7Kj"
       ],
+      "custom_css": [
+        ".nl-carousel-card--bottom {flex-direction: column; align-items: flex-start; justify-content: start;}"
+      ],
       "name": "NL Carousel",
       "settings": {
         "section_id": "",
