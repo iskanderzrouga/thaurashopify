@@ -1922,7 +1922,7 @@
           "type": "row",
           "settings": {
             "label": "",
-            "heading": "I'm skeptical. How do I know this will work for me?",
+            "heading": "Will this work if I'm not working out?",
             "description": "<p><strong>Fair question.</strong> You've been burned before.<br/><br/>Here's why Dryft™ is different:</p><p><strong>1. The science is real.</strong> Every metabolic difference we mention is backed by peer-reviewed research.</p><p><strong>2. The ingredients are clinically-dosed.</strong> We don't use \"fairy dust\" amounts.</p><p><strong>3. Thousands of Black men are already seeing results</strong> (check the reviews).</p><p><strong>4. You're protected by our 90-day guarantee.</strong> If it doesn't work, you get every penny back.</p><p><br/>You have nothing to lose and everything to gain.</p>"
           }
         },
@@ -1930,7 +1930,7 @@
           "type": "row",
           "settings": {
             "label": "",
-            "heading": "Will this work if I'm not working out?",
+            "heading": "How do I measure my neck?",
             "description": "<p>Yes - but results will be slower.<br/><br/>Dryft™ fixes the metabolic issues that make fat loss hard for Black men. It will work even if you're not exercising.<strong><br/><br/>However,</strong> adding even basic activity (walking, light workouts) will accelerate results significantly.</p>"
           }
         },
@@ -1957,6 +1957,14 @@
             "heading": "What if it doesn't work for me?",
             "description": "<p>Email us within 90 days and we'll refund 100% of your purchase. You don't even need to return the bottles.</p>"
           }
+        },
+        "row_VTzN4G": {
+          "type": "row",
+          "settings": {
+            "label": "",
+            "heading": "Can I take this with other supplements?",
+            "description": ""
+          }
         }
       },
       "block_order": [
@@ -1966,7 +1974,8 @@
         "row_rKpQYd",
         "row_gL8dwQ",
         "row_kVNfHR",
-        "row_BQBzVL"
+        "row_BQBzVL",
+        "row_VTzN4G"
       ],
       "custom_css": [
         ".dropdown-parent {border: 1px solid #084c25; border-radius: 12px;}",
