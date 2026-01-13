@@ -126,7 +126,7 @@
         "button_type": "primary",
         "product_bottom_label": "",
         "bottom_label_icon": "shopify://shop_images/guarantee.png",
-        "product_bottom_text": "<p>90-Day Money Back Guarantee</p>",
+        "product_bottom_text": "<p>90-Day Money Back Guarantee | No Results = Full Refund</p>",
         "bgcolor": "#ffffff",
         "max_width": 1200,
         "padding_top": 72,
