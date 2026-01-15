@@ -66,10 +66,10 @@
             {% case block.type %}
               {% when 'item' %}
                 {% assign main_id = block.settings.id %}
-                <div class="{% if forloop.first %} active {% endif %} group border border-[#AAAAAA] rounded-[12px]">
+                <div class="{% if forloop.first %} active {% endif %} bn-study-card group border border-[#AAAAAA] rounded-[12px]">
                   {% if block.settings.label != blank %}
                     <div
-                      class="text-[20px] md:text-[24px] font-bold !leading-tight text-[#000] p-4 cursor-pointer {% if block.settings.label_m_center %} max-md:text-center {% endif %} {% if block.settings.label_d_center %} md:text-center {% endif %}"
+                      class="bn-study-tab text-[20px] md:text-[24px] font-bold !leading-tight text-[#000] p-4 cursor-pointer {% if block.settings.label_m_center %} max-md:text-center {% endif %} {% if block.settings.label_d_center %} md:text-center {% endif %}"
                       style="color: {{ block.settings.label_color }};"
                     >
                       {{ block.settings.label }}
