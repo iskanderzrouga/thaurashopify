@@ -23,7 +23,7 @@
         "row_iDkUJP": {
           "type": "row",
           "settings": {
-            "bgcolor": "#F4F4F6",
+            "bgcolor": "#f4f4f6",
             "label": "White Men:",
             "label2": "Black Men:",
             "label_m_center": true,
@@ -42,12 +42,92 @@
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
-            "btn_bottom_text_color": "#000"
+            "btn_bottom_text_color": "#000000"
+          }
+        },
+        "feature_n9zHHX": {
+          "type": "feature",
+          "settings": {
+            "right": false,
+            "description": "<p>Store more visceral fat <br/>(deep, around organs)</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_AkMUke": {
+          "type": "feature",
+          "settings": {
+            "right": false,
+            "description": "<p>Fat accumulates in lower body—belly, love handles, hips</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_pKNGni": {
+          "type": "feature",
+          "settings": {
+            "right": false,
+            "description": "<p>Less visible from the outside</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_bAtJ3M": {
+          "type": "feature",
+          "settings": {
+            "right": false,
+            "description": "<p>Generic supplements target this type of fat</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_JERigh": {
+          "type": "feature",
+          "settings": {
+            "right": true,
+            "description": "<p>Store more subcutaneous fat <br/>(under the skin, visible)</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_CHeUDc": {
+          "type": "feature",
+          "settings": {
+            "right": true,
+            "description": "<p>Fat accumulates in upper body—neck, chest, shoulders</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_jzpax4": {
+          "type": "feature",
+          "settings": {
+            "right": true,
+            "description": "<p>Highly visible (shows on your face, collar, jawline)</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+          }
+        },
+        "feature_pmMWJ7": {
+          "type": "feature",
+          "settings": {
+            "right": true,
+            "description": "<p>Generic supplements ignore this fat pattern completely</p>",
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         }
       },
       "block_order": [
-        "row_iDkUJP"
+        "row_iDkUJP",
+        "feature_n9zHHX",
+        "feature_AkMUke",
+        "feature_pKNGni",
+        "feature_bAtJ3M",
+        "feature_JERigh",
+        "feature_CHeUDc",
+        "feature_jzpax4",
+        "feature_pmMWJ7"
       ],
       "name": "BN Reasons",
       "settings": {
@@ -66,7 +146,7 @@
         "button_label": "",
         "button_url": "",
         "btn_bottom_text": "",
-        "btn_bottom_text_color": "#000",
+        "btn_bottom_text_color": "#000000",
         "bg": "shopify://shop_images/8ae611d342464e59c2490a858f165290efd96ca0.png",
         "bgcolor": "#ffffff",
         "max_width": 1140,
