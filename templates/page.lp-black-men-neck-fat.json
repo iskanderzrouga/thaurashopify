@@ -16,9 +16,172 @@
         "padding_top": 72,
         "padding_bottom": 28
       }
+    },
+    "bn_fail_reason_wLpnhE": {
+      "type": "bn-fail-reason",
+      "blocks": {
+        "row_9grzMg": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p>Your upper-body fat storage pattern</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        },
+        "row_ex6TPa": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p>Your dormant neck heat-burning system</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        },
+        "row_CECYhq": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p>Your higher insulin resistance</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        },
+        "row_gDPdeU": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p>Your elevated cortisol rhythm</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        },
+        "row_zFRmRC": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p>Your higher estrogen levels</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "row_9grzMg",
+        "row_ex6TPa",
+        "row_CECYhq",
+        "row_gDPdeU",
+        "row_zFRmRC"
+      ],
+      "name": "BN Fail Reason",
+      "settings": {
+        "section_id": "",
+        "heading": "This Is Why Everything \nYou've Tried Has Failed",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#00754a",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "text1": "<p>Here's what most supplement brands won't tell you:<br/><br/>The typical fat burner and weight loss supplement  is formulated based on generic studies with limited participant diversity. One-size-fits-all ingredients for one-size-fits-all results.<br/><br/>Here is just one of multiple studies that highlight how white men usually account for 70%+ of the people in the studies:</p>",
+        "text2": "<p>But your body isn't generic.<br/><br/>Your fat storage pattern, hormone balance, and metabolic response are unique to YOU.<br/><br/>Now, your fat is upper-body subcutaneous.<br/><strong><br/>Different location. Different biology. Different fat type. Different solution.</strong><br/><br/>White men can take generic fat burners and lose belly fat because those formulas match their fat pattern.</p>",
+        "text3": "<p>But when YOU take them? The formula doesn't address:</p>",
+        "text4": "<p><strong>That's why your neck stays thick no matter what you do.<br/><br/>It's not you. It's the formula.</strong></p>",
+        "text_color": "#000000",
+        "image": "shopify://shop_images/image_55604080_7f8f8b06-0657-4b15-98aa-84bade4e2cb2.png",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "bn_fail_reason_wLpnhE"
   ]
 }
