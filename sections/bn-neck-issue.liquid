@@ -67,7 +67,7 @@
               {% when 'row' %}
                 {% if block.settings.label != blank %}
                   <div
-                    class="{%  if forloop.first %} active {% endif %} p-3 rounded-[100px] text-center text-[12px] md:text-[18px] font-medium !leading-tight text-[#084C25] border border-[#084C25] bg-white [&.active]:text-white [&.active]:bg-[#084C25]"
+                    class="{% if forloop.first %} active {% endif %} cursor-pointer p-3 rounded-[100px] text-center text-[12px] md:text-[18px] font-medium !leading-tight text-[#084C25] border border-[#084C25] bg-white [&.active]:text-white [&.active]:bg-[#084C25]"
                   >
                     {{ block.settings.label }}
                   </div>
