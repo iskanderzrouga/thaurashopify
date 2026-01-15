@@ -67,7 +67,8 @@
               {% when 'row' %}
                 {% if block.settings.label != blank %}
                   <div
-                    class="{% if forloop.first %} active {% endif %} cursor-pointer p-3 rounded-[100px] text-center text-[12px] md:text-[18px] font-medium !leading-tight text-[#084C25] border border-[#084C25] bg-white [&.active]:text-white [&.active]:bg-[#084C25]"
+                    data-id="{{ block.id }}"
+                    class="ah-ingredients-tab {% if forloop.first %} active {% endif %} cursor-pointer p-3 rounded-[100px] text-center text-[12px] md:text-[18px] font-medium !leading-tight text-[#084C25] border border-[#084C25] bg-white [&.active]:text-white [&.active]:bg-[#084C25]"
                   >
                     {{ block.settings.label }}
                   </div>
@@ -78,11 +79,10 @@
 
         <div class="md:col-span-3">
           {% if section.blocks.size > 0 %}
-            <div class="w-full gap-[15px] md:gap-5">
               {% for block in section.blocks %}
                 {% case block.type %}
                   {% when 'row' %}
-                    <div class="{%  if forloop.first %} active {% endif %} hidden [&.active]:flex flex-col border border-[#AAAAAA] rounded-[12px]">
+                    <div data-id="{{ block.id }}" class="ah-ingredients-card {% if forloop.first %} active {% endif %} hidden [&.active]:flex flex-col border border-[#AAAAAA] rounded-[12px]">
                       {% if block.settings.image != blank %}
                         {{
                           block.settings.image
@@ -115,7 +115,6 @@
               {% endfor %}
             </div>
           {% endif %}
-        </div>
       </div>
 
       {% if section.settings.button_label != blank %}
@@ -140,6 +139,27 @@
     </div>
   </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.ah-ingredients-tab');
+    const cards = document.querySelectorAll('.ah-ingredients-card');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const id = tab.getAttribute('data-id');
+        tabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        cards.forEach((c) => c.classList.remove('active'));
+        const match = document.querySelector(`.ah-ingredients-card[data-id="${id}"]`);
+        if (match) {
+          match.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
