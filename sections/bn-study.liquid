@@ -194,6 +194,17 @@
   </div>
 </div>
 
+<script>
+    document.querySelectorAll('.section-{{ section.id }}-padding .bn-study-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const card = tab.closest('.bn-study-card');
+    if (!card) return;
+
+    card.classList.toggle('active');
+  });
+});
+</script>
+
 {% schema %}
 {
   "name": "BN Study",
