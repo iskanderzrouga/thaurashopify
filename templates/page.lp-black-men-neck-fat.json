@@ -1755,6 +1755,7 @@
         "s2_contents_YWHKLy"
       ],
       "name": "BM Unique",
+      "disabled": true,
       "settings": {
         "bg": "shopify:\/\/shop_images\/Frame_2147224670.png",
         "arrow_color": "#084c25",
