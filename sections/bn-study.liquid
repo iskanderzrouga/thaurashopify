@@ -99,6 +99,10 @@
                               </div>
                             {% endif %}
 
+                            {% assign column_count = block.settings.img_column | plus: 0 %}
+                            {% assign max_width = section.settings.max_width | divided_by: column_count %}
+                            {% assign max_width_px = max_width | append: 'px' %}
+
                             {% if block.settings.image1 != blank %}
                               <div
                                 class="grid md:grid-cols-{{ block.settings.img_column }}"
@@ -108,21 +112,21 @@
                               >
                                 {{
                                   block.settings.image1
-                                  | image_url: width: 500
-                                  | image_tag: class: 'w-full rounded-[10px]', sizes: '500px'
+                                  | image_url: width: max_width
+                                  | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                 }}
                                 {% if block.settings.image2 != blank %}
                                   {{
                                     block.settings.image2
-                                    | image_url: width: 500
-                                    | image_tag: class: 'w-full rounded-[10px]', sizes: '500px'
+                                    | image_url: width: max_width
+                                    | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                   }}
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
                                   {{
                                     block.settings.image3
-                                    | image_url: width: 500
-                                    | image_tag: class: 'w-full rounded-[10px]', sizes: '500px'
+                                    | image_url: width: max_width
+                                    | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                   }}
                                 {% endif %}
                               </div>
