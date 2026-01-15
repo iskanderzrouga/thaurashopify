@@ -1013,11 +1013,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "3",
-            "text1": "<p>DIM supports healthy estrogen breakdown by shifting estrogen toward less active metabolic pathways.</p>",
+            "text1": "<ul><li>DIM supports healthy estrogen breakdown by shifting estrogen toward less active metabolic pathways.</li></ul>",
             "image1": "shopify://shop_images/image_55604558_9.png",
-            "text2": "<p>Zinc supports normal aromatase activity and healthy hormone balance.</p>",
+            "text2": "<ul><li>Zinc supports normal aromatase activity and healthy hormone balance.</li></ul>",
             "image2": "shopify://shop_images/image_55604558_10.png",
-            "text3": "<p>Boron supports overall steroid hormone metabolism and endocrine balance.</p>",
+            "text3": "<ul><li>Boron supports overall steroid hormone metabolism and endocrine balance.</li></ul>",
             "image3": "shopify://shop_images/image_55604558_11.png"
           }
         },
