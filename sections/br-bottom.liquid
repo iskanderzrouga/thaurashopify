@@ -108,60 +108,62 @@
               </div>
             {% endif %}
 
-            {% if section.settings.product_bottom_label != blank %}
-              <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
-                {% if section.settings.bottom_label_icon != blank %}
-                  {{
-                    section.settings.bottom_label_icon
-                    | image_url: width: 24
-                    | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
-                  }}
-                {% endif %}
+            <div class="flex flex-col md:flex-row gap-3">
+              {% if section.settings.product_bottom_label != blank %}
+                <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
+                  {% if section.settings.bottom_label_icon != blank %}
+                    {{
+                      section.settings.bottom_label_icon
+                      | image_url: width: 24
+                      | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
+                    }}
+                  {% endif %}
 
-                <div
-                  class="text-xs md:text-[14px] text-[#000] font-normal !leading-tight"
-                  style="color: {{ section.settings.text_color }};"
-                >
-                  {{ section.settings.product_bottom_label }}
+                  <div
+                    class="text-xs md:text-[14px] text-[#000] font-normal !leading-tight"
+                    style="color: {{ section.settings.text_color }};"
+                  >
+                    {{ section.settings.product_bottom_label }}
+                  </div>
                 </div>
-              </div>
-            {% endif %}
-            {% if section.settings.product_bottom_label2 != blank %}
-              <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
-                {% if section.settings.bottom_label_icon2 != blank %}
-                  {{
-                    section.settings.bottom_label_icon2
-                    | image_url: width: 24
-                    | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
-                  }}
-                {% endif %}
+              {% endif %}
+              {% if section.settings.product_bottom_label2 != blank %}
+                <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
+                  {% if section.settings.bottom_label_icon2 != blank %}
+                    {{
+                      section.settings.bottom_label_icon2
+                      | image_url: width: 24
+                      | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
+                    }}
+                  {% endif %}
 
-                <div
-                  class="text-xs md:text-[14px] text-[#000] font-normal !leading-tight"
-                  style="color: {{ section.settings.text_color }};"
-                >
-                  {{ section.settings.product_bottom_label2 }}
+                  <div
+                    class="text-xs md:text-[14px] text-[#000] font-normal !leading-tight"
+                    style="color: {{ section.settings.text_color }};"
+                  >
+                    {{ section.settings.product_bottom_label2 }}
+                  </div>
                 </div>
-              </div>
-            {% endif %}
-            {% if section.settings.product_bottom_label3 != blank %}
-              <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
-                {% if section.settings.bottom_label_icon3 != blank %}
-                  {{
-                    section.settings.bottom_label_icon3
-                    | image_url: width: 24
-                    | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
-                  }}
-                {% endif %}
+              {% endif %}
+              {% if section.settings.product_bottom_label3 != blank %}
+                <div class="flex items-center gap-2 mt-3 md:mt-4 relative w-fit mx-auto">
+                  {% if section.settings.bottom_label_icon3 != blank %}
+                    {{
+                      section.settings.bottom_label_icon3
+                      | image_url: width: 24
+                      | image_tag: class: 'w-full max-w-[20px] md:max-w-[24px]'
+                    }}
+                  {% endif %}
 
-                <div
-                  class="text-xs md:text-[14px] text-[#000] font-normal !leading-tight"
-                  style="color: {{ section.settings.text_color }};"
-                >
-                  {{ section.settings.product_bottom_label3 }}
+                  <div
+                    class="text-xs md:text-[14px] text-[#000] font-normal !leading-tight"
+                    style="color: {{ section.settings.text_color }};"
+                  >
+                    {{ section.settings.product_bottom_label3 }}
+                  </div>
                 </div>
-              </div>
-            {% endif %}
+              {% endif %}
+            </div>
           </div>
         </div>
       </div>
