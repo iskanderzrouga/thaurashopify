@@ -105,7 +105,7 @@
 
                             {% if block.settings.image1 != blank %}
                               <div
-                                class="grid md:grid-cols-{{ block.settings.img_column }} gap-3"
+                                class="grid {% if column_count > 1 %} grid-cols-2 {% endif %} md:grid-cols-{{ block.settings.img_column }} gap-3"
                                 {% if block.settings.set_img_max_width %}
                                   style="max-width: {{ block.settings.img_max_width }}px;"
                                 {% endif %}
