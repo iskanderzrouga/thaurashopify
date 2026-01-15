@@ -111,6 +111,14 @@
                                 {% endif %}
                               >
                                 <div class="flex flex-row-reverse md:flex-col gap-3">
+                                    {% if block.settings.text1 != blank %}
+                              <div
+                                class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
+                                style="color: {{ block.settings.description_color }};"
+                              >
+                                {{ block.settings.text1 }}
+                              </div>
+                            {% endif %}
                                     {{
                                   block.settings.image1
                                   | image_url: width: max_width
@@ -119,6 +127,14 @@
                             </div>
                                 {% if block.settings.image2 != blank %}
                                     <div class="flex flex-row-reverse md:flex-col gap-3">
+                                        {% if block.settings.text2 != blank %}
+                              <div
+                                class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
+                                style="color: {{ block.settings.description_color }};"
+                              >
+                                {{ block.settings.text2 }}
+                              </div>
+                            {% endif %}
                                   {{
                                     block.settings.image2
                                     | image_url: width: max_width
@@ -128,6 +144,14 @@
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
                                     <div class="flex flex-row-reverse md:flex-col gap-3">
+                                        {% if block.settings.text3 != blank %}
+                              <div
+                                class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
+                                style="color: {{ block.settings.description_color }};"
+                              >
+                                {{ block.settings.text3 }}
+                              </div>
+                            {% endif %}
                                   {{
                                     block.settings.image3
                                     | image_url: width: max_width
