@@ -680,6 +680,139 @@
             "image1": "shopify://shop_images/image_55604558_5.png",
             "image2": "shopify://shop_images/image_55604559_2.png"
           }
+        },
+        "row_BNHyxz": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "Your Cortisol Rhythm Is Flatter",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_G73YhE": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/Rectangle_240648596_3.png"
+          }
+        },
+        "row_ADwfJh": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>The Science:</strong> White men's cortisol drops at night. Black men's cortisol stays elevated—triggering late-night cravings, disrupted sleep, and stress-driven upper-body fat storage.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_BhqCNY": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": true,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/Group_2085661890.png"
+          }
+        },
+        "row_Pn4BmU": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "2",
+            "image1": "shopify://shop_images/image_55604558_6.png",
+            "image2": "shopify://shop_images/image_55604559_3.png"
+          }
+        },
+        "row_AyJgqF": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>What This Means:</strong> Your body thinks it's in survival mode 24/7. So it protects fat around your neck and chest. <br/><br/><strong>Why Other Supplements Fail: </strong>They don't address cortisol. So even if you're eating right, stress hormones keep fat locked.<br/><br/><strong>How Dryft™ Fixes It: </strong>Ashwagandha + L-Theanine + Saffron work synergistically to regulate cortisol, reduce stress-driven cravings, and signal your body the threat is over.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_wEGEKV": {
+          "type": "row",
+          "settings": {
+            "id": "diff4",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "3",
+            "image1": "shopify://shop_images/image_55604558_7.png",
+            "image2": "shopify://shop_images/image_55604559_4.png",
+            "image3": "shopify://shop_images/image_55604560_1.png"
+          }
         }
       },
       "block_order": [
@@ -705,7 +838,14 @@
         "row_PftFra",
         "row_ztCp6i",
         "row_GUkncY",
-        "row_9akpBj"
+        "row_9akpBj",
+        "row_BNHyxz",
+        "row_G73YhE",
+        "row_ADwfJh",
+        "row_BhqCNY",
+        "row_Pn4BmU",
+        "row_AyJgqF",
+        "row_wEGEKV"
       ],
       "name": "BN Study",
       "settings": {
