@@ -141,7 +141,7 @@
         "description_d_center": false,
         "description_color": "#ffffff",
         "image": "shopify://shop_images/image_55604080_2.png",
-        "border_radius": 0,
+        "border_radius": 16,
         "image_right": false,
         "button_label": "",
         "button_url": "",

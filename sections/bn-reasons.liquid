@@ -31,7 +31,7 @@
 
   <div class="mx-auto w-full relative" style="max-width: {{ section.settings.max_width }}px;">
     <div class="flex flex-col items-center justify-center gap-6 md:gap-12">
-        <div class="grid md:grid-cols-5 gap-5 md:gap-10">
+        <div class="grid md:grid-cols-5 gap-5 md:gap-10 md:items-center">
         {% assign max_width = section.settings.max_width |  divided_by: 2 %}
         {% assign max_width_px = max_width | append: 'px' %}
         {% if section.settings.image != blank %}
