@@ -110,24 +110,30 @@
                                   style="max-width: {{ block.settings.img_max_width }}px;"
                                 {% endif %}
                               >
-                                {{
+                                <div>
+                                    {{
                                   block.settings.image1
                                   | image_url: width: max_width
                                   | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                 }}
+                            </div>
                                 {% if block.settings.image2 != blank %}
+                                    <div>
                                   {{
                                     block.settings.image2
                                     | image_url: width: max_width
                                     | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                   }}
+                                </div>
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
+                                    <div>
                                   {{
                                     block.settings.image3
                                     | image_url: width: max_width
                                     | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                   }}
+                                </div>
                                 {% endif %}
                               </div>
                             {% endif %}
