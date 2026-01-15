@@ -110,7 +110,7 @@
                                   style="max-width: {{ block.settings.img_max_width }}px;"
                                 {% endif %}
                               >
-                                <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
+                                <div class="grid md:flex {% if block.settings.text3 != blank %} max-md:grid-cols-2 {% endif %} md:flex-col-reverse gap-3 md:justify-between">
                                   {{
                                     block.settings.image1
                                     | image_url: width: max_width
@@ -126,7 +126,7 @@
                                   {% endif %}
                                 </div>
                                 {% if block.settings.image2 != blank %}
-                                  <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
+                                  <div class="grid md:flex {% if block.settings.text3 != blank %} max-md:grid-cols-2 {% endif %} md:flex-col-reverse gap-3 md:justify-between">
                                     {{
                                       block.settings.image2
                                       | image_url: width: max_width
@@ -143,7 +143,7 @@
                                   </div>
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
-                                  <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
+                                  <div class="grid md:flex {% if block.settings.text3 != blank %} max-md:grid-cols-2 {% endif %} md:flex-col-reverse gap-3 md:justify-between">
                                     {{
                                       block.settings.image3
                                       | image_url: width: max_width
