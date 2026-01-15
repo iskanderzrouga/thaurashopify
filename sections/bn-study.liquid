@@ -110,7 +110,7 @@
                                   style="max-width: {{ block.settings.img_max_width }}px;"
                                 {% endif %}
                               >
-                                <div>
+                                <div class="flex flex-row-reverse md:flex-col gap-3">
                                     {{
                                   block.settings.image1
                                   | image_url: width: max_width
@@ -118,7 +118,7 @@
                                 }}
                             </div>
                                 {% if block.settings.image2 != blank %}
-                                    <div>
+                                    <div class="flex flex-row-reverse md:flex-col gap-3">
                                   {{
                                     block.settings.image2
                                     | image_url: width: max_width
@@ -127,7 +127,7 @@
                                 </div>
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
-                                    <div>
+                                    <div class="flex flex-row-reverse md:flex-col gap-3">
                                   {{
                                     block.settings.image3
                                     | image_url: width: max_width
