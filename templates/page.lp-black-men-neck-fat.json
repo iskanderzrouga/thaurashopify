@@ -391,7 +391,7 @@
             "heading_color": "#121212",
             "description": "<p><strong>The Science:</strong> Multiple studies show that Black men have less visceral fat (deep belly fat) and more subcutaneous fat at the same body weight as white men—especially in upper-body areas like the neck, chest, and shoulders.</p>",
             "description_m_center": false,
-            "description_d_center": true,
+            "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
             "set_img_max_width": false,
