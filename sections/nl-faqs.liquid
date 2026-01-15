@@ -75,7 +75,7 @@
 
                 {% if block.settings.description != blank %}
                   <div
-                    class="dropdown-content group-[.active]:block hidden text-[16px] md:text-[17px] font-normal !leading-[1.5] text-[#000] pb-4 px-4"
+                    class="dropdown-content group-[.active]:block hidden text-[16px] md:text-[17px] font-normal !leading-[1.5] text-[#000] pb-4 px-4 [&>ul]:list-disc [&>ul]:pl-5"
                     style="
                       color: {{section.settings.color_primary}}; {% if section.settings.dropdown_heading_bgcolor != blank %}
                         background-color: {{ section.settings.dropdown_content_bgcolor }};
