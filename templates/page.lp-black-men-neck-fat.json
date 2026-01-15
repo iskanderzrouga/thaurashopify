@@ -17,6 +17,112 @@
         "padding_bottom": 28
       }
     },
+    "bn_neck_issue_hkj67P": {
+      "type": "bn-neck-issue",
+      "blocks": {
+        "row_z9kpLz": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "Your Neck Fat Shows",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "Your Neck Fat Shows",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "<p><strong>The Reality: </strong><br/>White men's belly fat hides under shirts.<br/><br/>Your neck fat shows on your face. In every photo. In every Zoom call. In the mirror every morning.<br/><br/>You hold your phone high every time. Never straight on. Never from below.<br/>Because when you angle it down, you see it. The double chin. The triple chin. The rolls. The guy in the screen who doesn't look like the guy in your head.<br/><br/>So you grow your beard out—not because you want it that long, but because the thickness hides where your jawline used to be.<br/>You buy 17.5\" collars when you used to wear 15\". The old ones don't button anymore.<br/><br/>You avoid fitted shirts. Crew necks feel safer. Hoodies become your uniform.<br/><br/>You're not in family photos anymore. You're \"behind the camera.\"<br/><br/><strong>That's not style. That's survival.<br/><br/>Why Generic Supplements Fail:</strong><br/><br/>They target belly fat you can hide. Not neck fat everyone can see.<br/></p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/Frame_2607848.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        },
+        "row_weTme8": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "Your Neck Fat Chokes Your Sleep",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "Your Neck Fat Chokes Your Sleep",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "<p><strong>The Reality: </strong><br/>Neck fat doesn't just sit there. It presses on your airway when you lie down. <br/>You snore. You wake up gasping. You stop breathing multiple times per night without knowing it.<br/><br/>Your wife complains. You're exhausted all day. You're at higher risk for sleep apnea—and Black men experience worse sleep apnea at the same BMI as white men just like multiple studies like this one show<br/><strong><br/>Studies show neck circumference is a stronger predictor of sleep apnea than BMI.</strong><br/><br/>If your neck is over 17 inches, your risk skyrockets.<br/><br/><strong>Why Generic Supplements Fail:</strong><br/><br/>They don't address upper-body fat accumulation. So your airway stays compressed. Your sleep stays wrecked. And you keep seeking solution that are not made for you and your problem.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/image_55604556_3011257d-e2de-4841-a16f-800a6a2e8215.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        },
+        "row_8BWbBY": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "Your Neck Fat Is A Metabolic Warning Light",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "Your Neck Fat Is A Metabolic Warning Light",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "<p><strong>The Reality: </strong><br/>Neck fat isn't cosmetic. It's metabolically active.<br/>It's linked to:<br/><br/></p><ul><li>Insulin resistance (even when you're not overweight)</li><li>High blood pressure</li><li>Elevated triglycerides</li><li>Metabolic syndrome</li><li>Cardiovascular risk<br/><br/></li></ul><p><strong>Your neck is telling you something's wrong inside. Black Men? Studies show that we have significantly higher insulin resistance than white men. <br/><br/>Why Generic Supplements Fail:</strong><br/><br/>They treat fat loss as calories in/calories out. But your neck fat is hormonally locked by insulin resistance, elevated cortisol, and dormant thermogenesis.<br/><br/>You can diet forever. The fat won't move until you fix the signals.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "image": "shopify://shop_images/image_55604556_1.png",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "row_z9kpLz",
+        "row_weTme8",
+        "row_8BWbBY"
+      ],
+      "name": "BN Neck Issue",
+      "settings": {
+        "section_id": "",
+        "heading": "Your Neck Fat Has Three Problems Generic Supplements Ignore",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#00754a",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": true,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000",
+        "bgcolor": "#f4f4f6",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
     "bn_problems_89fxVJ": {
       "type": "bn-problems",
       "name": "BL Problem",
@@ -36,7 +142,7 @@
         "button_label": "",
         "button_url": "",
         "btn_bottom_text": "",
-        "btn_bottom_text_color": "#000",
+        "btn_bottom_text_color": "#000000",
         "bg": "shopify://shop_images/8ae611d342464e59c2490a858f165290efd96ca0.png",
         "bgcolor": "#ffffff",
         "max_width": 1200,
@@ -211,6 +317,7 @@
   },
   "order": [
     "main",
+    "bn_neck_issue_hkj67P",
     "bn_problems_89fxVJ",
     "bn_fail_reason_wLpnhE"
   ]
