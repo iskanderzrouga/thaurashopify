@@ -64,21 +64,14 @@
         <div class="w-full gap-[15px] md:gap-5">
           {% for block in section.blocks %}
             {% case block.type %}
-              {% when 'star_review' %}
-                <div class="flex items-center gap-3 {% if block.settings.center %} justify-center {% endif %}">
-                  {% if block.settings.image != blank %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 96
-                      | image_tag: class: 'w-full max-w-[80px] md:max-w-[96px]', sizes: '96px', preload: true
-                    }}
-                  {% endif %}
-                  {% if block.settings.description != blank %}
+              {% when 'item' %}
+                <div class="border border-[#AAAAAA] rounded-[12px]">
+                  {% if block.settings.label != blank %}
                     <div
-                      class="text-[12px] md:text-[16px] font-medium !leading-tight text-[#000000]"
-                      style="color: {{ block.settings.description_color }};"
+                      class="text-[20px] md:text-[24px] font-bold !leading-tight text-[#000] p-4 {% if block.settings.label_m_center %} max-md:text-center {% endif %} {% if block.settings.label_d_center %} md:text-center {% endif %}"
+                      style="color: {{ block.settings.label_color }};"
                     >
-                      {{ block.settings.description }}
+                      {{ block.settings.label }}
                     </div>
                   {% endif %}
                 </div>
