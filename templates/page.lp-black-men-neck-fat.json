@@ -359,7 +359,10 @@
             "description_color": "#121212",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_eVahHa": {
@@ -378,7 +381,10 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/Rectangle_240648596.png"
+            "text1": "",
+            "image1": "shopify://shop_images/Rectangle_240648596.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_W3WdK9": {
@@ -396,7 +402,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_yX8FHA": {
@@ -415,8 +424,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "3",
+            "text1": "",
             "image1": "shopify://shop_images/image_55604558.png",
+            "text2": "",
             "image2": "shopify://shop_images/image_55604559.png",
+            "text3": "",
             "image3": "shopify://shop_images/image_55604560.png"
           }
         },
@@ -435,7 +447,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_QA4Dyq": {
@@ -454,7 +469,10 @@
             "set_img_max_width": true,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/image_55604558_1.png"
+            "text1": "",
+            "image1": "shopify://shop_images/image_55604558_1.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_XDXiTx": {
@@ -472,7 +490,10 @@
             "description_color": "#121212",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_WH3Jwb": {
@@ -491,7 +512,10 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/Rectangle_240648596_1.png"
+            "text1": "",
+            "image1": "shopify://shop_images/Rectangle_240648596_1.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_DM3tk3": {
@@ -509,7 +533,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_wYmJGE": {
@@ -528,8 +555,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "2",
+            "text1": "",
             "image1": "shopify://shop_images/image_55604558_2.png",
-            "image2": "shopify://shop_images/image_55604559_1.png"
+            "text2": "",
+            "image2": "shopify://shop_images/image_55604559_1.png",
+            "text3": ""
           }
         },
         "row_aaEmDb": {
@@ -548,7 +578,10 @@
             "set_img_max_width": true,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/image_55604558_3.png"
+            "text1": "",
+            "image1": "shopify://shop_images/image_55604558_3.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_FiytC7": {
@@ -566,7 +599,10 @@
             "description_color": "#121212",
             "set_img_max_width": true,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_QqEG3i": {
@@ -584,7 +620,10 @@
             "description_color": "#121212",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_TALNKd": {
@@ -603,7 +642,10 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/Rectangle_240648596_2.png"
+            "text1": "",
+            "image1": "shopify://shop_images/Rectangle_240648596_2.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_PftFra": {
@@ -621,7 +663,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_ztCp6i": {
@@ -640,7 +685,10 @@
             "set_img_max_width": true,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/image_55604558_4.png"
+            "text1": "",
+            "image1": "shopify://shop_images/image_55604558_4.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_GUkncY": {
@@ -658,7 +706,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_9akpBj": {
@@ -677,8 +728,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "2",
+            "text1": "",
             "image1": "shopify://shop_images/image_55604558_5.png",
-            "image2": "shopify://shop_images/image_55604559_2.png"
+            "text2": "",
+            "image2": "shopify://shop_images/image_55604559_2.png",
+            "text3": ""
           }
         },
         "row_BNHyxz": {
@@ -696,7 +750,10 @@
             "description_color": "#121212",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_G73YhE": {
@@ -715,7 +772,10 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/Rectangle_240648596_3.png"
+            "text1": "",
+            "image1": "shopify://shop_images/Rectangle_240648596_3.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_ADwfJh": {
@@ -733,7 +793,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_BhqCNY": {
@@ -752,7 +815,10 @@
             "set_img_max_width": true,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/Group_2085661890.png"
+            "text1": "",
+            "image1": "shopify://shop_images/Group_2085661890.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_Pn4BmU": {
@@ -771,8 +837,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "2",
+            "text1": "",
             "image1": "shopify://shop_images/image_55604558_6.png",
-            "image2": "shopify://shop_images/image_55604559_3.png"
+            "text2": "",
+            "image2": "shopify://shop_images/image_55604559_3.png",
+            "text3": ""
           }
         },
         "row_AyJgqF": {
@@ -790,7 +859,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_wEGEKV": {
@@ -809,8 +881,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "3",
+            "text1": "",
             "image1": "shopify://shop_images/image_55604558_7.png",
+            "text2": "",
             "image2": "shopify://shop_images/image_55604559_4.png",
+            "text3": "",
             "image3": "shopify://shop_images/image_55604560_1.png"
           }
         },
@@ -829,7 +904,10 @@
             "description_color": "#121212",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_Jgzy87": {
@@ -848,7 +926,10 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "1",
-            "image1": "shopify://shop_images/Rectangle_240648596_4.png"
+            "text1": "",
+            "image1": "shopify://shop_images/Rectangle_240648596_4.png",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_VETQak": {
@@ -866,7 +947,10 @@
             "description_color": "#121212",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_79iFRt": {
@@ -885,8 +969,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "2",
+            "text1": "",
             "image1": "shopify://shop_images/image_55604558_8.png",
-            "image2": "shopify://shop_images/image_55604559_5.png"
+            "text2": "",
+            "image2": "shopify://shop_images/image_55604559_5.png",
+            "text3": ""
           }
         },
         "row_nQJLBB": {
@@ -904,7 +991,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         },
         "row_96GyxQ": {
@@ -923,8 +1013,11 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "3",
+            "text1": "<p>DIM supports healthy estrogen breakdown by shifting estrogen toward less active metabolic pathways.</p>",
             "image1": "shopify://shop_images/image_55604558_9.png",
+            "text2": "<p>Zinc supports normal aromatase activity and healthy hormone balance.</p>",
             "image2": "shopify://shop_images/image_55604558_10.png",
+            "text3": "<p>Boron supports overall steroid hormone metabolism and endocrine balance.</p>",
             "image3": "shopify://shop_images/image_55604558_11.png"
           }
         },
@@ -943,7 +1036,10 @@
             "description_color": "#000000",
             "set_img_max_width": false,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "text1": "",
+            "text2": "",
+            "text3": ""
           }
         }
       },
