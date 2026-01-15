@@ -106,7 +106,7 @@
                             <div class="flex flex-col gap-2 mt-5">
                                 {% for block in section.blocks %}
                                     {% case block.type %}
-                                        {% when 'row' %}
+                                        {% when 'feature' %}
                                             {%  unless block.settings.right %}
                                                 <div class="flex items-center gap-2">
                                                         {% if block.settings.image != blank %}
