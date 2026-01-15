@@ -456,6 +456,117 @@
             "img_column": "1",
             "image1": "shopify://shop_images/image_55604558_1.png"
           }
+        },
+        "row_XDXiTx": {
+          "type": "row",
+          "settings": {
+            "id": "diff2",
+            "heading": "Your Neck Fat Has A Heat Switch That's Turned Off",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_WH3Jwb": {
+          "type": "row",
+          "settings": {
+            "id": "diff2",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/Rectangle_240648596_1.png"
+          }
+        },
+        "row_DM3tk3": {
+          "type": "row",
+          "settings": {
+            "id": "diff2",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>The Science: </strong>Human neck fat contains beige adipose tissue—fat cells capable of burning calories and generating heat. In many black men over 35, this thermogenic system turns off.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_wYmJGE": {
+          "type": "row",
+          "settings": {
+            "id": "diff2",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "2",
+            "image1": "shopify://shop_images/image_55604558_2.png",
+            "image2": "shopify://shop_images/image_55604559_1.png"
+          }
+        },
+        "row_aaEmDb": {
+          "type": "row",
+          "settings": {
+            "id": "diff2",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>What This Means: </strong>Your neck fat stopped burning and started storing. That's why it gets thicker even when you're eating clean. <br/><br/><strong>Why Other Supplements Fail: </strong>Most fat burners just add caffeine or suppress appetite. They don't reactivate dormant beige fat. Your heat switch stays off.<br/><br/><strong>How Dryft™ Fixes It:</strong> Grains of Paradise (6-paradol) has been shown in human studies to activate brown/beige adipose tissue and increase energy expenditure—literally turning your heat-burning system back on.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_FiytC7": {
+          "type": "row",
+          "settings": {
+            "id": "diff2",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": true,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
         }
       },
       "block_order": [
@@ -469,7 +580,13 @@
         "row_W3WdK9",
         "row_yX8FHA",
         "row_kQcnf7",
-        "row_QA4Dyq"
+        "row_QA4Dyq",
+        "row_XDXiTx",
+        "row_WH3Jwb",
+        "row_DM3tk3",
+        "row_wYmJGE",
+        "row_aaEmDb",
+        "row_FiytC7"
       ],
       "name": "BN Study",
       "settings": {
