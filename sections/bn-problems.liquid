@@ -30,8 +30,11 @@
   {% endif %}
 
   <div class="mx-auto w-full relative" style="max-width: {{ section.settings.max_width }}px;">
-    <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-6 md:gap-12 px-5 md:px-10 py-6 md:py-10">
-      {% assign max_width = section.settings.max_width |  divided_by: 2 %}
+    <div
+      class="flex flex-col-reverse md:grid md:grid-cols-2 gap-6 md:gap-12 px-5 md:px-10 py-6 md:py-10"
+      style="box-shadow: 0px 4px 7px -4px #0000001A;"
+    >
+      {% assign max_width = section.settings.max_width | divided_by: 2 %}
       {% assign max_width_px = max_width | append: 'px' %}
       {% if section.settings.image != blank %}
         {{
@@ -41,131 +44,131 @@
         }}
       {% endif %}
 
-      <div class="">
+      <div class="flex flex-col gap-4 md:gap-5">
         {% if section.settings.heading != blank %}
-        <h2
-          class="text-[26px] md:text-[40px] font-bold !leading-tight text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
-          style="color: {{ section.settings.heading_color }};"
-        >
-          {{ section.settings.heading }}
-        </h2>
-      {% endif %}
-
-      {% if section.settings.description != blank %}
-        <div
-          class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if section.settings.description_d_center %} md:text-center {% endif %}"
-          style="color: {{ section.settings.description_color }};"
-        >
-          {{ section.settings.description }}
-        </div>
-      {% endif %}
-
-      {% if section.blocks.size > 0 %}
-        <div class="w-full gap-[15px] md:gap-5">
-          {% for block in section.blocks %}
-            {% case block.type %}
-              {% when 'star_review' %}
-                <div class="flex items-center gap-3 {% if block.settings.center %} justify-center {% endif %}">
-                  {% if block.settings.image != blank %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 96
-                      | image_tag: class: 'w-full max-w-[80px] md:max-w-[96px]', sizes: '96px', preload: true
-                    }}
-                  {% endif %}
-                  {% if block.settings.description != blank %}
-                    <div
-                      class="text-[12px] md:text-[16px] font-medium !leading-tight text-[#000000]"
-                      style="color: {{ block.settings.description_color }};"
-                    >
-                      {{ block.settings.description }}
-                    </div>
-                  {% endif %}
-                </div>
-
-              {% when 'row' %}
-                <div class="flex flex-col items-center justify-center gap-[15px] md:gap-5 w-full">
-                  {% if block.settings.label != blank %}
-                    <div
-                      class="text-[17px] md:text-[20px] font-bold !leading-tight text-[#000]  {% if block.settings.label_m_center %} max-md:text-center {% endif %} {% if block.settings.label_d_center %} md:text-center {% endif %}"
-                      style="color: {{ block.settings.label_color }};"
-                    >
-                      {{ block.settings.label }}
-                    </div>
-                  {% endif %}
-                  {% if block.settings.heading != blank %}
-                    <div
-                      class="text-[17px] md:text-[20px] font-bold !leading-tight text-[#000]  {% if block.settings.heading_m_center %} max-md:text-center {% endif %} {% if block.settings.heading_d_center %} md:text-center {% endif %}"
-                      style="color: {{ block.settings.heading_color }};"
-                    >
-                      {{ block.settings.heading }}
-                    </div>
-                  {% endif %}
-
-                  {% if block.settings.description != blank %}
-                    <div
-                      class="{% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[17px] md:text-[20px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
-                      style="color: {{ block.settings.description_color }};"
-                    >
-                      {{ block.settings.description }}
-                    </div>
-                  {% endif %}
-
-                  {% if block.settings.image != blank %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 500
-                      | image_tag:
-                        class: 'w-full rounded-[20px] border-[2px] border-solid border-[#7A5EC5]',
-                        sizes: '500px'
-                    }}
-                  {% endif %}
-
-                  {% if block.settings.button_label != blank %}
-                    <div class="w-full md:w-fit mx-auto">
-                      <a
-                        href="{{ block.settings.button_url }}"
-                        class="new-button--primary"
-                      >
-                        {{ block.settings.button_label }}
-                        {%- render 'icon-arrow-right' -%}
-                      </a>
-                      {% if block.settings.btn_bottom_text != blank %}
-                        <div
-                          class="text-[14px] md:text-[16px] font-normal !leading-tight text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
-                          style="color: {{ block.settings.btn_bottom_text_color }};"
-                        >
-                          {{ block.settings.btn_bottom_text }}
-                        </div>
-                      {% endif %}
-                    </div>
-                  {% endif %}
-                </div>
-            {% endcase %}
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      {% if section.settings.button_label != blank %}
-        <div class="w-full md:w-fit mx-auto">
-          <a
-            href="{{ section.settings.button_url }}"
-            class="new-button--primary"
+          <h2
+            class="text-[26px] md:text-[40px] font-bold !leading-tight text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
+            style="color: {{ section.settings.heading_color }};"
           >
-            {{ section.settings.button_label }}
-            {%- render 'icon-arrow-right' -%}
-          </a>
-          {% if section.settings.btn_bottom_text != blank %}
-            <div
-              class="text-[14px] md:text-[16px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
-              style="color: {{ section.settings.btn_bottom_text_color }};"
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div
+            class="text-[17px] md:text-[20px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if section.settings.description_d_center %} md:text-center {% endif %}"
+            style="color: {{ section.settings.description_color }};"
+          >
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+
+        {% if section.blocks.size > 0 %}
+          <div class="w-full gap-[15px] md:gap-5">
+            {% for block in section.blocks %}
+              {% case block.type %}
+                {% when 'star_review' %}
+                  <div class="flex items-center gap-3 {% if block.settings.center %} justify-center {% endif %}">
+                    {% if block.settings.image != blank %}
+                      {{
+                        block.settings.image
+                        | image_url: width: 96
+                        | image_tag: class: 'w-full max-w-[80px] md:max-w-[96px]', sizes: '96px', preload: true
+                      }}
+                    {% endif %}
+                    {% if block.settings.description != blank %}
+                      <div
+                        class="text-[12px] md:text-[16px] font-medium !leading-tight text-[#000000]"
+                        style="color: {{ block.settings.description_color }};"
+                      >
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+                  </div>
+
+                {% when 'row' %}
+                  <div class="flex flex-col items-center justify-center gap-[15px] md:gap-5 w-full">
+                    {% if block.settings.label != blank %}
+                      <div
+                        class="text-[17px] md:text-[20px] font-bold !leading-tight text-[#000]  {% if block.settings.label_m_center %} max-md:text-center {% endif %} {% if block.settings.label_d_center %} md:text-center {% endif %}"
+                        style="color: {{ block.settings.label_color }};"
+                      >
+                        {{ block.settings.label }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.heading != blank %}
+                      <div
+                        class="text-[17px] md:text-[20px] font-bold !leading-tight text-[#000]  {% if block.settings.heading_m_center %} max-md:text-center {% endif %} {% if block.settings.heading_d_center %} md:text-center {% endif %}"
+                        style="color: {{ block.settings.heading_color }};"
+                      >
+                        {{ block.settings.heading }}
+                      </div>
+                    {% endif %}
+
+                    {% if block.settings.description != blank %}
+                      <div
+                        class="{% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[17px] md:text-[20px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                        style="color: {{ block.settings.description_color }};"
+                      >
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+
+                    {% if block.settings.image != blank %}
+                      {{
+                        block.settings.image
+                        | image_url: width: 500
+                        | image_tag:
+                          class: 'w-full rounded-[20px] border-[2px] border-solid border-[#7A5EC5]',
+                          sizes: '500px'
+                      }}
+                    {% endif %}
+
+                    {% if block.settings.button_label != blank %}
+                      <div class="w-full md:w-fit mx-auto">
+                        <a
+                          href="{{ block.settings.button_url }}"
+                          class="new-button--primary"
+                        >
+                          {{ block.settings.button_label }}
+                          {%- render 'icon-arrow-right' -%}
+                        </a>
+                        {% if block.settings.btn_bottom_text != blank %}
+                          <div
+                            class="text-[14px] md:text-[16px] font-normal !leading-tight text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                            style="color: {{ block.settings.btn_bottom_text_color }};"
+                          >
+                            {{ block.settings.btn_bottom_text }}
+                          </div>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+              {% endcase %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if section.settings.button_label != blank %}
+          <div class="w-full md:w-fit mx-auto">
+            <a
+              href="{{ section.settings.button_url }}"
+              class="new-button--primary"
             >
-              {{ section.settings.btn_bottom_text }}
-            </div>
-          {% endif %}
-        </div>
-      {% endif %}
-        </div>
+              {{ section.settings.button_label }}
+              {%- render 'icon-arrow-right' -%}
+            </a>
+            {% if section.settings.btn_bottom_text != blank %}
+              <div
+                class="text-[14px] md:text-[16px] font-normal !leading-tight text-[#000] {% if section.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                style="color: {{ section.settings.btn_bottom_text_color }};"
+              >
+                {{ section.settings.btn_bottom_text }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
