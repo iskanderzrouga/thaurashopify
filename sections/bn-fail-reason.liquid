@@ -33,7 +33,7 @@
     <div class="flex flex-col items-center justify-center gap-6 md:gap-12">
       {% if section.settings.heading != blank %}
         <h2
-          class="text-[26px] md:text-[40px] font-bold !leading-tight text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
+          class="text-[28px] md:text-[36px] font-bold !leading-tight text-[#000] {% if section.settings.heading_m_center %} max-md:text-center {% endif %} {% if section.settings.heading_d_center %} md:text-center {% endif %}"
           style="color: {{ section.settings.heading_color }};"
         >
           {{ section.settings.heading }}
@@ -83,50 +83,48 @@
             {% endif %}
 
             <div class="border-[2px] border-[#084C25] rounded-[12px] p-4 md:p-5 flex flex-col gap-4 md:gap-5 bg-[#EEF2D4]">
-                {% if section.settings.text3 != blank %}
-              <div
-                class="text-[16px] md:text-[16px] font-normal !leading-tight text-[#000] max-md:text-center"
-                style="color: {{ section.settings.text_color }};"
-              >
-                {{ section.settings.text3 }}
-              </div>
-            {% endif %}
+              {% if section.settings.text3 != blank %}
+                <div
+                  class="text-[16px] md:text-[16px] font-normal !leading-tight text-[#000] max-md:text-center"
+                  style="color: {{ section.settings.text_color }};"
+                >
+                  {{ section.settings.text3 }}
+                </div>
+              {% endif %}
 
               <div class="flex flex-col gap-2">
                 {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'row' %}
-                    <div class="flex items-center gap-2">
+                  {% case block.type %}
+                    {% when 'row' %}
+                      <div class="flex items-center gap-2">
                         {% if block.settings.image != blank %}
-                        {{
-                          block.settings.image
-                          | image_url: width: 24
-                          | image_tag:
-                            class: 'w-full max-w-[24px]',
-                            sizes: '24px'
-                        }}
-                      {% endif %}
-                      {% if block.settings.description != blank %}
-                        <div
-                          class="{% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[16px] md:text-[16px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
-                          style="color: {{ block.settings.description_color }};"
-                        >
-                          {{ block.settings.description }}
-                        </div>
-                      {% endif %}
-                    </div>
-                {% endcase %}
-              {% endfor %}
+                          {{
+                            block.settings.image
+                            | image_url: width: 24
+                            | image_tag: class: 'w-full max-w-[24px]', sizes: '24px'
+                          }}
+                        {% endif %}
+                        {% if block.settings.description != blank %}
+                          <div
+                            class="{% if block.settings.small_description %} text-[12px] md:text-[14px] {% else %} text-[16px] md:text-[16px] {% endif %} font-normal !leading-[1.5] text-[#000] {% if block.settings.description_m_center %} max-md:text-center {% endif %} {% if block.settings.description_d_center %} md:text-center {% endif %}"
+                            style="color: {{ block.settings.description_color }};"
+                          >
+                            {{ block.settings.description }}
+                          </div>
+                        {% endif %}
+                      </div>
+                  {% endcase %}
+                {% endfor %}
               </div>
 
               {% if section.settings.text4 != blank %}
-              <div
-                class="text-[16px] md:text-[16px] font-normal !leading-tight text-[#000] max-md:text-center"
-                style="color: {{ section.settings.text_color }};"
-              >
-                {{ section.settings.text4 }}
-              </div>
-            {% endif %}
+                <div
+                  class="text-[16px] md:text-[16px] font-normal !leading-tight text-[#000] max-md:text-center"
+                  style="color: {{ section.settings.text_color }};"
+                >
+                  {{ section.settings.text4 }}
+                </div>
+              {% endif %}
             </div>
           </div>
         </div>
