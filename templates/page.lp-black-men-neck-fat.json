@@ -190,6 +190,67 @@
         "padding_bottom_m": 24
       }
     },
+    "nl_step_image_text_NDcNFi": {
+      "type": "nl-step-image-text",
+      "blocks": {
+        "row_wh3njK": {
+          "type": "row",
+          "settings": {
+            "heading": "\"Do You Use The Same Hair Products As A White Guy?\"",
+            "image": "shopify:\/\/shop_images\/image_55604106_f5752f15-8da8-4622-8e90-2b9880cc3f18.png",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Group_2085661779.png",
+            "text": "<p>Of course not.<br\/><br\/>You walk into the hair care aisle. You know exactly where to go.<br\/><br\/>You don't grab the same products white men use. Why? Because your hair is completely different. Different texture. Different needs. Different structure.<br\/><br\/>You need different products. That's just common sense.<\/p>"
+          }
+        },
+        "row_yzr7d3": {
+          "type": "row",
+          "settings": {
+            "heading": "What about lotion?",
+            "image": "shopify:\/\/shop_images\/image_55604103_30b9026a-849d-4261-9787-c04d3dfad5c0.png",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Group_2085661776.png",
+            "text": "<p>If you've got Black skin, you know you can't just use any random moisturizer.<br\/><br\/>Why? Because your skin is different. It loses water faster. You might deal with hyperpigmentation or dark spots that need specific ingredients like vitamin C or retinoids.<br\/>You need different or more lotion than white men. <br\/>Different formulas. Different ingredients.<br\/><br\/>Again - nobody questions this. It's obvious.<\/p>"
+          }
+        },
+        "row_gWfYkj": {
+          "type": "row",
+          "settings": {
+            "heading": "So Why The Hell Are You Taking The Same Fat-Loss Supplement As White Men?",
+            "image": "shopify:\/\/shop_images\/image_55604101_5e93e486-1c43-4803-9b07-20f108ddea28.png",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Group_2085661778.png",
+            "text": "<p>Think about it.<br\/><br\/>Your hair is different. So you use different hair products.<br\/><br\/>Your skin is different. So you use different lotion.<br\/><br\/>Your body stores fat differently too.<br\/><br\/>White men store more fat deep in their lower body—belly, love handles, hips.<br\/><br\/>You store fat visible in your upper body—neck, chest, shoulders.<br\/><br\/>Different location. Different type. Different biology.<br\/><br\/>So why are you using the exact same supplement formula as white men?<\/p>"
+          }
+        },
+        "row_Nh8wNp": {
+          "type": "row",
+          "settings": {
+            "heading": "Here's The Dirty Secret The Supplement Industry Doesn't Want You To Know:",
+            "image": "shopify:\/\/shop_images\/image_55604099_cbe21584-832f-4778-8cb8-8b6bc792fc71.png",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Group_2085661777.png",
+            "text": "<p>Black Men store more fat in the upper body. Visible. Under the skin specially in the neck like multiple studies like this one show:<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_wh3njK",
+        "row_yzr7d3",
+        "row_gWfYkj",
+        "row_Nh8wNp"
+      ],
+      "name": "NL Step Image Text",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "product_bottom_label": ""
+      }
+    },
     "bn_reasons_fDrVCQ": {
       "type": "bn-reasons",
       "blocks": {
@@ -1440,67 +1501,6 @@
         "padding_bottom": 72,
         "padding_top_m": 36,
         "padding_bottom_m": 36
-      }
-    },
-    "nl_step_image_text_NDcNFi": {
-      "type": "nl-step-image-text",
-      "blocks": {
-        "row_wh3njK": {
-          "type": "row",
-          "settings": {
-            "heading": "\"Do You Use The Same Hair Products As A White Guy?\"",
-            "image": "shopify:\/\/shop_images\/image_55604106_f5752f15-8da8-4622-8e90-2b9880cc3f18.png",
-            "image_position": "left",
-            "icon": "shopify:\/\/shop_images\/Group_2085661779.png",
-            "text": "<p>Of course not.<br\/><br\/>You walk into the hair care aisle. You know exactly where to go.<br\/><br\/>You don't grab the same products white men use. Why? Because your hair is completely different. Different texture. Different needs. Different structure.<br\/><br\/>You need different products. That's just common sense.<\/p>"
-          }
-        },
-        "row_yzr7d3": {
-          "type": "row",
-          "settings": {
-            "heading": "What about lotion?",
-            "image": "shopify:\/\/shop_images\/image_55604103_30b9026a-849d-4261-9787-c04d3dfad5c0.png",
-            "image_position": "right",
-            "icon": "shopify:\/\/shop_images\/Group_2085661776.png",
-            "text": "<p>If you've got Black skin, you know you can't just use any random moisturizer.<br\/><br\/>Why? Because your skin is different. It loses water faster. You might deal with hyperpigmentation or dark spots that need specific ingredients like vitamin C or retinoids.<br\/>You need different or more lotion than white men. <br\/>Different formulas. Different ingredients.<br\/><br\/>Again - nobody questions this. It's obvious.<\/p>"
-          }
-        },
-        "row_gWfYkj": {
-          "type": "row",
-          "settings": {
-            "heading": "So Why The Hell Are You Taking The Same Fat-Loss Supplement As White Men?",
-            "image": "shopify:\/\/shop_images\/image_55604101_5e93e486-1c43-4803-9b07-20f108ddea28.png",
-            "image_position": "left",
-            "icon": "shopify:\/\/shop_images\/Group_2085661778.png",
-            "text": "<p>Think about it.<br\/><br\/>Your hair is different. So you use different hair products.<br\/><br\/>Your skin is different. So you use different lotion.<br\/><br\/>Your body stores fat differently too.<br\/><br\/>White men store more fat deep in their lower body—belly, love handles, hips.<br\/><br\/>You store fat visible in your upper body—neck, chest, shoulders.<br\/><br\/>Different location. Different type. Different biology.<br\/><br\/>So why are you using the exact same supplement formula as white men?<\/p>"
-          }
-        },
-        "row_Nh8wNp": {
-          "type": "row",
-          "settings": {
-            "heading": "Here's The Dirty Secret The Supplement Industry Doesn't Want You To Know:",
-            "image": "shopify:\/\/shop_images\/image_55604099_cbe21584-832f-4778-8cb8-8b6bc792fc71.png",
-            "image_position": "right",
-            "icon": "shopify:\/\/shop_images\/Group_2085661777.png",
-            "text": "<p>Black Men store more fat in the upper body. Visible. Under the skin specially in the neck like multiple studies like this one show:<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "row_wh3njK",
-        "row_yzr7d3",
-        "row_gWfYkj",
-        "row_Nh8wNp"
-      ],
-      "name": "NL Step Image Text",
-      "settings": {
-        "heading": "",
-        "description": "",
-        "button_label": "",
-        "button_url": "",
-        "cart_button": false,
-        "product": "",
-        "product_bottom_label": ""
       }
     },
     "bm_unique_hFbdVm": {
@@ -3332,12 +3332,12 @@
     "nl_thin_icon_text_jEL6P9",
     "nl_main_banner_JYhfH3",
     "nl_logos_PkLwVA",
+    "nl_step_image_text_NDcNFi",
     "bn_reasons_fDrVCQ",
     "bn_neck_issue_hkj67P",
     "bn_problems_89fxVJ",
     "bn_study_W8cMRT",
     "bn_fail_reason_wLpnhE",
-    "nl_step_image_text_NDcNFi",
     "bm_unique_hFbdVm",
     "bl_tab_card_AWqUBd",
     "bl_img_text_M6T9ff",
