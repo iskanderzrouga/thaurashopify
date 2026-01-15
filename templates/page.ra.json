@@ -190,6 +190,67 @@
         "padding_bottom_m": 24
       }
     },
+    "nl_step_image_text_NDcNFi": {
+      "type": "nl-step-image-text",
+      "blocks": {
+        "row_wh3njK": {
+          "type": "row",
+          "settings": {
+            "heading": "\"Do You Use The Same Hair Products As A White Guy?\"",
+            "image": "shopify:\/\/shop_images\/image_55604106_f5752f15-8da8-4622-8e90-2b9880cc3f18.png",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Group_2085661779.png",
+            "text": "<p>Of course not.<br\/><br\/>You walk into the hair care aisle. You know exactly where to go.<br\/><br\/>You don't grab the same products white men use. Why? Because your hair is completely different. Different texture. Different needs. Different structure.<br\/><br\/>You need different products. That's just common sense.<\/p>"
+          }
+        },
+        "row_yzr7d3": {
+          "type": "row",
+          "settings": {
+            "heading": "What about lotion?",
+            "image": "shopify:\/\/shop_images\/image_55604103_30b9026a-849d-4261-9787-c04d3dfad5c0.png",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Group_2085661776.png",
+            "text": "<p>If you've got Black skin, you know you can't just use any random moisturizer.<br\/><br\/>Why? Because your skin is different. It loses water faster. You might deal with hyperpigmentation or dark spots that need specific ingredients like vitamin C or retinoids.<br\/>You need different or more lotion than white men. <br\/>Different formulas. Different ingredients.<br\/><br\/>Again - nobody questions this. It's obvious.<\/p>"
+          }
+        },
+        "row_gWfYkj": {
+          "type": "row",
+          "settings": {
+            "heading": "So Why The Hell Are You Taking The Same Fat-Loss Supplement As White Men?",
+            "image": "shopify:\/\/shop_images\/image_55604101_5e93e486-1c43-4803-9b07-20f108ddea28.png",
+            "image_position": "left",
+            "icon": "shopify:\/\/shop_images\/Group_2085661778.png",
+            "text": "<p>Think about it.<br\/><br\/>Your hair is different. So you use different hair products.<br\/><br\/>Your skin is different. So you use different lotion.<br\/><br\/>Your body stores fat differently too.<br\/><br\/>White men store more fat deep in their lower body—belly, love handles, hips.<br\/><br\/>You store fat visible in your upper body—neck, chest, shoulders.<br\/><br\/>Different location. Different type. Different biology.<br\/><br\/>So why are you using the exact same supplement formula as white men?<\/p>"
+          }
+        },
+        "row_Nh8wNp": {
+          "type": "row",
+          "settings": {
+            "heading": "Here's The Dirty Secret The Supplement Industry Doesn't Want You To Know:",
+            "image": "shopify:\/\/shop_images\/image_55604099_cbe21584-832f-4778-8cb8-8b6bc792fc71.png",
+            "image_position": "right",
+            "icon": "shopify:\/\/shop_images\/Group_2085661777.png",
+            "text": "<p>Black Men store more fat in the upper body. Visible. Under the skin specially in the neck like multiple studies like this one show:<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_wh3njK",
+        "row_yzr7d3",
+        "row_gWfYkj",
+        "row_Nh8wNp"
+      ],
+      "name": "NL Step Image Text",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "button_label": "",
+        "button_url": "",
+        "cart_button": false,
+        "product": "",
+        "product_bottom_label": ""
+      }
+    },
     "bn_reasons_fDrVCQ": {
       "type": "bn-reasons",
       "blocks": {
@@ -1442,67 +1503,6 @@
         "padding_bottom_m": 36
       }
     },
-    "nl_step_image_text_NDcNFi": {
-      "type": "nl-step-image-text",
-      "blocks": {
-        "row_wh3njK": {
-          "type": "row",
-          "settings": {
-            "heading": "\"Do You Use The Same Hair Products As A White Guy?\"",
-            "image": "shopify:\/\/shop_images\/image_55604106_f5752f15-8da8-4622-8e90-2b9880cc3f18.png",
-            "image_position": "left",
-            "icon": "shopify:\/\/shop_images\/Group_2085661779.png",
-            "text": "<p>Of course not.<br\/><br\/>You walk into the hair care aisle. You know exactly where to go.<br\/><br\/>You don't grab the same products white men use. Why? Because your hair is completely different. Different texture. Different needs. Different structure.<br\/><br\/>You need different products. That's just common sense.<\/p>"
-          }
-        },
-        "row_yzr7d3": {
-          "type": "row",
-          "settings": {
-            "heading": "What about lotion?",
-            "image": "shopify:\/\/shop_images\/image_55604103_30b9026a-849d-4261-9787-c04d3dfad5c0.png",
-            "image_position": "right",
-            "icon": "shopify:\/\/shop_images\/Group_2085661776.png",
-            "text": "<p>If you've got Black skin, you know you can't just use any random moisturizer.<br\/><br\/>Why? Because your skin is different. It loses water faster. You might deal with hyperpigmentation or dark spots that need specific ingredients like vitamin C or retinoids.<br\/>You need different or more lotion than white men. <br\/>Different formulas. Different ingredients.<br\/><br\/>Again - nobody questions this. It's obvious.<\/p>"
-          }
-        },
-        "row_gWfYkj": {
-          "type": "row",
-          "settings": {
-            "heading": "So Why The Hell Are You Taking The Same Fat-Loss Supplement As White Men?",
-            "image": "shopify:\/\/shop_images\/image_55604101_5e93e486-1c43-4803-9b07-20f108ddea28.png",
-            "image_position": "left",
-            "icon": "shopify:\/\/shop_images\/Group_2085661778.png",
-            "text": "<p>Think about it.<br\/><br\/>Your hair is different. So you use different hair products.<br\/><br\/>Your skin is different. So you use different lotion.<br\/><br\/>Your body stores fat differently too.<br\/><br\/>White men store more fat deep in their lower body—belly, love handles, hips.<br\/><br\/>You store fat visible in your upper body—neck, chest, shoulders.<br\/><br\/>Different location. Different type. Different biology.<br\/><br\/>So why are you using the exact same supplement formula as white men?<\/p>"
-          }
-        },
-        "row_Nh8wNp": {
-          "type": "row",
-          "settings": {
-            "heading": "Here's The Dirty Secret The Supplement Industry Doesn't Want You To Know:",
-            "image": "shopify:\/\/shop_images\/image_55604099_cbe21584-832f-4778-8cb8-8b6bc792fc71.png",
-            "image_position": "right",
-            "icon": "shopify:\/\/shop_images\/Group_2085661777.png",
-            "text": "<p>Black Men store more fat in the upper body. Visible. Under the skin specially in the neck like multiple studies like this one show:<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "row_wh3njK",
-        "row_yzr7d3",
-        "row_gWfYkj",
-        "row_Nh8wNp"
-      ],
-      "name": "NL Step Image Text",
-      "settings": {
-        "heading": "",
-        "description": "",
-        "button_label": "",
-        "button_url": "",
-        "cart_button": false,
-        "product": "",
-        "product_bottom_label": ""
-      }
-    },
     "bm_unique_hFbdVm": {
       "type": "bm-unique",
       "blocks": {
@@ -1754,6 +1754,7 @@
         "s2_feature_zgLqzp",
         "s2_contents_YWHKLy"
       ],
+      "disabled": true,
       "name": "BM Unique",
       "settings": {
         "bg": "shopify:\/\/shop_images\/Frame_2147224670.png",
@@ -1951,6 +1952,7 @@
         "row_7DYgTm",
         "row_WzYHcM"
       ],
+      "disabled": true,
       "name": "BL Tab Card",
       "settings": {
         "section_id": "",
@@ -3167,7 +3169,7 @@
           "settings": {
             "label": "",
             "heading": "Why haven't I heard about these differences before?",
-            "description": "<p>Because the supplement industry doesn't want to invest in race-specific research. It's easier and cheaper to make one formula and sell it to everyone.<br\/><br\/>But the scientific research is clear: Black men and white men have significantly different metabolic and hormonal profiles. Ignoring those differences is why generic supplements fail.<\/p>"
+            "description": "<p><strong>Because it's not profitable to talk about.<\/strong><br\/>Most supplement companies want to sell one formula to everyone. It's cheaper. It's easier.<br\/>But biology doesn't work that way.<br\/><br\/>The research is clear:<br\/><br\/><\/p><ul><li>Black men store more subcutaneous fat in upper body<\/li><li>Black men have higher insulin resistance<\/li><li>Black men have flatter cortisol rhythms<\/li><li>Black men have higher estrogen levels<\/li><\/ul><p><br\/><br\/>These are peer-reviewed, published studies. Not marketing claims.<\/p>"
           }
         },
         "row_8WDhRd": {
@@ -3175,7 +3177,7 @@
           "settings": {
             "label": "",
             "heading": "Will this work if I'm not working out?",
-            "description": "<p><strong>Fair question.<\/strong> You've been burned before.<br\/><br\/>Here's why Dryft™ is different:<\/p><p><strong>1. The science is real.<\/strong> Every metabolic difference we mention is backed by peer-reviewed research.<\/p><p><strong>2. The ingredients are clinically-dosed.<\/strong> We don't use \"fairy dust\" amounts.<\/p><p><strong>3. Thousands of Black men are already seeing results<\/strong> (check the reviews).<\/p><p><strong>4. You're protected by our 90-day guarantee.<\/strong> If it doesn't work, you get every penny back.<\/p><p><br\/>You have nothing to lose and everything to gain.<\/p>"
+            "description": "<p><strong>Yes.<\/strong><br\/>Dryft™ reactivates your dormant neck fat heat-burning system and fixes insulin resistance—not by forcing you to burn more calories through exercise, but by fixing your metabolism at the cellular level.<br\/><br\/>That said, men who add basic movement (even just walking) see faster results.<\/p>"
           }
         },
         "row_rKpQYd": {
@@ -3183,7 +3185,7 @@
           "settings": {
             "label": "",
             "heading": "How do I measure my neck?",
-            "description": "<p>Yes - but results will be slower.<br\/><br\/>Dryft™ fixes the metabolic issues that make fat loss hard for Black men. It will work even if you're not exercising.<strong><br\/><br\/>However,<\/strong> adding even basic activity (walking, light workouts) will accelerate results significantly.<\/p>"
+            "description": "<p><strong>Use a fabric measuring tape.<\/strong><br\/>1. Stand in front of a mirror<br\/>2. Wrap tape around the middle of your neck (below your Adam's apple, above your collarbone)<br\/>3. Keep tape snug but not tight<br\/>4. Record measurement<br\/>5. Measure same spot every 2 weeks\u2028<br\/><br\/><strong>Target for most men: Under 16.5 inches<\/strong><br\/><br\/>Above 17 inches = higher sleep apnea and metabolic risk<\/p>"
           }
         },
         "row_gL8dwQ": {
@@ -3191,7 +3193,7 @@
           "settings": {
             "label": "",
             "heading": "How long until I see results?",
-            "description": "<p><strong>Week 1-2:<\/strong> Better sleep, more energy, fewer cravings<br\/> <strong>Week 4-6:<\/strong> Visible fat loss, clothes fitting looser<br\/> <strong>Week 8-12:<\/strong> Major transformation - flat chest, 15-25 lbs down<br\/><br\/>Most men see noticeable changes by week 4. Full transformation by week 12.<\/p>"
+            "description": "<p><strong>Week 1<\/strong>: Better sleep, reduced cravings, less bloating\u2028<br\/><strong>Week 2-3<\/strong>: Face less puffy, neck feels looser, collars fit better\u2028<br\/><strong>Week 4-6<\/strong>: Neck measurement down 1\/2 to 3\/4 inch, jawline visible\u2028<br\/><strong>Week 8-12<\/strong>: Neck down 1+ inch, sleep improved, energy stable<br\/><br\/>Most men see visible neck changes by week 4.<br\/><br\/>Measurable results by week 6.<br\/><br\/>Full transformation by week 12.<\/p>"
           }
         },
         "row_kVNfHR": {
@@ -3199,7 +3201,7 @@
           "settings": {
             "label": "",
             "heading": "Is it safe?",
-            "description": "<p>Yes. Dryft™ contains:<br\/><br\/><\/p><ul><li>✅ Natural, clinically-studied ingredients<\/li><li>✅ No synthetic hormones<\/li><li>✅ No harsh stimulants<\/li><li>✅ No banned substances<\/li><\/ul><p><strong><br\/>However:<\/strong> Not for use if pregnant, nursing, immunocompromised, or under medical treatment. Consult your doctor if on medication.<\/p>"
+            "description": "<p><strong>Yes.<\/strong><br\/><br\/>Dryft™ is:\u2028<br\/><br\/><\/p><ul><li>Made in an FDA-registered, GMP-certified facility<\/li><li>Third-party tested for purity and potency<\/li><li>Free from harmful additives, stimulants, or synthetic hormones<\/li><li>Formulated with clinically-studied ingredients at effective doses\u2028<\/li><\/ul><p><br\/>All ingredients are backed by human clinical research.<\/p>"
           }
         },
         "row_BQBzVL": {
@@ -3207,7 +3209,7 @@
           "settings": {
             "label": "",
             "heading": "What if it doesn't work for me?",
-            "description": "<p>Email us within 90 days and we'll refund 100% of your purchase. You don't even need to return the bottles.<\/p>"
+            "description": "<p><strong>Full refund. No questions asked.<\/strong><br\/><br\/>Measure your neck on Day 1. Take Dyft for 90 days. Measure again.<br\/><br\/>If your neck didn't go down, email us. We'll refund 100% of your purchase.<br\/><br\/>You keep the bottles.<\/p>"
           }
         },
         "row_VTzN4G": {
@@ -3215,7 +3217,7 @@
           "settings": {
             "label": "",
             "heading": "Can I take this with other supplements?",
-            "description": ""
+            "description": "<p><strong>Yes, Dyft™ is safe to stack with most supplements.\u2028<\/strong><br\/><br\/>However, if you're on medication (especially for diabetes, blood pressure, or thyroid), consult your doctor first.<br\/><br\/>Dihydroberberine can improve insulin sensitivity, so diabetic medications may need adjustment.<\/p>"
           }
         }
       },
@@ -3317,6 +3319,10 @@
         "button_type": "secondary",
         "product_bottom_label": "90-Day Money Back Guarantee",
         "bottom_label_icon": "shopify:\/\/shop_images\/Mask_group.png",
+        "product_bottom_label2": "Track Your Neck Measurement",
+        "bottom_label_icon2": "shopify:\/\/shop_images\/fi_17457261.png",
+        "product_bottom_label3": "Made For Black Men's Biology",
+        "bottom_label_icon3": "shopify:\/\/shop_images\/Mask_group_d4aa6fc5-b158-44a6-aea7-178fd35a8252.png",
         "text_color": "#ffffff",
         "bgcolor": "#f4f4f6",
         "bg_img": "shopify:\/\/shop_images\/image_64_1_ec73922b-7461-4902-b940-08eaba0ed5e4.png",
@@ -3332,12 +3338,12 @@
     "nl_thin_icon_text_jEL6P9",
     "nl_main_banner_JYhfH3",
     "nl_logos_PkLwVA",
+    "nl_step_image_text_NDcNFi",
     "bn_reasons_fDrVCQ",
     "bn_neck_issue_hkj67P",
     "bn_problems_89fxVJ",
     "bn_study_W8cMRT",
     "bn_fail_reason_wLpnhE",
-    "nl_step_image_text_NDcNFi",
     "bm_unique_hFbdVm",
     "bl_tab_card_AWqUBd",
     "bl_img_text_M6T9ff",
