@@ -74,7 +74,7 @@
             {% for block in section.blocks %}
               {% case block.type %}
                 {% when 'row' %}
-                  <div class="flex flex-col items-center justify-center gap-[15px] md:gap-5 w-full">
+                  <div class="flex flex-col items-center justify-center gap-[15px] md:gap-5 w-full max-w-[890px] mx-auto">
                     {% if block.settings.heading != blank %}
                       <div
                         class="text-[22px] md:text-[36px] font-bold !leading-tight text-[#000]  {% if block.settings.heading_m_center %} max-md:text-center {% endif %} {% if block.settings.heading_d_center %} md:text-center {% endif %}"
@@ -92,7 +92,7 @@
                         {{ block.settings.description }}
                       </div>
                     {% endif %}
-                    <div class="grid md:grid-cols-2 gap-4">
+                    <div class="grid md:grid-cols-2 gap-4 w-full">
                         <div class="bg-white border border-[#1C5934] rounded-[12px] p-4 md:p-6">
                             {% if block.settings.label != blank %}
                                 <div
