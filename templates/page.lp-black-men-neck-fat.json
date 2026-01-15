@@ -343,6 +343,119 @@
             "label_d_center": false,
             "label_color": "#000"
           }
+        },
+        "row_9LUDnV": {
+          "type": "row",
+          "settings": {
+            "id": "diff1",
+            "heading": "Black Men Store More Subcutaneous Upper-Body Fat",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_eVahHa": {
+          "type": "row",
+          "settings": {
+            "id": "diff1",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/Rectangle_240648596.png"
+          }
+        },
+        "row_W3WdK9": {
+          "type": "row",
+          "settings": {
+            "id": "diff1",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>The Science:</strong> Multiple studies show that Black men have less visceral fat (deep belly fat) and more subcutaneous fat at the same body weight as white men—especially in upper-body areas like the neck, chest, and shoulders.</p>",
+            "description_m_center": false,
+            "description_d_center": true,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_yX8FHA": {
+          "type": "row",
+          "settings": {
+            "id": "diff1",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "3",
+            "image1": "shopify://shop_images/image_55604558.png",
+            "image2": "shopify://shop_images/image_55604559.png",
+            "image3": "shopify://shop_images/image_55604560.png"
+          }
+        },
+        "row_kQcnf7": {
+          "type": "row",
+          "settings": {
+            "id": "diff1",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>What This Means:</strong> Your neck and chest is a primary fat storage depot. Not your belly. <br/><br/><strong>Why Other Supplements Fail:</strong> They target visceral belly fat. Not subcutaneous neck fat. Wrong target = no results.<br/><br/><strong>How Dryft™ Fixes It: </strong>Cayenne Pepper Extract and Grains of Paradise are thermogenic compounds that specifically target subcutaneous fat depots and reactivate heat-burning systems in upper-body fat.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_QA4Dyq": {
+          "type": "row",
+          "settings": {
+            "id": "diff1",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": true,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/image_55604558_1.png"
+          }
         }
       },
       "block_order": [
@@ -350,7 +463,13 @@
         "item_3f3VLe",
         "item_WdaXga",
         "item_x7tnca",
-        "item_jWU8wK"
+        "item_jWU8wK",
+        "row_9LUDnV",
+        "row_eVahHa",
+        "row_W3WdK9",
+        "row_yX8FHA",
+        "row_kQcnf7",
+        "row_QA4Dyq"
       ],
       "name": "BN Study",
       "settings": {
