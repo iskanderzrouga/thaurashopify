@@ -66,7 +66,7 @@
             {% case block.type %}
               {% when 'item' %}
                 {% assign main_id = block.settings.id %}
-                <div class="border border-[#AAAAAA] rounded-[12px]">
+                <div class="{% if forloop.first %} active {% endif %} group border border-[#AAAAAA] rounded-[12px]">
                   {% if block.settings.label != blank %}
                     <div
                       class="text-[20px] md:text-[24px] font-bold !leading-tight text-[#000] p-4 cursor-pointer {% if block.settings.label_m_center %} max-md:text-center {% endif %} {% if block.settings.label_d_center %} md:text-center {% endif %}"
@@ -76,7 +76,7 @@
                     </div>
                   {% endif %}
 
-                  <div class="px-4 pb-4 flex flex-col gap-3 w-full">
+                  <div class="px-4 pb-4 hidden group-[.active]:flex flex-col gap-3 w-full">
                     {% for block in section.blocks %}
                       {% case block.type %}
                         {% when 'row' %}
