@@ -301,7 +301,7 @@
             "label": "DIFFERENCE #1",
             "label_m_center": false,
             "label_d_center": false,
-            "label_color": "#000"
+            "label_color": "#000000"
           }
         },
         "item_3f3VLe": {
@@ -311,7 +311,7 @@
             "label": "DIFFERENCE #2",
             "label_m_center": false,
             "label_d_center": false,
-            "label_color": "#000"
+            "label_color": "#000000"
           }
         },
         "item_WdaXga": {
@@ -321,7 +321,7 @@
             "label": "DIFFERENCE #3",
             "label_m_center": false,
             "label_d_center": false,
-            "label_color": "#000"
+            "label_color": "#000000"
           }
         },
         "item_x7tnca": {
@@ -331,7 +331,7 @@
             "label": "DIFFERENCE #4",
             "label_m_center": false,
             "label_d_center": false,
-            "label_color": "#000"
+            "label_color": "#000000"
           }
         },
         "item_jWU8wK": {
@@ -341,7 +341,7 @@
             "label": "DIFFERENCE #5",
             "label_m_center": false,
             "label_d_center": false,
-            "label_color": "#000"
+            "label_color": "#000000"
           }
         },
         "row_9LUDnV": {
@@ -545,9 +545,10 @@
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "set_img_max_width": false,
+            "set_img_max_width": true,
             "img_max_width": 660,
-            "img_column": "1"
+            "img_column": "1",
+            "image1": "shopify://shop_images/image_55604558_3.png"
           }
         },
         "row_FiytC7": {
@@ -604,7 +605,7 @@
         "button_label": "",
         "button_url": "",
         "btn_bottom_text": "",
-        "btn_bottom_text_color": "#000",
+        "btn_bottom_text_color": "#000000",
         "bgcolor": "#ffffff",
         "max_width": 860,
         "padding_top": 72,
