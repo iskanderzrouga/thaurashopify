@@ -568,6 +568,118 @@
             "img_max_width": 660,
             "img_column": "1"
           }
+        },
+        "row_QqEG3i": {
+          "type": "row",
+          "settings": {
+            "id": "diff3",
+            "heading": "Your Insulin Resistance Is Significantly Higher",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_TALNKd": {
+          "type": "row",
+          "settings": {
+            "id": "diff3",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/Rectangle_240648596_2.png"
+          }
+        },
+        "row_PftFra": {
+          "type": "row",
+          "settings": {
+            "id": "diff3",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>The Science: </strong>Even at the same body weight as a white man, Black men have higher insulin resistance and stronger \"store fat\" signals—making fat cells resistant to releasing stored energy.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_ztCp6i": {
+          "type": "row",
+          "settings": {
+            "id": "diff3",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": true,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/image_55604558_4.png"
+          }
+        },
+        "row_GUkncY": {
+          "type": "row",
+          "settings": {
+            "id": "diff3",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>What This Means:</strong> Your body locks fat in place. Even in a calorie deficit. The insulin signal won't let it go. <br/><br/><strong>Why Other Supplements Fail:</strong> They assume everyone's insulin works the same. Yours doesn't. So fat stays locked no matter what you do.<br/><br/><strong>How Dryft™ Fixes It:</strong> Dihydroberberine improves insulin sensitivity and glucose control, helping your body finally release insulin-locked fat instead of protecting it.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_9akpBj": {
+          "type": "row",
+          "settings": {
+            "id": "diff3",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "2",
+            "image1": "shopify://shop_images/image_55604558_5.png",
+            "image2": "shopify://shop_images/image_55604559_2.png"
+          }
         }
       },
       "block_order": [
@@ -587,7 +699,13 @@
         "row_DM3tk3",
         "row_wYmJGE",
         "row_aaEmDb",
-        "row_FiytC7"
+        "row_FiytC7",
+        "row_QqEG3i",
+        "row_TALNKd",
+        "row_PftFra",
+        "row_ztCp6i",
+        "row_GUkncY",
+        "row_9akpBj"
       ],
       "name": "BN Study",
       "settings": {
