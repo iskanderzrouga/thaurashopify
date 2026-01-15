@@ -33,8 +33,8 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#00754a",
-            "description": "<p>Men worldwide are finally managing their weight and improving their body composition—without soul-crushing diets or spending hours in the gym.</p>",
-            "description2": "<p><strong>This isn't opinion. This is peer-reviewed science.</strong><br/><br/>Multiple studies show Black men have less visceral belly fat and more subcutaneous upper-body fat at the same body weight as white men.<br/><br/><strong>That's why you can lose belly fat but your neck stays thick.<br/><br/>That's why cardio doesn't touch your neck.<br/><br/>That's why their supplements don't work.</strong></p>",
+            "description": "<p>Men worldwide are finally managing their weight and improving their body composition—without soul-crushing diets or spending hours in the gym.<\/p>",
+            "description2": "<p><strong>This isn't opinion. This is peer-reviewed science.<\/strong><br\/><br\/>Multiple studies show Black men have less visceral belly fat and more subcutaneous upper-body fat at the same body weight as white men.<br\/><br\/><strong>That's why you can lose belly fat but your neck stays thick.<br\/><br\/>That's why cardio doesn't touch your neck.<br\/><br\/>That's why their supplements don't work.<\/strong><\/p>",
             "description_m_center": true,
             "description_d_center": true,
             "small_description": false,
@@ -49,72 +49,72 @@
           "type": "feature",
           "settings": {
             "right": false,
-            "description": "<p>Store more visceral fat <br/>(deep, around organs)</p>",
+            "description": "<p>Store more visceral fat <br\/>(deep, around organs)<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_AkMUke": {
           "type": "feature",
           "settings": {
             "right": false,
-            "description": "<p>Fat accumulates in lower body—belly, love handles, hips</p>",
+            "description": "<p>Fat accumulates in lower body—belly, love handles, hips<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_pKNGni": {
           "type": "feature",
           "settings": {
             "right": false,
-            "description": "<p>Less visible from the outside</p>",
+            "description": "<p>Less visible from the outside<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_bAtJ3M": {
           "type": "feature",
           "settings": {
             "right": false,
-            "description": "<p>Generic supplements target this type of fat</p>",
+            "description": "<p>Generic supplements target this type of fat<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_JERigh": {
           "type": "feature",
           "settings": {
             "right": true,
-            "description": "<p>Store more subcutaneous fat <br/>(under the skin, visible)</p>",
+            "description": "<p>Store more subcutaneous fat <br\/>(under the skin, visible)<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_CHeUDc": {
           "type": "feature",
           "settings": {
             "right": true,
-            "description": "<p>Fat accumulates in upper body—neck, chest, shoulders</p>",
+            "description": "<p>Fat accumulates in upper body—neck, chest, shoulders<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_jzpax4": {
           "type": "feature",
           "settings": {
             "right": true,
-            "description": "<p>Highly visible (shows on your face, collar, jawline)</p>",
+            "description": "<p>Highly visible (shows on your face, collar, jawline)<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         },
         "feature_pmMWJ7": {
           "type": "feature",
           "settings": {
             "right": true,
-            "description": "<p>Generic supplements ignore this fat pattern completely</p>",
+            "description": "<p>Generic supplements ignore this fat pattern completely<\/p>",
             "description_color": "#000000",
-            "image": "shopify://shop_images/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
+            "image": "shopify:\/\/shop_images\/Subtract_ce831651-a403-4c58-87a7-74e9705d564f.png"
           }
         }
       },
@@ -136,18 +136,18 @@
         "heading_m_center": true,
         "heading_d_center": false,
         "heading_color": "#ffffff",
-        "description": "<p>Just like your hair has a different texture and needs different products...<br/><br/>Just like your skin loses moisture differently and needs different ingredients...<br/><br/>Your body stores fat in different places and needs different supplements.<br/><br/>If you're a Black man over 30, your body stores fat differently than white men in critical ways:</p>",
+        "description": "<p>Just like your hair has a different texture and needs different products...<br\/><br\/>Just like your skin loses moisture differently and needs different ingredients...<br\/><br\/>Your body stores fat in different places and needs different supplements.<br\/><br\/>If you're a Black man over 30, your body stores fat differently than white men in critical ways:<\/p>",
         "description_m_center": true,
         "description_d_center": false,
         "description_color": "#ffffff",
-        "image": "shopify://shop_images/image_55604080_2.png",
+        "image": "shopify:\/\/shop_images\/image_55604080_2.png",
         "border_radius": 16,
         "image_right": false,
         "button_label": "",
         "button_url": "",
         "btn_bottom_text": "",
         "btn_bottom_text_color": "#000000",
-        "bg": "shopify://shop_images/8ae611d342464e59c2490a858f165290efd96ca0.png",
+        "bg": "shopify:\/\/shop_images\/8ae611d342464e59c2490a858f165290efd96ca0.png",
         "bgcolor": "#ffffff",
         "max_width": 1140,
         "padding_top": 72,
@@ -171,12 +171,12 @@
             "heading_m_center": false,
             "heading_d_center": false,
             "heading_color": "#000000",
-            "description": "<p><strong>The Reality: </strong><br/>White men's belly fat hides under shirts.<br/><br/>Your neck fat shows on your face. In every photo. In every Zoom call. In the mirror every morning.<br/><br/>You hold your phone high every time. Never straight on. Never from below.<br/>Because when you angle it down, you see it. The double chin. The triple chin. The rolls. The guy in the screen who doesn't look like the guy in your head.<br/><br/>So you grow your beard out—not because you want it that long, but because the thickness hides where your jawline used to be.<br/>You buy 17.5\" collars when you used to wear 15\". The old ones don't button anymore.<br/><br/>You avoid fitted shirts. Crew necks feel safer. Hoodies become your uniform.<br/><br/>You're not in family photos anymore. You're \"behind the camera.\"<br/><br/><strong>That's not style. That's survival.<br/><br/>Why Generic Supplements Fail:</strong><br/><br/>They target belly fat you can hide. Not neck fat everyone can see.<br/></p>",
+            "description": "<p><strong>The Reality:\u2028<\/strong><br\/>White men's belly fat hides under shirts.<br\/><br\/>Your neck fat shows on your face. In every photo. In every Zoom call. In the mirror every morning.<br\/><br\/>You hold your phone high every time. Never straight on. Never from below.<br\/>Because when you angle it down, you see it. The double chin. The triple chin. The rolls. The guy in the screen who doesn't look like the guy in your head.<br\/><br\/>So you grow your beard out—not because you want it that long, but because the thickness hides where your jawline used to be.<br\/>You buy 17.5\" collars when you used to wear 15\". The old ones don't button anymore.<br\/><br\/>You avoid fitted shirts. Crew necks feel safer. Hoodies become your uniform.<br\/><br\/>You're not in family photos anymore. You're \"behind the camera.\"<br\/><br\/><strong>That's not style. That's survival.<br\/><br\/>Why Generic Supplements Fail:<\/strong><br\/><br\/>They target belly fat you can hide. Not neck fat everyone can see.<br\/><\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/Frame_2607848.png",
+            "image": "shopify:\/\/shop_images\/Frame_2607848.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -195,12 +195,12 @@
             "heading_m_center": false,
             "heading_d_center": false,
             "heading_color": "#000000",
-            "description": "<p><strong>The Reality: </strong><br/>Neck fat doesn't just sit there. It presses on your airway when you lie down. <br/>You snore. You wake up gasping. You stop breathing multiple times per night without knowing it.<br/><br/>Your wife complains. You're exhausted all day. You're at higher risk for sleep apnea—and Black men experience worse sleep apnea at the same BMI as white men just like multiple studies like this one show<br/><strong><br/>Studies show neck circumference is a stronger predictor of sleep apnea than BMI.</strong><br/><br/>If your neck is over 17 inches, your risk skyrockets.<br/><br/><strong>Why Generic Supplements Fail:</strong><br/><br/>They don't address upper-body fat accumulation. So your airway stays compressed. Your sleep stays wrecked. And you keep seeking solution that are not made for you and your problem.</p>",
+            "description": "<p><strong>The Reality:\u2028<\/strong><br\/>Neck fat doesn't just sit there. It presses on your airway when you lie down.\u2028<br\/>You snore. You wake up gasping. You stop breathing multiple times per night without knowing it.<br\/><br\/>Your wife complains. You're exhausted all day. You're at higher risk for sleep apnea—and Black men experience worse sleep apnea at the same BMI as white men just like multiple studies like this one show<br\/><strong><br\/>Studies show neck circumference is a stronger predictor of sleep apnea than BMI.<\/strong><br\/><br\/>If your neck is over 17 inches, your risk skyrockets.<br\/><br\/><strong>Why Generic Supplements Fail:<\/strong><br\/><br\/>They don't address upper-body fat accumulation. So your airway stays compressed. Your sleep stays wrecked. And you keep seeking solution that are not made for you and your problem.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/image_55604556_3011257d-e2de-4841-a16f-800a6a2e8215.png",
+            "image": "shopify:\/\/shop_images\/image_55604556_3011257d-e2de-4841-a16f-800a6a2e8215.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -219,12 +219,12 @@
             "heading_m_center": false,
             "heading_d_center": false,
             "heading_color": "#000000",
-            "description": "<p><strong>The Reality: </strong><br/>Neck fat isn't cosmetic. It's metabolically active.<br/>It's linked to:<br/><br/></p><ul><li>Insulin resistance (even when you're not overweight)</li><li>High blood pressure</li><li>Elevated triglycerides</li><li>Metabolic syndrome</li><li>Cardiovascular risk<br/><br/></li></ul><p><strong>Your neck is telling you something's wrong inside. Black Men? Studies show that we have significantly higher insulin resistance than white men. <br/><br/>Why Generic Supplements Fail:</strong><br/><br/>They treat fat loss as calories in/calories out. But your neck fat is hormonally locked by insulin resistance, elevated cortisol, and dormant thermogenesis.<br/><br/>You can diet forever. The fat won't move until you fix the signals.</p>",
+            "description": "<p><strong>The Reality:\u2028<\/strong><br\/>Neck fat isn't cosmetic. It's metabolically active.<br\/>It's linked to:<br\/><br\/><\/p><ul><li>Insulin resistance (even when you're not overweight)<\/li><li>High blood pressure<\/li><li>Elevated triglycerides<\/li><li>Metabolic syndrome<\/li><li>Cardiovascular risk<br\/><br\/><\/li><\/ul><p><strong>Your neck is telling you something's wrong inside. Black Men? Studies show that we have significantly higher insulin resistance than white men. <br\/><br\/>Why Generic Supplements Fail:<\/strong><br\/><br\/>They treat fat loss as calories in\/calories out. But your neck fat is hormonally locked by insulin resistance, elevated cortisol, and dormant thermogenesis.<br\/><br\/>You can diet forever. The fat won't move until you fix the signals.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/image_55604556_1.png",
+            "image": "shopify:\/\/shop_images\/image_55604556_1.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -271,18 +271,18 @@
         "heading_m_center": false,
         "heading_d_center": false,
         "heading_color": "#00754a",
-        "description": "<p>Here's what most men don't know.<br/>Your neck contains something called <strong>beige adipose tissue.</strong><br/><br/>This isn't regular fat. It's heat-burning fat.<br/><br/>It burns calories and creates heat. All day. All night. Like a fire that never goes out.<br/><br/><strong>But in what most black men over 35, it's dormant.</strong><br/>The heat switch is off.<br/><br/>So instead of burning fuel, your neck fat just stores it.<br/>That's why:<br/><br/></p><ul><li><strong>You can eat clean and your neck stays thick</strong></li><li><strong>You can do cardio every day and it doesn't move</strong></li><li><strong>You can lose 20 pounds and your neck looks the same</strong><br/><br/></li><li><strong>You're not fixing the switch.</strong></li></ul>",
+        "description": "<p>Here's what most men don't know.<br\/>Your neck contains something called <strong>beige adipose tissue.<\/strong><br\/><br\/>This isn't regular fat. It's heat-burning fat.<br\/><br\/>It burns calories and creates heat. All day. All night. Like a fire that never goes out.<br\/><br\/><strong>But in what most black men over 35, it's dormant.<\/strong><br\/>The heat switch is off.<br\/><br\/>So instead of burning fuel, your neck fat just stores it.<br\/>That's why:<br\/><br\/><\/p><ul><li><strong>You can eat clean and your neck stays thick<\/strong><\/li><li><strong>You can do cardio every day and it doesn't move<\/strong><\/li><li><strong>You can lose 20 pounds and your neck looks the same<\/strong><br\/><br\/><\/li><li><strong>You're not fixing the switch.<\/strong><\/li><\/ul>",
         "description_m_center": false,
         "description_d_center": false,
         "description_color": "#252726",
-        "image": "shopify://shop_images/image_55604080_1.png",
+        "image": "shopify:\/\/shop_images\/image_55604080_1.png",
         "border_radius": 0,
         "image_right": false,
         "button_label": "",
         "button_url": "",
         "btn_bottom_text": "",
         "btn_bottom_text_color": "#000000",
-        "bg": "shopify://shop_images/8ae611d342464e59c2490a858f165290efd96ca0.png",
+        "bg": "shopify:\/\/shop_images\/8ae611d342464e59c2490a858f165290efd96ca0.png",
         "bgcolor": "#ffffff",
         "max_width": 1140,
         "padding_top": 72,
@@ -382,7 +382,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/Rectangle_240648596.png",
+            "image1": "shopify:\/\/shop_images\/Rectangle_240648596.png",
             "text2": "",
             "text3": ""
           }
@@ -395,7 +395,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>The Science:</strong> Multiple studies show that Black men have less visceral fat (deep belly fat) and more subcutaneous fat at the same body weight as white men—especially in upper-body areas like the neck, chest, and shoulders.</p>",
+            "description": "<p><strong>The Science:<\/strong> Multiple studies show that Black men have less visceral fat (deep belly fat) and more subcutaneous fat at the same body weight as white men—especially in upper-body areas like the neck, chest, and shoulders.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -425,11 +425,11 @@
             "img_max_width": 660,
             "img_column": "3",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558.png",
             "text2": "",
-            "image2": "shopify://shop_images/image_55604559.png",
+            "image2": "shopify:\/\/shop_images\/image_55604559.png",
             "text3": "",
-            "image3": "shopify://shop_images/image_55604560.png"
+            "image3": "shopify:\/\/shop_images\/image_55604560.png"
           }
         },
         "row_kQcnf7": {
@@ -440,7 +440,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>What This Means:</strong> Your neck and chest is a primary fat storage depot. Not your belly. <br/><br/><strong>Why Other Supplements Fail:</strong> They target visceral belly fat. Not subcutaneous neck fat. Wrong target = no results.<br/><br/><strong>How Dryft™ Fixes It: </strong>Cayenne Pepper Extract and Grains of Paradise are thermogenic compounds that specifically target subcutaneous fat depots and reactivate heat-burning systems in upper-body fat.</p>",
+            "description": "<p><strong>What This Means:<\/strong> Your neck and chest is a primary fat storage depot. Not your belly.\u2028<br\/><br\/><strong>Why Other Supplements Fail:<\/strong> They target visceral belly fat. Not subcutaneous neck fat. Wrong target = no results.<br\/><br\/><strong>How Dryft™ Fixes It: <\/strong>Cayenne Pepper Extract and Grains of Paradise are thermogenic compounds that specifically target subcutaneous fat depots and reactivate heat-burning systems in upper-body fat.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -470,7 +470,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_1.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_1.png",
             "text2": "",
             "text3": ""
           }
@@ -513,7 +513,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/Rectangle_240648596_1.png",
+            "image1": "shopify:\/\/shop_images\/Rectangle_240648596_1.png",
             "text2": "",
             "text3": ""
           }
@@ -526,7 +526,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>The Science: </strong>Human neck fat contains beige adipose tissue—fat cells capable of burning calories and generating heat. In many black men over 35, this thermogenic system turns off.</p>",
+            "description": "<p><strong>The Science: <\/strong>Human neck fat contains beige adipose tissue—fat cells capable of burning calories and generating heat. In many black men over 35, this thermogenic system turns off.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -556,9 +556,9 @@
             "img_max_width": 660,
             "img_column": "2",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_2.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_2.png",
             "text2": "",
-            "image2": "shopify://shop_images/image_55604559_1.png",
+            "image2": "shopify:\/\/shop_images\/image_55604559_1.png",
             "text3": ""
           }
         },
@@ -570,7 +570,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>What This Means: </strong>Your neck fat stopped burning and started storing. That's why it gets thicker even when you're eating clean. <br/><br/><strong>Why Other Supplements Fail: </strong>Most fat burners just add caffeine or suppress appetite. They don't reactivate dormant beige fat. Your heat switch stays off.<br/><br/><strong>How Dryft™ Fixes It:</strong> Grains of Paradise (6-paradol) has been shown in human studies to activate brown/beige adipose tissue and increase energy expenditure—literally turning your heat-burning system back on.</p>",
+            "description": "<p><strong>What This Means: <\/strong>Your neck fat stopped burning and started storing. That's why it gets thicker even when you're eating clean.\u2028<br\/><br\/><strong>Why Other Supplements Fail: <\/strong>Most fat burners just add caffeine or suppress appetite. They don't reactivate dormant beige fat. Your heat switch stays off.<br\/><br\/><strong>How Dryft™ Fixes It:<\/strong> Grains of Paradise (6-paradol) has been shown in human studies to activate brown\/beige adipose tissue and increase energy expenditure—literally turning your heat-burning system back on.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -579,7 +579,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_3.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_3.png",
             "text2": "",
             "text3": ""
           }
@@ -643,7 +643,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/Rectangle_240648596_2.png",
+            "image1": "shopify:\/\/shop_images\/Rectangle_240648596_2.png",
             "text2": "",
             "text3": ""
           }
@@ -656,7 +656,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>The Science: </strong>Even at the same body weight as a white man, Black men have higher insulin resistance and stronger \"store fat\" signals—making fat cells resistant to releasing stored energy.</p>",
+            "description": "<p><strong>The Science: <\/strong>Even at the same body weight as a white man, Black men have higher insulin resistance and stronger \"store fat\" signals—making fat cells resistant to releasing stored energy.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -686,7 +686,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_4.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_4.png",
             "text2": "",
             "text3": ""
           }
@@ -699,7 +699,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>What This Means:</strong> Your body locks fat in place. Even in a calorie deficit. The insulin signal won't let it go. <br/><br/><strong>Why Other Supplements Fail:</strong> They assume everyone's insulin works the same. Yours doesn't. So fat stays locked no matter what you do.<br/><br/><strong>How Dryft™ Fixes It:</strong> Dihydroberberine improves insulin sensitivity and glucose control, helping your body finally release insulin-locked fat instead of protecting it.</p>",
+            "description": "<p><strong>What This Means:<\/strong> Your body locks fat in place. Even in a calorie deficit. The insulin signal won't let it go.\u2028<br\/><br\/><strong>Why Other Supplements Fail:<\/strong> They assume everyone's insulin works the same. Yours doesn't. So fat stays locked no matter what you do.<br\/><br\/><strong>How Dryft™ Fixes It:<\/strong> Dihydroberberine improves insulin sensitivity and glucose control, helping your body finally release insulin-locked fat instead of protecting it.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -729,9 +729,9 @@
             "img_max_width": 660,
             "img_column": "2",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_5.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_5.png",
             "text2": "",
-            "image2": "shopify://shop_images/image_55604559_2.png",
+            "image2": "shopify:\/\/shop_images\/image_55604559_2.png",
             "text3": ""
           }
         },
@@ -773,7 +773,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/Rectangle_240648596_3.png",
+            "image1": "shopify:\/\/shop_images\/Rectangle_240648596_3.png",
             "text2": "",
             "text3": ""
           }
@@ -786,7 +786,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>The Science:</strong> White men's cortisol drops at night. Black men's cortisol stays elevated—triggering late-night cravings, disrupted sleep, and stress-driven upper-body fat storage.</p>",
+            "description": "<p><strong>The Science:<\/strong> White men's cortisol drops at night. Black men's cortisol stays elevated—triggering late-night cravings, disrupted sleep, and stress-driven upper-body fat storage.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -816,7 +816,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/Group_2085661890.png",
+            "image1": "shopify:\/\/shop_images\/Group_2085661890.png",
             "text2": "",
             "text3": ""
           }
@@ -838,9 +838,9 @@
             "img_max_width": 660,
             "img_column": "2",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_6.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_6.png",
             "text2": "",
-            "image2": "shopify://shop_images/image_55604559_3.png",
+            "image2": "shopify:\/\/shop_images\/image_55604559_3.png",
             "text3": ""
           }
         },
@@ -852,7 +852,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>What This Means:</strong> Your body thinks it's in survival mode 24/7. So it protects fat around your neck and chest. <br/><br/><strong>Why Other Supplements Fail: </strong>They don't address cortisol. So even if you're eating right, stress hormones keep fat locked.<br/><br/><strong>How Dryft™ Fixes It: </strong>Ashwagandha + L-Theanine + Saffron work synergistically to regulate cortisol, reduce stress-driven cravings, and signal your body the threat is over.</p>",
+            "description": "<p><strong>What This Means:<\/strong> Your body thinks it's in survival mode 24\/7. So it protects fat around your neck and chest.\u2028<br\/><br\/><strong>Why Other Supplements Fail: <\/strong>They don't address cortisol. So even if you're eating right, stress hormones keep fat locked.<br\/><br\/><strong>How Dryft™ Fixes It: <\/strong>Ashwagandha + L-Theanine + Saffron work synergistically to regulate cortisol, reduce stress-driven cravings, and signal your body the threat is over.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -882,11 +882,11 @@
             "img_max_width": 660,
             "img_column": "3",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_7.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_7.png",
             "text2": "",
-            "image2": "shopify://shop_images/image_55604559_4.png",
+            "image2": "shopify:\/\/shop_images\/image_55604559_4.png",
             "text3": "",
-            "image3": "shopify://shop_images/image_55604560_1.png"
+            "image3": "shopify:\/\/shop_images\/image_55604560_1.png"
           }
         },
         "row_QFwj39": {
@@ -927,7 +927,7 @@
             "img_max_width": 660,
             "img_column": "1",
             "text1": "",
-            "image1": "shopify://shop_images/Rectangle_240648596_4.png",
+            "image1": "shopify:\/\/shop_images\/Rectangle_240648596_4.png",
             "text2": "",
             "text3": ""
           }
@@ -940,7 +940,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>The Science: </strong>Black men have approximately 15% higher estrogen (the women hormone) levels than white men—which directs fat storage to specific upper-body depots like the neck and chest.</p>",
+            "description": "<p><strong>The Science: <\/strong>Black men have approximately 15% higher estrogen (the women hormone) levels than white men—which directs fat storage to specific upper-body depots like the neck and chest.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -970,9 +970,9 @@
             "img_max_width": 660,
             "img_column": "2",
             "text1": "",
-            "image1": "shopify://shop_images/image_55604558_8.png",
+            "image1": "shopify:\/\/shop_images\/image_55604558_8.png",
             "text2": "",
-            "image2": "shopify://shop_images/image_55604559_5.png",
+            "image2": "shopify:\/\/shop_images\/image_55604559_5.png",
             "text3": ""
           }
         },
@@ -984,7 +984,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p><strong>What This Means:</strong> When estrogen signaling is elevated, fat cells receive a stronger “store, don’t release” instruction — especially in estrogen-sensitive upper-body areas.<br/><br/><strong>How Dryft Fixes It: </strong>Dryft targets estrogen metabolism — not testosterone suppression.</p>",
+            "description": "<p><strong>What This Means:<\/strong> When estrogen signaling is elevated, fat cells receive a stronger “store, don’t release” instruction — especially in estrogen-sensitive upper-body areas.<br\/><br\/><strong>How Dryft Fixes It: <\/strong>Dryft targets estrogen metabolism — not testosterone suppression.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -1013,12 +1013,12 @@
             "set_img_max_width": false,
             "img_max_width": 660,
             "img_column": "3",
-            "text1": "<ul><li>DIM supports healthy estrogen breakdown by shifting estrogen toward less active metabolic pathways.</li></ul>",
-            "image1": "shopify://shop_images/image_55604558_9.png",
-            "text2": "<ul><li>Zinc supports normal aromatase activity and healthy hormone balance.</li></ul>",
-            "image2": "shopify://shop_images/image_55604558_10.png",
-            "text3": "<ul><li>Boron supports overall steroid hormone metabolism and endocrine balance.</li></ul>",
-            "image3": "shopify://shop_images/image_55604558_11.png"
+            "text1": "<ul><li>DIM supports healthy estrogen breakdown by shifting estrogen toward less active metabolic pathways.<\/li><\/ul>",
+            "image1": "shopify:\/\/shop_images\/image_55604558_9.png",
+            "text2": "<ul><li>Zinc supports normal aromatase activity and healthy hormone balance.<\/li><\/ul>",
+            "image2": "shopify:\/\/shop_images\/image_55604558_10.png",
+            "text3": "<ul><li>Boron supports overall steroid hormone metabolism and endocrine balance.<\/li><\/ul>",
+            "image3": "shopify:\/\/shop_images\/image_55604558_11.png"
           }
         },
         "row_7T93Wb": {
@@ -1029,7 +1029,7 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p>Together, these nutrients help reduce the estrogen-driven fat-storage signal instead of ignoring it — which is where most fat-loss supplements fail.</p>",
+            "description": "<p>Together, these nutrients help reduce the estrogen-driven fat-storage signal instead of ignoring it — which is where most fat-loss supplements fail.<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
@@ -1122,12 +1122,12 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p>Your upper-body fat storage pattern</p>",
+            "description": "<p>Your upper-body fat storage pattern<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "image": "shopify:\/\/shop_images\/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -1146,12 +1146,12 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p>Your dormant neck heat-burning system</p>",
+            "description": "<p>Your dormant neck heat-burning system<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "image": "shopify:\/\/shop_images\/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -1170,12 +1170,12 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p>Your higher insulin resistance</p>",
+            "description": "<p>Your higher insulin resistance<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "image": "shopify:\/\/shop_images\/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -1194,12 +1194,12 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p>Your elevated cortisol rhythm</p>",
+            "description": "<p>Your elevated cortisol rhythm<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "image": "shopify:\/\/shop_images\/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -1218,12 +1218,12 @@
             "heading_m_center": true,
             "heading_d_center": true,
             "heading_color": "#121212",
-            "description": "<p>Your higher estrogen levels</p>",
+            "description": "<p>Your higher estrogen levels<\/p>",
             "description_m_center": false,
             "description_d_center": false,
             "small_description": false,
             "description_color": "#000000",
-            "image": "shopify://shop_images/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
+            "image": "shopify:\/\/shop_images\/x-circle-fill_5251f1e8-449b-4a3b-9016-dc97173371bd.png",
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
@@ -1249,12 +1249,12 @@
         "description_m_center": true,
         "description_d_center": false,
         "description_color": "#121212",
-        "text1": "<p>Here's what most supplement brands won't tell you:<br/><br/>The typical fat burner and weight loss supplement  is formulated based on generic studies with limited participant diversity. One-size-fits-all ingredients for one-size-fits-all results.<br/><br/>Here is just one of multiple studies that highlight how white men usually account for 70%+ of the people in the studies:</p>",
-        "text2": "<p>But your body isn't generic.<br/><br/>Your fat storage pattern, hormone balance, and metabolic response are unique to YOU.<br/><br/>Now, your fat is upper-body subcutaneous.<br/><strong><br/>Different location. Different biology. Different fat type. Different solution.</strong><br/><br/>White men can take generic fat burners and lose belly fat because those formulas match their fat pattern.</p>",
-        "text3": "<p>But when YOU take them? The formula doesn't address:</p>",
-        "text4": "<p><strong>That's why your neck stays thick no matter what you do.<br/><br/>It's not you. It's the formula.</strong></p>",
+        "text1": "<p>Here's what most supplement brands won't tell you:<br\/><br\/>The typical fat burner and weight loss supplement  is formulated based on generic studies with limited participant diversity. One-size-fits-all ingredients for one-size-fits-all results.<br\/><br\/>Here is just one of multiple studies that highlight how white men usually account for 70%+ of the people in the studies:<\/p>",
+        "text2": "<p>But your body isn't generic.<br\/><br\/>Your fat storage pattern, hormone balance, and metabolic response are unique to YOU.<br\/><br\/>Now, your fat is upper-body subcutaneous.<br\/><strong><br\/>Different location. Different biology. Different fat type. Different solution.<\/strong><br\/><br\/>White men can take generic fat burners and lose belly fat because those formulas match their fat pattern.<\/p>",
+        "text3": "<p>But when YOU take them? The formula doesn't address:<\/p>",
+        "text4": "<p><strong>That's why your neck stays thick no matter what you do.<br\/><br\/>It's not you. It's the formula.<\/strong><\/p>",
         "text_color": "#000000",
-        "image": "shopify://shop_images/image_55604080_7f8f8b06-0657-4b15-98aa-84bade4e2cb2.png",
+        "image": "shopify:\/\/shop_images\/image_55604080_7f8f8b06-0657-4b15-98aa-84bade4e2cb2.png",
         "border_radius": 0,
         "image_right": false,
         "button_label": "",
