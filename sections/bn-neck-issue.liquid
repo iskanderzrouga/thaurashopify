@@ -142,8 +142,8 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.ah-ingredients-tab');
-    const cards = document.querySelectorAll('.ah-ingredients-card');
+    const tabs = document.querySelectorAll('.section-{{ section.id }}-padding .ah-ingredients-tab');
+    const cards = document.querySelectorAll('.section-{{ section.id }}-padding .ah-ingredients-card');
 
     tabs.forEach((tab) => {
       tab.addEventListener('click', () => {
@@ -152,7 +152,7 @@
         tab.classList.add('active');
 
         cards.forEach((c) => c.classList.remove('active'));
-        const match = document.querySelector(`.ah-ingredients-card[data-id="${id}"]`);
+        const match = document.querySelector(`.section-{{ section.id }}-padding .ah-ingredients-card[data-id="${id}"]`);
         if (match) {
           match.classList.add('active');
         }
