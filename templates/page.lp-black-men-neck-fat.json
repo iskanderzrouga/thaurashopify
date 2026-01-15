@@ -813,6 +813,138 @@
             "image2": "shopify://shop_images/image_55604559_4.png",
             "image3": "shopify://shop_images/image_55604560_1.png"
           }
+        },
+        "row_QFwj39": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "Your Estrogen Levels Are Consistently Higher",
+            "heading_m_center": false,
+            "heading_d_center": false,
+            "heading_color": "#000000",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_Jgzy87": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1",
+            "image1": "shopify://shop_images/Rectangle_240648596_4.png"
+          }
+        },
+        "row_VETQak": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>The Science: </strong>Black men have approximately 15% higher estrogen (the women hormone) levels than white men—which directs fat storage to specific upper-body depots like the neck and chest.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_79iFRt": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "2",
+            "image1": "shopify://shop_images/image_55604558_8.png",
+            "image2": "shopify://shop_images/image_55604559_5.png"
+          }
+        },
+        "row_nQJLBB": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p><strong>What This Means:</strong> When estrogen signaling is elevated, fat cells receive a stronger “store, don’t release” instruction — especially in estrogen-sensitive upper-body areas.<br/><br/><strong>How Dryft Fixes It: </strong>Dryft targets estrogen metabolism — not testosterone suppression.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
+        },
+        "row_96GyxQ": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "3",
+            "image1": "shopify://shop_images/image_55604558_9.png",
+            "image2": "shopify://shop_images/image_55604558_10.png",
+            "image3": "shopify://shop_images/image_55604558_11.png"
+          }
+        },
+        "row_7T93Wb": {
+          "type": "row",
+          "settings": {
+            "id": "diff5",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "<p>Together, these nutrients help reduce the estrogen-driven fat-storage signal instead of ignoring it — which is where most fat-loss supplements fail.</p>",
+            "description_m_center": false,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#000000",
+            "set_img_max_width": false,
+            "img_max_width": 660,
+            "img_column": "1"
+          }
         }
       },
       "block_order": [
@@ -845,7 +977,14 @@
         "row_BhqCNY",
         "row_Pn4BmU",
         "row_AyJgqF",
-        "row_wEGEKV"
+        "row_wEGEKV",
+        "row_QFwj39",
+        "row_Jgzy87",
+        "row_VETQak",
+        "row_79iFRt",
+        "row_nQJLBB",
+        "row_96GyxQ",
+        "row_7T93Wb"
       ],
       "name": "BN Study",
       "settings": {
