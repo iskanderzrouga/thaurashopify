@@ -291,6 +291,92 @@
         "padding_bottom_m": 36
       }
     },
+    "bn_study_W8cMRT": {
+      "type": "bn-study",
+      "blocks": {
+        "item_kEww9j": {
+          "type": "item",
+          "settings": {
+            "id": "diff1",
+            "label": "DIFFERENCE #1",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#000"
+          }
+        },
+        "item_3f3VLe": {
+          "type": "item",
+          "settings": {
+            "id": "diff2",
+            "label": "DIFFERENCE #2",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#000"
+          }
+        },
+        "item_WdaXga": {
+          "type": "item",
+          "settings": {
+            "id": "diff3",
+            "label": "DIFFERENCE #3",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#000"
+          }
+        },
+        "item_x7tnca": {
+          "type": "item",
+          "settings": {
+            "id": "diff4",
+            "label": "DIFFERENCE #4",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#000"
+          }
+        },
+        "item_jWU8wK": {
+          "type": "item",
+          "settings": {
+            "id": "diff5",
+            "label": "DIFFERENCE #5",
+            "label_m_center": false,
+            "label_d_center": false,
+            "label_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "item_kEww9j",
+        "item_3f3VLe",
+        "item_WdaXga",
+        "item_x7tnca",
+        "item_jWU8wK"
+      ],
+      "name": "BN Study",
+      "settings": {
+        "section_id": "",
+        "heading": "The 5 Metabolic Differences Between Black Men and White Men",
+        "heading_m_center": true,
+        "heading_d_center": true,
+        "heading_color": "#00754a",
+        "description": "",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#121212",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000",
+        "bgcolor": "#ffffff",
+        "max_width": 1200,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
     "bn_fail_reason_wLpnhE": {
       "type": "bn-fail-reason",
       "blocks": {
@@ -459,6 +545,7 @@
     "bn_reasons_fDrVCQ",
     "bn_neck_issue_hkj67P",
     "bn_problems_89fxVJ",
+    "bn_study_W8cMRT",
     "bn_fail_reason_wLpnhE"
   ]
 }
