@@ -17,17 +17,76 @@
         "padding_bottom": 28
       }
     },
+    "bn_reasons_fDrVCQ": {
+      "type": "bn-reasons",
+      "blocks": {
+        "row_iDkUJP": {
+          "type": "row",
+          "settings": {
+            "bgcolor": "#F4F4F6",
+            "label": "",
+            "label2": "",
+            "label_m_center": true,
+            "label_d_center": true,
+            "label_color": "#000",
+            "heading": "",
+            "heading_m_center": true,
+            "heading_d_center": true,
+            "heading_color": "#121212",
+            "description": "",
+            "description2": "",
+            "description_m_center": true,
+            "description_d_center": false,
+            "small_description": false,
+            "description_color": "#121212",
+            "button_label": "",
+            "button_url": "",
+            "btn_bottom_text": "",
+            "btn_bottom_text_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "row_iDkUJP"
+      ],
+      "name": "BN Reasons",
+      "settings": {
+        "section_id": "",
+        "heading": "Your Neck Fat Is Not Belly Fat",
+        "heading_m_center": true,
+        "heading_d_center": false,
+        "heading_color": "#ffffff",
+        "description": "<p>Just like your hair has a different texture and needs different products...<br/><br/>Just like your skin loses moisture differently and needs different ingredients...<br/><br/>Your body stores fat in different places and needs different supplements.<br/><br/>If you're a Black man over 30, your body stores fat differently than white men in critical ways:</p>",
+        "description_m_center": true,
+        "description_d_center": false,
+        "description_color": "#ffffff",
+        "image": "shopify://shop_images/image_55604080_2.png",
+        "border_radius": 0,
+        "image_right": false,
+        "button_label": "",
+        "button_url": "",
+        "btn_bottom_text": "",
+        "btn_bottom_text_color": "#000",
+        "bg": "shopify://shop_images/8ae611d342464e59c2490a858f165290efd96ca0.png",
+        "bgcolor": "#ffffff",
+        "max_width": 1140,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "padding_top_m": 36,
+        "padding_bottom_m": 36
+      }
+    },
     "bn_neck_issue_hkj67P": {
       "type": "bn-neck-issue",
       "blocks": {
         "row_z9kpLz": {
           "type": "row",
           "settings": {
-            "bgcolor": "#F4F4F6",
+            "bgcolor": "#f4f4f6",
             "label": "Your Neck Fat Shows",
             "label_m_center": true,
             "label_d_center": true,
-            "label_color": "#000",
+            "label_color": "#000000",
             "heading": "Your Neck Fat Shows",
             "heading_m_center": false,
             "heading_d_center": false,
@@ -41,17 +100,17 @@
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
-            "btn_bottom_text_color": "#000"
+            "btn_bottom_text_color": "#000000"
           }
         },
         "row_weTme8": {
           "type": "row",
           "settings": {
-            "bgcolor": "#F4F4F6",
+            "bgcolor": "#f4f4f6",
             "label": "Your Neck Fat Chokes Your Sleep",
             "label_m_center": true,
             "label_d_center": true,
-            "label_color": "#000",
+            "label_color": "#000000",
             "heading": "Your Neck Fat Chokes Your Sleep",
             "heading_m_center": false,
             "heading_d_center": false,
@@ -65,17 +124,17 @@
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
-            "btn_bottom_text_color": "#000"
+            "btn_bottom_text_color": "#000000"
           }
         },
         "row_8BWbBY": {
           "type": "row",
           "settings": {
-            "bgcolor": "#F4F4F6",
+            "bgcolor": "#f4f4f6",
             "label": "Your Neck Fat Is A Metabolic Warning Light",
             "label_m_center": true,
             "label_d_center": true,
-            "label_color": "#000",
+            "label_color": "#000000",
             "heading": "Your Neck Fat Is A Metabolic Warning Light",
             "heading_m_center": false,
             "heading_d_center": false,
@@ -89,7 +148,7 @@
             "button_label": "",
             "button_url": "",
             "btn_bottom_text": "",
-            "btn_bottom_text_color": "#000"
+            "btn_bottom_text_color": "#000000"
           }
         }
       },
@@ -114,7 +173,7 @@
         "button_label": "",
         "button_url": "",
         "btn_bottom_text": "",
-        "btn_bottom_text_color": "#000",
+        "btn_bottom_text_color": "#000000",
         "bgcolor": "#f4f4f6",
         "max_width": 1140,
         "padding_top": 72,
@@ -317,6 +376,7 @@
   },
   "order": [
     "main",
+    "bn_reasons_fDrVCQ",
     "bn_neck_issue_hkj67P",
     "bn_problems_89fxVJ",
     "bn_fail_reason_wLpnhE"
