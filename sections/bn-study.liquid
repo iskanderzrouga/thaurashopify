@@ -111,56 +111,53 @@
                                 {% endif %}
                               >
                                 <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
-                                    
-                                    {{
-                                  block.settings.image1
-                                  | image_url: width: max_width
-                                  | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
-                                }}
-                                {% if block.settings.text1 != blank %}
-                              <div
-                                class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
-                                style="color: {{ block.settings.description_color }};"
-                              >
-                                {{ block.settings.text1 }}
-                              </div>
-                            {% endif %}
-                            </div>
-                                {% if block.settings.image2 != blank %}
-                                    <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
-                                        
                                   {{
-                                    block.settings.image2
+                                    block.settings.image1
                                     | image_url: width: max_width
                                     | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
                                   }}
-                                  {% if block.settings.text2 != blank %}
-                              <div
-                                class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
-                                style="color: {{ block.settings.description_color }};"
-                              >
-                                {{ block.settings.text2 }}
-                              </div>
-                            {% endif %}
+                                  {% if block.settings.text1 != blank %}
+                                    <div
+                                      class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
+                                      style="color: {{ block.settings.description_color }};"
+                                    >
+                                      {{ block.settings.text1 }}
+                                    </div>
+                                  {% endif %}
                                 </div>
+                                {% if block.settings.image2 != blank %}
+                                  <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
+                                    {{
+                                      block.settings.image2
+                                      | image_url: width: max_width
+                                      | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
+                                    }}
+                                    {% if block.settings.text2 != blank %}
+                                      <div
+                                        class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
+                                        style="color: {{ block.settings.description_color }};"
+                                      >
+                                        {{ block.settings.text2 }}
+                                      </div>
+                                    {% endif %}
+                                  </div>
                                 {% endif %}
                                 {% if block.settings.image3 != blank %}
-                                    <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
-                                        
-                                  {{ 
-                                    block.settings.image3
-                                    | image_url: width: max_width
-                                    | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
-                                  }}
-                                  {% if block.settings.text3 != blank %}
-                              <div
-                                class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
-                                style="color: {{ block.settings.description_color }};"
-                              >
-                                {{ block.settings.text3 }}
-                              </div>
-                            {% endif %}
-                                </div>
+                                  <div class="grid md:flex max-md:grid-cols-2 md:flex-col-reverse gap-3 md:justify-between">
+                                    {{
+                                      block.settings.image3
+                                      | image_url: width: max_width
+                                      | image_tag: class: 'w-full rounded-[10px]', sizes: max_width_px
+                                    }}
+                                    {% if block.settings.text3 != blank %}
+                                      <div
+                                        class="text-[16px] md:text-[18px] font-normal !leading-[1.5] text-[#000]"
+                                        style="color: {{ block.settings.description_color }};"
+                                      >
+                                        {{ block.settings.text3 }}
+                                      </div>
+                                    {% endif %}
+                                  </div>
                                 {% endif %}
                               </div>
                             {% endif %}
