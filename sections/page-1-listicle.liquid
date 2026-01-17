@@ -61,10 +61,7 @@
     .listicle-site-header {
         background: var(--bg);
         border-bottom: 1px solid var(--border);
-        padding: 16px 0;
-        position: sticky;
-        top: 0;
-        z-index: 99;
+        padding: 12px 0;
     }
 
     .listicle-header-inner {
@@ -77,16 +74,13 @@
     }
 
     .listicle-blog-name {
-        font-family: var(--font-sans);
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--text);
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
+        display: flex;
+        align-items: center;
     }
 
-    .listicle-blog-name span {
-        color: var(--accent);
+    .listicle-header-logo {
+        height: 32px;
+        width: auto;
     }
 
     .listicle-header-date {
@@ -104,38 +98,38 @@
 
     /* Article Header */
     .listicle-article-header {
-        padding: 48px 0 32px;
+        padding: 20px 0 12px;
         text-align: center;
     }
 
     .listicle-article-label {
         font-family: var(--font-sans);
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1.5px;
         color: var(--accent);
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         display: inline-block;
     }
 
     .listicle-page h1 {
         font-family: var(--font-serif);
-        font-size: clamp(34px, 6vw, 48px);
+        font-size: clamp(26px, 5vw, 38px);
         font-weight: 700;
         line-height: 1.2;
         color: var(--text);
-        margin-bottom: 24px;
+        margin-bottom: 12px;
         letter-spacing: -0.5px;
     }
 
     .listicle-article-subtitle {
         font-family: var(--font-serif);
-        font-size: 19px;
+        font-size: 16px;
         font-style: italic;
         color: var(--text-secondary);
-        line-height: 1.6;
-        max-width: 600px;
+        line-height: 1.5;
+        max-width: 500px;
         margin: 0 auto;
     }
 
@@ -144,16 +138,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 14px;
-        padding: 24px 0;
+        gap: 10px;
+        padding: 12px 0;
+        margin: 0 0 16px;
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
-        margin: 0 0 32px;
     }
 
     .listicle-byline-avatar {
-        width: 52px;
-        height: 52px;
+        width: 36px;
+        height: 36px;
         border-radius: 50%;
         overflow: hidden;
         border: 2px solid var(--border);
@@ -167,24 +161,32 @@
 
     .listicle-byline-info {
         text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     .listicle-byline-name {
         font-family: var(--font-sans);
         font-weight: 600;
-        font-size: 15px;
+        font-size: 13px;
         color: var(--text);
     }
 
     .listicle-byline-meta {
         font-family: var(--font-sans);
-        font-size: 13px;
+        font-size: 12px;
         color: var(--text-muted);
+    }
+
+    .listicle-byline-meta::before {
+        content: "·";
+        margin-right: 8px;
     }
 
     /* Hero Image */
     .listicle-hero-image {
-        margin: 0 -24px 40px;
+        margin: 0 -24px 24px;
         position: relative;
     }
 
@@ -198,25 +200,33 @@
 
     .listicle-hero-image img {
         width: 100%;
+        max-width: 340px;
         height: auto;
         display: block;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 800px) {
+        .listicle-hero-image img {
+            max-width: 420px;
+        }
     }
 
     .listicle-hero-caption {
         font-family: var(--font-sans);
-        font-size: 12px;
+        font-size: 11px;
         color: var(--text-muted);
         text-align: center;
-        padding: 10px 24px;
+        padding: 6px 24px;
         font-style: italic;
     }
 
     /* Article Images */
     .listicle-article-image {
         margin: 28px 0;
-        max-height: 400px;
-        overflow: hidden;
         border-radius: 8px;
+        overflow: hidden;
+        max-height: 400px;
     }
 
     .listicle-article-image img {
@@ -258,7 +268,7 @@
         font-size: 20px;
         font-weight: 450;
         line-height: 1.9;
-        margin-bottom: 1.6em;
+        margin-bottom: 1.5em;
         color: var(--text-secondary);
         max-width: 60ch;
     }
@@ -281,12 +291,7 @@
         border-radius: 12px;
         padding: 40px;
         margin: 40px 0;
-        box-shadow: 0 1px 3px var(--shadow);
-        transition: box-shadow 0.2s ease;
-    }
-
-    .listicle-content-card:hover {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px var(--shadow);
     }
 
     .listicle-content-card h2:first-child {
@@ -303,8 +308,8 @@
         font-size: 23px;
         line-height: 1.7;
         color: var(--text);
-        margin-bottom: 32px;
-        font-weight: 400;
+        margin-bottom: 28px;
+        font-weight: 500;
     }
 
     /* Section Headers */
@@ -314,7 +319,7 @@
         font-weight: 700;
         line-height: 1.3;
         color: var(--text);
-        margin: 48px 0 24px;
+        margin: 48px 0 20px;
         padding-top: 16px;
         letter-spacing: -0.3px;
     }
@@ -334,50 +339,48 @@
 
     /* Pull Quote */
     .listicle-pull-quote {
-        margin: 40px 0;
+        margin: 36px 0;
         padding: 28px 32px;
         background: var(--accent-light);
         border-left: 5px solid var(--accent);
-        border-radius: 0 8px 8px 0;
-        box-shadow: 0 2px 8px rgba(180, 83, 9, 0.1);
+        border-radius: 0 6px 6px 0;
     }
 
     .listicle-pull-quote p {
         font-size: 22px;
         font-style: italic;
-        line-height: 1.7;
+        line-height: 1.6;
         color: var(--text);
         margin: 0;
     }
 
     .listicle-pull-quote cite {
         display: block;
-        margin-top: 14px;
+        margin-top: 12px;
         font-family: var(--font-sans);
         font-size: 13px;
         font-style: normal;
         color: var(--accent);
-        font-weight: 500;
     }
 
     /* The Cycle Box */
     .listicle-cycle-box {
         background: var(--bg-card);
         border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 32px;
-        margin: 40px 0;
+        border-radius: 8px;
+        padding: 28px;
+        margin: 36px 0;
         box-shadow: 0 2px 12px var(--shadow);
     }
 
     .listicle-cycle-title {
         font-family: var(--font-sans);
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 13px;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         color: var(--accent);
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -416,18 +419,18 @@
 
     .listicle-cycle-content h4 {
         font-family: var(--font-sans);
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 600;
         color: var(--text);
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
 
     .listicle-cycle-content p {
         font-family: var(--font-sans);
-        font-size: 15px;
-        color: var(--text-secondary);
+        font-size: 14px;
+        color: var(--text-muted);
         margin: 0;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 
     .listicle-cycle-bottom {
@@ -448,23 +451,21 @@
     /* Key Insight Box */
     .listicle-insight-box {
         background: var(--sage-light);
-        border: 2px solid var(--sage);
-        border-radius: 10px;
-        padding: 28px 32px;
-        margin: 40px 0;
-        box-shadow: 0 2px 8px rgba(22, 101, 52, 0.1);
+        border: 1px solid var(--sage);
+        border-radius: 8px;
+        padding: 20px 24px;
+        margin: 32px 0;
     }
 
     .listicle-insight-box p {
-        font-size: 18px;
-        line-height: 1.75;
+        font-size: 16px;
+        line-height: 1.7;
         color: var(--text);
         margin: 0;
     }
 
     .listicle-insight-box strong {
         color: var(--sage);
-        font-weight: 700;
     }
 
     /* Author Signature */
@@ -575,21 +576,20 @@
 
     .listicle-comment-form-submit {
         font-family: var(--font-sans);
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
-        padding: 12px 20px;
+        padding: 8px 16px;
         background: var(--accent);
         color: white;
         border: none;
-        border-radius: 6px;
+        border-radius: 5px;
         cursor: pointer;
         align-self: flex-start;
         transition: background 0.2s;
-        min-height: 44px;
     }
 
     .listicle-comment-form-submit:hover {
-        background: #92400E;
+        background: #a54d3d;
     }
 
     .listicle-comment-success {
@@ -630,39 +630,37 @@
     }
 
     .listicle-comment-text {
-        font-size: 16px;
+        font-size: 15px;
         color: var(--text-secondary);
-        margin: 8px 0 12px;
-        line-height: 1.65;
+        margin: 6px 0 10px;
+        line-height: 1.6;
     }
 
     .listicle-comment-actions {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 16px;
     }
 
     .listicle-comment-meta {
         font-family: var(--font-sans);
         font-size: 12px;
         color: var(--text-muted);
-        padding: 8px 0;
     }
 
     .listicle-like-btn {
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 5px;
         font-family: var(--font-sans);
-        font-size: 13px;
+        font-size: 12px;
         color: var(--text-muted);
         background: none;
         border: none;
         cursor: pointer;
-        padding: 10px 14px;
-        border-radius: 6px;
+        padding: 4px 8px;
+        border-radius: 4px;
         transition: all 0.2s;
-        min-height: 44px;
     }
 
     .listicle-like-btn:hover {
@@ -675,16 +673,16 @@
     }
 
     .listicle-like-btn svg {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
     }
 
     /* CTA Box */
     .listicle-cta-box {
         background: var(--bg-card);
-        border: 2px solid var(--accent);
-        border-radius: 12px;
-        padding: 36px;
+        border: 2px solid #a3242f;
+        border-radius: 8px;
+        padding: 32px;
         text-align: center;
         margin: 48px 0;
         box-shadow: 0 4px 20px var(--shadow);
@@ -692,39 +690,52 @@
 
     .listicle-cta-box h3 {
         font-family: var(--font-serif);
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
         color: var(--text);
-        margin-bottom: 14px;
+        margin-bottom: 12px;
     }
 
     .listicle-cta-box p {
-        font-size: 17px;
-        line-height: 1.6;
+        font-size: 16px;
         color: var(--text-secondary);
-        margin-bottom: 24px;
-        max-width: 500px;
+        margin-bottom: 20px;
+        max-width: 480px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    .listicle-cta-box .listicle-article-image {
+        max-width: 280px;
+        margin: 0 auto 1rem;
+    }
+
+    .listicle-cta-box .listicle-article-image img {
+        object-fit: contain;
+        object-position: center center;
+        max-height: 300px;
+        width: auto;
+        margin: 0 auto;
+    }
+
     .listicle-cta-button {
         display: inline-block;
-        background: var(--accent);
+        background: #a3242f;
         color: white;
-        padding: 14px 32px;
+        padding: 16px 40px;
         text-decoration: none;
         font-family: var(--font-sans);
         font-weight: 600;
-        font-size: 15px;
-        border-radius: 6px;
+        font-size: 16px;
+        border-radius: 8px;
         transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(163, 36, 47, 0.2);
     }
 
     .listicle-cta-button:hover {
-        background: #92400E;
+        background: #8a1e28;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(180, 83, 9, 0.3);
+        box-shadow: 0 4px 12px rgba(163, 36, 47, 0.3);
     }
 
     .listicle-cta-note {
@@ -734,30 +745,65 @@
         margin-top: 12px;
     }
 
+    /* Sticky CTA */
+    .listicle-sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-card);
+        border-top: 1px solid var(--border);
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        z-index: 100;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+    }
+
+    .listicle-sticky-cta.visible {
+        transform: translateY(0);
+    }
+
+    .listicle-sticky-cta-text {
+        font-family: var(--font-sans);
+        font-size: 14px;
+        color: var(--text-secondary);
+        display: none;
+    }
+
+    @media (min-width: 600px) {
+        .listicle-sticky-cta-text {
+            display: block;
+        }
+    }
+
+    .listicle-sticky-cta .listicle-cta-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
     /* Footer */
     .listicle-footer {
-        padding: 48px 0 40px;
+        padding: 40px 0;
         text-align: center;
         border-top: 1px solid var(--border);
-        margin-top: 56px;
-        background: rgba(0,0,0,0.01);
+        margin-top: 48px;
     }
 
     .listicle-footer p {
         font-family: var(--font-sans);
         font-size: 12px;
         color: var(--text-muted);
-        line-height: 1.9;
-        margin-bottom: 10px;
-        max-width: 560px;
-        margin-left: auto;
-        margin-right: auto;
+        line-height: 1.8;
+        margin-bottom: 8px;
     }
 
     .listicle-footer p:last-child {
         margin-bottom: 0;
-        margin-top: 16px;
-        font-weight: 500;
     }
 
     /* Animations */
@@ -792,7 +838,7 @@
         }
 
         .listicle-container {
-            padding: 0 20px;
+            padding: 0 18px;
         }
 
         .listicle-page h1 {
@@ -802,7 +848,7 @@
 
         .listicle-page h2 {
             font-size: 26px;
-            margin: 36px 0 18px;
+            margin: 36px 0 16px;
         }
 
         .listicle-article-subtitle {
@@ -813,84 +859,43 @@
             font-size: 19px;
         }
 
-        .listicle-article-content p {
-            font-size: 19px;
-            line-height: 1.8;
-        }
-
         .listicle-content-card {
             padding: 24px 20px;
-            margin: 28px -6px;
-            border-radius: 10px;
-        }
-
-        .listicle-cycle-box,
-        .listicle-comments-section {
-            padding: 20px 18px;
-            margin-left: -6px;
-            margin-right: -6px;
-        }
-
-        .listicle-cta-box {
-            padding: 28px 20px;
-            margin-left: -6px;
-            margin-right: -6px;
-            border-width: 3px;
-        }
-
-        .listicle-cta-box h3 {
-            font-size: 22px;
-        }
-
-        .listicle-cta-button {
-            padding: 16px 28px;
-            font-size: 16px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .listicle-article-image {
             margin: 24px 0;
         }
 
-        .listicle-article-image figcaption {
-            font-size: 13px;
-            padding: 10px 0;
-        }
-
-        .listicle-hero-caption {
-            font-size: 13px;
-            padding: 12px 18px;
-        }
-
         .listicle-pull-quote {
-            padding: 22px 24px;
-            margin: 28px -6px;
+            padding: 20px 22px;
+            margin: 28px 0;
         }
 
         .listicle-pull-quote p {
             font-size: 19px;
         }
 
-        .listicle-insight-box {
-            padding: 20px 22px;
-            margin: 24px -6px;
+        .listicle-article-content p {
+            font-size: 19px;
         }
 
-        .listicle-insight-box p {
-            font-size: 17px;
+        .listicle-cycle-box,
+        .listicle-comments-section,
+        .listicle-cta-box {
+            padding: 20px;
+            margin-left: -4px;
+            margin-right: -4px;
         }
 
         .listicle-cycle-step {
-            padding: 14px 0;
+            padding: 12px 0;
         }
 
-        .listicle-cycle-content h4 {
-            font-size: 15px;
+        .listicle-article-image {
+            margin: 20px 0;
         }
 
-        .listicle-cycle-content p {
-            font-size: 14px;
+        .listicle-article-image figcaption {
+            font-size: 12px;
+            padding: 8px 0;
         }
 
         .listicle-comment-form {
@@ -901,23 +906,41 @@
             display: none;
         }
 
-        .listicle-comment-text {
-            font-size: 15px;
-        }
-
         .listicle-signature-line {
             font-size: 28px;
         }
 
-        .listicle-signature-bio {
+        .listicle-cta-box h3 {
+            font-size: 20px;
+        }
+
+        .listicle-cta-button {
+            display: block;
+            width: 100%;
+            padding: 16px 24px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .listicle-cycle-num {
+            width: 28px;
+            height: 28px;
             font-size: 13px;
+        }
+
+        .listicle-insight-box {
+            padding: 18px 20px;
+        }
+
+        .listicle-insight-box p {
+            font-size: 15px;
         }
     }
 </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,450;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;450;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;450;500;600;700&family=Inter:wght@400;450;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
 
 <div class="listicle-page">
     <div class="listicle-progress-bar" id="listicleProgressBar"></div>
@@ -926,201 +949,265 @@
 
     <header class="listicle-site-header">
         <div class="listicle-header-inner">
-            <div class="listicle-blog-name">Health <span>Research</span></div>
-            <div class="listicle-header-date">December 2024</div>
+            <div class="listicle-blog-name"><img src="{{ 'mhr-logo.png' | asset_url }}" alt="Men's Health Review" class="listicle-header-logo"></div>
+            <div class="listicle-header-date">January 2026</div>
         </div>
     </header>
 
     <main class="listicle-container">
         <article>
             <header class="listicle-article-header">
-                <span class="listicle-article-label">Men's Health</span>
-                <h1>Why Your Belly Fat Keeps Growing After 40 (And What Actually Fixes It)</h1>
-                <p class="listicle-article-subtitle">The hidden hormonal mechanism that turns your own testosterone against you — and how to finally break the cycle.</p>
+                <span class="listicle-article-label">Reader Story</span>
+                <h1>I'm 54 and I've Had This Gut Since My 30s. Here's What Finally Changed.</h1>
+                <p class="listicle-article-subtitle">A conversation at a barbecue taught me something about my body that I wish I'd known 20 years ago.</p>
             </header>
 
             <div class="listicle-byline">
                 <div class="listicle-byline-avatar">
-                    <img src="{{ 'author-marcus.png' | asset_url }}" alt="Dr. Marcus Chen">
+                    <img src="{{ 'headshot.png' | asset_url }}" alt="Gary Thompson">
                 </div>
                 <div class="listicle-byline-info">
-                    <div class="listicle-byline-name">Dr. Marcus Chen, MD</div>
-                    <div class="listicle-byline-meta">Endocrinology · 14 min read</div>
+                    <span class="listicle-byline-name">Gary Thompson, 54</span>
+                    <span class="listicle-byline-meta">12 min read</span>
                 </div>
             </div>
 
             <figure class="listicle-hero-image">
-                <img src="{{ 'hero-problem.png' | asset_url }}" alt="Understanding belly fat after 40">
-                <figcaption class="listicle-hero-caption">Why nothing seems to work — and what actually does.</figcaption>
+                <img src="{{ 'gary-hero.jpg' | asset_url }}" alt="Gary enjoying time outdoors">
+                <figcaption class="listicle-hero-caption">The cookout where everything started.</figcaption>
             </figure>
 
             <div class="listicle-article-content">
 
                 <div class="listicle-content-card">
-                <p class="listicle-lead">If you're a man over 40 watching your belly grow despite eating less and exercising more, I need you to understand something: <strong>it's not your fault.</strong></p>
+                <p class="listicle-lead">I'm 54 years old. I've had this gut since my mid-thirties.</p>
 
-                <p>After 20 years treating men with <strong>stubborn visceral fat</strong>, I've seen the same story hundreds of times. Intelligent, disciplined men doing everything "right" — <strong>cutting calories, hitting the gym, trying supplement after supplement</strong> — and watching the scale stay stuck or climb higher.</p>
+                <p>That's over <strong>two decades of sucking it in for photos</strong>. Two decades of <strong>buying pants a size bigger</strong> "just to be comfortable." Two decades of my wife saying I look fine when we both know <strong>the shirts aren't fitting like they used to</strong>.</p>
 
-                <p><strong>The problem isn't willpower.</strong> It isn't discipline. It isn't even your diet.</p>
+                <p>I'm not obese. I'm not unhealthy — at least not on paper. Blood pressure's fine. Cholesterol's manageable. <strong>I just carry this belly that never seems to go anywhere</strong>, no matter what I do.</p>
 
-                <p><strong>The problem is a biological mechanism that's literally turning your own testosterone against you.</strong></p>
+                <p>And honestly? <strong>I'd made peace with it.</strong></p>
                 </div>
 
                 <div class="listicle-content-card">
-                <h2>The Discovery That Changed Everything</h2>
+                <h2>The Acceptance Phase</h2>
 
                 <figure class="listicle-article-image">
-                    <img src="{{ 'middle-aged-man-measuring-waist.jpg' | asset_url }}" alt="Man measuring his belly with tape measure">
-                    <figcaption>The morning ritual that never seems to bring good news.</figcaption>
+                    <img src="{{ 'before.webp' | asset_url }}" alt="Gary looking at himself in the bathroom mirror">
+                    <figcaption>The morning ritual of avoiding my reflection.</figcaption>
                 </figure>
 
-                <p>In medical school, we learned that testosterone naturally declines as men age — roughly <strong>1-2% per year after 30</strong>. This is normal. Expected. Nothing to worry about.</p>
+                <p>Look, I'm a practical guy. I've got a desk job. I've got two kids — one in college, one finishing high school. I've got a mortgage and <strong>a retirement date circled on the calendar</strong> about four years from now.</p>
 
-                <p>What they didn't teach us — what most doctors still don't fully appreciate — is <strong>what happens when that declining testosterone meets accumulated belly fat.</strong></p>
+                <p>I don't have time for two-hour gym sessions. <strong>I don't have the energy for diets that make me miserable.</strong> And I definitely don't have the patience for supplements that promise miracles and deliver nothing.</p>
 
-                <p>It creates a <strong>feedback loop</strong>. A vicious cycle where your belly fat actively makes itself bigger, using your own hormones as fuel.</p>
+                <p>So I just accepted it. <strong>The gut stays. That's life after 40.</strong> That's what happens when you spend 25 years sitting at a desk, having beers on weekends, and <strong>prioritizing your kids' soccer games over your own health</strong>.</p>
+
+                <p>I figured: some guys go bald, some guys get guts. <strong>I got the gut.</strong></p>
+                </div>
+
+                <div class="listicle-content-card">
+                <h2>The Barbecue That Changed Everything</h2>
+
+                <p>Last summer, my wife became friends with a woman from her book club. Nice lady. <strong>Her husband's a doctor</strong> — internal medicine, I think. Anyway, they invited us over for a barbecue.</p>
+
+                <p>I'm standing there with a beer, making small talk with the husband (his name's Alan), and somehow we get on the topic of health. Probably because <strong>I made some joke about needing to lose 30 pounds before retirement</strong>.</p>
+
+                <p>Alan kind of paused and asked me a question I didn't expect:</p>
+
+                <div class="listicle-pull-quote">
+                    <p>"Have you ever had your testosterone levels checked?"</p>
+                </div>
+
+                <p>I laughed it off. <strong>"Nah, I don't need Viagra or anything like that."</strong></p>
+
+                <p>He smiled. <strong>"That's not what I mean. I'm talking about your belly."</strong></p>
+                </div>
+
+                <div class="listicle-content-card">
+                <h2>What Alan Told Me</h2>
+
+                <p>Alan explained something that, honestly, <strong>I'd never heard before</strong>. And I've read plenty of health articles over the years.</p>
+
+                <p>He said: <strong>"Your belly fat isn't just sitting there. It's actively working against you."</strong></p>
+
+                <p>Here's what he broke down for me:</p>
+
+                <figure class="listicle-article-image">
+                    <img src="{{ 'napkin.png' | asset_url }}" alt="Hand-drawn diagram on a napkin showing a cycle">
+                    <figcaption>Alan sketched this out on a napkin. I took a photo so I wouldn't forget.</figcaption>
+                </figure>
 
                 <div class="listicle-cycle-box">
-                    <div class="listicle-cycle-title">The Testosterone-Estrogen Trap</div>
+                    <div class="listicle-cycle-title">The Testosterone-Estrogen Loop</div>
                     <div class="listicle-cycle-steps">
                         <div class="listicle-cycle-step">
                             <div class="listicle-cycle-num">1</div>
                             <div class="listicle-cycle-content">
-                                <h4>Testosterone Naturally Drops</h4>
-                                <p>Every man loses 1-2% of testosterone annually after 30. By 50, you may have lost 20-40% of your peak levels.</p>
+                                <h4>Testosterone Drops</h4>
+                                <p>It happens to every guy after 30. Your body starts storing more fat, especially around the middle.</p>
                             </div>
                         </div>
                         <div class="listicle-cycle-step">
                             <div class="listicle-cycle-num">2</div>
                             <div class="listicle-cycle-content">
-                                <h4>Fat Burning Slows Down</h4>
-                                <p>Testosterone is your primary fat-burning hormone. As it declines, your body shifts from burning fat to storing it.</p>
+                                <h4>Belly Fat Produces Aromatase</h4>
+                                <p>I'd never heard of it. Sounds like a candle scent. But it's an enzyme your belly fat makes.</p>
                             </div>
                         </div>
                         <div class="listicle-cycle-step">
                             <div class="listicle-cycle-num">3</div>
                             <div class="listicle-cycle-content">
-                                <h4>Belly Fat Accumulates</h4>
-                                <p>Visceral fat — the deep belly fat surrounding your organs — begins to build up.</p>
+                                <h4>Aromatase Converts T to Estrogen</h4>
+                                <p>Yes, estrogen. The stuff women have more of. <strong>Your own belly is turning your testosterone against you.</strong></p>
                             </div>
                         </div>
                         <div class="listicle-cycle-step">
                             <div class="listicle-cycle-num">4</div>
                             <div class="listicle-cycle-content">
-                                <h4>Belly Fat Converts T to Estrogen</h4>
-                                <p>Your gut contains an enzyme called aromatase. It literally transforms the testosterone you have left into estrogen.</p>
-                            </div>
-                        </div>
-                        <div class="listicle-cycle-step">
-                            <div class="listicle-cycle-num">5</div>
-                            <div class="listicle-cycle-content">
-                                <h4>Estrogen Signals More Fat Storage</h4>
-                                <p>Higher estrogen tells your body to store even more fat — right back on the belly.</p>
+                                <h4>More Estrogen = More Fat Storage</h4>
+                                <p>And the cycle repeats. Getting worse every year.</p>
                             </div>
                         </div>
                     </div>
                     <div class="listicle-cycle-bottom">
-                        <p>The cycle repeats — getting worse every year you don't address it.</p>
+                        <p>This is why boosting testosterone doesn't work for most guys.</p>
                     </div>
                 </div>
 
-                <figure class="listicle-article-image">
-                    <img src="{{ 'man-looking-at-pills.jpg' | asset_url }}" alt="Man reading supplement bottle label skeptically">
-                    <figcaption>Another bottle, another promise. But does it address the real problem?</figcaption>
-                </figure>
-
-                <p>This is why so many men feel like they're fighting an unwinnable battle. <strong>They literally are</strong> — because every strategy they're using ignores the actual mechanism driving the problem.</p>
-                </div>
-
-                <div class="listicle-content-card">
-                <h2>Why Common Solutions Don't Work</h2>
-
-                <p>Understanding this cycle explains why the most popular approaches fail for men over 40:</p>
-
-                <p><strong>Calorie restriction.</strong> Eating less triggers your body's survival mechanisms. Your metabolism slows. Cortisol rises. And because you're in a stressed, calorie-deprived state, your body preferentially burns muscle for energy while <em>protecting</em> fat stores.</p>
-
-                <figure class="listicle-article-image">
-                    <img src="{{ 'man-tired-at-desk.jpg' | asset_url }}" alt="Exhausted man at his desk in the afternoon">
-                    <figcaption>The 2pm crash that's become a daily occurrence.</figcaption>
-                </figure>
-
-                <p><strong>Cardio & exercise.</strong> Exercise is healthy, but it can't overcome a hormonal imbalance. Running on a treadmill doesn't reduce aromatase activity. For men in the feedback loop, hours of cardio often lead to frustration — visible effort with minimal visible results.</p>
-
-                <figure class="listicle-article-image">
-                    <img src="{{ 'man-exercising-frustrated.jpg' | asset_url }}" alt="Frustrated man exercising on treadmill">
-                    <figcaption>Hours of cardio, minimal visible results. Sound familiar?</figcaption>
-                </figure>
-
-                <p><strong>Testosterone replacement (TRT).</strong> This seems logical: if testosterone is low, add more. But if your aromatase levels are high, you're just giving that enzyme more raw material to convert. Many men on TRT actually see their estrogen spike and their belly fat <em>increase</em>.</p>
-
-                <p><strong>Generic testosterone boosters.</strong> Most supplements focus on boosting testosterone production. But if your body is converting that testosterone into estrogen as fast as you make it, you're running on a treadmill.</p>
+                <p>Then he said the thing that stuck with me:</p>
 
                 <div class="listicle-pull-quote">
-                    <p><strong>More testosterone won't fix this.</strong> If you don't address the conversion problem, additional testosterone just becomes additional estrogen. You're feeding the very cycle that's working against you.</p>
+                    <p>"You can make more testosterone, but if your body's just converting it into estrogen, <strong>you're spinning your wheels</strong>. The new testosterone becomes fuel for more belly fat."</p>
+                    <cite>— Alan, MD</cite>
                 </div>
+
+                <p>I stood there with my beer, probably looking dumb.</p>
+
+                <p>"So what actually works?" I asked.</p>
                 </div>
 
                 <div class="listicle-content-card">
-                <h2>What Actually Works: The 3-Pathway Approach</h2>
+                <h2>The Art of Supplements (According to Alan)</h2>
 
-                <p>Breaking this cycle requires a <strong>fundamentally different strategy</strong>. You can't just attack one link in the chain — <strong>you need to disrupt multiple pathways simultaneously.</strong></p>
+                <p>Now, I want to be clear: <strong>I was skeptical.</strong> I've seen the ads. "Burn fat while you sleep!" "Lose 30 pounds in 30 days!" All garbage.</p>
 
-                <p>After years of research and clinical observation, I've identified <strong>three mechanisms</strong> that must be addressed together:</p>
+                <p>But Alan's a doctor. A real one. <strong>Not someone trying to sell me something.</strong> So I listened.</p>
 
-                <p><strong>1. Block the Conversion</strong></p>
-                <p>You need to <strong>reduce aromatase activity</strong> — stopping testosterone from being converted to estrogen in the first place. Natural compounds like <strong>DIM</strong> (from cruciferous vegetables) help metabolize estrogen and inhibit aromatase. <strong>Zinc</strong> is equally critical — most men over 40 are deficient.</p>
+                <p>He said most supplements don't work because <strong>they're designed by marketing people, not scientists</strong>. They throw together a bunch of popular ingredients at tiny doses and slap a label on it.</p>
 
-                <p><strong>2. Target Visceral Fat Directly</strong></p>
-                <p>You need compounds that specifically address belly fat — not just general weight loss. <strong>Grains of Paradise</strong> activates brown adipose tissue. Certain berberine derivatives, particularly <strong>GlucoVantage</strong>, show remarkable efficacy at 5x the absorption of standard berberine.</p>
+                <p>But — and this is the part that got me — <strong>when you actually understand the root cause of a problem, and you combine the right ingredients at the right doses, supplements can work.</strong></p>
 
-                <p><strong>3. Support Natural Testosterone Production</strong></p>
-                <p>Once you've addressed conversion and started reducing visceral fat, you can support your body's own testosterone production. Adaptogens like <strong>Ashwagandha</strong> (specifically KSM-66) have robust evidence for <strong>increasing testosterone while reducing cortisol</strong>.</p>
+                <p>It's not magic. It's biochemistry.</p>
 
                 <div class="listicle-insight-box">
-                    <p><strong>The crucial insight:</strong> These three pathways must be addressed simultaneously. Blocking conversion without targeting visceral fat leaves the fat in place. Boosting testosterone without blocking conversion feeds the problem. It's the combination that finally breaks the cycle.</p>
+                    <p>"The human body has specific pathways. If you know which pathways are broken, and you know which compounds affect those pathways, you can make real changes. <strong>That's the difference between a gimmick and a real formulation.</strong>"</p>
                 </div>
                 </div>
 
                 <div class="listicle-content-card">
-                <h2>What to Realistically Expect</h2>
+                <h2>What He Recommended</h2>
 
-                <p>When the 3-pathway approach is implemented correctly, here's the typical progression:</p>
+                <p>Alan didn't push anything on me. He just mentioned that there's a company called <strong>Thaura</strong> that he respects. Said they have a research team that actually knows what they're doing.</p>
 
-                <p><strong>Weeks 1-2:</strong> <strong>Energy stabilization</strong> is usually first. The afternoon crashes diminish. Sleep quality improves — deeper, more restorative. Morning energy increases.</p>
+                <p>Their product for this specific issue — the testosterone-to-estrogen loop — is called <strong>Dryft</strong>.</p>
 
-                <p><strong>Weeks 2-4:</strong> Clothes start <strong>fitting differently</strong> before the scale moves significantly. Bloating reduces. The "puffy" look around the midsection begins to diminish. <strong>Belt notches change.</strong></p>
+                <p>He explained that <strong>it works on three things at once</strong>:</p>
 
-                <p><strong>Weeks 4-8:</strong> This is when <strong>others start noticing</strong>. Waist measurements drop measurably — typically <strong>2-4 inches</strong> for men who've been stuck for years. Face appears leaner.</p>
+                <p><strong>1. Blocking the aromatase enzyme</strong> — so less testosterone gets converted to estrogen.</p>
+
+                <p><strong>2. Targeting visceral fat specifically</strong> — that's the deep belly fat that's causing the problem.</p>
+
+                <p><strong>3. Supporting natural testosterone</strong> — without just flooding your system with more T that gets converted anyway.</p>
+
+                <p>"It's not a testosterone booster," he said. <strong>"It's a testosterone protector. Big difference."</strong></p>
+                </div>
+
+                <div class="listicle-content-card">
+                <h2>My Skeptical Start</h2>
+
+                <p>I didn't order anything that night. I went home, did my own research, and sat on it for about two weeks.</p>
+
+                <p>But the idea wouldn't leave my head: <strong>What if the reason nothing has worked is because I was fighting the wrong battle?</strong></p>
+
+                <p><strong>I wasn't lazy. I wasn't weak.</strong> I was working against my own biology — and <strong>I didn't even know it</strong>.</p>
+
+                <p>So I ordered a bottle. <strong>One bottle. Just to see.</strong></p>
+                </div>
+
+                <div class="listicle-content-card">
+                <h2>What Actually Happened</h2>
+
+                <p><strong>Week 1-2:</strong> Honestly? Not much I could see. I felt a little more steady through the day — <strong>fewer of those afternoon crashes</strong> where I'd be useless after 3pm. Slept better too, which I wasn't expecting. But if you looked at me, nothing different yet.</p>
+
+                <p><strong>Week 3-4:</strong> My wife mentioned my face looked thinner. I figured she was just being nice. Then I noticed <strong>my pants were a little looser</strong>. Not dramatic, but I could buckle my belt one notch tighter without it digging in.</p>
+
+                <p><strong>Week 5-8:</strong> Okay, this is when I actually started believing something was happening. Stepped on the scale — <strong>down 11 pounds</strong>. But more importantly, I could <em>see</em> it. The gut was smaller. Not gone — I'm not gonna claim miracles — but noticeably smaller. I pulled out a dress shirt I hadn't worn in three years. <strong>It fit.</strong></p>
 
                 <figure class="listicle-article-image">
-                    <img src="{{ 'man-fitting-old-shirt.jpg' | asset_url }}" alt="Man trying on shirt that fits well again">
-                    <figcaption>That moment when clothes you gave up on start fitting again.</figcaption>
+                    <img src="{{ 'after.webp' | asset_url }}" alt="Gary trying on pants that finally fit">
+                    <figcaption>The moment I realized something was actually different.</figcaption>
                 </figure>
 
-                <p><strong>Weeks 8-12:</strong> Maximum benefits are typically achieved by week 12. <strong>The cycle has been broken.</strong> Hormonal balance is restored. The body is no longer fighting against itself.</p>
+                <p id="listicle-results-trigger"><strong>By week 12:</strong> <strong>Down 19 pounds. Three inches off my waist.</strong> And the thing I didn't expect at all — energy. Real energy. Not jittery coffee energy. Just... feeling normal. Like I remember feeling in my early 40s before everything started dragging.</p>
+                </div>
 
-                <p>I want to be clear: <strong>this isn't an overnight transformation.</strong> The cycle took years to establish. Breaking it takes consistent effort over weeks. But for men who've been fighting a losing battle, <strong>seeing real progress — finally — is life-changing.</strong></p>
+                <div class="listicle-content-card">
+                <h2>What I Wish I'd Known</h2>
 
-                <figure class="listicle-article-image">
-                    <img src="{{ 'healthy-man-outdoors.jpg' | asset_url }}" alt="Healthy energetic man walking in park">
-                    <figcaption>What it looks like when your body stops fighting against itself.</figcaption>
-                </figure>
+                <p>I'm not saying this is going to work for everyone. Bodies are different. I don't know your situation.</p>
+
+                <p>But here's what I wish someone had told me 20 years ago:</p>
+
+                <div class="listicle-pull-quote">
+                    <p><strong>That gut isn't just sitting there.</strong> It's stealing your testosterone. Draining your energy. Making everything feel harder than it should. And the worst part? <strong>It's using your own hormones to make itself grow.</strong></p>
+                </div>
+
+                <p><strong>You're not lazy. You're not undisciplined.</strong> Your body is working against you — and you probably didn't even know it.</p>
+
+                <p>For me, understanding the testosterone-estrogen loop was <strong>the missing piece</strong>. Once I stopped fighting it with the wrong weapons and started actually addressing the cycle, things changed.</p>
+                </div>
+
+                <div class="listicle-content-card">
+                <h2>Four Years From Retirement</h2>
+
+                <p>I've got four years until I'm done working. Four years until I can <strong>travel with my wife, play with future grandkids</strong>, actually enjoy the life I've been building.</p>
+
+                <p><strong>I don't want to spend those years hauling around a gut that makes me tired.</strong> I don't want to avoid photos or buy bigger pants every year.</p>
+
+                <p><strong>I'm not trying to look 25 again. I just want to feel good.</strong></p>
+
+                <p>And for the first time in a long time, <strong>I actually do</strong>.</p>
                 </div>
 
                 <hr class="listicle-section-break">
 
+                <p>If any of this sounds familiar — the gut that won't budge, the feeling that you've tried everything — <strong>maybe look into what's actually happening inside your body.</strong></p>
+
+                <p>The answer might not be more discipline. It might be different science.</p>
+
                 <div class="listicle-signature">
-                    <div class="listicle-signature-line">— Dr. Chen</div>
-                    <p class="listicle-signature-bio">Dr. Marcus Chen is a board-certified endocrinologist specializing in metabolic health. This article is for educational purposes and not intended as medical advice. Individual results vary.</p>
+                    <div class="listicle-signature-line">— Gary</div>
+                    <p class="listicle-signature-bio">Gary Thompson is a 54-year-old project manager from Ohio. This is his personal experience and not intended as medical advice. Individual results vary.</p>
                 </div>
 
             </div>
         </article>
 
+        <div class="listicle-cta-box" id="listicleProductSection">
+            <h3>The Product I Mentioned</h3>
+            <figure class="listicle-article-image" style="margin: 0 auto 1rem; text-align: center;">
+                <img src="{{ 'supplement-bottle-counter.jpg' | asset_url }}" alt="Gary holding the Dryft supplement bottle" style="display: block; margin: 0 auto; object-fit: contain; object-position: center;">
+            </figure>
+            <p>If you're curious about Dryft (the supplement Alan recommended), you can learn more on their site. I'm not getting paid to say this — just sharing what worked for me.</p>
+            <a href="https://www.thaura.co/pages/bellyfat" class="listicle-cta-button">Learn About Dryft</a>
+            <p class="listicle-cta-note">Do your own research · Talk to your doctor</p>
+        </div>
+
         <section class="listicle-comments-section">
             <div class="listicle-comments-header">
                 <h3>Comments</h3>
-                <span class="listicle-comments-count">127 comments</span>
+                <span class="listicle-comments-count">47 comments</span>
             </div>
 
             <div class="listicle-comment-form">
@@ -1139,15 +1226,15 @@
 
             <div class="listicle-comment">
                 <div class="listicle-comment-body">
-                    <div class="listicle-comment-name">Michael R.</div>
-                    <p class="listicle-comment-text">This explains so much. I've been fighting this gut for years and never understood why nothing worked. The aromatase explanation makes complete sense.</p>
+                    <div class="listicle-comment-name">Steve M.</div>
+                    <p class="listicle-comment-text">This is literally me. Thanks for sharing Gary.</p>
                     <div class="listicle-comment-actions">
-                        <span class="listicle-comment-meta">Dec 15</span>
-                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 47)">
+                        <span class="listicle-comment-meta">2 days ago</span>
+                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 23)">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
-                            <span class="listicle-like-count">47</span>
+                            <span class="listicle-like-count">23</span>
                         </button>
                     </div>
                 </div>
@@ -1155,15 +1242,15 @@
 
             <div class="listicle-comment">
                 <div class="listicle-comment-body">
-                    <div class="listicle-comment-name">David K.</div>
-                    <p class="listicle-comment-text">The energy improvement hit first — no more 2pm crashes. Then the belly started going down. Wish I'd understood this years ago.</p>
+                    <div class="listicle-comment-name">Mike</div>
+                    <p class="listicle-comment-text">Never heard of aromatase before. Looked it up and it checks out.</p>
                     <div class="listicle-comment-actions">
-                        <span class="listicle-comment-meta">Dec 12</span>
-                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 32)">
+                        <span class="listicle-comment-meta">4 days ago</span>
+                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 18)">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
-                            <span class="listicle-like-count">32</span>
+                            <span class="listicle-like-count">18</span>
                         </button>
                     </div>
                 </div>
@@ -1171,15 +1258,15 @@
 
             <div class="listicle-comment">
                 <div class="listicle-comment-body">
-                    <div class="listicle-comment-name">James T.</div>
-                    <p class="listicle-comment-text">Doc kept telling me to lose the gut. I was eating 1,500 calories and exercising 5x a week — nothing worked. This finally makes sense.</p>
+                    <div class="listicle-comment-name">BrianK</div>
+                    <p class="listicle-comment-text">Good read. Appreciate you not making it feel like an infomercial.</p>
                     <div class="listicle-comment-actions">
-                        <span class="listicle-comment-meta">Dec 10</span>
-                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 28)">
+                        <span class="listicle-comment-meta">1 week ago</span>
+                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 11)">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
-                            <span class="listicle-like-count">28</span>
+                            <span class="listicle-like-count">11</span>
                         </button>
                     </div>
                 </div>
@@ -1187,45 +1274,83 @@
 
             <div class="listicle-comment">
                 <div class="listicle-comment-body">
-                    <div class="listicle-comment-name">Robert M.</div>
-                    <p class="listicle-comment-text">Skeptical at first but the science checks out. Good to finally have an explanation that makes sense.</p>
+                    <div class="listicle-comment-name">Tom</div>
+                    <p class="listicle-comment-text">Same situation here. Going to look into this.</p>
                     <div class="listicle-comment-actions">
-                        <span class="listicle-comment-meta">Dec 8</span>
-                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 19)">
+                        <span class="listicle-comment-meta">1 week ago</span>
+                        <button class="listicle-like-btn" onclick="toggleListicleLike(this, 7)">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
-                            <span class="listicle-like-count">19</span>
+                            <span class="listicle-like-count">7</span>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="listicle-cta-box">
-            <h3>Learn About the 3-Pathway Protocol</h3>
-            <p>Thaura Dryft is formulated to address all three pathways: blocking estrogen conversion, targeting visceral fat, and supporting natural testosterone production.</p>
-            <a href="https://www.thaura.co/pages/bellyfat" class="listicle-cta-button">Learn About Dryft</a>
-            <p class="listicle-cta-note">90-day money-back guarantee · Free shipping</p>
-        </div>
-
     </main>
+
+    <div class="listicle-sticky-cta" id="listicleStickyCta">
+        <span class="listicle-sticky-cta-text">The supplement Gary mentioned</span>
+        <a href="https://www.thaura.co/pages/bellyfat" class="listicle-cta-button" id="listicleStickyCtaBtn">Learn About Dryft</a>
+    </div>
 
     <footer class="listicle-footer">
         <div class="listicle-container">
-            <p>This article is for educational purposes only and does not constitute medical advice. Individual results vary. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before starting any supplement regimen.</p>
-            <p>© 2026 Men's Health Journal · All rights reserved</p>
+            <p>This article reflects personal experience and is for informational purposes only. It is not intended as medical advice. Consult your healthcare provider before starting any supplement regimen. Individual results may vary.</p>
+            <p>© 2026 Men's Health Review · All rights reserved</p>
         </div>
     </footer>
 </div>
 
 <script>
-    // Reading progress bar
+    // Reading progress bar & sticky CTA
+    let listicleHasVisitedProduct = false;
+    let listicleStickyActivated = false;
+
     window.addEventListener('scroll', () => {
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrolled = window.scrollY;
         const progress = (scrolled / docHeight) * 100;
         document.getElementById('listicleProgressBar').style.width = progress + '%';
+
+        // Show sticky CTA after scrolling past the "week 12" results paragraph
+        const resultsTrigger = document.getElementById('listicle-results-trigger');
+        const productSection = document.getElementById('listicleProductSection');
+        const stickyCta = document.getElementById('listicleStickyCta');
+
+        if (resultsTrigger && stickyCta && productSection) {
+            const triggerRect = resultsTrigger.getBoundingClientRect();
+            const productRect = productSection.getBoundingClientRect();
+
+            const pastTrigger = triggerRect.bottom < 0;
+            const viewingProduct = productRect.top < window.innerHeight && productRect.bottom > 0;
+
+            // Once activated, stays visible except when viewing product section
+            if (pastTrigger) {
+                listicleStickyActivated = true;
+            }
+
+            if (listicleStickyActivated && !viewingProduct) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }
+    });
+
+    // Sticky CTA button click behavior
+    document.getElementById('listicleStickyCtaBtn').addEventListener('click', function(e) {
+        const productSection = document.getElementById('listicleProductSection');
+
+        if (!listicleHasVisitedProduct) {
+            // First click: scroll to product section
+            e.preventDefault();
+            listicleHasVisitedProduct = true;
+            productSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        // Second click onwards: let it go to the actual link (href)
     });
 
     // Comment submission
