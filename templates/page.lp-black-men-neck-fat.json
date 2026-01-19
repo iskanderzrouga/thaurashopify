@@ -2635,6 +2635,54 @@
             "description_color": "#000000",
             "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
           }
+        },
+        "item_wBUhnE": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_32_2.png",
+            "heading": "DIM (Diindolylmethane) - 100mg",
+            "heading_color": "#000000",
+            "description1": "<p>Supports healthy estrogen metabolism</p>",
+            "description2": "<p>Reduces estrogen-driven fat storage signals</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_ANjGB8": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_33_d0f3070d-d9a5-4a6c-9ec7-58ac8bea76db.png",
+            "heading": "Zinc (as glycinate) - 15mg",
+            "heading_color": "#000000",
+            "description1": "<p>Supports testosterone production</p>",
+            "description2": "<p>Critical for hormonal balance</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_z48Cpd": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_33_1_a73fef21-2750-41fe-9a6c-a3b6819d862d.png",
+            "heading": "Boron (as glycinate) - 6mg",
+            "heading_color": "#000000",
+            "description1": "<p>Works synergistically with zinc</p>",
+            "description2": "<p>Supports optimal hormone ratios</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
         }
       },
       "block_order": [
@@ -2649,7 +2697,10 @@
         "item_jUajCR",
         "item_DeAt6D",
         "item_zA447V",
-        "item_ymiVkz"
+        "item_ymiVkz",
+        "item_wBUhnE",
+        "item_ANjGB8",
+        "item_z48Cpd"
       ],
       "name": "BL Tab Ingredients",
       "settings": {
