@@ -2476,45 +2476,68 @@
           "type": "row",
           "settings": {
             "label": "FOR REACTIVATING DORMANT NECK FAT",
-            "id": ""
+            "label_color": "#00754a",
+            "col": "2",
+            "id": "btl1"
           }
         },
         "row_RRLPC8": {
           "type": "row",
           "settings": {
             "label": "FOR INSULIN RESISTANCE",
-            "id": ""
+            "label_color": "#00754a",
+            "col": "3",
+            "id": "btl2"
           }
         },
         "row_HizT6F": {
           "type": "row",
           "settings": {
             "label": "FOR CORTISOL DYSREGULATION",
-            "id": ""
+            "label_color": "#00754a",
+            "col": "3",
+            "id": "btl3"
           }
         },
         "row_9JyWTW": {
           "type": "row",
           "settings": {
             "label": "FOR HORMONAL IMBALANCE",
-            "id": ""
+            "label_color": "#00754a",
+            "col": "3",
+            "id": "btl4"
           }
         },
         "item_ywLnbw": {
           "type": "item",
           "settings": {
-            "id": "",
-            "col": "3",
-            "label": "FOR REACTIVATING DORMANT NECK FAT",
-            "label_color": "#00754a",
-            "heading": "",
+            "id": "btl1",
+            "image": "shopify://shop_images/image_29_5518b4cb-5d66-40d2-a240-e696b01c027d.png",
+            "heading": "Grains of Paradise Extract (12.5% 6-paradol) - 30mg",
             "heading_color": "#000000",
-            "description1": "",
-            "description2": "",
+            "description1": "<p>Activates brown/beige adipose tissue in human studies</p>",
+            "description2": "<p>Increases resting energy expenditure</p>",
+            "description3": "<p>Targets thermogenesis in upper-body fat depots</p>",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_tqFqzd": {
+          "type": "item",
+          "settings": {
+            "id": "btl1",
+            "image": "shopify://shop_images/image_30_0d4952cb-408a-4a1d-9ee9-f98bd8a4d5f6.png",
+            "heading": "Cayenne Pepper Extract (40,000 SHU) - 120mg",
+            "heading_color": "#000000",
+            "description1": "<p>Increases fat oxidation in subcutaneous depots</p>",
+            "description2": "<p>Boosts metabolic rate without stimulant crash</p>",
             "description3": "",
             "description4": "",
             "description5": "",
-            "description_color": "#000000"
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
           }
         }
       },
@@ -2523,7 +2546,8 @@
         "row_RRLPC8",
         "row_HizT6F",
         "row_9JyWTW",
-        "item_ywLnbw"
+        "item_ywLnbw",
+        "item_tqFqzd"
       ],
       "name": "BL Tab Ingredients",
       "settings": {
