@@ -2587,6 +2587,54 @@
             "description_color": "#000000",
             "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
           }
+        },
+        "item_DeAt6D": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_31_2.png",
+            "heading": "Ashwagandha Extract (5% withanolides) - 300mg",
+            "heading_color": "#000000",
+            "description1": "<p>Clinically shown to reduce cortisol</p>",
+            "description2": "<p>Supports weight management in stressed adults</p>",
+            "description3": "<p>Improves sleep quality</p>",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_zA447V": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_32_03f90a03-7c02-4741-8a50-37be897363ab.png",
+            "heading": "L-Theanine - 80mg",
+            "heading_color": "#000000",
+            "description1": "<p>Reduces stress without sedation</p>",
+            "description2": "<p>Improves cortisol response to stressors</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_ymiVkz": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_32_1_6c53b52c-805e-4389-965b-22551c996f80.png",
+            "heading": "Saffron Extract (≥2% safranal) - 30mg",
+            "heading_color": "#000000",
+            "description1": "<p>Reduces stress-related snacking</p>",
+            "description2": "<p>Improves satiety and mood</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
         }
       },
       "block_order": [
@@ -2598,7 +2646,10 @@
         "item_tqFqzd",
         "item_icjr6j",
         "item_6j8z9x",
-        "item_jUajCR"
+        "item_jUajCR",
+        "item_DeAt6D",
+        "item_zA447V",
+        "item_ymiVkz"
       ],
       "name": "BL Tab Ingredients",
       "settings": {
