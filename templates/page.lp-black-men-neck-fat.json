@@ -2539,6 +2539,54 @@
             "description_color": "#000000",
             "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
           }
+        },
+        "item_icjr6j": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_30_1_ce3f8eda-ac92-43aa-97e6-cd6126497e3e.png",
+            "heading": "Dihydroberberine - 100mg",
+            "heading_color": "#000000",
+            "description1": "<p>More bioavailable than regular berberine</p>",
+            "description2": "<p>Improves insulin sensitivity and glucose control</p>",
+            "description3": "<p>Helps unlock insulin-protected fat cells</p>",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_6j8z9x": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_31_2cf134ba-7965-45a4-8e08-283895135cdf.png",
+            "heading": "Lactobacillus gasseri - 50mg",
+            "heading_color": "#000000",
+            "description1": "<p>Shown in RCTs to reduce abdominal adiposity</p>",
+            "description2": "<p>Improves gut-metabolic signaling</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
+        },
+        "item_jUajCR": {
+          "type": "item",
+          "settings": {
+            "id": "btl2",
+            "image": "shopify://shop_images/image_31_1_2b4f56bd-15a0-47f3-a710-65215ce72a59.png",
+            "heading": "Bifidobacterium breve B-3 - 100mg",
+            "heading_color": "#000000",
+            "description1": "<p>Human trials show body fat reduction</p>",
+            "description2": "<p>Supports metabolic health through gut axis</p>",
+            "description3": "",
+            "description4": "",
+            "description5": "",
+            "description_color": "#000000",
+            "icon": "shopify://shop_images/Subtract_90d2dd09-2a42-4196-a075-8c21eb67578d.png"
+          }
         }
       },
       "block_order": [
@@ -2547,7 +2595,10 @@
         "row_HizT6F",
         "row_9JyWTW",
         "item_ywLnbw",
-        "item_tqFqzd"
+        "item_tqFqzd",
+        "item_icjr6j",
+        "item_6j8z9x",
+        "item_jUajCR"
       ],
       "name": "BL Tab Ingredients",
       "settings": {
